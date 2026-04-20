@@ -9,7 +9,7 @@ function Navbar() {
   const location = useLocation()
 
   return (
-    <nav className="sticky top-0 z-10 bg-white border-b border-gray-200">
+    <nav className="sticky top-0 z-10 bg-white">
       <div className="max-w-6xl mx-auto px-8 h-14 flex items-center">
         <Link to="/" className="w-52 shrink-0 font-bold text-gray-900 text-lg">
           Teaching Journey
