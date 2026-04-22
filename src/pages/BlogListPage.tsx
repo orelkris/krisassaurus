@@ -1,3 +1,4 @@
+import TwoColumnLayout from '@/components/layout/TwoColumnLayout'
 import Sidebar from '@/components/layout/Sidebar'
 import BlogGrid from '@/components/blog/BlogGrid'
 import Pagination from '@/components/blog/Pagination'
@@ -13,17 +14,14 @@ function BlogListPage() {
   )
 
   return (
-    <div className="h-full max-w-6xl mx-auto px-8 py-8 flex flex-col lg:flex-row gap-8">
-      <Sidebar posts={mockPosts} />
-      <main className="flex-1 min-w-0 min-h-0 flex flex-col">
-        <BlogGrid posts={currentPosts} />
-        <Pagination
-          currentPage={currentPage}
-          totalPages={totalPages}
-          onPageChange={setPage}
-        />
-      </main>
-    </div>
+    <TwoColumnLayout sidebar={<Sidebar posts={mockPosts} />}>
+      <BlogGrid posts={currentPosts} />
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={setPage}
+      />
+    </TwoColumnLayout>
   )
 }
 
