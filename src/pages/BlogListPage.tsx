@@ -4,13 +4,14 @@ import BlogGrid from '@/components/blog/BlogGrid'
 import Pagination from '@/components/blog/Pagination'
 import { useFilter } from '@/context/FilterContext'
 import { usePaginatedPosts } from '@/hooks/usePaginatedPosts'
-import { usePosts } from '@/hooks/usePosts'
+import { mockPosts as posts } from '@/data/mockData'
 
 function BlogListPage() {
   // const { posts, loading, error } = usePosts()
-  const {posts} = usePosts();
+  // const {posts} = usePosts();
   const { selectedMonth } = useFilter()
   const { currentPosts, currentPage, totalPages, setPage } =
+    // usePaginatedPosts(posts, selectedMonth)
     usePaginatedPosts(posts, selectedMonth)
 
   // if (loading) {
