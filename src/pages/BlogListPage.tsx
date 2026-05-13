@@ -7,7 +7,8 @@ import { usePaginatedPosts } from '@/hooks/usePaginatedPosts'
 import { usePosts } from '@/hooks/usePosts'
 
 function BlogListPage() {
-  const { posts, loading, error } = usePosts()
+  // const { posts, loading, error } = usePosts()
+  const {posts} = usePosts();
   const { selectedMonth } = useFilter()
   const { currentPosts, currentPage, totalPages, setPage } =
     usePaginatedPosts(posts, selectedMonth)
