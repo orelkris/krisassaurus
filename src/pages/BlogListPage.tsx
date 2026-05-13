@@ -2,19 +2,34 @@ import TwoColumnLayout from '@/components/layout/TwoColumnLayout'
 import Sidebar from '@/components/layout/Sidebar'
 import BlogGrid from '@/components/blog/BlogGrid'
 import Pagination from '@/components/blog/Pagination'
-import { mockPosts } from '@/data/mockData'
 import { useFilter } from '@/context/FilterContext'
 import { usePaginatedPosts } from '@/hooks/usePaginatedPosts'
+import { usePosts } from '@/hooks/usePosts'
 
 function BlogListPage() {
+  const { posts, loading, error } = usePosts()
   const { selectedMonth } = useFilter()
-  const { currentPosts, currentPage, totalPages, setPage } = usePaginatedPosts(
-    mockPosts,
-    selectedMonth
-  )
+  const { currentPosts, currentPage, totalPages, setPage } =
+    usePaginatedPosts(posts, selectedMonth)
+
+  // if (loading) {
+  //   return (
+  //     <div className="h-full flex items-center justify-center text-sm text-gray-400">
+  //       Loading posts...
+  //     </div>
+  //   )
+  // }
+
+  // if (error) {
+  //   return (
+  //     <div className="h-full flex items-center justify-center text-sm text-red-400">
+  //       {error}
+  //     </div>
+  //   )
+  // }
 
   return (
-    <TwoColumnLayout sidebar={<Sidebar posts={mockPosts} />}>
+    <TwoColumnLayout sidebar={<Sidebar posts={posts} />}>
       <BlogGrid posts={currentPosts} />
       <Pagination
         currentPage={currentPage}
