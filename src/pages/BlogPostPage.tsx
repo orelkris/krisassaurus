@@ -1,6 +1,8 @@
 import { useParams, Link } from 'react-router-dom'
 import { mockPosts } from '@/data/mockData'
 import TwoColumnLayout from '@/components/layout/TwoColumnLayout'
+import { getTagColor } from '@/data/tagColors'
+import AuthorTag from '@/components/blog/AuthorTag'
 
 function BlogPostPage() {
   const { id } = useParams<{ id: string }>()
@@ -24,6 +26,7 @@ function BlogPostPage() {
     month: 'long',
     day: 'numeric',
     year: 'numeric',
+    timeZone: 'UTC',
   })
 
   const sidebar = (
@@ -43,49 +46,43 @@ function BlogPostPage() {
       </div>
 
       <div>
-        <p className="text-xs text-gray-400 uppercase tracking-wide mb-1">
+        <p className="text-xs text-gray-400 uppercase tracking-wide mb-2">
           Tags
         </p>
-        <div className="flex flex-col gap-1">
-          {post.tags.map((tag) => (
-            <span key={tag} className="text-sm text-gray-600">
-              {tag}
-            </span>
-          ))}
+        <div className="flex flex-wrap gap-1">
+          {post.tags.map((tag) => {
+            const { bg, text } = getTagColor(tag)
+            return (
+              <span
+                key={tag}
+                className="px-2 py-0.5 text-xs rounded-full font-medium"
+                style={{ backgroundColor: bg, color: text }}
+              >
+                {tag}
+              </span>
+            )
+          })}
         </div>
       </div>
     </div>
   )
 
+  const { bg } = getTagColor(post.tags[0])
+
   return (
     <TwoColumnLayout sidebar={sidebar} scrollable>
-      <div className="max-w-prose">
-        <div className={`w-full h-40 rounded-xl ${post.coverColor} mb-8`} />
+      <div className="max-w-prose flex flex-col gap-8">
+        <div
+          className="w-full h-40 rounded-xl"
+          style={{ backgroundColor: bg }}
+        />
 
-        <span className="text-xs text-gray-400 uppercase tracking-wide">
-          {post.tags[0]}
-        </span>
+        <AuthorTag author={post.author} />
 
-        <h1 className="mt-2 text-3xl font-bold text-gray-900 leading-tight">
-          {post.title}
-        </h1>
-
-        <div className="mt-4 flex items-center gap-3">
-          <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center text-xs font-bold text-gray-600">
-            {post.author.name.charAt(0)}
-          </div>
-          <div>
-            <p className="text-sm font-semibold text-gray-800">
-              {post.author.name}
-            </p>
-            <p className="text-xs text-gray-400">{post.author.role}</p>
-          </div>
-        </div>
-
-        <hr className="my-8 border-gray-200" />
+        <hr className="border-gray-200" />
 
         <div className="space-y-5">
-          {post.content.split('\n\n').map((paragraph, index) => (
+          {post.content.map((paragraph, index) => (
             <p key={index} className="text-gray-700 leading-relaxed">
               {paragraph}
             </p>

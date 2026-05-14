@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import type { Post } from '@/types'
+import { getTagColor } from '@/data/tagColors'
 
 interface BlogCardProps {
   post: Post
@@ -13,18 +14,24 @@ function BlogCard({ post }: BlogCardProps) {
     timeZone: 'UTC',
   })
 
+  const primaryTag = post.tags[0]
+  const { bg, text } = getTagColor(primaryTag)
+
   return (
     <Link
       to={`/post/${post.id}`}
       className="group flex flex-col rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition-shadow"
     >
-      <div className={`h-24 w-full shrink-0 ${post.coverColor}`} />
+      <div className="h-24 w-full shrink-0" style={{ backgroundColor: bg }} />
       <div className="flex flex-col flex-1 p-4">
-        <span className="text-xs text-gray-400 uppercase tracking-wide">
-          {post.tags[0]}
+        <span
+          className="self-start px-2 py-0.5 text-xs rounded-full font-medium"
+          style={{ backgroundColor: bg, color: text }}
+        >
+          {primaryTag}
         </span>
 
-        <h2 className="mt-1 font-bold text-gray-900 leading-snug line-clamp-2 group-hover:text-gray-600 transition-colors">
+        <h2 className="mt-2 font-bold text-gray-900 leading-snug line-clamp-2 group-hover:text-gray-600 transition-colors">
           {post.title}
         </h2>
 

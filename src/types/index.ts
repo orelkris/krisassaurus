@@ -8,11 +8,10 @@ export interface Post {
   id: string
   title: string
   excerpt: string
-  content: string
+  content: string[]
   date: Date
   tags: string[]
   author: Author
-  coverColor: string
 }
 
 export interface Resource {
@@ -29,9 +28,14 @@ export interface AboutData {
   role: string
   coverColor: string
   imageUrl?: string
+  aboutMe: string[]
+  blogDescription: string[]
   background: string[]
   philosophy: string[]
-  blogDescription: string[]
+  standpoint?: {
+    text: string[]
+    youtubeId: string
+  }
 }
 
 export interface Composition {

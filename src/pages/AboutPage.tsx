@@ -1,10 +1,13 @@
 import TwoColumnLayout from '@/components/layout/TwoColumnLayout'
 import { mockAbout } from '@/data/mockData'
+import AuthorTag from '@/components/blog/AuthorTag'
 
 const sections = [
+  { label: 'About Me', href: '#about' },
+  { label: 'About This Blog', href: '#blog' },
   { label: 'Background', href: '#background' },
   { label: 'Teaching Philosophy', href: '#philosophy' },
-  { label: 'About This Blog', href: '#blog' },
+  { label: 'Standpoint', href: '#standpoint' },
 ]
 
 const sidebar = (
@@ -30,69 +33,95 @@ const sidebar = (
 
 function AboutPage() {
   const {
-    name,
-    role,
     coverColor,
     imageUrl,
+    aboutMe,
+    blogDescription,
     background,
     philosophy,
-    blogDescription,
+    standpoint,
   } = mockAbout
 
   return (
     <TwoColumnLayout sidebar={sidebar} scrollable>
-      <div className="max-w-prose">
+      <div className="max-w-prose flex flex-col gap-8">
         {imageUrl ? (
           <img
             src={imageUrl}
             alt="About banner"
-            className="w-full h-40 rounded-xl object-cover mb-8"
+            className="w-full h-40 rounded-xl object-cover"
           />
         ) : (
-          <div className={`w-full h-40 rounded-xl ${coverColor} mb-8`} />
+          <div className={`w-full h-40 rounded-xl ${coverColor}`} />
         )}
 
-        <h1 className="text-3xl font-bold text-gray-900">{name}</h1>
-        <p className="mt-1 text-gray-500 mb-8">{role}</p>
+        <AuthorTag
+          author={{
+            name: 'Kris Orel',
+            role: 'Teacher Candidate, Brock University',
+          }}
+        />
 
-        <hr className="mb-8 border-gray-200" />
-
-        <section id="background" className="mb-10">
-          <h2 className="text-lg font-bold text-gray-900 mb-4">Background</h2>
-          <div className="space-y-4">
-            {background.map((paragraph, index) => (
-              <p key={index} className="text-gray-700 leading-relaxed">
-                {paragraph}
-              </p>
-            ))}
-          </div>
+        <hr className="border-gray-200" />
+        <section id="about" className="flex flex-col gap-4">
+          <h2 className="text-lg font-bold text-gray-900">About Me</h2>
+          {aboutMe.map((paragraph, index) => (
+            <p key={index} className="text-gray-700 leading-relaxed">
+              {paragraph}
+            </p>
+          ))}
         </section>
 
-        <section id="philosophy" className="mb-10">
-          <h2 className="text-lg font-bold text-gray-900 mb-4">
+        <section id="blog" className="flex flex-col gap-4">
+          <h2 className="text-lg font-bold text-gray-900">About This Blog</h2>
+          {blogDescription.map((paragraph, index) => (
+            <p key={index} className="text-gray-700 leading-relaxed">
+              {paragraph}
+            </p>
+          ))}
+          <p>
+            <a href="https://adunsiger.com/" target="_blank" className="link">
+              Support Aviva!
+            </a>
+          </p>
+        </section>
+
+        <section id="background" className="flex flex-col gap-4">
+          <h2 className="text-lg font-bold text-gray-900">Background</h2>
+          {background.map((paragraph, index) => (
+            <p key={index} className="text-gray-700 leading-relaxed">
+              {paragraph}
+            </p>
+          ))}
+        </section>
+
+        <section id="philosophy" className="flex flex-col gap-4">
+          <h2 className="text-lg font-bold text-gray-900">
             Teaching Philosophy
           </h2>
-          <div className="space-y-4">
-            {philosophy.map((paragraph, index) => (
-              <p key={index} className="text-gray-700 leading-relaxed">
-                {paragraph}
-              </p>
-            ))}
-          </div>
+          {philosophy.map((paragraph, index) => (
+            <p key={index} className="text-gray-700 leading-relaxed">
+              {paragraph}
+            </p>
+          ))}
         </section>
 
-        <section id="blog" className="mb-10">
-          <h2 className="text-lg font-bold text-gray-900 mb-4">
-            About This Blog
-          </h2>
-          <div className="space-y-4">
-            {blogDescription.map((paragraph, index) => (
+        {standpoint && (
+          <section id="standpoint" className="flex flex-col gap-4">
+            <h2 className="text-lg font-bold text-gray-900">Standpoint</h2>
+            {standpoint.text.map((paragraph, index) => (
               <p key={index} className="text-gray-700 leading-relaxed">
                 {paragraph}
               </p>
             ))}
-          </div>
-        </section>
+            <iframe
+              src={`https://www.youtube.com/embed/${standpoint.youtubeId}`}
+              title="Standpoint video"
+              allowFullScreen
+              className="w-full aspect-video rounded-xl"
+            />
+          </section>
+        )}
       </div>
     </TwoColumnLayout>
   )
