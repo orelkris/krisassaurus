@@ -6,10 +6,12 @@ import BlogPostPage from '@/pages/BlogPostPage'
 import ResourcesPage from '@/pages/ResourcesPage'
 import AboutPage from '@/pages/AboutPage'
 import MusicPage from '@/pages/MusicPage'
+import ScrollToTop from '@/components/ScrollToTop'
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <FilterProvider>
         <Routes>
           <Route element={<AppLayout />}>
