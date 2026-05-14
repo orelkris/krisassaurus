@@ -1,13 +1,12 @@
 import type { Post, Resource } from '../types'
 import bannerImage from '@/assets/teacher-banner.png'
 import type { Composition } from '@/types'
-import drivingInTheFog from "@/assets/driving-in-the-fog.mp3"
-import flowingRiver from "@/assets/flowing-river.mp3"
-import deepRed from "@/assets/deep-red.mp3"
-import fridayNight from "@/assets/friday-night.mp3"
-import droplets from "@/assets/droplets.mp3"
-import tooMuch from "@/assets/too-much.mp3"
-
+import drivingInTheFog from '@/assets/driving-in-the-fog.mp3'
+import flowingRiver from '@/assets/flowing-river.mp3'
+import deepRed from '@/assets/deep-red.mp3'
+import fridayNight from '@/assets/friday-night.mp3'
+import droplets from '@/assets/droplets.mp3'
+import tooMuch from '@/assets/too-much.mp3'
 
 export const mockPosts: Post[] = [
   {
@@ -257,8 +256,6 @@ export const mockAbout: AboutData = {
   ],
 }
 
-
-
 export const mockCompositions: Composition[] = [
   {
     id: 'c1',
@@ -266,8 +263,7 @@ export const mockCompositions: Composition[] = [
     audioUrl: drivingInTheFog,
     coverColor: 'bg-amber-200',
     date: new Date('2025-04-16'),
-    description:
-      'I wanted to write an atmospheric piece in F# minor.',
+    description: 'I wanted to write an atmospheric piece in F# minor.',
     tags: ['Electronic'],
     duration: '1:50',
   },
@@ -278,7 +274,7 @@ export const mockCompositions: Composition[] = [
     coverColor: 'bg-blue-200',
     date: new Date('2025-04-14'),
     description:
-      'In a very subtle way, this piece was inspired by Ian Clarke\'s Hypnosis. E minor is a very gentle key. ',
+      "In a very subtle way, this piece was inspired by Ian Clarke's Hypnosis. E minor is a very gentle key. ",
     tags: ['Electronic'],
     duration: '2:13',
   },
@@ -288,9 +284,9 @@ export const mockCompositions: Composition[] = [
     audioUrl: deepRed,
     coverColor: 'bg-red-900',
     date: new Date('2025-02-28'),
-        description:
+    description:
       'I was just playing around with some sounds, and I improvied this piano melody on top of my chord progression...',
-    tags: ["Electronic"],
+    tags: ['Electronic'],
     duration: '1:41',
   },
   {
@@ -299,10 +295,11 @@ export const mockCompositions: Composition[] = [
     audioUrl: fridayNight,
     coverColor: 'bg-rose-300',
     date: new Date('2025-02-27'),
-    description: 'A similar chord progression used in Elgar\'s Enigma Variations that was then used in The Matrix.\
-    For some reason, this has been my brother\'s favorite piece so far.',
+    description:
+      "A similar chord progression used in Elgar's Enigma Variations that was then used in The Matrix.\
+    For some reason, this has been my brother's favorite piece so far.",
     tags: ['Electronic'],
-    duration: '1:47',
+    duration: '1:08',
   },
   {
     id: 'c5',
@@ -310,18 +307,20 @@ export const mockCompositions: Composition[] = [
     audioUrl: droplets,
     coverColor: 'bg-green-200',
     date: new Date('2025-04-30'),
-    description: 'A bit unpolished, but an interesting outcome from a quick improvisation session.',
+    description:
+      'A bit unpolished, but an interesting outcome from a quick improvisation session.',
     tags: ['Electronic'],
     duration: '1:50',
   },
-    {
+  {
     id: 'c6',
     title: 'One late night...',
     audioUrl: tooMuch,
     coverColor: 'bg-purple-200',
     date: new Date('2025-05-12'),
-    description: 'I couldn\'t fall asleep, and I was nervous about a pancake breakfast in class that I had to \
-    bring batter for. So I wrote this...It isn\'t very good but a fun outcome...',
+    description:
+      "I couldn't fall asleep, and I was nervous about a pancake breakfast in class that I had to \
+    bring batter for. So I wrote this...It isn't very good but a fun outcome...",
     tags: ['Electronic'],
     duration: '1:02',
   },
