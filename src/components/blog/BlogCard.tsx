@@ -10,6 +10,7 @@ function BlogCard({ post }: BlogCardProps) {
     month: 'long',
     day: 'numeric',
     year: 'numeric',
+    timeZone: 'UTC',
   })
 
   return (

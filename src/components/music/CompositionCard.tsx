@@ -12,10 +12,13 @@ function CompositionCard({ composition }: CompositionCardProps) {
     month: 'long',
     day: 'numeric',
     year: 'numeric',
+    timeZone: 'UTC',
   })
 
   return (
     <div className="rounded-xl border border-gray-100 overflow-hidden flex flex-col">
+      {coverColor ? <div className={`h-20 w-full ${coverColor}`} /> : null}
+
       <div className="p-4 flex flex-col gap-3 flex-1">
         <div className="flex items-start justify-between gap-4">
           <h2 className="font-bold text-gray-900 leading-snug">{title}</h2>
