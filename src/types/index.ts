@@ -28,6 +28,7 @@ export interface AboutData {
   name: string
   role: string
   coverColor: string
+  imageUrl?: string
   background: string[]
   philosophy: string[]
   blogDescription: string[]

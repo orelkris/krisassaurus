@@ -1,4 +1,5 @@
 import type { Post, Resource } from '../types'
+import bannerImage from '@/assets/teacher-banner.png'
 
 export const mockPosts: Post[] = [
   {
@@ -233,6 +234,7 @@ export const mockAbout: AboutData = {
   name: 'Kris Orel',
   role: 'Teacher',
   coverColor: 'bg-indigo-100',
+  imageUrl: bannerImage,
   background: [
     'Write a few sentences about where you are from, how you got into teaching, and what subject or age group you work with.',
     'This is your space — make it personal and honest.',

@@ -29,13 +29,28 @@ const sidebar = (
 )
 
 function AboutPage() {
-  const { name, role, coverColor, background, philosophy, blogDescription } =
-    mockAbout
+  const {
+    name,
+    role,
+    coverColor,
+    imageUrl,
+    background,
+    philosophy,
+    blogDescription,
+  } = mockAbout
 
   return (
     <TwoColumnLayout sidebar={sidebar} scrollable>
       <div className="max-w-prose">
-        <div className={`w-full h-40 rounded-xl ${coverColor} mb-8`} />
+        {imageUrl ? (
+          <img
+            src={imageUrl}
+            alt="About banner"
+            className="w-full h-40 rounded-xl object-cover mb-8"
+          />
+        ) : (
+          <div className={`w-full h-40 rounded-xl ${coverColor} mb-8`} />
+        )}
 
         <h1 className="text-3xl font-bold text-gray-900">{name}</h1>
         <p className="mt-1 text-gray-500 mb-8">{role}</p>
