@@ -248,3 +248,59 @@ export const mockAbout: AboutData = {
     'If you are a fellow teacher, a student, or just curious about what the job actually looks like from the inside, I hope you find something useful here.',
   ],
 }
+
+import type { Composition } from '@/types'
+
+export const mockCompositions: Composition[] = [
+  {
+    id: 'c1',
+    title: 'Morning Reflection',
+    audioUrl: '',
+    coverColor: 'bg-sky-100',
+    date: new Date('2025-01-08'),
+    description:
+      'A quiet piece written before school one morning. Mostly improvised.',
+    tags: ['Piano', 'Ambient'],
+    duration: '2:34',
+  },
+  {
+    id: 'c2',
+    title: 'After the Bell',
+    audioUrl: '',
+    coverColor: 'bg-amber-100',
+    date: new Date('2025-01-22'),
+    description:
+      'Written on a Friday afternoon. The feeling of the week finally being over.',
+    tags: ['Guitar', 'Acoustic'],
+    duration: '3:12',
+  },
+  {
+    id: 'c3',
+    title: 'Classroom in Winter',
+    audioUrl: '',
+    coverColor: 'bg-blue-100',
+    date: new Date('2025-02-03'),
+    tags: ['Piano', 'Instrumental'],
+    duration: '4:01',
+  },
+  {
+    id: 'c4',
+    title: 'Something Unfinished',
+    audioUrl: '',
+    coverColor: 'bg-rose-100',
+    date: new Date('2025-02-18'),
+    description: 'Not quite done but worth sharing.',
+    tags: ['Experimental'],
+    duration: '1:47',
+  },
+  {
+    id: 'c5',
+    title: 'March Theme',
+    audioUrl: '',
+    coverColor: 'bg-green-100',
+    date: new Date('2025-03-05'),
+    description: 'Something brighter. Spring is close.',
+    tags: ['Piano', 'Upbeat'],
+    duration: '3:55',
+  },
+]

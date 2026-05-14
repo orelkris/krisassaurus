@@ -33,3 +33,14 @@ export interface AboutData {
   philosophy: string[]
   blogDescription: string[]
 }
+
+export interface Composition {
+  id: string
+  title: string
+  audioUrl: string
+  coverColor: string
+  date: Date
+  description?: string
+  tags?: string[]
+  duration?: string
+}

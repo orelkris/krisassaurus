@@ -5,6 +5,7 @@ import BlogListPage from '@/pages/BlogListPage'
 import BlogPostPage from '@/pages/BlogPostPage'
 import ResourcesPage from '@/pages/ResourcesPage'
 import AboutPage from '@/pages/AboutPage'
+import MusicPage from '@/pages/MusicPage'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/post/:id" element={<BlogPostPage />} />
             <Route path="/resources" element={<ResourcesPage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/music" element={<MusicPage />} />
           </Route>
         </Routes>
       </FilterProvider>
