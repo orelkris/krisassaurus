@@ -41,12 +41,7 @@ export const mockPosts: Post[] = [
       "For example, in a Grade 6 Social Studies unit focused on communities in Canada's past, students could explore how geography, environment, technology, and cultural perspectives influenced daily life and decision-making. Rather than simply memorizing historical information, students might examine personal stories, maps, artifacts, journal entries, and oral histories to better understand how people experienced their world. Students could participate in collaborative discussions about how communities adapted to environmental challenges or how different groups understood land and relationships differently. Through reflective journaling and inquiry activities, students would also be encouraged to connect historical experiences to contemporary issues such as sustainability, community responsibility, and human relationships with the environment.",
     ],
     date: new Date('2026-05-12'),
-    tags: [
-      'instructional approaches',
-      'social studies',
-      'philosophy',
-      'translanguaging',
-    ],
+    tags: ['instructional approaches', 'social studies', 'philosophy'],
     author: { name: 'Kris', role: 'Teacher Candidate, Brock University' },
   },
 
