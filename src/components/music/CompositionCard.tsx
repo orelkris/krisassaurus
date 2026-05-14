@@ -42,9 +42,7 @@ function CompositionCard({ composition }: CompositionCardProps) {
         )}
 
         {description && (
-          <p className="text-sm text-gray-500 leading-relaxed line-clamp-2">
-            {description}
-          </p>
+          <p className="text-sm text-gray-500 leading-relaxed">{description}</p>
         )}
 
         <hr className="border-gray-100" />
