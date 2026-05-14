@@ -58,7 +58,7 @@ function ResourcesPage() {
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-gray-200">
-              <th className="text-left py-3 pr-8 font-semibold text-gray-900 whitespace-nowrap">
+              <th className="text-left p-4 pr-8 font-semibold text-gray-900 whitespace-nowrap">
                 Resource
               </th>
               <th className="text-left py-3 pr-8 font-semibold text-gray-900 hidden md:table-cell">
@@ -75,7 +75,7 @@ function ResourcesPage() {
                 key={resource.id}
                 className="border-b border-gray-100 hover:bg-gray-50 transition-colors"
               >
-                <td className="py-4 pr-8 align-top whitespace-nowrap">
+                <td className="p-4 pr-8 align-top whitespace-nowrap">
                   <a
                     href={resource.url}
                     target="_blank"
