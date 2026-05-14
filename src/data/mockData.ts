@@ -1,5 +1,13 @@
 import type { Post, Resource } from '../types'
 import bannerImage from '@/assets/teacher-banner.png'
+import type { Composition } from '@/types'
+import drivingInTheFog from "@/assets/driving-in-the-fog.mp3"
+import flowingRiver from "@/assets/flowing-river.mp3"
+import deepRed from "@/assets/deep-red.mp3"
+import fridayNight from "@/assets/friday-night.mp3"
+import droplets from "@/assets/droplets.mp3"
+import tooMuch from "@/assets/too-much.mp3"
+
 
 export const mockPosts: Post[] = [
   {
@@ -249,58 +257,72 @@ export const mockAbout: AboutData = {
   ],
 }
 
-import type { Composition } from '@/types'
+
 
 export const mockCompositions: Composition[] = [
   {
     id: 'c1',
-    title: 'Morning Reflection',
-    audioUrl: '',
-    coverColor: 'bg-sky-100',
-    date: new Date('2025-01-08'),
+    title: 'Driving in the fog',
+    audioUrl: drivingInTheFog,
+    coverColor: 'bg-amber-200',
+    date: new Date('2025-04-16'),
     description:
-      'A quiet piece written before school one morning. Mostly improvised.',
-    tags: ['Piano', 'Ambient'],
-    duration: '2:34',
+      'I wanted to write an atmospheric piece in F# minor.',
+    tags: ['Electronic'],
+    duration: '1:50',
   },
   {
     id: 'c2',
-    title: 'After the Bell',
-    audioUrl: '',
-    coverColor: 'bg-amber-100',
-    date: new Date('2025-01-22'),
+    title: 'Flowing River',
+    audioUrl: flowingRiver,
+    coverColor: 'bg-blue-200',
+    date: new Date('2025-04-14'),
     description:
-      'Written on a Friday afternoon. The feeling of the week finally being over.',
-    tags: ['Guitar', 'Acoustic'],
-    duration: '3:12',
+      'In a very subtle way, this piece was inspired by Ian Clarke\'s Hypnosis. E minor is a very gentle key. ',
+    tags: ['Electronic'],
+    duration: '2:13',
   },
   {
     id: 'c3',
-    title: 'Classroom in Winter',
-    audioUrl: '',
-    coverColor: 'bg-blue-100',
-    date: new Date('2025-02-03'),
-    tags: ['Piano', 'Instrumental'],
-    duration: '4:01',
+    title: 'Deep Red',
+    audioUrl: deepRed,
+    coverColor: 'bg-red-900',
+    date: new Date('2025-02-28'),
+        description:
+      'I was just playing around with some sounds, and I improvied this piano melody on top of my chord progression...',
+    tags: ["Electronic"],
+    duration: '1:41',
   },
   {
     id: 'c4',
-    title: 'Something Unfinished',
-    audioUrl: '',
-    coverColor: 'bg-rose-100',
-    date: new Date('2025-02-18'),
-    description: 'Not quite done but worth sharing.',
-    tags: ['Experimental'],
+    title: 'Friday Night',
+    audioUrl: fridayNight,
+    coverColor: 'bg-rose-300',
+    date: new Date('2025-02-27'),
+    description: 'A similar chord progression used in Elgar\'s Enigma Variations that was then used in The Matrix.\
+    For some reason, this has been my brother\'s favorite piece so far.',
+    tags: ['Electronic'],
     duration: '1:47',
   },
   {
     id: 'c5',
-    title: 'March Theme',
-    audioUrl: '',
-    coverColor: 'bg-green-100',
-    date: new Date('2025-03-05'),
-    description: 'Something brighter. Spring is close.',
-    tags: ['Piano', 'Upbeat'],
-    duration: '3:55',
+    title: 'Droplets',
+    audioUrl: droplets,
+    coverColor: 'bg-green-200',
+    date: new Date('2025-04-30'),
+    description: 'A bit unpolished, but an interesting outcome from a quick improvisation session.',
+    tags: ['Electronic'],
+    duration: '1:50',
+  },
+    {
+    id: 'c6',
+    title: 'One late night...',
+    audioUrl: tooMuch,
+    coverColor: 'bg-purple-200',
+    date: new Date('2025-05-12'),
+    description: 'I couldn\'t fall asleep, and I was nervous about a pancake breakfast in class that I had to \
+    bring batter for. So I wrote this...It isn\'s very good but a fun outcome...',
+    tags: ['Electronic'],
+    duration: '1:02',
   },
 ]
