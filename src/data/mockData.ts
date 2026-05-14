@@ -321,7 +321,7 @@ export const mockCompositions: Composition[] = [
     coverColor: 'bg-purple-200',
     date: new Date('2025-05-12'),
     description: 'I couldn\'t fall asleep, and I was nervous about a pancake breakfast in class that I had to \
-    bring batter for. So I wrote this...It isn\'s very good but a fun outcome...',
+    bring batter for. So I wrote this...It isn\'t very good but a fun outcome...',
     tags: ['Electronic'],
     duration: '1:02',
   },
