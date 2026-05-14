@@ -61,7 +61,7 @@ function ResourcesPage() {
               <th className="text-left py-3 pr-8 font-semibold text-gray-900 whitespace-nowrap">
                 Resource
               </th>
-              <th className="text-left py-3 pr-8 font-semibold text-gray-900">
+              <th className="text-left py-3 pr-8 font-semibold text-gray-900 hidden md:table-cell">
                 Description
               </th>
               <th className="text-left py-3 font-semibold text-gray-900 whitespace-nowrap">
@@ -85,7 +85,7 @@ function ResourcesPage() {
                     {resource.title} ↗
                   </a>
                 </td>
-                <td className="py-4 pr-8 align-top text-gray-500 leading-relaxed">
+                <td className="py-4 pr-8 align-top text-gray-500 leading-relaxed hidden md:table-cell">
                   {resource.description}
                 </td>
                 <td className="py-4 align-top">
