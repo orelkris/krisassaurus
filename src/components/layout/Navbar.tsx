@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 const links = [
   { label: 'Blog', path: '/' },
   { label: 'Resources', path: '/resources' },
+  { label: 'About', path: '/about' },
 ]
 
 function Navbar() {

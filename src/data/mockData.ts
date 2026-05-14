@@ -1,12 +1,12 @@
 import type { Post, Resource } from '../types'
 
 export const mockPosts: Post[] = [
-{
-  id: '1',
-  title: 'The Room as a Teacher',
-  excerpt:
-    'Q: How you plan to physically set up your classroom for social studies',
-  content: `When I started thinking seriously about how I would set up my classroom, I assumed the layout was a logistical question. Where do the desks go? Where does my desk go? How do I get students in and out without anyone tripping over a backpack? What I did not realise is that the room itself is part of the curriculum. Marx, Fuhrer and Hartig put it plainly in their 2000 study: classrooms are physical entities as well as organisational units, and the physical characteristics of a setting shape the behaviour of the people inside it. That single idea has reshaped how I plan to set up my own space.
+  {
+    id: '1',
+    title: 'The Room as a Teacher',
+    excerpt:
+      'Q: How you plan to physically set up your classroom for social studies',
+    content: `When I started thinking seriously about how I would set up my classroom, I assumed the layout was a logistical question. Where do the desks go? Where does my desk go? How do I get students in and out without anyone tripping over a backpack? What I did not realise is that the room itself is part of the curriculum. Marx, Fuhrer and Hartig put it plainly in their 2000 study: classrooms are physical entities as well as organisational units, and the physical characteristics of a setting shape the behaviour of the people inside it. That single idea has reshaped how I plan to set up my own space.
 
 Their study followed a fourth-grade class for eight weeks, rotating the students between a traditional row-and-column arrangement and a semicircular one. The result was clear. Children asked significantly more questions when seated in the semicircle. The researchers connect this back to Steinzor's much older finding that face-to-face contact encourages social interaction. In rows, students are oriented toward the back of someone's head. In a semicircle, they can see each other and the teacher at once. Eye contact is unobstructed. Presence is felt more directly. The room invites participation rather than discouraging it.
 
@@ -21,17 +21,17 @@ So my plan is to build the room around a modified semicircle or horseshoe for wh
 One caution the researchers raised stays with me. They noted that even in the semicircle, the overall rate of question-asking was still low, around three questions per lesson for the whole class. The room helps, but the room is not enough. Teacher style, classroom culture, and the kinds of questions I model all still matter. The physical environment is a foundation. It is not a substitute for the relationships and habits I build on top of it.
 
 What I take from all of this, heading into my own classroom, is that I cannot afford to treat the furniture as an afterthought. Every choice about where students sit is a choice about who gets to speak, who gets seen, and what kind of thinking the room makes possible.`,
-  date: new Date('2026-05-02'),
-  tags: ['classroom setup', 'social studies', 'philosophy', 'inquiry'],
-  coverColor: 'bg-amber-100',
-  author: { name: 'Kris', role: 'Teacher Candidate, Brock University' },
-},
-{
-  id: '2',
-  title: 'Instructional Approaches for Social Studies',
-  excerpt:
-    'Q: The instructional approaches you will use to teach social studies',
-  content: `The most useful thing I took from my inquiry into multilingual learners was not actually about language. It was about how to design instruction. When I went back through my notes from Cummins (2021), Bale et al. (2023), and the Ontario document on English language learners, I realized that the strategies they were describing were not narrow tricks for one population of students. They were a philosophy of teaching. The same philosophy I want to apply to how I teach social studies generally.
+    date: new Date('2026-05-02'),
+    tags: ['classroom setup', 'social studies', 'philosophy', 'inquiry'],
+    coverColor: 'bg-amber-100',
+    author: { name: 'Kris', role: 'Teacher Candidate, Brock University' },
+  },
+  {
+    id: '2',
+    title: 'Instructional Approaches for Social Studies',
+    excerpt:
+      'Q: The instructional approaches you will use to teach social studies',
+    content: `The most useful thing I took from my inquiry into multilingual learners was not actually about language. It was about how to design instruction. When I went back through my notes from Cummins (2021), Bale et al. (2023), and the Ontario document on English language learners, I realized that the strategies they were describing were not narrow tricks for one population of students. They were a philosophy of teaching. The same philosophy I want to apply to how I teach social studies generally.
 
 The core idea is this: lower the threshold between a student and their thinking. Do not make them perform in a particular form, language, or style before they are allowed to participate in the actual cognitive work of the subject. That sentence sounds simple, but once I sat with it, it started shaping almost every instructional decision I was making. Below are the approaches it has led me toward, and why each one matters.
 
@@ -50,18 +50,23 @@ This is connected to Cummins's idea of identity texts, which are pieces of work 
 Bale et al. (2023) found that teacher candidates near the end of their program suggested language-inclusive strategies less often than candidates near the beginning of the program (p. 183). The system was teaching them out of these ideas. One candidate's AT told him, "OK there buddy, good luck with that. I want nothing to do with that." That finding stays with me, because it warns me about something important. The instructional approaches I am committing to here will be under pressure once I am in a school. There will be timetables, prep periods, colleagues who do it differently, and report card deadlines that push toward simpler, faster, more standardized teaching.
 
 So I am writing this down now, before that pressure starts. The instructional approaches I want for my social studies classroom are these. Comfort first, then stretch. Multiple modes of expression for the same thinking. Identity placed at the centre, not the margins. A room that reflects the people in it. Not because they are new or trendy. Because they let every student do the actual thinking. And in social studies, the actual thinking is the whole point.`,
-  date: new Date('2026-05-12'),
-  tags: ['instructional approaches', 'social studies', 'philosophy', 'translanguaging'],
-  coverColor: 'bg-rose-100',
-  author: { name: 'Kris', role: 'Teacher Candidate, Brock University' },
-},
+    date: new Date('2026-05-12'),
+    tags: [
+      'instructional approaches',
+      'social studies',
+      'philosophy',
+      'translanguaging',
+    ],
+    coverColor: 'bg-rose-100',
+    author: { name: 'Kris', role: 'Teacher Candidate, Brock University' },
+  },
 
-{
-  id: '3',
-  title: 'Different Lenses, Same World',
-  excerpt:
-    'Q: How you expect to integrate social studies and other subject areas',
-  content: `When I plan a unit now, I keep coming back to a single idea: the world we are asking students to understand does not arrive divided into subjects. Climate, migration, food, technology, identity, water, history. None of these things politely sort themselves into a Science period and a Social Studies period and a Language period. The dividing lines we draw on a school timetable are conveniences for adults. They are not how the world is.
+  {
+    id: '3',
+    title: 'Different Lenses, Same World',
+    excerpt:
+      'Q: How you expect to integrate social studies and other subject areas',
+    content: `When I plan a unit now, I keep coming back to a single idea: the world we are asking students to understand does not arrive divided into subjects. Climate, migration, food, technology, identity, water, history. None of these things politely sort themselves into a Science period and a Social Studies period and a Language period. The dividing lines we draw on a school timetable are conveniences for adults. They are not how the world is.
 
 So when I think about integration, I do not start from "how can I fit social studies into other subjects." I start from somewhere different. Each subject is a lens. Each one looks at the same world and notices something the others do not. Science asks how the world works. Mathematics asks what we can measure and model. Language asks how we make meaning through words. Visual arts asks what we can see and express. And social studies asks something the others cannot quite ask on their own: who is affected, what does this mean for the people living through it, what are our responsibilities, whose voice has been heard and whose has been left out.
 
@@ -78,17 +83,17 @@ This matters especially for the students I have been thinking about most. A stud
 I am also aware that integration is harder than the way I am describing it here. Real timetables, prep periods, assessment requirements, and report cards all push against this kind of fluid planning. But the answer to those pressures is not to give up on integration. It is to be honest about what social studies actually is. It is not a content area to fit in around the edges. It is the subject that asks what all of this means for human beings. Without that lens, science risks becoming technical, language risks becoming decorative, and the curriculum risks becoming a list of facts no student has any reason to care about.
 
 I want my future classroom to feel like a place where the lenses are always within reach. Where a question about water in a science lesson can become a question about who has access to clean water, and then a question about how communities have organized around it, and then a question about how people across cultures have written and spoken about it. Not because I am trying to cram four subjects into one period, but because that is how real curiosity actually moves. From one lens to another. Around the same world.`,
-  date: new Date('2026-05-11'),
-  tags: ['integration', 'social studies', 'philosophy', 'curriculum design'],
-  coverColor: 'bg-sky-100',
-  author: { name: 'Kris', role: 'Teacher Candidate, Brock University' },
-},
+    date: new Date('2026-05-11'),
+    tags: ['integration', 'social studies', 'philosophy', 'curriculum design'],
+    coverColor: 'bg-sky-100',
+    author: { name: 'Kris', role: 'Teacher Candidate, Brock University' },
+  },
   {
     id: '4',
     title: 'Getting Quiet Students to Participate',
-    excerpt:
-      'Creating genuine safety for hesitant voices.',
-    content: 'Make pancakes and extort maple syrup from Canadian Walter White (aka Doug)...That maple syrup be 99.999% pure!',
+    excerpt: 'Creating genuine safety for hesitant voices.',
+    content:
+      'Make pancakes and extort maple syrup from Canadian Walter White (aka Doug)...That maple syrup be 99.999% pure!',
     date: new Date('2025-05-13'),
     tags: ['student engagement'],
     coverColor: 'bg-purple-100',
@@ -149,3 +154,23 @@ export const mockResources: Resource[] = [
     date: new Date('2025-01-01'),
   },
 ]
+
+import type { AboutData } from '@/types'
+
+export const mockAbout: AboutData = {
+  name: 'Kris Orel',
+  role: 'Teacher',
+  coverColor: 'bg-indigo-100',
+  background: [
+    'Write a few sentences about where you are from, how you got into teaching, and what subject or age group you work with.',
+    'This is your space — make it personal and honest.',
+  ],
+  philosophy: [
+    'What do you believe about how students learn best? What kind of classroom do you try to build?',
+    'What matters most to you as an educator? This is a good place to be direct about your values.',
+  ],
+  blogDescription: [
+    'Teaching Journey is a personal log of my experiences in the classroom. It is not a guide or a how-to — it is an honest record of what I am learning, what is working, and what is not.',
+    'If you are a fellow teacher, a student, or just curious about what the job actually looks like from the inside, I hope you find something useful here.',
+  ],
+}

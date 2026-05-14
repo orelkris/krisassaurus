@@ -4,6 +4,7 @@ import AppLayout from '@/components/layout/AppLayout'
 import BlogListPage from '@/pages/BlogListPage'
 import BlogPostPage from '@/pages/BlogPostPage'
 import ResourcesPage from '@/pages/ResourcesPage'
+import AboutPage from '@/pages/AboutPage'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route path="/" element={<BlogListPage />} />
             <Route path="/post/:id" element={<BlogPostPage />} />
             <Route path="/resources" element={<ResourcesPage />} />
+            <Route path="/about" element={<AboutPage />} />
           </Route>
         </Routes>
       </FilterProvider>
