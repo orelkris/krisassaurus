@@ -55,16 +55,16 @@ function ResourcesPage() {
           No resources found.
         </div>
       ) : (
-        <table className="w-full text-sm">
+        <table className="w-full text-sm table-fixed">
           <thead>
             <tr className="border-b border-gray-200">
-              <th className="p-4 text-left font-semibold text-gray-900 whitespace-nowrap">
+              <th className="p-4 text-left font-semibold text-gray-900">
                 Resource
               </th>
               <th className="p-4 text-left font-semibold text-gray-900 hidden md:table-cell">
                 Description
               </th>
-              <th className="p-4 text-left font-semibold text-gray-900 whitespace-nowrap">
+              <th className="p-4 text-left font-semibold text-gray-900 w-32">
                 Topic
               </th>
             </tr>
@@ -75,7 +75,7 @@ function ResourcesPage() {
                 key={resource.id}
                 className="border-b border-gray-100 hover:bg-gray-50 transition-colors"
               >
-                <td className="p-4 align-top whitespace-nowrap">
+                <td className="p-4 align-top">
                   <a
                     href={resource.url}
                     target="_blank"
