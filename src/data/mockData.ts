@@ -72,47 +72,6 @@ export const mockPosts: Post[] = [
     tags: ['integration', 'social studies', 'philosophy', 'curriculum design'],
     author: { name: 'Kris', role: 'Teacher Candidate, Brock University' },
   },
-  {
-    id: '4',
-    title: 'Getting Quiet Students to Participate',
-    excerpt: 'Creating genuine safety for hesitant voices.',
-    content: [
-      'Make pancakes and extort maple syrup from Canadian Walter White (aka Doug)...That maple syrup be 99.999% pure!',
-    ],
-    date: new Date('2025-05-13'),
-    tags: ['student engagement'],
-    author: { name: 'Barb', role: 'Teacher' },
-  },
-  {
-    id: '5',
-    title: 'Parent Communication That Builds Trust',
-    excerpt:
-      'What I learned about reaching out early, often, and with the right tone.',
-    content: ['This is just temporary text...'],
-    date: new Date('2025-02-14'),
-    tags: ['communication'],
-    author: { name: 'Kris', role: 'Teacher' },
-  },
-  {
-    id: '6',
-    title: 'Using Exit Tickets Effectively',
-    excerpt:
-      'Exit tickets are only useful if you actually do something with the data. Here is my system.',
-    content: ['This is just temporary text...'],
-    date: new Date('2025-02-28'),
-    tags: ['assessment'],
-    author: { name: 'Kris', role: 'Teacher' },
-  },
-  {
-    id: '7',
-    title: 'Reflecting on My First Full Term',
-    excerpt:
-      'What changed, what surprised me, and what I am carrying into next term.',
-    content: ['This is just temporary text...'],
-    date: new Date('2025-03-10'),
-    tags: ['reflection'],
-    author: { name: 'Kris', role: 'Teacher' },
-  },
 ]
 
 export const mockResources: Resource[] = [
