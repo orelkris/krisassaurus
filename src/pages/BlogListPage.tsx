@@ -4,7 +4,7 @@ import BlogGrid from '@/components/blog/BlogGrid'
 import Pagination from '@/components/blog/Pagination'
 import { useFilter } from '@/context/FilterContext'
 import { usePaginatedPosts } from '@/hooks/usePaginatedPosts'
-import { mockPosts as posts } from '@/data/mockData'
+import {  posts } from '@/data/posts'
 
 function BlogListPage() {
   // const { posts, loading, error } = usePosts()

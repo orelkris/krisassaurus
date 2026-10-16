@@ -1,18 +1,18 @@
 import { useState, useMemo } from 'react'
 import TwoColumnLayout from '@/components/layout/TwoColumnLayout'
-import { mockResources } from '@/data/mockData'
+import { resources } from '@/data/resources'
 import { getTopicColor } from '@/data/topicColors'
 
 function ResourcesPage() {
   const [selectedTopic, setSelectedTopic] = useState<string | null>(null)
 
   const topics = useMemo(() => {
-    return [...new Set(mockResources.map((r) => r.topic))].sort()
+    return [...new Set(resources.map((r) => r.topic))].sort()
   }, [])
 
   const filteredResources = useMemo(() => {
-    if (selectedTopic === null) return mockResources
-    return mockResources.filter((r) => r.topic === selectedTopic)
+    if (selectedTopic === null) return resources
+    return resources.filter((r) => r.topic === selectedTopic)
   }, [selectedTopic])
 
   const sidebar = (

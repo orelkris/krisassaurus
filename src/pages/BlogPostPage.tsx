@@ -1,12 +1,12 @@
 import { useParams, Link } from 'react-router-dom'
-import { mockPosts } from '@/data/mockData'
+import { posts } from '@/data/posts'
 import TwoColumnLayout from '@/components/layout/TwoColumnLayout'
 import { getTagColor } from '@/data/tagColors'
 import AuthorTag from '@/components/blog/AuthorTag'
 
 function BlogPostPage() {
   const { id } = useParams<{ id: string }>()
-  const post = mockPosts.find((p) => p.id === id)
+  const post = posts.find((p) => p.id === id)
 
   if (!post) {
     return (

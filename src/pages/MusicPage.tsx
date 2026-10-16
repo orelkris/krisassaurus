@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react'
 import TwoColumnLayout from '@/components/layout/TwoColumnLayout'
 import CompositionCard from '@/components/music/CompositionCard'
-import { mockCompositions } from '@/data/mockData'
+import { compositions } from '@/data/compositions'
 
 function MusicPage() {
   const [selectedMonth, setSelectedMonth] = useState<string | null>(null)
@@ -9,7 +9,7 @@ function MusicPage() {
   const months = useMemo(() => {
     const monthMap = new Map<string, number>()
 
-    mockCompositions.forEach((c) => {
+    compositions.forEach((c) => {
       const year = c.date.getFullYear()
       const month = String(c.date.getMonth() + 1).padStart(2, '0')
       const key = `${year}-${month}`
@@ -29,8 +29,8 @@ function MusicPage() {
   }, [])
 
   const filtered = useMemo(() => {
-    if (selectedMonth === null) return mockCompositions
-    return mockCompositions.filter((c) => {
+    if (selectedMonth === null) return compositions
+    return compositions.filter((c) => {
       const year = c.date.getFullYear()
       const month = String(c.date.getMonth() + 1).padStart(2, '0')
       return `${year}-${month}` === selectedMonth

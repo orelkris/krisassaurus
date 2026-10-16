@@ -4,7 +4,7 @@ import TwoColumnLayout from '@/components/layout/TwoColumnLayout'
 import AboutSection from '@/components/about/AboutSection'
 import BackToTopButton from '@/components/common/BackToTopButton'
 import AuthorTag from '@/components/blog/AuthorTag'
-import { mockAbout } from '@/data/mockData'
+import { about } from '@/data/about'
 import { scrollToTop } from '@/lib/scroll'
 
 const navButtonClass = (isActive: boolean) =>
@@ -18,7 +18,7 @@ const stepButtonClass =
   'text-sm text-gray-500 hover:text-gray-900 transition-colors cursor-pointer'
 
 function AboutPage() {
-  const { coverColor, imageUrl, sections } = mockAbout
+  const { coverColor, imageUrl, sections } = about
   const [searchParams, setSearchParams] = useSearchParams()
 
   // No ?section= (or an unknown one) means "show all sections"
