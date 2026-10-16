@@ -23,19 +23,26 @@ export interface Resource {
   date: Date
 }
 
+export type AboutMedia =
+  | { type: 'youtube'; youtubeId: string; title: string }
+  | { type: 'video'; src: string; title: string; poster?: string }
+  | { type: 'image'; src: string; alt: string; caption?: string }
+  | { type: 'audio'; src: string; title: string }
+
+export interface AboutSectionData {
+  id: string
+  label: string
+  paragraphs: string[]
+  media?: AboutMedia
+  links?: { label: string; href: string }[]
+}
+
 export interface AboutData {
   name: string
   role: string
   coverColor: string
   imageUrl?: string
-  aboutMe: string[]
-  blogDescription: string[]
-  background: string[]
-  philosophy: string[]
-  standpoint?: {
-    text: string[]
-    youtubeId: string
-  }
+  sections: AboutSectionData[]
 }
 
 export interface Composition {

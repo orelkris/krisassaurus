@@ -6,7 +6,7 @@ import BlogPostPage from '@/pages/BlogPostPage'
 import ResourcesPage from '@/pages/ResourcesPage'
 import AboutPage from '@/pages/AboutPage'
 import MusicPage from '@/pages/MusicPage'
-import ScrollToTop from '@/components/ScrollToTop'
+import ScrollToTop from '@/components/common/ScrollToTop'
 
 function App() {
   return (
