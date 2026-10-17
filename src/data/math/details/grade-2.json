@@ -1,0 +1,3134 @@
+{
+    "g2-b1.1": {
+        "keyConcepts": [
+            {
+                "text": "Reading numbers involves interpreting them as a quantity when they are expressed in words, in standard notation, or represented using physical objects or diagrams.",
+                "items": []
+            },
+            {
+                "text": "The numerals 0 to 9 are used to form numbers. They are referred to as the digits in a number and each digit corresponds to a place value. For example, in the number 107, the digit 1 represents 1 hundred, the digit 0 represents 0 tens, and the digit 7 represents 7 ones.",
+                "items": []
+            },
+            {
+                "text": "There are patterns in the way numbers are formed. Each decade repeats the 0 to 9 counting sequence. Any quantity, no matter how great, can be described in terms of its place-value.",
+                "items": []
+            },
+            {
+                "text": "A number can be represented in expanded form (e.g., 187 = 100 + 80 + 7 or 1 × 100 + 8 × 10 + 7 × 1) to show place-value relationships.",
+                "items": []
+            },
+            {
+                "text": "Numbers can be composed and decomposed in various ways, including by place value.",
+                "items": []
+            },
+            {
+                "text": "Numbers are composed when two or more numbers are combined to create a larger number. For example, 30, 20, and 5 are composed to make 55.",
+                "items": []
+            },
+            {
+                "text": "Numbers are decomposed when they are represented as a composition of two or more smaller numbers. For example, 125 can be represented as 100 and 25; or 50, 50, 20, and 5.",
+                "items": []
+            },
+            {
+                "text": "Numbers are used throughout the day, in various ways and contexts. Most often numbers describe and compare quantities. They express magnitude and provide a way to answer questions such as “how much?” and “how much more?”.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "representing whole numbers:",
+                "items": [
+                    {
+                        "text": "in words (e.g., one hundred fifty-eight)",
+                        "items": []
+                    },
+                    {
+                        "text": "using base ten materials (e.g., 1 hundred, 5 tens, 8 ones):",
+                        "items": []
+                    },
+                    {
+                        "text": "as numerals in standard notation (e.g., 158)",
+                        "items": []
+                    },
+                    {
+                        "text": "in expanded form (e.g., 100 + 50 + 8)",
+                        "items": []
+                    },
+                    {
+                        "text": "on a number line (e.g., 43):",
+                        "items": []
+                    },
+                    {
+                        "text": "as the distance (magnitude) from zero on a number line (e.g., 67):",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "composing whole numbers:",
+                "items": [
+                    {
+                        "text": "composing 150 using quarters:",
+                        "items": [
+                            {
+                                "text": "25¢, 50¢, 75¢, 100¢, 125¢, 150¢ (six quarters in all)",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "composing using relational rods (e.g., 124 can be composed using 12 tens and 2 twos):",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "decomposing whole numbers: 7 25 50 6 and 1 2 tens and 5 ones 5 tens 5 and 2 1 ten and 15 ones 4 tens and 10 ones 4 and 3 25 ones 10 fives 3 and 4 5 tens 2 and 5 25 + 25 1 and 6",
+                "items": [
+                    {
+                        "text": "117 in expanded form:",
+                        "items": [
+                            {
+                                "text": "100 + 10 + 7",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "130 on a number line:",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Have students look for numbers up to 200 in the world around them and use these examples to describe and compare quantities and measurements. Have them use other real-life examples to show what numbers and quantities up to 200 look like. Ask questions such as “How many?” and “How many more?” to engage students in the world of numbers.",
+                "items": []
+            },
+            {
+                "text": "Have students create base ten materials by bundling craft sticks into groups of tens and hundreds. For example, they could show 158 as 1 hundred-stick bundle made up of 10 ten-stick bundles, 5 ten-stick bundles, and 8 single sticks. Have them write the quantity as a number and in expanded form (100 + 50 + 8) to show the decomposition. Support students in decomposing and composing the quantity in more than one way by unbundling and re-bundling the sticks (e.g., as 15 ten-stick bundles and 8 single sticks; as 13 ten-stick bundles and 28 single sticks), and have them record their combinations using number sentences (equations). Ensure that students understand that no matter how the sticks are bundled, the total quantity remains the same.",
+                "items": []
+            },
+            {
+                "text": "Have students use an open number line to show various ways to reach 189 and record the sequences of jumps using number sentences. Emphasize that each of these ends at the same point – 189 – and that there are many different ways to make the same quantity.",
+                "items": []
+            },
+            {
+                "text": "As students become familiar with number lines and develop an understanding of the various ways they can partition a number, have them create clues to determine Which Number Am I?. For example:",
+                "items": [
+                    "My number has 1 hundred, 6 tens, and 6 ones.",
+                    "My number has 16 tens and 16 ones.",
+                    "My number has three digits, is less than 130, has a zero in the tens place, and has 9 ones."
+                ]
+            },
+            {
+                "text": "Have students visualize these amounts and use models such as the number line or base ten materials to verify their predictions. Challenge students to create clues that have exactly two possible answers (e.g., I am an odd number that is less than 125, with 12 tens).",
+                "items": []
+            }
+        ],
+        "tools": [
+            "number line"
+        ]
+    },
+    "g2-b1.2": {
+        "keyConcepts": [
+            {
+                "text": "Numbers are compared and ordered according to their “how muchness” or magnitude.",
+                "items": []
+            },
+            {
+                "text": "Numbers with the same units can be compared directly (e.g., 145 minutes compared to 62 minutes). Numbers that do not show a unit are assumed to have units of ones (e.g., 75 and 12 are considered as 75 ones and 12 ones).",
+                "items": []
+            },
+            {
+                "text": "Benchmark numbers can be used to compare quantities. For example, 32 is less than 50 and 62 is greater than 50, so 32 is less than 62.",
+                "items": []
+            },
+            {
+                "text": "Numbers can be compared by their place value. For example, 200 is greater than 20 because the digit 2 in 200 represents 2 hundreds and the 2 in 20 represents 2 tens; one hundred is greater than one ten.",
+                "items": []
+            },
+            {
+                "text": "Numbers can be ordered in ascending order – from least to greatest – or they can be ordered in descending order – from greatest to least.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "comparing whole numbers:",
+                "items": [
+                    {
+                        "text": "using digit values:",
+                        "items": [
+                            {
+                                "text": "105 and 107:",
+                                "items": [
+                                    {
+                                        "text": "the hundreds and the tens digits are the same, so compare the ones digits",
+                                        "items": []
+                                    },
+                                    {
+                                        "text": "since the digit 7 is greater than 5, 107 is greater than 105",
+                                        "items": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "text": "using benchmark numbers like 0, 50, 100, 150, and 200:",
+                        "items": [
+                            {
+                                "text": "132 and 130: 130 is closer to 100 than is 132, so 130 is less than 132",
+                                "items": []
+                            },
+                            {
+                                "text": "147 and 155: 147 is less than 150 and 155 is greater than 150, so 155 is greater than 147",
+                                "items": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "ordering whole numbers:",
+                "items": [
+                    {
+                        "text": "arranging numbers in ascending order from least to greatest:",
+                        "items": [
+                            {
+                                "text": "32, 98, 107, 120, 143",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "arranging numbers in descending order from greatest to least:",
+                        "items": [
+                            {
+                                "text": "143, 120, 107, 98, 32",
+                                "items": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Give students any two digits (using cards from 0 to 9), and have them make the two possible two-digit numbers. Ask them which of the two numbers is greater and which is lesser. Have them use place-value language or other number relationships to explain how they decided to order the digits. Ground the conversation in concrete materials to ensure that students understand the significance of the two different place-value columns.",
+                "items": []
+            },
+            {
+                "text": "Create a physical number line using a clothesline. On the clothesline, use clothespins to hang benchmark numbers proportionally from 0 to 200 (e.g., 0, 50, 100, 150, 200). Give students a number card (any number from 0 to 200), and have them use the benchmark numbers to decide where to position it on the clothesline. Ask them to explain their reasoning.",
+                "items": []
+            },
+            {
+                "text": "The clothesline task from Sample Task 2 can be extended to a partner or trio game. Each player takes five cards from a deck of cards numbered from 0 to 200 and organizes their cards in front of them, face up, with numbers arranged from least to greatest. One after another, players pick up a card from the remaining deck and place it in the correct order with respect to their other cards. The game continues until a player gets three consecutive numbers. Support students in comparing the numbers on their cards and discussing their strategies for ordering.",
+                "items": []
+            },
+            {
+                "text": "Create a 0 to 200 chart, leaving “blanks” in the chart that students must fill in. Have them explain how they figured out the missing numbers, and, as they do, highlight the patterns in the number system.",
+                "items": []
+            }
+        ],
+        "tools": [
+            "number line"
+        ]
+    },
+    "g2-b1.3": {
+        "keyConcepts": [
+            {
+                "text": "Estimation is used to approximate large quantities and develops a sense of magnitude.",
+                "items": []
+            },
+            {
+                "text": "Different strategies can be used to estimate the quantity in a collection. For example, a small portion of the collection can be counted, and then used to visually skip count the rest of the collection.",
+                "items": []
+            },
+            {
+                "text": "The greater the number of objects in the skip count, the fewer the number of counts are needed.",
+                "items": []
+            },
+            {
+                "text": "Although there are different ways to count a collection (see B1.4), if the count is carried out correctly, the count will always be the same.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "collections:",
+                "items": [
+                    {
+                        "text": "unorganized collection of different types of objects:",
+                        "items": []
+                    },
+                    {
+                        "text": "tulips in the garden",
+                        "items": []
+                    },
+                    {
+                        "text": "cars in the parking lot",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Fill identical containers with varying amounts of the same countable object, up to 200 objects in each container. For example, several mason jars could be filled with different numbers of centicubes. Place a label with the actual quantity on one or more of the containers so that students have a benchmark for their estimates. Have students use the benchmark container(s) and other spatial strategies to estimate the amounts in the mystery containers and explain their reasoning.",
+                "items": []
+            },
+            {
+                "text": "Fill identical containers with the same number of different-size objects (e.g., one container has 154 connecting cubes and another has 154 centicubes). Place a label with the actual quantity on one container, and have students estimate the quantity of objects in the other. Have students record their estimates and verify by skip counting (see B1.4). As students come to notice that the containers have the same quantity of objects, ask them to explain how this could be. Emphasize that a quantity can look very different depending on what is being counted. To connect this to measurement work, use the language of units (e.g., the size of the unit changes, but the quantity is the same).",
+                "items": []
+            },
+            {
+                "text": "Develop estimation tasks by filling different-shape containers with an equal number of same-size (congruent) objects (e.g., fill both a tall, thin container and a short, wide container with 135 centicubes). Have students estimate the quantities in each and skip count to check their estimates. Support students in recognizing that the shape of the container also affects what a certain quantity looks like. Discuss the different strategies that students used, for example, unitizing a group of 10 and visually repeating that unit to estimate how many groups of 10 it takes to fill the container.",
+                "items": []
+            }
+        ],
+        "tools": [
+            "connecting cubes"
+        ]
+    },
+    "g2-b1.4": {
+        "keyConcepts": [
+            {
+                "text": "The count of objects does not change, regardless of how the objects are arranged (e.g., close together or far apart).",
+                "items": []
+            },
+            {
+                "text": "Counting usually has a purpose, such as determining how many are in a collection, how long before something will happen, or to compare quantities and amounts.",
+                "items": []
+            },
+            {
+                "text": "Counting objects may involve counting an entire collection or counting the quantity of objects that satisfy certain attributes.",
+                "items": []
+            },
+            {
+                "text": "A count can start from zero or from any other starting number.",
+                "items": []
+            },
+            {
+                "text": "The unit of skip count is identified as the number of objects in a group. For example, when counting by twos, each group has two objects.",
+                "items": []
+            },
+            {
+                "text": "Counting can involve a combination of skip counts and single counts.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "counting experiences using tools:",
+                "items": [
+                    {
+                        "text": "using play money:",
+                        "items": [
+                            {
+                                "text": "by 1s using loonies",
+                                "items": []
+                            },
+                            {
+                                "text": "by 2s using toonies",
+                                "items": []
+                            },
+                            {
+                                "text": "by 5s using nickels or $5 bills",
+                                "items": []
+                            },
+                            {
+                                "text": "by 10s using dimes or $10 bills",
+                                "items": []
+                            },
+                            {
+                                "text": "by 20s using $20 bills",
+                                "items": []
+                            },
+                            {
+                                "text": "by 50s using $50 bills",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "using a grid, hundred chart, or number line to show counts from a starting number, for example, showing counting by 10:",
+                        "items": []
+                    },
+                    {
+                        "text": "using an open number line to show hops or to skip count:",
+                        "items": [
+                            {
+                                "text": "counting forward by 20s, 25s, and 50s, starting at 0:",
+                                "items": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "To ensure that students can count up to and over 100, have them count by 1s from 96 to 120. Listen for students who do not yet recognize that the decades pattern repeats in every hundred and instead believe that the next number after 109 is 200 (e.g., the next big number that they know). Support students in developing their understanding by using a calculator to display the counting sequence (e.g., by repeatedly pressing the equal key: 96 + 1 = = = = ...). Before each tap of the equal sign, have students predict the next number in the sequence. Look for other opportunities, such as the page numbers in a book, to reinforce the patterns that exist in every hundred and in every decade.",
+                "items": []
+            },
+            {
+                "text": "Create a two-hundred chart, and have students count orally by 20s, 25s, and 50s. Discuss patterns that they notice in each sequence that might make the skips easier to recall.",
+                "items": []
+            },
+            {
+                "text": "Ask students what coins they might have if they had 175¢ in total, or what bills they might have if they had $135. Ask them to represent the money in a drawing and explain how they could use skip counting to count it.",
+                "items": []
+            }
+        ],
+        "tools": [
+            "hundred chart",
+            "money",
+            "coins",
+            "calculator"
+        ]
+    },
+    "g2-b1.5": {
+        "keyConcepts": [
+            {
+                "text": "A whole number is even if it can be shared into two equal-sized groups or many groups of 2 without a remainder.",
+                "items": []
+            },
+            {
+                "text": "A whole number is odd if it cannot be shared into two equal-sized groups or into many groups of 2 without a remainder.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "even numbers as matching pairs:",
+                "items": [
+                    {
+                        "text": "4 and 6 have matching pairs (even):",
+                        "items": []
+                    },
+                    {
+                        "text": "5 and 7 have one left over (odd):",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Have students describe things that come in pairs. For example, animals commonly have two eyes and two ears; eggs come in cartons of six pairs; socks are sold in pairs. Use the idea of pairs to introduce the term even (i.e., a number is even if it can be split into sets of 2 [pairs]). Then have students consider things that do not come in even arrangements. For example, there are five fingers on a hand; many animals have one tail; tricycles have three wheels. Have students create a collage of objects with even and odd groupings. Have them explain how they know which objects represent even numbers and which represent odd numbers.",
+                "items": []
+            },
+            {
+                "text": "To strengthen their understanding of even and odd numbers, have students identify the even and odd numbers on a two-hundred chart and identify common characteristics of each. Have students think about other numbers in real-life contexts (e.g., their street address; the number of their favourite hockey player; number of siblings; their age) and discuss whether each of those numbers is even or odd. Fractions",
+                "items": []
+            }
+        ],
+        "tools": [
+            "hundred chart"
+        ]
+    },
+    "g2-b1.6": {
+        "keyConcepts": [
+            {
+                "text": "Fair-sharing or equal-sharing means that quantities are shared equally. For a whole to be shared equally, it must be partitioned so that each sharer receives the same amount.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "possible drawings for equal-sharing problems:",
+                "items": [
+                    {
+                        "text": "10 carrot sticks are shared equally:",
+                        "items": [
+                            {
+                                "text": "between 2 students: 5 each",
+                                "items": []
+                            },
+                            {
+                                "text": "between 3 students:",
+                                "items": []
+                            },
+                            {
+                                "text": "between 6 students:",
+                                "items": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Pose (or have students pose) a variety of equal-sharing problems that involve 2, 3, and 4 sharers. In general, difficulty increases depending on the number of sharers (e.g., 2, then 4, then 3) and on whether the solution results in a mixed number with a unit fraction (e.g., 3 and one fourth); a mixed number with a non-unit fraction (e.g., 3 and two thirds or 3 and 2 one thirds); or a non-unit fraction (e.g., two thirds). The following are examples that increase in complexity:",
+                "items": [
+                    "If 9 blocks of clay are shared equally between 4 students, how many blocks does each student get? (Each student gets 2 and one fourth blocks of clay.)",
+                    "If 3 friends want to share 4 submarine sandwiches so that each person gets the same amount, how much does each friend get? (Each friend gets 1 and one third submarine sandwiches.)",
+                    "There are 8 pieces of ribbon to be shared by 3 students for their craft. If they share the ribbon equally, how much ribbon does each student get? (Each student gets 2 and two thirds pieces of ribbon, or 2 and 2 one thirds pieces of ribbon).",
+                    "6 friends have 8 granola bars. If they share the granola bars equally, how many granola bars does each friend get? (Each friend gets 1 and two sixths granola bars each or 1 and 2 one sixths granola bars.)"
+                ]
+            },
+            {
+                "text": "Have students model each situation with a drawing, and support those who would benefit from acting out the situation using strips of paper. Ask students how they decided to share the pieces that were left over. Introduce fraction names (halves, fourths, thirds, sixths), and support students in understanding 1 the language and conventions of mixed numbers and fractions; for example, 1 3 is 1 and one third. Students should not be expected to write fractions or mixed numbers using fraction notation, but teachers may model this convention, making connections to the representations when appropriate.",
+                "items": []
+            }
+        ],
+        "tools": []
+    },
+    "g2-b1.7": {
+        "keyConcepts": [
+            {
+                "text": "When something is shared fairly, or equally as three pieces, each piece is 1 one third of the original amount. Three one thirds make up a whole.",
+                "items": []
+            },
+            {
+                "text": "When something is shared fairly, or equally as six pieces, each piece is 1 one sixth of the original amount. Six one sixths make up a whole.",
+                "items": []
+            },
+            {
+                "text": "If the original amount is shared as three pieces or six pieces, the fractions 1 one third and 2 one sixths (two sixths) are equivalent, and 2 one thirds (two thirds) and 4 one sixths (four sixths) are equivalent.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "equal-sharing context showing that one third and two sixths are equal:",
+                "items": [
+                    {
+                        "text": "3 students share 4 four pieces of paper: Sharing with Thirds Sharing with Sixths 1 and two sixths (2 one sixths) each",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Create and pose equal-sharing situations, such as the following, that lead students to equivalent answers (i.e., one third and two sixths):",
+                "items": [
+                    "6 friends are equally sharing 8 apples. How much does each friend get? (Each friend gets 1 and one third apples, or 1 and two sixths apples.)",
+                    "3 friends equally share a cheese pizza. (Each friend gets one third of the cheese pizza). The 3 friends also equally share a pepperoni pizza of the same size that is cut into 6 equal pieces. (Each friend gets two sixths of the pepperoni pizza). Do the friends get more cheese or more pepperoni pizza? (Each friend gets two sixths of the pepperoni pizza, or one third of the pepperoni pizza, which is the same amount as the cheese pizza.)"
+                ],
+                "after": "Encourage students to act out each situation using pieces of paper, or model it with a drawing, and use the language of mixed numbers and fractions (one third, one sixth, two sixths) to describe the result. As students share their solutions, have them determine whether one third and two sixths of the apple or pizza represent the same amount. Support the conversation by having them use their paper models or drawings to explain their thinking."
+            }
+        ],
+        "tools": []
+    },
+    "g2-b2.1": {
+        "keyConcepts": [
+            {
+                "text": "When zero is added or subtracted from a quantity, the quantity does not change.",
+                "items": []
+            },
+            {
+                "text": "Two numbers can be added in any order because either order gives the same result.",
+                "items": []
+            },
+            {
+                "text": "When adding more than two numbers, it does not matter which two numbers are added first.",
+                "items": []
+            },
+            {
+                "text": "Addition and subtraction are inverse operations, and the same situation can be represented and solved using either operation. Addition can be used to check the answer to a subtraction question, and subtraction can be used to check the answer to an addition question.",
+                "items": []
+            },
+            {
+                "text": "Repeated addition can be used as a multiplication strategy by adding equal groups of objects to determine the total number of objects.",
+                "items": []
+            },
+            {
+                "text": "Repeated addition can also be used as a division strategy by adding equal groups of objects to reach a given total number of objects.",
+                "items": []
+            },
+            {
+                "text": "Repeated subtraction can be used as a division strategy by removing equal groups of objects from a given total number of objects.",
+                "items": []
+            },
+            {
+                "text": "Repeated addition or repeated subtraction can be used to check answers for multiplication and division calculations when they are not used as the initial strategy to do the multiplication or division calculation.",
+                "items": []
+            },
+            {
+                "text": "The commutative property for addition states that the order in which two numbers are added does not change the total. For example, 5 + 3 is the same as 3 + 5, because 3 can be added onto 5 or 5 can be added onto 3; either way the result is 8. This is particularly helpful when learning math facts (see B2.2).",
+                "items": []
+            },
+            {
+                "text": "The commutative property does not hold true for subtraction. For example, 5 – 4 = 1; however, it is not the same as 4 – 5 = –1. Students in Grade 2 do not need to know that 4 – 5 = –1, only that it has a result that is less than zero. To help students grasp this concept, show them how the scale on a thermometer includes numbers less than zero.",
+                "items": []
+            },
+            {
+                "text": "The associative property states that when adding a group of numbers, the pair of numbers added first does not matter; the result will be the same. For example, in determining the sum of 8 + 7 + 2, 8 and 2 can be added first and then that result can be added to 7. Using this property is particularly helpful when doing mental math (see B2.3) and when looking for ways to “make 10” is useful.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "some important properties of addition and subtraction:",
+                "items": [
+                    {
+                        "text": "identity property:",
+                        "items": [
+                            {
+                                "text": "7 + 0 = 7:",
+                                "items": []
+                            },
+                            {
+                                "text": "7 – 0 = 7:",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "commutative property of addition:",
+                        "items": [
+                            {
+                                "text": "4 + 2 = 2 + 4 = 6:",
+                                "items": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "checking calculations using the relationship between addition and subtraction:",
+                "items": [
+                    {
+                        "text": "checking that 24 – 7 is 17 by adding 7 onto 17:",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "relationship between addition and multiplication:",
+                "items": [
+                    {
+                        "text": "30 can be interpreted as:",
+                        "items": [
+                            {
+                                "text": "the sum of 5 + 5 + 5 + 5 + 5 + 5",
+                                "items": []
+                            },
+                            {
+                                "text": "six skip counts of 5:",
+                                "items": []
+                            },
+                            {
+                                "text": "“six groups of 5”:",
+                                "items": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "relationship between subtraction and division:",
+                "items": [
+                    {
+                        "text": "the hops on the number line below can be interpreted as:",
+                        "items": [
+                            {
+                                "text": "10 – 2 – 2 – 2 – 2 – 2 (repeated subtraction of two):",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "10 separated into groups of two, which results in five hops:",
+                        "items": [
+                            {
+                                "text": "2 + 2 + 2 + 2 + 2 = 10 +2 +2 +2 +2 +2 +2",
+                                "items": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Ask students to work with a partner to represent the following scenario using addition, multiplication, division, and subtraction:",
+                "items": [
+                    "Tomas is selling bags of popcorn for a fundraiser and wants to raise $12. Each bag costs $3. How many bags does Tomas need to sell?"
+                ]
+            },
+            {
+                "text": "This situation could be represented and solved with any of the following parallel number sentences: Addition and Multiplication Division and Subtraction",
+                "items": [
+                    "with division:",
+                    "with repeated addition (counting on):",
+                    "12 ÷ 3 = ?",
+                    "12 = 3 + 3 + 3 + 3 or 3, 6, 9, 12",
+                    "with repeated subtraction (counting",
+                    "with multiplication: down):",
+                    "? × 3 = 12",
+                    "12 − 3 − 3 − 3 − 3 = ?"
+                ],
+                "after": "Through discussion, support students’ understanding of the connections between the operations and the recognition that the same situation can be represented by different operations."
+            },
+            {
+                "text": "Use any of the sample problems that are provided for B2.4 to highlight these inverse relationships. Math Facts",
+                "items": []
+            }
+        ],
+        "tools": []
+    },
+    "g2-b2.2": {
+        "keyConcepts": [
+            {
+                "text": "The focus in Grade 1 math facts was on recalling and demonstrating addition facts for numbers up to 10, and related subtraction facts. In Grade 2, students will expand their range to include numbers that add up to 20, e.g., 9 + 9 = 18 and related subtraction facts, e.g., 18 – 9 = 9.",
+                "items": []
+            },
+            {
+                "text": "There are many strategies that can help with developing and understanding math facts:",
+                "items": [
+                    {
+                        "text": "Working with fact families, such as 7 + 6 = 13; 6 + 7 = 13; 13 – 7 = 6; 13 – 6 = 7.",
+                        "items": []
+                    },
+                    {
+                        "text": "Using doubles with counting on and counting back; for example, 7 + 9 can be thought of as 7 + 7 plus 2 more; 15 can be thought of as 16 less 1 (double 8 less one).",
+                        "items": []
+                    },
+                    {
+                        "text": "Using the commutative property (e.g., 5 + 8 = 13 and 8 + 5 = 13).",
+                        "items": []
+                    },
+                    {
+                        "text": "Using the identity property (e.g., 6 + 0 = 6 and 6 – 0 = 6).",
+                        "items": []
+                    },
+                    {
+                        "text": "\"Making 10\" by decomposing numbers in order to make 10. For example, to add 8 and 7, the 7 can be decomposed as 2 and 5, resulting in 8 + 2 + 5.",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "examples": [
+            {
+                "text": "strategies to develop addition facts:",
+                "items": [
+                    {
+                        "text": "doubles facts:",
+                        "items": [
+                            {
+                                "text": "8 + 8:",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "“near doubles\", “doubles plus one\", or “doubles minus one” facts:",
+                        "items": [
+                            {
+                                "text": "7 + 6:",
+                                "items": [
+                                    {
+                                        "text": "7+7−1",
+                                        "items": []
+                                    },
+                                    {
+                                        "text": "6+6+1",
+                                        "items": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "text": "“making 10” facts:",
+                        "items": [
+                            {
+                                "text": "3 + 8:",
+                                "items": [
+                                    {
+                                        "text": "2 + 8 + 1 = 11",
+                                        "items": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "strategies to develop subtraction facts:",
+                "items": [
+                    {
+                        "text": "“counting on by ones” and “using 10 as a bridge”:",
+                        "items": [
+                            {
+                                "text": "15 – 7:",
+                                "items": [
+                                    {
+                                        "text": "start at 7 and count up by ones: “8, 9, 10; that’s 3 and 5 more is 8”",
+                                        "items": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "text": "“back down through 10”:",
+                        "items": [
+                            {
+                                "text": "working backwards with 10 as a “bridge”",
+                                "items": []
+                            },
+                            {
+                                "text": "13 – 5 can be solved by subtracting 3 from 13 to get to 10, and then subtracting 2 from 10 to make 8",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "”think addition” with sums up to 20",
+                        "items": [
+                            {
+                                "text": "13 – 7:",
+                                "items": [
+                                    {
+                                        "text": "7 + ? = 13",
+                                        "items": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "using the commutative property of addition:",
+                "items": [
+                    {
+                        "text": "4 + 9 = 9 + 4 = 13",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Have students decompose 12 using single digits, representing each digit using concrete tools such as relational rods, beads, feathers, or rocks with ten frames. Help them make connections between facts such as 9 + 3 and 3 + 9 and their visual representations. Then have them use their decompositions to identify a fact family for 12 that uses these single digits (e.g., 3 + 9 = 12, 9 + 3 = 12, 12 – 3 = 9, and 12 – 9 = 3). Repeat this activity to create other fact families involving one-digit numbers.",
+                "items": []
+            },
+            {
+                "text": "Engage students in working through number strings related to strategies they are developing, such as “near doubles”: Addition Subtraction 8+8 20 – 10 9+8 20 – 11 8+7 20 – 9 7+8+4 9+8+4 Have students practise addition and subtraction facts by completing partitioning diagrams. Also, have students create their own diagrams for their classmates to solve. For example: Have students play games to notice relationships among numbers and the operations and to practise basic facts.",
+                "items": [
+                    "Number Strip Cover-Up. Have students each make a strip of paper with numbers spread out from 0 to 20. They take turns rolling four dice and choosing to add or subtract any combination of those four numbers to create a total. For example, a roll of 3, 5, 6, and 4 could be 18 (as 3 + 5 + 4 + 6), or 6 (as 3 + 5 – 6 + 4), or 10 (as 6 + 5 + 3 − 4). The goal is to create totals that cover each number on the number strip.",
+                    "For a simplified version, have students roll a pair of dice, twice, to generate two numbers (e.g., 5 and 3; 4 and 6). They can either add or subtract the sums of the pairs of numbers (8 + 10 or 10 − 8) to cover each number on the number strip."
+                ]
+            },
+            {
+                "text": "Ask students, in pairs, to brainstorm pairs of addends for an assigned sum. Have them create addition and subtraction fact cards in the shape of a triangle. In the top corner of each card, they write the sum of the two numbers that are in the bottom corners (e.g., 14 with 8 and 6; 20 with 8 and 12). After students have created their triangle cards, have them place their thumb or a counter over a corner to hide a number and ask their partner to find the missing number. Collect the cards from the class and use them to create smaller decks to focus on different strategies (e.g., “doubles\", “doubles plus one”, doubles minus one\", “make 10”) or to focus on newer facts.",
+                "items": []
+            }
+        ],
+        "tools": [
+            "ten frame",
+            "relational rods",
+            "dice"
+        ]
+    },
+    "g2-b2.3": {
+        "keyConcepts": [
+            {
+                "text": "Mental math refers to doing a calculation in one’s head. Sometimes the numbers or the number of steps in a calculation are too complex to completely hold in one’s head, so jotting down partial calculations and diagrams can be used to complete the calculations.",
+                "items": []
+            },
+            {
+                "text": "Mental math involves using flexible strategies that build on basic facts, number relationships, and counting strategies. These strategies continue to expand and develop through the grades.",
+                "items": []
+            },
+            {
+                "text": "Number lines, circular number lines, and part-whole models can be used to show strategies for doing the calculations.",
+                "items": []
+            },
+            {
+                "text": "Estimation is a useful mental strategy when either an exact answer is not needed or there is insufficient time to work out a solution.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "mental math strategies for addition:",
+                "items": [
+                    {
+                        "text": "counting on from the larger number:",
+                        "items": [
+                            {
+                                "text": "3 + 38:",
+                                "items": [
+                                    {
+                                        "text": "start at 38 then count up three: “39, 40, 41”",
+                                        "items": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "text": "making 10s:",
+                        "items": [
+                            {
+                                "text": "13 + 28:",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "using a mental number line:",
+                        "items": [
+                            {
+                                "text": "13 + 28:",
+                                "items": [
+                                    {
+                                        "text": "“I’m going to think about this as 28 + 13, because that will be easier.”",
+                                        "items": []
+                                    },
+                                    {
+                                        "text": "start at 28, jump 10, jump 3",
+                                        "items": []
+                                    },
+                                    {
+                                        "text": "land on 41",
+                                        "items": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "text": "using compensation:",
+                        "items": [
+                            {
+                                "text": "78 + 15:",
+                                "items": [
+                                    {
+                                        "text": "80 + 15 = 95 (add 2 to 78)",
+                                        "items": []
+                                    },
+                                    {
+                                        "text": "95 – 2 = 93 (take away the 2 that was added to the 78)",
+                                        "items": []
+                                    }
+                                ]
+                            },
+                            {
+                                "text": "27 + 9: can be represented as 26 + 10 = 36",
+                                "items": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "mental math strategies for subtraction:",
+                "items": [
+                    {
+                        "text": "counting on by ones:",
+                        "items": [
+                            {
+                                "text": "82 – 77:",
+                                "items": [
+                                    {
+                                        "text": "start at 77 and count up by 1s: ”78, 79, 80, 81, 82” (5 is the result)",
+                                        "items": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "text": "counting back by ones:",
+                        "items": [
+                            {
+                                "text": "93 – 87:",
+                                "items": [
+                                    {
+                                        "text": "start at 93 and count down by 1s to 87: “92, 91, 90, 89, 88, 87” (6 is the result)",
+                                        "items": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "text": "subtracting in parts:",
+                        "items": [
+                            {
+                                "text": "26 – 12:",
+                                "items": [
+                                    {
+                                        "text": "First do 26 − 10 = 16",
+                                        "items": []
+                                    },
+                                    {
+                                        "text": "then subtract 2 more to get 14 using compensation",
+                                        "items": []
+                                    }
+                                ]
+                            },
+                            {
+                                "text": "78 – 9:",
+                                "items": [
+                                    {
+                                        "text": "78 – 10 = 68 (add 1 to the 9)",
+                                        "items": []
+                                    },
+                                    {
+                                        "text": "68 + 1 = 69 (take away the 1 that was added to compensate)",
+                                        "items": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Engage students in Number Talks – short whole-class or small-group talks about number facts or calculations that are often focused on mental math strategies. For example, ask students to add 19 and 27 in their heads (encourage them to jot down partial sums that they cannot keep entirely in their heads). After giving them individual think time, have them share their strategies with the class and make connections to place value, basic facts, and the relationships between numbers and operations. Use a number line to communicate strategies visually, and support students in moving towards increasingly efficient strategies as they are ready. For 19 + 27, students might do the following:",
+                "items": [
+                    "Apply the commutative property and think of it as 27 + 19 (see B2.1) and then count on by 10s (27, 37), and then by 1s (..., 38, 39, 40, … 46) or add 2 tens (27, 37, 47) and remove one.",
+                    "Add the tens (20 + 10), add the ones (9 + 7), and then combine (30 + 16 = 46).",
+                    "Add the tens to the larger number (27 + 10 = 37), and then add on the ones (37 + 9 = 46).",
+                    "Use friendlier numbers and adjust (20 + 27 = 47, so 19 + 27 is one less).",
+                    "Rearrange the numbers to make 10s (19 + 27 = 20 + 26 = 46)."
+                ]
+            },
+            {
+                "text": "Provide students with authentic everyday experiences that could involve mental calculations. For example, “I had $46 in my wallet, and I spent $19 on groceries. How much money do I have now?” Encourage them to jot down partial sums or differences that they cannot keep entirely in their heads. After giving them individual think time, have them share their strategies with the class and make connections to place value, basic facts, and relationships between numbers and operations. Use a number line to communicate strategies visually, and support students in moving towards increasingly efficient strategies as they are ready. For 46 – 19, students might do the following:",
+                "items": [
+                    "Think using an addition sentence (I can think about 46 – 19 as 19 + ? = 46), and count on from 19 to reach the total of 46 (e.g., 19 + 1 + 20 + 6, so 19 + 27 = 46).",
+                    "Subtract the tens first (46 – 10 = 36) and then the ones (36 – 9 = 27).",
+                    "Use friendlier numbers and adjust (46 – 20 is 26, so 46 – 19 is one more).",
+                    "Use friendlier numbers and keep the difference between them constant (e.g., shifting both numbers up, as if on a number line, so 46 – 19 is the same difference as 47 – 20)."
+                ]
+            },
+            {
+                "text": "Have students create double-sided cards with one number on each side, where the two numbers add up to 50. For example, if one side of a card is 23, the other is 27. Students scatter the cards on a table. They point to a card and predict the number on the other side. If they predict correctly, they keep the card. This game can be played individually for practice or with a partner.",
+                "items": []
+            }
+        ],
+        "tools": [
+            "number line",
+            "money"
+        ]
+    },
+    "g2-b2.4": {
+        "keyConcepts": [
+            {
+                "text": "Situations involving addition and subtraction may involve:",
+                "items": [
+                    {
+                        "text": "adding a quantity onto an existing amount or removing a quantity from an existing amount;",
+                        "items": []
+                    },
+                    {
+                        "text": "combining two or more quantities;",
+                        "items": []
+                    },
+                    {
+                        "text": "comparing quantities.",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "Acting out a situation by representing it with objects, a drawing, or a diagram can support students in identifying the given quantities in a problem and the unknown quantity.",
+                "items": []
+            },
+            {
+                "text": "Set models can be used to represent adding a quantity to an existing amount or removing a quantity from an existing amount.",
+                "items": []
+            },
+            {
+                "text": "Linear models can be used to determine the difference between two numbers by comparing two quantities.",
+                "items": []
+            },
+            {
+                "text": "Part-whole models can be used to show the relationship between what is known and what is unknown and how addition and subtraction relate to the situation.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "situations involving addition and subtraction:",
+                "items": [
+                    {
+                        "text": "changing a quantity by joining another quantity to it (change/join):",
+                        "items": [
+                            {
+                                "text": "adding 6 on to 52:",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "changing a quantity by separating or removing another quantity from it (change/separate):",
+                        "items": [
+                            {
+                                "text": "taking 6 away from 52:",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "combining multiple quantities (parts) to make one whole quantity (part-part-whole):",
+                        "items": [
+                            {
+                                "text": "combining 48 and 32 (parts) to make 80 (whole):",
+                                "items": []
+                            },
+                            {
+                                "text": "determining the unknown part (?) when given the whole (18) and a part (11):",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "comparing two quantities by finding the difference between them (compare):",
+                        "items": [
+                            {
+                                "text": "determining the difference between 82 and 37:",
+                                "items": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Have students represent and solve a wide variety of problem types and structures. The following are some examples appropriate for Grade 2 (also shown on BLM2: B2.4, Problem Types). Describe situations verbally to ensure that reading is not a barrier, and use contexts that are engaging to the students in the class. [Note that the intent here is not that students memorize or learn about the different problem types, but that they are exposed to different problem structures in order to acquire a more robust understanding of how the operations can be applied in real life.] Change (Join) Change (Separate) Combine (Part-Part- Compare Problems Problems Problems Whole) Problems A classroom library has A clown has 25 In the gym cupboard, On the playground, 86 books about sharks balloons and gives 12 there are 43 there are 39 students and the teacher buys 5 away. How many basketballs and 56 playing soccer and 26 more. How many shark balloons does the soccer balls. How many students playing books does the clown have now? balls are in the gym baseball. How many classroom library have cupboard? more students are now? playing soccer? Result Unknown Result Unknown Whole Unknown Difference Unknown",
+                "items": [
+                    "86 + 5 = ? • 25 − 12 = ? • 43 + 56 = ? • 39 – 26 = ?"
+                ]
+            },
+            {
+                "text": "A classroom library has A clown has 25 There are 99 balls in On the playground, 86 books about sharks. balloons. After giving the gym cupboard. 43 there are 26 students The teacher buys some some away, the clown of them are basketballs playing baseball, which more and then there has 13 balloons. How and the rest are soccer is 13 fewer than are are 91 shark books. many balloons did the balls. How many soccer playing soccer. How How many new shark clown give away? balls are in the gym many students are books did the teacher cupboard? playing soccer? buy? Larger Unknown Change Unknown Change Unknown Part Unknown • ? – 13 = 26",
+                "items": [
+                    "86 + ? = 91 • 25 − ? = 13 • 43 + ? = 99"
+                ],
+                "after": "A classroom library has A clown has some – On the playground, some books about balloons, gives 12 there are 39 students sharks. The teacher away, and then has 13 playing soccer and 13 buys 5 more and then balloons. How many fewer students playing there are 91 shark balloons did the clown baseball. How many books. How many start with? students are playing shark books did the baseball?"
+            },
+            {
+                "text": "classroom library have to start with? Start Unknown Smaller Unknown Start Unknown • ? − 12 = 13 • 39 – ? = 13",
+                "items": [
+                    "? + 5 = 91"
+                ],
+                "after": "For each situation, have students draw a model or act it out using concrete materials. Support students in writing the number sentence to match the situation, and discuss the strategies used to find an answer."
+            }
+        ],
+        "tools": []
+    },
+    "g2-b2.5": {
+        "keyConcepts": [
+            {
+                "text": "Multiplication can describe situations involving repeated groups of equal size.",
+                "items": []
+            },
+            {
+                "text": "Multiplication names the unknown total when the number of groups and the size of the groups are known.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "repeated equal groups in real life:",
+                "items": [
+                    {
+                        "text": "groups of 1: tail on a dog, beak on a blue jay",
+                        "items": []
+                    },
+                    {
+                        "text": "groups of 2: legs on a duck, wheels on a bicycle",
+                        "items": []
+                    },
+                    {
+                        "text": "groups of 3: wheels on a tricycle, sides of a triangle",
+                        "items": []
+                    },
+                    {
+                        "text": "groups of 4: legs on a horse, wheels on a car",
+                        "items": []
+                    },
+                    {
+                        "text": "groups of 5: fingers on a hand, toes on a foot",
+                        "items": []
+                    },
+                    {
+                        "text": "groups of 6: eggs in a half carton",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "representing equal groups using tools and drawings:",
+                "items": [
+                    {
+                        "text": "2s on a hundred chart:",
+                        "items": []
+                    },
+                    {
+                        "text": "5s using tallies:",
+                        "items": []
+                    },
+                    {
+                        "text": "10s on a rekenrek:",
+                        "items": []
+                    },
+                    {
+                        "text": "three fourths using paper folding:",
+                        "items": []
+                    },
+                    {
+                        "text": "repeats of one half using hops on a number line*: *Students should not be expected to write fractions or mixed numbers using fraction notation, but teachers may model this convention, making connections to the representations when appropriate.",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Have students consider a problem that involves repeated equal groups with whole numbers, such as the following:",
+                "items": [
+                    "Suppose you have 5 vases, and in each vase there are 4 flowers. How many flowers do you have?"
+                ]
+            },
+            {
+                "text": "Have students represent the situation using objects, a drawing, or a number line, and have them write an equation to match it (e.g., 4 + 4 + 4 + 4 + 4 = 20). Introduce them to the matching multiplication equation (5 × 4 = 20). Support them in noticing the difference between the two equations, and ensure that they notice what both the 5 and the 4 represent in the multiplication sentence. Have them come up with other equal-group story problems. Have them represent these stories with a drawing or tools as well as matching addition and multiplication equations, making connections between the numbers and the operation in each one.",
+                "items": []
+            },
+            {
+                "text": "Have students consider situations that focus on equal groups. For example, tell them that each person at the table needs one fourth of a sheet of paper. Have them figure out how many full sheets of paper they need to make sure there is exactly enough for everyone in the group, but no extra sheets. Have them share their strategies and diagrams and match the situation to a number sentence that uses repeated addition. For a table of four, for example, the equation could be: one fourth + one fourth + one fourth + one fourth = one sheet of paper. Draw attention to the fact that operations can be used with both whole numbers and fractions.",
+                "items": []
+            }
+        ],
+        "tools": [
+            "number line"
+        ]
+    },
+    "g2-b2.6": {
+        "keyConcepts": [
+            {
+                "text": "Division, like multiplication, can describe situations involving repeated groups of equal size.",
+                "items": []
+            },
+            {
+                "text": "While multiplication names the unknown total when the number of groups and the size of the groups are known, division names either the unknown number of groups or the unknown size of the groups when the total is known.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "problems involving division:",
+                "items": [
+                    {
+                        "text": "determining the number of groups:",
+                        "items": [
+                            {
+                                "text": "I have 12 peaches in all. I have 4 peaches in each basket. How many baskets do I have?",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "determining the size of the group:",
+                        "items": [
+                            {
+                                "text": "I have 12 peaches packed equally in 3 baskets. How many peaches are in each basket?",
+                                "items": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Ask students to count out 12 counters. Ask them to make as many groups of three as they can. Ask them to draw a picture of their arrangement. Then, ask them to split the counters into three equal-size groups. Ask them to draw another picture showing their work. Make sure they notice the similarities and differences between the two representations. Guide them to observe the two different types of situations that division can describe: equal grouping (the first scenario) and equal sharing (the second Have students engage in equal grouping (quotative or measurement) situations or problems such as the following examples (where the size of the groups are known):",
+                "items": [
+                    "You have 10 cookies and want to put 2 cookies in each box. How many boxes of cookies can you make?",
+                    "A friend wants to sell $12 worth of wrapping paper for a fundraiser. Each package costs $3. How many packages does the friend need to sell?"
+                ]
+            },
+            {
+                "text": "Have students share their representations and the strategies they used to solve the problem. In this grade, students will use repeated addition or repeated subtraction to solve these types of division problems, and it is appropriate for them to write the corresponding addition or subtraction sentence to represent the strategy. Students should not be expected to represent the situation using the ÷ sign. For example: Using subtraction from 10 (removing 2 each Using addition to 10 (adding 2 each time)",
+                "items": []
+            },
+            {
+                "text": "2 + 2 + 2 + 2 + 2 = 10 10 − 2 − 2 − 2 − 2 − 2 = 0 There are 5 packages. There are 5 packages.",
+                "items": []
+            },
+            {
+                "text": "Have students represent and solve equal-sharing (partitive) division situations such as the following (where the number of groups or sharers is known):",
+                "items": [
+                    "You have 10 crayons and want to share them equally among 5 people. How many crayons does each person get?",
+                    "4 friends share a platter of momos that costs $12. If they share the cost equally, how much does each friend pay?"
+                ],
+                "after": "As in Sample Task 2, have students share their representations and strategies to understand and solve the problem. In this grade, students will use repeated addition or repeated subtraction to solve these types of division problems, and it is appropriate for them to write the corresponding addition or subtraction sentence to represent the strategy. Students should not be expected to represent the situation using the ÷ sign. For example: Using addition to 12 (add $1 at a time to each Using subtraction from 12 (remove $4 each person until $12 is reached) time)"
+            },
+            {
+                "text": "$ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $12 – $4 – $4 – $4 = 0 $3 + $3 + $3 + $3 = $12 Each person pays $3. Each person pays $3.",
+                "items": []
+            },
+            {
+                "text": "C. Algebra Overall expectations By the end of Grade 2, students will:",
+                "items": []
+            }
+        ],
+        "tools": [
+            "counters"
+        ]
+    },
+    "g2-c1.1": {
+        "keyConcepts": [
+            {
+                "text": "Human activities, histories, and the natural world are made up of all kinds of patterns and many of them are based on geometric designs.",
+                "items": []
+            },
+            {
+                "text": "Patterns may involve attributes such as colour, shape, texture, thickness, orientation, or material.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "geometric designs that can be found in real life:",
+                "items": [
+                    {
+                        "text": "nature: turtle shells, fossils, cross-section of a tree trunk",
+                        "items": []
+                    },
+                    {
+                        "text": "handicrafts: quilts, knitting, crocheting, smocking, beadwork, weavings, prints",
+                        "items": []
+                    },
+                    {
+                        "text": "interior design: wallpaper, floor tiles, carpet, area rugs, hardwood floors, lights",
+                        "items": []
+                    },
+                    {
+                        "text": "structures: bridges, ancient pyramids",
+                        "items": []
+                    },
+                    {
+                        "text": "codes: Morse code",
+                        "items": []
+                    },
+                    {
+                        "text": "cultural practices: henna (mehndi designs), kolam, Celtic knots, Islamic geometric patterns, Hitomezashi stitching, Ankara wax prints",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Have students collect pictures or make diagrams of geometric patterns that they have found in real life, including those that are personally relevant, and create a class pattern wall. Along with the pictures, have students write in words what they notice about the pattern, such as that the shapes are repeated or that the size of the shape changes. If students are using a “learning log” that they created in Grade 1, they can add new patterns to it.",
+                "items": []
+            },
+            {
+                "text": "Provide cross-curricular explorations of geometric designs from different cultures. There are also opportunities to discuss respectful representations of cultural histories and identities. (See the examples given for this expectation.)",
+                "items": []
+            }
+        ],
+        "tools": []
+    },
+    "g2-c1.2": {
+        "keyConcepts": [
+            {
+                "text": "The same pattern structure can be represented in various ways.",
+                "items": []
+            },
+            {
+                "text": "Patterns can be created by varying a single attribute, or more than one.",
+                "items": []
+            },
+            {
+                "text": "Pattern structures can be generalized.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "creating patterns:",
+                "items": [
+                    {
+                        "text": "with materials of different textures, sizes, shapes, colours",
+                        "items": []
+                    },
+                    {
+                        "text": "with isometric dot paper, grids, rings:",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "with learning tools (e.g., pattern blocks, square tiles):",
+                "items": []
+            },
+            {
+                "text": "translating a sound pattern to a numeric pattern:",
+                "items": [
+                    {
+                        "text": "a sound pattern: clap, snap, snap; clap, snap, snap, snap; clap, snap, snap, snap, snap, …",
+                        "items": [
+                            {
+                                "text": "translated into a number pattern:",
+                                "items": [
+                                    {
+                                        "text": "1 [clap], 2 [snaps]; 1 [clap], 3 [snaps]; 1 [clap], 4 [snaps], …",
+                                        "items": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "translating a word pattern to a numeric pattern:",
+                "items": [
+                    {
+                        "text": "a word pattern: blue, orange, orange; blue, orange, orange, orange; blue, orange, orange, orange, orange, ...",
+                        "items": [
+                            {
+                                "text": "translated into a movement pattern:",
+                                "items": [
+                                    {
+                                        "text": "1 step to the right [blue], 2 steps to the left [orange]; 1 step to the right [blue], 3 steps to the left [orange]; 1 step to the right [blue], 4 steps to the left [orange], ...",
+                                        "items": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "translating a numeric pattern to a geometric pattern; for example, 5, 10, 15, … can become:",
+                "items": [
+                    {
+                        "text": "Sample 1:",
+                        "items": [
+                            {
+                                "text": "Every group of 5 is 4 squares and 1 triangle:",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "Sample 2:",
+                        "items": [
+                            {
+                                "text": "The pattern starts with 5 circles, and 5 more are added each time:",
+                                "items": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Demonstrate a pattern of sounds or movements, and ask students to translate the pattern by representing it using numbers and using shapes.",
+                "items": []
+            },
+            {
+                "text": "Have students create a pattern using shapes to represent skip counts. They may create a pattern using a repetition of shapes for each count, or they may show the same shape and depict how the amount changes for each count.",
+                "items": []
+            },
+            {
+                "text": "For example, they could skip count by 5s:",
+                "items": [
+                    "Each triangle marks five:",
+                    "Ask students questions related to the pattern, such as “How many triangles would you have if the pattern went up to 30?”",
+                    "Each additional column marks five:",
+                    "Ask students to extend the pattern to position 5. Then ask, “If you kept going, could you reach a position in this pattern that has 34 circles? Why or why not?”"
+                ]
+            },
+            {
+                "text": "Have students create a pattern to show the equivalence of the values of coins and bills. For example, 1 five-dollar bill is equivalent to 5 loonies, 2 five-dollar bills to 10 loonies, 3 five-dollar bills to 15 loonies, and so on.",
+                "items": []
+            },
+            {
+                "text": "Coin image © 2022 Royal Canadian Mint. All rights reserved.",
+                "items": []
+            },
+            {
+                "text": "Permission to use the bank note image granted by the Bank of Canada.",
+                "items": []
+            }
+        ],
+        "tools": [
+            "coins"
+        ]
+    },
+    "g2-c1.3": {
+        "keyConcepts": [
+            {
+                "text": "Patterns can be extended because they are repetitive by nature.",
+                "items": []
+            },
+            {
+                "text": "Pattern rules are generalizations about a pattern, and they can be described in words.",
+                "items": []
+            },
+            {
+                "text": "Patterns can be extended in multiple directions, such as up, down, right, and left.",
+                "items": []
+            },
+            {
+                "text": "To make a near prediction about a pattern is to state or show what a pattern will look like just beyond the given representation of that pattern. The prediction can be verified by extending the pattern.",
+                "items": []
+            },
+            {
+                "text": "To make a far prediction about a pattern is to state or show what a pattern will look like well beyond the given representation of that pattern. Often calculations are needed to make an informed prediction or to verify a prediction.",
+                "items": []
+            },
+            {
+                "text": "To identify missing elements of patterns is to complete a representation for a given pattern by filling in the missing parts.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "extending patterns in multiple directions:",
+                "items": [
+                    {
+                        "text": "What comes before position 1? What comes after position 16?",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "making near and far predictions:",
+                "items": [
+                    {
+                        "text": "What shape would be at position 18? What shape would be at position 50?",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "identifying missing shapes and numbers:",
+                "items": [
+                    {
+                        "text": "What shapes are at positions 9, 10, and 11?",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Have students expand patterns. For example, what are the next three symbols in the pattern?",
+                "items": []
+            },
+            {
+                "text": "turtle, turtle, turtle, turtle, wolf; turtle, turtle, turtle, turtle, wolf; turtle, turtle, turtle, turtle, wolf; turtle, … Have students extend both ends of a given pattern so that they think about their pattern rule in more than one way. For example, provide students with a pattern made up of a sequence of squares and triangles, and ask them what the next three shapes will be, then ask what three shapes come before Ask students to come up with ways to create and extend patterns on a hundreds chart, including using a diagonal. For example, ask them to extend the pattern below in both directions. Ask them to describe and verify their extensions by referring to other numbers on the hundreds chart: Have students make and test their predictions about patterns to support them in understanding the role of pattern rules in making generalizations. Provide them with a variety of patterns, and have them make near predictions. For example, they could predict and verify the number of tiles that will be in positions 0, 5, and 6 for the pattern below. Also, ask students questions such as “If I had 18 tiles, what position Have students make far predictions for patterns; for example, what shape is in the 100th position? The 101st position? The 99th position? Students should start making generalizations to make far predictions and communicate this in their justifications. For example, one core has 5 elements, two cores have 10 elements, three cores have 15 elements, and so on.",
+                "items": []
+            },
+            {
+                "text": "Provide students with patterns that have missing elements or positions. This will support them in thinking critically about possible pattern rules based on the information they are given. The more information that is missing, the more thinking and possibilities for patterns will emerge. For example:",
+                "items": [
+                    "Visualize and describe what is behind the rectangle. Explain your thinking.",
+                    "What are the missing numbers in these sequences?",
+                    "30, 50, ___, ___, 110, ___, …",
+                    "40, ___, 80, ___, 120, …"
+                ]
+            }
+        ],
+        "tools": [
+            "tiles"
+        ]
+    },
+    "g2-c1.4": {
+        "keyConcepts": [
+            {
+                "text": "Patterns exist in increasing and decreasing numbers based on place value.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "creating number string patterns to show the relationship between tens and ones:",
+                "items": [
+                    {
+                        "text": "when the tens place goes down by 1, the ones place goes up by 10: 73 = 7 tens + 3 ones 73 = 6 tens + 13 ones 73 = 5 tens + 23 ones 73 = 4 tens + 33 ones 73 = 3 tens + 43 ones 73 = 2 tens + 53 ones 73 = 1 tens + 63 ones 73 = 0 tens + 73 ones",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "creating number string patterns to show the relationships between addition and subtraction facts in larger numbers: 80 + 7 = 87 87 − 7 = 80 81 + 6 = 87 87 − 6 = 81 82 + 5 = 87 87 − 5 = 82 83 + 4 = 87 87 − 4 =83 84 + 3 = 87 87 − 3 = 84 85 + 2 = 87 87 − 2 = 85 86 + 1 = 87 87 − 1 = 86 87 + 0 = 87 87 − 0 = 87",
+                "items": []
+            },
+            {
+                "text": "creating number string patterns to show how number facts involving 7 could be used to add larger numbers: 7+0=7 67 + 0 = 67 7+1=8 67 + 1 = 68 7+2=9 67 + 2 = 69 7 + 3 = 10 67 + 3 = 70 7+4 67 + 4 =7+3+1 = 67 + 3 + 1 = 11 = 71 7+5 67 + 5 =7+3+2 = 67 + 3 + 2 = 12 = 72 7+6 67 + 6 =7+3+3 = 67 + 3 + 3 = 13 = 73 7+7 67 + 7 =7+3+4 = 67 + 3 + 4 = 14 = 74 7+8 67 + 8 =7+3+5 = 67 + 3 + 5 = 15 = 75 7+9 67 + 9 =7+3+6 = 67 + 3 + 6 = 16 = 76 7 + 10 = 17 67 + 10 = 77",
+                "items": []
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Provide students with a partial number string pattern based on place value. Have them continue the string to rename a number such as 73 in as many ways as they can, using tens and ones. Support students in recognizing that for each decrease of 1 ten, there is an increase of 10 ones. 73 = 7 tens + 3 ones 73 = 6 tens + 13 ones . . .",
+                "items": []
+            },
+            {
+                "text": "Have students create their own number string patterns to show a mathematical relationship. For example, they may demonstrate how the addition and subtraction facts for 7 can be used to add larger numbers.",
+                "items": []
+            }
+        ],
+        "tools": []
+    },
+    "g2-c2.1": {
+        "keyConcepts": [
+            {
+                "text": "Symbols can be used to represent quantities that change or quantities that are unknown.",
+                "items": []
+            },
+            {
+                "text": "Quantities that can change are also referred to as “variables”.",
+                "items": []
+            },
+            {
+                "text": "Quantities that remain the same are also referred to as “constants”.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "variables as quantities that remain the same and quantities that change: Quantities that Remain the Same (constants) Quantities that Change (variables) 24 hours in a day number of hours spent playing 12 months in a year number of months until a special event number of cents in a dollar number of cents to buy something number of wheels on a tricycle number of tricycles",
+                "items": []
+            },
+            {
+                "text": "the symbol □ is used to represent a specific unknown (placeholder) in this skip-counting pattern:",
+                "items": [
+                    {
+                        "text": "2, □, 6, 8",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "the symbol □ is used to represent a quantity that varies, such as the distance between students’ homes and a particular location (e.g., the local library):",
+                "items": []
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Throughout the year, as opportunities arise, discuss quantities that are unknown or quantities that vary. For example, the lunch break is always 40 minutes, but the time each student takes to eat their lunch will vary. Another example is that the weekend is almost always two days (Saturday and Sunday), but the number of days until the weekend will vary depending on what day it is.",
+                "items": []
+            },
+            {
+                "text": "Have students determine what the symbol stands for in a variety of scenarios, and discuss situations where the value is variable, such as:",
+                "items": [
+                    "5, 10, 15, □, 25, 30:",
+                    "The square represents 20, and only 20.",
+                    "The □ represents the distance from home to the local library, which will vary depending on where you live.",
+                    "2 + 5 = □:",
+                    "The □ represents 7, and only 7.",
+                    "□ + □ = 6:",
+                    "The □ represents 3, and only 3.",
+                    "□ + □ = 6:",
+                    "The □ and the □ will vary, depending on the value of the other symbol."
+                ]
+            }
+        ],
+        "tools": []
+    },
+    "g2-c2.2": {
+        "keyConcepts": [
+            {
+                "text": "Numerical expressions are equivalent when they produce the same result, and an equal sign is a symbol denoting that the two expressions are equivalent.",
+                "items": []
+            },
+            {
+                "text": "Numerical expressions are not equivalent when they do not produce the same result, and an equal sign with a slash through it ( ) is a symbol denoting that the two expressions are not equivalent.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "using a balance model:",
+                "items": []
+            },
+            {
+                "text": "using hops on a number line:",
+                "items": []
+            },
+            {
+                "text": "using ten frames or sectioned circles:",
+                "items": []
+            },
+            {
+                "text": "showing equivalence using a tape diagram (part-whole model)",
+                "items": []
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Provide students with opportunities to work with a number balance to compare two expressions. Have them first predict which addition or subtraction expression has a greater value, then represent each on the balance. Support them in recognizing that the balance will tip towards the expression of greater value. Ask them to add or remove the balance masses until they have created balance, or equivalency. Have students represent two addition expressions using a number line or a sectioned circle for each expression. Ask them to predict the amount that needs to be added for the two expressions to be equal. Have them verify their prediction by using a structured number line.",
+                "items": []
+            }
+        ],
+        "tools": [
+            "number line",
+            "balance"
+        ]
+    },
+    "g2-c2.3": {
+        "keyConcepts": [
+            {
+                "text": "When numbers are decomposed, the sum of the parts is equivalent to the whole.",
+                "items": []
+            },
+            {
+                "text": "The same whole can result from different parts.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "possible contexts:",
+                "items": [
+                    {
+                        "text": "decomposing numbers, such as: 96 = 50 + 40 + 6",
+                        "items": []
+                    },
+                    {
+                        "text": "composing numbers, such as: 50 + 40 + 6 = 96",
+                        "items": []
+                    },
+                    {
+                        "text": "representing numbers in a variety of ways; for example, 96 can be represented as:",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "using the commutative property to add a smaller number onto a larger number, such as: 8 + 52 = 52 + 8",
+                "items": []
+            },
+            {
+                "text": "using the associative property to make tens, such as: (11 + 12) + 8 = 11 + (12 + 8)",
+                "items": []
+            },
+            {
+                "text": "identifying equivalent monetary values of coins and bills (e.g., 1 ten-dollar bill is equivalent to 2 five-dollar bills, 1 five-dollar bill and 5 loonies, 10 loonies, and so on)",
+                "items": []
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Have students dedicate a section of their “learning log” to situations that involve equivalence. From time to time, have them record these situations. For example, students may be asked to represent a number such as 96 in more than one way, using tools. They should indicate their strategy; for example, “I swapped some of the tens for 2 fives because I know that 10 = 5 + 5.” They should then label each representation using symbols; for example, 90 + 6 and 50 + 40 + 6: When students are adding whole numbers, have them demonstrate equivalence using the commutative property of addition, such as 8 + 52 = 52 + 8, and ask them to describe how the expressions are equivalent. In a similar way, have students demonstrate equivalence using the associative and commutative properties of addition. For example, 12 + 11 + 8 is the same as 12 + 8 + 11. Students are not expected to be able to name or define these properties, but they should be able to use them appropriately. For example, they can use the term “making tens” when they rearrange numbers using the associative and commutative properties.",
+                "items": []
+            }
+        ],
+        "tools": []
+    },
+    "g2-c3.1": {
+        "keyConcepts": [
+            {
+                "text": "In coding, a sequential set of instructions is executed based on the order of instructions given (e.g., a pixelated image stops its motion and then changes colours).",
+                "items": []
+            },
+            {
+                "text": "Concurrent events are when multiple things are occurring at the same time (e.g., a pixelated image is changing its colours while moving).",
+                "items": []
+            },
+            {
+                "text": "Sometimes concurrent programs need to use time delays or wait blocks. For example, to ensure that two pixelated images do not collide on the screen, or, similarly that robots do not collide in real life, one may need to pause while the other passes.",
+                "items": []
+            },
+            {
+                "text": "Some sequential events can be executed concurrently if they are independent of each other (e.g., two pixelated images are moving across the screen at the same time).",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "possible mathematical situations:",
+                "items": [
+                    {
+                        "text": "moving from one location to another",
+                        "items": []
+                    },
+                    {
+                        "text": "representing addition and subtraction of whole numbers",
+                        "items": []
+                    },
+                    {
+                        "text": "testing the equality of addition and subtraction expressions",
+                        "items": []
+                    },
+                    {
+                        "text": "verifying the commutative and associative properties for addition",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "sequential events:",
+                "items": [
+                    {
+                        "text": "one character moving one direction at a time, such as:",
+                        "items": [
+                            {
+                                "text": "up 1, then left 1, then up 2, then right 3",
+                                "items": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "concurrent events:",
+                "items": [
+                    {
+                        "text": "animals in nature moving at the same time (e.g., birds in flight):",
+                        "items": [
+                            {
+                                "text": "birds at different starting positions all moving due south in a V formation",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "synchronized dance moves for two dancers facing each other (an unplugged activity):",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Provide students with a situation that requires them to add multiple numbers, such as 21 + 9 + 14. Have them create three different sequences of instructions to get the result; for example, 21 + 9 + 14, 9 + 14 + 21, and 14 + 21 + 9. Students can code three different agents (e.g., digital images, robots) to model each of the different sequences as movements to get from one location to another. Discuss why all three of these expressions are equivalent. This type of task reinforces the commutative and associative properties of addition. Students could code this as three separate sequential events or as several concurrent events.",
+                "items": []
+            },
+            {
+                "text": "Have students write code in which two digital images (or two robots or two classmates) perform a dance. Have them write one set of instructions so that the digital images will dance in sync and another set of instructions where they perform a dance that is not in sync (by including wait times at different locations within the code). If two students are programming on separate devices to execute a synchronized dance, they will need to collaborate on the timing of their execution. Students may also want to program two classmates, two digital images, or two robots to perform a partner dance that involves reflecting each other’s moves.",
+                "items": []
+            }
+        ],
+        "tools": []
+    },
+    "g2-c3.2": {
+        "keyConcepts": [
+            {
+                "text": "Code can be altered to develop students’ understanding of mathematical concepts, and to ensure that the code is generating the expected outcome.",
+                "items": []
+            },
+            {
+                "text": "Changing the sequence of instructions in code can sometimes produce the same outcome and can sometimes produce a different outcome.",
+                "items": []
+            },
+            {
+                "text": "Predicting the outcome of code allows students to visualize the movement of an object in space or imagine the output of specific lines of code. This is a valuable skill when debugging and problem solving.",
+                "items": []
+            },
+            {
+                "text": "When predicting the outcomes of programs involving time delays or wait blocks, it is important to confirm that the action is actually possible; for example, one agent pauses to allow another agent to pass when both are trying to occupy the same location at the same time.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "original code for the dialogue of two characters: Knock knock Who's there?",
+                "items": []
+            },
+            {
+                "text": "altered code, with wait time:",
+                "items": []
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Have students make predictions before executing a sequence of code. Have them execute the code, then compare what they predicted to what actually happens.",
+                "items": []
+            },
+            {
+                "text": "For example, provide students with two sets of instructions for two different sheep, and ask them to predict whether the sheep will make it out of the enclosure: Ask students to alter the code so that both sheep make it out of the enclosure.",
+                "items": []
+            },
+            {
+                "text": "As a follow-up to the task above, ask students to alter the instructions so that the sheep do not collide if they move at the same time; this will involve adding wait time to the code.",
+                "items": []
+            },
+            {
+                "text": "Also, ask students to alter the code so that the sheep can both get out if only one can fit through the gate at a time. Again, students will need to incorporate wait time into the code.",
+                "items": []
+            }
+        ],
+        "tools": []
+    },
+    "g2-d1.1": {
+        "keyConcepts": [
+            {
+                "text": "Data can be sorted in more than one way. For example, the same set of data can be sorted in a Venn diagram, a Carroll diagram, and a two-way table.",
+                "items": []
+            },
+            {
+                "text": "Different sorting tools can be used for different purposes.",
+                "items": [
+                    {
+                        "text": "A two-circle Venn diagram can be used to sort data based on two characteristics (e.g., red and large) of two attributes (e.g., colour and size).",
+                        "items": []
+                    },
+                    {
+                        "text": "A Carroll diagram can be used to sort data into complementary sets for two characteristics (e.g., red – not red, large – not large) of two attributes (e.g., colour and size).",
+                        "items": []
+                    },
+                    {
+                        "text": "A two-way table can be used to sort data into all the possible combinations of the characteristics of two attributes.",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "examples": [
+            {
+                "text": "two-way tally table:",
+                "items": [
+                    {
+                        "text": "displaying information about two attributes of a student’s trading cards – the type of trading card and its condition:",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "Venn diagram:",
+                "items": [
+                    {
+                        "text": "displaying the data from the two-way table above with numerical values from the tally counts:",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "Carroll diagram:",
+                "items": [
+                    {
+                        "text": "This Carroll diagram displays the same data as the Venn diagram above:",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Display two-attribute data that students have collected previously, such as the type of shoes and colour of shoes that students in the class were wearing. Have students sort the data in categories according to the two attributes, using a two-way table.",
+                "items": []
+            },
+            {
+                "text": "Have students choose a category from each of the attributes (type of shoe and colour of shoe) in the two-way table to make a Venn diagram. For example, a student could pick running shoes and yellow, or sandals and blue. Once students have created their diagrams, have them discuss how their diagrams are the same and how they are different, using the selected attributes.",
+                "items": []
+            },
+            {
+                "text": "Have students represent the data from Sample Task 1 in a Carroll diagram:",
+                "items": []
+            }
+        ],
+        "tools": [
+            "Venn diagram",
+            "Carroll diagram"
+        ]
+    },
+    "g2-d1.2": {
+        "keyConcepts": [
+            {
+                "text": "The type and amount of data to be collected is based on the question of interest.",
+                "items": []
+            },
+            {
+                "text": "Data can be either qualitative (e.g., colour, type of pet) or quantitative (e.g., number of pets, height).",
+                "items": []
+            },
+            {
+                "text": "Data can be collected through observations, experiments, interviews, or written questionnaires over a period of time.",
+                "items": []
+            },
+            {
+                "text": "A two-way tally table can be used to collect and organize data involving two attributes. The data is recorded in groups of five tallies to make it easier to count.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "questions of interest and data collection methods: Questions of Interest Data Collection Methods",
+                "items": [
+                    {
+                        "text": "What kinds of trading cards are in the Observation: collection, and what condition are they • Sort cards by type (sports or game) and in? condition (excellent, good, fair). Experiment:",
+                        "items": []
+                    },
+                    {
+                        "text": "Which ball bounces more from the height",
+                        "items": [
+                            {
+                                "text": "Collect information by conducting the of my desk? experiment with three different balls, for",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "Which ball bounces more from the height example, a tennis ball, a table tennis ball, of my teacher’s desk? and a golf ball.",
+                        "items": []
+                    },
+                    {
+                        "text": "Do the students in the class like Interview: strawberry frozen yogurt more than • Which flavour of frozen yogurt do you chocolate? like better: strawberry or chocolate?",
+                        "items": []
+                    },
+                    {
+                        "text": "Do they like waffle cones better than • Which would you rather have – a waffle plain cones? cone or a plain cone?",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Have students collect two pieces of information to answer a question they have about the weather, such as “Is it windier when it is sunny?”. For example, they could pick a set time of the day to observe the weather, and record on a calendar whether it is sunny or not, and whether it is windy or not, every day for a month. With the teacher, students could decide on what they would look for to decide if it was windy, or not, at the time (e.g., movement of leaves or other outdoor items, anemometer readout, wind speed reported online). When data collection is complete, guide students through the process of organizing the recorded data by category and displaying it in a two-way tally table. Another possibility for data collection is to consider cloud cover and whether it rained or not.",
+                "items": []
+            }
+        ],
+        "tools": [
+            "tally",
+            "calendar"
+        ]
+    },
+    "g2-d1.3": {
+        "keyConcepts": [
+            {
+                "text": "The same data can be represented using a concrete graph, a pictograph, a line plot, or a bar graph.",
+                "items": []
+            },
+            {
+                "text": "The order of the categories in graphs does not matter for qualitative data.",
+                "items": []
+            },
+            {
+                "text": "The categories for concrete graphs, pictographs, line plots, and bar graphs can be represented horizontally or vertically.",
+                "items": []
+            },
+            {
+                "text": "The source, title, and labels provide important information about data in a graph or table:",
+                "items": [
+                    {
+                        "text": "The source indicates where the data was collected.",
+                        "items": []
+                    },
+                    {
+                        "text": "The title introduces the data contained in the graph or table.",
+                        "items": []
+                    },
+                    {
+                        "text": "Labels provide additional information, such as the category represented by each bar in a bar graph, or each “X” in a line plot. On a pictograph, a key tells how many each picture represents.",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "examples": [
+            {
+                "text": "pictograph:",
+                "items": [
+                    {
+                        "text": "displaying the data from the two-way table shown in D1.1 (note that graph paper can be used as an organizer to support young students in creating pictographs):",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "line plot:",
+                "items": [
+                    {
+                        "text": "displaying the same data as in the pictograph above in a line plot (note that graph paper can be used as an organizer to support young students in creating line plots):",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "bar graph:",
+                "items": [
+                    {
+                        "text": "displaying the same data as in the above pictograph and line plot in a bar graph (note that graph paper can be used as an organizer to support young students in creating bar graphs):",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "As students are introduced to different types of graphs, it is important that they work with only one piece of information at a time so they can focus on the new type of graph and not the complexity of the data. For example, have students take data from a tally table and create a concrete graph, a pictograph, a line plot, or a bar graph. (Note that using graph paper provides an organizer for young students to create graphs.)",
+                "items": []
+            },
+            {
+                "text": "Have students take data from a Venn diagram or a Carroll diagram and display it using a pictograph, a line plot, or a bar graph. Support students in making connections among the representations. Discuss the ways in which the representations are similar and the ways in which they are different.",
+                "items": [
+                    "pictograph:",
+                    "line plot:",
+                    "bar graph:"
+                ]
+            }
+        ],
+        "tools": [
+            "graph paper",
+            "Venn diagram",
+            "Carroll diagram",
+            "tally",
+            "pictograph",
+            "bar graph",
+            "line plot"
+        ]
+    },
+    "g2-d1.4": {
+        "keyConcepts": [
+            {
+                "text": "A mode of a variable is the category that has the greatest count (frequency).",
+                "items": []
+            },
+            {
+                "text": "Multiple modes of a variable exist when two or more categories have equivalent frequencies that are greater than any others.",
+                "items": []
+            },
+            {
+                "text": "A variable has no mode when there is no category that has a frequency greater than any others.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "data set with one mode:",
+                "items": []
+            },
+            {
+                "text": "data set with multiple modes: Grade 2 Students' Pets at Home",
+                "items": []
+            },
+            {
+                "text": "data set with no mode category (or group):",
+                "items": []
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Provide students with data based on one attribute (e.g., favourite flavours or favourite types of cone). Ask them to determine the mode for that attribute.",
+                "items": []
+            },
+            {
+                "text": "Provide students with a two-way table or graph displaying data for two attributes, and ask them to determine the mode for each. For example, what is the mode for favourite frozen yogurt flavour? What is the mode for favourite type of cone? Have students share their strategies for determining the mode, for example, determining which line is the highest or has the highest count.",
+                "items": []
+            },
+            {
+                "text": "Have students revisit data sets they have previously collected, organized, and represented in various ways, and have them identify the mode(s). Their data sets may include situations where there is one mode, multiple modes, or no mode. Support students in distinguishing among these situations.",
+                "items": []
+            }
+        ],
+        "tools": []
+    },
+    "g2-d1.5": {
+        "keyConcepts": [
+            {
+                "text": "Different representations are used for different purposes to convey different types of information.",
+                "items": []
+            },
+            {
+                "text": "Venn and Carroll diagrams are used to compare data with two different attributes. They help to ask and answer questions like, “What’s the same?” and “What’s different?”",
+                "items": []
+            },
+            {
+                "text": "Line plots and bar graphs are used to show the differences between frequencies quickly and at a glance. They help to ask and answer questions like, “Which is greatest?” and “Which is least?”",
+                "items": []
+            },
+            {
+                "text": "Questions of interest are intended to be answered through the analysis of the representations. Sometimes the analysis raises more questions that require further collection, representation, and analysis of data.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "various ways of presenting data:",
+                "items": [
+                    {
+                        "text": "tally tables, Venn diagrams, Carroll diagrams, concrete graphs, pictographs, line plots, bar graphs",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "question that requires reading and interpreting data from a graph or table:",
+                "items": [
+                    {
+                        "text": "How many students are wearing blue running shoes?",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "question that requires finding data from a graph or table and using it in a calculation:",
+                "items": [
+                    {
+                        "text": "What is the difference between the number of students wearing running shoes and the number not wearing running shoes?",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "question that requires using data from a graph to make an inference or prediction:",
+                "items": [
+                    {
+                        "text": "What colour of running shoes do you think most students in the school wear? Why do you think that?",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Give students representations of data presented in tally tables, Venn diagrams, Carroll diagrams, concrete graphs, pictographs, line plots, or bar graphs. Have them pose questions about the data. Model asking questions using the three types of questions outlined in the examples, and have students pose and answer their own questions, requiring them to think critically about the data.",
+                "items": []
+            },
+            {
+                "text": "Have students revisit previously collected and organized data. Ask them to pose questions that will require others to think critically about this data.",
+                "items": []
+            }
+        ],
+        "tools": [
+            "Venn diagram",
+            "Carroll diagram",
+            "tally",
+            "pictograph",
+            "bar graph",
+            "line plot"
+        ]
+    },
+    "g2-d2.1": {
+        "keyConcepts": [
+            {
+                "text": "The likelihood of an event can be represented along a continuum from impossible to certain.",
+                "items": []
+            },
+            {
+                "text": "Complementary events are events that cannot happen at the same time. For example, if the likelihood of selecting a red marble from of a bag is certain, then its complement of not selecting a red marble from of a bag is impossible.",
+                "items": []
+            },
+            {
+                "text": "Understanding likelihood can help with making predictions about future events.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "complementary events:",
+                "items": [
+                    {
+                        "text": "raining today and not raining today",
+                        "items": []
+                    },
+                    {
+                        "text": "selecting red versus selecting any colour other than red",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Show students three clear jars, where Jar A has only blue interlocking cubes, Jar B has blue and pink interlocking cubes, and Jar C has only pink interlocking cubes. Ask them what the likelihood (impossible, possible, or certain) is of drawing a blue cube from Jar A (or Jar B or Jar C), and then ask them to describe their thinking.",
+                "items": []
+            },
+            {
+                "text": "Then ask students to predict the likelihood (impossible, possible, or certain) of not drawing a blue cube from Jar A (or Jar B or C) and to describe their thinking.",
+                "items": []
+            },
+            {
+                "text": "Repeat the questions, asking about a yellow cube or a pink cube.",
+                "items": []
+            },
+            {
+                "text": "Show students the weather forecast for the weekend. Ask them what decision they might make about what to do on the weekend based on the forecast. Ask them what different decisions they would make if the weather forecast was the opposite.",
+                "items": []
+            }
+        ],
+        "tools": []
+    },
+    "g2-d2.2": {
+        "keyConcepts": [
+            {
+                "text": "Data can vary from one population to another.",
+                "items": []
+            },
+            {
+                "text": "If two populations are similar, the modes for the two data sets will more than likely be the same.",
+                "items": []
+            },
+            {
+                "text": "Data can be used to make predictions that are not based on personal feelings or opinions alone.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "prediction based on analysis of collected data:",
+                "items": [
+                    {
+                        "text": "Most students in our class said they like the colour red. I believe that most students in other Grade 2 classes will also like red.",
+                        "items": []
+                    },
+                    {
+                        "text": "In October it looks like it rained most days. It’s possible that it might rain as much in November, but I don’t think it will because it is colder, which usually means snow.",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Ask students to revisit a question that they have already asked their classmates. Have them predict the likelihood that the mode will stay the same if they ask the same question of a different population. Have students collect the new set of data and compare the result with their prediction. When comparing the modes for two different populations, the populations do not need to be the same size. Overall expectations By the end of Grade 2, students will:",
+                "items": []
+            }
+        ],
+        "tools": []
+    },
+    "g2-e1.1": {
+        "keyConcepts": [
+            {
+                "text": "Two-dimensional shapes have geometric properties that allow them to be identified, compared, sorted, and classified.",
+                "items": []
+            },
+            {
+                "text": "Geometric properties are attributes that are the same for an entire group of shapes. Some attributes are relevant for classifying shapes. Others are not. For example, colour and size are attributes but are not relevant for geometry since there are large rectangles, small rectangles, blue rectangles, and yellow rectangles. Having four sides is an attribute and a property because all rectangles, by definition, have four sides.",
+                "items": []
+            },
+            {
+                "text": "Two-dimensional shapes can be sorted by comparing geometric attributes such as:",
+                "items": [
+                    {
+                        "text": "the number of sides;",
+                        "items": []
+                    },
+                    {
+                        "text": "the number of angles and whether the corners (vertices) are square;",
+                        "items": []
+                    },
+                    {
+                        "text": "the number of equal (congruent) side lengths and how those sides are arranged;",
+                        "items": []
+                    },
+                    {
+                        "text": "whether the sides are curved or straight;",
+                        "items": []
+                    },
+                    {
+                        "text": "whether there are any parallel sides (sides that run side by side in the same direction and remain the same distance apart);",
+                        "items": []
+                    },
+                    {
+                        "text": "the number of lines of symmetry.",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "Each class of two-dimensional shapes has common properties, and these properties are unaffected by the size or orientation of the shape.",
+                "items": []
+            },
+            {
+                "text": "A line of symmetry is an imaginary “mirror line” over which one half folds onto the other. Line symmetry is a geometric property of some shapes. For example, rectangles have two lines of symmetry and squares have four lines of symmetry. Some triangles have three lines of symmetry, some have one line of symmetry, and some have no lines of symmetry.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "types of shapes that can be included in a sort: Concave Shapes Convex Shapes Shapes with Only Curves Shapes with Curves and Straight Lines Regular Shapes (Shapes with Equal Side Lengths Irregular Shapes (Shapes with Different Side and Equal Angle Measures) Lengths and Different Angle Measures) Shapes with Equal Side Lengths and Different Shapes with Different Side Lengths and Equal Angles Angles Shapes with Symmetry Shapes without Symmetry",
+                "items": []
+            },
+            {
+                "text": "comparing shapes:",
+                "items": [
+                    {
+                        "text": "number of sides and number of vertices or angles:",
+                        "items": [
+                            {
+                                "text": "3 sides: triangle",
+                                "items": []
+                            },
+                            {
+                                "text": "4 sides: quadrilateral",
+                                "items": []
+                            },
+                            {
+                                "text": "5 sides: pentagon",
+                                "items": []
+                            },
+                            {
+                                "text": "6 sides: hexagon",
+                                "items": []
+                            },
+                            {
+                                "text": "7 sides: heptagon",
+                                "items": []
+                            },
+                            {
+                                "text": "8 sides: octagon",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "length of sides:",
+                        "items": [
+                            {
+                                "text": "Are all sides equal?",
+                                "items": []
+                            },
+                            {
+                                "text": "Is at least one set of opposite sides equal?",
+                                "items": []
+                            },
+                            {
+                                "text": "Are none of the sides equal?",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "size of angles:",
+                        "items": [
+                            {
+                                "text": "Are all angles right angles?",
+                                "items": []
+                            },
+                            {
+                                "text": "Is there one, two, or no right angle?",
+                                "items": []
+                            },
+                            {
+                                "text": "Is the angle bigger or smaller than a right angle?",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "parallel sides:",
+                        "items": [
+                            {
+                                "text": "Are there no, one, two, or more pairs?",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "lines of symmetry:",
+                        "items": [
+                            {
+                                "text": "Yes or no?",
+                                "items": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Have students cut out and sort a wide variety of two-dimensional shapes, including concave and convex shapes, shapes that have congruent (equal) side lengths but different angles, shapes with curved and straight sides, shapes with different side lengths, and shapes with different numbers of sides. (See BLM: Grade 2 E1.1 for a sample of assorted shapes). Have them identify their sorting rules, supporting them in using the correct vocabulary. Guide them in noticing that the orientation of a shape does not change it; for example, an “upside-down” triangle is still a triangle because it still has three sides and three angles. Have them re-sort the shapes using a different sorting rule to emphasize that the sort depends on the attribute being sorted for.",
+                "items": []
+            },
+            {
+                "text": "Have students play “Which One Doesn’t Belong?” by showing them four shapes and asking them to identify one shape that does not belong. Have them share their reasoning and their sorting rule. Emphasize that shapes have many sortable attributes and that the same group of objects can be sorted in different ways. Draw out the idea that whether something is included in the sort depends on the sorting rule.",
+                "items": []
+            },
+            {
+                "text": "Show students a two-dimensional shape on a geoboard. Place students in groups of four. Have the first student recreate the shape on their group’s geoboard, make one change to the shape, and then pass the geoboard to the next student in the group. Repeat until all four group members have made a change. Have students in the group identify the resulting shape and describe how it is different from the original shape and how it is the same.",
+                "items": []
+            },
+            {
+                "text": "Provide students with a variety of shapes. Have them sort these shapes based on whether they think they are symmetrical or not. Then ask them to visualize (predict) the line of symmetry, share their prediction verbally with peers, and verify by using their own strategy, such as paper-folding or using a reflection tool (e.g., a mirror). Have students adjust their sort as necessary.",
+                "items": []
+            }
+        ],
+        "tools": [
+            "geoboard",
+            "mirror"
+        ]
+    },
+    "g2-e1.2": {
+        "keyConcepts": [
+            {
+                "text": "Two-dimensional shapes can be combined to create larger shapes (composing) or broken into smaller shapes (decomposing). All shapes can be decomposed into smaller shapes. The ability to compose and decompose shapes provides a foundation for developing area formulas in later grades.",
+                "items": []
+            },
+            {
+                "text": "If a two-dimensional shape is broken into smaller parts (decomposed) and reassembled in a different way (composed), the area of the shape remains the same even though the shape itself has changed. This is known as the property of conservation.",
+                "items": []
+            }
+        ],
+        "examples": [],
+        "tasks": [
+            {
+                "text": "Have students cut out a two-dimensional shape from a sheet of paper. Have them fold the paper shape once or multiple times and identify the decomposed shapes created by the folds (i.e., the shapes within the shapes). Next, have them cut out the decomposed shapes and rearrange them to compose a new shape. Ask them if the area of the new shape is the same as, greater than, or less than that of the original shape. Have them share their thinking within a small group, and then discuss as a class. Give students a collection of pattern blocks or tangram pieces, and ask them to build a composite shape with all the pieces. Give them a second collection of the same pattern blocks or tangram pieces and have them build a different composite shape using all the pieces. Ask them how the areas of their two shapes compare, and have them explain their thinking.",
+                "items": []
+            },
+            {
+                "text": "Have students describe and demonstrate two-dimensional shapes and composite shapes that can be made by combining different pattern blocks or tangram puzzle pieces. For example, they might visualize and verbalize (talk about) which pattern blocks would fit together to fill an outline of a shape and then verify the different combinations that could make up that same area. Or they could use the pieces of a tangram to show various ways to make half a square. Have them compare the area of the shapes in both their “composed” form (the created shape) and their “decomposed” form (the pieces) and explain how they know that the areas are the same.",
+                "items": []
+            }
+        ],
+        "tools": [
+            "pattern blocks"
+        ]
+    },
+    "g2-e1.3": {
+        "keyConcepts": [
+            {
+                "text": "Congruent two-dimensional shapes can fit exactly on top of each other. They have the same shape and the same size.",
+                "items": []
+            },
+            {
+                "text": "Checking for congruence is closely related to measurement. Side lengths and angles can be directly compared by matching them, one against the other. They can also be measured.",
+                "items": []
+            },
+            {
+                "text": "Non-congruent shapes can have specific elements that are congruent. For example, two shapes could have a congruent angle or a congruent side length (i.e., those elements match), but if the other side lengths are different, or the angles between the lengths are different, then the two shapes are not considered congruent.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "identifying congruent shapes:",
+                "items": [
+                    {
+                        "text": "mentally matching lengths and angles",
+                        "items": []
+                    },
+                    {
+                        "text": "directly matching lengths and angles",
+                        "items": []
+                    },
+                    {
+                        "text": "indirectly comparing lengths and angles",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "congruent two-dimensional shapes:",
+                "items": []
+            },
+            {
+                "text": "conventions for communicating congruent lengths and angles using markings:",
+                "items": []
+            }
+        ],
+        "tasks": [
+            {
+                "text": "A pentomino is a shape made of five squares that share a full side or sides with one other square. Have students, in pairs, draw all the different pentominoes on 2 cm × 2 cm grid paper. Tell them that there are 12 pentominoes to find. As they draw their pentominoes, they should eliminate ones that are congruent, so they are left with only unique pentominoes. After they have completed the task, discuss the strategies they used to ensure that their pentominoes were unique.",
+                "items": []
+            },
+            {
+                "text": "Have students make two congruent shapes on a geoboard. Ask them to change either an angle or a side length on one of the shapes. Now ask them to compare the two shapes, identifying the angles and the side lengths that are still equal, and describe what effect the change had on the shape’s other angles or side lengths (or even the number of sides). Discuss how the two shapes are no longer congruent. Location and Movement",
+                "items": []
+            }
+        ],
+        "tools": [
+            "geoboard",
+            "grid paper"
+        ]
+    },
+    "g2-e1.4": {
+        "keyConcepts": [
+            {
+                "text": "A three-dimensional space can be represented using a two-dimensional map by noting where objects are positioned relative to each other. A map provides a bird’s-eye view of an area.",
+                "items": []
+            },
+            {
+                "text": "Words such as above, below, to the left, to the right, behind, and in front of can orient the location of one object in relation to another.",
+                "items": []
+            },
+            {
+                "text": "A grid adds a structure to a map. It helps to show where one object is in relation to another and can be a guide to determining distances and pathways. The location of objects on a map grid corresponds to an actual or virtual grid overlaid on the corresponding three-dimensional space.",
+                "items": []
+            },
+            {
+                "text": "Sometimes location on a grid is described by the intersection of the grid lines – this provides a precise location. Sometimes location on a grid is described by the space or region between the grid lines – this describes a more general location. It is important to be clear about which approach is used.",
+                "items": []
+            },
+            {
+                "text": "Labelling a grid, with either numbers or letters, helps to describe locations on the grid more accurately.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "simple maps:",
+                "items": [
+                    {
+                        "text": "a concrete map of a classroom using blocks to represent the furniture and its arrangement in the classroom",
+                        "items": []
+                    },
+                    {
+                        "text": "a sketch of the layout of a classroom",
+                        "items": []
+                    },
+                    {
+                        "text": "a grid that overlays a picture, where the locations of objects are marked on the intersections of the grid lines",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Provide students with a simple map of the school, and have them identify the locations of places such as the main office, their classroom, washrooms, emergency exits, and the gymnasium.",
+                "items": []
+            },
+            {
+                "text": "Have students draw a map of the classroom on grid paper, showing the locations of the different pieces of furniture. Align the grid with the floor tiles, or create a grid on the floor by measuring with rulers, metre sticks, or measuring tapes. Have students demonstrate that objects on the map are in the same relative location as they are in the classroom. Support students in noticing how labels on a grid (e.g., A1) can make it easier to describe a location.",
+                "items": []
+            },
+            {
+                "text": "Have students make a concrete map of their playground showing the locations of the different features (e.g., play structures, trees, basketball court). Next, have them sketch the layout of the playground on a simple map, identifying the locations of the features on their map. Now give them an aerial photo of the playground from an online mapping site. Have them compare the two maps to find familiar locations, and discuss what they notice and what adjustments they need to make to their maps.",
+                "items": []
+            }
+        ],
+        "tools": [
+            "tiles",
+            "grid paper",
+            "ruler",
+            "metre stick",
+            "measuring tape"
+        ]
+    },
+    "g2-e1.5": {
+        "keyConcepts": [
+            {
+                "text": "A three-dimensional space can be represented on a two-dimensional map by noting where objects are positioned relative to each other. A map provides a bird’s-eye view of an area.",
+                "items": []
+            },
+            {
+                "text": "Words such as above, below, to the left, to the right, behind, and in front of can orient the location of one object in relation to another (direction). Numbers describe the distance one object is from another.",
+                "items": []
+            },
+            {
+                "text": "A combination of words, numbers, and units are used to describe movement from one location to another (e.g., 5 steps to the left).",
+                "items": []
+            },
+            {
+                "text": "The order of these steps is often important when describing the movement needed to get from one object to another.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "describing relative positions:",
+                "items": [
+                    {
+                        "text": "…is above/below the…",
+                        "items": []
+                    },
+                    {
+                        "text": "…is over/under the…",
+                        "items": []
+                    },
+                    {
+                        "text": "…is beside/inside/outside the…",
+                        "items": []
+                    },
+                    {
+                        "text": "…is to the right/left of the…",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "describing movements:",
+                "items": [
+                    {
+                        "text": "move right/left [...] steps",
+                        "items": []
+                    },
+                    {
+                        "text": "move up/down [...] steps",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Provide students with a grid map, or have them use the map they developed in E1.4, Sample Task 2. Ask them to describe the relative locations of objects and write directions or code to describe the movements needed to get from one location to another on the map. They could also write directions to a mystery object and share them with a peer.",
+                "items": []
+            },
+            {
+                "text": "Have students describe the relative positions of several objects on a grid, and the movements needed to get from one spot to another on the grid. For example, for the grid below, ask questions such as:",
+                "items": [
+                    "Where is the blue triangle located?",
+                    "If I start at E5 and go up 4 and then right 2, what shape will I land on?",
+                    "How might I move the rectangle at B2 to J6 without bumping into any other shapes?"
+                ]
+            },
+            {
+                "text": "Have students write code to program a small robot (or digital image or classmate) to reach a predetermined destination or to move through a maze. Ask them to read a partner’s code and predict where their partner’s robot will end up. After students have made their predictions, have them run their programs to test the predictions. Discuss what they have learned from their experience of making and testing predictions.",
+                "items": []
+            }
+        ],
+        "tools": []
+    },
+    "g2-e2.1": {
+        "keyConcepts": [
+            {
+                "text": "A length is the distance between two points, in any direction. Width, height, and depth are all measurements that compare length, or the distance between two points.",
+                "items": []
+            },
+            {
+                "text": "Units quantify comparisons and are used to change from comparison questions (Which is longer?) to measurement questions (How long? How much longer?).",
+                "items": []
+            },
+            {
+                "text": "An appropriate unit is one that matches the attribute well (e.g., a unit of length to measure length, a unit of time to measure time) and is easy to repeat.",
+                "items": []
+            },
+            {
+                "text": "To directly measure an object:",
+                "items": [
+                    {
+                        "text": "select a unit that matches the attribute being measured (e.g., a paper clip to measure length);",
+                        "items": []
+                    },
+                    {
+                        "text": "repeat (iterate) the unit or copies of the unit without gaps or overlaps;",
+                        "items": []
+                    },
+                    {
+                        "text": "determine how many units it takes to match the object completely;",
+                        "items": []
+                    },
+                    {
+                        "text": "choose smaller units (or partial units) for greater accuracy.",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "Measurements of continuous quantities are always approximate. The smaller the unit chosen, the greater the potential accuracy of the measurement. If different-sized units are used to match an object more completely, each unit is counted and tracked separately.",
+                "items": []
+            },
+            {
+                "text": "The size of the unit affects the count – there is an inverse relationship between the size of the unit and the number of units it takes to cover, match, or fill an attribute. The smaller the unit, the greater the count; the larger the unit, the smaller the count. Regardless of whether a small or large unit is used to measure the length of an object, the object’s length is constant; only the count changes. This is known as the conservation property.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "using non-standard units for linear measures:",
+                "items": [
+                    {
+                        "text": "real-life objects: length of a paper clip, a toothpick, a pen",
+                        "items": []
+                    },
+                    {
+                        "text": "personal referents (benchmarks): width of a finger, height, length of a foot, hand span, arm span, length of a stride",
+                        "items": []
+                    },
+                    {
+                        "text": "math learning tools: length of a relational rod, distance between the tick marks on a number line",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "measuring lengths of objects:",
+                "items": [
+                    {
+                        "text": "placing enough paper clips, pens, or shoes, with no gaps or overlaps, to be equivalent to the length of an object, and counting them",
+                        "items": []
+                    },
+                    {
+                        "text": "iterating a toothpick, the width of a finger, or a relational rod, with no gaps or overlaps, until the end of an object is reached, and tracking the number of iterations",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "measuring length as the distance between two points:",
+                "items": [
+                    {
+                        "text": "counting the number of steps or number of strides to get from one location to another (e.g., across the room, from the front entrance of the school to the classroom door)",
+                        "items": []
+                    },
+                    {
+                        "text": "marking two points on a number line and determining the distance between them",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "comparing lengths to describe relationships:",
+                "items": [
+                    {
+                        "text": "comparing the counts of unit lengths based on the same non-standard unit",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Present students with a “messy math box” filled with objects that may or may not be appropriate for measuring length. For example, include marbles, cotton balls, string, elastics, square tiles, craft sticks, relational rods, toothpicks, pattern blocks, and interlocking cubes. Have students choose objects to use as units and discuss what makes an appropriate unit to measure length. Discuss the idea that an appropriate unit is one that can be easily repeated with no gaps or overlaps and that has a constant length. Have students use the unit they chose to measure the length of an object or the distance between two objects or points.",
+                "items": []
+            },
+            {
+                "text": "Have students measure the same length using two different, but appropriate, units and explain why the count is different. Introduce a third unit of yet a different size and ask them to predict whether the count will be more or less than the other counts. Have them visualize the effect of using the three different units, verbalize their prediction and their reasoning, and then verify by measuring. Throughout this task, watch for students who might be distracted by the count, thinking that it is the count alone, and not the unit, that determines which length is longer. Highlight spatial reasoning when comparing lengths, and support students in recognizing that, although the count will change depending on the size of the unit, the length of the object or the distance between two points has not changed.",
+                "items": []
+            }
+        ],
+        "tools": [
+            "relational rods",
+            "pattern blocks",
+            "tiles"
+        ]
+    },
+    "g2-e2.2": {
+        "keyConcepts": [
+            {
+                "text": "Standard units make it possible to reliably communicate measurements. Centimetres and metres are standard metric units for measuring length. There are 100 centimetres in 1 metre.",
+                "items": []
+            },
+            {
+                "text": "Measurements of continuous quantities, such as lengths, are always approximate. The smaller the unit selected, the greater the potential accuracy. Different-sized units can be used to match an object more completely, but the count of each unit must be tracked separately.",
+                "items": []
+            },
+            {
+                "text": "To measure a length that is, for example, between 1 metre and 2 metres, a combination of metres and centimetres can be used, or centimetres only, or rounding the length to the nearest metre.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "benchmarks:",
+                "items": [
+                    {
+                        "text": "centimetre: width of a finger, width of a pencil",
+                        "items": []
+                    },
+                    {
+                        "text": "metre: stride length, length of a baseball bat",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Show students 1 centimetre on a ruler. Have them search for an item or identify a personal referent that is about 1 centimetre long. Have them use that item or personal referent as a benchmark to estimate the lengths of other items in the classroom.",
+                "items": []
+            },
+            {
+                "text": "Show students an object or a distance that is 1 metre (without telling them it is 1 metre). Ask them to predict its length or distance in centimetres. Have them use a ruler, a metre stick, or a length of string to verify their prediction. Confirm with students that 100 centimetres is equivalent to 1 metre. Next, ask them to search for an item or identify a personal referent that can be used as a benchmark for 1 metre. Discuss the possible benchmark items that they have found, and have them select one or two to adopt as their personal benchmarks. Explain that it is useful to have a personal benchmark, and that it is okay to change our benchmark if we find a better one later. Have them use their personal benchmarks to estimate lengths of 2 metres or 3 metres.",
+                "items": []
+            }
+        ],
+        "tools": [
+            "ruler",
+            "metre stick"
+        ]
+    },
+    "g2-e2.3": {
+        "keyConcepts": [
+            {
+                "text": "Rulers, measuring tapes, tape measures – in fact, all measuring tools – replace the need to lay out and count actual physical units. The measuring tool repeats the unit so there are no gaps or overlaps and includes a scale to keep track of the unit count.",
+                "items": []
+            },
+            {
+                "text": "A scale – such as the scale on a ruler – starts at the beginning of the first unit, which is labelled 0 because no units have been laid out. At the end of the first unit, the scale is labelled 1, because 1 complete unit has been laid out. The scale continues to count full units.",
+                "items": []
+            },
+            {
+                "text": "When the edge of an object is matched with the 0 on the measuring tool, the scale accurately keeps track of the count. However, a length can be measured from any starting point, as long as the count is adjusted based on the starting point to accurately reflect the length of the object.",
+                "items": []
+            },
+            {
+                "text": "The distance between two end points stays constant, no matter where on the scale the count begins. A measurement counts the number of units between the start of a length and the end of a length.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "linear measuring tools:",
+                "items": [
+                    {
+                        "text": "rulers, measuring tapes",
+                        "items": []
+                    },
+                    {
+                        "text": "constructed rulers made with 1 centimetre interlocking cubes",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "text": "determining a linear measurement using a measuring tool:",
+                "items": [
+                    {
+                        "text": "if the object is shorter than the tool:",
+                        "items": [
+                            {
+                                "text": "starting at zero: the measure is the marking on the tool at the end of the object",
+                                "items": []
+                            },
+                            {
+                                "text": "starting at a value greater than zero: the measure is the difference between the marking on the tool and the distance from zero to the starting point",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "if the object is longer than the tool:",
+                        "items": [
+                            {
+                                "text": "move (iterate) the tool repeatedly along the length of the object with no gaps or overlaps",
+                                "items": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "contexts:",
+                "items": [
+                    {
+                        "text": "measuring the distance from the front door of the school to the classroom door on a map",
+                        "items": []
+                    },
+                    {
+                        "text": "determining whether shapes have equal side lengths",
+                        "items": []
+                    },
+                    {
+                        "text": "marking the start and end of a race in the schoolyard",
+                        "items": []
+                    },
+                    {
+                        "text": "comparing students’ heights at the beginning and end of the year",
+                        "items": []
+                    },
+                    {
+                        "text": "comparing the height of a book and the height of the space between shelves on a bookshelf",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Have students create their own linear measuring tools by joining several 1 cm interlocking cubes. Ask them to compare their measuring tool to a ruler. Support them in understanding that the measure of each centimetre ends in the space between each pair of cubes, which represents the tick mark on a ruler. Also, the first space represents 1 cm, which is the distance from 0 to 1 on a ruler. Have students use their measuring tool to draw a variety of specified lengths and measure the length of a variety of objects to the closest centimetre.",
+                "items": []
+            },
+            {
+                "text": "Similarly to Sample Task 1, ask students to work in small groups to make a measuring tool by linking one hundred 1 cm cubes. Ask them to compare their tool to a metre stick. Have them use their measuring tool to measure a variety of lengths and then measure the same lengths using a fabric or metal measuring tape or a trundle wheel. Ask students to compare their results and observations about using each of the tools.",
+                "items": []
+            },
+            {
+                "text": "Present students with the following scenario:",
+                "items": [
+                    "A friend wants to measure the length of some shapes but can only find a centimetre ruler with the ends broken off. What advice would you give to your friend about making accurate measurements with this ruler?"
+                ],
+                "after": "Support students in understanding that when measuring with a broken ruler, instead of simply reading off the numbers, they must find the difference between two numbers on the ruler."
+            },
+            {
+                "text": "Discuss how using a broken ruler is like using a regular ruler and how it is different.",
+                "items": []
+            }
+        ],
+        "tools": [
+            "ruler",
+            "metre stick",
+            "measuring tape"
+        ]
+    },
+    "g2-e2.4": {
+        "keyConcepts": [
+            {
+                "text": "Measuring time involves questions such as: “What time is it?” and “How much time has passed?”. The focus in Grade 2 is on the second question.",
+                "items": []
+            },
+            {
+                "text": "The passage of time is measured by counting units of time that repeat in a regular and predictable manner: the beats of a metronome; the dripping of a faucet; the natural cycles of a day; the swing of a pendulum; the seconds, minutes, and hours of a clock.",
+                "items": []
+            },
+            {
+                "text": "Similar to measuring physical length, a length of time can be measured using different units of different sizes. The smaller the unit of time used, the more precise the measurement. Similar to all continuous attributes, the measurement of time is always approximate.",
+                "items": []
+            },
+            {
+                "text": "Around the world, standard units of time – seconds, minutes, hours – are used to communicate the length of time of an event. Measuring tools, such as stopwatches, keep track of the unit count.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "duration of some events:",
+                "items": [
+                    {
+                        "text": "15 minutes for recess",
+                        "items": []
+                    },
+                    {
+                        "text": "2 hours for a party",
+                        "items": []
+                    },
+                    {
+                        "text": "40 minutes for lunch",
+                        "items": []
+                    },
+                    {
+                        "text": "8 claps for each verse in a song",
+                        "items": []
+                    },
+                    {
+                        "text": "3 sleeps in a weekend",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Have students time short events with non-standard units (e.g., number of claps or stomps, a metronome, an hourglass or other sand timer). Discuss what makes the non-standard unit an accurate measure of time, and what makes them inaccurate.",
+                "items": []
+            },
+            {
+                "text": "Give students a task that takes a bit of time to complete and can be repeated (e.g., How quickly can you put 200 marbles, one at a time, into a jar?). Invite them to try the task, timing each other in minutes, seconds, or a non-standard unit (e.g., beats of a metronome, swings of a pendulum, foot stomps). Compare faster and slower times, and discuss how using common units makes times comparable. Highlight the importance of both the count and the unit used when making comparisons, and the advantages and disadvantages of the different units.",
+                "items": []
+            },
+            {
+                "text": "Have students time common events, such as the length of recess, or the length of a television commercial, using an analog clock, a digital clock, and a timer.",
+                "items": []
+            },
+            {
+                "text": "Have students identify common events that take 1 hour, 1 minute, 30 seconds, and 1 second. Have them use an appropriate tool to verify their choices.",
+                "items": []
+            },
+            {
+                "text": "F. Financial Literacy Overall expectations By the end of Grade 2, students will:",
+                "items": []
+            }
+        ],
+        "tools": [
+            "clock"
+        ]
+    },
+    "g2-f1.1": {
+        "keyConcepts": [
+            {
+                "text": "There are a variety of ways to represent the same amount of money.",
+                "items": []
+            },
+            {
+                "text": "There are various strategies to determine the different ways to represent the same amount of money; for example, using an organized list, representing the amounts with drawings, or using money manipulatives.",
+                "items": []
+            }
+        ],
+        "examples": [
+            {
+                "text": "combinations of cents:",
+                "items": [
+                    {
+                        "text": "representing 50¢ using patterning:",
+                        "items": [
+                            {
+                                "text": "10 nickels",
+                                "items": []
+                            },
+                            {
+                                "text": "8 nickels and 1 dime",
+                                "items": []
+                            },
+                            {
+                                "text": "6 nickels and 2 dimes",
+                                "items": []
+                            },
+                            {
+                                "text": "4 nickels and 3 dimes",
+                                "items": []
+                            },
+                            {
+                                "text": "2 nickels and 4 dimes",
+                                "items": []
+                            },
+                            {
+                                "text": "5 dimes",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "representing 50¢ with the least number of coins:",
+                        "items": [
+                            {
+                                "text": "2 quarters",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "representing 50¢ with the greatest number of coins:",
+                        "items": [
+                            {
+                                "text": "10 nickels",
+                                "items": []
+                            }
+                        ]
+                    },
+                    {
+                        "text": "representing 50¢ in different ways:",
+                        "items": [
+                            {
+                                "text": "1 nickel, 2 dimes, 1 quarter",
+                                "items": []
+                            },
+                            {
+                                "text": "4 dimes, 2 nickels",
+                                "items": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "combinations of dollars:",
+                "items": [
+                    {
+                        "text": "decomposing $20 in various ways (e.g., $10, $10 or $5, $5, $5, $5)",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "tasks": [
+            {
+                "text": "Have students use concrete or digital play money to show different combinations of coins for an amount up to 200¢.",
+                "items": []
+            },
+            {
+                "text": "Have students determine different combinations of coins to show a set amount using both the least and the greatest number of coins.",
+                "items": []
+            },
+            {
+                "text": "Have students investigate combinations of coins and bills up to a value of $200.",
+                "items": []
+            }
+        ],
+        "tools": [
+            "money",
+            "coins"
+        ]
+    }
+}

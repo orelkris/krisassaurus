@@ -15,7 +15,7 @@ export const blogSections: BlogSection[] = [
     slug: 'math',
     name: 'Math',
     path: '/blog/math',
-    ready: false,
+    ready: true,
     related: {
       label: 'Looking for ways to teach math through drama?',
       linkText: 'Drama & Math',

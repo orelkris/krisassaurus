@@ -7,6 +7,7 @@ import { getStrategy, getStrategiesInGroup, strategies } from '@/data/drama/stra
 import { dramaSubjects, getSubject } from '@/data/drama/subjects'
 import { getLinksToPage } from '@/data/resources/documentLinks'
 import { getMinistryDocument } from '@/data/resources/ministryDocuments'
+import MobileSidebarToggle from '@/components/ui/MobileSidebarToggle'
 
 // Ministry documents linked to the Drama blog in documentLinks
 const curriculumDocuments = getLinksToPage('/blog/drama').flatMap((link) => {
@@ -62,19 +63,12 @@ function DramaSidebar() {
 
   return (
     <div className="lg:pr-4">
-      <button
-        onClick={() => setIsMobileOpen(!isMobileOpen)}
-        aria-expanded={isMobileOpen}
-        className="lg:hidden flex w-full cursor-pointer items-center justify-between gap-2 rounded-[10px] border border-gray-200 px-3.5 py-2.5 text-left text-sm font-semibold text-gray-900"
-      >
-        <span>
-          <span className="block text-[11px] font-medium uppercase tracking-wide text-gray-400">
-            Browse Drama
-          </span>
-          {currentLabel}
-        </span>
-        <Chevron open={isMobileOpen} />
-      </button>
+      <MobileSidebarToggle
+        label="Browse Drama"
+        current={currentLabel}
+        isOpen={isMobileOpen}
+        onToggle={() => setIsMobileOpen(!isMobileOpen)}
+      />
 
       <div className={`${isMobileOpen ? 'block pt-3' : 'hidden'} lg:block lg:pt-0`}>
         <p className="mb-1.5 text-xs uppercase tracking-wide text-gray-400">Drama</p>

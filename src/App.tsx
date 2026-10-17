@@ -13,6 +13,11 @@ import DramaOverviewPage from '@/pages/drama/DramaOverviewPage'
 import StrategiesPage from '@/pages/drama/StrategiesPage'
 import StrategyPage from '@/pages/drama/StrategyPage'
 import SubjectPage from '@/pages/drama/SubjectPage'
+import MathSidebar from '@/components/math/MathSidebar'
+import MathOverviewPage from '@/pages/math/MathOverviewPage'
+import GradePage from '@/pages/math/GradePage'
+import StrandPage from '@/pages/math/StrandPage'
+import ExpectationPage from '@/pages/math/ExpectationPage'
 import ResourcesSidebar from '@/components/resources/ResourcesSidebar'
 import MinistryDocumentsPage from '@/pages/resources/MinistryDocumentsPage'
 import TeachingResourcesPage from '@/pages/resources/TeachingResourcesPage'
@@ -42,6 +47,21 @@ function App() {
               <Route path="strategies" element={<StrategiesPage />} />
               <Route path="strategies/:slug" element={<StrategyPage />} />
               <Route path="subjects/:slug" element={<SubjectPage />} />
+            </Route>
+
+            {/* Math blog: the curriculum by grade, by strand, and one page per expectation */}
+            <Route
+              path="/blog/math"
+              element={
+                <TwoColumnLayout sidebar={<MathSidebar />} scrollable>
+                  <Outlet />
+                </TwoColumnLayout>
+              }
+            >
+              <Route index element={<MathOverviewPage />} />
+              <Route path="grade/:grade" element={<GradePage />} />
+              <Route path="grade/:grade/:code" element={<ExpectationPage />} />
+              <Route path="strand/:slug" element={<StrandPage />} />
             </Route>
 
             {/* Other blog sections show "Coming soon" for now */}

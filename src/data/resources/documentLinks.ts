@@ -12,6 +12,12 @@ export const documentLinks: DocumentLink[] = [
     page: 15,
     pageLabel: 'the Drama strand',
   },
+  {
+    documentSlug: 'mathematics-1-8',
+    to: '/blog/math',
+    label: 'Blog › Math',
+    blurb: 'Every expectation for Grades 1 to 8, by grade and by strand.',
+  },
 ]
 
 export function getLinksToPage(to: string): DocumentLink[] {
