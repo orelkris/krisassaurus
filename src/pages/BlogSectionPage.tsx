@@ -10,7 +10,7 @@ function BlogSectionPage() {
   if (!section) return <Navigate to="/" replace />
 
   return (
-    <div className="max-w-6xl mx-auto px-8 py-8 flex flex-col gap-6">
+    <div className="max-w-6xl mx-auto px-8 py-8 min-h-full flex flex-col gap-6">
       <h1 className="text-3xl font-bold text-gray-900">{section.name}</h1>
       <ComingSoon
         title="Coming soon"

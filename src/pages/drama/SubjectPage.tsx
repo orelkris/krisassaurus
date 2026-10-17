@@ -10,7 +10,7 @@ function SubjectPage() {
   if (!subject) return <Navigate to="/blog/drama" replace />
 
   return (
-    <div className="flex flex-col gap-7">
+    <div className="flex flex-1 flex-col gap-7">
       <header className="flex flex-col gap-2">
         <Breadcrumb
           className="text-gray-900"
