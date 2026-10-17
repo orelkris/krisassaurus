@@ -5,6 +5,14 @@ import type { StrategyGroupId } from '@/types/drama'
 import { strategyGroups } from '@/data/drama/groups'
 import { getStrategy, getStrategiesInGroup, strategies } from '@/data/drama/strategies'
 import { dramaSubjects, getSubject } from '@/data/drama/subjects'
+import { getLinksToPage } from '@/data/resources/documentLinks'
+import { getMinistryDocument } from '@/data/resources/ministryDocuments'
+
+// Ministry documents linked to the Drama blog in documentLinks
+const curriculumDocuments = getLinksToPage('/blog/drama').flatMap((link) => {
+  const document = getMinistryDocument(link.documentSlug)
+  return document?.file ? [document] : []
+})
 
 const linkClass = (isCurrent: boolean) =>
   `flex items-center justify-between gap-1.5 py-1 text-sm transition-colors ${
@@ -186,6 +194,24 @@ function DramaSidebar() {
               </Link>
             ))}
           </div>
+        )}
+
+        {curriculumDocuments.length > 0 && (
+          <>
+            <p className="mt-3 py-1 text-sm font-semibold text-gray-900">Curriculum</p>
+            <div className="pl-2.5">
+              {curriculumDocuments.map((document) => (
+                <Link
+                  key={document.slug}
+                  to={`/resources/documents/${document.slug}`}
+                  onClick={closeMobile}
+                  className={linkClass(false)}
+                >
+                  {document.shortName}
+                </Link>
+              ))}
+            </div>
+          </>
         )}
       </div>
     </div>

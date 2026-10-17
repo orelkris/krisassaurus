@@ -4,7 +4,6 @@ import AppLayout from '@/components/layout/AppLayout'
 import BlogListPage from '@/pages/BlogListPage'
 import BlogPostPage from '@/pages/BlogPostPage'
 import BlogSectionPage from '@/pages/BlogSectionPage'
-import ResourcesPage from '@/pages/ResourcesPage'
 import AboutPage from '@/pages/AboutPage'
 import MusicPage from '@/pages/MusicPage'
 import ScrollToTop from '@/components/ui/ScrollToTop'
@@ -14,6 +13,10 @@ import DramaOverviewPage from '@/pages/drama/DramaOverviewPage'
 import StrategiesPage from '@/pages/drama/StrategiesPage'
 import StrategyPage from '@/pages/drama/StrategyPage'
 import SubjectPage from '@/pages/drama/SubjectPage'
+import ResourcesSidebar from '@/components/resources/ResourcesSidebar'
+import MinistryDocumentsPage from '@/pages/resources/MinistryDocumentsPage'
+import TeachingResourcesPage from '@/pages/resources/TeachingResourcesPage'
+import DocumentPage from '@/pages/resources/DocumentPage'
 
 function App() {
   return (
@@ -44,7 +47,20 @@ function App() {
             {/* Other blog sections show "Coming soon" for now */}
             <Route path="/blog/:section" element={<BlogSectionPage />} />
 
-            <Route path="/resources" element={<ResourcesPage />} />
+            {/* Resources: Ministry documents first, Teaching resources second */}
+            <Route
+              path="/resources"
+              element={
+                <TwoColumnLayout sidebar={<ResourcesSidebar />} scrollable>
+                  <Outlet />
+                </TwoColumnLayout>
+              }
+            >
+              <Route index element={<MinistryDocumentsPage />} />
+              <Route path="teaching" element={<TeachingResourcesPage />} />
+              <Route path="documents/:slug" element={<DocumentPage />} />
+            </Route>
+
             <Route path="/about" element={<AboutPage />} />
             <Route path="/music" element={<MusicPage />} />
           </Route>

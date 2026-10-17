@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { strategyGroups } from '@/data/drama/groups'
 import { strategies } from '@/data/drama/strategies'
 import { dramaSubjects } from '@/data/drama/subjects'
+import DocumentFeature from '@/components/resources/DocumentFeature'
 
 function DramaOverviewPage() {
   return (
@@ -17,6 +18,8 @@ function DramaOverviewPage() {
           {strategies.length} strategies · {dramaSubjects.length} subjects
         </p>
       </header>
+
+      <DocumentFeature page="/blog/drama" />
 
       <section className="overflow-hidden rounded-2xl border border-gray-200">
         {/* One stripe per colour family */}

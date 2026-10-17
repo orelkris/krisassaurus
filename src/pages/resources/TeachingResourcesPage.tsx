@@ -1,55 +1,25 @@
-import { useState, useMemo } from 'react'
-import TwoColumnLayout from '@/components/layout/TwoColumnLayout'
+import { useMemo } from 'react'
+import { useSearchParams } from 'react-router-dom'
+import ResourcesHeader from '@/components/resources/ResourcesHeader'
 import { resources } from '@/data/resources'
 import { getTopicColor } from '@/data/topicColors'
 
-function ResourcesPage() {
-  const [selectedTopic, setSelectedTopic] = useState<string | null>(null)
-
-  const topics = useMemo(() => {
-    return [...new Set(resources.map((r) => r.topic))].sort()
-  }, [])
+function TeachingResourcesPage() {
+  // The sidebar sets ?topic=Math; no topic shows everything
+  const [searchParams] = useSearchParams()
+  const selectedTopic = searchParams.get('topic')
 
   const filteredResources = useMemo(() => {
     if (selectedTopic === null) return resources
     return resources.filter((r) => r.topic === selectedTopic)
   }, [selectedTopic])
 
-  const sidebar = (
-    <nav className="flex flex-col gap-1">
-      <button
-        onClick={() => setSelectedTopic(null)}
-        className={`cursor-pointer text-left text-sm py-1 transition-colors ${
-          selectedTopic === null
-            ? 'font-semibold text-gray-900'
-            : 'text-gray-500 hover:text-gray-900'
-        }`}
-      >
-        All Resources
-      </button>
-
-      {topics.map((topic) => (
-        <button
-          key={topic}
-          onClick={() => setSelectedTopic(topic)}
-          className={`cursor-pointer text-left text-sm py-1 transition-colors flex items-center gap-2 ${
-            selectedTopic === topic
-              ? 'font-semibold text-gray-900'
-              : 'text-gray-500 hover:text-gray-900'
-          }`}
-        >
-          <span
-            className="w-2 h-2 rounded-full shrink-0"
-            style={{ backgroundColor: getTopicColor(topic) }}
-          />
-          {topic}
-        </button>
-      ))}
-    </nav>
-  )
-
   return (
-    <TwoColumnLayout sidebar={sidebar} scrollable>
+    <div className="flex flex-col gap-7">
+      <ResourcesHeader
+        activeTab="teaching"
+        intro="Websites and tools I use with my classes."
+      />
       {filteredResources.length === 0 ? (
         <div className="flex items-center justify-center h-48 text-sm text-gray-400">
           No resources found.
@@ -101,8 +71,8 @@ function ResourcesPage() {
           </tbody>
         </table>
       )}
-    </TwoColumnLayout>
+    </div>
   )
 }
 
-export default ResourcesPage
+export default TeachingResourcesPage
