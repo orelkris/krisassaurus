@@ -1,0 +1,195 @@
+import { useState } from 'react'
+import { Link, useMatch } from 'react-router-dom'
+import { ChevronDown } from 'lucide-react'
+import type { StrategyGroupId } from '@/types/drama'
+import { strategyGroups } from '@/data/drama/groups'
+import { getStrategy, getStrategiesInGroup, strategies } from '@/data/drama/strategies'
+import { dramaSubjects, getSubject } from '@/data/drama/subjects'
+
+const linkClass = (isCurrent: boolean) =>
+  `flex items-center justify-between gap-1.5 py-1 text-sm transition-colors ${
+    isCurrent ? 'font-semibold text-gray-900' : 'text-gray-500 hover:text-gray-900'
+  }`
+
+function Chevron({ open }: { open: boolean }) {
+  return (
+    <ChevronDown
+      size={14}
+      className={`shrink-0 transition-transform ${open ? 'rotate-180' : ''}`}
+    />
+  )
+}
+
+function DramaSidebar() {
+  const overviewMatch = useMatch('/blog/drama')
+  const strategiesMatch = useMatch('/blog/drama/strategies')
+  const strategyMatch = useMatch('/blog/drama/strategies/:slug')
+  const subjectMatch = useMatch('/blog/drama/subjects/:slug')
+
+  const currentStrategy = getStrategy(strategyMatch?.params.slug ?? '')
+  const currentSubject = getSubject(subjectMatch?.params.slug ?? '')
+
+  const [query, setQuery] = useState('')
+  const [isStrategiesOpen, setIsStrategiesOpen] = useState(true)
+  const [isSubjectsOpen, setIsSubjectsOpen] = useState(true)
+  // Only groups the reader has opened or closed are stored; the group of the
+  // strategy being viewed is open by default
+  const [toggledGroups, setToggledGroups] = useState<Partial<Record<StrategyGroupId, boolean>>>({})
+  // On phones the whole list folds into the "Browse Drama" button
+  const [isMobileOpen, setIsMobileOpen] = useState(false)
+
+  const search = query.trim().toLowerCase()
+  const isGroupOpen = (id: StrategyGroupId) =>
+    search !== '' || (toggledGroups[id] ?? currentStrategy?.groupId === id)
+
+  const currentLabel = currentStrategy
+    ? currentStrategy.name
+    : currentSubject
+      ? `Drama & ${currentSubject.name}`
+      : strategiesMatch
+        ? 'Strategies'
+        : 'Overview'
+
+  const closeMobile = () => setIsMobileOpen(false)
+
+  return (
+    <div className="lg:pr-4">
+      <button
+        onClick={() => setIsMobileOpen(!isMobileOpen)}
+        aria-expanded={isMobileOpen}
+        className="lg:hidden flex w-full cursor-pointer items-center justify-between gap-2 rounded-[10px] border border-gray-200 px-3.5 py-2.5 text-left text-sm font-semibold text-gray-900"
+      >
+        <span>
+          <span className="block text-[11px] font-medium uppercase tracking-wide text-gray-400">
+            Browse Drama
+          </span>
+          {currentLabel}
+        </span>
+        <Chevron open={isMobileOpen} />
+      </button>
+
+      <div className={`${isMobileOpen ? 'block pt-3' : 'hidden'} lg:block lg:pt-0`}>
+        <p className="mb-1.5 text-xs uppercase tracking-wide text-gray-400">Drama</p>
+
+        <Link to="/blog/drama" onClick={closeMobile} className={linkClass(!!overviewMatch)}>
+          Overview
+        </Link>
+
+        <button
+          onClick={() => setIsStrategiesOpen(!isStrategiesOpen)}
+          aria-expanded={isStrategiesOpen}
+          className="mt-2 flex w-full cursor-pointer items-center justify-between py-1 text-sm font-semibold text-gray-900"
+        >
+          Strategies
+          <Chevron open={isStrategiesOpen} />
+        </button>
+
+        {isStrategiesOpen && (
+          <div className="pl-2.5">
+            <input
+              type="search"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="Find a strategy"
+              aria-label="Find a strategy"
+              className="my-2 w-full rounded-lg border border-gray-200 px-2.5 py-1.5 text-[13px] placeholder:text-gray-400 focus:border-gray-400 focus:outline-none"
+            />
+
+            <Link
+              to="/blog/drama/strategies"
+              onClick={closeMobile}
+              className={linkClass(!!strategiesMatch)}
+            >
+              <span>
+                All strategies{' '}
+                <span className="text-xs font-normal text-gray-400">{strategies.length}</span>
+              </span>
+            </Link>
+
+            {strategyGroups.map((group) => {
+              const items = getStrategiesInGroup(group.id).filter(
+                (strategy) => !search || strategy.name.toLowerCase().includes(search)
+              )
+              if (search && items.length === 0) return null
+              const open = isGroupOpen(group.id)
+
+              return (
+                <div key={group.id}>
+                  <button
+                    onClick={() =>
+                      setToggledGroups({ ...toggledGroups, [group.id]: !open })
+                    }
+                    aria-expanded={open}
+                    className="flex w-full cursor-pointer items-center justify-between gap-1.5 py-1 text-left text-[13px] text-gray-500 hover:text-gray-900"
+                  >
+                    <span className="flex items-center gap-2">
+                      <span
+                        className="h-2 w-2 shrink-0 rounded-full"
+                        style={{ backgroundColor: group.colors.accent }}
+                      />
+                      {group.name}
+                      <span className="text-xs text-gray-400">
+                        {getStrategiesInGroup(group.id).length}
+                      </span>
+                    </span>
+                    <Chevron open={open} />
+                  </button>
+
+                  {open && (
+                    <div className="mb-1.5 ml-1 border-l border-gray-200 pl-4">
+                      {items.map((strategy) => (
+                        <Link
+                          key={strategy.slug}
+                          to={`/blog/drama/strategies/${strategy.slug}`}
+                          onClick={closeMobile}
+                          className={`block py-0.5 text-[13px] transition-colors ${
+                            strategy.slug === currentStrategy?.slug
+                              ? 'font-semibold text-gray-900'
+                              : 'text-gray-500 hover:text-gray-900'
+                          }`}
+                        >
+                          {strategy.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )
+            })}
+
+            {search && !strategies.some((s) => s.name.toLowerCase().includes(search)) && (
+              <p className="py-1 text-[13px] text-gray-400">No strategy matches that.</p>
+            )}
+          </div>
+        )}
+
+        <button
+          onClick={() => setIsSubjectsOpen(!isSubjectsOpen)}
+          aria-expanded={isSubjectsOpen}
+          className="mt-2 flex w-full cursor-pointer items-center justify-between py-1 text-sm font-semibold text-gray-900"
+        >
+          Subjects
+          <Chevron open={isSubjectsOpen} />
+        </button>
+
+        {isSubjectsOpen && (
+          <div className="pl-2.5">
+            {dramaSubjects.map((subject) => (
+              <Link
+                key={subject.slug}
+                to={`/blog/drama/subjects/${subject.slug}`}
+                onClick={closeMobile}
+                className={linkClass(subject.slug === currentSubject?.slug)}
+              >
+                {subject.name}
+                <span className="text-xs font-normal text-gray-400">soon</span>
+              </Link>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
+
+export default DramaSidebar
