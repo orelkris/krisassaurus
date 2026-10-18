@@ -62,7 +62,7 @@ function Sidebar({ posts }: SidebarProps) {
             }`}
           >
             {month.label}
-            <span className="ml-1 text-xs text-gray-400">({month.count})</span>
+            <span className="text-muted ml-1">({month.count})</span>
           </button>
         ))}
       </nav>

@@ -71,7 +71,7 @@ function DramaSidebar() {
       />
 
       <div className={`${isMobileOpen ? 'block pt-3' : 'hidden'} lg:block lg:pt-0`}>
-        <p className="mb-1.5 text-xs uppercase tracking-wide text-gray-400">Drama</p>
+        <p className="text-label mb-1.5">Drama</p>
 
         <Link to="/blog/drama" onClick={closeMobile} className={linkClass(!!overviewMatch)}>
           Overview
@@ -104,7 +104,7 @@ function DramaSidebar() {
             >
               <span>
                 All strategies{' '}
-                <span className="text-xs font-normal text-gray-400">{strategies.length}</span>
+                <span className="text-muted font-normal">{strategies.length}</span>
               </span>
             </Link>
 
@@ -122,15 +122,15 @@ function DramaSidebar() {
                       setToggledGroups({ ...toggledGroups, [group.id]: !open })
                     }
                     aria-expanded={open}
-                    className="flex w-full cursor-pointer items-center justify-between gap-1.5 py-1 text-left text-[13px] text-gray-500 hover:text-gray-900"
+                    className="row-tight w-full cursor-pointer justify-between py-1 text-left text-[13px] text-gray-500 hover:text-gray-900"
                   >
-                    <span className="flex items-center gap-2">
+                    <span className="row-stack">
                       <span
                         className="h-2 w-2 shrink-0 rounded-full"
                         style={{ backgroundColor: group.colors.accent }}
                       />
                       {group.name}
-                      <span className="text-xs text-gray-400">
+                      <span className="text-muted">
                         {getStrategiesInGroup(group.id).length}
                       </span>
                     </span>
@@ -184,7 +184,7 @@ function DramaSidebar() {
                 className={linkClass(subject.slug === currentSubject?.slug)}
               >
                 {subject.name}
-                <span className="text-xs font-normal text-gray-400">soon</span>
+                <span className="text-muted font-normal">soon</span>
               </Link>
             ))}
           </div>

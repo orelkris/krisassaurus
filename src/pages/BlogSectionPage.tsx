@@ -13,8 +13,8 @@ function BlogSectionPage() {
 
   return (
     <TwoColumnLayout sidebar={<BlogSectionsSidebar name={section.name} />} scrollable>
-      <div className="flex flex-1 flex-col gap-6">
-        <h1 className="text-3xl font-bold text-gray-900">{section.name}</h1>
+      <div className="col-page flex-1">
+        <h1 className="heading-page">{section.name}</h1>
         <ComingSoon
           title="Coming soon"
           text="This section will follow the same pattern as Drama once its content is ready."

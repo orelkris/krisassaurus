@@ -1,10 +1,13 @@
 import type {
   Expectation,
   ExpectationDetails,
+  MathFilter,
+  MathIdea,
   TaughtStrandId,
 } from '@/types/math'
 import expectationList from './expectations.json'
 import { mathIdeas } from './ideas'
+import { getStrand } from './strands'
 
 // The official wording of all 369 expectations. The longer teacher supports
 // (key concepts, examples, sample tasks) are in details/grade-N.json and load
@@ -31,12 +34,48 @@ export function findExpectation(
   return byId.get(`g${grade}-${code.toLowerCase()}`)
 }
 
-export function getExpectationsInGrade(grade: number): Expectation[] {
-  return expectations.filter((expectation) => expectation.grade === grade)
+// Every Math page link comes from the filter, so the sidebar and the pages agree:
+// nothing → /blog/math, grade → /grade/6, strand → /strand/number,
+// both → /grade/6/strand/number
+export function mathPath({ grade, strand, idea }: MathFilter): string {
+  const slug = strand && getStrand(strand).slug
+  if (grade && slug) return `/blog/math/grade/${grade}/strand/${slug}`
+  if (grade) return `/blog/math/grade/${grade}`
+  if (slug) return `/blog/math/strand/${slug}${idea ? `?idea=${idea}` : ''}`
+  return '/blog/math'
 }
 
-export function getExpectationsInStrand(strand: TaughtStrandId): Expectation[] {
-  return expectations.filter((expectation) => expectation.strand === strand)
+// The expectations for a grade, a strand, or both
+export function getExpectations({ grade, strand }: MathFilter): Expectation[] {
+  return expectations.filter(
+    (expectation) =>
+      (grade === undefined || expectation.grade === grade) &&
+      (strand === undefined || expectation.strand === strand)
+  )
+}
+
+// Groups a list by its overall expectation (B1, B2...), keeping the order
+export function groupByOverall(list: Expectation[]): Expectation[][] {
+  const groups = new Map<string, Expectation[]>()
+  for (const expectation of list) {
+    const group = groups.get(expectation.overall) ?? []
+    group.push(expectation)
+    groups.set(expectation.overall, group)
+  }
+  return [...groups.values()]
+}
+
+// Splits a list (e.g. one overall) by idea, keeping order. Each idea's
+// expectations sit next to each other in every grade
+export function groupByIdea(list: Expectation[]) {
+  const groups: { idea?: MathIdea; expectations: Expectation[] }[] = []
+  for (const expectation of list) {
+    const idea = getIdeaOf(expectation)
+    const last = groups.at(-1)
+    if (last && last.idea?.id === idea?.id) last.expectations.push(expectation)
+    else groups.push({ idea, expectations: [expectation] })
+  }
+  return groups
 }
 
 export function getIdeasInStrand(strand: TaughtStrandId) {

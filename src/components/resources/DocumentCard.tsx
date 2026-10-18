@@ -13,7 +13,7 @@ function DocumentCard({ document }: DocumentCardProps) {
       <span className="text-sm font-semibold leading-snug text-gray-900 group-hover:underline">
         {document.shortName}
       </span>
-      <span className="text-xs text-gray-400">
+      <span className="text-muted">
         {document.file ? document.year : 'Coming soon'}
       </span>
     </>

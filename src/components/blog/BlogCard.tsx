@@ -31,15 +31,13 @@ function BlogCard({ post }: BlogCardProps) {
           {primaryTag}
         </span>
 
-        <h2 className="mt-2 font-bold text-gray-900 leading-snug line-clamp-2 group-hover:text-gray-600 transition-colors">
+        <h2 className="heading-card mt-2 line-clamp-2 group-hover:text-gray-600 transition-colors">
           {post.title}
         </h2>
 
-        <p className="mt-1 text-sm text-gray-500 leading-relaxed line-clamp-2">
-          {post.excerpt}
-        </p>
+        <p className="text-small mt-1 line-clamp-2">{post.excerpt}</p>
 
-        <div className="mt-auto pt-4 flex items-center gap-2">
+        <div className="mt-auto pt-4 row-stack">
           <div className="w-7 h-7 rounded-full bg-gray-200 flex items-center justify-center text-xs font-bold text-gray-600 shrink-0">
             {post.author.name.charAt(0)}
           </div>
@@ -47,7 +45,7 @@ function BlogCard({ post }: BlogCardProps) {
             <p className="text-xs font-semibold text-gray-800">
               {post.author.name}
             </p>
-            <p className="text-xs text-gray-400">{formattedDate}</p>
+            <p className="text-muted">{formattedDate}</p>
           </div>
         </div>
       </div>

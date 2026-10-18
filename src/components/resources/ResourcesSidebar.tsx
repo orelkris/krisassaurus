@@ -32,16 +32,14 @@ function TeachingSidebar() {
       >
         All
       </Link>
-      <p className="mt-3 mb-1 text-xs uppercase tracking-wide text-gray-400">
-        Subjects
-      </p>
+      <p className="text-label mt-3 mb-1">Subjects</p>
       {topics.map((topic) => (
         <Link
           key={topic}
           to={`/resources/teaching?topic=${encodeURIComponent(topic)}`}
           className={linkClass(selectedTopic === topic)}
         >
-          <span className="flex items-center gap-2">
+          <span className="row-stack">
             <span
               className="h-2 w-2 shrink-0 rounded-full"
               style={{ backgroundColor: getTopicColor(topic) }}

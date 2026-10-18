@@ -20,12 +20,10 @@ function MobileSidebarToggle({
     <button
       onClick={onToggle}
       aria-expanded={isOpen}
-      className="lg:hidden flex w-full cursor-pointer items-center justify-between gap-2 rounded-[10px] border border-gray-200 px-3.5 py-2.5 text-left text-sm font-semibold text-gray-900"
+      className="lg:hidden row-stack w-full cursor-pointer justify-between rounded-[10px] border border-gray-200 pad-sm text-left text-sm font-semibold text-gray-900"
     >
       <span>
-        <span className="block text-[11px] font-medium uppercase tracking-wide text-gray-400">
-          {label}
-        </span>
+        <span className="text-label block">{label}</span>
         {current}
       </span>
       <ChevronDown

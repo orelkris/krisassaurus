@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import StickyBar from '@/components/ui/StickyBar'
 
 export interface SectionTab {
   id: string
@@ -12,11 +13,20 @@ interface SectionTabsProps {
   activeId: string
   onSelect: (id: string) => void
   label?: string
+  // Small text at the start of the bar, e.g. Grade 1, so it's clear what
+  // you're looking at after scrolling down
+  title?: string
 }
 
 // Sticky row of underline tabs for jumping between sections of a long page.
 // Pair it with useScrollSpy to highlight the section being read.
-function SectionTabs({ tabs, activeId, onSelect, label = 'Jump to a section' }: SectionTabsProps) {
+function SectionTabs({
+  tabs,
+  activeId,
+  onSelect,
+  label = 'Jump to a section',
+  title,
+}: SectionTabsProps) {
   const rowRef = useRef<HTMLDivElement>(null)
 
   // On narrow screens the row scrolls sideways; keep the current tab visible
@@ -33,12 +43,17 @@ function SectionTabs({ tabs, activeId, onSelect, label = 'Jump to a section' }: 
   }, [activeId])
 
   return (
-    <div className="sticky top-0 z-[5] -mx-1 bg-white px-1 pt-1">
+    <StickyBar>
+      {title && (
+        <span className="text-label shrink-0 border-r border-gray-200 pr-6">
+          {title}
+        </span>
+      )}
       <div
         ref={rowRef}
         role="tablist"
         aria-label={label}
-        className="flex gap-6 overflow-x-auto border-b border-gray-200 [scrollbar-width:none] lg:flex-wrap"
+        className="flex min-w-0 gap-6 overflow-x-auto [scrollbar-width:none] lg:flex-wrap"
       >
         {tabs.map((tab) => {
           const isActive = tab.id === activeId
@@ -49,7 +64,7 @@ function SectionTabs({ tabs, activeId, onSelect, label = 'Jump to a section' }: 
               role="tab"
               aria-selected={isActive}
               onClick={() => onSelect(tab.id)}
-              className={`shrink-0 cursor-pointer pt-2 pb-2.5 text-sm transition-colors ${
+              className={`shrink-0 cursor-pointer pb-2.5 text-sm transition-colors ${
                 isActive ? 'text-gray-900' : 'text-gray-500 hover:text-gray-900'
               }`}
               style={{
@@ -61,7 +76,7 @@ function SectionTabs({ tabs, activeId, onSelect, label = 'Jump to a section' }: 
           )
         })}
       </div>
-    </div>
+    </StickyBar>
   )
 }
 

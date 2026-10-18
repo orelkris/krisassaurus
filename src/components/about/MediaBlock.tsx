@@ -34,9 +34,7 @@ function MediaBlock({ media }: MediaBlockProps) {
             className="w-full rounded-xl object-cover"
           />
           {media.caption && (
-            <figcaption className="text-sm text-gray-500">
-              {media.caption}
-            </figcaption>
+            <figcaption className="text-small">{media.caption}</figcaption>
           )}
         </figure>
       )

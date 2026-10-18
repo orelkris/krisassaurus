@@ -1,8 +1,5 @@
-import { Link } from 'react-router-dom'
-
 export interface Crumb {
   label: string
-  to?: string
 }
 
 interface BreadcrumbProps {
@@ -10,7 +7,8 @@ interface BreadcrumbProps {
   className?: string
 }
 
-// The last item is the current page and is shown in bold, not as a link
+// Shows where the page sits. It isn't clickable: the sidebar is how you move around.
+// The last item is the current page and is shown in bold
 function Breadcrumb({ items, className = '' }: BreadcrumbProps) {
   return (
     <nav aria-label="Breadcrumb" className={`text-[13px] ${className}`}>
@@ -19,17 +17,12 @@ function Breadcrumb({ items, className = '' }: BreadcrumbProps) {
           const isLast = index === items.length - 1
           return (
             <li key={item.label} className="flex items-baseline gap-1.5">
-              {isLast ? (
-                <span aria-current="page" className="font-semibold">
-                  {item.label}
-                </span>
-              ) : item.to ? (
-                <Link to={item.to} className="opacity-70 hover:opacity-100 hover:underline">
-                  {item.label}
-                </Link>
-              ) : (
-                <span className="opacity-70">{item.label}</span>
-              )}
+              <span
+                aria-current={isLast ? 'page' : undefined}
+                className={isLast ? 'font-semibold' : 'opacity-70'}
+              >
+                {item.label}
+              </span>
               {!isLast && <span className="opacity-50">/</span>}
             </li>
           )

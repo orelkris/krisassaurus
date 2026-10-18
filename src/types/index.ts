@@ -1,3 +1,12 @@
+export type Step = 'page' | 'section' | 'stack' | 'tight'
+
+export const gapClass: Record<Step, string> = {
+  page: 'col-page',
+  section: 'col-section',
+  stack: 'col-stack',
+  tight: 'col-tight',
+}
+
 export interface Author {
   name: string
   role: string

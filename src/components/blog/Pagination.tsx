@@ -12,7 +12,7 @@ function Pagination({
   if (totalPages <= 1) return null
 
   return (
-    <div className="flex items-center justify-center gap-1 mt-8">
+    <div className="row-tight justify-center mt-page">
       <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}

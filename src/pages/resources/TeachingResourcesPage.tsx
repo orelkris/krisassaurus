@@ -15,13 +15,13 @@ function TeachingResourcesPage() {
   }, [selectedTopic])
 
   return (
-    <div className="flex flex-col gap-7">
+    <div className="col-page">
       <ResourcesHeader
         activeTab="teaching"
         intro="Websites and tools I use with my classes."
       />
       {filteredResources.length === 0 ? (
-        <div className="flex items-center justify-center h-48 text-sm text-gray-400">
+        <div className="text-small flex items-center justify-center h-48">
           No resources found.
         </div>
       ) : (

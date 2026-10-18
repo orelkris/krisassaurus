@@ -16,7 +16,7 @@ function ResourcesHeader({ activeTab, intro }: ResourcesHeaderProps) {
 
   return (
     <header className="flex flex-col gap-3">
-      <h1 className="text-3xl font-bold text-gray-900">Resources</h1>
+      <h1 className="heading-page">Resources</h1>
       <SectionTabs
         tabs={tabs}
         activeId={activeTab}
@@ -25,7 +25,7 @@ function ResourcesHeader({ activeTab, intro }: ResourcesHeaderProps) {
           navigate(tabs.find((tab) => tab.id === id)?.to ?? '/resources')
         }
       />
-      <p className="max-w-prose text-gray-500 leading-relaxed">{intro}</p>
+      <p className="text-lead">{intro}</p>
     </header>
   )
 }

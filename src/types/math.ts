@@ -27,6 +27,14 @@ export interface Expectation {
   page: number
 }
 
+// What the Math sidebar has picked. Nothing picked is the overview
+export interface MathFilter {
+  grade?: number
+  strand?: TaughtStrandId
+  // Only used on a strand page with no grade picked
+  idea?: string
+}
+
 export interface MathIdea {
   id: string
   strand: TaughtStrandId

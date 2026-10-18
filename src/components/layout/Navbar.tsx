@@ -78,7 +78,7 @@ function Navbar() {
               onClick={() => setIsBlogOpen(!isBlogOpen)}
               aria-expanded={isBlogOpen}
               aria-haspopup="true"
-              className={`flex items-center gap-1 text-sm transition-colors cursor-pointer ${
+              className={`row-tight text-sm transition-colors cursor-pointer ${
                 blogActive
                   ? 'text-gray-900 font-semibold'
                   : 'text-gray-500 hover:text-gray-900'
@@ -106,9 +106,7 @@ function Navbar() {
                   >
                     {section.name}
                     {!section.ready && (
-                      <span className="text-xs font-normal text-gray-400">
-                        soon
-                      </span>
+                      <span className="text-muted font-normal">soon</span>
                     )}
                   </Link>
                 ))}

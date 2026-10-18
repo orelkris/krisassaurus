@@ -7,7 +7,7 @@ interface BlogSectionsSidebarProps {
 function BlogSectionsSidebar({ name }: BlogSectionsSidebarProps) {
   return (
     <div className="hidden lg:block lg:pr-4">
-      <p className="mb-1.5 text-xs uppercase tracking-wide text-gray-400">{name}</p>
+      <p className="text-label mb-1.5">{name}</p>
       <p className="py-1 text-sm text-gray-400">Posts will be listed here.</p>
     </div>
   )

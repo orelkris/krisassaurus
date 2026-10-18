@@ -57,9 +57,7 @@ function WhereThisFits({ expectation }: WhereThisFitsProps) {
             index === 1 ? { borderColor: strand.colors.accent } : undefined
           }
         >
-          <span className="px-2 text-[11px] font-bold uppercase tracking-wide text-gray-400">
-            {column.label}
-          </span>
+          <span className="text-label px-2">{column.label}</span>
           {column.items.length === 0 && (
             <span className={`${itemClass} text-gray-400`}>{column.empty}</span>
           )}

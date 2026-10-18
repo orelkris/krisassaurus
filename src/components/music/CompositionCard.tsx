@@ -21,11 +21,9 @@ function CompositionCard({ composition }: CompositionCardProps) {
 
       <div className="p-4 flex flex-col gap-3 flex-1">
         <div className="flex items-start justify-between gap-4">
-          <h2 className="font-bold text-gray-900 leading-snug">{title}</h2>
+          <h2 className="heading-card">{title}</h2>
           {duration && (
-            <span className="text-xs text-gray-400 shrink-0 mt-0.5">
-              {duration}
-            </span>
+            <span className="text-muted shrink-0 mt-0.5">{duration}</span>
           )}
         </div>
 
@@ -42,9 +40,7 @@ function CompositionCard({ composition }: CompositionCardProps) {
           </div>
         )}
 
-        {description && (
-          <p className="text-sm text-gray-500 leading-relaxed">{description}</p>
-        )}
+        {description && <p className="text-small">{description}</p>}
 
         <div className="mt-auto flex flex-col gap-3">
           <hr className="border-gray-100" />
@@ -60,7 +56,7 @@ function CompositionCard({ composition }: CompositionCardProps) {
             </div>
           )}
 
-          <p className="text-xs text-gray-400">{formattedDate}</p>
+          <p className="text-muted">{formattedDate}</p>
         </div>
       </div>
     </div>

@@ -4,8 +4,133 @@
   --font-sans: 'Lexend', ui-sans-serif, system-ui, sans-serif;
 }
 
+/* Shared spacing. Each name works with any spacing class (gap-page,
+   mt-section, py-stack...). Pages use these names instead of numbers.
+   Phone values first; from sm (640px) up some get bigger. */
+@theme inline {
+  --spacing-page: var(--space-page); /* between big sections of a page */
+  --spacing-section: var(--space-section); /* a heading to its content */
+  --spacing-grid: var(--space-grid); /* between cards in a grid */
+  --spacing-stack: var(--space-stack); /* between items in a box or list */
+  --spacing-tight: var(--space-tight); /* a label or title to its text */
+}
+
+:root {
+  --space-page: 2rem;
+  --space-section: 1rem;
+  --space-grid: 0.75rem;
+  --space-stack: 0.5rem;
+  --space-tight: 0.25rem;
+}
+
+@media (width >= 40rem) {
+  :root {
+    --space-page: 2.5rem;
+    --space-section: 1.25rem;
+    --space-grid: 1rem;
+  }
+}
+
 body {
   font-family: var(--font-sans);
+  color: var(--color-gray-900);
+}
+
+/* Shared text and box styles. Pages use these names and never set heading
+   sizes, text greys, borders, corners or shadows themselves. Headings take
+   their colour from where they sit, so they also work on coloured bands. */
+
+@utility heading-page {
+  @apply text-2xl leading-tight font-bold sm:text-3xl;
+}
+
+@utility heading-section {
+  @apply text-lg leading-snug font-bold;
+}
+
+@utility heading-card {
+  @apply text-base leading-snug font-bold;
+}
+
+/* The grey paragraph under a page title */
+@utility text-lead {
+  @apply max-w-prose leading-relaxed text-gray-500;
+}
+
+/* Small grey body text, e.g. a card's description */
+@utility text-small {
+  @apply text-sm leading-relaxed text-gray-500;
+}
+
+/* Small grey notes and counts */
+@utility text-muted {
+  @apply text-xs text-gray-400;
+}
+
+/* Tiny uppercase labels, e.g. B1 · NUMBER SENSE */
+@utility text-label {
+  @apply text-xs tracking-wide text-gray-400 uppercase;
+}
+
+/* Containers. A col stacks its children top to bottom, a row lines them up
+   side by side; the name says the gap. Pages use these instead of writing
+   flex, flex-col and gap themselves */
+@utility col-page {
+  @apply flex flex-col gap-page;
+}
+
+@utility col-section {
+  @apply flex flex-col gap-section;
+}
+
+@utility col-stack {
+  @apply flex flex-col gap-stack;
+}
+
+@utility col-tight {
+  @apply flex flex-col gap-tight;
+}
+
+@utility row-stack {
+  @apply flex items-center gap-stack;
+}
+
+@utility row-tight {
+  @apply flex items-center gap-tight;
+}
+
+/* Padding around a whole column of content (the sidebar or the main area) */
+@utility pad-page {
+  @apply px-page py-page;
+}
+
+/* Padding inside boxes and rows: small for clickable rows and banners,
+   medium for cards, large for panels */
+@utility pad-sm {
+  @apply px-3 py-2;
+}
+
+@utility pad-md {
+  @apply p-4;
+}
+
+@utility pad-lg {
+  @apply p-5 sm:p-6;
+}
+
+/* A big section box */
+@utility panel {
+  @apply pad-lg rounded-2xl border border-gray-200;
+}
+
+/* A smaller card, usually inside a panel or a grid */
+@utility card {
+  @apply pad-md rounded-xl border border-gray-200;
+}
+
+/* Only for cards you can click */
+@utility card-hover {
+  @apply transition-shadow hover:shadow-md;
 }
 
 .link {

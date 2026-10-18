@@ -26,38 +26,29 @@ function DocumentPage() {
   ].filter((fact): fact is [string, string] => !!fact[1])
 
   return (
-    <div className="flex flex-1 flex-col gap-7">
+    <div className="col-page flex-1">
       <Breadcrumb
         className="text-gray-900"
         items={[
-          { label: 'Resources', to: '/resources' },
-          {
-            label: 'Ministry documents',
-            to: `/resources?group=${document.groupId}`,
-          },
+          { label: 'Resources' },
+          { label: 'Ministry documents' },
           { label: document.shortName },
         ]}
       />
 
       {!document.file ? (
         <>
-          <h1 className="text-3xl font-bold text-gray-900">
-            {document.shortName}
-          </h1>
+          <h1 className="heading-page">{document.shortName}</h1>
           <ComingSoon text="I haven't added this document yet." />
         </>
       ) : (
-        <div className="flex min-w-0 flex-col gap-6">
-          <header className="flex flex-col gap-1">
-            <p className="text-xs uppercase tracking-wide text-gray-400">
+        <div className="col-page min-w-0">
+          <header className="col-stack">
+            <p className="text-label">
               Ontario Ministry of Education · {group?.name}
             </p>
-            <h1 className="text-3xl font-bold leading-tight text-gray-900">
-              {document.title}
-            </h1>
-            <p className="mt-1 max-w-prose text-gray-500 leading-relaxed">
-              {document.summary}
-            </p>
+            <h1 className="heading-page">{document.title}</h1>
+            <p className="text-lead">{document.summary}</p>
           </header>
 
           <dl className="grid max-w-prose grid-cols-[auto_1fr] gap-x-5 gap-y-1 text-sm">
@@ -84,8 +75,8 @@ function DocumentPage() {
             )}
           </dl>
 
-          <div className="flex flex-col gap-2">
-            <div className="flex flex-wrap gap-2">
+          <div className="col-stack">
+            <div className="flex flex-wrap gap-stack">
               <a
                 href={getPdfUrl(document)}
                 target="_blank"
@@ -102,7 +93,7 @@ function DocumentPage() {
                 Download
               </a>
             </div>
-            <p className="text-xs text-gray-400">
+            <p className="text-muted">
               Open shows the PDF in a new tab without saving it. Download saves
               a copy to your computer.
             </p>
@@ -110,13 +101,11 @@ function DocumentPage() {
 
           {/* A line separates the introduction from the links into the PDF */}
           {(sections.length > 0 || usedOn.length > 0) && (
-            <div className="mt-2 flex flex-col gap-7 border-t border-gray-200 pt-7">
+            <div className="col-page border-t border-gray-200 pt-page">
               {sections.length > 0 && (
                 <section className="max-w-prose">
-                  <h2 className="text-lg font-bold text-gray-900">
-                    Jump to a section
-                  </h2>
-                  <p className="mb-2 text-xs text-gray-400">
+                  <h2 className="heading-section">Jump to a section</h2>
+                  <p className="text-muted mb-stack">
                     Each link opens the PDF at that page.
                   </p>
                   <ul className="border-t border-gray-200">
@@ -144,10 +133,10 @@ function DocumentPage() {
 
               {usedOn.length > 0 && (
                 <section>
-                  <h2 className="mb-2 text-lg font-bold text-gray-900">
+                  <h2 className="heading-section mb-section">
                     Used on this site
                   </h2>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-stack">
                     {usedOn.map((link) => (
                       <Link
                         key={link.to}

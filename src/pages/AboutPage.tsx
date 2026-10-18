@@ -37,11 +37,9 @@ function AboutPage() {
   const showAll = () => setSearchParams({})
 
   const sidebar = (
-    <div className="flex flex-col gap-6">
+    <div className="col-page">
       <div>
-        <p className="text-xs text-gray-400 uppercase tracking-wide mb-3">
-          On This Page
-        </p>
+        <p className="text-label mb-section">On This Page</p>
         <nav className="flex flex-row flex-wrap gap-x-4 gap-y-1 lg:flex-col">
           <button
             onClick={showAll}
@@ -70,7 +68,7 @@ function AboutPage() {
 
   return (
     <TwoColumnLayout sidebar={sidebar} scrollable>
-      <div className="max-w-prose flex flex-col gap-8">
+      <div className="max-w-prose col-page">
         {imageUrl ? (
           <img
             src={imageUrl}

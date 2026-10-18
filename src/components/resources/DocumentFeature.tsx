@@ -21,20 +21,15 @@ function DocumentFeature({ page }: DocumentFeatureProps) {
   if (items.length === 0) return null
 
   return (
-    <section className="flex flex-col gap-3">
+    <section className="col-section">
       {items.map(({ link, document }) => (
-        <div
-          key={document.slug}
-          className="flex flex-col items-start gap-1 rounded-2xl border border-gray-200 p-4 sm:p-5"
-        >
-          <p className="text-xs uppercase tracking-wide text-gray-400">
-            Curriculum
-          </p>
-          <h2 className="font-bold leading-snug text-gray-900">
+        <div key={document.slug} className="panel col-tight items-start">
+          <p className="text-label">Curriculum</p>
+          <h2 className="heading-card">
             {document.title} ({document.year.replace('Revised ', '')})
           </h2>
-          <p className="text-sm text-gray-500">{link.blurb}</p>
-          <div className="mt-2 flex flex-wrap gap-2">
+          <p className="text-small">{link.blurb}</p>
+          <div className="mt-stack flex flex-wrap gap-stack">
             <a
               href={getPdfUrl(document, link.page)}
               target="_blank"

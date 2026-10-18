@@ -1,4 +1,10 @@
-import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom'
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Outlet,
+  Navigate,
+} from 'react-router-dom'
 import { FilterProvider } from '@/context/FilterContext'
 import AppLayout from '@/components/layout/AppLayout'
 import BlogListPage from '@/pages/BlogListPage'
@@ -17,6 +23,7 @@ import MathSidebar from '@/components/math/MathSidebar'
 import MathOverviewPage from '@/pages/math/MathOverviewPage'
 import GradePage from '@/pages/math/GradePage'
 import StrandPage from '@/pages/math/StrandPage'
+import GradeStrandPage from '@/pages/math/GradeStrandPage'
 import ExpectationPage from '@/pages/math/ExpectationPage'
 import ResourcesSidebar from '@/components/resources/ResourcesSidebar'
 import MinistryDocumentsPage from '@/pages/resources/MinistryDocumentsPage'
@@ -49,7 +56,7 @@ function App() {
               <Route path="subjects/:slug" element={<SubjectPage />} />
             </Route>
 
-            {/* Math blog: the curriculum by grade, by strand, and one page per expectation */}
+            {/* Math blog: the curriculum by grade, by strand, both, and one page per expectation */}
             <Route
               path="/blog/math"
               element={
@@ -61,7 +68,20 @@ function App() {
               <Route index element={<MathOverviewPage />} />
               <Route path="grade/:grade" element={<GradePage />} />
               <Route path="grade/:grade/:code" element={<ExpectationPage />} />
+              <Route
+                path="grade/:grade/strand/:slug"
+                element={<GradeStrandPage />}
+              />
               <Route path="strand/:slug" element={<StrandPage />} />
+              {/* /grade and /strand on their own have no page */}
+              <Route
+                path="grade"
+                element={<Navigate to="/blog/math" replace />}
+              />
+              <Route
+                path="strand"
+                element={<Navigate to="/blog/math" replace />}
+              />
             </Route>
 
             {/* Other blog sections show "Coming soon" for now */}

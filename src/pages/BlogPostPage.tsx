@@ -11,7 +11,7 @@ function BlogPostPage() {
   if (!post) {
     return (
       <div className="max-w-2xl mx-auto px-8 py-16 text-center">
-        <p className="text-gray-400 text-sm">Post not found.</p>
+        <p className="text-small">Post not found.</p>
         <Link
           to="/"
           className="mt-4 inline-block text-sm text-gray-900 underline"
@@ -30,7 +30,7 @@ function BlogPostPage() {
   })
 
   const sidebar = (
-    <div className="flex flex-col gap-6">
+    <div className="col-page">
       <Link
         to="/"
         className="text-sm text-gray-400 hover:text-gray-900 transition-colors"
@@ -39,16 +39,12 @@ function BlogPostPage() {
       </Link>
 
       <div>
-        <p className="text-xs text-gray-400 uppercase tracking-wide mb-1">
-          Date
-        </p>
+        <p className="text-label mb-tight">Date</p>
         <p className="text-sm text-gray-600">{formattedDate}</p>
       </div>
 
       <div>
-        <p className="text-xs text-gray-400 uppercase tracking-wide mb-2">
-          Tags
-        </p>
+        <p className="text-label mb-stack">Tags</p>
         <div className="flex flex-wrap gap-1">
           {post.tags.map((tag) => {
             const { bg, text } = getTagColor(tag)
@@ -71,7 +67,7 @@ function BlogPostPage() {
 
   return (
     <TwoColumnLayout sidebar={sidebar} scrollable>
-      <div className="max-w-prose flex flex-col gap-8">
+      <div className="max-w-prose col-page">
         <div
           className="w-full h-40 rounded-xl"
           style={{ backgroundColor: bg }}
@@ -81,7 +77,7 @@ function BlogPostPage() {
 
         <hr className="border-gray-200" />
 
-        <div className="space-y-5">
+        <div className="space-y-section">
           {post.content.map((paragraph, index) => (
             <p key={index} className="text-gray-700 leading-relaxed">
               {paragraph}

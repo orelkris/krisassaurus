@@ -16,7 +16,7 @@ function MinistryDocumentsPage() {
     : documentGroups
 
   return (
-    <div className="flex flex-col gap-7">
+    <div className="col-page">
       <ResourcesHeader
         activeTab="ministry"
         intro="Ontario curriculum and assessment documents I use. Each one opens as a PDF in a new tab, with a link to the ministry's official page."
@@ -25,14 +25,12 @@ function MinistryDocumentsPage() {
       {groups.map(({ id, name }) => {
         const documents = getDocumentsInGroup(id)
         return (
-          <section key={id} className="flex flex-col gap-3">
-            <h2 className="flex items-baseline gap-2 text-lg font-bold text-gray-900">
+          <section key={id} className="col-section">
+            <h2 className="heading-section flex items-baseline gap-2">
               {name}
-              <span className="text-xs font-normal text-gray-400">
-                {documents.length}
-              </span>
+              <span className="text-muted font-normal">{documents.length}</span>
             </h2>
-            <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 xl:grid-cols-4">
+            <div className="grid grid-cols-2 gap-grid sm:grid-cols-3 xl:grid-cols-4">
               {documents.map((document) => (
                 <DocumentCard key={document.slug} document={document} />
               ))}

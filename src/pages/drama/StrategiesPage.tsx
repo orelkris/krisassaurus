@@ -32,18 +32,18 @@ function StrategiesPage() {
   }, [hash, groupIds, jumpTo])
 
   return (
-    <div className="flex flex-col gap-7">
-      <header className="flex flex-col gap-2">
+    <div className="col-page">
+      <header className="col-stack">
         <Breadcrumb
           className="text-gray-900"
-          items={[{ label: 'Drama', to: '/blog/drama' }, { label: 'Strategies' }]}
+          items={[{ label: 'Drama' }, { label: 'Strategies' }]}
         />
-        <h1 className="text-3xl font-bold text-gray-900">Strategies</h1>
-        <p className="max-w-prose text-gray-500 leading-relaxed">
+        <h1 className="heading-page">Strategies</h1>
+        <p className="text-lead">
           Every strategy, grouped by the five colour families. Each one opens a
           page with steps, an example and variations.
         </p>
-        <p className="text-xs text-gray-400">{strategies.length} strategies</p>
+        <p className="text-muted">{strategies.length} strategies</p>
       </header>
 
       <SectionTabs
@@ -56,9 +56,9 @@ function StrategiesPage() {
       {strategyGroups.map((group) => {
         const items = getStrategiesInGroup(group.id)
         return (
-          <section key={group.id} id={group.id} className="flex scroll-mt-16 flex-col gap-3.5">
+          <section key={group.id} id={group.id} className="col-section scroll-mt-16">
             <div
-              className="flex items-center gap-3.5 rounded-xl border-l-[6px] px-5 py-4"
+              className="flex items-center gap-3.5 rounded-xl border-l-[6px] pad-md"
               style={{
                 backgroundColor: group.colors.bg,
                 color: group.colors.text,
@@ -66,15 +66,15 @@ function StrategiesPage() {
               }}
             >
               <div className="min-w-0 flex-1">
-                <h2 className="text-xl font-bold leading-tight">{group.name}</h2>
-                <p className="mt-0.5 text-sm opacity-85">{group.blurb}</p>
+                <h2 className="heading-section">{group.name}</h2>
+                <p className="mt-tight text-sm opacity-85">{group.blurb}</p>
               </div>
               <span className="shrink-0 text-[13px] font-medium opacity-80">
                 {items.length} strategies
               </span>
             </div>
 
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
+            <div className="grid grid-cols-1 gap-grid sm:grid-cols-2 xl:grid-cols-3">
               {items.map((strategy) => (
                 <StrategyTile key={strategy.slug} strategy={strategy} />
               ))}

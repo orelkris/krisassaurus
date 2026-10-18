@@ -61,7 +61,7 @@ function MusicPage() {
           }`}
         >
           {month.label}
-          <span className="ml-1 text-xs text-gray-400">({month.count})</span>
+          <span className="text-muted ml-1">({month.count})</span>
         </button>
       ))}
     </nav>
@@ -70,11 +70,11 @@ function MusicPage() {
   return (
     <TwoColumnLayout sidebar={sidebar} scrollable>
       {filtered.length === 0 ? (
-        <div className="flex items-center justify-center h-48 text-sm text-gray-400">
+        <div className="text-small flex items-center justify-center h-48">
           No compositions found.
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 content-start">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-grid content-start">
           {filtered.map((composition) => (
             <CompositionCard key={composition.id} composition={composition} />
           ))}

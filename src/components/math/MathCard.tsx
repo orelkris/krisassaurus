@@ -32,7 +32,7 @@ function MathCard({
 }: MathCardProps) {
   return (
     <article
-      className={`math-card flex min-w-0 flex-col gap-3 rounded-[14px] border border-gray-200 p-4 ${
+      className={`math-card card col-stack min-w-0 ${
         wide ? 'min-[900px]:col-span-2' : ''
       }`}
     >
@@ -45,7 +45,7 @@ function MathCard({
             {eyebrow}
           </span>
         )}
-        <h3 className="mt-px mb-0.5 text-base font-bold">{title}</h3>
+        <h3 className="heading-card mt-px mb-0.5">{title}</h3>
         <p className="text-[12.5px] text-gray-500">{summary}</p>
       </header>
 

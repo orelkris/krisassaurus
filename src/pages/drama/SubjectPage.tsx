@@ -10,18 +10,18 @@ function SubjectPage() {
   if (!subject) return <Navigate to="/blog/drama" replace />
 
   return (
-    <div className="flex flex-1 flex-col gap-7">
-      <header className="flex flex-col gap-2">
+    <div className="col-page flex-1">
+      <header className="col-stack">
         <Breadcrumb
           className="text-gray-900"
           items={[
-            { label: 'Drama', to: '/blog/drama' },
+            { label: 'Drama' },
             { label: 'Subjects' },
             { label: subject.name },
           ]}
         />
-        <h1 className="text-3xl font-bold text-gray-900">Drama &amp; {subject.name}</h1>
-        <p className="max-w-prose text-gray-500 leading-relaxed">{subject.intro}</p>
+        <h1 className="heading-page">Drama &amp; {subject.name}</h1>
+        <p className="text-lead">{subject.intro}</p>
       </header>
 
       <ComingSoon

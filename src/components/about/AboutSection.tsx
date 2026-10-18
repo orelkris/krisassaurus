@@ -7,8 +7,8 @@ interface AboutSectionProps {
 
 function AboutSection({ section }: AboutSectionProps) {
   return (
-    <section id={section.id} className="flex flex-col gap-4">
-      <h2 className="text-lg font-bold text-gray-900">{section.label}</h2>
+    <section id={section.id} className="col-section">
+      <h2 className="heading-section">{section.label}</h2>
       {section.paragraphs.map((paragraph, index) => (
         <p key={index} className="text-gray-700 leading-relaxed">
           {paragraph}

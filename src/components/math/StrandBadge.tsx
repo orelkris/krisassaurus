@@ -11,7 +11,7 @@ interface StrandBadgeProps {
 function StrandBadge({ strand, solid = false, size = 'sm' }: StrandBadgeProps) {
   return (
     <span
-      className={`inline-grid shrink-0 place-items-center font-extrabold ${
+      className={`inline-flex shrink-0 items-center justify-center font-extrabold ${
         size === 'lg'
           ? 'h-[30px] w-[30px] rounded-md text-[15px]'
           : 'h-[22px] w-[22px] rounded-md text-xs'
