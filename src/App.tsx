@@ -4,12 +4,10 @@ import {
   Route,
   Outlet,
   Navigate,
+  useLocation,
 } from 'react-router-dom'
-import { FilterProvider } from '@/context/FilterContext'
 import AppLayout from '@/components/layout/AppLayout'
-import BlogListPage from '@/pages/BlogListPage'
-import BlogPostPage from '@/pages/BlogPostPage'
-import BlogSectionPage from '@/pages/BlogSectionPage'
+import SubjectSectionPage from '@/pages/SubjectSectionPage'
 import AboutPage from '@/pages/AboutPage'
 import MusicPage from '@/pages/MusicPage'
 import ScrollToTop from '@/components/ui/ScrollToTop'
@@ -30,82 +28,84 @@ import MinistryDocumentsPage from '@/pages/resources/MinistryDocumentsPage'
 import TeachingResourcesPage from '@/pages/resources/TeachingResourcesPage'
 import DocumentPage from '@/pages/resources/DocumentPage'
 
+// Old /blog/... links (e.g. /blog/math/grade/6) open the same page without /blog
+function OldBlogRedirect() {
+  const { pathname, search, hash } = useLocation()
+  const to = pathname.replace(/^\/blog/, '') || '/'
+  return <Navigate to={`${to}${search}${hash}`} replace />
+}
+
 function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <FilterProvider>
-        <Routes>
-          <Route element={<AppLayout />}>
-            {/* Personal blog (the original posts) */}
-            <Route path="/" element={<BlogListPage />} />
-            <Route path="/post/:id" element={<BlogPostPage />} />
+      <Routes>
+        <Route element={<AppLayout />}>
+          {/* Home opens Math, the first subject */}
+          <Route path="/" element={<Navigate to="/math" replace />} />
 
-            {/* Drama blog: the sidebar stays mounted while child pages swap in */}
-            <Route
-              path="/blog/drama"
-              element={
-                <TwoColumnLayout sidebar={<DramaSidebar />} scrollable>
-                  <Outlet />
-                </TwoColumnLayout>
-              }
-            >
-              <Route index element={<DramaOverviewPage />} />
-              <Route path="strategies" element={<StrategiesPage />} />
-              <Route path="strategies/:slug" element={<StrategyPage />} />
-              <Route path="subjects/:slug" element={<SubjectPage />} />
-            </Route>
-
-            {/* Math blog: the curriculum by grade, by strand, both, and one page per expectation */}
-            <Route
-              path="/blog/math"
-              element={
-                <TwoColumnLayout sidebar={<MathSidebar />} scrollable>
-                  <Outlet />
-                </TwoColumnLayout>
-              }
-            >
-              <Route index element={<MathOverviewPage />} />
-              <Route path="grade/:grade" element={<GradePage />} />
-              <Route path="grade/:grade/:code" element={<ExpectationPage />} />
-              <Route
-                path="grade/:grade/strand/:slug"
-                element={<GradeStrandPage />}
-              />
-              <Route path="strand/:slug" element={<StrandPage />} />
-              {/* /grade and /strand on their own have no page */}
-              <Route
-                path="grade"
-                element={<Navigate to="/blog/math" replace />}
-              />
-              <Route
-                path="strand"
-                element={<Navigate to="/blog/math" replace />}
-              />
-            </Route>
-
-            {/* Other blog sections show "Coming soon" for now */}
-            <Route path="/blog/:section" element={<BlogSectionPage />} />
-
-            {/* Resources: Ministry documents first, Teaching resources second */}
-            <Route
-              path="/resources"
-              element={
-                <TwoColumnLayout sidebar={<ResourcesSidebar />} scrollable>
-                  <Outlet />
-                </TwoColumnLayout>
-              }
-            >
-              <Route index element={<MinistryDocumentsPage />} />
-              <Route path="teaching" element={<TeachingResourcesPage />} />
-              <Route path="documents/:slug" element={<DocumentPage />} />
-            </Route>
-
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/music" element={<MusicPage />} />
+          {/* Drama: the sidebar stays mounted while child pages swap in */}
+          <Route
+            path="/drama"
+            element={
+              <TwoColumnLayout sidebar={<DramaSidebar />} scrollable>
+                <Outlet />
+              </TwoColumnLayout>
+            }
+          >
+            <Route index element={<DramaOverviewPage />} />
+            <Route path="strategies" element={<StrategiesPage />} />
+            <Route path="strategies/:slug" element={<StrategyPage />} />
+            <Route path="subjects/:slug" element={<SubjectPage />} />
           </Route>
-        </Routes>
-      </FilterProvider>
+
+          {/* Math: the curriculum by grade, by strand, both, and one page per expectation */}
+          <Route
+            path="/math"
+            element={
+              <TwoColumnLayout sidebar={<MathSidebar />} scrollable>
+                <Outlet />
+              </TwoColumnLayout>
+            }
+          >
+            <Route index element={<MathOverviewPage />} />
+            <Route path="grade/:grade" element={<GradePage />} />
+            <Route path="grade/:grade/:code" element={<ExpectationPage />} />
+            <Route
+              path="grade/:grade/strand/:slug"
+              element={<GradeStrandPage />}
+            />
+            <Route path="strand/:slug" element={<StrandPage />} />
+            {/* /grade and /strand on their own have no page */}
+            <Route path="grade" element={<Navigate to="/math" replace />} />
+            <Route path="strand" element={<Navigate to="/math" replace />} />
+          </Route>
+
+          {/* Other subjects show "Coming soon" for now */}
+          <Route path="/:subject" element={<SubjectSectionPage />} />
+
+          {/* Links from before the rename */}
+          <Route path="/blog/*" element={<OldBlogRedirect />} />
+          <Route path="/post/*" element={<Navigate to="/" replace />} />
+
+          {/* Resources: Ministry documents first, Teaching resources second */}
+          <Route
+            path="/resources"
+            element={
+              <TwoColumnLayout sidebar={<ResourcesSidebar />} scrollable>
+                <Outlet />
+              </TwoColumnLayout>
+            }
+          >
+            <Route index element={<MinistryDocumentsPage />} />
+            <Route path="teaching" element={<TeachingResourcesPage />} />
+            <Route path="documents/:slug" element={<DocumentPage />} />
+          </Route>
+
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/music" element={<MusicPage />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   )
 }

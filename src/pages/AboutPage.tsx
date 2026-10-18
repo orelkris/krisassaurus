@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom'
 import TwoColumnLayout from '@/components/layout/TwoColumnLayout'
 import AboutSection from '@/components/about/AboutSection'
 import BackToTopButton from '@/components/ui/BackToTop'
-import AuthorTag from '@/components/blog/AuthorTag'
+import AuthorTag from '@/components/about/AuthorTag'
 import { about } from '@/data/about'
 import { scrollToTop } from '@/lib/scroll'
 

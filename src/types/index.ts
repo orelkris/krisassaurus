@@ -13,16 +13,6 @@ export interface Author {
   avatarUrl?: string
 }
 
-export interface Post {
-  id: string
-  title: string
-  excerpt: string
-  content: string[]
-  date: Date
-  tags: string[]
-  author: Author
-}
-
 export interface Resource {
   id: string
   title: string

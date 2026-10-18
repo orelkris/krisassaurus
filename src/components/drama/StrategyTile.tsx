@@ -12,7 +12,7 @@ function StrategyTile({ strategy }: StrategyTileProps) {
 
   return (
     <Link
-      to={`/blog/drama/strategies/${strategy.slug}`}
+      to={`/drama/strategies/${strategy.slug}`}
       // --accent lets the hover border use the group's colour
       style={{ '--accent': colors.accent } as CSSProperties}
       className="flex items-start gap-3 rounded-[10px] border border-gray-200 px-3.5 py-3 transition-colors hover:bg-gray-50 hover:border-(--accent)"

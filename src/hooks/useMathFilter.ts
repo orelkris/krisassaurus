@@ -6,10 +6,10 @@ import { getStrand, getStrandBySlug } from '@/data/math/strands'
 // Reads the Math filter (grade, strand, idea) from the URL.
 // An expectation page picks both its grade and its strand
 export function useMathFilter() {
-  const expectationMatch = useMatch('/blog/math/grade/:grade/:code')
-  const gradeStrandMatch = useMatch('/blog/math/grade/:grade/strand/:slug')
-  const gradeMatch = useMatch('/blog/math/grade/:grade')
-  const strandMatch = useMatch('/blog/math/strand/:slug')
+  const expectationMatch = useMatch('/math/grade/:grade/:code')
+  const gradeStrandMatch = useMatch('/math/grade/:grade/strand/:slug')
+  const gradeMatch = useMatch('/math/grade/:grade')
+  const strandMatch = useMatch('/math/strand/:slug')
   const [searchParams] = useSearchParams()
 
   const expectation = expectationMatch

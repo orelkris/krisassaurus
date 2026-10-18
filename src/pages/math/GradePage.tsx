@@ -30,7 +30,7 @@ function GradePage() {
   const sectionIds = useMemo(() => tabs.map((tab) => tab.id), [tabs])
   const { activeId, jumpTo } = useScrollSpy(sectionIds)
 
-  if (!isGrade) return <Navigate to="/blog/math" replace />
+  if (!isGrade) return <Navigate to="/math" replace />
 
   return (
     <>

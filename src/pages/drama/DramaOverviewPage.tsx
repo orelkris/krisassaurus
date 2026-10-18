@@ -19,7 +19,7 @@ function DramaOverviewPage() {
         </p>
       </header>
 
-      <DocumentFeature page="/blog/drama" />
+      <DocumentFeature page="/drama" />
 
       <section className="overflow-hidden rounded-2xl border border-gray-200">
         {/* One stripe per colour family */}
@@ -48,7 +48,7 @@ function DramaOverviewPage() {
             and variations.
           </p>
           <Link
-            to="/blog/drama/strategies"
+            to="/drama/strategies"
             className="mt-1.5 rounded-full bg-gray-900 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-gray-700"
           >
             See all {strategies.length} →
@@ -62,7 +62,7 @@ function DramaOverviewPage() {
           {dramaSubjects.map((subject) => (
             <Link
               key={subject.slug}
-              to={`/blog/drama/subjects/${subject.slug}`}
+              to={`/drama/subjects/${subject.slug}`}
               className="card card-hover col-tight"
             >
               <span className="text-muted">Drama &amp;</span>

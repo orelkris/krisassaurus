@@ -26,7 +26,7 @@ function StrandPage() {
     ladderRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }, [idea])
 
-  if (!strand || !idea) return <Navigate to="/blog/math" replace />
+  if (!strand || !idea) return <Navigate to="/math" replace />
 
   return (
     <>

@@ -7,7 +7,7 @@ function SubjectPage() {
   const { slug = '' } = useParams<{ slug: string }>()
   const subject = getSubject(slug)
 
-  if (!subject) return <Navigate to="/blog/drama" replace />
+  if (!subject) return <Navigate to="/drama" replace />
 
   return (
     <div className="col-page flex-1">

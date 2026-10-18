@@ -9,10 +9,10 @@ import {
   mathPath,
 } from '@/data/math/expectations'
 import { mathGrades, mathStrands, strandA } from '@/data/math/strands'
-import { getBlogSection } from '@/data/drama/blogSections'
+import { getSubjectSection } from '@/data/subjects'
 
-// e.g. Drama & Math, kept with the blog sections
-const related = getBlogSection('math')?.related
+// e.g. Drama & Math, kept with the subjects
+const related = getSubjectSection('math')?.related
 
 const tileClass = 'card card-hover'
 

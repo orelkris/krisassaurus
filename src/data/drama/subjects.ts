@@ -12,8 +12,8 @@ export const dramaSubjects: DramaSubject[] = [
     intro: 'Acting out problems, patterns and shapes to make math visible.',
     related: {
       label: 'Looking for math posts without drama?',
-      linkText: 'Blog → Math',
-      to: '/blog/math',
+      linkText: 'Subjects → Math',
+      to: '/math',
     },
   },
   {

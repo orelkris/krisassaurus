@@ -9,8 +9,8 @@ import { getLinksToPage } from '@/data/resources/documentLinks'
 import { getMinistryDocument } from '@/data/resources/ministryDocuments'
 import MobileSidebarToggle from '@/components/ui/MobileSidebarToggle'
 
-// Ministry documents linked to the Drama blog in documentLinks
-const curriculumDocuments = getLinksToPage('/blog/drama').flatMap((link) => {
+// Ministry documents linked to the Drama page in documentLinks
+const curriculumDocuments = getLinksToPage('/drama').flatMap((link) => {
   const document = getMinistryDocument(link.documentSlug)
   return document?.file ? [document] : []
 })
@@ -30,10 +30,10 @@ function Chevron({ open }: { open: boolean }) {
 }
 
 function DramaSidebar() {
-  const overviewMatch = useMatch('/blog/drama')
-  const strategiesMatch = useMatch('/blog/drama/strategies')
-  const strategyMatch = useMatch('/blog/drama/strategies/:slug')
-  const subjectMatch = useMatch('/blog/drama/subjects/:slug')
+  const overviewMatch = useMatch('/drama')
+  const strategiesMatch = useMatch('/drama/strategies')
+  const strategyMatch = useMatch('/drama/strategies/:slug')
+  const subjectMatch = useMatch('/drama/subjects/:slug')
 
   const currentStrategy = getStrategy(strategyMatch?.params.slug ?? '')
   const currentSubject = getSubject(subjectMatch?.params.slug ?? '')
@@ -73,7 +73,7 @@ function DramaSidebar() {
       <div className={`${isMobileOpen ? 'block pt-3' : 'hidden'} lg:block lg:pt-0`}>
         <p className="text-label mb-1.5">Drama</p>
 
-        <Link to="/blog/drama" onClick={closeMobile} className={linkClass(!!overviewMatch)}>
+        <Link to="/drama" onClick={closeMobile} className={linkClass(!!overviewMatch)}>
           Overview
         </Link>
 
@@ -98,7 +98,7 @@ function DramaSidebar() {
             />
 
             <Link
-              to="/blog/drama/strategies"
+              to="/drama/strategies"
               onClick={closeMobile}
               className={linkClass(!!strategiesMatch)}
             >
@@ -142,7 +142,7 @@ function DramaSidebar() {
                       {items.map((strategy) => (
                         <Link
                           key={strategy.slug}
-                          to={`/blog/drama/strategies/${strategy.slug}`}
+                          to={`/drama/strategies/${strategy.slug}`}
                           onClick={closeMobile}
                           className={`block py-0.5 text-[13px] transition-colors ${
                             strategy.slug === currentStrategy?.slug
@@ -179,7 +179,7 @@ function DramaSidebar() {
             {dramaSubjects.map((subject) => (
               <Link
                 key={subject.slug}
-                to={`/blog/drama/subjects/${subject.slug}`}
+                to={`/drama/subjects/${subject.slug}`}
                 onClick={closeMobile}
                 className={linkClass(subject.slug === currentSubject?.slug)}
               >

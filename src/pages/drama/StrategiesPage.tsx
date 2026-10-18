@@ -23,7 +23,7 @@ function StrategiesPage() {
   const groupIds = useMemo<string[]>(() => tabs.map((tab) => tab.id), [tabs])
   const { activeId, jumpTo } = useScrollSpy(groupIds)
 
-  // Links like /blog/drama/strategies#tableaux open at that group
+  // Links like /drama/strategies#tableaux open at that group
   useEffect(() => {
     const id = hash.slice(1)
     if (!groupIds.includes(id)) return

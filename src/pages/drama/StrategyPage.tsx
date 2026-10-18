@@ -13,7 +13,7 @@ function StrategyPage() {
   const { slug = '' } = useParams<{ slug: string }>()
   const strategy = getStrategy(slug)
 
-  if (!strategy) return <Navigate to="/blog/drama/strategies" replace />
+  if (!strategy) return <Navigate to="/drama/strategies" replace />
 
   const group = getGroup(strategy.groupId)
   const facts = getQuickFacts(strategy)
@@ -118,7 +118,7 @@ function StrategyPage() {
 
         <nav className="flex justify-between gap-3 border-t border-gray-200 pt-4 text-sm">
           {previous ? (
-            <Link to={`/blog/drama/strategies/${previous.slug}`} className="text-gray-500 hover:text-gray-900">
+            <Link to={`/drama/strategies/${previous.slug}`} className="text-gray-500 hover:text-gray-900">
               <span className="text-muted block">← Previous in {group.name}</span>
               {previous.name}
             </Link>
@@ -126,7 +126,7 @@ function StrategyPage() {
             <span />
           )}
           {next && (
-            <Link to={`/blog/drama/strategies/${next.slug}`} className="text-right text-gray-500 hover:text-gray-900">
+            <Link to={`/drama/strategies/${next.slug}`} className="text-right text-gray-500 hover:text-gray-900">
               <span className="text-muted block">Next in {group.name} →</span>
               {next.name}
             </Link>

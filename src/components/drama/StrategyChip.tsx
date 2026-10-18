@@ -11,7 +11,7 @@ function StrategyChip({ strategy }: StrategyChipProps) {
 
   return (
     <Link
-      to={`/blog/drama/strategies/${strategy.slug}`}
+      to={`/drama/strategies/${strategy.slug}`}
       className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full px-2.5 py-0.5 text-xs font-medium hover:brightness-95"
       style={{ backgroundColor: colors.bg, color: colors.text }}
     >

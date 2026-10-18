@@ -22,9 +22,9 @@ export function getExpectation(id: string): Expectation | undefined {
   return byId.get(id)
 }
 
-// URLs use the grade and the code: /blog/math/grade/6/b1.1
+// URLs use the grade and the code: /math/grade/6/b1.1
 export function expectationPath(expectation: Expectation): string {
-  return `/blog/math/grade/${expectation.grade}/${expectation.code.toLowerCase()}`
+  return `/math/grade/${expectation.grade}/${expectation.code.toLowerCase()}`
 }
 
 export function findExpectation(
@@ -35,14 +35,14 @@ export function findExpectation(
 }
 
 // Every Math page link comes from the filter, so the sidebar and the pages agree:
-// nothing → /blog/math, grade → /grade/6, strand → /strand/number,
+// nothing → /math, grade → /grade/6, strand → /strand/number,
 // both → /grade/6/strand/number
 export function mathPath({ grade, strand, idea }: MathFilter): string {
   const slug = strand && getStrand(strand).slug
-  if (grade && slug) return `/blog/math/grade/${grade}/strand/${slug}`
-  if (grade) return `/blog/math/grade/${grade}`
-  if (slug) return `/blog/math/strand/${slug}${idea ? `?idea=${idea}` : ''}`
-  return '/blog/math'
+  if (grade && slug) return `/math/grade/${grade}/strand/${slug}`
+  if (grade) return `/math/grade/${grade}`
+  if (slug) return `/math/strand/${slug}${idea ? `?idea=${idea}` : ''}`
+  return '/math'
 }
 
 // The expectations for a grade, a strand, or both

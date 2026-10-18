@@ -9,7 +9,7 @@ interface MobileSidebarToggleProps {
   onToggle: () => void
 }
 
-// On phones a blog's sidebar folds into this button
+// On phones a subject's sidebar folds into this button
 function MobileSidebarToggle({
   label,
   current,
