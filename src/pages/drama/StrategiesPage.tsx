@@ -1,7 +1,7 @@
 import { useEffect, useMemo } from 'react'
 import { useLocation } from 'react-router-dom'
 import Breadcrumb from '@/components/ui/Breadcrumb'
-import BackToTopButton from '@/components/ui/BackToTopButton'
+import BackToTopButton from '@/components/ui/BackToTop'
 import SectionTabs from '@/components/ui/SectionTabs'
 import StrategyTile from '@/components/drama/StrategyTile'
 import { strategyGroups } from '@/data/drama/groups'
