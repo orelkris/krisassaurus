@@ -3,7 +3,7 @@ import drivingInTheFog from '@/assets/music/driving-in-the-fog.mp3'
 import flowingRiver from '@/assets/music/flowing-river.mp3'
 import deepRed from '@/assets/music/deep-red.mp3'
 import fridayNight from '@/assets/music/friday-night.mp3'
-import droplets from '@/assets/music/droplets.mp3'
+import inTheDark from '@/assets/music/in-the-dark.mp3'
 import phrygian from '@/assets/music/phrygian.mp3'
 
 export const compositions: Composition[] = [
@@ -49,23 +49,22 @@ export const compositions: Composition[] = [
   },
   {
     id: 'c5',
-    title: 'Droplets',
-    audioUrl: droplets,
+    title: 'Phrygian',
+    audioUrl: phrygian,
     date: new Date('2025-04-30'),
     description:
-      'A bit unpolished, but an interesting outcome from a quick improvisation session.',
+      'Based on the Phrygian mode (sensual).',
     tags: ['Electronic'],
-    duration: '1:50',
+    duration: '1:23',
   },
   {
     id: 'c6',
-    title: 'One late night...',
-    audioUrl: phrygian,
+    title: 'In the Dark',
+    audioUrl: inTheDark,
     date: new Date('2025-05-11'),
     description:
-      "I couldn't fall asleep, and I was nervous about a pancake breakfast in class that I had to \
-    bring batter for. So I wrote this...It isn't very good but a fun outcome...",
+      "Just looking at you in the dark...",
     tags: ['Electronic'],
-    duration: '1:02',
+    duration: '2:15',
   },
 ]
