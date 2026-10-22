@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import PageHeader from '@/components/layout/PageHeader'
 import PageSection from '@/components/layout/PageSection'
 import StrandBadge from '@/components/math/StrandBadge'
+import GradeTiles from '@/components/ui/GradeTiles'
+import StrandCards from '@/components/ui/StrandCards'
 import {
   expectations,
   getExpectations,
@@ -14,8 +16,6 @@ import CurriculumBox from '@/components/resources/CurriculumBox'
 
 // e.g. Drama & Math, kept with the subjects
 const related = getSubjectSection('math')?.related
-
-const tileClass = 'card card-hover'
 
 // The Container in TwoColumnLayout spaces these sections equally
 function MathOverviewPage() {
@@ -32,20 +32,13 @@ function MathOverviewPage() {
         title="Start with your grade"
         description="Every expectation for one grade on one page, grouped by strand."
       >
-        <div className="grid grid-cols-2 gap-grid sm:grid-cols-4">
-          {mathGrades.map((grade) => (
-            <Link
-              key={grade}
-              to={mathPath({ grade })}
-              className={`${tileClass} col-tight`}
-            >
-              <b className="text-base text-gray-900">Grade {grade}</b>
-              <span className="text-muted">
-                {getExpectations({ grade }).length} expectations
-              </span>
-            </Link>
-          ))}
-        </div>
+        <GradeTiles
+          tiles={mathGrades.map((grade) => ({
+            grade,
+            to: mathPath({ grade }),
+            meta: `${getExpectations({ grade }).length} expectations`,
+          }))}
+        />
       </PageSection>
 
       <PageSection
@@ -54,32 +47,17 @@ function MathOverviewPage() {
         title="Follow an idea across grades"
         description="Each strand is split into the same smaller ideas in every grade, like Math facts or Fractions. Pick one and see it grow from Grade 1 to 8."
       >
-        <div className="grid grid-cols-1 gap-grid sm:grid-cols-2">
-          {mathStrands.map((strand) => (
-            <Link
-              key={strand.id}
-              to={mathPath({ strand: strand.id })}
-              className={`${tileClass} col-stack`}
-            >
-              <h3 className="heading-card row-stack">
-                <StrandBadge strand={strand} />
-                {strand.name}
-              </h3>
-              <p className="text-small">{strand.blurb}</p>
-              <ul className="text-small flex flex-col gap-0.5 pl-[18px]">
-                {getIdeasInStrand(strand.id).map((idea) => (
-                  <li key={idea.id} className="relative">
-                    <span
-                      className="absolute top-[0.55em] -left-3.5 h-1.5 w-1.5 rounded-full"
-                      style={{ backgroundColor: strand.colors.accent }}
-                    />
-                    {idea.name}
-                  </li>
-                ))}
-              </ul>
-            </Link>
-          ))}
-        </div>
+        <StrandCards
+          cards={mathStrands.map((strand) => ({
+            id: strand.id,
+            to: mathPath({ strand: strand.id }),
+            name: strand.name,
+            badge: <StrandBadge strand={strand} />,
+            blurb: strand.blurb,
+            points: getIdeasInStrand(strand.id).map((idea) => idea.name),
+            accent: strand.colors.accent,
+          }))}
+        />
       </PageSection>
 
       <PageSection

@@ -3,11 +3,11 @@ import { Navigate, useParams, useSearchParams } from 'react-router-dom'
 import PageHeader from '@/components/layout/PageHeader'
 import MathBreadcrumb from '@/components/math/MathBreadcrumb'
 import IdeaLadder from '@/components/math/IdeaLadder'
-import IdeaMap from '@/components/math/IdeaMap'
 import StrandBadge from '@/components/math/StrandBadge'
 import StickyBar from '@/components/ui/StickyBar'
-import { getIdeasInStrand } from '@/data/math/expectations'
-import { getStrandBySlug } from '@/data/math/strands'
+import StrandMap from '@/components/ui/StrandMap'
+import { getIdeasInStrand, mathPath } from '@/data/math/expectations'
+import { getStrandBySlug, mathGrades } from '@/data/math/strands'
 
 function StrandPage() {
   const { slug = '' } = useParams<{ slug: string }>()
@@ -41,7 +41,23 @@ function StrandPage() {
         description={`${strand.blurb} Below, each row is one idea and each square is one expectation in that grade.`}
       />
 
-      <IdeaMap strand={strand} ideas={ideas} currentId={idea.id} />
+      <StrandMap
+        rowLabel="Idea"
+        grades={mathGrades}
+        rows={ideas.map((item) => ({
+          id: item.id,
+          label: item.name,
+          to: mathPath({ strand: strand.id, idea: item.id }),
+          counts: Object.fromEntries(
+            mathGrades.map((grade) => [
+              grade,
+              item.expectations[grade]?.length ?? 0,
+            ])
+          ),
+        }))}
+        currentId={idea.id}
+        colors={strand.colors}
+      />
 
       {/* The idea's name sticks while its grades scroll past */}
       <section ref={ladderRef} className="col-page">
