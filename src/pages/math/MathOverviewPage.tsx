@@ -10,6 +10,7 @@ import {
 } from '@/data/math/expectations'
 import { mathGrades, mathStrands, strandA } from '@/data/math/strands'
 import { getSubjectSection } from '@/data/subjects'
+import CurriculumBox from '@/components/resources/CurriculumBox'
 
 // e.g. Drama & Math, kept with the subjects
 const related = getSubjectSection('math')?.related
@@ -25,7 +26,7 @@ function MathOverviewPage() {
         description="The Ontario Math curriculum, one small piece at a time. Start with the grade you teach, or follow one idea from Grade 1 to Grade 8 to see where your students are coming from and where they are headed."
         meta={`8 grades · 5 strands · ${expectations.length} expectations · Ontario curriculum, 2020`}
       />
-
+      <CurriculumBox subject="math" />
       <PageSection
         box="panel"
         title="Start with your grade"

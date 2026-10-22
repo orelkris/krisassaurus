@@ -3,6 +3,7 @@ import { getSubjectSection } from '@/data/subjects'
 import ComingSoon from '@/components/ui/ComingSoon'
 import TwoColumnLayout from '@/components/layout/TwoColumnLayout'
 import SubjectSidebar from '@/components/subjects/SubjectSidebar'
+import CurriculumBox from '@/components/resources/CurriculumBox'
 
 // Subjects that don't have their own pages yet (Language, Gym)
 function SubjectSectionPage() {
@@ -12,9 +13,13 @@ function SubjectSectionPage() {
   if (!section) return <Navigate to="/" replace />
 
   return (
-    <TwoColumnLayout sidebar={<SubjectSidebar name={section.name} />} scrollable>
+    <TwoColumnLayout
+      sidebar={<SubjectSidebar name={section.name} />}
+      scrollable
+    >
       <div className="col-page flex-1">
         <h1 className="heading-page">{section.name}</h1>
+        <CurriculumBox subject={section.slug} />
         <ComingSoon
           title="Coming soon"
           text="This section will follow the same pattern as Drama once its content is ready."

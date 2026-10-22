@@ -44,6 +44,7 @@ export const ministryDocuments: MinistryDocument[] = [
     year: '2023',
     grades: 'Grades 1 to 8',
     summary: 'Coming soon.',
+    officialUrl: 'https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-language',
   },
   {
     slug: 'mathematics-1-8',
@@ -53,6 +54,7 @@ export const ministryDocuments: MinistryDocument[] = [
     year: '2020',
     grades: 'Grades 1 to 8',
     summary: 'Coming soon.',
+    officialUrl: 'https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics',
   },
   {
     slug: 'science-and-technology-1-8',
@@ -81,6 +83,7 @@ export const ministryDocuments: MinistryDocument[] = [
     year: '2019',
     grades: 'Grades 1 to 8',
     summary: 'Coming soon.',
+    officialUrl: 'https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-health-physical-education',
   },
   {
     slug: 'growing-success',

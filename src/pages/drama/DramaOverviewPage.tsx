@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom'
 import { strategyGroups } from '@/data/drama/groups'
 import { strategies } from '@/data/drama/strategies'
 import { dramaSubjects } from '@/data/drama/subjects'
-import DocumentFeature from '@/components/resources/DocumentFeature'
+import CurriculumBox from '@/components/resources/CurriculumBox'
+import ButtonLink from '@/components/ui/ButtonLink'
 
 function DramaOverviewPage() {
   return (
@@ -19,7 +20,7 @@ function DramaOverviewPage() {
         </p>
       </header>
 
-      <DocumentFeature page="/drama" />
+      <CurriculumBox subject="drama" />
 
       <section className="overflow-hidden rounded-2xl border border-gray-200">
         {/* One stripe per colour family */}
@@ -47,12 +48,9 @@ function DramaOverviewPage() {
             families, and each has its own page with steps, a classroom example
             and variations.
           </p>
-          <Link
-            to="/drama/strategies"
-            className="mt-1.5 rounded-full bg-gray-900 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-gray-700"
-          >
+          <ButtonLink to="/drama/strategies">
             See all {strategies.length} →
-          </Link>
+          </ButtonLink>
         </div>
       </section>
 

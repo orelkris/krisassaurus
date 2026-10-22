@@ -18,6 +18,19 @@ export const documentLinks: DocumentLink[] = [
     label: 'Subjects › Math',
     blurb: 'Every expectation for Grades 1 to 8, by grade and by strand.',
   },
+  {
+    documentSlug: 'language-1-8',
+    to: '/language',
+    label: 'Subjects › Language',
+    blurb: 'The expectations for each grade, by strand.',
+  },
+  {
+    documentSlug: 'health-and-physical-education-1-8',
+    to: '/gym',
+    label: 'Subjects › Gym',
+    blurb:
+      'The expectations for each grade, including Active Living and Movement Competence.',
+  },
 ]
 
 export function getLinksToPage(to: string): DocumentLink[] {

@@ -7,6 +7,7 @@ import {
   getMinistryDocument,
   getPdfUrl,
 } from '@/data/resources/ministryDocuments'
+import ButtonLink from '@/components/ui/ButtonLink'
 
 function DocumentPage() {
   const { slug = '' } = useParams<{ slug: string }>()
@@ -77,21 +78,10 @@ function DocumentPage() {
 
           <div className="col-stack">
             <div className="flex flex-wrap gap-stack">
-              <a
-                href={getPdfUrl(document)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-full bg-gray-900 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-gray-700"
-              >
-                Open PDF ↗
-              </a>
-              <a
-                href={document.file.url}
-                download
-                className="rounded-full border border-gray-200 px-4 py-2 text-sm font-semibold text-gray-900 transition-colors hover:bg-gray-50"
-              >
+              <ButtonLink href={getPdfUrl(document)}>Open PDF ↗</ButtonLink>
+              <ButtonLink href={document.file.url} download variant="secondary">
                 Download
-              </a>
+              </ButtonLink>
             </div>
             <p className="text-muted">
               Open shows the PDF in a new tab without saving it. Download saves
