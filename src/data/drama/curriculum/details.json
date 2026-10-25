@@ -1,0 +1,1144 @@
+{
+  "g1-b1.1": {
+    "examples": [
+      "retell and enact nursery and other childhood rhymes, stories, or narratives from picture books",
+      "use movement and voice to explore the thoughts of a familiar folk tale character in a variety of situations",
+      "use guided imagery and descriptive language to explore what a character might feel and experience in a story setting or picture",
+      "use group role play to explore alternative endings to stories, fairy tales, and personal experiences",
+      "use role play or a tableau at key moments in a story to help the protagonist solve a problem",
+      "interview a teacher in the role of a character from a story"
+    ],
+    "prompts": [
+      {
+        "text": "How can you and your friends retell the story using puppets?"
+      },
+      {
+        "text": "How can you and a partner act out how you think the story will end – but without using any words?"
+      }
+    ]
+  },
+  "g1-b1.2": {
+    "examples": [
+      "use facial expressions, body movement, and words to respond in role to scenarios and questions",
+      "express different points of view after reading a picture book about issues of belonging and discrimination",
+      "work with a partner to create a short scene that shows the importance of acceptance, understanding, and inclusion"
+    ],
+    "prompts": [
+      {
+        "text": "When I ask you a question as Grandma, how might you answer me as the wolf?"
+      },
+      {
+        "text": "How can you show (e.g., using gestures) what you are thinking and feeling when you are in role? Try to imagine why the wolf acts the way it does."
+      }
+    ]
+  },
+  "g1-b1.3": {
+    "examples": [
+      "In role: add ideas to the dramatic play that reflect the knowledge and experience of the role that is being played [such as a scientist mentioning an experiment or a journalist mentioning an interview]",
+      "create and share scenes from their own experiences",
+      "Out of role: work in a group to plan and prepare a scene and ask follow-up questions such as “How could we make this clearer? What changes can we make to help our story be understood?”",
+      "describe the sort of person who might own a particular found object such as a bag or a coat"
+    ],
+    "prompts": [
+      {
+        "label": "In role",
+        "text": "What do I need to know about the situation we find ourselves in?"
+      },
+      {
+        "text": "How might we convince (the main character) to listen to us?"
+      },
+      {
+        "label": "Out of role",
+        "text": "How can you work with your friends to act out a story? What do you think the characters should do?"
+      },
+      {
+        "text": "Can you introduce a new role in response to ideas emerging in the drama?"
+      }
+    ]
+  },
+  "g1-b1.4": {
+    "examples": [
+      "use a sheer cloth moved quickly to represent water",
+      "use a rainstick or shaker to create a sense of mystery or magic",
+      "use a variety of classroom objects to create a play area for specific dramatic play experiences"
+    ],
+    "prompts": [
+      {
+        "text": "How was the character feeling at the end of the story?"
+      },
+      {
+        "text": "What colours could we use to represent feeling happy? Feeling sad?"
+      },
+      {
+        "text": "If your character was the weather, what body shapes and props could you use to get into character?"
+      }
+    ]
+  },
+  "g1-b2.1": {
+    "examples": [
+      "in oral discussion, relate themes about family relationships or friendships to their own lives",
+      "after viewing a play or clip of a movie dealing with family issues [such as Cinderella or Princess Mononoke], contribute to a class journal entry or draw a picture to show the feelings of one or more of the characters – a stepsister, Cinderella, the mice"
+    ],
+    "prompts": [
+      {
+        "text": "Can you explain how you are different from and similar to your favourite character in today’s drama/read-aloud?"
+      },
+      {
+        "text": "Does our drama experience make you think about stories we have read? How did the drama make you feel?"
+      },
+      {
+        "text": "If you could give advice to this character, what would you like to say to him/her?"
+      }
+    ]
+  },
+  "g1-b2.2": {
+    "examples": [
+      "to provide important information in a situation",
+      "to represent a particular perspective/point of view",
+      "to change the direction of the plot",
+      "to symbolize an idea such as friendship"
+    ],
+    "prompts": [
+      {
+        "text": "What would the story be like if the wise woman didn’t appear to give advice? Should we assume that she is a hero/villain?"
+      },
+      {
+        "text": "How was the character in the play we saw like a real person?"
+      },
+      {
+        "text": "How would the story change, if it was told by a different character? Who might be interesting to hear from?"
+      }
+    ]
+  },
+  "g1-b2.3": {
+    "examples": [
+      "using personal experience and imagination to extend ideas in the drama",
+      "building on their own or others’ ideas"
+    ],
+    "prompts": [
+      {
+        "text": "What part of the drama did you enjoy the most and why?"
+      },
+      {
+        "text": "How did you use your body and volume and tone of voice to tell us how your character was feeling?"
+      },
+      {
+        "text": "If we were going to do the drama again, what is something that you could do better?"
+      }
+    ]
+  },
+  "g1-b3.1": {
+    "examples": [
+      "favourite television or computer programs and characters, imaginative play with action figures, dramatic play, attending plays and celebrations, interacting with picture books, storytelling"
+    ],
+    "prompts": [
+      {
+        "text": "Tell me about a time when you pretended to be someone or something else."
+      },
+      {
+        "text": "At what celebrations or events in our communities do we see people dressing up or pretending to be someone else?"
+      }
+    ]
+  },
+  "g1-b3.2": {
+    "examples": [
+      "contribute to a class scrapbook about characters such as trolls/fairies, trickster themes in Nanabush stories [from Native folklore] and Anansi stories [from West African folklore]"
+    ],
+    "prompts": [
+      {
+        "text": "Let’s list the different characters from the play."
+      },
+      {
+        "text": "Why do you think people will dress up as or pretend to be someone else when they are part of a parade or a play?"
+      },
+      {
+        "text": "How does this lesson or fable apply to real-life situations?"
+      }
+    ]
+  },
+  "g2-b1.1": {
+    "examples": [
+      "retell and enact a story from different points of view",
+      "stop at a dramatic point in a story and adopt roles of the characters in the story",
+      "enact a scene between characters in a fairy-tale kingdom, animals in the tundra, or neighbours in a back alley"
+    ],
+    "prompts": [
+      {
+        "text": "How might this story change if we told it from a different character’s point of view?"
+      },
+      {
+        "text": "What is a key moment in this story that you can dramatize? How will you use a freeze, bring it to life for one minute through mime, and then another freeze to communicate the main idea to your audience?"
+      }
+    ]
+  },
+  "g2-b1.2": {
+    "examples": [
+      "devise and share a group mime showing how characters respond to the tension in a situation of conflict, departure, or anticipation",
+      "use voice expressively to convey an interpretation of a character’s attitude"
+    ],
+    "prompts": [
+      {
+        "text": "In what ways can you use your body and face (i.e., in a mime) to express how a character feels without using words?"
+      },
+      {
+        "text": "How would you change your gestures and movement if you were portraying wind or water as a character from the story?"
+      },
+      {
+        "text": "What words and tone can you use in role that will clearly communicate this character’s point of view?"
+      }
+    ]
+  },
+  "g2-b1.3": {
+    "examples": [
+      "In role: respond to a scientist [roleplayed by the teacher] who says the class must give up their pet dinosaur because it poses a safety hazard",
+      "Out of role: use conventions such as discussion and/or guided imagery to establish the setting, context, and characters for a drama activity"
+    ],
+    "prompts": [
+      {
+        "label": "In role",
+        "text": "Because you are all experts, I need you to help me solve this problem. Who can make a suggestion?"
+      },
+      {
+        "label": "Out of role",
+        "text": "How shall we use the new information that was introduced when we were in role to determine what should happen next in the drama?"
+      }
+    ]
+  },
+  "g2-b1.4": {
+    "examples": [
+      "act out a familiar story using props instead of words",
+      "dim lights to create a spooky mood",
+      "use simple objects or props such as fur or feathers to indicate animal or bird characters in an Aboriginal story"
+    ],
+    "prompts": [
+      {
+        "text": "How can you use light and found objects to create different effects? For example, how could you use a soundscape and a flashlight to create a spooky mood?"
+      },
+      {
+        "text": "How can we use costumes or props to make the meaning of our play clearer?"
+      },
+      {
+        "text": "What objects can you use to help the audience understand that the main character is going on a journey?"
+      }
+    ]
+  },
+  "g2-b2.1": {
+    "examples": [
+      "use a journal response, a think-pair-share activity, visual art work, or a drama convention such as role on the wall to explore both the inner thoughts and feelings of the character and the perspectives of others who know the character"
+    ],
+    "prompts": [
+      {
+        "text": "What part of the play stood out for you and why? What did the events or characters in the play remind you of?"
+      }
+    ]
+  },
+  "g2-b2.2": {
+    "examples": [
+      "as a class create a checklist of the elements in a drama and what each element contributes and helps communicate",
+      "use a tableau to share a moment of importance in the story"
+    ],
+    "prompts": [
+      {
+        "text": "How were the elements of drama used in this presentation?"
+      },
+      {
+        "text": "How could you tell where the play was taking place?"
+      },
+      {
+        "text": "Who was the main character? How could you tell?"
+      },
+      {
+        "text": "In what ways did your role and other roles in the drama work together to help make the message clearer?"
+      }
+    ]
+  },
+  "g2-b2.3": {
+    "examples": [
+      "identify the goals they had in presenting a drama work and communicate how they achieved those goals",
+      "generate multiple ideas for improvement in a mapping activity or experiential play experience"
+    ],
+    "prompts": [
+      {
+        "text": "Using two stars and a wish, state two drama skills you are proud of and one thing you want to get better at."
+      },
+      {
+        "text": "What specific aspects (e.g., voice, gestures) of your work were effective in the drama?"
+      }
+    ]
+  },
+  "g2-b3.1": {
+    "examples": [
+      "favourite television, film, computer programs",
+      "favourite play roles",
+      "playing with puppets to enact real-life scenarios",
+      "attending plays",
+      "listening to stories about family and community traditions"
+    ],
+    "prompts": [
+      {
+        "text": "Why do you think people go to movies and see plays?"
+      },
+      {
+        "text": "What is your favourite TV program?"
+      },
+      {
+        "text": "How is TV similar to and different from plays?"
+      }
+    ]
+  },
+  "g2-b3.2": {
+    "examples": [
+      "describe experiences with festivals, pageants, circuses",
+      "explain the use of special objects in ceremonies or celebrations",
+      "give examples of the use of a narrator in plays or street theatre"
+    ],
+    "prompts": [
+      {
+        "text": "What are some drama activities that happen in our school? In our community?"
+      },
+      {
+        "text": "What are some elements of drama that are used in special ceremonies and celebrations in other parts of the world (e.g., Caribbean Carnival, Chinese New Year)?"
+      }
+    ]
+  },
+  "g3-b1.1": {
+    "examples": [
+      "act out moments from “a day in the life” of a main character from a story",
+      "improvise a short dialogue between two characters who are seeking a solution to a problem [as in Aboriginal teacher/trickster stories]"
+    ],
+    "prompts": [
+      {
+        "text": "What if you are the cook? What will you do?"
+      },
+      {
+        "text": "Which characters should try to solve the problem in this drama?"
+      },
+      {
+        "text": "What role will you adopt and what will you do to solve the problem in this drama?"
+      },
+      {
+        "text": "How will you make the audience believe you are the character in the story while in role?"
+      }
+    ]
+  },
+  "g3-b1.2": {
+    "examples": [
+      "present tableaux, with transitions and thought tracking, that show differences between urban and rural settings and/or lifestyles to convey information about the characters"
+    ],
+    "prompts": [
+      {
+        "text": "Make a clear picture of the setting I’ve described in your imagination. As we explore this imaginary place, using all of our senses and some simple actions, how can you show me what you are seeing, smelling, hearing, feeling, or doing?"
+      }
+    ]
+  },
+  "g3-b1.3": {
+    "examples": [
+      "In role: respond in role to extend the developing storyline in the drama [as townsfolk, plead with the mayor to save their town]",
+      "Out of role: in partners or small groups, combine their ideas to create a plan for how the characters will solve the problem in the drama"
+    ],
+    "prompts": [
+      {
+        "label": "In role",
+        "text": "How will we proceed? What are some possible courses of action?"
+      },
+      {
+        "label": "Out of role",
+        "text": "What key questions should we ask (e.g., where? when? how?) to gain more information for when we go back into role?"
+      }
+    ]
+  },
+  "g3-b1.4": {
+    "examples": [
+      "use items found in the classroom to create a feeling or a mood suggested by the teacher",
+      "use sound effects or music to create an element of surprise or tension"
+    ],
+    "prompts": [
+      {
+        "text": "What music can help to create an energetic mood for this drama? At what point in the drama will you change the music to create a different mood?"
+      }
+    ]
+  },
+  "g3-b2.1": {
+    "examples": [
+      "in a journal response, in a think-pair-share activity, in class discussion, by writing in role, in a four corners activity, in a small group improvisation or drawing"
+    ],
+    "prompts": [
+      {
+        "text": "Compared to all of the drama experiences we have had, in what ways was this experience unique?"
+      },
+      {
+        "text": "Describe a moment in the drama where you learned something new about the story or your role."
+      },
+      {
+        "text": "Which character’s situation did you empathize with?"
+      }
+    ]
+  },
+  "g3-b2.2": {
+    "examples": [
+      "describe how different characters’ actions help create suspense or tension",
+      "identify effective elements in a drama presentation",
+      "explain how setting highlights theme"
+    ],
+    "prompts": [
+      {
+        "text": "Describe a moment that stood out for you. What drama elements were involved?"
+      },
+      {
+        "text": "How did the setting help to tell the story of this scene?"
+      },
+      {
+        "text": "How did the actors communicate to the audience that they were friends (or not friends)?"
+      },
+      {
+        "text": "Were there any parts that were confusing? How could the meaning have been made clearer?"
+      }
+    ]
+  },
+  "g3-b2.3": {
+    "examples": [
+      "describe how their understanding of role play is developing",
+      "identify a role they would like to play, and explain why"
+    ],
+    "prompts": [
+      {
+        "text": "Complete the following sentences: ’Two suggestions I made in role that helped build the drama were . . .’; ’Two suggestions I made out of role that helped build the drama were . . .’; ’One way I was being a supportive audience member was . . .’"
+      }
+    ]
+  },
+  "g3-b3.1": {
+    "examples": [
+      "puppet shows and mask plays use easily recognizable character types to tell a story",
+      "actors in live theatre productions use exaggerated gestures and reactions designed to project beyond the footlights",
+      "street festivals use amplified live and/or recorded music, costumes, emcees, and amplified announcements to celebrate special events",
+      "clown acts use mime featuring clumsy gestures and comical accidents"
+    ],
+    "prompts": [
+      {
+        "text": "In what ways are puppet shows and plays with actors similar and in what ways are they different?"
+      },
+      {
+        "text": "What does a clown do to be funny? Why are there different kinds of clowns?"
+      }
+    ]
+  },
+  "g3-b3.2": {
+    "examples": [
+      "ideas about friendship or loyalty or power or perseverance in dramas based on fairy tales or myths from different countries",
+      "ethics and values found in Aboriginal plays"
+    ],
+    "prompts": [
+      {
+        "text": "Can you remember a character from another play who had the same problem or felt the same way as this character? How would you compare these two characters?"
+      },
+      {
+        "text": "Can you think of other plays, stories, TV shows, or movies with the same theme?"
+      }
+    ]
+  },
+  "g4-b1.1": {
+    "examples": [
+      "use role play to explore the hierarchical structure of medieval society",
+      "use “inner and outer circle” to examine moments of conflict and power imbalance in group improvisations on a common theme"
+    ],
+    "prompts": [
+      {
+        "text": "What do you know and what do you imagine about how people in medieval society behaved?"
+      },
+      {
+        "text": "How will you adjust your gestures and voice while in role to portray the status of a peasant in relation to a baron?"
+      }
+    ]
+  },
+  "g4-b1.2": {
+    "examples": [],
+    "prompts": [
+      {
+        "text": "Show me, in role, (1) what is most important to the character you are playing; or (2) your favourite place to be; or (3) a person you rely upon; or (4) something that you feel you must do."
+      },
+      {
+        "text": "What objects or props could you use to adapt the setting to emphasize your character’s occupation as a scientist?"
+      }
+    ]
+  },
+  "g4-b1.3": {
+    "examples": [
+      "In role: improvise possible solutions to a problem",
+      "Out of role: help select a drama form to represent the group’s idea"
+    ],
+    "prompts": [
+      {
+        "text": "What words or phrases can we contribute to role on the wall to deepen understanding of and belief in this character?"
+      },
+      {
+        "text": "What action will your character take to solve the problems he/she is facing?"
+      }
+    ]
+  },
+  "g4-b1.4": {
+    "examples": [
+      "use dimmed lights, black lights, and music to suggest a mood",
+      "project images with an overhead/data projector",
+      "use a microphone to enhance or create sound effects or amplify narration [such as a spirit communication in an Aboriginal story]"
+    ],
+    "prompts": [
+      {
+        "text": "How can you show the different meanings objects have in different contexts in everyday life (e.g., candles in ceremonies, birthdays, and festivals)?"
+      },
+      {
+        "text": "What objects could you use to symbolize who and what your character will miss on his/her journey?"
+      }
+    ]
+  },
+  "g4-b2.1": {
+    "examples": [
+      "make a mural or map to explore the setting of the drama",
+      "interview a partner in and out of role to discover physical and personality traits of a character",
+      "write a diary entry describing the relationship between two fictitious characters"
+    ],
+    "prompts": [
+      {
+        "text": "What stands out for you in this drama/play?"
+      },
+      {
+        "text": "Which character do you most relate to? Why?"
+      },
+      {
+        "text": "What other stories or plays are you reminded of?"
+      }
+    ]
+  },
+  "g4-b2.2": {
+    "examples": [
+      "characters’ differing points of view can be used to create tension",
+      "comic characters and scenes can help relieve tension",
+      "thought tracking can give insight into a character"
+    ],
+    "prompts": [
+      {
+        "text": "Who is the intended audience for this drama? What drama elements were adapted specifically to interest that audience?"
+      },
+      {
+        "text": "Why do you think the audience responded with laughter at that moment in the drama?"
+      }
+    ]
+  },
+  "g4-b2.3": {
+    "examples": [
+      "strength: using expressive gestures to communicate",
+      "interest: creative use of props and costumes",
+      "area for growth: maintaining focus in role"
+    ],
+    "prompts": [
+      {
+        "text": "With what conventions (e.g., tableaux, role playing) did you feel you did your best work?"
+      },
+      {
+        "text": "If you were to go back and redo any of your work in this drama, what do you feel you could do better, and why?"
+      },
+      {
+        "text": "Did you explore a variety of possible solutions to the problem?"
+      }
+    ]
+  },
+  "g4-b3.1": {
+    "examples": [
+      "both forms use the elements of drama to tell stories, to allow the audience to imagine the possible outcomes and implications of human actions, and to engage the emotions of actors and audience"
+    ],
+    "prompts": [
+      {
+        "text": "When we are role-playing together, how is this similar to and different from being in a play?"
+      }
+    ]
+  },
+  "g4-b3.2": {
+    "examples": [
+      "popular contemporary forms such as films or television shows and public processions and spectacles",
+      "historical forms such as medieval tournaments",
+      "oral storytelling by troubadours in earlier times and in contemporary contexts",
+      "travelling plays or pageants"
+    ],
+    "prompts": [
+      {
+        "text": "How can drama help us to understand people, times, and places that we have never actually experienced in our own lives?"
+      },
+      {
+        "text": "What did you learn about medieval society by role-playing peasants, barons, and other community members?"
+      }
+    ]
+  },
+  "g5-b1.1": {
+    "examples": [
+      "interview story characters who represent opposing views on an issue",
+      "use role play to explore social issues related to topics such as the environment, immigration, bullying, treaties, the rights and responsibilities of the child"
+    ],
+    "prompts": [
+      {
+        "text": "What strategies can you use in role to give a fair hearing to different sides on this issue?"
+      },
+      {
+        "text": "What drama strategy or convention can your group use to present solutions to the audience for your environmental issue?"
+      }
+    ]
+  },
+  "g5-b1.2": {
+    "examples": [
+      "select and use supporting artefacts or simple props",
+      "arrange furniture to establish setting",
+      "work with others to select or create objects to build a convincing setting, such as a character’s room or the inside of a cave",
+      "use the drama convention of thought tracking to establish a relationship between two characters"
+    ],
+    "prompts": [
+      {
+        "text": "What conventions or strategies could you use to show your character’s motivation to the audience? How can you show the audience the reasons for the character’s problem?"
+      },
+      {
+        "text": "How can you focus the audience on the relationship between these two characters instead of emphasizing one character’s dilemma?"
+      }
+    ]
+  },
+  "g5-b1.3": {
+    "examples": [
+      "In role: improvise possible solutions to a dramatic conflict based on ideas from discussion and personal experience",
+      "Out of role: brainstorm in a group to generate ideas and make artistic choices"
+    ],
+    "prompts": [
+      {
+        "label": "In role",
+        "text": "What do you think I can do, as a representative of the municipal government, to address your concerns?"
+      },
+      {
+        "label": "Out of role",
+        "text": "What needs to be considered when you are getting ready to play the role of a government representative? What should be said? What feelings should be expressed?"
+      },
+      {
+        "text": "How can you plan the movements and placement of the characters in your performance to express their feelings in relation to the government official?"
+      }
+    ]
+  },
+  "g5-b1.4": {
+    "examples": [
+      "shine a spotlight on a performer who is making a key point",
+      "use a clash of cymbals to highlight a pivotal moment"
+    ],
+    "prompts": [
+      {
+        "text": "What can we do to create or enhance the intended mood?"
+      }
+    ]
+  },
+  "g5-b2.1": {
+    "examples": [
+      "draw a picture or write poetry to show how they see a character at the beginning and end of the drama",
+      "use journal writing to convey a feeling of connection to a character in a drama"
+    ],
+    "prompts": [
+      {
+        "text": "How did this drama/play make you feel? What does it make you wonder about? If you could speak to the playwright or another character in the drama, what would you like to ask her or him?"
+      },
+      {
+        "text": "What character do you relate to and why?"
+      }
+    ]
+  },
+  "g5-b2.2": {
+    "examples": [
+      "explain how specific scenes and/or relationships create tension and build up to the climax of the drama"
+    ],
+    "prompts": [
+      {
+        "text": "What actions of the characters or performers helped them gain the empathy of the audience?"
+      },
+      {
+        "text": "What stage effects were used to help communicate a sense of danger?"
+      }
+    ]
+  },
+  "g5-b2.3": {
+    "examples": [
+      "use journals, charts, rubrics, and peer- and self-assessment charts to keep track of successful contributions, unproductive ideas or efforts, and evolving preferences in drama",
+      "describe how they used established criteria to evaluate their own and others’ work",
+      "describe how they incorporated constructive feedback into their drama work",
+      "assess how well they differentiated between stereotypes and authentic characters when developing roles"
+    ],
+    "prompts": [
+      {
+        "text": "Complete the following sentences: ’One way I contributed to the drama was . . .’; ’One way to improve my work next time is . . .’; ’The part I enjoyed most was . . .’"
+      }
+    ]
+  },
+  "g5-b3.1": {
+    "examples": [
+      "identify contexts in which the spoken word is a form of drama",
+      "describe historical and/or contemporary examples of forms from African, Asian, and/or Central or South American societies",
+      "identify examples of forms that reflect alternative viewpoints within communities"
+    ],
+    "prompts": [
+      {
+        "text": "What does this story (play, festival, visual representation) tell us about the family and community structures of its society of origin?"
+      },
+      {
+        "text": "What does our response to this drama tell us about ourselves?"
+      },
+      {
+        "text": "How does studying drama from around the world help us understand ourselves and others?"
+      },
+      {
+        "text": "How are life lessons communicated through these drama traditions?"
+      }
+    ]
+  },
+  "g5-b3.2": {
+    "examples": [
+      "describe what a producer, director, actor, stage manager, set or costume designer, and/or lighting or sound technician does in a typical day and what each needs in order to complete his or her work"
+    ],
+    "prompts": []
+  },
+  "g6-b1.1": {
+    "examples": [
+      "adapt roles and develop improvised scenes based on human rights issues and/or environmental issues such as species extinction",
+      "dramatize opinions about cultural appropriation",
+      "role-play historical characters",
+      "prepare a presentation about peace for Remembrance Day",
+      "use choral speaking and role playing to interpret poetry"
+    ],
+    "prompts": [
+      {
+        "text": "What do you hope to learn about this character through role playing?"
+      },
+      {
+        "text": "What is the theme of our drama?"
+      },
+      {
+        "text": "How could you use the drama conventions of hot seating or voices in the head or thought tracking to develop a deeper understanding of a character’s intentions and motivations?"
+      }
+    ]
+  },
+  "g6-b1.2": {
+    "examples": [
+      "develop a character in the context of a courtroom drama: judge, lawyer, witness, juror, the accused"
+    ],
+    "prompts": [
+      {
+        "text": "What elements are critically important to build belief in the drama?"
+      },
+      {
+        "text": "What will the jury be doing when the accused person enters?"
+      },
+      {
+        "text": "How will we know where and when the action is taking place?"
+      },
+      {
+        "text": "How can tension be created in this scene?"
+      },
+      {
+        "text": "What different points of view will be represented by the different roles?"
+      }
+    ]
+  },
+  "g6-b1.3": {
+    "examples": [
+      "In role: conduct a “hot seat” interview with the protagonist or antagonist",
+      "Out of role: make suggestions and introduce new ideas when planning a drama presentation"
+    ],
+    "prompts": [
+      {
+        "label": "Out of role",
+        "text": "What questions might you ask when you go back into role to help us understand the emotions and motivations the character has at this key moment?"
+      },
+      {
+        "label": "In role",
+        "text": "Why do you feel this way? What do you really want to see happen?"
+      }
+    ]
+  },
+  "g6-b1.4": {
+    "examples": [
+      "use a data projector to project evocative imagery",
+      "use filters and gels to create unusual effects with lighting",
+      "use music to suggest a mood",
+      "use masks to highlight specific character traits"
+    ],
+    "prompts": [
+      {
+        "text": "What features of your mask have you exaggerated to allow the audience to see the character from a distance (e.g., heavy brows, large nose, large eyes, jutting chin)?"
+      },
+      {
+        "text": "How can you use a photograph or everyday object from another historical period to communicate an aspect of that person/time/place?"
+      },
+      {
+        "text": "What visual effect would emphasize what this character is feeling on the inside?"
+      }
+    ]
+  },
+  "g6-b2.1": {
+    "examples": [
+      "describe their response to the attitudes and beliefs of specific characters in a drama"
+    ],
+    "prompts": [
+      {
+        "text": "How did this drama/play make you feel? Of what does it remind you?"
+      },
+      {
+        "text": "What did you like/dislike about this play? Why?"
+      },
+      {
+        "text": "Select one moment that you would like to revisit to change. How would you change it?"
+      },
+      {
+        "text": "Identify a moment in your drama when you felt fully in role."
+      }
+    ]
+  },
+  "g6-b2.2": {
+    "examples": [
+      "explain what elements made the final confrontation between the hero and the villain exciting to perform or watch"
+    ],
+    "prompts": [
+      {
+        "text": "How was symbolism used in this scene? How effectively did it help create a particular mood?"
+      },
+      {
+        "text": "Why was it important for the actor to stop in mid-sentence while speaking?"
+      }
+    ]
+  },
+  "g6-b2.3": {
+    "examples": [
+      "write a journal entry about a new strategy they have learned",
+      "write a letter to a new student about how to cope with stage fright",
+      "respond to interview questions about their growth and development",
+      "explain to the teacher how they collaborated and contributed to the group work of developing, planning, and designing a drama"
+    ],
+    "prompts": [
+      {
+        "text": "What advice about (topic X) would you give a student who is new to drama?"
+      },
+      {
+        "text": "What are some important skills people need to work in drama?"
+      },
+      {
+        "text": "Describe your own strengths in drama."
+      },
+      {
+        "text": "How did you give/receive constructive feedback on ways in which space, gesture, and voice are used to communicate within a drama work? Was the feedback used to refine the drama work?"
+      },
+      {
+        "text": "What ideas did you submit to individual and collective decisions to develop the drama?"
+      },
+      {
+        "text": "How did you show a commitment to maintaining your role?"
+      }
+    ]
+  },
+  "g6-b3.1": {
+    "examples": [
+      "Aboriginal communities: storytelling forms – the Seven Grandfather teachings, Haida tales, Medicine Wheel stories",
+      "theatre forms – Red Sky Performance Theatre, De-ba-jeh-mu-jig Theatre"
+    ],
+    "prompts": [
+      {
+        "text": "Different communities have different versions of this shared story. What elements are the same in many versions? What elements are different? How might we explain some of the similarities and differences?"
+      }
+    ]
+  },
+  "g6-b3.2": {
+    "examples": [
+      "provide opportunities for self-expression and creativity to both amateurs and professionals",
+      "provide employment for a wide variety of workers",
+      "encourage tourism",
+      "promote strengthening and healing in Aboriginal communities"
+    ],
+    "prompts": [
+      {
+        "text": "What careers related to theatre do not involve acting?"
+      },
+      {
+        "text": "In what ways can drama and theatre help build community?"
+      }
+    ]
+  },
+  "g7-b1.1": {
+    "examples": [
+      "identify significant perspectives related to an issue such as peer pressure, treaty rights, or cultural identity, and assume roles to express the different perspectives",
+      "use prepared improvisation to communicate insights about life events and relationships",
+      "use thought tracking and symbolic artefacts to present a persona associated with a past historical event"
+    ],
+    "prompts": [
+      {
+        "text": "What drama conventions (e.g., mime, overheard conversation, a day in the life) could you use to inform the audience about the events leading up to the issue? What roles should be adopted to represent the range of perspectives related to the key themes of our drama (e.g., differing world views of Europeans and Aboriginal people at the time of contact)?"
+      }
+    ]
+  },
+  "g7-b1.2": {
+    "examples": [
+      "develop a drama presentation incorporating a series of tableaux, a group soundscape, a movement piece, and a rap/song"
+    ],
+    "prompts": [
+      {
+        "text": "Which convention will you use to begin the piece? End the piece?"
+      },
+      {
+        "text": "What roles could be introduced to explore the relationships in more detail?"
+      }
+    ]
+  },
+  "g7-b1.3": {
+    "examples": [
+      "In role: use thought tracking or writing in role to explore the feelings and motivations of a character",
+      "introduce a new perspective during role play to foster a sense of empathy with the character",
+      "Out of role: use a place mat activity to select ideas that group members agree upon",
+      "use invented notation to explain the movement of the character"
+    ],
+    "prompts": [
+      {
+        "text": "How could you use the conventions of flashback and flash forward to examine turning points and major decisions in your drama piece?"
+      },
+      {
+        "text": "How might you physically represent the different emotions experienced by different characters in the drama?"
+      }
+    ]
+  },
+  "g7-b1.4": {
+    "examples": [
+      "use music to create mood",
+      "use video and drums/noisemakers to signal the climax",
+      "use a digital slide presentation to create a backdrop of words or images",
+      "use costumes, props, fabric to establish character and/or setting"
+    ],
+    "prompts": [
+      {
+        "text": "What is different when we develop a drama for a recording studio versus the classroom, a street or mall performance, or an arts night performance?"
+      },
+      {
+        "text": "How could you use sound technology to help listeners visualize the action of a radio drama?"
+      },
+      {
+        "text": "How could you use lighting and projection technology to enhance the setting for your stage production?"
+      },
+      {
+        "text": "What images could you project that would provide a clarifying contrast to the action on the stage?"
+      }
+    ]
+  },
+  "g7-b2.1": {
+    "examples": [
+      "use a series of tableaux or freeze-frame images of key moments in a drama to show which moments had the greatest impact on them",
+      "write in role about an environmental issue, first from the point of view of an audience member and then from the point of view of an animal whose habitat is threatened"
+    ],
+    "prompts": [
+      {
+        "text": "This drama presented one side of an environmental issue. Whose perspective is missing? Why do you think it has been left out? How do you feel about that? What words might you give to this voice?"
+      }
+    ]
+  },
+  "g7-b2.2": {
+    "examples": [
+      "compare and contrast how the director of a play and the director of a film might use body positioning and sound to communicate a character’s feelings to the audience"
+    ],
+    "prompts": [
+      {
+        "text": "How do the elements work together to convey a message?"
+      },
+      {
+        "text": "Do you think the central character’s intentions are clearly communicated? What evidence can you give to support your point of view?"
+      },
+      {
+        "text": "In what ways did (drama convention X) help establish the context of the drama?"
+      }
+    ]
+  },
+  "g7-b2.3": {
+    "examples": [
+      "create a chart listing strengths and areas for improvement",
+      "highlight an area to work on in their next drama production",
+      "write a report on their learning in drama for a school newsletter"
+    ],
+    "prompts": [
+      {
+        "text": "What aspects of drama do you enjoy most?"
+      },
+      {
+        "text": "What skills are you most proud of?"
+      },
+      {
+        "text": "Can you identify one skill that you feel you need to practise?"
+      },
+      {
+        "text": "In what ways did you contribute to the group’s collaborative drama?"
+      }
+    ]
+  },
+  "g7-b3.1": {
+    "examples": [
+      "how views of colonistAboriginal relationships differ in plays from earlier times versus contemporary plays",
+      "how themes of loyalty to family and/or country are treated in comic forms versus serious drama forms"
+    ],
+    "prompts": [
+      {
+        "text": "How have some theatre productions changed as they are reinterpreted by performers in different times and places? What do you think the changes tell us about the societies that produced them?"
+      }
+    ]
+  },
+  "g7-b3.2": {
+    "examples": [
+      "attract tourists",
+      "provide jobs",
+      "provide entertainment",
+      "promote cultural understanding",
+      "raise people’s awareness of social issues"
+    ],
+    "prompts": [
+      {
+        "text": "Why is it beneficial to have local theatre groups in our community?"
+      },
+      {
+        "text": "What theatre jobs require performance skills?"
+      },
+      {
+        "text": "If you interviewed people involved in drama or theatre in the community (e.g., actors, directors, theatre group members, playwrights, designers), what could you ask them about the value they place on theatre as part of their own lives and the life of the community?"
+      },
+      {
+        "text": "What value do you think your work in drama has in your own life? In the life of the community?"
+      }
+    ]
+  },
+  "g8-b1.1": {
+    "examples": [
+      "identify significant perspectives related to an issue and assume roles to give voice to the different perspectives",
+      "use improvisation to communicate insights about life events and relationships",
+      "develop and present anthology dramas, short scripts, or multi-role plays for a single actor"
+    ],
+    "prompts": [
+      {
+        "text": "How could you use drama conventions such as conversations, mapping, or role on the wall to dramatize two opposing views on a community issue (e.g., consumerism, landfills, bike lanes)?"
+      }
+    ]
+  },
+  "g8-b1.2": {
+    "examples": [
+      "use “a day in the life” to compare farming, fishing, or hunting practices at the beginning of the twentieth century to those of today",
+      "create sets to depict the physical setting of a drama using available materials",
+      "use knowledge of movement and blocking to achieve well-paced action and create visual interest"
+    ],
+    "prompts": [
+      {
+        "text": "How can corridor of voices help you to understand your role more deeply and also to experience other perspectives on what the character might think and feel?"
+      },
+      {
+        "text": "In your prepared improvisation, how can your physical movements in relation to one another be used to highlight the nature of your emotional relationship?"
+      }
+    ]
+  },
+  "g8-b1.3": {
+    "examples": [
+      "In role: use group improvisation to work out a time line of events in a drama story",
+      "Out of role: use the talking stick in group discussion about the best way to resolve the drama’s central conflict"
+    ],
+    "prompts": [
+      {
+        "text": "In your group, discuss one aspect of your presentation that communicates your meaning clearly. Identify one thing that could be changed to strengthen your presentation."
+      }
+    ]
+  },
+  "g8-b1.4": {
+    "examples": [
+      "music/soundtracks to intensify audience reaction",
+      "video as counterpoint to action or to add details",
+      "costumes, props, fabric to establish character and setting",
+      "an audio recording of a soundscape to accompany and reinforce ideas and feelings in a mimed sequence"
+    ],
+    "prompts": [
+      {
+        "text": "What are some ways you can use objects or technology to represent the moods of these different characters? Masks? A ’signature tune’?"
+      },
+      {
+        "text": "How could you use technology to signal to the audience when an actor’s speech represents the character’s private, inner thoughts? A spotlight? Another kind of lighting change?"
+      }
+    ]
+  },
+  "g8-b2.1": {
+    "examples": [
+      "create a web with the main idea of the drama in the centre and words describing personal and global connections leading out from the centre",
+      "explain in discussion or a journal entry why they disagree or empathize with the motivations of a character"
+    ],
+    "prompts": [
+      {
+        "text": "What are the key messages of this drama/play? How does its message relate to your own life experiences and opinions?"
+      },
+      {
+        "text": "Can you sum up what this play was about for you in a paragraph? A sentence? A word?"
+      },
+      {
+        "text": "Is this an important play for others to see? Why?"
+      },
+      {
+        "text": "How does the play’s theme or point of view connect to another drama experience that we’ve shared?"
+      }
+    ]
+  },
+  "g8-b2.2": {
+    "examples": [
+      "determine whether the use of contrasting comic and serious scenes strengthened the impact of the theme or weakened it",
+      "determine whether using a historical setting enhanced the presentation of a contemporary theme"
+    ],
+    "prompts": [
+      {
+        "text": "Imagine that you are a theatre critic. How many stars (on a scale of one to five) does this drama deserve? What key elements were used in the drama? In your opinion did they help make it stronger or weaker? Why?"
+      },
+      {
+        "text": "How successful were the actors in using movement, voice, and gesture to create interest?"
+      }
+    ]
+  },
+  "g8-b2.3": {
+    "examples": [
+      "write a journal entry outlining the process they used to solve a given problem, what worked, and what they would do differently next time",
+      "develop and use rubrics and/or assessment charts to evaluate their contribution to group work"
+    ],
+    "prompts": [
+      {
+        "text": "About what area of drama do you feel most confident? What areas do you want to pursue in the future?"
+      },
+      {
+        "text": "What drama conventions did you use most successfully to express your thoughts, feelings, and ideas?"
+      }
+    ]
+  },
+  "g8-b3.1": {
+    "examples": [
+      "introduction of digital storytelling, multimedia presentations, and dance-drama into drama forms",
+      "incorporation of technologies from different media to enhance sets, backdrops, and special effects",
+      "use of virtual role play to explore options for avatar characters"
+    ],
+    "prompts": [
+      {
+        "text": "What are some similarities and differences in how drama expresses ideas and emotions compared to other art forms (e.g., dance, film, music, art)?"
+      },
+      {
+        "text": "In what ways can the use of technology enhance or detract from the message or meaning in a drama presentation?"
+      }
+    ]
+  },
+  "g8-b3.2": {
+    "examples": [
+      "by providing opportunities for personal enjoyment, celebration, and entertainment",
+      "by providing jobs",
+      "by attracting tourists",
+      "by communicating and teaching about a range of topics",
+      "by enhancing participants’ life skills of communication and collaboration",
+      "by raising awareness of political, environmental, medical, and other social/global issues"
+    ],
+    "prompts": [
+      {
+        "text": "Why do we provide opportunities to participate in drama in school and in the community?"
+      },
+      {
+        "text": "Why might theatrical performances have been important in times when very few people could read and write?"
+      },
+      {
+        "text": "How do theatre performances help the economy?"
+      }
+    ]
+  }
+}

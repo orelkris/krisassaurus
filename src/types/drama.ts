@@ -84,6 +84,11 @@ export interface DramaExpectation {
   // e.g. B1.1, the same numbers in every grade
   code: string
   text: string
+}
+
+// The curriculum's examples and teacher prompts for one expectation. They
+// load only when its page opens
+export interface DramaDetails {
   examples: string[]
   prompts: DramaPrompt[]
 }

@@ -13,6 +13,10 @@ import MusicPage from '@/pages/MusicPage'
 import ScrollToTop from '@/components/ui/ScrollToTop'
 import TwoColumnLayout from '@/components/layout/TwoColumnLayout'
 import DramaSidebar from '@/components/drama/DramaSidebar'
+import DramaGradePage from '@/pages/drama/DramaGradePage'
+import DramaGradeStrandPage from '@/pages/drama/DramaGradeStrandPage'
+import DramaStrandPage from '@/pages/drama/DramaStrandPage'
+import DramaExpectationPage from '@/pages/drama/DramaExpectationPage'
 import DramaOverviewPage from '@/pages/drama/DramaOverviewPage'
 import StrategiesPage from '@/pages/drama/StrategiesPage'
 import StrategyPage from '@/pages/drama/StrategyPage'
@@ -57,6 +61,19 @@ function App() {
             <Route path="strategies" element={<StrategiesPage />} />
             <Route path="strategies/:slug" element={<StrategyPage />} />
             <Route path="subjects/:slug" element={<SubjectPage />} />
+            {/* The Drama curriculum, routed like Math's */}
+            <Route path="grade/:grade" element={<DramaGradePage />} />
+            <Route
+              path="grade/:grade/:code"
+              element={<DramaExpectationPage />}
+            />
+            <Route
+              path="grade/:grade/strand/:slug"
+              element={<DramaGradeStrandPage />}
+            />
+            <Route path="strand/:slug" element={<DramaStrandPage />} />
+            <Route path="grade" element={<Navigate to="/drama" replace />} />
+            <Route path="strand" element={<Navigate to="/drama" replace />} />
           </Route>
 
           {/* Math: the curriculum by grade, by strand, both, and one page per expectation */}

@@ -8,11 +8,33 @@ import { dramaSubjects, getSubject } from '@/data/drama/subjects'
 import { getLinksToPage } from '@/data/resources/documentLinks'
 import { getMinistryDocument } from '@/data/resources/ministryDocuments'
 import MobileSidebarToggle from '@/components/ui/MobileSidebarToggle'
+import CurriculumFilter, {
+  type CurriculumPick,
+  type FilterSubList,
+} from '@/components/ui/CurriculumFilter'
+import type { DramaFilter, DramaStrandId } from '@/types/drama'
+import {
+  dramaExpectationPath,
+  dramaPath,
+  getDramaExpectations,
+} from '@/data/drama/curriculum/expectations'
+import {
+  dramaGrades,
+  dramaStrands,
+  dramaTopics,
+  getCodesInStrand,
+} from '@/data/drama/curriculum/strands'
+import { useDramaFilter } from '@/hooks/useDramaFilter'
 
 // Ministry documents linked to the Drama page in documentLinks
 const curriculumDocuments = getLinksToPage('/drama').flatMap((link) => {
   const document = getMinistryDocument(link.documentSlug)
   return document?.file ? [document] : []
+})
+
+const toFilter = ({ grade, strand }: CurriculumPick): DramaFilter => ({
+  grade,
+  strand: strand as DramaStrandId | undefined,
 })
 
 const linkClass = (isCurrent: boolean) =>
@@ -35,6 +57,48 @@ function DramaSidebar() {
   const strategyMatch = useMatch('/drama/strategies/:slug')
   const subjectMatch = useMatch('/drama/subjects/:slug')
 
+  const {
+    filter,
+    strand: currentStrand,
+    expectation,
+  } = useDramaFilter()
+
+  // The same grade and strand filter as Math. With a grade picked, the strand
+  // opens onto its expectations in that grade; without, onto its numbers
+  let subList: FilterSubList | undefined
+  if (currentStrand && filter.grade) {
+    subList = {
+      kind: 'codes',
+      groups: [
+        {
+          label: `${currentStrand.id} · ${currentStrand.name}`,
+          codes: getDramaExpectations(filter).map((item) => {
+            const isPicked = item.id === expectation?.id
+            return {
+              id: item.id,
+              code: item.code,
+              // Clicking the open expectation again goes back to its grade and strand
+              to: isPicked ? dramaPath(filter) : dramaExpectationPath(item),
+              isPicked,
+            }
+          }),
+        },
+      ],
+    }
+  } else if (currentStrand) {
+    const codes = getCodesInStrand(currentStrand.id)
+    const currentCode = filter.code ?? codes[0]
+    subList = {
+      kind: 'links',
+      links: codes.map((code) => ({
+        id: code,
+        label: `${code} ${dramaTopics[code]}`,
+        to: dramaPath({ strand: currentStrand.id, code }),
+        isCurrent: code === currentCode,
+      })),
+    }
+  }
+
   const currentStrategy = getStrategy(strategyMatch?.params.slug ?? '')
   const currentSubject = getSubject(subjectMatch?.params.slug ?? '')
 
@@ -53,6 +117,12 @@ function DramaSidebar() {
 
   const currentLabel = currentStrategy
     ? currentStrategy.name
+    : expectation
+      ? `Grade ${expectation.grade} · ${expectation.code}`
+      : filter.grade || currentStrand
+        ? [filter.grade && `Grade ${filter.grade}`, currentStrand?.name]
+            .filter(Boolean)
+            .join(' · ')
     : currentSubject
       ? `Drama & ${currentSubject.name}`
       : strategiesMatch
@@ -164,6 +234,26 @@ function DramaSidebar() {
             )}
           </div>
         )}
+
+        <div className="col-section mt-4 mb-2">
+          <CurriculumFilter
+            grades={dramaGrades}
+            strands={dramaStrands}
+            picked={{ grade: filter.grade, strand: filter.strand }}
+            count={(pick) => getDramaExpectations(toFilter(pick)).length}
+            path={(pick) =>
+              dramaPath({
+                ...toFilter(pick),
+                // Unpicking the grade of an expectation keeps its number open
+                code:
+                  !pick.grade && pick.strand === filter.strand
+                    ? filter.code
+                    : undefined,
+              })
+            }
+            subList={subList}
+          />
+        </div>
 
         <button
           onClick={() => setIsSubjectsOpen(!isSubjectsOpen)}

@@ -1,4 +1,5 @@
 import type {
+  DramaDetails,
   DramaExpectation,
   DramaFilter,
   DramaStrandId,
@@ -9,8 +10,9 @@ import type { FitColumn } from '@/components/ui/WhereThisFits'
 import expectationList from './expectations.json'
 import { dramaGrades, dramaTopics, getDramaStrand } from './strands'
 
-// The official wording of all 72 Drama expectations, with their examples
-// and teacher prompts
+// The official wording of all 72 Drama expectations. Their examples and
+// teacher prompts are in details.json and load only when an expectation
+// page opens
 export const dramaExpectations = expectationList as DramaExpectation[]
 
 const byId = new Map(
@@ -139,4 +141,11 @@ export function dramaWhereThisFits(expectation: DramaExpectation): FitColumn[] {
       empty: 'Continues in Grade 9 drama.',
     },
   ]
+}
+
+export async function loadDramaDetails(
+  expectation: DramaExpectation
+): Promise<DramaDetails | undefined> {
+  const details = await import('./details.json')
+  return (details.default as Record<string, DramaDetails>)[expectation.id]
 }
