@@ -9,17 +9,21 @@ interface FramedGroupProps {
 }
 
 // A bordered box with a small label centred on its top border. Like
-// Container, it pads its content and spaces its children equally
+// Container, it pads its content and spaces its children equally. It is a
+// fieldset, so a long label wraps onto more lines and pushes the content down
+// instead of covering it. The label's top half sits above the border; the
+// negative margin and smaller top padding keep the box where a plain box
+// would be
 function FramedGroup({ label, children, gap = 'stack' }: FramedGroupProps) {
   return (
-    <div
-      className={`${gapClass[gap]} pad-md relative rounded-xl border border-gray-200`}
+    <fieldset
+      className={`${gapClass[gap]} pad-md -mt-2 min-w-0 rounded-xl border border-gray-200 pt-[9px]`}
     >
-      <p className="text-label absolute -top-2 left-1/2 max-w-[90%] -translate-x-1/2 bg-white px-2 text-center">
+      <legend className="text-label mx-auto max-w-[90%] px-2 text-center">
         {label}
-      </p>
+      </legend>
       {children}
-    </div>
+    </fieldset>
   )
 }
 
