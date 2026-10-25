@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { Navigate, useParams, useSearchParams } from 'react-router-dom'
 import PageHeader from '@/components/layout/PageHeader'
-import MathBreadcrumb from '@/components/math/MathBreadcrumb'
+import CurriculumBreadcrumb from '@/components/ui/CurriculumBreadcrumb'
 import IdeaLadder from '@/components/math/IdeaLadder'
 import StrandBadge from '@/components/ui/StrandBadge'
 import StickyBar from '@/components/ui/StickyBar'
@@ -31,7 +31,13 @@ function StrandPage() {
   return (
     <>
       <PageHeader
-        above={<MathBreadcrumb className="hidden lg:block" />}
+        above={
+          <CurriculumBreadcrumb
+            subject="Math"
+            strand={strand.name}
+            className="hidden lg:block"
+          />
+        }
         title={
           <>
             <StrandBadge strand={strand} size="lg" />

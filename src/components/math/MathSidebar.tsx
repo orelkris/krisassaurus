@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 import { X } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import type { Expectation, MathStrand } from '@/types/math'
-import MathBreadcrumb from '@/components/math/MathBreadcrumb'
+import CurriculumBreadcrumb from '@/components/ui/CurriculumBreadcrumb'
 import { mathGrades, mathStrands } from '@/data/math/strands'
 import {
   expectationPath,
@@ -111,7 +111,13 @@ function MathSidebar() {
   return (
     <>
       {/* On phones the sidebar sits above the page, so the breadcrumb leads */}
-      <MathBreadcrumb className="lg:hidden" />
+      <CurriculumBreadcrumb
+        subject="Math"
+        grade={filter.grade}
+        strand={currentStrand?.name}
+        code={expectation?.code}
+        className="lg:hidden"
+      />
 
       <div className="col-tight">
         <p className="text-label">Math</p>

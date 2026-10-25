@@ -9,7 +9,7 @@ import FramedGroup from '@/components/ui/FramedGroup'
 import Pill from '@/components/ui/Pill'
 import StickyBar from '@/components/ui/StickyBar'
 import PageHeader from '@/components/layout/PageHeader'
-import MathBreadcrumb from '@/components/math/MathBreadcrumb'
+import CurriculumBreadcrumb from '@/components/ui/CurriculumBreadcrumb'
 import CurriculumList from '@/components/math/CurriculumList'
 import MathCard from '@/components/math/MathCard'
 import MathText from '@/components/math/MathText'
@@ -89,7 +89,13 @@ function ExpectationPage() {
       <PageHeader
         above={
           <>
-            <MathBreadcrumb className="hidden lg:block" />
+            <CurriculumBreadcrumb
+              subject="Math"
+              grade={expectation.grade}
+              strand={strand.name}
+              code={expectation.code}
+              className="hidden lg:block"
+            />
             <div className="row-stack flex-wrap">
               <Pill colors={strand.colors}>{strand.name}</Pill>
               {idea && <Pill>{idea.name}</Pill>}

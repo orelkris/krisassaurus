@@ -2,7 +2,7 @@ import { useMemo } from 'react'
 import { Navigate, useParams } from 'react-router-dom'
 import SectionTabs from '@/components/ui/SectionTabs'
 import PageHeader from '@/components/layout/PageHeader'
-import MathBreadcrumb from '@/components/math/MathBreadcrumb'
+import CurriculumBreadcrumb from '@/components/ui/CurriculumBreadcrumb'
 import ExpectationGroups from '@/components/ui/ExpectationGroups'
 import StrandBanner from '@/components/ui/StrandBanner'
 import { getExpectations, overallGroups } from '@/data/math/expectations'
@@ -35,7 +35,13 @@ function GradePage() {
   return (
     <>
       <PageHeader
-        above={<MathBreadcrumb className="hidden lg:block" />}
+        above={
+          <CurriculumBreadcrumb
+            subject="Math"
+            grade={grade}
+            className="hidden lg:block"
+          />
+        }
         title={`Grade ${grade}`}
         description={`All ${list.length} expectations for Grade ${grade}, in plain lists. You don’t have to teach them in this order, and many can be taught together.`}
       />

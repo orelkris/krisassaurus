@@ -1,6 +1,6 @@
 import { Navigate, useParams } from 'react-router-dom'
 import PageHeader from '@/components/layout/PageHeader'
-import MathBreadcrumb from '@/components/math/MathBreadcrumb'
+import CurriculumBreadcrumb from '@/components/ui/CurriculumBreadcrumb'
 import ExpectationGroups from '@/components/ui/ExpectationGroups'
 import StrandBadge from '@/components/ui/StrandBadge'
 import StickyBar from '@/components/ui/StickyBar'
@@ -26,7 +26,14 @@ function GradeStrandPage() {
   return (
     <>
       <PageHeader
-        above={<MathBreadcrumb className="hidden lg:block" />}
+        above={
+          <CurriculumBreadcrumb
+            subject="Math"
+            grade={grade}
+            strand={strand.name}
+            className="hidden lg:block"
+          />
+        }
         title={
           <>
             Grade {grade} ·
