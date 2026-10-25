@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { Navigate, useParams } from 'react-router-dom'
-import SectionTabs from '@/components/ui/SectionTabs'
+import StrandTabs from '@/components/ui/StrandTabs'
 import PageHeader from '@/components/layout/PageHeader'
 import CurriculumBreadcrumb from '@/components/ui/CurriculumBreadcrumb'
 import ExpectationGroups from '@/components/ui/ExpectationGroups'
@@ -22,10 +22,9 @@ function GradePage() {
     () =>
       mathStrands.map((strand) => ({
         id: `strand-${strand.slug}`,
-        label: `${strand.name} · ${list.filter((e) => e.strand === strand.id).length}`,
-        color: strand.colors.accent,
+        strand,
       })),
-    [list]
+    []
   )
   const sectionIds = useMemo(() => tabs.map((tab) => tab.id), [tabs])
   const { activeId, jumpTo } = useScrollSpy(sectionIds)
@@ -46,15 +45,16 @@ function GradePage() {
         description={`All ${list.length} expectations for Grade ${grade}, in plain lists. You don’t have to teach them in this order, and many can be taught together.`}
       />
 
-      <SectionTabs
+      <StrandTabs
         tabs={tabs}
         activeId={activeId}
         onSelect={jumpTo}
-        label="Jump to a strand"
         title={`Grade ${grade}`}
       />
 
-      {/* Each strand is its banner and boxes, spaced like the rest of the page */}
+      {/* Each strand is its banner and boxes, spaced like the rest of the page.
+          On phones the strand name sits on its own line in the tabs, so the
+          sections stop lower to clear the taller bar */}
       {mathStrands.map((strand) => {
         const items = list.filter(
           (expectation) => expectation.strand === strand.id
@@ -63,7 +63,7 @@ function GradePage() {
           <section
             key={strand.id}
             id={`strand-${strand.slug}`}
-            className="col-page scroll-mt-16"
+            className="col-page scroll-mt-28 md:scroll-mt-16"
           >
             <StrandBanner strand={strand} count={items.length} />
 
