@@ -7,6 +7,7 @@ import type {
 } from '@/types/math'
 import type { ExpectationItem } from '@/components/ui/ExpectationRow'
 import type { ExpectationGroup } from '@/components/ui/ExpectationGroups'
+import type { FitColumn } from '@/components/ui/WhereThisFits'
 import expectationList from './expectations.json'
 import { mathIdeas } from './ideas'
 import { getStrand, mathGrades } from './strands'
@@ -120,6 +121,37 @@ export function ideaGroups(idea: MathIdea): ExpectationGroup[] {
       empty: 'Not in this grade',
     }
   })
+}
+
+// The same idea in the grade before, this grade, and the grade after, for
+// the shared WhereThisFits
+export function whereThisFits(expectation: Expectation): FitColumn[] {
+  const idea = getIdeaOf(expectation)
+  const { grade } = expectation
+  const inGrade = (g: number) =>
+    idea && g >= 1 && g <= 8
+      ? getExpectationsInIdea(idea.id, g).map(toExpectationItem)
+      : []
+
+  return [
+    {
+      label: grade > 1 ? `Grade ${grade - 1} · before` : 'Before',
+      items: inGrade(grade - 1),
+      empty:
+        grade === 1
+          ? 'This is where it starts.'
+          : 'Not taught in the grade before.',
+    },
+    { label: `Grade ${grade} · now`, items: inGrade(grade), empty: '' },
+    {
+      label: grade < 8 ? `Grade ${grade + 1} · next` : 'Next',
+      items: inGrade(grade + 1),
+      empty:
+        grade === 8
+          ? 'Continues in Grade 9 math.'
+          : 'Not taught in the grade after.',
+    },
+  ]
 }
 
 export function getIdeasInStrand(strand: TaughtStrandId) {

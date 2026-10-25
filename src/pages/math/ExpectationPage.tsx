@@ -14,7 +14,7 @@ import CurriculumList from '@/components/math/CurriculumList'
 import MathCard from '@/components/math/MathCard'
 import MathText from '@/components/math/MathText'
 import TaskCard from '@/components/math/TaskCard'
-import WhereThisFits from '@/components/math/WhereThisFits'
+import WhereThisFits from '@/components/ui/WhereThisFits'
 import { getActivityCards } from '@/data/math/activities'
 import { getConceptCards } from '@/data/math/concepts'
 import {
@@ -22,6 +22,7 @@ import {
   getIdeaOf,
   loadDetails,
   mathPath,
+  whereThisFits,
 } from '@/data/math/expectations'
 import { getStrand } from '@/data/math/strands'
 import { useEqualHeights } from '@/hooks/useEqualHeights'
@@ -133,7 +134,11 @@ function ExpectationPage() {
 
         <section className="col-section">
           <span className="text-label">Where this fits</span>
-          <WhereThisFits expectation={expectation} />
+          <WhereThisFits
+            columns={whereThisFits(expectation)}
+            currentId={expectation.id}
+            colors={strand.colors}
+          />
         </section>
 
         {details && concepts && (

@@ -56,3 +56,42 @@ export interface DramaSubject {
   intro: string
   related?: CrossLink
 }
+
+// The Drama strand of The Arts 1–8 (2009). Its three overall expectations
+// (B1, B2, B3) are the strands of the Drama pages
+export type DramaStrandId = 'B1' | 'B2' | 'B3'
+
+export interface DramaStrand {
+  id: DramaStrandId
+  slug: string
+  name: string
+  blurb: string
+  colors: { bg: string; text: string; accent: string }
+}
+
+export interface DramaPrompt {
+  // e.g. In role, Out of role
+  label?: string
+  text: string
+}
+
+// One specific expectation, worded exactly as in the curriculum
+export interface DramaExpectation {
+  // e.g. g6-b1.1
+  id: string
+  grade: number
+  strand: DramaStrandId
+  // e.g. B1.1, the same numbers in every grade
+  code: string
+  text: string
+  examples: string[]
+  prompts: DramaPrompt[]
+}
+
+// What the Drama curriculum filter has picked. Nothing picked is the overview
+export interface DramaFilter {
+  grade?: number
+  strand?: DramaStrandId
+  // Only used on a strand page with no grade picked, e.g. B1.2
+  code?: string
+}
