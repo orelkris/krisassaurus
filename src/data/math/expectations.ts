@@ -5,6 +5,8 @@ import type {
   MathIdea,
   TaughtStrandId,
 } from '@/types/math'
+import type { ExpectationItem } from '@/components/ui/ExpectationRow'
+import type { ExpectationGroup } from '@/components/ui/ExpectationGroups'
 import expectationList from './expectations.json'
 import { mathIdeas } from './ideas'
 import { getStrand } from './strands'
@@ -76,6 +78,31 @@ export function groupByIdea(list: Expectation[]) {
     else groups.push({ idea, expectations: [expectation] })
   }
   return groups
+}
+
+// What the shared ExpectationRow shows for one Math expectation
+export function toExpectationItem(expectation: Expectation): ExpectationItem {
+  return {
+    id: expectation.id,
+    code: expectation.code,
+    text: expectation.text,
+    to: expectationPath(expectation),
+  }
+}
+
+// A box per overall expectation (B1, B2...) with a heading per idea, for the
+// shared ExpectationGroups
+export function overallGroups(list: Expectation[]): ExpectationGroup[] {
+  return groupByOverall(list).map((group) => ({
+    id: group[0].overall,
+    label: `${group[0].overall} · ${group[0].overallTitle}`,
+    color: getStrand(group[0].strand).colors.text,
+    sections: groupByIdea(group).map(({ idea, expectations: items }) => ({
+      id: items[0].id,
+      heading: idea?.name,
+      items: items.map(toExpectationItem),
+    })),
+  }))
 }
 
 export function getIdeasInStrand(strand: TaughtStrandId) {

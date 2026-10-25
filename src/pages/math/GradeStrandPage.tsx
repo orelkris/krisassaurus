@@ -1,10 +1,14 @@
 import { Navigate, useParams } from 'react-router-dom'
 import PageHeader from '@/components/layout/PageHeader'
 import MathBreadcrumb from '@/components/math/MathBreadcrumb'
-import ExpectationGroups from '@/components/math/ExpectationGroups'
+import ExpectationGroups from '@/components/ui/ExpectationGroups'
 import StrandBadge from '@/components/math/StrandBadge'
 import StickyBar from '@/components/ui/StickyBar'
-import { getExpectations, mathPath } from '@/data/math/expectations'
+import {
+  getExpectations,
+  mathPath,
+  overallGroups,
+} from '@/data/math/expectations'
 import { getStrandBySlug } from '@/data/math/strands'
 
 // One strand in one grade, e.g. Grade 6 Number
@@ -39,7 +43,7 @@ function GradeStrandPage() {
             Grade {grade} · {strand.name} · {items.length} expectations
           </h2>
         </StickyBar>
-        <ExpectationGroups expectations={items} />
+        <ExpectationGroups groups={overallGroups(items)} />
       </section>
     </>
   )

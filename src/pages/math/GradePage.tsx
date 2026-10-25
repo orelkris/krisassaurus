@@ -3,9 +3,9 @@ import { Navigate, useParams } from 'react-router-dom'
 import SectionTabs from '@/components/ui/SectionTabs'
 import PageHeader from '@/components/layout/PageHeader'
 import MathBreadcrumb from '@/components/math/MathBreadcrumb'
-import ExpectationGroups from '@/components/math/ExpectationGroups'
+import ExpectationGroups from '@/components/ui/ExpectationGroups'
 import StrandBadge from '@/components/math/StrandBadge'
-import { getExpectations } from '@/data/math/expectations'
+import { getExpectations, overallGroups } from '@/data/math/expectations'
 import { mathStrands } from '@/data/math/strands'
 import { useScrollSpy } from '@/hooks/useScrollSpy'
 
@@ -73,7 +73,7 @@ function GradePage() {
               </span>
             </div>
 
-            <ExpectationGroups expectations={items} />
+            <ExpectationGroups groups={overallGroups(items)} />
           </section>
         )
       })}
