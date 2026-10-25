@@ -2,11 +2,15 @@ import { useEffect, useRef } from 'react'
 import { Navigate, useParams, useSearchParams } from 'react-router-dom'
 import PageHeader from '@/components/layout/PageHeader'
 import CurriculumBreadcrumb from '@/components/ui/CurriculumBreadcrumb'
-import IdeaLadder from '@/components/math/IdeaLadder'
+import ExpectationGroups from '@/components/ui/ExpectationGroups'
 import StrandBadge from '@/components/ui/StrandBadge'
 import StickyBar from '@/components/ui/StickyBar'
 import StrandMap from '@/components/ui/StrandMap'
-import { getIdeasInStrand, mathPath } from '@/data/math/expectations'
+import {
+  getIdeasInStrand,
+  ideaGroups,
+  mathPath,
+} from '@/data/math/expectations'
 import { getStrandBySlug, mathGrades } from '@/data/math/strands'
 
 function StrandPage() {
@@ -72,7 +76,7 @@ function StrandPage() {
             {strand.name} · {idea.name} · Grade 1 to 8
           </h2>
         </StickyBar>
-        <IdeaLadder idea={idea} />
+        <ExpectationGroups groups={ideaGroups(idea)} />
       </section>
     </>
   )

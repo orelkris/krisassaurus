@@ -9,7 +9,7 @@ import type { ExpectationItem } from '@/components/ui/ExpectationRow'
 import type { ExpectationGroup } from '@/components/ui/ExpectationGroups'
 import expectationList from './expectations.json'
 import { mathIdeas } from './ideas'
-import { getStrand } from './strands'
+import { getStrand, mathGrades } from './strands'
 
 // The official wording of all 369 expectations. The longer teacher supports
 // (key concepts, examples, sample tasks) are in details/grade-N.json and load
@@ -103,6 +103,23 @@ export function overallGroups(list: Expectation[]): ExpectationGroup[] {
       items: items.map(toExpectationItem),
     })),
   }))
+}
+
+// One idea from Grade 1 to 8: a box per grade holding the idea's
+// expectations in that grade, for the shared ExpectationGroups
+export function ideaGroups(idea: MathIdea): ExpectationGroup[] {
+  return mathGrades.map((grade) => {
+    const items = getExpectationsInIdea(idea.id, grade)
+    return {
+      id: String(grade),
+      label: `Grade ${grade}`,
+      color: getStrand(idea.strand).colors.text,
+      sections: items.length
+        ? [{ id: 'all', items: items.map(toExpectationItem) }]
+        : [],
+      empty: 'Not in this grade',
+    }
+  })
 }
 
 export function getIdeasInStrand(strand: TaughtStrandId) {
