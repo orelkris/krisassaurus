@@ -4,7 +4,7 @@ import SectionTabs from '@/components/ui/SectionTabs'
 import PageHeader from '@/components/layout/PageHeader'
 import MathBreadcrumb from '@/components/math/MathBreadcrumb'
 import ExpectationGroups from '@/components/ui/ExpectationGroups'
-import StrandBadge from '@/components/math/StrandBadge'
+import StrandBanner from '@/components/ui/StrandBanner'
 import { getExpectations, overallGroups } from '@/data/math/expectations'
 import { mathStrands } from '@/data/math/strands'
 import { useScrollSpy } from '@/hooks/useScrollSpy'
@@ -59,19 +59,7 @@ function GradePage() {
             id={`strand-${strand.slug}`}
             className="col-page scroll-mt-16"
           >
-            <div
-              className="row-stack pad-sm rounded-xl"
-              style={{
-                backgroundColor: strand.colors.bg,
-                color: strand.colors.text,
-              }}
-            >
-              <StrandBadge strand={strand} solid />
-              <h2 className="heading-section">{strand.name}</h2>
-              <span className="ml-auto text-[12.5px] opacity-80">
-                {items.length}
-              </span>
-            </div>
+            <StrandBanner strand={strand} count={items.length} />
 
             <ExpectationGroups groups={overallGroups(items)} />
           </section>

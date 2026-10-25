@@ -1,7 +1,18 @@
-import type { MathStrand } from '@/types/math'
+export interface StrandColors {
+  // Light tint, dark text on it, and the strong colour for dots and squares
+  bg: string
+  text: string
+  accent: string
+}
+
+export interface BadgeStrand {
+  // The letter or code shown, e.g. B
+  id: string
+  colors: StrandColors
+}
 
 interface StrandBadgeProps {
-  strand: Pick<MathStrand, 'colors'> & { id: string }
+  strand: BadgeStrand
   // Solid uses the accent colour with white text
   solid?: boolean
   size?: 'sm' | 'lg'

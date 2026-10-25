@@ -2,7 +2,7 @@ import { Navigate, useParams } from 'react-router-dom'
 import PageHeader from '@/components/layout/PageHeader'
 import MathBreadcrumb from '@/components/math/MathBreadcrumb'
 import ExpectationGroups from '@/components/ui/ExpectationGroups'
-import StrandBadge from '@/components/math/StrandBadge'
+import StrandBadge from '@/components/ui/StrandBadge'
 import StickyBar from '@/components/ui/StickyBar'
 import {
   getExpectations,

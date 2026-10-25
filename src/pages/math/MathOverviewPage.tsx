@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import PageHeader from '@/components/layout/PageHeader'
 import PageSection from '@/components/layout/PageSection'
-import StrandBadge from '@/components/math/StrandBadge'
+import StrandBadge from '@/components/ui/StrandBadge'
 import GradeTiles from '@/components/ui/GradeTiles'
 import StrandCards from '@/components/ui/StrandCards'
 import {
