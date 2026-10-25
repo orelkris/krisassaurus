@@ -4,6 +4,7 @@ import PageSection from '@/components/layout/PageSection'
 import StrandBadge from '@/components/ui/StrandBadge'
 import GradeTiles from '@/components/ui/GradeTiles'
 import StrandCards from '@/components/ui/StrandCards'
+import DotList from '@/components/ui/DotList'
 import {
   expectations,
   getExpectations,
@@ -71,11 +72,7 @@ function MathOverviewPage() {
         }
         description={strandA.text}
       >
-        <ul className="list-disc gap-x-6 pl-[18px] text-[13.5px] sm:columns-2">
-          {strandA.skills.map((skill) => (
-            <li key={skill}>{skill}</li>
-          ))}
-        </ul>
+        <DotList items={strandA.skills} color={strandA.colors.accent} />
         <p className="text-muted">{strandA.note}</p>
       </PageSection>
 

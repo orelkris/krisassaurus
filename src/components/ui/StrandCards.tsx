@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
+import DotList from '@/components/ui/DotList'
 
 export interface StrandCard {
   id: string
@@ -32,17 +33,7 @@ function StrandCards({ cards }: StrandCardsProps) {
             {card.name}
           </h3>
           {card.blurb && <p className="text-small">{card.blurb}</p>}
-          <ul className="text-small flex flex-col gap-0.5 pl-[18px]">
-            {card.points.map((point) => (
-              <li key={point} className="relative">
-                <span
-                  className="absolute top-[0.55em] -left-3.5 h-1.5 w-1.5 rounded-full"
-                  style={{ backgroundColor: card.accent }}
-                />
-                {point}
-              </li>
-            ))}
-          </ul>
+          <DotList items={card.points} color={card.accent} />
         </Link>
       ))}
     </div>
