@@ -1,5 +1,10 @@
 import { Link, Navigate, useParams } from 'react-router-dom'
+import PageHeader from '@/components/layout/PageHeader'
+import PageSection from '@/components/layout/PageSection'
 import Breadcrumb from '@/components/ui/Breadcrumb'
+import FactList from '@/components/ui/FactList'
+import FramedGroup from '@/components/ui/FramedGroup'
+import Pill from '@/components/ui/Pill'
 import StrategyChip from '@/components/drama/StrategyChip'
 import { getGroup } from '@/data/drama/groups'
 import { getPairs } from '@/data/drama/pairsWith'
@@ -29,111 +34,105 @@ function StrategyPage() {
   const next = siblings[index + 1]
 
   return (
-    <div className="col-page">
-      <header
-        className="col-stack pad-lg rounded-2xl"
-        style={{ backgroundColor: group.colors.bg, color: group.colors.text }}
-      >
-        <Breadcrumb
-          items={[
-            { label: 'Drama' },
-            { label: 'Strategies' },
-            { label: group.name },
-            { label: strategy.name },
-          ]}
-        />
-        <h1 className="heading-page">{strategy.name}</h1>
-        <p className="max-w-prose opacity-90">{strategy.summary}</p>
-      </header>
+    <>
+      <PageHeader
+        above={
+          <Breadcrumb
+            className="text-gray-900"
+            items={[
+              { label: 'Drama' },
+              { label: 'Strategies' },
+              { label: group.name },
+            ]}
+          />
+        }
+        title={strategy.name}
+        description={strategy.summary}
+        meta={<Pill colors={group.colors}>{group.name}</Pill>}
+      />
 
-      <dl className="grid max-w-prose grid-cols-1 rounded-xl border border-gray-200 sm:grid-cols-3">
-        {[
-          ['Time', facts.time],
-          ['Grouping', facts.grouping],
-          ['Grades', facts.grades],
-        ].map(([label, value]) => (
-          <div
-            key={label}
-            className="border-t border-gray-200 pad-sm first:border-t-0 sm:border-t-0 sm:border-l sm:first:border-l-0"
-          >
-            <dt className="text-label">{label}</dt>
-            <dd className="mt-tight text-sm font-semibold text-gray-900">{value}</dd>
-          </div>
-        ))}
-      </dl>
+      <FactList
+        facts={[
+          { label: 'Time', value: facts.time },
+          { label: 'Grouping', value: facts.grouping },
+          { label: 'Grades', value: facts.grades },
+        ]}
+      />
 
-      <article className="col-section max-w-prose text-gray-700 leading-relaxed">
-        {details ? (
-          <>
-            <section>
-              <h2 className="heading-section mb-stack">What it is</h2>
-              <p>{details.what}</p>
-            </section>
+      {details ? (
+        <>
+          <PageSection title="What it is">
+            <p className="max-w-prose">{details.what}</p>
+          </PageSection>
 
-            <section>
-              <h2 className="heading-section mb-stack">How to run it</h2>
-              <ol className="list-decimal space-y-tight pl-5">
-                {details.steps.map((step) => (
-                  <li key={step}>{step}</li>
-                ))}
-              </ol>
-            </section>
+          <PageSection title="How to run it">
+            <ol className="max-w-prose list-decimal space-y-tight pl-5">
+              {details.steps.map((step) => (
+                <li key={step}>{step}</li>
+              ))}
+            </ol>
+          </PageSection>
 
-            <section className="rounded-xl bg-gray-50 pad-md">
-              <p className="text-label mb-stack">
-                Classroom example
-              </p>
+          <div className="max-w-prose">
+            <FramedGroup label="Classroom example">
               <p>{details.example}</p>
-            </section>
+            </FramedGroup>
+          </div>
 
-            <section>
-              <h2 className="heading-section mb-stack">Variations</h2>
-              <ul className="list-disc space-y-tight pl-5">
-                {details.variations.map((variation) => (
-                  <li key={variation}>{variation}</li>
-                ))}
-              </ul>
-            </section>
-          </>
-        ) : (
-          <p className="text-small rounded-xl border border-dashed border-gray-200 pad-md">
-            This page is still being written. Steps, a classroom example and
-            variations are coming.
-          </p>
-        )}
-
-        {pairs.length > 0 && (
-          <section>
-            <h2 className="heading-section mb-stack">Pairs well with</h2>
-            <ul className="col-stack">
-              {pairs.map(({ strategy: paired, why }) => (
-                <li key={paired.slug} className="flex flex-wrap items-center gap-x-2 gap-y-1">
-                  <StrategyChip strategy={paired} />
-                  {why && <span className="text-small">{why}</span>}
-                </li>
+          <PageSection title="Variations">
+            <ul className="max-w-prose list-disc space-y-tight pl-5">
+              {details.variations.map((variation) => (
+                <li key={variation}>{variation}</li>
               ))}
             </ul>
-          </section>
-        )}
+          </PageSection>
+        </>
+      ) : (
+        <p className="text-small max-w-prose rounded-xl border border-dashed border-gray-200 pad-md">
+          This page is still being written. Steps, a classroom example and
+          variations are coming.
+        </p>
+      )}
 
-        <nav className="flex justify-between gap-3 border-t border-gray-200 pt-4 text-sm">
-          {previous ? (
-            <Link to={`/drama/strategies/${previous.slug}`} className="text-gray-500 hover:text-gray-900">
-              <span className="text-muted block">← Previous in {group.name}</span>
-              {previous.name}
-            </Link>
-          ) : (
-            <span />
-          )}
-          {next && (
-            <Link to={`/drama/strategies/${next.slug}`} className="text-right text-gray-500 hover:text-gray-900">
-              <span className="text-muted block">Next in {group.name} →</span>
-              {next.name}
-            </Link>
-          )}
-        </nav>
-      </article>
-    </div>
+      {pairs.length > 0 && (
+        <PageSection title="Pairs well with">
+          <ul className="col-stack">
+            {pairs.map(({ strategy: paired, why }) => (
+              <li
+                key={paired.slug}
+                className="flex flex-wrap items-center gap-x-2 gap-y-1"
+              >
+                <StrategyChip strategy={paired} />
+                {why && <span className="text-small">{why}</span>}
+              </li>
+            ))}
+          </ul>
+        </PageSection>
+      )}
+
+      <nav className="flex max-w-prose justify-between gap-3 border-t border-gray-200 pt-4">
+        {previous ? (
+          <Link
+            to={`/drama/strategies/${previous.slug}`}
+            className="text-sm text-gray-500 hover:text-gray-900"
+          >
+            <span className="text-muted block">← Previous in {group.name}</span>
+            {previous.name}
+          </Link>
+        ) : (
+          <span />
+        )}
+        {next && (
+          <Link
+            to={`/drama/strategies/${next.slug}`}
+            className="text-right text-sm text-gray-500 hover:text-gray-900"
+          >
+            <span className="text-muted block">Next in {group.name} →</span>
+            {next.name}
+          </Link>
+        )}
+      </nav>
+    </>
   )
 }
 

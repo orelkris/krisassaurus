@@ -13,6 +13,8 @@ export interface QuickFacts {
 
 export interface StrategyGroup {
   id: StrategyGroupId
+  // The letter on its badge, e.g. R
+  code: string
   name: string
   blurb: string
   // Hex colours, applied with inline styles like tagColors
