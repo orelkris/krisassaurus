@@ -57,14 +57,18 @@ body {
   @apply max-w-prose leading-relaxed text-gray-500;
 }
 
-/* Big text for a classroom board (Quick Game): the scenario, the clock, and
-   grey lines under the scenario */
+/* Big text for a classroom board (Quick Game): the scenario, the clock, the
+   revealed answer, and grey lines under the scenario */
 @utility heading-board {
   @apply text-3xl leading-tight font-semibold text-balance sm:text-4xl lg:text-5xl;
 }
 
 @utility text-clock {
   @apply text-6xl leading-none font-bold tabular-nums sm:text-7xl lg:text-8xl;
+}
+
+@utility heading-answer {
+  @apply text-xl leading-snug font-semibold text-balance sm:text-2xl lg:text-3xl;
 }
 
 @utility text-board {
@@ -140,6 +144,11 @@ body {
 /* A smaller card, usually inside a panel or a grid */
 @utility card {
   @apply pad-md rounded-xl border border-gray-200;
+}
+
+/* Text boxes and number boxes */
+@utility field {
+  @apply w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm text-gray-900 transition-colors placeholder:text-gray-400 focus:border-gray-900 focus:outline-none;
 }
 
 /* Only for cards you can click */

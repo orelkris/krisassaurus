@@ -1,11 +1,12 @@
 import type { ReactNode } from 'react'
-import { buttonClass, type ButtonVariant } from '@/lib/button'
+import { buttonClass, type ButtonSize, type ButtonVariant } from '@/lib/button'
 
 interface ButtonProps {
   children: ReactNode
   onClick: () => void
-  // Primary is filled black, secondary is outlined
+  // Primary is filled black, secondary is outlined, accent is green
   variant?: ButtonVariant
+  size?: ButtonSize
   disabled?: boolean
 }
 
@@ -15,6 +16,7 @@ function Button({
   children,
   onClick,
   variant = 'primary',
+  size = 'md',
   disabled = false,
 }: ButtonProps) {
   return (
@@ -22,7 +24,7 @@ function Button({
       type="button"
       onClick={onClick}
       disabled={disabled}
-      className={`${buttonClass(variant)} disabled:pointer-events-none disabled:opacity-30`}
+      className={`${buttonClass(variant, size)} disabled:pointer-events-none disabled:opacity-30`}
     >
       {children}
     </button>

@@ -26,3 +26,14 @@ export interface Scenario {
   id: string
   text: string
 }
+
+// A handout question with its number on the handout
+export interface NumberedQuestion extends HandoutQuestion {
+  number: number
+}
+
+// A scenario as the teacher types it on the Quick Game page, with its
+// matching question as typed (shown when the answer is revealed)
+export interface ScenarioDraft extends Scenario {
+  answer: string
+}

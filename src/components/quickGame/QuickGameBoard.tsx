@@ -15,7 +15,6 @@ import IconButton from '@/components/ui/IconButton'
 import TimerBar from '@/components/ui/TimerBar'
 import { useFullScreen } from '@/hooks/useFullScreen'
 import type { Scenario } from '@/types/quickGame'
-import type { Answer } from '@/data/quickGame/answers'
 
 // The clock turns red for the last few seconds
 const WARN_AT = 5
@@ -34,7 +33,8 @@ interface QuickGameBoardProps {
   remainingMs: number
   seconds: number
   running: boolean
-  answer?: Answer
+  // The matching question, shown when revealed
+  answer?: string
   revealed: boolean
   muted: boolean
   onBack: () => void
@@ -128,10 +128,9 @@ function QuickGameBoard(props: QuickGameBoardProps) {
             </div>
 
             {revealed && answer && (
-              <div className="col-stack max-w-2xl items-center border-t border-gray-200 pt-6">
-                <span className="text-clock">{answer.number}</span>
-                <p className="text-board">{answer.text}</p>
-              </div>
+              <p className="heading-answer max-w-3xl border-t border-gray-200 pt-6">
+                {answer}
+              </p>
             )}
           </>
         ) : (

@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
-import { buttonClass, type ButtonVariant } from '@/lib/button'
+import { buttonClass, type ButtonSize, type ButtonVariant } from '@/lib/button'
 
 interface ButtonLinkProps {
   children: ReactNode
@@ -9,8 +9,9 @@ interface ButtonLinkProps {
   // A file or another website; opens in a new tab unless `download` is set
   href?: string
   download?: boolean
-  // Primary is filled black, secondary is outlined
+  // Primary is filled black, secondary is outlined, accent is green
   variant?: ButtonVariant
+  size?: ButtonSize
 }
 
 // A link that looks like a button. Every button-style link on the site uses
@@ -21,8 +22,9 @@ function ButtonLink({
   href,
   download,
   variant = 'primary',
+  size = 'md',
 }: ButtonLinkProps) {
-  const className = buttonClass(variant)
+  const className = buttonClass(variant, size)
 
   if (to) {
     return (

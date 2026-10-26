@@ -1,12 +1,10 @@
 import { useState } from 'react'
-import Container from '@/components/layout/Container'
 import QuickGameSetup from '@/components/quickGame/QuickGameSetup'
 import QuickGameBoard from '@/components/quickGame/QuickGameBoard'
 import { defaultSeconds, games, getGame } from '@/data/quickGame/games'
-import { scenarios } from '@/data/quickGame/scenarios'
-import { getAnswer } from '@/data/quickGame/answers'
 import { useCountdown } from '@/hooks/useCountdown'
 import { useLoopingMusic } from '@/hooks/useLoopingMusic'
+import { useScenarioDrafts } from '@/hooks/useScenarioDrafts'
 
 // Quick Game: the teacher shows one scenario at a time on the board, with
 // music and a timer, and students find the match on their handout
@@ -20,7 +18,8 @@ function QuickGamePage() {
   const [revealed, setRevealed] = useState(false)
 
   const game = getGame(gameSlug) ?? games[0]
-  const list = scenarios[game.slug] ?? []
+  const drafts = useScenarioDrafts(game.slug)
+  const list = drafts.playable
   const scenario = list[index]
 
   const music = useLoopingMusic(game.music)
@@ -84,7 +83,7 @@ function QuickGamePage() {
         remainingMs={started ? timer.remainingMs : seconds * 1000}
         seconds={seconds}
         running={timer.running}
-        answer={getAnswer(game.slug, scenario.id)}
+        answer={scenario.answer.trim() || undefined}
         revealed={revealed}
         muted={music.muted}
         onBack={() => started && index > 0 && show(index - 1)}
@@ -102,17 +101,18 @@ function QuickGamePage() {
   }
 
   return (
-    <div className="mx-auto w-full max-w-6xl">
-      <Container>
-        <QuickGameSetup
-          game={game}
-          onGameChange={setGameSlug}
-          seconds={seconds}
-          onSecondsChange={setSeconds}
-          onStart={openBoard}
-        />
-      </Container>
-    </div>
+    <QuickGameSetup
+      game={game}
+      onGameChange={setGameSlug}
+      rows={drafts.rows}
+      onRowChange={drafts.update}
+      onAddRow={drafts.add}
+      addedId={drafts.addedId}
+      seconds={seconds}
+      onSecondsChange={setSeconds}
+      canStart={list.length > 0}
+      onStart={openBoard}
+    />
   )
 }
 
