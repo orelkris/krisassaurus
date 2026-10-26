@@ -10,6 +10,7 @@ import AppLayout from '@/components/layout/AppLayout'
 import SubjectSectionPage from '@/pages/SubjectSectionPage'
 import AboutPage from '@/pages/AboutPage'
 import MusicPage from '@/pages/MusicPage'
+import QuickGamePage from '@/pages/QuickGamePage'
 import ScrollToTop from '@/components/ui/ScrollToTop'
 import TwoColumnLayout from '@/components/layout/TwoColumnLayout'
 import DramaSidebar from '@/components/drama/DramaSidebar'
@@ -119,6 +120,7 @@ function App() {
             <Route path="documents/:slug" element={<DocumentPage />} />
           </Route>
 
+          <Route path="/quick-game" element={<QuickGamePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/music" element={<MusicPage />} />
         </Route>

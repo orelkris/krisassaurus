@@ -5,6 +5,7 @@ import { subjectSections } from '@/data/subjects'
 
 const links = [
   { label: 'Resources', path: '/resources' },
+  { label: 'Quick Game', path: '/quick-game' },
   { label: 'Music', path: '/music' },
   { label: 'About', path: '/about' },
 ]

@@ -57,6 +57,20 @@ body {
   @apply max-w-prose leading-relaxed text-gray-500;
 }
 
+/* Big text for a classroom board (Quick Game): the scenario, the clock, and
+   grey lines under the scenario */
+@utility heading-board {
+  @apply text-3xl leading-tight font-semibold text-balance sm:text-4xl lg:text-5xl;
+}
+
+@utility text-clock {
+  @apply text-6xl leading-none font-bold tabular-nums sm:text-7xl lg:text-8xl;
+}
+
+@utility text-board {
+  @apply text-lg leading-snug text-balance text-gray-500 sm:text-xl lg:text-2xl;
+}
+
 /* Small grey body text, e.g. a card's description */
 @utility text-small {
   @apply text-sm leading-relaxed text-gray-500;
