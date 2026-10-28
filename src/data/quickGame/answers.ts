@@ -6,6 +6,8 @@ export const answers: Record<string, string> = {
   'late-guardian': 'transporting',
   'closed-door': 'observed',
   'sharing-divorce': 'professional-relationship',
+  babysitting: 'known-approved',
+  sweetheart: 'discomfort',
 }
 
 export function getAnswer(

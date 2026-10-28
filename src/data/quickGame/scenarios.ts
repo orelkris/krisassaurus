@@ -16,5 +16,13 @@ export const scenarios: Record<string, Scenario[]> = {
       id: 'sharing-divorce',
       text: 'You’re going through a divorce, and one of your students is experiencing something similar. You decide to share all the details of your experience for bonding purposes.',
     },
+    {
+      id: 'babysitting',
+      text: 'A responsible Grade 8 student mentions she’s looking for babysitting work. You need someone for Friday nights, so you offer her the job and pay cash.',
+    },
+    {
+      id: 'sweetheart',
+      text: 'You’ve started calling one student “sweetheart” and often tell her how nice she looks. She smiles, so you assume she likes it.',
+    },
   ],
 }
