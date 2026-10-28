@@ -34,6 +34,8 @@ interface QuickGameBoardProps {
   // Whole seconds for the clock, and the exact time for the bar
   left: number
   remainingMs: number
+  // Changes on every start of the countdown, for the bar
+  startedAt: number
   seconds: number
   running: boolean
   // The matching question, shown when revealed
@@ -61,6 +63,7 @@ function QuickGameBoard(props: QuickGameBoardProps) {
     total,
     left,
     remainingMs,
+    startedAt,
     seconds,
     running,
     answer,
@@ -114,6 +117,7 @@ function QuickGameBoard(props: QuickGameBoardProps) {
         totalMs={seconds * 1000}
         remainingMs={remainingMs}
         running={running}
+        runKey={startedAt}
         warn={late}
       />
 

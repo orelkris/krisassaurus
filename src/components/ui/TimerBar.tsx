@@ -6,6 +6,9 @@ interface TimerBarProps {
   remainingMs: number
   // While running, the bar empties smoothly over remainingMs
   running: boolean
+  // Changes whenever the countdown starts again, e.g. on the next scenario,
+  // so the bar refills even if the time left is the same number as before
+  runKey?: number
   // Turns the bar red, e.g. in the last few seconds
   warn?: boolean
 }
@@ -17,6 +20,7 @@ function TimerBar({
   totalMs,
   remainingMs,
   running,
+  runKey,
   warn = false,
 }: TimerBarProps) {
   const barRef = useRef<HTMLDivElement>(null)
@@ -33,7 +37,7 @@ function TimerBar({
       { duration: remainingMs, easing: 'linear', fill: 'forwards' }
     )
     return () => animation.cancel()
-  }, [totalMs, remainingMs, running])
+  }, [totalMs, remainingMs, running, runKey])
 
   return (
     <div className="h-2 bg-gray-200">

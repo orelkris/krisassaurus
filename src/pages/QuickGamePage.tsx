@@ -99,6 +99,7 @@ function QuickGamePage({ direct = false }: QuickGamePageProps) {
         // Before Play the clock shows the full time
         left={started ? timer.left : seconds}
         remainingMs={started ? timer.remainingMs : seconds * 1000}
+        startedAt={timer.startedAt}
         seconds={seconds}
         running={timer.running}
         answer={scenario.answer.trim() || undefined}
