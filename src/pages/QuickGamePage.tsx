@@ -1,18 +1,31 @@
 import { useState } from 'react'
+import { Navigate, useNavigate } from 'react-router-dom'
 import QuickGameSetup from '@/components/quickGame/QuickGameSetup'
 import QuickGameBoard from '@/components/quickGame/QuickGameBoard'
 import { defaultSeconds, games, getGame } from '@/data/quickGame/games'
 import { useCountdown } from '@/hooks/useCountdown'
 import { useLoopingMusic } from '@/hooks/useLoopingMusic'
 import { useScenarioDrafts } from '@/hooks/useScenarioDrafts'
+import { useStoredState } from '@/hooks/useStoredState'
+
+interface QuickGamePageProps {
+  // Opened from /quick-game-start: straight onto the board with no navbar,
+  // and ending the game goes to /quick-game
+  direct?: boolean
+}
 
 // Quick Game: the teacher shows one scenario at a time on the board, with
 // music and a timer, and students find the match on their handout
-function QuickGamePage() {
+function QuickGamePage({ direct = false }: QuickGamePageProps) {
+  const navigate = useNavigate()
   const [gameSlug, setGameSlug] = useState(games[0].slug)
-  const [seconds, setSeconds] = useState(defaultSeconds)
+  // Saved, so /quick-game-start uses the time last picked on the setup page
+  const [seconds, setSeconds] = useStoredState(
+    'quick-game:seconds',
+    defaultSeconds
+  )
   // On the board, and whether Play has been pressed yet
-  const [onBoard, setOnBoard] = useState(false)
+  const [onBoard, setOnBoard] = useState(direct)
   const [started, setStarted] = useState(false)
   const [index, setIndex] = useState(0)
   const [revealed, setRevealed] = useState(false)
@@ -43,7 +56,8 @@ function QuickGamePage() {
   const end = () => {
     timer.pause()
     music.stop()
-    setOnBoard(false)
+    if (direct) navigate('/quick-game')
+    else setOnBoard(false)
   }
 
   const playPause = () => {
@@ -69,10 +83,14 @@ function QuickGamePage() {
     setRevealed(!revealed)
   }
 
+  // Nothing to play yet: write some scenarios first
+  if (direct && !scenario) return <Navigate to="/quick-game" replace />
+
   if (onBoard && scenario) {
-    return (
+    const board = (
       <QuickGameBoard
         title={game.title}
+        fullScreenOnFirstPlay={direct}
         started={started}
         scenario={scenario}
         prompt={game.prompt}
@@ -97,6 +115,12 @@ function QuickGamePage() {
         onMute={music.toggleMute}
         onEnd={end}
       />
+    )
+    // Without the site's frame the board fills the whole window
+    return direct ? (
+      <div className="flex h-screen flex-col">{board}</div>
+    ) : (
+      board
     )
   }
 

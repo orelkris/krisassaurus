@@ -45,6 +45,9 @@ function App() {
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
+        {/* The Quick Game board on its own, without the navbar */}
+        <Route path="/quick-game-start" element={<QuickGamePage direct />} />
+
         <Route element={<AppLayout />}>
           {/* Home opens Math, the first subject */}
           <Route path="/" element={<Navigate to="/math" replace />} />

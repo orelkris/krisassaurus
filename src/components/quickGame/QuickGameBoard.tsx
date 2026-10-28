@@ -21,6 +21,9 @@ const WARN_AT = 5
 
 interface QuickGameBoardProps {
   title: string
+  // The first Play also goes full screen, e.g. when opened from
+  // /quick-game-start (browsers only allow full screen after a click or key)
+  fullScreenOnFirstPlay?: boolean
   // False until the teacher presses Play the first time
   started: boolean
   scenario: Scenario
@@ -66,19 +69,30 @@ function QuickGameBoard(props: QuickGameBoardProps) {
   } = props
   const boardRef = useRef<HTMLDivElement>(null)
   const fullScreen = useFullScreen(boardRef)
+
+  const playPause = () => {
+    if (props.fullScreenOnFirstPlay && !started && !fullScreen.isFullScreen) {
+      fullScreen.toggle()
+    }
+    props.onPlayPause()
+  }
   const late = started && left <= WARN_AT
 
   // The key handler reads the latest props through a ref, so it is added once
-  const latest = useRef({ props, toggleFullScreen: fullScreen.toggle })
+  const latest = useRef({
+    props,
+    playPause,
+    toggleFullScreen: fullScreen.toggle,
+  })
   useEffect(() => {
-    latest.current = { props, toggleFullScreen: fullScreen.toggle }
+    latest.current = { props, playPause, toggleFullScreen: fullScreen.toggle }
   })
 
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
-      const { props, toggleFullScreen } = latest.current
+      const { props, playPause, toggleFullScreen } = latest.current
       const actions: Record<string, () => void> = {
-        ' ': props.onPlayPause,
+        ' ': playPause,
         ArrowRight: props.onNext,
         ArrowLeft: props.onBack,
         a: props.onReveal,
@@ -162,7 +176,7 @@ function QuickGameBoard(props: QuickGameBoardProps) {
           </IconButton>
           <IconButton
             label={running ? 'Pause' : 'Play'}
-            onClick={props.onPlayPause}
+            onClick={playPause}
             variant="primary"
           >
             {running ? <Pause size={28} /> : <Play size={28} />}
