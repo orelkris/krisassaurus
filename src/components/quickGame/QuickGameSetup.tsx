@@ -1,9 +1,11 @@
+import { useState } from 'react'
 import { Plus } from 'lucide-react'
 import TwoColumnLayout from '@/components/layout/TwoColumnLayout'
 import PageHeader from '@/components/layout/PageHeader'
 import Button from '@/components/ui/Button'
 import ButtonLink from '@/components/ui/ButtonLink'
 import ChoiceChips from '@/components/ui/ChoiceChips'
+import Switch from '@/components/ui/Switch'
 import ScenarioInput from '@/components/quickGame/ScenarioInput'
 import { games, timerOptions } from '@/data/quickGame/games'
 import type { QuickGame, ScenarioDraft } from '@/types/quickGame'
@@ -40,6 +42,10 @@ function QuickGameSetup({
   canStart,
   onStart,
 }: QuickGameSetupProps) {
+  // Matching questions stay hidden unless this is on, e.g. while the page
+  // is on the projector
+  const [showAnswers, setShowAnswers] = useState(false)
+
   const sidebar = (
     <>
       <Button onClick={onStart} disabled={!canStart} variant="accent" size="lg">
@@ -83,13 +89,21 @@ function QuickGameSetup({
       />
 
       <section className="col-section">
-        <h2 className="heading-section">Add Scenario</h2>
+        <div className="flex flex-wrap items-center justify-between gap-stack">
+          <h2 className="heading-section">Add Scenario</h2>
+          <Switch
+            label="Show answers"
+            checked={showAnswers}
+            onChange={setShowAnswers}
+          />
+        </div>
         <div className="col-stack">
           {rows.map((draft, index) => (
             <ScenarioInput
               key={draft.id}
               number={index + 1}
               draft={draft}
+              showAnswers={showAnswers}
               autoFocus={draft.id === addedId}
               onChange={(change) => onRowChange(index, change)}
               onRemove={() => onRemoveRow(index)}
