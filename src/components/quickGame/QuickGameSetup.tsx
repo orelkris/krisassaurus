@@ -14,6 +14,7 @@ interface QuickGameSetupProps {
   rows: ScenarioDraft[]
   onRowChange: (index: number, change: Partial<ScenarioDraft>) => void
   onAddRow: () => void
+  onRemoveRow: (index: number) => void
   // The row just added, which gets the cursor
   addedId: string
   seconds: number
@@ -32,6 +33,7 @@ function QuickGameSetup({
   rows,
   onRowChange,
   onAddRow,
+  onRemoveRow,
   addedId,
   seconds,
   onSecondsChange,
@@ -90,6 +92,7 @@ function QuickGameSetup({
               draft={draft}
               autoFocus={draft.id === addedId}
               onChange={(change) => onRowChange(index, change)}
+              onRemove={() => onRemoveRow(index)}
             />
           ))}
           <button

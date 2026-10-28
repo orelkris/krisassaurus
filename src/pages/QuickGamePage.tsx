@@ -107,6 +107,7 @@ function QuickGamePage() {
       rows={drafts.rows}
       onRowChange={drafts.update}
       onAddRow={drafts.add}
+      onRemoveRow={drafts.remove}
       addedId={drafts.addedId}
       seconds={seconds}
       onSecondsChange={setSeconds}

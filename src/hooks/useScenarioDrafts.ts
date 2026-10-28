@@ -36,7 +36,8 @@ const blank = (): ScenarioDraft => ({
 
 // The scenarios the teacher types on the Quick Game page. They are saved in
 // this browser, so they are still there next time. add() puts an empty row at
-// the end. Clearing a row's boxes takes it out of the game
+// the end and remove() takes one out. Rows with an empty scenario box are
+// skipped on the board
 export function useScenarioDrafts(gameSlug: string) {
   const [state, setState] = useState(() => ({
     gameSlug,
@@ -86,10 +87,18 @@ export function useScenarioDrafts(gameSlug: string) {
     }))
   }
 
+  const remove = (index: number) => {
+    setState((current) => ({
+      ...current,
+      drafts: current.drafts.filter((_, i) => i !== index),
+    }))
+  }
+
   return {
     rows,
     update,
     add,
+    remove,
     addedId: state.addedId,
     // Only rows with a scenario go on the board
     playable: drafts.filter((draft) => draft.text.trim()),
