@@ -1,0 +1,121 @@
+{
+  "example": {
+    "kind": "reveal",
+    "title": "Build the story",
+    "button": "Mix and match",
+    "stepMs": 800,
+    "cards": [
+      {
+        "label": "Role",
+        "text": "a Teacher and a Scientist"
+      },
+      {
+        "label": "Relationship",
+        "text": "they’re in love"
+      },
+      {
+        "label": "Time and Place",
+        "text": "the year 2100, on a spaceship in another galaxy"
+      },
+      {
+        "label": "Tension",
+        "text": "the oxygen supply has malfunctioned, and there’s only enough for one of them to make it back to Earth…"
+      },
+      {
+        "label": "Emphasis and Focus",
+        "text": "a spotlight on the two characters while the rest of the stage goes dark, and music that swells with fear and heartbreak"
+      }
+    ],
+    "swap": {
+      "label": "Relationship for younger students:",
+      "card": 1,
+      "options": [
+        {
+          "label": "In love",
+          "text": "they’re in love"
+        },
+        {
+          "label": "Best friends",
+          "text": "best friends"
+        },
+        {
+          "label": "Siblings",
+          "text": "siblings"
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "heading": "Elements of Drama",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Role · Relationship · Time and Place · Tension · Emphasis and Focus"
+        }
+      ]
+    },
+    {
+      "heading": "What it is",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "The Elements of Drama are the building blocks of every story. In this strategy, students mix and match them, and in minutes they’ve built a brand-new scene from scratch."
+        }
+      ]
+    },
+    {
+      "heading": "How it works",
+      "blocks": [
+        {
+          "type": "steps",
+          "items": [
+            {
+              "lead": "Brainstorm.",
+              "text": "As a class or in groups, come up with 5–10 ideas for each element."
+            },
+            {
+              "lead": "Mix and match.",
+              "text": "Pick one idea from each category, or draw them randomly for extra surprise!"
+            },
+            {
+              "lead": "Build the story.",
+              "text": "See what dramatic scene comes out of the combination."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "For example:"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Role: a Teacher and a Scientist",
+            "Relationship: they’re in love",
+            "Time and Place: the year 2100, on a spaceship in another galaxy",
+            "Tension: the oxygen supply has malfunctioned, and there’s only enough for one of them to make it back to Earth…",
+            "Emphasis and Focus: how will you make the audience feel it? Maybe a spotlight shines on the two characters while the rest of the stage goes dark. Maybe music swells to bring out the fear and heartbreak of the moment."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Five simple choices, and suddenly there’s a story the audience can’t look away from!"
+        }
+      ]
+    },
+    {
+      "heading": "Why it works",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Students learn the language of drama by using it, not memorizing it. Random combinations spark creativity and laughter. Students also see how changing one element, like the relationship or the tension, can turn a story upside down."
+        },
+        {
+          "type": "text",
+          "text": "The “in love” relationship works well for our teacher-candidate audience. For younger students, you could swap it for something like “best friends” or “siblings.”"
+        }
+      ]
+    }
+  ]
+}

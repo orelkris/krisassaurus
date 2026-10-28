@@ -1,0 +1,69 @@
+{
+  "example": {
+    "kind": "sequence",
+    "title": "Tunnel of Kindness",
+    "button": "Walk the alley",
+    "students": 10,
+    "layout": "tunnel",
+    "stepMs": 1100,
+    "filler": {
+      "text": "♥",
+      "style": "heart"
+    },
+    "versions": [
+      {
+        "label": "Walk",
+        "lines": [
+          {
+            "text": "You make people laugh when they need it most!"
+          }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "How to use",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Turn it into a Tunnel of Kindness!"
+        },
+        {
+          "type": "steps",
+          "items": [
+            {
+              "lead": "Write the kindness.",
+              "text": "Each student writes a positive message, a compliment or an affirmation. The messages can be general (“You make people laugh when they need it most!”) or written for a specific classmate."
+            },
+            {
+              "lead": "Check and shuffle.",
+              "text": "Collect the messages ahead of time so you can make sure everything is appropriate. For extra fun, shuffle them and hand them out randomly so nobody knows what they’ll be reading."
+            },
+            {
+              "lead": "Build the tunnel.",
+              "text": "Split the class into two lines facing each other, with each student across from a partner, to form a tunnel."
+            },
+            {
+              "lead": "Walk the alley.",
+              "text": "One student walks slowly through the tunnel. Classmates take turns, alternating left and right, reading their messages aloud as the walker passes. By the end, the walker has been showered with kindness from every direction."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Why it works",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Hearing kind words, one voice after another, is a powerful moment for the walker. Students giving the messages practise speaking with warmth and expression. Give everyone a turn to walk, or let walkers volunteer, so no one feels left out or put on the spot."
+        },
+        {
+          "type": "text",
+          "text": "If the messages are shuffled, it’s safest to keep them general. A message written about a specific student should be read to that student."
+        }
+      ]
+    }
+  ]
+}

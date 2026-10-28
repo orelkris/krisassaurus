@@ -123,7 +123,7 @@ function DramaExpectationPage() {
         </section>
 
         {details && details.examples.length > 0 && (
-          <FramedGroup label="Examples">
+          <FramedGroup label="Examples" tone={strand.colors}>
             <ul className={listClass}>
               {details.examples.map((example) => (
                 <li key={example}>{capitalize(example)}</li>
@@ -133,7 +133,10 @@ function DramaExpectationPage() {
         )}
 
         {details && details.prompts.length > 0 && (
-          <FramedGroup label={`Teacher prompts · ${details.prompts.length}`}>
+          <FramedGroup
+            label={`Teacher prompts · ${details.prompts.length}`}
+            tone={strand.colors}
+          >
             <ul className={listClass}>
               {details.prompts.map((prompt) => (
                 <li key={prompt.text}>

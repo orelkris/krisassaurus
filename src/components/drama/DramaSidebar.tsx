@@ -3,6 +3,7 @@ import { Link, useMatch } from 'react-router-dom'
 import { ChevronDown } from 'lucide-react'
 import type { StrategyGroupId } from '@/types/drama'
 import { strategyGroups } from '@/data/drama/groups'
+import { isGreyedOut } from '@/data/drama/greyedOut'
 import { getStrategy, getStrategiesInGroup, strategies } from '@/data/drama/strategies'
 import { dramaSubjects, getSubject } from '@/data/drama/subjects'
 import { getLinksToPage } from '@/data/resources/documentLinks'
@@ -209,20 +210,30 @@ function DramaSidebar() {
 
                   {open && (
                     <div className="mb-1.5 ml-1 border-l border-gray-200 pl-4">
-                      {items.map((strategy) => (
-                        <Link
-                          key={strategy.slug}
-                          to={`/drama/strategies/${strategy.slug}`}
-                          onClick={closeMobile}
-                          className={`block py-0.5 text-[13px] transition-colors ${
-                            strategy.slug === currentStrategy?.slug
-                              ? 'font-semibold text-gray-900'
-                              : 'text-gray-500 hover:text-gray-900'
-                          }`}
-                        >
-                          {strategy.name}
-                        </Link>
-                      ))}
+                      {items.map((strategy) =>
+                        // Greyed-out strategies show in grey and can't be opened
+                        isGreyedOut(strategy.slug) ? (
+                          <span
+                            key={strategy.slug}
+                            className="block py-0.5 text-[13px] text-gray-300"
+                          >
+                            {strategy.name}
+                          </span>
+                        ) : (
+                          <Link
+                            key={strategy.slug}
+                            to={`/drama/strategies/${strategy.slug}`}
+                            onClick={closeMobile}
+                            className={`block py-0.5 text-[13px] transition-colors ${
+                              strategy.slug === currentStrategy?.slug
+                                ? 'font-semibold text-gray-900'
+                                : 'text-gray-500 hover:text-gray-900'
+                            }`}
+                          >
+                            {strategy.name}
+                          </Link>
+                        )
+                      )}
                     </div>
                   )}
                 </div>

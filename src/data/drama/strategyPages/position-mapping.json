@@ -1,0 +1,76 @@
+{
+  "example": {
+    "kind": "choice",
+    "mode": "pick",
+    "title": "Show it with a chair",
+    "prompt": "“How confident do you feel about the upcoming math test? Show me through how you interact with your chair!”",
+    "start": 1,
+    "options": [
+      {
+        "label": "On top",
+        "pose": "on-top",
+        "line": "“I’ve got this!”"
+      },
+      {
+        "label": "Sitting",
+        "pose": "sitting",
+        "line": "“I feel pretty okay.”"
+      },
+      {
+        "label": "Behind",
+        "pose": "behind",
+        "line": "“I’m a little nervous…”"
+      },
+      {
+        "label": "Under",
+        "pose": "under",
+        "line": "“Please don’t make me take this test!”"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "What it is",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "In Position Mapping, students answer a question without saying a word. They show how they feel through where they place their bodies in relation to an object. Close, far, on top, hiding behind: every position tells a story."
+        },
+        {
+          "type": "text",
+          "text": "For example: let’s use chairs! Pose a question like:"
+        },
+        {
+          "type": "quote",
+          "text": "“How confident do you feel about the upcoming math test? Show me through how you interact with your chair!”"
+        },
+        {
+          "type": "text",
+          "text": "Then watch the creativity unfold:"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Standing tall on the chair (safely!): “I’ve got this!”",
+            "Sitting calmly: “I feel pretty okay.”",
+            "Peeking out from behind it: “I’m a little nervous…”",
+            "Lying under it or walking away from it: “Please don’t make me take this test!”"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Why it works",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Position Mapping gives every student a voice, including those who might not want to share their feelings out loud. In one glance, the teacher gets a quick, honest read of the whole class. Students also practise using their bodies and space to show emotion. Follow it up by inviting a few volunteers to explain their choice."
+        },
+        {
+          "type": "text",
+          "text": "If climbing on chairs is a concern in your classroom, set a simple safety rule first, like “feet stay on the floor.”"
+        }
+      ]
+    }
+  ]
+}

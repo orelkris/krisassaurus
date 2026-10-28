@@ -67,6 +67,11 @@ body {
   @apply text-6xl leading-none font-bold tabular-nums sm:text-7xl lg:text-8xl;
 }
 
+/* A smaller clock inside a page, e.g. the Writing in Role timer */
+@utility text-timer {
+  @apply text-4xl leading-none font-bold tabular-nums sm:text-5xl;
+}
+
 @utility heading-answer {
   @apply text-xl leading-snug font-semibold text-balance sm:text-2xl lg:text-3xl;
 }

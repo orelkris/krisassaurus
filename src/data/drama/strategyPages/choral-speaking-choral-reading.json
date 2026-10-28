@@ -1,0 +1,73 @@
+{
+  "example": {
+    "kind": "phrases",
+    "title": "Try it",
+    "note": "We read a story about a woman named Wangari Maathai.",
+    "button": "Say them together",
+    "stepMs": 1100,
+    "columns": [
+      {
+        "heading": "Positive phrases",
+        "phrases": [
+          "“I must not stop planting trees”",
+          "“I cannot give up”",
+          "“We are stronger together”"
+        ]
+      },
+      {
+        "heading": "Opposing phrases",
+        "phrases": [
+          "“This is not a woman’s job”",
+          "“You can’t make a difference”",
+          "“We will cut down your trees”"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "What it is",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "In Choral Speaking (or Choral Reading), the whole class becomes one big voice. Students bring a story’s conflict to life by speaking it together."
+        }
+      ]
+    },
+    {
+      "heading": "How it works",
+      "blocks": [
+        {
+          "type": "steps",
+          "items": [
+            {
+              "lead": "Meet the story.",
+              "text": "Students read or watch a short story."
+            },
+            {
+              "lead": "Build the two sides.",
+              "text": "As a class, make a two-column list:",
+              "items": [
+                "Column 1: three phrases the main character might say.",
+                "Column 2: three phrases that push back against the main character or create tension."
+              ]
+            },
+            {
+              "lead": "Raise your voices.",
+              "text": "The whole class says each phrase together, in unison, one after another."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Why it works",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "When thirty voices say the same line at once, the words land with real power. Students feel the weight of each side of the conflict. They also experiment with how volume, pace and expression change the meaning, all without anyone being put on the spot alone. It’s the perfect warm-up for Call and Response."
+        }
+      ]
+    }
+  ]
+}

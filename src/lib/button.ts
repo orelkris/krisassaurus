@@ -1,5 +1,5 @@
 export type ButtonVariant = 'primary' | 'secondary' | 'accent'
-export type ButtonSize = 'md' | 'lg'
+export type ButtonSize = 'sm' | 'md' | 'lg'
 
 const variantClass: Record<ButtonVariant, string> = {
   primary: 'bg-gray-900 text-white hover:bg-gray-700',
@@ -8,8 +8,10 @@ const variantClass: Record<ButtonVariant, string> = {
   accent: 'bg-emerald-600 text-white shadow-sm hover:bg-emerald-700',
 }
 
-// lg fills its column, e.g. in a sidebar
+// sm sits beside small controls, e.g. in a strategy example; lg fills its
+// column, e.g. in a sidebar
 const sizeClass: Record<ButtonSize, string> = {
+  sm: 'px-5 py-1.5 text-xs',
   md: 'px-4 py-2 text-sm',
   lg: 'block w-full px-5 py-3 text-center text-base',
 }

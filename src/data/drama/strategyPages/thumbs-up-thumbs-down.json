@@ -1,0 +1,61 @@
+{
+  "example": {
+    "kind": "choice",
+    "mode": "poll",
+    "title": "Ask the class",
+    "prompt": "“How was your commute this morning?”",
+    "button": "Ask",
+    "students": 8,
+    "options": [
+      {
+        "label": "Up",
+        "pose": "up"
+      },
+      {
+        "label": "Middle",
+        "pose": "middle"
+      },
+      {
+        "label": "Down",
+        "pose": "down"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "What it is",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Thumbs Up / Thumbs Down is simple, quick and silent. Ask the class a question, and each student answers with just one thumb."
+        },
+        {
+          "type": "text",
+          "text": "For example: ask, “How was your commute this morning?”"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Thumbs up: “Smooth sailing!”",
+            "Thumb in the middle: “It was… fine.”",
+            "Thumbs down: “Don’t even ask!”"
+          ]
+        },
+        {
+          "type": "tip",
+          "lead": "Level it up:",
+          "text": "add some drama! Have students act out how they feel with their thumb: a slow, sad thumbs down with a sigh, or a big, proud thumbs up held high."
+        }
+      ]
+    },
+    {
+      "heading": "Why it works",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "It takes seconds, needs no materials and every student can answer, including those who aren’t ready to speak. Teachers get an instant read of the room. It’s a great way to open a lesson, check in on feelings, or ease into bigger drama strategies like Position Mapping."
+        }
+      ]
+    }
+  ]
+}

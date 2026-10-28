@@ -142,7 +142,10 @@ function ExpectationPage() {
         </section>
 
         {details && concepts && (
-          <FramedGroup label={`Key concepts · ${concepts.length}`}>
+          <FramedGroup
+            label={`Key concepts · ${concepts.length}`}
+            tone={strand.colors}
+          >
             <div ref={conceptsRef} className={cardGridClass}>
               {concepts.map((card, index) => (
                 <MathCard
@@ -161,13 +164,13 @@ function ExpectationPage() {
           </FramedGroup>
         )}
         {details && !concepts && details.keyConcepts.length > 0 && (
-          <FramedGroup label="Key concepts">
+          <FramedGroup label="Key concepts" tone={strand.colors}>
             <CurriculumList items={details.keyConcepts} />
           </FramedGroup>
         )}
 
         {details && details.examples.length > 0 && (
-          <FramedGroup label="Examples">
+          <FramedGroup label="Examples" tone={strand.colors}>
             <CurriculumList items={details.examples} />
           </FramedGroup>
         )}
@@ -176,6 +179,7 @@ function ExpectationPage() {
           <FramedGroup
             label={`Sample tasks · ${details.tasks.length}`}
             gap="section"
+            tone={strand.colors}
           >
             {details.tools.length > 0 && (
               <div className="row-stack flex-wrap">

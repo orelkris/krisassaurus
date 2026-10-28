@@ -81,6 +81,7 @@ export function dramaStrandGroups(
       id,
       label: `${id} · ${strand.name}`,
       color: strand.colors.text,
+      tone: strand.colors,
       sections: list
         .filter((expectation) => expectation.strand === id)
         .map((expectation) => ({
@@ -94,13 +95,14 @@ export function dramaStrandGroups(
 
 // One expectation number from Grade 1 to 8: a box per grade
 export function dramaCodeGroups(code: string): ExpectationGroup[] {
-  const color = getDramaStrand(code.slice(0, 2) as DramaStrandId).colors.text
+  const colors = getDramaStrand(code.slice(0, 2) as DramaStrandId).colors
   return dramaGrades.map((grade) => {
     const expectation = findDramaExpectation(grade, code)
     return {
       id: String(grade),
       label: `Grade ${grade}`,
-      color,
+      color: colors.text,
+      tone: colors,
       sections: expectation
         ? [{ id: expectation.id, items: [toDramaItem(expectation)] }]
         : [],

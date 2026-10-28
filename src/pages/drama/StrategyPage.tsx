@@ -1,18 +1,19 @@
-import { Link, Navigate, useParams } from 'react-router-dom'
+import { Navigate, useParams } from 'react-router-dom'
 import PageHeader from '@/components/layout/PageHeader'
-import PageSection from '@/components/layout/PageSection'
 import Breadcrumb from '@/components/ui/Breadcrumb'
-import FactList from '@/components/ui/FactList'
+import ButtonLink from '@/components/ui/ButtonLink'
+import FileLink from '@/components/ui/FileLink'
 import FramedGroup from '@/components/ui/FramedGroup'
 import Pill from '@/components/ui/Pill'
+import StrategyBlocks from '@/components/drama/StrategyBlocks'
 import StrategyChip from '@/components/drama/StrategyChip'
+import StrategyExample from '@/components/drama/StrategyExample'
 import { getGroup } from '@/data/drama/groups'
+import { isGreyedOut } from '@/data/drama/greyedOut'
 import { getPairs } from '@/data/drama/pairsWith'
-import {
-  getQuickFacts,
-  getStrategiesInGroup,
-  getStrategy,
-} from '@/data/drama/strategies'
+import { getStrategy } from '@/data/drama/strategies'
+import { getStrategyPage } from '@/data/drama/strategyPages'
+import { getStoriesFor } from '@/data/drama/strategyStories'
 
 function StrategyPage() {
   const { slug = '' } = useParams<{ slug: string }>()
@@ -21,17 +22,15 @@ function StrategyPage() {
   if (!strategy) return <Navigate to="/drama/strategies" replace />
 
   const group = getGroup(strategy.groupId)
-  const facts = getQuickFacts(strategy)
-  const details = strategy.details
+  const page = getStrategyPage(strategy.slug)
+  const stories = getStoriesFor(strategy.slug)
+  // Greyed-out strategies are left out of the pairs
   const pairs = getPairs(strategy.slug).flatMap((pair) => {
     const paired = getStrategy(pair.slug)
-    return paired ? [{ strategy: paired, why: pair.why }] : []
+    return paired && !isGreyedOut(paired.slug)
+      ? [{ strategy: paired, why: pair.why }]
+      : []
   })
-
-  const siblings = getStrategiesInGroup(strategy.groupId)
-  const index = siblings.indexOf(strategy)
-  const previous = siblings[index - 1]
-  const next = siblings[index + 1]
 
   return (
     <>
@@ -48,54 +47,66 @@ function StrategyPage() {
         }
         title={strategy.name}
         description={strategy.summary}
-        meta={<Pill colors={group.colors}>{group.name}</Pill>}
-      />
+      >
+        {/* The back button goes to this strategy's group on the Strategies
+            page */}
+        <div className="col-section items-start">
+          <Pill colors={group.colors}>{group.name}</Pill>
+          <ButtonLink to={`/drama/strategies#${group.id}`} variant="secondary">
+            ← Back to Strategies
+          </ButtonLink>
+        </div>
+      </PageHeader>
 
-      <FactList
-        facts={[
-          { label: 'Time', value: facts.time },
-          { label: 'Grouping', value: facts.grouping },
-          { label: 'Grades', value: facts.grades },
-        ]}
-      />
+      {page?.example && (
+        <StrategyExample example={page.example} colors={group.colors} />
+      )}
 
-      {details ? (
-        <>
-          <PageSection title="What it is">
-            <p className="max-w-prose">{details.what}</p>
-          </PageSection>
-
-          <PageSection title="How to run it">
-            <ol className="max-w-prose list-decimal space-y-tight pl-5">
-              {details.steps.map((step) => (
-                <li key={step}>{step}</li>
+      {page ? (
+        page.sections.map((section) => (
+          <FramedGroup
+            key={section.heading}
+            label={section.heading}
+            tone={group.colors}
+          >
+            <StrategyBlocks blocks={section.blocks} colors={group.colors} />
+          </FramedGroup>
+        ))
+      ) : strategy.sections ? (
+        strategy.sections.map((section) => (
+          <FramedGroup
+            key={section.heading}
+            label={section.heading}
+            tone={group.colors}
+          >
+            <div className="col-stack">
+              {section.paragraphs.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
               ))}
-            </ol>
-          </PageSection>
-
-          <div className="max-w-prose">
-            <FramedGroup label="Classroom example">
-              <p>{details.example}</p>
-            </FramedGroup>
-          </div>
-
-          <PageSection title="Variations">
-            <ul className="max-w-prose list-disc space-y-tight pl-5">
-              {details.variations.map((variation) => (
-                <li key={variation}>{variation}</li>
-              ))}
-            </ul>
-          </PageSection>
-        </>
+            </div>
+          </FramedGroup>
+        ))
       ) : (
         <p className="text-small max-w-prose rounded-xl border border-dashed border-gray-200 pad-md">
-          This page is still being written. Steps, a classroom example and
-          variations are coming.
+          This page is still being written.
         </p>
       )}
 
+      {stories.length > 0 && (
+        <FramedGroup label="Story we used" tone={group.colors}>
+          {stories.map((story) => (
+            <FileLink
+              key={story.slug}
+              href={story.url}
+              title={story.title}
+              kind="PDF"
+            />
+          ))}
+        </FramedGroup>
+      )}
+
       {pairs.length > 0 && (
-        <PageSection title="Pairs well with">
+        <FramedGroup label="Pairs well with" tone={group.colors}>
           <ul className="col-stack">
             {pairs.map(({ strategy: paired, why }) => (
               <li
@@ -107,31 +118,8 @@ function StrategyPage() {
               </li>
             ))}
           </ul>
-        </PageSection>
+        </FramedGroup>
       )}
-
-      <nav className="flex max-w-prose justify-between gap-3 border-t border-gray-200 pt-4">
-        {previous ? (
-          <Link
-            to={`/drama/strategies/${previous.slug}`}
-            className="text-sm text-gray-500 hover:text-gray-900"
-          >
-            <span className="text-muted block">← Previous in {group.name}</span>
-            {previous.name}
-          </Link>
-        ) : (
-          <span />
-        )}
-        {next && (
-          <Link
-            to={`/drama/strategies/${next.slug}`}
-            className="text-right text-sm text-gray-500 hover:text-gray-900"
-          >
-            <span className="text-muted block">Next in {group.name} →</span>
-            {next.name}
-          </Link>
-        )}
-      </nav>
     </>
   )
 }

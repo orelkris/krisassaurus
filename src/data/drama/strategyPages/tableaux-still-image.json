@@ -1,0 +1,45 @@
+{
+  "example": {
+    "kind": "scene",
+    "mode": "freeze",
+    "title": "Freeze the moment",
+    "button": "Freeze!",
+    "scene": "summer-house"
+  },
+  "sections": [
+    {
+      "heading": "What it is",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "A tableau is a picture made of people. In groups of four or more, students use their bodies to build a scene “frozen in time,” like hitting pause on the most important moment of a story. There’s no talking or moving, just bodies, faces and levels working together to say everything."
+        },
+        {
+          "type": "text",
+          "text": "For example: ask students to show a memorable moment from their summer vacation. In our class, a fellow teacher candidate bought a house over the summer. Here’s how her group froze that moment:"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Student A (the new homeowner) reaches out, beaming, to take the keys.",
+            "Student B is frozen mid-handoff, holding out the keys.",
+            "Students C and D stand behind them, making a house shape over the pair."
+          ]
+        },
+        {
+          "type": "text",
+          "text": "In one silent snapshot, the audience can read the whole story: a big milestone, a proud moment and a brand-new home."
+        }
+      ]
+    },
+    {
+      "heading": "Why it works",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Tableau gets every student involved, even those who aren’t comfortable speaking yet. Students have to think carefully about facial expression, body position and how the characters relate to each other. It’s also the perfect launch pad for Thought Tracking / Tap In."
+        }
+      ]
+    }
+  ]
+}

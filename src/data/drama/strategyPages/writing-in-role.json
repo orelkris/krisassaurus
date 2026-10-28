@@ -1,0 +1,61 @@
+{
+  "example": {
+    "kind": "timer",
+    "title": "Free-write",
+    "minutes": [1, 2, 3],
+    "start": 2,
+    "placeholder": "Write as the main character…"
+  },
+  "sections": [
+    {
+      "heading": "What it is",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "In Writing in Role, students step into a character’s shoes and write as that character. It’s quick, free-flowing and judgment-free."
+        }
+      ]
+    },
+    {
+      "heading": "How it works",
+      "blocks": [
+        {
+          "type": "steps",
+          "items": [
+            {
+              "lead": "Read the story.",
+              "text": "Share a short story with the class. In ours, we read about Wangari Maathai."
+            },
+            {
+              "lead": "Become the character.",
+              "text": "Students write non-stop for about two minutes, capturing any thoughts, worries, hopes or feelings the main character might have."
+            },
+            {
+              "lead": "Keep the pen moving!",
+              "text": "No erasing, no stopping to think about spelling, no worrying about sounding “academic.” The goal is to let the ideas flow."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "lead": "The best part:",
+          "text": "let students know this writing is just for them. Nobody else has to read it, which frees them to be honest and take risks."
+        }
+      ]
+    },
+    {
+      "heading": "Why it works",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Writing in Role builds empathy and deep understanding of a text. To write as a character, students have to think like one. The short time limit keeps the energy high and the pressure low."
+        },
+        {
+          "type": "tip",
+          "lead": "Bonus tip:",
+          "text": "in our class, we did several of these strategies back-to-back, all based on the same story. Each one works on its own, but linked together they build into a rich, layered exploration of a text. Combine them for maximum impact! Writing in Role leads naturally into Group Monologue."
+        }
+      ]
+    }
+  ]
+}

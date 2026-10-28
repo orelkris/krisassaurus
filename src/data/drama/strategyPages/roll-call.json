@@ -1,0 +1,129 @@
+{
+  "example": {
+    "kind": "sequence",
+    "title": "Roll Call",
+    "button": "Start",
+    "students": 8,
+    "layout": "row",
+    "numbered": true,
+    "stepMs": 900,
+    "filler": {
+      "text": "…",
+      "style": "soft"
+    },
+    "versions": [
+      {
+        "label": "Count off",
+        "lines": [
+          {
+            "text": "“one”"
+          },
+          {
+            "text": "“two”"
+          },
+          {
+            "text": "“three”"
+          },
+          {
+            "text": "“four”"
+          },
+          {
+            "text": "“five”"
+          },
+          {
+            "text": "“six”"
+          },
+          {
+            "text": "“seven”"
+          },
+          {
+            "text": "“eight”"
+          }
+        ]
+      },
+      {
+        "label": "Level it up",
+        "prompt": "“How do you feel about driving in a snowstorm?”",
+        "lines": [
+          {
+            "text": "“One…?”",
+            "style": "shaky"
+          },
+          {
+            "text": "“Twooo.”",
+            "style": "soft"
+          },
+          {
+            "text": "“THREE!”",
+            "style": "loud"
+          },
+          {
+            "text": "“Fooour.”",
+            "style": "soft"
+          },
+          {
+            "text": "“Five…?”",
+            "style": "shaky"
+          },
+          {
+            "text": "“SIX!”",
+            "style": "loud"
+          },
+          {
+            "text": "“Seeeven.”",
+            "style": "soft"
+          },
+          {
+            "text": "“Eight…?”",
+            "style": "shaky"
+          }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "What it is",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Roll Call turns plain attendance into a voice warm-up. Each student gets a number from the attendance list, and the class counts off out loud, one voice at a time, from “one” all the way to the last student."
+        },
+        {
+          "type": "tip",
+          "lead": "Level it up:",
+          "text": "once everyone knows their number, add a twist. Pose a question like:"
+        },
+        {
+          "type": "quote",
+          "text": "“How do you feel about driving in a snowstorm?”"
+        },
+        {
+          "type": "text",
+          "text": "Then count off again. This time, each student says their number in a voice that shows how they feel:"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "A shaky, nervous “Fourteen…?”",
+            "A bold, fearless “FIFTEEN!”",
+            "A grumpy, groaning “Siiixteen.”"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "The numbers stay the same, but the meaning changes completely."
+        }
+      ]
+    },
+    {
+      "heading": "Why it works",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Roll Call is quick, low-pressure and easy to bring in any day of the week. Students only have to say one word, so even shy students can join in. It also teaches a big idea: how we say something can matter just as much as what we say. Tone, volume and pace all carry emotion."
+        }
+      ]
+    }
+  ]
+}

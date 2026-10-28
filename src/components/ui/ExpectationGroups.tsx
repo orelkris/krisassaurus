@@ -17,6 +17,8 @@ export interface ExpectationGroup {
   label: ReactNode
   // Colour of the headings and codes, e.g. the strand's text colour
   color?: string
+  // Colours the frame and its label, e.g. the strand's colours
+  tone?: { bg: string; text: string; accent: string }
   sections: ExpectationSection[]
   // Shown when the group has no rows
   empty?: string
@@ -26,7 +28,8 @@ interface ExpectationGroupsProps {
   groups: ExpectationGroup[]
 }
 
-// Each group is a bordered box with its label centred on the top border.
+// Each group is a bordered box with its label centred on the top border,
+// in the group's colours when it has a tone.
 // Inside, each section is an optional heading in the group's colour over its
 // rows, with a line between sections. The boxes are handed to the page's
 // container, so they sit the same distance apart as everything else
@@ -34,7 +37,7 @@ function ExpectationGroups({ groups }: ExpectationGroupsProps) {
   return (
     <>
       {groups.map((group) => (
-        <FramedGroup key={group.id} label={group.label}>
+        <FramedGroup key={group.id} label={group.label} tone={group.tone}>
           {group.sections.length === 0 && group.empty && (
             <p className="text-muted ml-3">{group.empty}</p>
           )}

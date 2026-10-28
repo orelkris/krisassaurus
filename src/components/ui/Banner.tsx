@@ -13,7 +13,7 @@ interface BannerProps {
 }
 
 // A tinted bar that heads a section of a page. With a description, the start
-// and count line up with the title instead of the middle
+// lines up with the title; the count always sits in the middle
 function Banner({ colors, title, start, description, count }: BannerProps) {
   return (
     <div
@@ -30,9 +30,7 @@ function Banner({ colors, title, start, description, count }: BannerProps) {
         {description && <p className="text-sm opacity-85">{description}</p>}
       </div>
       {count !== undefined && (
-        <span
-          className={`shrink-0 text-[12.5px] opacity-80 ${description ? 'pt-1' : ''}`}
-        >
+        <span className="shrink-0 self-center text-[12.5px] opacity-80">
           {count}
         </span>
       )}

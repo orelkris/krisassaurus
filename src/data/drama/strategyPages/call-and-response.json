@@ -1,0 +1,78 @@
+{
+  "example": {
+    "kind": "phrases",
+    "title": "Try it",
+    "button": "Play",
+    "stepMs": 1100,
+    "columns": [
+      {
+        "heading": "Group 1",
+        "phrases": [
+          "“I must not stop planting trees”",
+          "“I cannot give up”",
+          "“We are stronger together”"
+        ]
+      },
+      {
+        "heading": "Group 2",
+        "phrases": [
+          "“This is not a woman’s job”",
+          "“You can’t make a difference”",
+          "“We will cut down your trees”"
+        ]
+      }
+    ],
+    "rounds": [
+      {
+        "label": "Round one",
+        "order": "columns"
+      },
+      {
+        "label": "Round two",
+        "order": "alternate"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "What it is",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Call and Response takes Choral Speaking and turns it into a showdown. It works on its own, but it’s strongest straight after Choral Speaking, when students already know the phrases."
+        }
+      ]
+    },
+    {
+      "heading": "How it works",
+      "blocks": [
+        {
+          "type": "steps",
+          "items": [
+            {
+              "lead": "Pick your sides.",
+              "text": "Divide the class into two groups, or as many groups as there are columns. Each group takes one column of phrases as their own."
+            },
+            {
+              "lead": "Round one.",
+              "text": "Group 1 says all three of their phrases together. Then Group 2 answers with all three of theirs."
+            },
+            {
+              "lead": "Round two.",
+              "text": "Now the groups trade lines back and forth. Group 1 calls out their first phrase and Group 2 fires back with theirs. Then the second phrase, then the third."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Why it works",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "The room becomes a vocal tug-of-war. Each column carries its own message and feeling, and when the groups go back and forth, students hear the tension between the two sides. It shows up in their voices and in the room, not just on the page."
+        }
+      ]
+    }
+  ]
+}

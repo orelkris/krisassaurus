@@ -98,6 +98,7 @@ export function overallGroups(list: Expectation[]): ExpectationGroup[] {
     id: group[0].overall,
     label: `${group[0].overall} · ${group[0].overallTitle}`,
     color: getStrand(group[0].strand).colors.text,
+    tone: getStrand(group[0].strand).colors,
     sections: groupByIdea(group).map(({ idea, expectations: items }) => ({
       id: items[0].id,
       heading: idea?.name,
@@ -115,6 +116,7 @@ export function ideaGroups(idea: MathIdea): ExpectationGroup[] {
       id: String(grade),
       label: `Grade ${grade}`,
       color: getStrand(idea.strand).colors.text,
+      tone: getStrand(idea.strand).colors,
       sections: items.length
         ? [{ id: 'all', items: items.map(toExpectationItem) }]
         : [],

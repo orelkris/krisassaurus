@@ -6,6 +6,7 @@ import LinkTile from '@/components/ui/LinkTile'
 import StrandTabs from '@/components/ui/StrandTabs'
 import StrategyGroupBanner from '@/components/drama/StrategyGroupBanner'
 import { strategyGroups } from '@/data/drama/groups'
+import { isGreyedOut } from '@/data/drama/greyedOut'
 import { getStrategiesInGroup, strategies } from '@/data/drama/strategies'
 import { useScrollSpy } from '@/hooks/useScrollSpy'
 
@@ -60,7 +61,7 @@ function StrategiesPage() {
           <section
             key={group.id}
             id={group.id}
-            className="col-section scroll-mt-28 md:scroll-mt-16"
+            className="col-page scroll-mt-28 md:scroll-mt-16"
           >
             <StrategyGroupBanner group={group} count={items.length} />
             <div className="grid grid-cols-1 gap-grid sm:grid-cols-2 xl:grid-cols-3">
@@ -71,6 +72,7 @@ function StrategiesPage() {
                   title={strategy.name}
                   text={strategy.summary}
                   color={group.colors.accent}
+                  disabled={isGreyedOut(strategy.slug)}
                 />
               ))}
             </div>

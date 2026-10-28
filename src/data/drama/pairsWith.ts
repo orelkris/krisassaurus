@@ -1,9 +1,10 @@
 import type { StrategyPair } from '@/types/drama'
 
-// Each pair is written once and shows on both strategies' pages.
-// Placeholder pairings: replace with what the course recommends.
+// Each pair is written once and shows on both strategies' pages, unless one
+// of them is greyed out. Most pairings are placeholders; the last two are
+// from class.
 export const pairsWith: StrategyPair[] = [
-  { a: 'tableaux-still-image', b: 'tap-in-voices-in-the-head', why: 'Freeze the moment, then hear what each character is thinking.' },
+  { a: 'tableaux-still-image', b: 'thought-tracking-tap-in' },
   { a: 'tableaux-still-image', b: 'caption-making', why: 'A caption makes the group decide what their picture is really about.' },
   { a: 'tableaux-still-image', b: 'sequenced-tableaux-storyboards' },
   { a: 'role-on-the-wall', b: 'hot-seating', why: 'Build the character first, then interview them.' },
@@ -13,7 +14,7 @@ export const pairsWith: StrategyPair[] = [
   { a: 'teacher-in-role', b: 'forum-theatre' },
   { a: 'role-on-the-wall', b: 'writing-in-role' },
   { a: 'role-on-the-wall', b: 'alter-ego' },
-  { a: 'tap-in-voices-in-the-head', b: 'alter-ego' },
+  { a: 'thought-tracking-tap-in', b: 'alter-ego' },
   { a: 'sequenced-tableaux-storyboards', b: 'voice-over-narration' },
   { a: 'sequenced-tableaux-storyboards', b: 'stop-animation' },
   { a: 'soundscape', b: 'guided-visualization' },
@@ -24,6 +25,8 @@ export const pairsWith: StrategyPair[] = [
   { a: 'forum-theatre', b: 'what-if', why: 'Both replay a scene with a different choice.' },
   { a: 'forum-theatre', b: 'rolling-theatre' },
   { a: 'what-if', b: 'flash-forward-flashback' },
+  { a: 'choral-speaking-choral-reading', b: 'call-and-response' },
+  { a: 'writing-in-role', b: 'group-monologue' },
 ]
 
 export interface PairedStrategy {
