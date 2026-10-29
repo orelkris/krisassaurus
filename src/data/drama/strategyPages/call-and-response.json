@@ -4,6 +4,9 @@
     "title": "Try it",
     "button": "Play",
     "stepMs": 1100,
+    "people": {
+      "students": 4
+    },
     "columns": [
       {
         "heading": "Group 1",

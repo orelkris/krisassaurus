@@ -122,6 +122,11 @@ export type StrategyExample =
       // alternate: the first phrase of each column, then the second...
       // Without rounds, the phrases play by columns
       rounds?: { label: string; order: 'columns' | 'alternate' }[]
+      // Draws students who say the phrases. Without together: a group of
+      // this many students for each column, who say its phrases, in place
+      // of the cards. With together: one line of this many students under
+      // the cards, who say every phrase together
+      people?: { students: number; together?: boolean }
     }
   | {
       // A drawn tableau. tap: tap a student to hear their thought; freeze:

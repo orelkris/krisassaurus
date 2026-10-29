@@ -5,6 +5,10 @@
     "note": "We read a story about a woman named Wangari Maathai.",
     "button": "Say them together",
     "stepMs": 1100,
+    "people": {
+      "students": 8,
+      "together": true
+    },
     "columns": [
       {
         "heading": "Positive phrases",
