@@ -75,7 +75,7 @@ function DramaOverviewPage() {
       <PageSection
         box="panel"
         stripe={dramaStrands.map((strand) => strand.colors.accent)}
-        title="Follow an expectation across grades"
+        title="Follow an expectation across strands."
         description="Each strand has the same numbered expectations in every grade, like B1.1 Role play. Pick one and see it grow from Grade 1 to 8."
       >
         <StrandCards

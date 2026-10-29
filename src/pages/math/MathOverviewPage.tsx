@@ -45,7 +45,7 @@ function MathOverviewPage() {
       <PageSection
         box="panel"
         stripe={mathStrands.map((strand) => strand.colors.accent)}
-        title="Follow an idea across grades"
+        title="Follow an idea across strands"
         description="Each strand is split into the same smaller ideas in every grade, like Math facts or Fractions. Pick one and see it grow from Grade 1 to 8."
       >
         <StrandCards
