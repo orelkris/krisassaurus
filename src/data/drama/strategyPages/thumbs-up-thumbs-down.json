@@ -30,15 +30,20 @@
           "text": "Thumbs Up / Thumbs Down is simple, quick and silent. Ask the class a question, and each student answers with just one thumb."
         },
         {
-          "type": "text",
-          "text": "For example: ask, “How was your commute this morning?”"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "Thumbs up: “Smooth sailing!”",
-            "Thumb in the middle: “It was… fine.”",
-            "Thumbs down: “Don’t even ask!”"
+          "type": "example",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Ask, “How was your commute this morning?”"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Thumbs up: “Smooth sailing!”",
+                "Thumb in the middle: “It was… fine.”",
+                "Thumbs down: “Don’t even ask!”"
+              ]
+            }
           ]
         },
         {

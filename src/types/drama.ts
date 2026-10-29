@@ -54,6 +54,9 @@ export type StrategyBlock =
   | { type: 'bullets'; items: string[] }
   // A line someone says, set off from the text
   | { type: 'quote'; text: string }
+  // A classroom example, boxed with an "Example" tag so it stands out.
+  // Its own blocks go inside the box
+  | { type: 'example'; blocks: StrategyBlock[] }
 
 export interface StrategyPageSection {
   heading: string

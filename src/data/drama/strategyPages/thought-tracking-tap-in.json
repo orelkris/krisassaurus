@@ -36,15 +36,20 @@
           "text": "The scene is frozen in a tableau, and with one tap on the shoulder a character comes to life. In Thought Tracking (also called Tap In), the teacher moves through the tableau and taps students one at a time. Each tapped student says a short line that shows what their character is thinking or feeling in that moment. A still picture turns into a story, and the audience gets a look inside each character’s head."
         },
         {
-          "type": "text",
-          "text": "For example: in our summer vacation tableau, Student A is a teacher candidate who has just bought her first house. Student B is frozen mid-handoff with the keys. Students C and D make a house shape over them. Then the tapping starts:"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "Tap! Student B: “You better pay your bills on time!”",
-            "Tap! Student A: “I can’t believe I own a home!”",
-            "Tap! Students C and D: “Welcome home!”"
+          "type": "example",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "In our summer vacation tableau, Student A is a teacher candidate who has just bought her first house. Student B is frozen mid-handoff with the keys. Students C and D make a house shape over them. Then the tapping starts:"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Tap! Student B: “You better pay your bills on time!”",
+                "Tap! Student A: “I can’t believe I own a home!”",
+                "Tap! Students C and D: “Welcome home!”"
+              ]
+            }
           ]
         },
         {

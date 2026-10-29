@@ -37,24 +37,29 @@
           "text": "In Position Mapping, students answer a question without saying a word. They show how they feel through where they place their bodies in relation to an object. Close, far, on top, hiding behind: every position tells a story."
         },
         {
-          "type": "text",
-          "text": "For example: let’s use chairs! Pose a question like:"
-        },
-        {
-          "type": "quote",
-          "text": "“How confident do you feel about the upcoming math test? Show me through how you interact with your chair!”"
-        },
-        {
-          "type": "text",
-          "text": "Then watch the creativity unfold:"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "Standing tall on the chair (safely!): “I’ve got this!”",
-            "Sitting calmly: “I feel pretty okay.”",
-            "Peeking out from behind it: “I’m a little nervous…”",
-            "Lying under it or walking away from it: “Please don’t make me take this test!”"
+          "type": "example",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Let’s use chairs! Pose a question like:"
+            },
+            {
+              "type": "quote",
+              "text": "“How confident do you feel about the upcoming math test? Show me through how you interact with your chair!”"
+            },
+            {
+              "type": "text",
+              "text": "Then watch the creativity unfold:"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Standing tall on the chair (safely!): “I’ve got this!”",
+                "Sitting calmly: “I feel pretty okay.”",
+                "Peeking out from behind it: “I’m a little nervous…”",
+                "Lying under it or walking away from it: “Please don’t make me take this test!”"
+              ]
+            }
           ]
         }
       ]

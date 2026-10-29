@@ -85,17 +85,18 @@
           ]
         },
         {
-          "type": "text",
-          "text": "For example:"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "Role: a Teacher and a Scientist",
-            "Relationship: they’re in love",
-            "Time and Place: the year 2100, on a spaceship in another galaxy",
-            "Tension: the oxygen supply has malfunctioned, and there’s only enough for one of them to make it back to Earth…",
-            "Emphasis and Focus: how will you make the audience feel it? Maybe a spotlight shines on the two characters while the rest of the stage goes dark. Maybe music swells to bring out the fear and heartbreak of the moment."
+          "type": "example",
+          "blocks": [
+            {
+              "type": "bullets",
+              "items": [
+                "Role: a Teacher and a Scientist",
+                "Relationship: they’re in love",
+                "Time and Place: the year 2100, on a spaceship in another galaxy",
+                "Tension: the oxygen supply has malfunctioned, and there’s only enough for one of them to make it back to Earth…",
+                "Emphasis and Focus: how will you make the audience feel it? Maybe a spotlight shines on the two characters while the rest of the stage goes dark. Maybe music swells to bring out the fear and heartbreak of the moment."
+              ]
+            }
           ]
         },
         {

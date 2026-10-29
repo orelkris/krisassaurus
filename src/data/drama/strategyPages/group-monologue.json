@@ -61,12 +61,17 @@
           ]
         },
         {
-          "type": "text",
-          "text": "For example: after writing as Wangari Maathai in prison, a student chooses the following line to share:"
-        },
-        {
-          "type": "quote",
-          "text": "“I am in prison, but the outside world is just a larger prison.”"
+          "type": "example",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "After writing as Wangari Maathai in prison, a student chooses the following line to share:"
+            },
+            {
+              "type": "quote",
+              "text": "“I am in prison, but the outside world is just a larger prison.”"
+            }
+          ]
         },
         {
           "type": "text",
