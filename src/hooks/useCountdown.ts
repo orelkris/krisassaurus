@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from 'react'
 // stays accurate when the tab is in the background.
 // left is whole seconds for the clock; remainingMs is the exact time left at
 // the last start or pause, for things that animate on their own (TimerBar);
-// startedAt changes on every start, so they can tell a restart from the same
-// run carrying on.
+// startedAt changes on every start or reset, so they can tell a restart from
+// the same run carrying on.
 // onDone runs once when the clock reaches 0
 export function useCountdown(seconds: number, onDone?: () => void) {
   const [left, setLeft] = useState(seconds)
@@ -50,15 +50,22 @@ export function useCountdown(seconds: number, onDone?: () => void) {
     setRunning(false)
   }
 
+  // Back to the full time, waiting for a start
+  const reset = () => {
+    setRemainingMs(seconds * 1000)
+    setLeft(seconds)
+    setStartedAt(Date.now())
+    setRunning(false)
+  }
+
   return {
     left,
     remainingMs,
     startedAt,
     running,
-    // Starts over from the full time
-    restart: () => startFrom(seconds * 1000),
     // Carries on from where it stopped, or starts over if it ran out
     resume: () => startFrom(remainingMs > 0 ? remainingMs : seconds * 1000),
     pause,
+    reset,
   }
 }

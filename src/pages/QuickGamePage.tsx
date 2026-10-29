@@ -39,15 +39,17 @@ function QuickGamePage({ direct = false }: QuickGamePageProps) {
   // The music fades out when time is up
   const timer = useCountdown(seconds, music.pause)
 
+  // A new scenario waits with the full time on the clock, so the teacher
+  // can read it out first. Play starts the timer and the music
   const show = (next: number) => {
     setIndex(next)
     setRevealed(false)
-    timer.restart()
-    music.play()
+    timer.reset()
+    music.pause()
   }
 
-  // Start opens the board on the game's title. Nothing plays until Play,
-  // so the teacher can go full screen first
+  // Start opens the board on the game's title. The first Play shows the
+  // first scenario, so the teacher can go full screen first
   const openBoard = () => {
     setStarted(false)
     setOnBoard(true)
