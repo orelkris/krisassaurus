@@ -41,7 +41,8 @@ function Figure({
             x={0}
             y={-52}
             fill="#fff"
-            fontSize={17}
+            // Longer labels, e.g. a name, are smaller so they fit the shirt
+            fontSize={typeof label === 'string' && label.length > 2 ? 12 : 17}
             fontWeight={800}
             textAnchor="middle"
           >

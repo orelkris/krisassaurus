@@ -10,12 +10,52 @@
       "text": "♥",
       "style": "heart"
     },
+    "walker": {
+      "label": "Paul"
+    },
     "versions": [
       {
         "label": "Walk",
+        "shuffle": true,
         "lines": [
           {
             "text": "You make people laugh when they need it most!"
+          },
+          {
+            "text": "You’re a great friend!"
+          },
+          {
+            "text": "Thanks for helping me!"
+          },
+          {
+            "text": "You can do it!"
+          },
+          {
+            "text": "I like playing with you!"
+          },
+          {
+            "text": "You’re so creative!"
+          },
+          {
+            "text": "You make our class better!"
+          },
+          {
+            "text": "Great job today!"
+          },
+          {
+            "text": "You’re really brave!"
+          },
+          {
+            "text": "I’m glad you’re here!"
+          },
+          {
+            "text": "You’re a good listener!"
+          },
+          {
+            "text": "You make me smile!"
+          },
+          {
+            "text": "You never give up!"
           }
         ]
       }

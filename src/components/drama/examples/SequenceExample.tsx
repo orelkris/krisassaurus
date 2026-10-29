@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import type { StrategyExample } from '@/types/drama'
+import type { SpokenLine, StrategyExample } from '@/types/drama'
 import Button from '@/components/ui/Button'
 import Figure, { figureHeight } from '@/components/ui/Figure'
 import SpeechBubble from '@/components/ui/SpeechBubble'
@@ -19,6 +19,16 @@ interface Spot {
   scale: number
   // The far line of a tunnel, seen from behind
   far?: boolean
+}
+
+// The lines in a random order
+function shuffle(lines: SpokenLine[]) {
+  const copy = [...lines]
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[copy[i], copy[j]] = [copy[j], copy[i]]
+  }
+  return copy
 }
 
 // Where each student stands, in speaking order, inside a width × height
@@ -50,13 +60,15 @@ function SequenceExample({ example, colors }: SequenceExampleProps) {
   const [run, setRun] = useState(0)
   const [speaker, setSpeaker] = useState<number | null>(null)
   const [walking, setWalking] = useState(false)
+  // This run's lines, when the version shuffles them
+  const [shuffled, setShuffled] = useState<SpokenLine[] | null>(null)
   const version = example.versions[versionIndex]
   const { width, height, ground, spots } = layoutSpots(
     example.layout,
     example.students
   )
   // How long each student's line stays up, and when each one starts
-  const lines = version.lines
+  const lines = shuffled ?? version.lines
   const holds = spots.map(
     (_, i) => (lines[i] ?? example.filler).holdMs ?? example.stepMs
   )
@@ -81,12 +93,14 @@ function SequenceExample({ example, colors }: SequenceExampleProps) {
 
   const start = () => {
     setSpeaker(null)
+    setShuffled(version.shuffle ? shuffle(version.lines) : null)
     setWalking(example.layout === 'tunnel')
     setRun((count) => count + 1)
   }
 
   const pickVersion = (index: number) => {
     setVersionIndex(index)
+    setShuffled(null)
     setRun(0)
     setSpeaker(null)
     setWalking(false)
@@ -183,6 +197,7 @@ function SequenceExample({ example, colors }: SequenceExampleProps) {
                 x={40}
                 y={190}
                 scale={0.62}
+                label={example.walker?.label}
                 colors={{ body: '#EF4444', line: '#EF4444' }}
               />
             </g>

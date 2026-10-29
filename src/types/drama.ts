@@ -82,6 +82,8 @@ export interface SequenceVersion {
   prompt?: string
   // One per student, in speaking order. Students past the end say the filler
   lines: SpokenLine[]
+  // Treats lines as a pool: each run gives every student a random line
+  shuffle?: boolean
 }
 
 // The interactive example at the top of a strategy page. kind picks the
@@ -110,6 +112,8 @@ export type StrategyExample =
       stepMs: number
       // What a student without a line says, e.g. … or a heart
       filler: SpokenLine
+      // tunnel: the walker's label, e.g. a name on their shirt
+      walker?: { label?: string }
       versions: SequenceVersion[]
     }
   | {
