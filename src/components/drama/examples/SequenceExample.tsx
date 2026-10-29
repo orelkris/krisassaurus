@@ -29,10 +29,10 @@ function layoutSpots(layout: SequenceSettings['layout'], count: number) {
     const spots: Spot[] = Array.from({ length: count }, (_, i) => {
       const column = Math.floor(i / 2)
       return i % 2 === 0
-        ? { x: 110 + column * 80, y: 150, scale: 0.55, far: true }
-        : { x: 130 + column * 80, y: 240, scale: 0.62 }
+        ? { x: 110 + column * 80, y: 145, scale: 0.55, far: true }
+        : { x: 130 + column * 80, y: 275, scale: 0.62 }
     })
-    return { width: 540, height: 250, ground: 236, spots }
+    return { width: 540, height: 285, ground: 271, spots }
   }
   const gap = count > 1 ? 480 / (count - 1) : 0
   const spots: Spot[] = Array.from({ length: count }, (_, i) => ({
@@ -93,6 +93,28 @@ function SequenceExample({ example, colors }: SequenceExampleProps) {
     typeof window !== 'undefined' &&
     window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
+  // One line of students. A tunnel draws its far line, then the walker,
+  // then its near line, so the walker passes between them. A row has no far
+  // line
+  const drawLine = (far: boolean) =>
+    spots.map((place, i) =>
+      Boolean(place.far) === far ? (
+        <Figure
+          key={i}
+          x={place.x}
+          y={place.y}
+          scale={place.scale}
+          label={example.numbered ? i + 1 : undefined}
+          colors={{
+            body: place.far ? colors.accent : colors.text,
+            line: colors.text,
+          }}
+          faded={place.far}
+          highlight={speaker === i ? colors.accent : undefined}
+        />
+      ) : null
+    )
+
   return (
     <ExampleBox
       title={example.title}
@@ -140,21 +162,7 @@ function SequenceExample({ example, colors }: SequenceExampleProps) {
             fill={colors.accent}
             opacity={0.35}
           />
-          {spots.map((place, i) => (
-            <Figure
-              key={i}
-              x={place.x}
-              y={place.y}
-              scale={place.scale}
-              label={example.numbered ? i + 1 : undefined}
-              colors={{
-                body: place.far ? colors.accent : colors.text,
-                line: colors.text,
-              }}
-              faded={place.far}
-              highlight={speaker === i ? colors.accent : undefined}
-            />
-          ))}
+          {drawLine(true)}
           {example.layout === 'tunnel' && (
             // The outer group moves; the figure inside keeps its own place
             <g
@@ -168,12 +176,13 @@ function SequenceExample({ example, colors }: SequenceExampleProps) {
             >
               <Figure
                 x={40}
-                y={200}
+                y={190}
                 scale={0.62}
                 colors={{ body: '#EF4444', line: '#EF4444' }}
               />
             </g>
           )}
+          {drawLine(false)}
         </svg>
         {line && spot && (
           <SpeechBubble
