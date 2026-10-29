@@ -142,7 +142,8 @@ function Speakers({ columns, people, current, colors }: SpeakersProps) {
   )
 }
 
-// Columns of phrases that light up one at a time, as the class says them
+// Columns of phrases that light up one at a time, as the class says them,
+// with the students saying them under the columns if people is set
 function PhrasesExample({ example, colors }: PhrasesExampleProps) {
   const [roundIndex, setRoundIndex] = useState(0)
   const [run, setRun] = useState(0)
@@ -193,34 +194,32 @@ function PhrasesExample({ example, colors }: PhrasesExampleProps) {
         </>
       }
     >
-      {(!example.people || example.people.together) && (
-        <div className="grid gap-3 sm:grid-cols-2">
-          {example.columns.map((column, c) => (
-            <div key={column.heading} className="col-stack min-w-0">
-              <h3 className="text-label">{column.heading}</h3>
-              {column.phrases.map((phrase, r) => {
-                const on = current === `${c}-${r}`
-                return (
-                  <p
-                    key={phrase}
-                    className={`rounded-[10px] border border-l-[3px] px-3 py-2.5 text-sm ${on ? 'font-semibold' : 'border-gray-200'}`}
-                    style={
-                      on
-                        ? {
-                            backgroundColor: colors.bg,
-                            borderColor: colors.accent,
-                          }
-                        : { borderLeftColor: colors.text }
-                    }
-                  >
-                    {phrase}
-                  </p>
-                )
-              })}
-            </div>
-          ))}
-        </div>
-      )}
+      <div className="grid gap-3 sm:grid-cols-2">
+        {example.columns.map((column, c) => (
+          <div key={column.heading} className="col-stack min-w-0">
+            <h3 className="text-label">{column.heading}</h3>
+            {column.phrases.map((phrase, r) => {
+              const on = current === `${c}-${r}`
+              return (
+                <p
+                  key={phrase}
+                  className={`rounded-[10px] border border-l-[3px] px-3 py-2.5 text-sm ${on ? 'font-semibold' : 'border-gray-200'}`}
+                  style={
+                    on
+                      ? {
+                          backgroundColor: colors.bg,
+                          borderColor: colors.accent,
+                        }
+                      : { borderLeftColor: colors.text }
+                  }
+                >
+                  {phrase}
+                </p>
+              )
+            })}
+          </div>
+        ))}
+      </div>
       {example.people && (
         <Speakers
           columns={example.columns}
