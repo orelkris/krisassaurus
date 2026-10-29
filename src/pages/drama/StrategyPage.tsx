@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import { Navigate, useParams } from 'react-router-dom'
 import PageHeader from '@/components/layout/PageHeader'
 import Breadcrumb from '@/components/ui/Breadcrumb'
@@ -23,6 +24,13 @@ function StrategyPage() {
 
   const group = getGroup(strategy.groupId)
   const page = getStrategyPage(strategy.slug)
+  // The example comes after How it works, or after What it is (the first
+  // section) when there is no How it works
+  const exampleAfter = Math.max(
+    0,
+    page?.sections.findIndex((section) => section.heading === 'How it works') ??
+      0
+  )
   const stories = getStoriesFor(strategy.slug)
   // Greyed-out strategies are left out of the pairs
   const pairs = getPairs(strategy.slug).flatMap((pair) => {
@@ -58,19 +66,16 @@ function StrategyPage() {
         </div>
       </PageHeader>
 
-      {page?.example && (
-        <StrategyExample example={page.example} colors={group.colors} />
-      )}
-
       {page ? (
-        page.sections.map((section) => (
-          <FramedGroup
-            key={section.heading}
-            label={section.heading}
-            tone={group.colors}
-          >
-            <StrategyBlocks blocks={section.blocks} colors={group.colors} />
-          </FramedGroup>
+        page.sections.map((section, i) => (
+          <Fragment key={section.heading}>
+            <FramedGroup label={section.heading} tone={group.colors}>
+              <StrategyBlocks blocks={section.blocks} colors={group.colors} />
+            </FramedGroup>
+            {i === exampleAfter && page.example && (
+              <StrategyExample example={page.example} colors={group.colors} />
+            )}
+          </Fragment>
         ))
       ) : strategy.sections ? (
         strategy.sections.map((section) => (

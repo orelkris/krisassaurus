@@ -47,15 +47,6 @@
   },
   "sections": [
     {
-      "heading": "Elements of Drama",
-      "blocks": [
-        {
-          "type": "text",
-          "text": "Role · Relationship · Time and Place · Tension · Emphasis and Focus"
-        }
-      ]
-    },
-    {
       "heading": "What it is",
       "blocks": [
         {
@@ -102,6 +93,15 @@
         {
           "type": "text",
           "text": "Five simple choices, and suddenly there’s a story the audience can’t look away from!"
+        }
+      ]
+    },
+    {
+      "heading": "Elements of Drama",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Role · Relationship · Time and Place · Tension · Emphasis and Focus"
         }
       ]
     },

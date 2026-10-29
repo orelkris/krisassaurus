@@ -181,6 +181,7 @@ export type StrategyExample =
 // data/drama/strategyPages/<slug>.json
 export interface StrategyPageContent {
   example?: StrategyExample
+  // What it is first, then How it works if there is one, then the example
   sections: StrategyPageSection[]
 }
 
