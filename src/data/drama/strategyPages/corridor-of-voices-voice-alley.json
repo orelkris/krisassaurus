@@ -23,6 +23,19 @@
   },
   "sections": [
     {
+      "heading": "What it is",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Corridor of Voices is versatile and offers an interesting perspective. A person walks between two lines of people and hears different messages as they pass."
+        },
+        {
+          "type": "text",
+          "text": "The messages could be opposing, affirming or even random. The idea is for that one walker to experience different voices all around them. The lines can speak one at a time, alternating sides, or in unison. There are lots of ways to play with it!"
+        }
+      ]
+    },
+    {
       "heading": "How to use",
       "blocks": [
         {

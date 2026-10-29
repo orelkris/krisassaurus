@@ -24,12 +24,13 @@ function StrategyPage() {
 
   const group = getGroup(strategy.groupId)
   const page = getStrategyPage(strategy.slug)
-  // The example comes after How it works, or after What it is (the first
-  // section) when there is no How it works
+  // The example comes after How it works (or How to use), or after What it
+  // is (the first section) when there is neither
   const exampleAfter = Math.max(
     0,
-    page?.sections.findIndex((section) => section.heading === 'How it works') ??
-      0
+    page?.sections.findIndex((section) =>
+      ['How it works', 'How to use'].includes(section.heading)
+    ) ?? 0
   )
   const stories = getStoriesFor(strategy.slug)
   // Greyed-out strategies are left out of the pairs
