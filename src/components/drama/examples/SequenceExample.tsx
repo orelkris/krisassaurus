@@ -55,14 +55,20 @@ function SequenceExample({ example, colors }: SequenceExampleProps) {
     example.layout,
     example.students
   )
-  const travel = example.students * example.stepMs
+  // How long each student's line stays up, and when each one starts
+  const lines = version.lines
+  const holds = spots.map(
+    (_, i) => (lines[i] ?? example.filler).holdMs ?? example.stepMs
+  )
+  const starts = holds.map((_, i) =>
+    holds.slice(0, i).reduce((sum, hold) => sum + hold, 0)
+  )
+  const travel = holds.reduce((sum, hold) => sum + hold, 0)
 
   useEffect(() => {
     if (run === 0) return
     const timers = [
-      ...spots.map((_, i) =>
-        setTimeout(() => setSpeaker(i), i * example.stepMs + 300)
-      ),
+      ...spots.map((_, i) => setTimeout(() => setSpeaker(i), starts[i] + 300)),
       setTimeout(() => {
         setSpeaker(null)
         setWalking(false)
@@ -86,8 +92,7 @@ function SequenceExample({ example, colors }: SequenceExampleProps) {
     setWalking(false)
   }
 
-  const line =
-    speaker === null ? null : (version.lines[speaker] ?? example.filler)
+  const line = speaker === null ? null : (lines[speaker] ?? example.filler)
   const spot = speaker === null ? null : spots[speaker]
   const reduceMotion =
     typeof window !== 'undefined' &&

@@ -24,7 +24,8 @@
             "style": "soft"
           },
           {
-            "text": "“I am in prison, but the outside world is just a larger prison.”"
+            "text": "“I am in prison, but the outside world is just a larger prison.”",
+            "holdMs": 3500
           }
         ]
       }
@@ -48,7 +49,7 @@
           "items": [
             {
               "lead": "Find your line.",
-              "text": "Students take about a minute to look over their Writing in Role piece and pick the one sentence or phrase they feel is most powerful."
+              "text": "Following an in-class writing exercise, or even from a short story, students take about a minute to look over a piece of writing and pick the one sentence or phrase they feel is most powerful."
             },
             {
               "lead": "Get your number.",

@@ -70,6 +70,9 @@ export type LineStyle = 'shaky' | 'loud' | 'soft' | 'heart'
 export interface SpokenLine {
   text: string
   style?: LineStyle
+  // How long this line stays up before the next student speaks, when it
+  // should stay longer than the example's stepMs
+  holdMs?: number
 }
 
 // One way to run a sequence, e.g. Count off or Level it up
