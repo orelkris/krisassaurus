@@ -106,7 +106,7 @@ function MathSidebar() {
 
       <p className={`${headingClass} flex items-center justify-between`}>
         Articles
-        <span className="text-muted font-normal">soon</span>
+        <span className="text-note font-normal">soon</span>
       </p>
     </>
   )

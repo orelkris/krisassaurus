@@ -83,7 +83,7 @@ function DocumentPage() {
                 Download
               </ButtonLink>
             </div>
-            <p className="text-muted">
+            <p className="text-note">
               Open shows the PDF in a new tab without saving it. Download saves
               a copy to your computer.
             </p>
@@ -95,7 +95,7 @@ function DocumentPage() {
               {sections.length > 0 && (
                 <section className="max-w-prose">
                   <h2 className="heading-section">Jump to a section</h2>
-                  <p className="text-muted mb-stack">
+                  <p className="text-note mb-stack">
                     Each link opens the PDF at that page.
                   </p>
                   <ul className="border-t border-gray-200">

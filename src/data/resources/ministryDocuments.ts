@@ -83,7 +83,7 @@ export const ministryDocuments: MinistryDocument[] = [
     year: '2019',
     grades: 'Grades 1 to 8',
     summary: 'Coming soon.',
-    officialUrl: 'https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-health-physical-education',
+    officialUrl: 'https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-health-and-physical-education',
   },
   {
     slug: 'growing-success',

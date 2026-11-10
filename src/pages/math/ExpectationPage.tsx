@@ -225,7 +225,7 @@ function ExpectationPage() {
         )}
 
         {details && (
-          <p className="text-muted">
+          <p className="text-note">
             Text from the curriculum, PDF page {expectation.page}. Diagrams are
             only in the PDF.
           </p>

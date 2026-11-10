@@ -153,7 +153,7 @@ function DramaExpectationPage() {
         )}
 
         {details && (
-          <p className="text-muted">
+          <p className="text-note">
             Text from the curriculum, starting on PDF page {page}.
           </p>
         )}

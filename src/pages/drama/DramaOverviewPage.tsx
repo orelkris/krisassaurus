@@ -101,10 +101,10 @@ function DramaOverviewPage() {
               to={`/drama/subjects/${subject.slug}`}
               className="card card-hover col-tight"
             >
-              <span className="text-muted">Drama &amp;</span>
+              <span className="text-note">Drama &amp;</span>
               <h3 className="heading-card">{subject.name}</h3>
               <p className="text-small">{subject.intro}</p>
-              <p className="text-muted mt-auto pt-2">Coming soon</p>
+              <p className="text-note mt-auto pt-2">Coming soon</p>
             </Link>
           ))}
         </div>

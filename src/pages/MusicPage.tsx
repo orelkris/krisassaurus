@@ -61,7 +61,7 @@ function MusicPage() {
           }`}
         >
           {month.label}
-          <span className="text-muted ml-1">({month.count})</span>
+          <span className="text-note ml-1">({month.count})</span>
         </button>
       ))}
     </nav>

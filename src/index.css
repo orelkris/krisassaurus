@@ -4,6 +4,99 @@
   --font-sans: 'Lexend', ui-sans-serif, system-ui, sans-serif;
 }
 
+/* ------------------------------------------------------------------------
+   Design tokens. Every colour, size and gap the site uses gets a name here,
+   and pages and components use only these names. To change the look (or
+   add a theme later), change the values here and nothing else.
+   Tailwind's own colours and sizes still work for now; they get switched
+   off once every page uses these names.
+   ------------------------------------------------------------------------ */
+@theme static {
+  /* Text, lines and backgrounds. fg = foreground, the main text colour */
+  --color-fg: #18181b; /* titles and main text */
+  --color-muted: #6b7280; /* secondary text: meta lines, counts */
+  --color-line: #e5e7eb; /* borders and dividers */
+  --color-soft: #f3f4f6; /* hover backgrounds */
+  --color-page: #ffffff; /* page and box backgrounds */
+
+  /* Buttons */
+  --color-primary: #18181b;
+  --color-primary-hover: #3f3f46;
+  --color-on-primary: #ffffff; /* text on primary and accent */
+  --color-accent: #059669; /* the one action a page is for */
+  --color-accent-hover: #047857;
+
+  /* Subjects: a page sets data-subject and uses the subject colour */
+  --color-gym: #b91c1c;
+  --color-math: #1f7a5c;
+  --color-drama: #7a4fd0;
+  --color-language: #c2410c;
+
+  /* Strands, the same in every subject: strong colour, light tint, and
+     dark text for on the tint. A box sets data-strand to use them */
+  --color-strand-a: #a78bca;
+  --color-strand-a-bg: #ede8f4;
+  --color-strand-a-text: #5c4c6f;
+  --color-strand-b: #83a995;
+  --color-strand-b-bg: #e6eeea;
+  --color-strand-b-text: #485d52;
+  --color-strand-c: #d58e70;
+  --color-strand-c-bg: #f7e8e2;
+  --color-strand-c-text: #754e3e;
+  --color-strand-d: #7899c5;
+  --color-strand-d-bg: #e4ebf3;
+  --color-strand-d-text: #42546c;
+  --color-strand-e: #d5ac59;
+  --color-strand-e-bg: #f7eede;
+  --color-strand-e-text: #755f31;
+  --color-strand-f: #5d9d9a;
+  --color-strand-f-bg: #dfebeb;
+  --color-strand-f-text: #335655;
+
+  /* Font sizes (text-xs … text-3xl), each with its line height */
+  --text-xs: 0.75rem; /* labels */
+  --text-xs--line-height: calc(1 / 0.75);
+  --text-sm: 0.875rem; /* meta lines, counts, small text */
+  --text-sm--line-height: calc(1.25 / 0.875);
+  --text-md: 1rem; /* body text */
+  --text-md--line-height: 1.5;
+  --text-lg: 1.125rem; /* card titles */
+  --text-lg--line-height: calc(1.75 / 1.125);
+  --text-xl: 1.25rem; /* section headings */
+  --text-xl--line-height: calc(1.75 / 1.25);
+  --text-2xl: 1.5rem; /* page titles on phones */
+  --text-2xl--line-height: calc(2 / 1.5);
+  --text-3xl: 1.875rem; /* page titles */
+  --text-3xl--line-height: 1.2;
+
+  /* Corners */
+  --radius-card: 0.75rem;
+  --radius-box: 1rem;
+  --radius-pill: 9999px;
+
+  /* Widths for text that shouldn't run the full width */
+  --container-narrow: 24rem;
+  --container-text: 28rem;
+}
+
+/* Spacing: one scale for gaps and padding. Each name works with any
+   spacing class: gap-md, p-lg, mt-sm, px-md… Phone values first; md, lg
+   and xl grow from 640px up. (Because of these names, max-w-sm … max-w-xl
+   mean these spacings too; widths use max-w-narrow and max-w-text.) */
+@theme inline {
+  --spacing-xs: var(--space-xs); /* a label to its title */
+  --spacing-sm: var(--space-sm); /* items in a list, buttons in a row */
+  --spacing-md: var(--space-md); /* cards in a grid, a heading to its content */
+  --spacing-lg: var(--space-lg); /* padding inside panels */
+  --spacing-xl: var(--space-xl); /* between page sections, page padding */
+
+  /* Set by data-subject and data-strand below */
+  --color-subject: var(--subject, var(--color-fg));
+  --color-strand: var(--strand);
+  --color-strand-bg: var(--strand-bg);
+  --color-strand-text: var(--strand-text);
+}
+
 /* Shared spacing. Each name works with any spacing class (gap-page,
    mt-section, py-stack...). Pages use these names instead of numbers.
    Phone values first; from sm (640px) up some get bigger. */
@@ -29,6 +122,71 @@
     --space-section: 1.25rem;
     --space-grid: 1rem;
   }
+}
+
+/* The token spacing scale (see @theme inline above) */
+:root {
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 0.75rem;
+  --space-lg: 1.25rem;
+  --space-xl: 2rem;
+}
+
+@media (width >= 40rem) {
+  :root {
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2.5rem;
+  }
+}
+
+/* A page says which subject it is (from its data), e.g. data-subject="gym",
+   and everything inside can use border-subject, text-subject… */
+[data-subject='gym'] {
+  --subject: var(--color-gym);
+}
+[data-subject='math'] {
+  --subject: var(--color-math);
+}
+[data-subject='drama'] {
+  --subject: var(--color-drama);
+}
+[data-subject='language'] {
+  --subject: var(--color-language);
+}
+
+/* A strand's box says its letter (from the data), e.g. data-strand="B",
+   and everything inside can use bg-strand, bg-strand-bg, text-strand-text */
+[data-strand='A'] {
+  --strand: var(--color-strand-a);
+  --strand-bg: var(--color-strand-a-bg);
+  --strand-text: var(--color-strand-a-text);
+}
+[data-strand='B'] {
+  --strand: var(--color-strand-b);
+  --strand-bg: var(--color-strand-b-bg);
+  --strand-text: var(--color-strand-b-text);
+}
+[data-strand='C'] {
+  --strand: var(--color-strand-c);
+  --strand-bg: var(--color-strand-c-bg);
+  --strand-text: var(--color-strand-c-text);
+}
+[data-strand='D'] {
+  --strand: var(--color-strand-d);
+  --strand-bg: var(--color-strand-d-bg);
+  --strand-text: var(--color-strand-d-text);
+}
+[data-strand='E'] {
+  --strand: var(--color-strand-e);
+  --strand-bg: var(--color-strand-e-bg);
+  --strand-text: var(--color-strand-e-text);
+}
+[data-strand='F'] {
+  --strand: var(--color-strand-f);
+  --strand-bg: var(--color-strand-f-bg);
+  --strand-text: var(--color-strand-f-text);
 }
 
 body {
@@ -85,8 +243,8 @@ body {
   @apply text-sm leading-relaxed text-gray-500;
 }
 
-/* Small grey notes and counts */
-@utility text-muted {
+/* Small grey notes and counts. (text-muted is now the grey colour) */
+@utility text-note {
   @apply text-xs text-gray-400;
 }
 
@@ -120,6 +278,44 @@ body {
 
 @utility row-tight {
   @apply flex items-center gap-tight;
+}
+
+/* The same containers on the token scale */
+@utility col-xs {
+  @apply flex flex-col gap-xs;
+}
+
+@utility col-sm {
+  @apply flex flex-col gap-sm;
+}
+
+@utility col-md {
+  @apply flex flex-col gap-md;
+}
+
+@utility col-lg {
+  @apply flex flex-col gap-lg;
+}
+
+@utility col-xl {
+  @apply flex flex-col gap-xl;
+}
+
+@utility row-xs {
+  @apply flex items-center gap-xs;
+}
+
+@utility row-sm {
+  @apply flex items-center gap-sm;
+}
+
+@utility row-md {
+  @apply flex items-center gap-md;
+}
+
+/* A thick left edge in the page's subject colour, e.g. the Curriculum box */
+@utility edge-subject {
+  @apply border-l-4 border-l-subject;
 }
 
 /* Padding around a whole column of content (the sidebar or the main area) */

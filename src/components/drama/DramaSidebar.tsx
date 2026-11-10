@@ -175,7 +175,7 @@ function DramaSidebar() {
             >
               <span>
                 All strategies{' '}
-                <span className="text-muted font-normal">{strategies.length}</span>
+                <span className="text-note font-normal">{strategies.length}</span>
               </span>
             </Link>
 
@@ -201,7 +201,7 @@ function DramaSidebar() {
                         style={{ backgroundColor: group.colors.accent }}
                       />
                       {group.name}
-                      <span className="text-muted">
+                      <span className="text-note">
                         {getStrategiesInGroup(group.id).length}
                       </span>
                     </span>
@@ -285,7 +285,7 @@ function DramaSidebar() {
                 className={linkClass(subject.slug === currentSubject?.slug)}
               >
                 {subject.name}
-                <span className="text-muted font-normal">soon</span>
+                <span className="text-note font-normal">soon</span>
               </Link>
             ))}
           </div>

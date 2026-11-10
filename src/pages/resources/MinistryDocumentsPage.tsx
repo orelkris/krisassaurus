@@ -28,7 +28,7 @@ function MinistryDocumentsPage() {
           <section key={id} className="col-section">
             <h2 className="heading-section flex items-baseline gap-2">
               {name}
-              <span className="text-muted font-normal">{documents.length}</span>
+              <span className="text-note font-normal">{documents.length}</span>
             </h2>
             <div className="grid grid-cols-2 gap-grid sm:grid-cols-3 xl:grid-cols-4">
               {documents.map((document) => (

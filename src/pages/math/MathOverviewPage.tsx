@@ -73,7 +73,7 @@ function MathOverviewPage() {
         description={strandA.text}
       >
         <DotList items={strandA.skills} color={strandA.colors.accent} />
-        <p className="text-muted">{strandA.note}</p>
+        <p className="text-note">{strandA.note}</p>
       </PageSection>
 
       {related && (

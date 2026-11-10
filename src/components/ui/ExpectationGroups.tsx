@@ -39,7 +39,7 @@ function ExpectationGroups({ groups }: ExpectationGroupsProps) {
       {groups.map((group) => (
         <FramedGroup key={group.id} label={group.label} tone={group.tone}>
           {group.sections.length === 0 && group.empty && (
-            <p className="text-muted ml-3">{group.empty}</p>
+            <p className="text-note ml-3">{group.empty}</p>
           )}
           {group.sections.map((section, index) => (
             <Fragment key={section.id}>

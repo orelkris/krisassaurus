@@ -33,7 +33,7 @@ function StrandMap({
     <div className="overflow-x-auto rounded-xl border border-gray-200">
       <table className="w-full min-w-[560px] border-collapse text-[13px]">
         <thead>
-          <tr className="text-muted border-b border-gray-200">
+          <tr className="text-note border-b border-gray-200">
             <th
               scope="col"
               className="w-[34%] py-2 pr-1.5 pl-3.5 text-left font-semibold"

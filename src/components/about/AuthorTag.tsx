@@ -12,7 +12,7 @@ function AuthorTag({ author }: AuthorTagProps) {
       </div>
       <div>
         <p className="text-sm font-semibold text-gray-800">{author.name}</p>
-        <p className="text-muted">{author.role}</p>
+        <p className="text-note">{author.role}</p>
       </div>
     </div>
   )

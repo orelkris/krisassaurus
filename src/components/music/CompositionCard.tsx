@@ -23,7 +23,7 @@ function CompositionCard({ composition }: CompositionCardProps) {
         <div className="flex items-start justify-between gap-4">
           <h2 className="heading-card">{title}</h2>
           {duration && (
-            <span className="text-muted shrink-0 mt-0.5">{duration}</span>
+            <span className="text-note shrink-0 mt-0.5">{duration}</span>
           )}
         </div>
 
@@ -56,7 +56,7 @@ function CompositionCard({ composition }: CompositionCardProps) {
             </div>
           )}
 
-          <p className="text-muted">{formattedDate}</p>
+          <p className="text-note">{formattedDate}</p>
         </div>
       </div>
     </div>

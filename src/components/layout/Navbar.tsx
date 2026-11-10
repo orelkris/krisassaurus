@@ -102,7 +102,7 @@ function Navbar() {
                   >
                     {section.name}
                     {!section.ready && (
-                      <span className="text-muted font-normal">soon</span>
+                      <span className="text-note font-normal">soon</span>
                     )}
                   </Link>
                 ))}

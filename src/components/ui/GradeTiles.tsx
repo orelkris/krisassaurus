@@ -23,7 +23,7 @@ function GradeTiles({ tiles }: GradeTilesProps) {
           className="card card-hover col-tight"
         >
           <b className="text-base text-gray-900">Grade {tile.grade}</b>
-          {tile.meta && <span className="text-muted">{tile.meta}</span>}
+          {tile.meta && <span className="text-note">{tile.meta}</span>}
         </Link>
       ))}
     </div>
