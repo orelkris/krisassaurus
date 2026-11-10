@@ -29,6 +29,11 @@ import StrandPage from '@/pages/math/StrandPage'
 import GradeStrandPage from '@/pages/math/GradeStrandPage'
 import ExpectationPage from '@/pages/math/ExpectationPage'
 import ResourcesSidebar from '@/components/resources/ResourcesSidebar'
+import SubjectSidebar from '@/components/subjects/SubjectSidebar'
+import ComingSoon from '@/components/ui/ComingSoon'
+import GymOverviewPage from '@/pages/gym/GymOverviewPage'
+import { gymCurriculum } from '@/data/subjects/gym/curriculum'
+import { SUBJECTS } from '@/types/curriculum'
 import MinistryDocumentsPage from '@/pages/resources/MinistryDocumentsPage'
 import TeachingResourcesPage from '@/pages/resources/TeachingResourcesPage'
 import DocumentPage from '@/pages/resources/DocumentPage'
@@ -56,7 +61,11 @@ function App() {
           <Route
             path="/drama"
             element={
-              <TwoColumnLayout sidebar={<DramaSidebar />} scrollable>
+              <TwoColumnLayout
+                sidebar={<DramaSidebar />}
+                subject="drama"
+                scrollable
+              >
                 <Outlet />
               </TwoColumnLayout>
             }
@@ -84,7 +93,11 @@ function App() {
           <Route
             path="/math"
             element={
-              <TwoColumnLayout sidebar={<MathSidebar />} scrollable>
+              <TwoColumnLayout
+                sidebar={<MathSidebar />}
+                subject="math"
+                scrollable
+              >
                 <Outlet />
               </TwoColumnLayout>
             }
@@ -100,6 +113,29 @@ function App() {
             {/* /grade and /strand on their own have no page */}
             <Route path="grade" element={<Navigate to="/math" replace />} />
             <Route path="strand" element={<Navigate to="/math" replace />} />
+          </Route>
+
+          {/* Gym: the template for every subject's pages */}
+          <Route
+            path="/gym"
+            element={
+              <TwoColumnLayout
+                sidebar={
+                  <SubjectSidebar name={SUBJECTS[gymCurriculum.subject].name} />
+                }
+                subject={gymCurriculum.subject}
+                scrollable
+              >
+                <Outlet />
+              </TwoColumnLayout>
+            }
+          >
+            <Route index element={<GymOverviewPage />} />
+            {/* Grade and strand pages come in the next steps */}
+            <Route
+              path="*"
+              element={<ComingSoon text="This page is next." />}
+            />
           </Route>
 
           {/* Other subjects show "Coming soon" for now */}

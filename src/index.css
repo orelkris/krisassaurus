@@ -73,6 +73,14 @@
   --radius-card: 0.75rem;
   --radius-box: 1rem;
   --radius-pill: 9999px;
+  --radius-badge: 0.5rem;
+
+  /* Sizes of small fixed things */
+  --spacing-badge: 2.25rem; /* a strand badge */
+  --spacing-code: 2.75rem; /* the column for a code like B1 */
+  --spacing-icon: 1.125rem; /* chevrons */
+  --spacing-dot: 0.375rem; /* list dots */
+  --spacing-stripe: 0.5rem; /* the coloured band on top of a panel */
 
   /* Widths for text that shouldn't run the full width */
   --container-narrow: 24rem;
@@ -212,7 +220,7 @@ body {
 
 /* The grey paragraph under a page title */
 @utility text-lead {
-  @apply max-w-prose leading-relaxed text-gray-500;
+  @apply max-w-prose leading-relaxed text-muted;
 }
 
 /* Big text for a classroom board (Quick Game): the scenario, the clock, the
@@ -240,7 +248,7 @@ body {
 
 /* Small grey body text, e.g. a card's description */
 @utility text-small {
-  @apply text-sm leading-relaxed text-gray-500;
+  @apply text-sm leading-relaxed text-muted;
 }
 
 /* Small grey notes and counts. (text-muted is now the grey colour) */
@@ -313,6 +321,11 @@ body {
   @apply flex items-center gap-md;
 }
 
+/* A strand's letter in a filled square; the strand comes from data-strand */
+@utility badge {
+  @apply inline-flex size-badge shrink-0 items-center justify-center rounded-badge bg-strand text-sm font-semibold text-on-primary;
+}
+
 /* A thick left edge in the page's subject colour, e.g. the Curriculum box */
 @utility edge-subject {
   @apply border-l-4 border-l-subject;
@@ -320,7 +333,7 @@ body {
 
 /* Padding around a whole column of content (the sidebar or the main area) */
 @utility pad-page {
-  @apply px-page py-page;
+  @apply p-xl;
 }
 
 /* Padding inside boxes and rows: small for clickable rows and banners,
@@ -334,17 +347,22 @@ body {
 }
 
 @utility pad-lg {
-  @apply p-5 sm:p-6;
+  @apply p-lg;
+}
+
+/* A plain box with no padding, for boxes whose rows run edge to edge */
+@utility box {
+  @apply rounded-box border border-line bg-page;
 }
 
 /* A big section box */
 @utility panel {
-  @apply pad-lg rounded-2xl border border-gray-200;
+  @apply box pad-lg;
 }
 
 /* A smaller card, usually inside a panel or a grid */
 @utility card {
-  @apply pad-md rounded-xl border border-gray-200;
+  @apply pad-md rounded-card border border-line bg-page;
 }
 
 /* Text boxes and number boxes */
@@ -354,7 +372,7 @@ body {
 
 /* Only for cards you can click */
 @utility card-hover {
-  @apply transition-shadow hover:shadow-md;
+  @apply transition-colors hover:bg-soft;
 }
 
 .link {

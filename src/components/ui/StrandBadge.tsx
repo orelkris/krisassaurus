@@ -12,7 +12,9 @@ export interface BadgeStrand {
 }
 
 interface StrandBadgeProps {
-  strand: BadgeStrand
+  // Math and Drama pass their own colours. With just an id, the badge uses
+  // the strand's token colours (the badge class in index.css)
+  strand: BadgeStrand | { id: string; colors?: undefined }
   // Solid uses the accent colour with white text
   solid?: boolean
   size?: 'sm' | 'lg'
@@ -20,6 +22,14 @@ interface StrandBadgeProps {
 
 // The strand's letter in a small rounded square
 function StrandBadge({ strand, solid = false, size = 'sm' }: StrandBadgeProps) {
+  if (!strand.colors) {
+    return (
+      <span data-strand={strand.id} className="badge">
+        {strand.id}
+      </span>
+    )
+  }
+
   return (
     <span
       className={`inline-flex shrink-0 items-center justify-center font-extrabold ${

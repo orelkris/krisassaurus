@@ -1,6 +1,22 @@
-export type Step = 'page' | 'section' | 'stack' | 'tight'
+// The token scale (xs to xl), plus the older names still used by Math and
+// Drama until they move over
+export type Step =
+  | 'xs'
+  | 'sm'
+  | 'md'
+  | 'lg'
+  | 'xl'
+  | 'page'
+  | 'section'
+  | 'stack'
+  | 'tight'
 
 export const gapClass: Record<Step, string> = {
+  xs: 'col-xs',
+  sm: 'col-sm',
+  md: 'col-md',
+  lg: 'col-lg',
+  xl: 'col-xl',
   page: 'col-page',
   section: 'col-section',
   stack: 'col-stack',

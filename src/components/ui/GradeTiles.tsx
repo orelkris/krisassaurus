@@ -15,15 +15,11 @@ interface GradeTilesProps {
 // uses it for "Start with your grade"
 function GradeTiles({ tiles }: GradeTilesProps) {
   return (
-    <div className="grid grid-cols-2 gap-grid sm:grid-cols-4">
+    <div className="grid grid-cols-2 gap-md sm:grid-cols-4">
       {tiles.map((tile) => (
-        <Link
-          key={tile.grade}
-          to={tile.to}
-          className="card card-hover col-tight"
-        >
-          <b className="text-base text-gray-900">Grade {tile.grade}</b>
-          {tile.meta && <span className="text-note">{tile.meta}</span>}
+        <Link key={tile.grade} to={tile.to} className="card card-hover col-xs">
+          <b className="heading-card">Grade {tile.grade}</b>
+          {tile.meta && <span className="text-small">{tile.meta}</span>}
         </Link>
       ))}
     </div>

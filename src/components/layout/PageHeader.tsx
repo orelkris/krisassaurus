@@ -26,7 +26,7 @@ function PageHeader({
       <h1 className="heading-page row-stack">{title}</h1>
       {description && <p className="text-lead">{description}</p>}
       {children}
-      {meta && <p className="text-note row-stack flex-wrap">{meta}</p>}
+      {meta && <p className="text-small row-stack flex-wrap">{meta}</p>}
     </header>
   )
 }

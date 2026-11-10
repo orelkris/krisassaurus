@@ -3,6 +3,7 @@ import type {
   OverallExpectation,
   SpecificExpectation,
   StrandId,
+  SubjectId,
 } from '@/types/curriculum'
 
 // Helpers that read any subject's curriculum. Counts are always worked out
@@ -84,4 +85,17 @@ export function topicsIn<S extends StrandId>(
     specificsIn(c, grade, strand).map(([, specific]) => specific.topic)
   )
   return [...new Set(topics.filter((t): t is string => !!t))]
+}
+
+// A page in a subject's curriculum section, e.g. /gym/grade/4,
+// /gym/strand/b, /gym/strand/b/b2
+export function curriculumPath(
+  subject: SubjectId,
+  { grade, strand, code }: { grade?: number; strand?: StrandId; code?: string }
+): string {
+  if (grade) return `/${subject}/grade/${grade}`
+  if (strand && code)
+    return `/${subject}/strand/${strand.toLowerCase()}/${code.toLowerCase()}`
+  if (strand) return `/${subject}/strand/${strand.toLowerCase()}`
+  return `/${subject}`
 }

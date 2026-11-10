@@ -5,7 +5,7 @@ import TwoColumnLayout from '@/components/layout/TwoColumnLayout'
 import SubjectSidebar from '@/components/subjects/SubjectSidebar'
 import CurriculumBox from '@/components/resources/CurriculumBox'
 
-// Subjects that don't have their own pages yet (Language, Gym)
+// Subjects that don't have their own pages yet (Language)
 function SubjectSectionPage() {
   const { subject: slug = '' } = useParams<{ subject: string }>()
   const section = getSubjectSection(slug)
@@ -15,6 +15,7 @@ function SubjectSectionPage() {
   return (
     <TwoColumnLayout
       sidebar={<SubjectSidebar name={section.name} />}
+      subject={section.slug}
       scrollable
     >
       <div className="col-page flex-1">

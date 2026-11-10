@@ -1,10 +1,13 @@
 import type { ReactNode } from 'react'
 import Container from '@/components/layout/Container'
+import type { SubjectId } from '@/types/curriculum'
 
 interface TwoColumnLayoutProps {
   sidebar: ReactNode
   children: ReactNode
   scrollable?: boolean
+  // Sets the subject colour for the page, from the subject's data
+  subject?: SubjectId
 }
 
 // Only places the columns: the sidebar on the left with a line after it, the
@@ -14,6 +17,7 @@ function TwoColumnLayout({
   sidebar,
   children,
   scrollable = false,
+  subject,
 }: TwoColumnLayoutProps) {
   return (
     <div
@@ -21,13 +25,15 @@ function TwoColumnLayout({
         scrollable ? 'min-h-full' : 'h-full'
       }`}
     >
-      <aside className="w-full border-b border-gray-200 lg:w-68 lg:shrink-0 lg:border-r lg:border-b-0">
+      <aside className="w-full border-b border-line lg:w-68 lg:shrink-0 lg:border-r lg:border-b-0">
         <Container gap="section">{sidebar}</Container>
       </aside>
       <main
         className={`flex min-w-0 flex-1 flex-col ${scrollable ? '' : 'min-h-0'}`}
       >
-        <Container fill={!scrollable}>{children}</Container>
+        <Container fill={!scrollable} subject={subject}>
+          {children}
+        </Container>
       </main>
     </div>
   )

@@ -7,28 +7,21 @@ interface InfoBoxProps {
   text?: ReactNode
   // Buttons along the bottom, e.g. ButtonLinks
   actions?: ReactNode
-  // Colour of the thick left edge and the label
-  accent?: string
+  // A thick left edge in the page's subject colour (set by data-subject)
+  edge?: boolean
 }
 
 // A panel with a label, a title, a line of text and optional buttons. It
 // knows nothing about what it shows, so any page can use it
-function InfoBox({ title, label, text, actions, accent }: InfoBoxProps) {
+function InfoBox({ title, label, text, actions, edge }: InfoBoxProps) {
   return (
     <section
-      className={`panel col-tight items-start ${accent ? 'border-l-4' : ''}`}
-      style={accent ? { borderLeftColor: accent } : undefined}
+      className={`panel col-xs items-start ${edge ? 'edge-subject' : ''}`}
     >
-      {label && (
-        <p className="text-label" style={accent ? { color: accent } : undefined}>
-          {label}
-        </p>
-      )}
+      {label && <p className="text-label">{label}</p>}
       <h2 className="heading-card">{title}</h2>
       {text && <p className="text-small">{text}</p>}
-      {actions && (
-        <div className="mt-stack flex flex-wrap gap-stack">{actions}</div>
-      )}
+      {actions && <div className="mt-sm flex flex-wrap gap-sm">{actions}</div>}
     </section>
   )
 }

@@ -6,15 +6,16 @@ import {
   getPdfUrl,
 } from '@/data/resources/ministryDocuments'
 import { getSubjectSection } from '@/data/subjects'
+import type { SubjectId } from '@/types/curriculum'
 
 interface CurriculumBoxProps {
-  // The subject's slug in subjects.ts, e.g. "drama"
-  subject: string
+  // e.g. "drama"
+  subject: SubjectId
 }
 
 // The curriculum document for a subject, at the top of its page. The subject
-// gives the page path and colour; documentLinks says which document that page
-// uses. Shows nothing when there is no link
+// gives the page path; documentLinks says which document that page uses. The
+// edge takes the page's subject colour. Shows nothing when there is no link
 function CurriculumBox({ subject }: CurriculumBoxProps) {
   const section = getSubjectSection(subject)
   const link = section && getLinksToPage(section.path)[0]
@@ -29,7 +30,7 @@ function CurriculumBox({ subject }: CurriculumBoxProps) {
       label="Curriculum"
       title={`${document.title} (${year})`}
       text={link.blurb}
-      accent={section.color}
+      edge
       actions={
         <>
           {/* My copy of the PDF when it's on the site, otherwise the
