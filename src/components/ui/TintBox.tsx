@@ -17,7 +17,7 @@ function TintBox({ parts }: TintBoxProps) {
       {parts.map((part, index) => (
         <div
           key={index}
-          className="col-xs border-t border-line py-md first:border-t-0"
+          className="col-xs border-t border-strand-line py-md first:border-t-0"
         >
           <p className="text-sm font-semibold text-strand-text">{part.label}</p>
           <p className="text-md text-fg">{part.text}</p>

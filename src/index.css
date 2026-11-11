@@ -134,6 +134,8 @@
   --color-strand: var(--strand);
   --color-strand-bg: var(--strand-bg);
   --color-strand-text: var(--strand-text);
+  /* Lines inside a strand-tinted box: the strand colour, see-through */
+  --color-strand-line: color-mix(in srgb, var(--strand) 45%, transparent);
 }
 
 /* Shared spacing. Each name works with any spacing class (gap-page,
