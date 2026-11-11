@@ -25,14 +25,14 @@ function PlaceValueChart({ number }: PlaceValueChartProps) {
             {digits.length > 3 && (
               <th
                 colSpan={digits.length - 3}
-                className="border border-gray-200 bg-gray-50 px-0.5 py-1 text-[9.5px] font-semibold text-gray-500"
+                className="border border-line bg-soft px-px py-xs text-2xs font-semibold text-muted"
               >
                 Thousands
               </th>
             )}
             <th
               colSpan={Math.min(3, digits.length)}
-              className="border border-gray-200 bg-gray-50 px-0.5 py-1 text-[9.5px] font-semibold text-gray-500"
+              className="border border-line bg-soft px-px py-xs text-2xs font-semibold text-muted"
             >
               Ones
             </th>
@@ -41,7 +41,7 @@ function PlaceValueChart({ number }: PlaceValueChartProps) {
             {columns.map((place) => (
               <th
                 key={place}
-                className="border border-gray-200 bg-gray-50 px-0.5 py-1 text-[9.5px] font-semibold text-gray-500"
+                className="border border-line bg-soft px-px py-xs text-2xs font-semibold text-muted"
               >
                 {place}
               </th>
@@ -53,8 +53,8 @@ function PlaceValueChart({ number }: PlaceValueChartProps) {
             {digits.map((digit, index) => (
               <td
                 key={index}
-                className={`border border-gray-200 px-0.5 py-1.5 text-xl font-bold ${
-                  digit === '0' ? 'bg-amber-100 text-amber-800' : ''
+                className={`border border-line px-px py-xs text-xl font-bold ${
+                  digit === '0' ? 'bg-highlight-bg text-highlight' : ''
                 }`}
               >
                 {digit}

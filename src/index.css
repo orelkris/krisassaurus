@@ -30,6 +30,17 @@
   --color-link-line: #a5b4fc; /* the line that grows under a link */
   --color-danger: #ef4444; /* warnings: a timer running out, PDF badges */
 
+  /* Worked examples in Math: a right and a wrong answer, a highlighted
+     digit, and the final answer */
+  --color-correct: #166534;
+  --color-correct-mark: #22c55e;
+  --color-wrong: #9f1239;
+  --color-wrong-mark: #f43f5e;
+  --color-wrong-bg: #ffe4e6;
+  --color-highlight: #92400e;
+  --color-highlight-bg: #fef3c7;
+  --color-answer: #1e40af;
+
   /* Subjects: a page sets data-subject and uses the subject colour */
   --color-gym: #b91c1c;
   --color-math: #1f7a5c;
@@ -58,6 +69,8 @@
   --color-strand-f-text: #335655;
 
   /* Font sizes (text-xs … text-3xl), each with its line height */
+  --text-3xs: 0.5rem; /* the tiniest labels inside a drawing, e.g. a place value chart */
+  --text-2xs: 0.625rem;
   --text-xs: 0.75rem; /* labels */
   --text-xs--line-height: calc(1 / 0.75);
   --text-sm: 0.875rem; /* meta lines, counts, small text */
@@ -139,6 +152,20 @@
   --spacing-badge-sm: 1.375rem; /* a small strand badge */
   --spacing-badge-md: 1.875rem; /* a medium strand badge */
   --spacing-bar: 0.5rem; /* a timer bar */
+
+  /* Math drawings: the number line and the digit grid */
+  --spacing-numberline: 5.75rem;
+  --spacing-numberline-bar: 0.875rem;
+  --spacing-numberline-tick: 1.375rem;
+  --spacing-numberline-tick-top: 1.625rem;
+  --spacing-numberline-label: 3.875rem;
+  --spacing-numberline-mark: 2.75rem;
+  --spacing-digit-row: 2.25rem;
+  --spacing-digit-name: 2.125rem;
+  --spacing-digit-value: 1.75rem;
+
+  /* Where a two-column grid of cards starts (e.g. a Math expectation) */
+  --breakpoint-wide: 56.25rem;
 
   /* Widths for text that shouldn't run the full width */
   --container-narrow: 24rem;

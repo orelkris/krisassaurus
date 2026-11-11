@@ -27,8 +27,7 @@ import {
 import { getStrand } from '@/data/math/strands'
 import { useEqualHeights } from '@/hooks/useEqualHeights'
 
-const cardGridClass =
-  'grid grid-cols-1 items-start gap-grid min-[900px]:grid-cols-2'
+const cardGridClass = 'grid grid-cols-1 items-start gap-grid wide:grid-cols-2'
 
 const flatten = (items: CurriculumItem[]): string =>
   items
@@ -109,7 +108,7 @@ function ExpectationPage() {
             <span>Official wording, Ontario curriculum (2020)</span>
             <Link
               to="/resources/documents/mathematics-1-8"
-              className="text-gray-500 underline underline-offset-[3px] hover:text-gray-900"
+              className="text-muted underline underline-offset-3 hover:text-fg"
             >
               Curriculum PDF, page {expectation.page}
             </Link>
@@ -117,7 +116,7 @@ function ExpectationPage() {
         }
       >
         <p
-          className="border-l-4 py-1 pl-4 text-xl leading-snug font-semibold text-gray-900"
+          className="border-l-4 py-xs pl-md text-xl leading-snug font-semibold text-fg"
           style={{ borderColor: strand.colors.accent }}
         >
           <MathText text={expectation.text} />

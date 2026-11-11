@@ -8,44 +8,44 @@ interface NumberLineProps {
 }
 
 const toneClass = {
-  right: { text: 'text-green-800', tick: 'bg-green-500' },
-  wrong: { text: 'text-rose-800', tick: 'bg-rose-500' },
+  right: { text: 'text-correct', tick: 'bg-correct-mark' },
+  wrong: { text: 'text-wrong', tick: 'bg-wrong-mark' },
 }
 
 // A bar with tick marks. Marks near the start sit on a lower row, pointing back
 // to their spot, so their labels don't run into the start label
 function NumberLine({ start, end, marks }: NumberLineProps) {
   return (
-    <div className="relative mx-2 h-[92px] text-xs text-gray-500">
-      <div className="absolute inset-x-0 top-5 h-3.5 rounded-[3px] border border-gray-400 bg-[repeating-linear-gradient(90deg,#e5e7eb_0_1px,transparent_1px_10%),linear-gradient(#f9fafb,#f9fafb)]" />
+    <div className="relative mx-sm h-numberline text-xs text-muted">
+      <div className="absolute inset-x-none top-lg h-numberline-bar rounded-tiny border border-faint bg-[repeating-linear-gradient(90deg,var(--color-line)_0_1px,transparent_1px_10%),linear-gradient(var(--color-soft),var(--color-soft))]" />
 
-      <span className="absolute left-0 top-10 whitespace-nowrap">
-        <i className="absolute -top-[26px] left-0 h-[22px] w-0.5 bg-gray-400" />
+      <span className="absolute left-none top-xl whitespace-nowrap">
+        <i className="absolute -top-numberline-tick-top left-none h-numberline-tick w-rule bg-faint" />
         {start}
       </span>
-      <span className="absolute right-0 top-10 whitespace-nowrap">
-        <i className="absolute -top-[26px] right-0 h-[22px] w-0.5 bg-gray-400" />
+      <span className="absolute right-none top-xl whitespace-nowrap">
+        <i className="absolute -top-numberline-tick-top right-none h-numberline-tick w-rule bg-faint" />
         <MathText text={end} />
       </span>
 
       {marks.map((mark) => {
         const tone = mark.tone
           ? toneClass[mark.tone]
-          : { text: '', tick: 'bg-gray-400' }
+          : { text: '', tick: 'bg-faint' }
         const nearStart = mark.at < 10
         return (
           <span
             key={mark.label}
             className={`absolute whitespace-nowrap ${tone.text} ${
-              nearStart ? 'top-[62px]' : 'top-10 -translate-x-1/2'
+              nearStart ? 'top-numberline-label' : 'top-xl -translate-x-1/2'
             }`}
             style={{ left: `${mark.at}%` }}
           >
             <i
-              className={`absolute w-0.5 ${tone.tick} ${
+              className={`absolute w-rule ${tone.tick} ${
                 nearStart
-                  ? '-top-12 left-0 h-11'
-                  : '-top-[26px] left-1/2 h-[22px]'
+                  ? '-top-xl left-none h-numberline-mark'
+                  : '-top-numberline-tick-top left-1/2 h-numberline-tick'
               }`}
             />
             <MathText text={mark.label} />

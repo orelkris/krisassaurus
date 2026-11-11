@@ -52,8 +52,7 @@ export const compositions: Composition[] = [
     title: 'Phrygian',
     audioUrl: phrygian,
     date: new Date('2025-04-30'),
-    description:
-      'Based on the Phrygian mode (sensual).',
+    description: 'Based on the Phrygian mode (sensual).',
     tags: ['Electronic'],
     duration: '1:23',
   },
@@ -62,8 +61,7 @@ export const compositions: Composition[] = [
     title: 'In the Dark',
     audioUrl: inTheDark,
     date: new Date('2025-05-11'),
-    description:
-      "Just looking at you in the dark...",
+    description: 'Just looking at you in the dark...',
     tags: ['Electronic'],
     duration: '2:15',
   },

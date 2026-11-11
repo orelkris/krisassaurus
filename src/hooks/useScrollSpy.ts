@@ -20,7 +20,8 @@ export function useScrollSpy(ids: string[]) {
       return
     }
 
-    const line = container.getBoundingClientRect().top + container.clientHeight * 0.5
+    const line =
+      container.getBoundingClientRect().top + container.clientHeight * 0.5
     let current = ids[0]
     for (const id of ids) {
       const section = document.getElementById(id)
@@ -65,12 +66,19 @@ export function useScrollSpy(ids: string[]) {
     }
   }, [update])
 
-  const jumpTo = useCallback((id: string, behavior: ScrollBehavior = 'smooth') => {
-    forcedId.current = id
-    setActiveId(id)
-    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    document.getElementById(id)?.scrollIntoView({ behavior: reduceMotion ? 'auto' : behavior })
-  }, [])
+  const jumpTo = useCallback(
+    (id: string, behavior: ScrollBehavior = 'smooth') => {
+      forcedId.current = id
+      setActiveId(id)
+      const reduceMotion = window.matchMedia(
+        '(prefers-reduced-motion: reduce)'
+      ).matches
+      document
+        .getElementById(id)
+        ?.scrollIntoView({ behavior: reduceMotion ? 'auto' : behavior })
+    },
+    []
+  )
 
   return { activeId, jumpTo }
 }

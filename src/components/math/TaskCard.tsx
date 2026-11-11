@@ -10,20 +10,20 @@ interface TaskCardProps {
 // A ministry sample task as plain text, before it is rewritten as an activity
 function TaskCard({ task, number, color }: TaskCardProps) {
   return (
-    <article className="card col-stack text-[14.5px] leading-relaxed">
+    <article className="card col-stack text-sm leading-relaxed">
       <span
-        className="text-[11px] font-bold uppercase tracking-wider"
+        className="text-xs font-bold uppercase tracking-wider"
         style={{ color }}
       >
         Activity {String(number).padStart(2, '0')}
       </span>
       {task.text && (
-        <p className="max-w-[68ch]">
+        <p className="max-w-read">
           <MathText text={task.text} />
         </p>
       )}
       {task.items.length > 0 && (
-        <ul className="col-tight max-w-[68ch] list-disc pl-[18px] text-sm">
+        <ul className="col-tight max-w-read list-disc pl-md text-sm">
           {task.items.map((item) => (
             <li key={item}>
               <MathText text={item} />
@@ -32,7 +32,7 @@ function TaskCard({ task, number, color }: TaskCardProps) {
         </ul>
       )}
       {task.after && (
-        <p className="max-w-[68ch]">
+        <p className="max-w-read">
           <MathText text={task.after} />
         </p>
       )}

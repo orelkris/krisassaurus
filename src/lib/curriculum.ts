@@ -128,3 +128,19 @@ export function slug(text: string): string {
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/(^-|-$)/g, '')
 }
+
+// A strand's colours as CSS variables, for components that take colours as
+// props (Math, Drama). The values live in index.css, so every subject's
+// strand B is the same green, and a theme only changes index.css
+export function strandColors(id: StrandId): {
+  bg: string
+  text: string
+  accent: string
+} {
+  const letter = id.toLowerCase()
+  return {
+    bg: `var(--color-strand-${letter}-bg)`,
+    text: `var(--color-strand-${letter}-text)`,
+    accent: `var(--color-strand-${letter})`,
+  }
+}

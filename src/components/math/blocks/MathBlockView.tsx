@@ -23,13 +23,13 @@ function MathBlockView({ block }: MathBlockViewProps) {
       return <Tiles items={block.items} />
     case 'steps':
       return (
-        <ol className="flex flex-col gap-2.5">
+        <ol className="flex flex-col gap-sm">
           {block.items.map((step, index) => (
             <li
               key={step}
-              className="grid grid-cols-[26px_minmax(0,1fr)] gap-2.5 text-sm leading-normal"
+              className="grid grid-cols-[var(--spacing-step)_minmax(0,1fr)] gap-sm text-sm leading-normal"
             >
-              <span className="grid h-6 w-6 place-items-center rounded-full border border-gray-200 bg-gray-50 text-xs font-bold">
+              <span className="grid size-step place-items-center rounded-pill border border-line bg-soft text-xs font-bold">
                 {index + 1}
               </span>
               <span>
@@ -41,7 +41,7 @@ function MathBlockView({ block }: MathBlockViewProps) {
       )
     case 'tip':
       return (
-        <p className="flex items-start gap-2.5 rounded-xl border border-gray-200 bg-gray-50 px-3 py-2 text-[13px] leading-normal">
+        <p className="flex items-start gap-sm rounded-card border border-line bg-soft px-md py-sm text-sm leading-normal">
           <span aria-hidden="true">💡</span>
           <span>
             <MathText text={block.body} />
@@ -51,16 +51,16 @@ function MathBlockView({ block }: MathBlockViewProps) {
     case 'ask':
       return (
         <div
-          className={`flex flex-col gap-1 rounded-xl border px-4 py-3.5 ${
+          className={`flex flex-col gap-xs rounded-card border px-md py-md ${
             block.mistake
-              ? 'border-rose-500 bg-rose-100'
-              : 'border-gray-200 bg-gray-50'
+              ? 'border-wrong-mark bg-wrong-bg'
+              : 'border-line bg-soft'
           }`}
         >
           {block.head && (
             <span
-              className={`text-[11px] font-bold uppercase tracking-wide ${
-                block.mistake ? 'text-rose-800' : 'text-gray-400'
+              className={`text-xs font-bold uppercase tracking-wide ${
+                block.mistake ? 'text-wrong' : 'text-faint'
               }`}
             >
               {block.head}
@@ -70,7 +70,7 @@ function MathBlockView({ block }: MathBlockViewProps) {
             <MathText text={block.question} />
           </p>
           {block.items && (
-            <div className="mt-1.5">
+            <div className="mt-xs">
               <Tiles items={block.items} onColor />
             </div>
           )}
@@ -78,15 +78,15 @@ function MathBlockView({ block }: MathBlockViewProps) {
       )
     case 'rows':
       return (
-        <dl className="flex flex-col divide-y divide-gray-200">
+        <dl className="flex flex-col divide-y divide-line">
           {block.rows.map(([label, value], index) => (
             <div
               key={label}
-              className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-0.5 px-0.5 py-2 text-[13px]"
+              className="flex flex-wrap items-baseline justify-between gap-x-md gap-y-px px-px py-sm text-sm"
             >
-              <dt className="shrink-0 text-gray-500">{label}</dt>
+              <dt className="shrink-0 text-muted">{label}</dt>
               <dd
-                className={`min-w-0 text-right font-semibold ${index === 0 ? 'text-base text-blue-800' : ''}`}
+                className={`min-w-none text-right font-semibold ${index === 0 ? 'text-md text-answer' : ''}`}
               >
                 <MathText text={value} />
               </dd>

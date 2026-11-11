@@ -32,25 +32,25 @@ function MathCard({
 }: MathCardProps) {
   return (
     <article
-      className={`math-card card col-stack min-w-0 ${
-        wide ? 'min-[900px]:col-span-2' : ''
+      className={`math-card card col-stack min-w-none ${
+        wide ? 'wide:col-span-2' : ''
       }`}
     >
       <header>
         {eyebrow && (
           <span
-            className="text-[11px] font-bold uppercase tracking-wider"
+            className="text-xs font-bold uppercase tracking-wider"
             style={{ color: eyebrowColor }}
           >
             {eyebrow}
           </span>
         )}
-        <h3 className="heading-card mt-px mb-0.5">{title}</h3>
-        <p className="text-[12.5px] text-gray-500">{summary}</p>
+        <h3 className="heading-card mt-px mb-px">{title}</h3>
+        <p className="text-xs text-muted">{summary}</p>
       </header>
 
       {body && (
-        <p className="max-w-prose text-sm leading-relaxed">
+        <p className="max-w-read text-sm leading-relaxed">
           <MathText text={body} />
         </p>
       )}
@@ -60,7 +60,7 @@ function MathCard({
           key={index}
           className={
             divided && index > 0 && block.type !== 'tip'
-              ? 'border-t border-gray-200 pt-3'
+              ? 'border-t border-line pt-md'
               : ''
           }
         >

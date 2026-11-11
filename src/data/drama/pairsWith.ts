@@ -5,9 +5,17 @@ import type { StrategyPair } from '@/types/drama'
 // from class.
 export const pairsWith: StrategyPair[] = [
   { a: 'tableaux-still-image', b: 'thought-tracking-tap-in' },
-  { a: 'tableaux-still-image', b: 'caption-making', why: 'A caption makes the group decide what their picture is really about.' },
+  {
+    a: 'tableaux-still-image',
+    b: 'caption-making',
+    why: 'A caption makes the group decide what their picture is really about.',
+  },
   { a: 'tableaux-still-image', b: 'sequenced-tableaux-storyboards' },
-  { a: 'role-on-the-wall', b: 'hot-seating', why: 'Build the character first, then interview them.' },
+  {
+    a: 'role-on-the-wall',
+    b: 'hot-seating',
+    why: 'Build the character first, then interview them.',
+  },
   { a: 'hot-seating', b: 'teacher-in-role' },
   { a: 'hot-seating', b: 'corridor-of-voices-voice-alley' },
   { a: 'teacher-in-role', b: 'news-reporting' },
@@ -22,7 +30,11 @@ export const pairsWith: StrategyPair[] = [
   { a: 'corridor-of-voices-voice-alley', b: 'thought-mapping-positioning' },
   { a: 'mirrors', b: 'pantomime' },
   { a: 'mirrors', b: 'magnetic-attraction' },
-  { a: 'forum-theatre', b: 'what-if', why: 'Both replay a scene with a different choice.' },
+  {
+    a: 'forum-theatre',
+    b: 'what-if',
+    why: 'Both replay a scene with a different choice.',
+  },
   { a: 'forum-theatre', b: 'rolling-theatre' },
   { a: 'what-if', b: 'flash-forward-flashback' },
   { a: 'choral-speaking-choral-reading', b: 'call-and-response' },

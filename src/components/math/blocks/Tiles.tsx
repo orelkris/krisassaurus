@@ -13,22 +13,20 @@ function Tiles({ items, onColor = false }: TilesProps) {
   const rows = items.some((tile) => tile.label) ? 3 : 2
 
   return (
-    <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+    <div className="grid grid-cols-1 gap-sm sm:grid-cols-2">
       {items.map((tile) => (
         <div
           key={tile.big}
-          className={`grid min-w-0 grid-rows-subgrid content-start gap-y-[3px] rounded-xl border border-gray-200 px-3 py-2.5 ${
-            onColor ? 'bg-white' : ''
+          className={`grid min-w-none grid-rows-subgrid content-start gap-y-xs rounded-card border border-line px-md py-sm ${
+            onColor ? 'bg-page' : ''
           }`}
           style={{ gridRow: `span ${rows}` }}
         >
-          {rows === 3 && (
-            <b className="text-[12.5px] font-bold">{tile.label}</b>
-          )}
-          <span className="text-[14.5px] font-semibold leading-snug">
+          {rows === 3 && <b className="text-xs font-bold">{tile.label}</b>}
+          <span className="text-sm font-semibold leading-snug">
             <MathText text={tile.big} />
           </span>
-          <span className="text-xs text-gray-500">
+          <span className="text-xs text-muted">
             <MathText text={tile.sub} />
           </span>
         </div>

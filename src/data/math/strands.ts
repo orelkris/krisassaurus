@@ -1,3 +1,4 @@
+import { strandColors } from '@/lib/curriculum'
 import type { MathStrand, TaughtStrandId } from '@/types/math'
 
 export const mathStrands: MathStrand[] = [
@@ -7,7 +8,7 @@ export const mathStrands: MathStrand[] = [
     name: 'Number',
     blurb:
       'Counting, place value, fractions and the four operations. The biggest strand: about a third of every grade.',
-    colors: { bg: '#DBEAFE', text: '#1E40AF', accent: '#3B82F6' },
+    colors: strandColors('B'),
   },
   {
     id: 'C',
@@ -15,7 +16,7 @@ export const mathStrands: MathStrand[] = [
     name: 'Algebra',
     blurb:
       'Patterns, equations, variables and coding. Students learn to spot a rule and describe it.',
-    colors: { bg: '#DCFCE7', text: '#166534', accent: '#22C55E' },
+    colors: strandColors('C'),
   },
   {
     id: 'D',
@@ -23,7 +24,7 @@ export const mathStrands: MathStrand[] = [
     name: 'Data',
     blurb:
       'Asking a question, collecting data, graphing it, and reasoning about chance.',
-    colors: { bg: '#FEF3C7', text: '#92400E', accent: '#F59E0B' },
+    colors: strandColors('D'),
   },
   {
     id: 'E',
@@ -31,7 +32,7 @@ export const mathStrands: MathStrand[] = [
     name: 'Spatial Sense',
     blurb:
       'Shapes, position and movement, and measuring: length, area, volume, angles and time.',
-    colors: { bg: '#FFE4E6', text: '#9F1239', accent: '#F43F5E' },
+    colors: strandColors('E'),
   },
   {
     id: 'F',
@@ -39,14 +40,14 @@ export const mathStrands: MathStrand[] = [
     name: 'Financial Literacy',
     blurb:
       'Money in Grades 1 to 3, then budgeting, saving and being a smart consumer from Grade 4.',
-    colors: { bg: '#CCFBF1', text: '#115E59', accent: '#14B8A6' },
+    colors: strandColors('F'),
   },
 ]
 
 // Strand A isn't taught on its own, so it has a card on the overview, not a page
 export const strandA = {
   name: 'Feeling capable in math',
-  colors: { bg: '#F3E8FF', text: '#6B21A8', accent: '#A855F7' },
+  colors: strandColors('A'),
   text: 'Strand A is not taught on its own. It runs through every other strand: students learn to manage the feelings that come with hard problems while they use the mathematical processes. The same skills help adults who feel unsure about math.',
   skills: [
     'Identify and manage emotions',

@@ -15,7 +15,7 @@ import {
 } from '@/data/math/expectations'
 import { useMathFilter } from '@/hooks/useMathFilter'
 
-const headingClass = 'text-sm font-semibold text-gray-900'
+const headingClass = 'text-sm font-semibold text-fg'
 
 const toFilter = ({ grade, strand }: CurriculumPick): MathFilter => ({
   grade,
@@ -85,10 +85,10 @@ function MathSidebar() {
 
         <Link
           to={mathPath({})}
-          className={`block py-1 text-sm transition-colors ${
+          className={`block py-xs text-sm transition-colors ${
             !filter.grade && !currentStrand
-              ? 'font-semibold text-gray-900'
-              : 'text-gray-500 hover:text-gray-900'
+              ? 'font-semibold text-fg'
+              : 'text-muted hover:text-fg'
           }`}
         >
           Overview

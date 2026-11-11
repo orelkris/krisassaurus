@@ -39,7 +39,7 @@ function StrandBadge({ strand, solid = false, size = 'sm' }: StrandBadgeProps) {
       }`}
       style={{
         backgroundColor: solid ? strand.colors.accent : strand.colors.bg,
-        color: solid ? '#fff' : strand.colors.text,
+        color: solid ? 'var(--color-on-primary)' : strand.colors.text,
       }}
     >
       {strand.id}
