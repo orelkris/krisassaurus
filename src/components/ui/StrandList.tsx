@@ -13,7 +13,6 @@ export interface StrandListRow {
 export interface StrandListItem {
   id: StrandId
   name: string
-  to: string
   rows: StrandListRow[]
   // Extra labelled groups of rows under the main ones, e.g. Topics
   groups?: { label: string; rows: StrandListRow[] }[]
@@ -41,8 +40,7 @@ function Row({ row }: { row: StrandListRow }) {
   )
 }
 
-// One box per strand, stacked: a header row (badge, name, chevron) that opens
-// the strand, then one row per part of it (e.g. its overall expectations).
+// One box per strand, stacked: a header row (badge and name), then one row per part of it (e.g. its overall expectations).
 // Each box sets data-strand, so its badge, codes and hovers take the strand's
 // colours from index.css. Each subject's Overview uses it for Strands
 function StrandList({ strands }: StrandListProps) {
@@ -54,17 +52,10 @@ function StrandList({ strands }: StrandListProps) {
           data-strand={strand.id}
           className="box overflow-hidden"
         >
-          <Link
-            to={strand.to}
-            className="row-md border-b border-line px-lg py-md transition-colors hover:bg-strand-bg"
-          >
+          <div className="row-md border-b border-line px-lg py-md">
             <StrandBadge strand={{ id: strand.id }} />
             <h3 className="heading-card min-w-none flex-1">{strand.name}</h3>
-            <ChevronRight
-              aria-hidden="true"
-              className="size-icon shrink-0 text-strand-text"
-            />
-          </Link>
+          </div>
           <div className="flex flex-col">
             {strand.rows.map((row) => (
               <Row key={row.to} row={row} />

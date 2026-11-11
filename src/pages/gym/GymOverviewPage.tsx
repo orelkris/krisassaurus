@@ -44,7 +44,6 @@ const strandItems: StrandListItem[] = strands.map((id) => {
   return {
     id,
     name: gym.strands[id].name,
-    to,
     rows,
     groups: topics.length
       ? [
