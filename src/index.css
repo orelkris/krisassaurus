@@ -86,10 +86,15 @@
   --spacing-count: 3.25rem; /* the count circle on a strand box */
   --spacing-button-col: 15rem; /* the button column of a strand box */
   --spacing-tabs: 7rem; /* room for the sticky strand tabs when jumping */
+  --spacing-chevron: 2rem; /* the round chevron on a big title */
+  --spacing-divider: 1.75rem; /* a short line between two things in a row */
+  --spacing-menu: 26rem; /* a dropdown menu */
+  --spacing-code-col: 6.875rem; /* the code column beside expectations */
 
   /* Widths for text that shouldn't run the full width */
   --container-narrow: 24rem;
   --container-text: 28rem;
+  --container-read: 40rem; /* expectation text: about 70 characters a line */
 }
 
 /* Spacing: one scale for gaps and padding. Each name works with any

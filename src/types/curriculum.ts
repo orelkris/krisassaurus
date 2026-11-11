@@ -35,6 +35,9 @@ export interface SpecificExpectation {
   shortName?: string
   // The "(e.g., …)" parts, in order
   examples: string[]
+  // Where each example sits in the description (characters before it), so
+  // a page can show it inline
+  exampleAt?: number[]
   prompts: Prompt[]
   // Strand A skills printed after the expectation, e.g. A1.3
   tags: string[]
