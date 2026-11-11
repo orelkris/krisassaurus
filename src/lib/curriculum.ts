@@ -99,3 +99,32 @@ export function curriculumPath(
   if (strand) return `/${subject}/strand/${strand.toLowerCase()}`
   return `/${subject}`
 }
+
+// What each grade says about one thing, merged so that grades next to each
+// other that say the same thing share a row: Grades 1–6, Grade 7, Grade 8.
+// Grades with nothing are left out
+export function mergeGrades<T>(
+  perGrade: { grade: number; entries: T[] }[]
+): { label: string; entries: T[] }[] {
+  const runs: { from: number; to: number; key: string; entries: T[] }[] = []
+  for (const { grade, entries } of perGrade) {
+    if (!entries.length) continue
+    const key = JSON.stringify(entries)
+    const last = runs[runs.length - 1]
+    if (last && last.key === key && last.to === grade - 1) last.to = grade
+    else runs.push({ from: grade, to: grade, key, entries })
+  }
+  return runs.map(({ from, to, entries }) => ({
+    label: from === to ? `Grade ${from}` : `Grades ${from}–${to}`,
+    entries,
+  }))
+}
+
+// A piece of text as part of an address, e.g. Healthy Eating → healthy-eating,
+// A1.1 → a1-1
+export function slug(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '')
+}

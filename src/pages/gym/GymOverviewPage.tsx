@@ -11,6 +11,7 @@ import {
   curriculumStats,
   gradesOf,
   overallsIn,
+  slug,
   specificsIn,
   strandsOf,
   topicsIn,
@@ -21,13 +22,6 @@ const stats = curriculumStats(gym)
 const year = getMinistryDocument(gym.documentSlug)?.year
 const strands = strandsOf(gym)
 const firstGrade = gradesOf(gym)[0]
-
-// A slug for a topic's place on the strand page, e.g. healthy-eating
-const slug = (text: string) =>
-  text
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)/g, '')
 
 // Strand A lists its skills (A1.1 to A1.6, the same in every grade); the other
 // strands list their overall expectations, and a strand with topics adds them

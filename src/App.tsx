@@ -34,6 +34,7 @@ import GymOverviewPage from '@/pages/gym/GymOverviewPage'
 import GymGradePage from '@/pages/gym/GymGradePage'
 import GymSpecificsPage from '@/pages/gym/GymSpecificsPage'
 import GymComparePage from '@/pages/gym/GymComparePage'
+import GymStrandPage from '@/pages/gym/GymStrandPage'
 import GymSidebar from '@/components/gym/GymSidebar'
 import { gymCurriculum } from '@/data/subjects/gym/curriculum'
 import MinistryDocumentsPage from '@/pages/resources/MinistryDocumentsPage'
@@ -137,7 +138,8 @@ function App() {
               path="grade/:grade/:code/:specific"
               element={<GymComparePage />}
             />
-            {/* Strand pages come in a later step */}
+            <Route path="strand/:strand" element={<GymStrandPage />} />
+            <Route path="strand/:strand/:code" element={<GymStrandPage />} />
             <Route
               path="*"
               element={<ComingSoon text="This page is next." />}

@@ -1,8 +1,13 @@
 import { Navigate, useParams } from 'react-router-dom'
-import CompareList, { type CompareRow } from '@/components/ui/CompareList'
+import CompareList from '@/components/ui/CompareList'
 import OverallHeader from '@/components/ui/OverallHeader'
 import { gymCurriculum as gym } from '@/data/subjects/gym/curriculum'
-import { curriculumPath, gradesOf, specificsIn } from '@/lib/curriculum'
+import {
+  curriculumPath,
+  gradesOf,
+  mergeGrades,
+  specificsIn,
+} from '@/lib/curriculum'
 import type { GymStrand } from '@/types/curriculum'
 
 // One specific expectation across every grade, e.g. /gym/grade/4/b1/b1.3.
@@ -35,18 +40,7 @@ function GymComparePage() {
   }))
 
   // Grades next to each other that say the same thing share a row
-  const runs: { from: number; to: number; key: string; row: CompareRow }[] = []
-  for (const { grade: g, entries } of grades) {
-    if (!entries.length) continue
-    const key = JSON.stringify(entries)
-    const last = runs[runs.length - 1]
-    if (last && last.key === key && last.to === g - 1) last.to = g
-    else runs.push({ from: g, to: g, key, row: { label: '', entries } })
-  }
-  const rows = runs.map(({ from, to, row }) => ({
-    ...row,
-    label: from === to ? `Grade ${from}` : `Grades ${from}–${to}`,
-  }))
+  const rows = mergeGrades(grades)
 
   const all = gradesOf(gym)
   return (
