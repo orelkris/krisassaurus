@@ -65,9 +65,9 @@ function SpecificList({ groups, showExamples = false }: SpecificListProps) {
               <div
                 key={item.code}
                 id={item.code.toLowerCase()}
-                className="flex scroll-mt-md flex-col gap-xs py-md sm:flex-row sm:gap-0"
+                className="flex scroll-mt-md flex-col gap-xs py-md sm:flex-row sm:gap-xl"
               >
-                <p className="pl-sm text-lg font-bold text-strand-text sm:w-code-col sm:shrink-0">
+                <p className="pl-sm text-lg font-bold text-strand-text sm:w-code-long sm:shrink-0">
                   {item.code}
                 </p>
                 <div className="col-sm max-w-read min-w-0 flex-1">

@@ -83,9 +83,13 @@
   --radius-badge: 0.5rem;
   --radius-row: 0.5rem; /* clickable rows, e.g. in the sidebar */
 
+  /* No space, e.g. left-none to line something up with its parent's edge */
+  --spacing-none: 0;
+
   /* Sizes of small fixed things */
   --spacing-badge: 2.25rem; /* a strand badge */
   --spacing-code: 2.75rem; /* the column for a code like B1 */
+  --spacing-code-long: 3.5rem; /* the column for a code like D3.4 */
   --spacing-icon-xs: 0.75rem; /* the × on a picked filter */
   --spacing-icon-sm: 0.875rem; /* small chevrons, e.g. in the navbar */
   --spacing-icon: 1.125rem; /* chevrons */
@@ -99,7 +103,6 @@
   --spacing-chevron: 2rem; /* the round chevron on a big title */
   --spacing-divider: 1.75rem; /* a short line between two things in a row */
   --spacing-menu: 26rem; /* a dropdown menu */
-  --spacing-code-col: 6.875rem; /* the code column beside expectations */
   --spacing-nav: 3.5rem; /* the navbar's height */
   --spacing-logo: 13rem; /* the site name's column in the navbar */
   --spacing-sidebar: 17rem; /* the sidebar column */

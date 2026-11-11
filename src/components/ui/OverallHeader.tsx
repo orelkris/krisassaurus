@@ -116,7 +116,7 @@ function OverallHeader({ back, code, name, items }: OverallHeaderProps) {
             )}
           </h1>
           {open && (
-            <div className="absolute top-full left-0 z-10 mt-sm w-menu max-w-full rounded-card border border-line bg-page p-xs shadow-menu">
+            <div className="absolute top-full left-none z-10 mt-sm w-menu max-w-full rounded-card border border-line bg-page p-xs shadow-menu">
               {items.map((item) =>
                 item.code === code ? (
                   <span
