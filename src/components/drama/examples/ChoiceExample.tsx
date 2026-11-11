@@ -80,7 +80,7 @@ const chairPoses: Record<
 // house chairs on a yellow background
 function Chair() {
   return (
-    <g fill="#CBA65C" aria-hidden="true">
+    <g fill="var(--color-scene-chair)" aria-hidden="true">
       <rect x={118} y={110} width={64} height={72} rx={8} />
       <rect x={108} y={182} width={84} height={11} rx={4} />
       <rect x={114} y={193} width={9} height={53} rx={4} />
@@ -126,12 +126,12 @@ function PickChoice({ example, colors }: ChoiceExampleProps) {
         {example.prompt}
       </p>
       <div
-        className="relative rounded-xl"
+        className="relative rounded-card"
         style={{ backgroundColor: colors.bg }}
       >
         <svg
           viewBox="0 0 300 260"
-          className="mx-auto block h-auto w-full max-w-[360px]"
+          className="mx-auto block h-auto w-full max-w-scene"
           role="img"
           aria-label={`A student answers with a chair: ${option.label}`}
         >
@@ -151,7 +151,7 @@ function PickChoice({ example, colors }: ChoiceExampleProps) {
         {talking && pose && option.line && (
           // The svg is centred and at most 360px wide, so the bubble is
           // placed on a box the same size
-          <div className="pointer-events-none absolute inset-0 mx-auto max-w-[360px]">
+          <div className="pointer-events-none absolute inset-none mx-auto max-w-scene">
             <SpeechBubble
               left={(pose.head.x / 300) * 100}
               top={((pose.head.y - 4) / 260) * 100}
@@ -197,7 +197,7 @@ function PollChoice({ example, colors }: ChoiceExampleProps) {
       <p className="font-semibold" style={{ color: colors.text }}>
         {example.prompt}
       </p>
-      <div className="rounded-xl" style={{ backgroundColor: colors.bg }}>
+      <div className="rounded-card" style={{ backgroundColor: colors.bg }}>
         <svg
           viewBox="0 0 560 200"
           className="block h-auto w-full"
@@ -228,7 +228,7 @@ function PollChoice({ example, colors }: ChoiceExampleProps) {
                   <g transform={`translate(${x} ${headTop - 28})`}>
                     <circle
                       r={17}
-                      fill="#fff"
+                      fill="var(--color-page)"
                       stroke={colors.accent}
                       strokeWidth={2}
                     />
@@ -241,7 +241,7 @@ function PollChoice({ example, colors }: ChoiceExampleProps) {
                       <rect x={-8} y={-14} width={6} height={13} rx={3} />
                       <path
                         d="M0 1.5 H8 M0 5 H8 M0 8.5 H8"
-                        stroke="#fff"
+                        stroke="var(--color-page)"
                         strokeWidth={1.2}
                       />
                     </g>

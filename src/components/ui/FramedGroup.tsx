@@ -13,7 +13,11 @@ interface FramedGroupProps {
 }
 
 // For frames that belong to no strand or group
-const neutralTone = { bg: '#F3F4F6', text: '#111827', accent: '#9CA3AF' }
+const neutralTone = {
+  bg: 'var(--color-soft)',
+  text: 'var(--color-fg)',
+  accent: 'var(--color-faint)',
+}
 
 // A bordered box with a coloured section heading centred on its top border. Like Container, it pads its content and spaces its children
 // equally. It is a fieldset, so a long label wraps onto more lines and pushes

@@ -70,7 +70,7 @@ function Speakers({ columns, people, current, colors }: SpeakersProps) {
   return (
     <div className="col-stack">
       <div
-        className="relative rounded-xl"
+        className="relative rounded-card"
         style={{ backgroundColor: colors.bg }}
       >
         <svg
@@ -194,16 +194,16 @@ function PhrasesExample({ example, colors }: PhrasesExampleProps) {
         </>
       }
     >
-      <div className="grid gap-3 sm:grid-cols-2">
+      <div className="grid gap-md sm:grid-cols-2">
         {example.columns.map((column, c) => (
-          <div key={column.heading} className="col-stack min-w-0">
+          <div key={column.heading} className="col-stack min-w-none">
             <h3 className="text-label">{column.heading}</h3>
             {column.phrases.map((phrase, r) => {
               const on = current === `${c}-${r}`
               return (
                 <p
                   key={phrase}
-                  className={`rounded-[10px] border border-l-[3px] px-3 py-2.5 text-sm ${on ? 'font-semibold' : 'border-gray-200'}`}
+                  className={`rounded-row border border-l-3 px-md py-sm text-sm ${on ? 'font-semibold' : 'border-line'}`}
                   style={
                     on
                       ? {

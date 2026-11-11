@@ -43,10 +43,8 @@ const toFilter = ({ grade, strand }: CurriculumPick): DramaFilter => ({
 })
 
 const linkClass = (isCurrent: boolean) =>
-  `flex items-center justify-between gap-1.5 py-1 text-sm transition-colors ${
-    isCurrent
-      ? 'font-semibold text-gray-900'
-      : 'text-gray-500 hover:text-gray-900'
+  `flex items-center justify-between gap-xs py-xs text-sm transition-colors ${
+    isCurrent ? 'font-semibold text-fg' : 'text-muted hover:text-fg'
   }`
 
 function Chevron({ open }: { open: boolean }) {
@@ -137,7 +135,7 @@ function DramaSidebar() {
   const closeMobile = () => setIsMobileOpen(false)
 
   return (
-    <div className="lg:pr-4">
+    <div className="lg:pr-md">
       <MobileSidebarToggle
         label="Browse Drama"
         current={currentLabel}
@@ -146,9 +144,9 @@ function DramaSidebar() {
       />
 
       <div
-        className={`${isMobileOpen ? 'block pt-3' : 'hidden'} lg:block lg:pt-0`}
+        className={`${isMobileOpen ? 'block pt-md' : 'hidden'} lg:block lg:pt-none`}
       >
-        <p className="text-label mb-1.5">Drama</p>
+        <p className="text-label mb-xs">Drama</p>
 
         <Link
           to="/drama"
@@ -161,21 +159,21 @@ function DramaSidebar() {
         <button
           onClick={() => setIsStrategiesOpen(!isStrategiesOpen)}
           aria-expanded={isStrategiesOpen}
-          className="mt-2 flex w-full cursor-pointer items-center justify-between py-1 text-sm font-semibold text-gray-900"
+          className="mt-sm flex w-full cursor-pointer items-center justify-between py-xs text-sm font-semibold text-fg"
         >
           Strategies
           <Chevron open={isStrategiesOpen} />
         </button>
 
         {isStrategiesOpen && (
-          <div className="pl-2.5">
+          <div className="pl-sm">
             <input
               type="search"
               value={query}
               onChange={(event) => setQuery(event.target.value)}
               placeholder="Find a strategy"
               aria-label="Find a strategy"
-              className="my-2 w-full rounded-lg border border-gray-200 px-2.5 py-1.5 text-[13px] placeholder:text-gray-400 focus:border-gray-400 focus:outline-none"
+              className="my-sm w-full rounded-row border border-line px-sm py-xs text-sm placeholder:text-faint focus:border-faint focus:outline-none"
             />
 
             <Link
@@ -206,11 +204,11 @@ function DramaSidebar() {
                       setToggledGroups({ ...toggledGroups, [group.id]: !open })
                     }
                     aria-expanded={open}
-                    className="row-tight w-full cursor-pointer justify-between py-1 text-left text-[13px] text-gray-500 hover:text-gray-900"
+                    className="row-tight w-full cursor-pointer justify-between py-xs text-left text-sm text-muted hover:text-fg"
                   >
                     <span className="row-stack">
                       <span
-                        className="h-2 w-2 shrink-0 rounded-full"
+                        className="size-dot-lg shrink-0 rounded-pill"
                         style={{ backgroundColor: group.colors.accent }}
                       />
                       {group.name}
@@ -222,13 +220,13 @@ function DramaSidebar() {
                   </button>
 
                   {open && (
-                    <div className="mb-1.5 ml-1 border-l border-gray-200 pl-4">
+                    <div className="mb-xs ml-xs border-l border-line pl-md">
                       {items.map((strategy) =>
                         // Greyed-out strategies show in grey and can't be opened
                         isGreyedOut(strategy.slug) ? (
                           <span
                             key={strategy.slug}
-                            className="block py-0.5 text-[13px] text-gray-300"
+                            className="block py-px text-sm text-faint"
                           >
                             {strategy.name}
                           </span>
@@ -237,10 +235,10 @@ function DramaSidebar() {
                             key={strategy.slug}
                             to={`/drama/strategies/${strategy.slug}`}
                             onClick={closeMobile}
-                            className={`block py-0.5 text-[13px] transition-colors ${
+                            className={`block py-px text-sm transition-colors ${
                               strategy.slug === currentStrategy?.slug
-                                ? 'font-semibold text-gray-900'
-                                : 'text-gray-500 hover:text-gray-900'
+                                ? 'font-semibold text-fg'
+                                : 'text-muted hover:text-fg'
                             }`}
                           >
                             {strategy.name}
@@ -257,14 +255,14 @@ function DramaSidebar() {
               !strategies.some((s) =>
                 s.name.toLowerCase().includes(search)
               ) && (
-                <p className="py-1 text-[13px] text-gray-400">
+                <p className="py-xs text-sm text-faint">
                   No strategy matches that.
                 </p>
               )}
           </div>
         )}
 
-        <div className="col-section mt-4 mb-2">
+        <div className="col-section mt-md mb-sm">
           <CurriculumFilter
             grades={dramaGrades}
             strands={dramaStrands}
@@ -287,14 +285,14 @@ function DramaSidebar() {
         <button
           onClick={() => setIsSubjectsOpen(!isSubjectsOpen)}
           aria-expanded={isSubjectsOpen}
-          className="mt-2 flex w-full cursor-pointer items-center justify-between py-1 text-sm font-semibold text-gray-900"
+          className="mt-sm flex w-full cursor-pointer items-center justify-between py-xs text-sm font-semibold text-fg"
         >
           Subjects
           <Chevron open={isSubjectsOpen} />
         </button>
 
         {isSubjectsOpen && (
-          <div className="pl-2.5">
+          <div className="pl-sm">
             {dramaSubjects.map((subject) => (
               <Link
                 key={subject.slug}
@@ -311,10 +309,10 @@ function DramaSidebar() {
 
         {curriculumDocuments.length > 0 && (
           <>
-            <p className="mt-3 py-1 text-sm font-semibold text-gray-900">
+            <p className="mt-md py-xs text-sm font-semibold text-fg">
               Curriculum
             </p>
-            <div className="pl-2.5">
+            <div className="pl-sm">
               {curriculumDocuments.map((document) => (
                 <Link
                   key={document.slug}

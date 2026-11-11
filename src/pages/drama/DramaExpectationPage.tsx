@@ -19,7 +19,7 @@ import {
   getDramaStrand,
 } from '@/data/drama/curriculum/strands'
 
-const listClass = 'flex list-disc flex-col gap-1.5 pl-[18px] text-sm'
+const listClass = 'flex list-disc flex-col gap-xs pl-md text-sm'
 
 const capitalize = (text: string) =>
   text.charAt(0).toUpperCase() + text.slice(1)
@@ -90,7 +90,7 @@ function DramaExpectationPage() {
             <span>Official wording, Ontario curriculum (2009)</span>
             <Link
               to="/resources/documents/the-arts-1-8"
-              className="text-gray-500 underline underline-offset-[3px] hover:text-gray-900"
+              className="text-muted underline underline-offset-3 hover:text-fg"
             >
               Curriculum PDF, page {page}
             </Link>
@@ -98,7 +98,7 @@ function DramaExpectationPage() {
         }
       >
         <p
-          className="border-l-4 py-1 pl-4 text-xl leading-snug font-semibold text-gray-900"
+          className="border-l-4 py-xs pl-md text-xl leading-snug font-semibold text-fg"
           style={{ borderColor: strand.colors.accent }}
         >
           {capitalize(expectation.text)}
@@ -141,7 +141,7 @@ function DramaExpectationPage() {
               {details.prompts.map((prompt) => (
                 <li key={prompt.text}>
                   {prompt.label && (
-                    <span className="mr-1.5">
+                    <span className="mr-xs">
                       <Pill>{prompt.label}</Pill>
                     </span>
                   )}

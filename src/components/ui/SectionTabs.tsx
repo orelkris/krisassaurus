@@ -68,7 +68,7 @@ function SectionTabs({
                 isActive ? 'text-fg' : 'text-muted hover:text-fg'
               }`}
               style={{
-                boxShadow: `inset 0 -3px 0 ${isActive ? (tab.color ?? '#111827') : 'transparent'}`,
+                boxShadow: `inset 0 -3px 0 ${isActive ? (tab.color ?? 'var(--color-fg)') : 'transparent'}`,
               }}
             >
               {tab.label}

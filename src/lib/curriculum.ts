@@ -1,3 +1,4 @@
+import { colorSet, type ColorSet } from '@/lib/colors'
 import type {
   Curriculum,
   OverallExpectation,
@@ -130,17 +131,7 @@ export function slug(text: string): string {
 }
 
 // A strand's colours as CSS variables, for components that take colours as
-// props (Math, Drama). The values live in index.css, so every subject's
-// strand B is the same green, and a theme only changes index.css
-export function strandColors(id: StrandId): {
-  bg: string
-  text: string
-  accent: string
-} {
-  const letter = id.toLowerCase()
-  return {
-    bg: `var(--color-strand-${letter}-bg)`,
-    text: `var(--color-strand-${letter}-text)`,
-    accent: `var(--color-strand-${letter})`,
-  }
+// props (Math, Drama). Every subject's strand B is the same green
+export function strandColors(id: StrandId): ColorSet {
+  return colorSet(`strand-${id.toLowerCase()}`)
 }

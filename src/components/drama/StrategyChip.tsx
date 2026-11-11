@@ -12,11 +12,11 @@ function StrategyChip({ strategy }: StrategyChipProps) {
   return (
     <Link
       to={`/drama/strategies/${strategy.slug}`}
-      className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full px-2.5 py-0.5 text-xs font-medium hover:brightness-95"
+      className="inline-flex items-center gap-xs whitespace-nowrap rounded-pill px-sm py-px text-xs font-medium hover:brightness-95"
       style={{ backgroundColor: colors.bg, color: colors.text }}
     >
       <span
-        className="h-2 w-2 rounded-full"
+        className="size-dot-lg rounded-pill"
         style={{ backgroundColor: colors.accent }}
       />
       {strategy.name}

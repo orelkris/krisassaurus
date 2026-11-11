@@ -30,6 +30,41 @@
   --color-link-line: #a5b4fc; /* the line that grows under a link */
   --color-danger: #ef4444; /* warnings: a timer running out, PDF badges */
 
+  /* Drama's strands (B1–B3 of The Arts): each with a tint and dark text */
+  --color-drama-b1: #7c3aed;
+  --color-drama-b1-bg: #f1ebfe;
+  --color-drama-b1-text: #5b21b6;
+  --color-drama-b2: #c0267a;
+  --color-drama-b2-bg: #fce8f1;
+  --color-drama-b2-text: #9d174d;
+  --color-drama-b3: #4f46e5;
+  --color-drama-b3-bg: #e8e8fd;
+  --color-drama-b3-text: #3730a3;
+
+  /* Drama's strategy groups: Role Play, Tableaux, Voice and Sound,
+     Movement, Scene Work and Forms */
+  --color-group-r: #22c55e;
+  --color-group-r-bg: #dcfce7;
+  --color-group-r-text: #166534;
+  --color-group-t: #eab308;
+  --color-group-t-bg: #fef9c3;
+  --color-group-t-text: #854d0e;
+  --color-group-v: #06b6d4;
+  --color-group-v-bg: #cffafe;
+  --color-group-v-text: #155e75;
+  --color-group-m: #d946ef;
+  --color-group-m-bg: #fae8ff;
+  --color-group-m-text: #86198f;
+  --color-group-s: #6b7280;
+  --color-group-s-bg: #e5e7eb;
+  --color-group-s-text: #374151;
+
+  /* Drawings in Drama's example scenes */
+  --color-scene-roof: #b45309;
+  --color-scene-wood: #a16207;
+  --color-scene-chair: #cba65c;
+  --color-scene-cheek: #fda4af; /* the cheeks on a drawn figure */
+
   /* Worked examples in Math: a right and a wrong answer, a highlighted
      digit, and the final answer */
   --color-correct: #166534;
@@ -172,6 +207,7 @@
   --container-text: 28rem;
   --container-read: 40rem; /* expectation text: about 70 characters a line */
   --container-lead: 36rem; /* the grey paragraph under a title: about 70 characters a line */
+  --container-scene: 22.5rem; /* a drawn scene in a Drama example */
   --container-bubble: 12.5rem; /* a speech bubble */
   --container-table: 35rem; /* the narrowest a wide table gets before it scrolls */
   --container-site: 72rem; /* the whole site (max-w-page would be the page spacing) */

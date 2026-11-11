@@ -1,3 +1,4 @@
+import { colorSet } from '@/lib/colors'
 import type { DramaStrand, DramaStrandId } from '@/types/drama'
 
 export const dramaGrades = [1, 2, 3, 4, 5, 6, 7, 8]
@@ -9,7 +10,7 @@ export const dramaStrands: DramaStrand[] = [
     name: 'Creating and Presenting',
     blurb:
       'Making drama: role play, the elements of drama, and planning and sharing work with an audience.',
-    colors: { bg: '#F1EBFE', text: '#5B21B6', accent: '#7C3AED' },
+    colors: colorSet('drama-b1'),
   },
   {
     id: 'B2',
@@ -17,7 +18,7 @@ export const dramaStrands: DramaStrand[] = [
     name: 'Reflecting, Responding, and Analysing',
     blurb:
       'Responding to drama: personal reactions, drama vocabulary, and strengths and next steps.',
-    colors: { bg: '#FCE8F1', text: '#9D174D', accent: '#C0267A' },
+    colors: colorSet('drama-b2'),
   },
   {
     id: 'B3',
@@ -25,7 +26,7 @@ export const dramaStrands: DramaStrand[] = [
     name: 'Exploring Forms and Cultural Contexts',
     blurb:
       'Drama and theatre forms, and the place of drama in communities past and present.',
-    colors: { bg: '#E8E8FD', text: '#3730A3', accent: '#4F46E5' },
+    colors: colorSet('drama-b3'),
   },
 ]
 

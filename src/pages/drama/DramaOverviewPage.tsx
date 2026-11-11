@@ -104,7 +104,7 @@ function DramaOverviewPage() {
               <span className="text-note">Drama &amp;</span>
               <h3 className="heading-card">{subject.name}</h3>
               <p className="text-small">{subject.intro}</p>
-              <p className="text-note mt-auto pt-2">Coming soon</p>
+              <p className="text-note mt-auto pt-sm">Coming soon</p>
             </Link>
           ))}
         </div>

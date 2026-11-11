@@ -59,8 +59,20 @@ function Figure({
         />
         <circle cx={-8} cy={-112} r={3} fill={colors.line} />
         <circle cx={8} cy={-112} r={3} fill={colors.line} />
-        <circle cx={-14} cy={-103} r={4} fill="#FDA4AF" opacity={0.7} />
-        <circle cx={14} cy={-103} r={4} fill="#FDA4AF" opacity={0.7} />
+        <circle
+          cx={-14}
+          cy={-103}
+          r={4}
+          fill="var(--color-scene-cheek)"
+          opacity={0.7}
+        />
+        <circle
+          cx={14}
+          cy={-103}
+          r={4}
+          fill="var(--color-scene-cheek)"
+          opacity={0.7}
+        />
         <path
           d="M-6 -103 Q0 -97 6 -103"
           fill="none"

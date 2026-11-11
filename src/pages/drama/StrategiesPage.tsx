@@ -38,7 +38,7 @@ function StrategiesPage() {
       <PageHeader
         above={
           <Breadcrumb
-            className="text-gray-900"
+            className="text-fg"
             items={[{ label: 'Drama' }, { label: 'Strategies' }]}
           />
         }

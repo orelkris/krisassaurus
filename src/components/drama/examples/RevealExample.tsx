@@ -65,9 +65,9 @@ function RevealExample({ example, colors }: RevealExampleProps) {
           return (
             <li
               key={card.label}
-              className="col-tight rounded-xl border px-3.5 py-2.5 transition-all duration-300"
+              className="col-tight rounded-card border px-md py-sm transition-all duration-300"
               style={{
-                borderColor: on ? colors.accent : '#E5E7EB',
+                borderColor: on ? colors.accent : 'var(--color-line)',
                 backgroundColor: on ? colors.bg : undefined,
                 opacity: dim ? 0.2 : 1,
                 transform: dim ? 'translateY(4px)' : undefined,

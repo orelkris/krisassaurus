@@ -1,3 +1,4 @@
+import { colorSet } from '@/lib/colors'
 import type { StrategyGroup, StrategyGroupId } from '@/types/drama'
 
 export const strategyGroups: StrategyGroup[] = [
@@ -6,7 +7,7 @@ export const strategyGroups: StrategyGroup[] = [
     code: 'R',
     name: 'Role Play',
     blurb: 'Students step into a character and speak or act as them.',
-    colors: { bg: '#DCFCE7', text: '#166534', accent: '#22C55E' },
+    colors: colorSet('group-r'),
     defaultFacts: {
       time: '10–15 min',
       grouping: 'Whole class or small groups',
@@ -18,7 +19,7 @@ export const strategyGroups: StrategyGroup[] = [
     code: 'T',
     name: 'Tableaux',
     blurb: 'Frozen pictures made with bodies to show a moment or an idea.',
-    colors: { bg: '#FEF9C3', text: '#854D0E', accent: '#EAB308' },
+    colors: colorSet('group-t'),
     defaultFacts: {
       time: '5–10 min',
       grouping: 'Groups of 3–5',
@@ -30,7 +31,7 @@ export const strategyGroups: StrategyGroup[] = [
     code: 'V',
     name: 'Voice and Sound',
     blurb: 'Voices, sound and rhythm build atmosphere and meaning.',
-    colors: { bg: '#CFFAFE', text: '#155E75', accent: '#06B6D4' },
+    colors: colorSet('group-v'),
     defaultFacts: {
       time: '5–10 min',
       grouping: 'Whole class',
@@ -42,7 +43,7 @@ export const strategyGroups: StrategyGroup[] = [
     code: 'M',
     name: 'Movement',
     blurb: 'Bodies in motion express ideas without relying on words.',
-    colors: { bg: '#FAE8FF', text: '#86198F', accent: '#D946EF' },
+    colors: colorSet('group-m'),
     defaultFacts: {
       time: '5–10 min',
       grouping: 'Pairs or whole class',
@@ -54,7 +55,7 @@ export const strategyGroups: StrategyGroup[] = [
     code: 'S',
     name: 'Scene Work and Forms',
     blurb: 'Short scenes and theatre forms to explore a story or problem.',
-    colors: { bg: '#E5E7EB', text: '#374151', accent: '#6B7280' },
+    colors: colorSet('group-s'),
     defaultFacts: {
       time: '15–20 min',
       grouping: 'Small groups',

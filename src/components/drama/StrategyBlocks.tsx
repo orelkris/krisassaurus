@@ -39,7 +39,7 @@ function StrategyBlocks({
         }
         if (block.type === 'bullets') {
           return (
-            <ul key={index} className="col-tight list-disc pl-5">
+            <ul key={index} className="col-tight list-disc pl-lg">
               {block.items.map((item) => (
                 <li key={item}>{item}</li>
               ))}

@@ -163,7 +163,7 @@ function SequenceExample({ example, colors }: SequenceExampleProps) {
         </p>
       )}
       <div
-        className="relative rounded-xl"
+        className="relative rounded-card"
         style={{ backgroundColor: colors.bg }}
       >
         <svg
@@ -198,7 +198,10 @@ function SequenceExample({ example, colors }: SequenceExampleProps) {
                 y={190}
                 scale={0.62}
                 label={example.walker?.label}
-                colors={{ body: '#EF4444', line: '#EF4444' }}
+                colors={{
+                  body: 'var(--color-danger)',
+                  line: 'var(--color-danger)',
+                }}
               />
             </g>
           )}

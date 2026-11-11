@@ -13,11 +13,11 @@ const people = [
 ]
 
 // The roof's back row is a darker brown, so it reads as the house
-const rearColor = '#B45309'
+const rearColor = 'var(--color-scene-roof)'
 
 function Chair({ back, seat }: { back: number; seat: number }) {
   return (
-    <g fill="#A16207" opacity={0.55} aria-hidden="true">
+    <g fill="var(--color-scene-wood)" opacity={0.55} aria-hidden="true">
       <rect x={back} y={150} width={8} height={58} rx={3} />
       <rect x={seat} y={200} width={68} height={9} rx={3} />
       <rect x={seat + 4} y={209} width={7} height={49} rx={3} />
@@ -88,7 +88,7 @@ function SummerHouseScene({ colors, active, faded, onTap }: SceneProps) {
         {/* C and D's joined hands, and the red ball B hands to A */}
         <circle cx={235} cy={65} r={8} fill={rearColor} />
         <circle cx={245} cy={65} r={8} fill={rearColor} />
-        <circle cx={240} cy={204} r={9} fill="#EF4444" />
+        <circle cx={240} cy={204} r={9} fill="var(--color-danger)" />
       </g>
     </svg>
   )

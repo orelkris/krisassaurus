@@ -13,7 +13,7 @@ function SubjectPage() {
     <>
       <header className="col-stack">
         <Breadcrumb
-          className="text-gray-900"
+          className="text-fg"
           items={[
             { label: 'Drama' },
             { label: 'Subjects' },

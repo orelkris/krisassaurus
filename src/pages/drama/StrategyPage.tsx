@@ -46,7 +46,7 @@ function StrategyPage() {
       <PageHeader
         above={
           <Breadcrumb
-            className="text-gray-900"
+            className="text-fg"
             items={[
               { label: 'Drama' },
               { label: 'Strategies' },
@@ -93,7 +93,7 @@ function StrategyPage() {
           </FramedGroup>
         ))
       ) : (
-        <p className="text-small max-w-prose rounded-xl border border-dashed border-gray-200 pad-md">
+        <p className="text-small max-w-read rounded-card border border-dashed border-line pad-md">
           This page is still being written.
         </p>
       )}
@@ -117,7 +117,7 @@ function StrategyPage() {
             {pairs.map(({ strategy: paired, why }) => (
               <li
                 key={paired.slug}
-                className="flex flex-wrap items-center gap-x-2 gap-y-1"
+                className="flex flex-wrap items-center gap-x-sm gap-y-xs"
               >
                 <StrategyChip strategy={paired} />
                 {why && <span className="text-small">{why}</span>}

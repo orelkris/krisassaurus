@@ -97,7 +97,7 @@ function SceneExample({ example, colors }: SceneExampleProps) {
       }
     >
       <div
-        className="relative rounded-xl"
+        className="relative rounded-card"
         style={{ backgroundColor: colors.bg }}
       >
         <Drawing
@@ -109,7 +109,7 @@ function SceneExample({ example, colors }: SceneExampleProps) {
         {count && (
           <span
             aria-live="polite"
-            className="pointer-events-none absolute top-3 right-4 text-[28px] font-extrabold"
+            className="pointer-events-none absolute top-md right-md text-3xl font-extrabold"
             style={{ color: colors.text }}
           >
             {count}
@@ -122,7 +122,7 @@ function SceneExample({ example, colors }: SceneExampleProps) {
         )}
       </div>
       {heard.length > 0 && (
-        <ol className="col-tight list-decimal pl-5 text-sm">
+        <ol className="col-tight list-decimal pl-lg text-sm">
           {heard.map((key) => {
             const members = people.filter(
               (item) => (item.pair ?? item.id) === key

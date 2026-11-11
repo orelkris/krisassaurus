@@ -25,7 +25,7 @@ function ExampleBox({
       // Softened like FramedGroup's coloured frames
       style={{ borderColor: `color-mix(in srgb, ${accent} 25%, white)` }}
     >
-      <div className="flex flex-wrap items-start justify-between gap-3">
+      <div className="flex flex-wrap items-start justify-between gap-md">
         <div className="col-tight">
           <h2 className="heading-section">{title}</h2>
           {note && <p className="text-small">{note}</p>}
