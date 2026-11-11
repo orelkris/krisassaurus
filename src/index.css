@@ -2,14 +2,23 @@
 
 @theme {
   --font-sans: 'Lexend', ui-sans-serif, system-ui, sans-serif;
+
+  /* Tailwind's own colours, font sizes, corners, shadows and numbered
+     sizes are switched off, so only the names below work. A class like
+     text-gray-500 or p-4 now does nothing; npm run check:tokens lists any */
+  --color-*: initial;
+  --text-*: initial;
+  --radius-*: initial;
+  --shadow-*: initial;
+  --spacing: initial;
 }
 
 /* ------------------------------------------------------------------------
    Design tokens. Every colour, size and gap the site uses gets a name here,
    and pages and components use only these names. To change the look (or
    add a theme later), change the values here and nothing else.
-   Tailwind's own colours and sizes still work for now; they get switched
-   off once every page uses these names.
+   Tailwind's own colours and sizes are switched off (see the @theme
+   block above), so these are the only ones.
    ------------------------------------------------------------------------ */
 @theme static {
   /* Text, lines and backgrounds. fg = foreground, the main text colour */
