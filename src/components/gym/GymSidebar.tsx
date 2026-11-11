@@ -40,10 +40,13 @@ function path({ grade, strand }: CurriculumPick) {
   return curriculumPath(gym.subject, { strand: id })
 }
 
-// Gym's sidebar: the shared By grade / By strand filter
+// Gym's sidebar: Overview, then the shared By grade / By strand filter
 function GymSidebar() {
+  const { pathname } = useLocation()
+  const overviewPath = curriculumPath(gym.subject, {})
   return (
     <CurriculumFilter
+      overview={{ to: overviewPath, isCurrent: pathname === overviewPath }}
       grades={gradesOf(gym)}
       strands={strands.map((id) => ({ id, name: gym.strands[id].name }))}
       picked={usePick()}

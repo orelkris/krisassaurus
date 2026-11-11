@@ -91,7 +91,6 @@ function GymStrandPage() {
     <div data-strand={strand} className="col-xl">
       <div className="col-md">
         <OverallHeader
-          back={{ label: 'Gym', to: curriculumPath(gym.subject, {}) }}
           code={strand}
           name={gym.strands[strand].name}
           items={[]}

@@ -11,8 +11,9 @@ export interface OverallMenuItem {
 }
 
 interface OverallHeaderProps {
-  // e.g. "Overall Expectations", and where it goes
-  back: { label: string; to: string }
+  // e.g. "Overall Expectations", and where it goes. Without it the title
+  // stands alone (the strand page, which the sidebar already leads back from)
+  back?: { label: string; to: string }
   code: string
   name?: string
   // The strand's overall expectations, for the menu on the title. With one
@@ -20,7 +21,7 @@ interface OverallHeaderProps {
   items: OverallMenuItem[]
 }
 
-// The top of a specific expectations page: a back link, then the overall's
+// The top of a specific expectations page: a back link (optional), then the overall's
 // code and name as a big title. The title opens a menu of the strand's other
 // overalls. The back link sits beside the title with a line between them;
 // when the title doesn't fit on that line, the back link moves above it.
@@ -41,7 +42,7 @@ function OverallHeader({ back, code, name, items }: OverallHeaderProps) {
       requestAnimationFrame(() => {
         const title = titleRef.current
         const link = row.firstElementChild as HTMLElement | null
-        if (title && link)
+        if (title && link && link !== title)
           setStacked(title.offsetTop > link.offsetTop + link.offsetHeight / 2)
       })
     }
@@ -86,18 +87,22 @@ function OverallHeader({ back, code, name, items }: OverallHeaderProps) {
 
   return (
     <div ref={rowRef} className="flex flex-wrap items-center gap-x-md gap-y-sm">
-      <Link
-        to={back.to}
-        className="-ml-sm row-xs shrink-0 rounded-row px-sm py-xs text-sm font-semibold text-strand-text transition-colors hover:bg-soft"
-      >
-        <ChevronLeft aria-hidden="true" className="size-icon" />
-        {back.label}
-      </Link>
-      {/* The line between them; gone once the title wraps below */}
-      <span
-        aria-hidden="true"
-        className={`h-divider w-px bg-line ${stacked ? 'hidden' : 'hidden sm:block'}`}
-      />
+      {back && (
+        <>
+          <Link
+            to={back.to}
+            className="-ml-sm row-xs shrink-0 rounded-row px-sm py-xs text-sm font-semibold text-strand-text transition-colors hover:bg-soft"
+          >
+            <ChevronLeft aria-hidden="true" className="size-icon" />
+            {back.label}
+          </Link>
+          {/* The line between them; gone once the title wraps below */}
+          <span
+            aria-hidden="true"
+            className={`h-divider w-px bg-line ${stacked ? 'hidden' : 'hidden sm:block'}`}
+          />
+        </>
+      )}
       <div ref={titleRef} className="relative min-w-0 basis-full sm:basis-auto">
         <div ref={menuRef}>
           <h1 className="heading-page text-balance">

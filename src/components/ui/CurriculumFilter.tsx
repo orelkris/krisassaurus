@@ -48,6 +48,8 @@ interface CurriculumFilterProps {
   // The page for a pick
   path: (pick: CurriculumPick) => string
   subList?: FilterSubList
+  // A link to the subject's overview, above By grade
+  overview?: { to: string; isCurrent: boolean }
 }
 
 const headingClass = 'text-sm font-semibold text-fg'
@@ -202,7 +204,7 @@ function SubList({ subList, colors }: SubListProps) {
 }
 
 // The By grade and By strand groups of a subject's sidebar. Pick a grade, a
-// strand, or both; clicking a picked item again unpicks it and keeps the
+// strand, or both (or the subject's Overview, when given); clicking a picked item again unpicks it and keeps the
 // other. Desktop lists rows; phones show squares, which are easier to tap.
 // Each subject adds its own groups around it (Math: Articles; Drama:
 // Strategies), and the sidebar's Container spaces them all equally
@@ -213,6 +215,7 @@ function CurriculumFilter({
   count,
   path,
   subList,
+  overview,
 }: CurriculumFilterProps) {
   const gradePath = (grade: number) =>
     path({
@@ -222,6 +225,18 @@ function CurriculumFilter({
 
   return (
     <>
+      {overview && (
+        <Link
+          to={overview.to}
+          aria-current={overview.isCurrent ? 'page' : undefined}
+          className={`-mx-sm rounded-row px-sm py-xs ${headingClass} transition-colors ${
+            overview.isCurrent ? 'bg-soft' : 'hover:bg-soft'
+          }`}
+        >
+          Overview
+        </Link>
+      )}
+
       <div className="col-xs">
         <p className={headingClass}>By grade</p>
         <div className="grid grid-cols-4 gap-sm pl-sm lg:hidden">
