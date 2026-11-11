@@ -142,7 +142,7 @@ function GymSpecificsPage() {
     : [{ items: specifics.map(([c, s]) => item(c, s)) }]
 
   return (
-    <div data-strand={strand} className="col-xl">
+    <div data-strand={strand} className="contents">
       <div className="col-md">
         <OverallHeader
           back={{

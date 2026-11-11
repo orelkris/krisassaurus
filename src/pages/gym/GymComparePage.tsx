@@ -44,7 +44,7 @@ function GymComparePage() {
 
   const all = gradesOf(gym)
   return (
-    <div data-strand={strand} className="col-xl">
+    <div data-strand={strand} className="contents">
       <OverallHeader
         back={{
           label: `Grade ${grade}`,
