@@ -16,7 +16,7 @@ function MinistryDocumentsPage() {
     : documentGroups
 
   return (
-    <div className="col-page">
+    <>
       <ResourcesHeader
         activeTab="ministry"
         intro="Ontario curriculum and assessment documents I use. Each one opens as a PDF in a new tab, with a link to the ministry's official page."
@@ -38,7 +38,7 @@ function MinistryDocumentsPage() {
           </section>
         )
       })}
-    </div>
+    </>
   )
 }
 

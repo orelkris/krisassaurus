@@ -27,7 +27,7 @@ function DocumentPage() {
   ].filter((fact): fact is [string, string] => !!fact[1])
 
   return (
-    <div className="col-page flex-1">
+    <>
       <Breadcrumb
         className="text-gray-900"
         items={[
@@ -43,7 +43,7 @@ function DocumentPage() {
           <ComingSoon text="I haven't added this document yet." />
         </>
       ) : (
-        <div className="col-page min-w-0">
+        <>
           <header className="col-stack">
             <p className="text-label">
               Ontario Ministry of Education · {group?.name}
@@ -141,9 +141,9 @@ function DocumentPage() {
               )}
             </div>
           )}
-        </div>
+        </>
       )}
-    </div>
+    </>
   )
 }
 

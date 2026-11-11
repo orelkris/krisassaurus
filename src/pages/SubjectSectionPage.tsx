@@ -18,15 +18,13 @@ function SubjectSectionPage() {
       subject={section.slug}
       scrollable
     >
-      <div className="col-page flex-1">
-        <h1 className="heading-page">{section.name}</h1>
-        <CurriculumBox subject={section.slug} />
-        <ComingSoon
-          title="Coming soon"
-          text="This section will follow the same pattern as Drama once its content is ready."
-          related={section.related}
-        />
-      </div>
+      <h1 className="heading-page">{section.name}</h1>
+      <CurriculumBox subject={section.slug} />
+      <ComingSoon
+        title="Coming soon"
+        text="This section will follow the same pattern as Drama once its content is ready."
+        related={section.related}
+      />
     </TwoColumnLayout>
   )
 }

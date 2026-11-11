@@ -10,7 +10,7 @@ function SubjectPage() {
   if (!subject) return <Navigate to="/drama" replace />
 
   return (
-    <div className="col-page flex-1">
+    <>
       <header className="col-stack">
         <Breadcrumb
           className="text-gray-900"
@@ -28,7 +28,7 @@ function SubjectPage() {
         text={`This page will cover how drama connects to ${subject.name}, based on what we did in class.`}
         related={subject.related}
       />
-    </div>
+    </>
   )
 }
 

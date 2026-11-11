@@ -15,7 +15,7 @@ function TeachingResourcesPage() {
   }, [selectedTopic])
 
   return (
-    <div className="col-page">
+    <>
       <ResourcesHeader
         activeTab="teaching"
         intro="Websites and tools I use with my classes."
@@ -71,7 +71,7 @@ function TeachingResourcesPage() {
           </tbody>
         </table>
       )}
-    </div>
+    </>
   )
 }
 

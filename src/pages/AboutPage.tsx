@@ -67,61 +67,59 @@ function AboutPage() {
   )
 
   return (
-    <TwoColumnLayout sidebar={sidebar} scrollable>
-      <div className="max-w-prose col-page">
-        {imageUrl ? (
-          <img
-            src={imageUrl}
-            alt="About banner"
-            className="w-full h-40 rounded-xl object-cover"
-          />
-        ) : (
-          <div className={`w-full h-40 rounded-xl ${coverColor}`} />
-        )}
-
-        <AuthorTag
-          author={{
-            name: 'Kris Orel',
-            role: 'Teacher Candidate, Brock University',
-          }}
+    <TwoColumnLayout sidebar={sidebar} width="read" scrollable>
+      {imageUrl ? (
+        <img
+          src={imageUrl}
+          alt="About banner"
+          className="w-full h-40 rounded-xl object-cover"
         />
+      ) : (
+        <div className={`w-full h-40 rounded-xl ${coverColor}`} />
+      )}
 
-        <hr className="border-gray-200" />
+      <AuthorTag
+        author={{
+          name: 'Kris Orel',
+          role: 'Teacher Candidate, Brock University',
+        }}
+      />
 
-        {activeSection ? (
-          <>
-            <AboutSection key={activeSection.id} section={activeSection} />
+      <hr className="border-gray-200" />
 
-            <div className="flex justify-between gap-4">
-              {previousSection ? (
-                <button
-                  onClick={() => showSection(previousSection.id)}
-                  className={stepButtonClass}
-                >
-                  ← Previous: {previousSection.label}
-                </button>
-              ) : (
-                <span />
-              )}
-              {nextSection && (
-                <button
-                  onClick={() => showSection(nextSection.id)}
-                  className={stepButtonClass}
-                >
-                  Next: {nextSection.label} →
-                </button>
-              )}
-            </div>
-          </>
-        ) : (
-          <>
-            {sections.map((section) => (
-              <AboutSection key={section.id} section={section} />
-            ))}
-            <BackToTopButton />
-          </>
-        )}
-      </div>
+      {activeSection ? (
+        <>
+          <AboutSection key={activeSection.id} section={activeSection} />
+
+          <div className="flex justify-between gap-4">
+            {previousSection ? (
+              <button
+                onClick={() => showSection(previousSection.id)}
+                className={stepButtonClass}
+              >
+                ← Previous: {previousSection.label}
+              </button>
+            ) : (
+              <span />
+            )}
+            {nextSection && (
+              <button
+                onClick={() => showSection(nextSection.id)}
+                className={stepButtonClass}
+              >
+                Next: {nextSection.label} →
+              </button>
+            )}
+          </div>
+        </>
+      ) : (
+        <>
+          {sections.map((section) => (
+            <AboutSection key={section.id} section={section} />
+          ))}
+          <BackToTopButton />
+        </>
+      )}
     </TwoColumnLayout>
   )
 }
