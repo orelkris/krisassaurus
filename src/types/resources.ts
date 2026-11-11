@@ -1,3 +1,5 @@
+import type { SubjectId } from '@/types/curriculum'
+
 export type DocumentGroupId = 'curriculum' | 'assessment'
 
 export interface DocumentGroup {
@@ -51,4 +53,38 @@ export interface DocumentLink {
   // Open the PDF at this page instead of the cover
   page?: number
   pageLabel?: string
+}
+
+// The kinds of outside resource, once. A page shows a resource's kind with
+// its name from here, and a typo in a kind is a type error
+export const RESOURCE_TYPES = {
+  lessonPlan: { name: 'Lesson plan' },
+  video: { name: 'Video' },
+  printable: { name: 'Printable' },
+  game: { name: 'Game' },
+  website: { name: 'Website' },
+  interactive: { name: 'Interactive' },
+  book: { name: 'Book' },
+} as const
+
+export type ResourceType = keyof typeof RESOURCE_TYPES
+
+// Something from outside the site that helps teach an expectation, e.g. an
+// Ophea lesson
+export interface TeachingResource {
+  id: string
+  title: string
+  url: string
+  type: ResourceType
+  // Who made it, e.g. Ophea
+  source: string
+}
+
+// Which expectations a resource goes with, in one subject and grade
+export interface ResourceLink {
+  resource: string
+  subject: SubjectId
+  grade: number
+  // e.g. ["D1.1", "D2.1"]
+  codes: string[]
 }

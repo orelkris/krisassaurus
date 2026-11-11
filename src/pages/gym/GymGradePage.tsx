@@ -1,10 +1,11 @@
-import { useEffect, useMemo } from 'react'
-import { Navigate, useLocation, useParams } from 'react-router-dom'
+import { useMemo } from 'react'
+import { Navigate, useParams } from 'react-router-dom'
 import PageHeader from '@/components/layout/PageHeader'
 import CurriculumBreadcrumb from '@/components/ui/CurriculumBreadcrumb'
 import StrandBox from '@/components/ui/StrandBox'
 import StrandTabs from '@/components/ui/StrandTabs'
 import { gymCurriculum as gym } from '@/data/subjects/gym/curriculum'
+import { useHashJump } from '@/hooks/useHashJump'
 import { useScrollSpy } from '@/hooks/useScrollSpy'
 import { curriculumPath, gradesOf, strandsOf } from '@/lib/curriculum'
 import { SUBJECTS } from '@/types/curriculum'
@@ -30,14 +31,7 @@ function GymGradePage() {
   const { activeId, jumpTo } = useScrollSpy(sectionIds)
 
   // Coming back from an overall (e.g. #strand-d) opens at that strand
-  const { hash } = useLocation()
-  useEffect(() => {
-    if (!hash) return
-    const frame = requestAnimationFrame(() =>
-      document.getElementById(hash.slice(1))?.scrollIntoView()
-    )
-    return () => cancelAnimationFrame(frame)
-  }, [hash, grade])
+  useHashJump(grade)
 
   if (!isGrade) return <Navigate to={curriculumPath(gym.subject, {})} replace />
 

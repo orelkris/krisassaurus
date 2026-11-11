@@ -11,6 +11,8 @@ export interface SpecificItem {
   examples?: { text: string; at: number }[]
   // Extra boxes under the text in the Skills or Prompts view
   boxes?: { parts: TintBoxPart[]; strand?: string }[]
+  // Anything else under the text, e.g. a list of resources or a link
+  extra?: ReactNode
 }
 
 export interface SpecificGroup {
@@ -88,6 +90,7 @@ function SpecificList({ groups, showExamples = false }: SpecificListProps) {
                       <TintBox parts={box.parts} />
                     </div>
                   ))}
+                  {item.extra}
                 </div>
               </div>
             ))}

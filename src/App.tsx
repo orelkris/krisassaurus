@@ -33,6 +33,7 @@ import ComingSoon from '@/components/ui/ComingSoon'
 import GymOverviewPage from '@/pages/gym/GymOverviewPage'
 import GymGradePage from '@/pages/gym/GymGradePage'
 import GymSpecificsPage from '@/pages/gym/GymSpecificsPage'
+import GymComparePage from '@/pages/gym/GymComparePage'
 import GymSidebar from '@/components/gym/GymSidebar'
 import { gymCurriculum } from '@/data/subjects/gym/curriculum'
 import MinistryDocumentsPage from '@/pages/resources/MinistryDocumentsPage'
@@ -132,6 +133,10 @@ function App() {
             <Route index element={<GymOverviewPage />} />
             <Route path="grade/:grade" element={<GymGradePage />} />
             <Route path="grade/:grade/:code" element={<GymSpecificsPage />} />
+            <Route
+              path="grade/:grade/:code/:specific"
+              element={<GymComparePage />}
+            />
             {/* Strand pages come in a later step */}
             <Route
               path="*"

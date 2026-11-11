@@ -1,36 +1,40 @@
-import { useState } from 'react'
-import { Navigate, useParams } from 'react-router-dom'
+import { ChevronRight } from 'lucide-react'
+import { Link, Navigate, useParams, useSearchParams } from 'react-router-dom'
 import OverallHeader from '@/components/ui/OverallHeader'
+import ResourceList from '@/components/ui/ResourceList'
 import SpecificList, {
   type SpecificGroup,
   type SpecificItem,
 } from '@/components/ui/SpecificList'
 import ViewTabs, { type ViewTab } from '@/components/ui/ViewTabs'
 import { gymCurriculum as gym } from '@/data/subjects/gym/curriculum'
+import { useHashJump } from '@/hooks/useHashJump'
 import { curriculumPath, gradesOf, topicsIn } from '@/lib/curriculum'
+import { resourcesFor } from '@/lib/resources'
 import type { GymStrand, SpecificExpectation } from '@/types/curriculum'
+import { RESOURCE_TYPES } from '@/types/resources'
 
-type View = 'expectations' | 'examples' | 'skills' | 'prompts'
+type View =
+  | 'expectations'
+  | 'examples'
+  | 'skills'
+  | 'prompts'
+  | 'resources'
+  | 'compare'
 
 // One overall expectation in one grade, e.g. /gym/grade/4/d1: its specific
-// expectations, with tabs for their examples, skills and prompts
+// expectations, with tabs for their examples, skills, prompts, resources and
+// a link to compare each one across the grades. The tab is in the address
+// (?view=prompts), so the back link from a compare page returns to it
 function GymSpecificsPage() {
   const params = useParams<{ grade: string; code: string }>()
-  // A new page for each overall, so the tabs start at Expectations again
-  return (
-    <Specifics
-      key={`${params.grade}/${params.code}`}
-      grade={Number(params.grade)}
-      code={(params.code ?? '').toUpperCase()}
-    />
-  )
-}
-
-function Specifics({ grade, code }: { grade: number; code: string }) {
+  const grade = Number(params.grade)
+  const code = (params.code ?? '').toUpperCase()
   const strand = code[0] as GymStrand
   const overalls = gym.grades[grade]?.[strand] ?? {}
   const overall = overalls[code]
-  const [view, setView] = useState<View>('expectations')
+  const [search, setSearch] = useSearchParams()
+  useHashJump(grade, code)
 
   if (!gradesOf(gym).includes(grade))
     return <Navigate to={curriculumPath(gym.subject, {})} replace />
@@ -57,7 +61,17 @@ function Specifics({ grade, code }: { grade: number; code: string }) {
     ...(specifics.some(([, s]) => s.prompts.length)
       ? [{ id: 'prompts' as const, label: 'Prompts' }]
       : []),
+    ...(specifics.some(([c]) => resourcesFor(gym.subject, grade, c).length)
+      ? [{ id: 'resources' as const, label: 'Resources' }]
+      : []),
+    { id: 'compare', label: 'Compare Grades' },
   ]
+  // The tab from the address, if this overall has it
+  const view =
+    tabs.find((tab) => tab.id === search.get('view'))?.id ?? 'expectations'
+  const setView = (id: View) =>
+    setSearch(id === 'expectations' ? {} : { view: id }, { replace: true })
+  const grades = gradesOf(gym)
 
   const item = (
     specificCode: string,
@@ -93,6 +107,26 @@ function Specifics({ grade, code }: { grade: number; code: string }) {
               ],
             }))
           : undefined,
+    extra:
+      view === 'resources' &&
+      resourcesFor(gym.subject, grade, specificCode).length ? (
+        <ResourceList
+          resources={resourcesFor(gym.subject, grade, specificCode).map(
+            (resource) => ({
+              ...resource,
+              kind: RESOURCE_TYPES[resource.type].name,
+            })
+          )}
+        />
+      ) : view === 'compare' ? (
+        <Link
+          to={`${gradePath}/${code.toLowerCase()}/${specificCode.toLowerCase()}`}
+          className="-ml-sm row-xs self-start rounded-row px-sm py-xs text-sm font-semibold text-strand-text transition-colors hover:bg-soft"
+        >
+          Compare Grades {grades[0]}–{grades[grades.length - 1]}
+          <ChevronRight aria-hidden="true" className="size-icon" />
+        </Link>
+      ) : undefined,
   })
 
   // Grouped by topic when the strand has a printed list of them (Strand D)

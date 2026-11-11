@@ -90,6 +90,7 @@
   --spacing-badge: 2.25rem; /* a strand badge */
   --spacing-code: 2.75rem; /* the column for a code like B1 */
   --spacing-code-long: 3.5rem; /* the column for a code like D3.4 */
+  --spacing-grade-col: 6.5rem; /* the column for "Grades 1–6" */
   --spacing-icon-xs: 0.75rem; /* the × on a picked filter */
   --spacing-icon-sm: 0.875rem; /* small chevrons, e.g. in the navbar */
   --spacing-icon: 1.125rem; /* chevrons */
