@@ -12,7 +12,7 @@ function DocumentCover({ document, className = '' }: DocumentCoverProps) {
   const [hasError, setHasError] = useState(false)
   const coverUrl = document.file?.coverUrl
 
-  const frame = `aspect-[8.5/11] overflow-hidden rounded-[4px] border border-gray-200 bg-white shadow-sm ${className}`
+  const frame = `aspect-[8.5/11] overflow-hidden rounded-tiny border border-line bg-page shadow-float ${className}`
 
   if (coverUrl && !hasError) {
     return (
@@ -28,13 +28,11 @@ function DocumentCover({ document, className = '' }: DocumentCoverProps) {
 
   return (
     <div aria-hidden="true" className={`${frame} relative flex flex-col`}>
-      <div
-        className={`h-1/3 ${document.file ? 'bg-sky-800' : 'bg-gray-200'}`}
-      />
-      <p className="px-[10%] pt-[12%] text-[clamp(9px,1.1em,15px)] font-bold leading-tight text-gray-800">
+      <div className={`h-1/3 ${document.file ? 'bg-cover' : 'bg-line'}`} />
+      <p className="px-[10%] pt-[12%] text-[clamp(var(--text-2xs),1.1em,var(--text-sm))] font-bold leading-tight text-fg">
         {document.shortName}
       </p>
-      <p className="mt-auto px-[10%] pb-[8%] text-[10px] text-gray-500">
+      <p className="mt-auto px-[10%] pb-[8%] text-xs text-muted">
         {document.year}
       </p>
     </div>

@@ -112,7 +112,7 @@ function QuickGameBoard(props: QuickGameBoardProps) {
   }, [])
 
   return (
-    <div ref={boardRef} className="flex min-h-full flex-1 flex-col bg-white">
+    <div ref={boardRef} className="flex min-h-full flex-1 flex-col bg-page">
       <TimerBar
         totalMs={seconds * 1000}
         remainingMs={remainingMs}
@@ -121,7 +121,7 @@ function QuickGameBoard(props: QuickGameBoardProps) {
         warn={late}
       />
 
-      <div className="flex items-start justify-between pad-page pb-0">
+      <div className="flex items-start justify-between pad-page pb-none">
         <div className="row-stack">
           <IconButton label="End game" onClick={props.onEnd}>
             <X size={22} />
@@ -132,7 +132,7 @@ function QuickGameBoard(props: QuickGameBoardProps) {
             </span>
           )}
         </div>
-        <span className={`text-clock ${late ? 'text-red-600' : ''}`}>
+        <span className={`text-clock ${late ? 'text-danger' : ''}`}>
           {left}
         </span>
       </div>
@@ -146,7 +146,7 @@ function QuickGameBoard(props: QuickGameBoardProps) {
             </div>
 
             {revealed && answer && (
-              <p className="heading-answer max-w-3xl border-t border-gray-200 pt-6">
+              <p className="heading-answer max-w-3xl border-t border-line pt-lg">
                 {answer}
               </p>
             )}
@@ -161,7 +161,7 @@ function QuickGameBoard(props: QuickGameBoardProps) {
 
       {/* In full screen the controls fade until the pointer is over them */}
       <div
-        className={`flex flex-wrap items-center justify-center gap-stack border-t border-gray-200 pad-md transition-opacity sm:grid sm:grid-cols-[1fr_auto_1fr] ${
+        className={`flex flex-wrap items-center justify-center gap-stack border-t border-line pad-md transition-opacity sm:grid sm:grid-cols-[1fr_auto_1fr] ${
           fullScreen.isFullScreen
             ? 'opacity-30 focus-within:opacity-100 hover:opacity-100'
             : ''

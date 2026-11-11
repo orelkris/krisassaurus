@@ -17,7 +17,7 @@ export interface StrategyGroup {
   code: string
   name: string
   blurb: string
-  // Hex colours, applied with inline styles like tagColors
+  // Colours as CSS variables from index.css (see lib/colors.ts)
   colors: { bg: string; text: string; accent: string }
   // Typical facts for the family; a strategy can override any of them
   defaultFacts: QuickFacts

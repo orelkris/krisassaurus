@@ -61,7 +61,7 @@ function StrategiesPage() {
           <section
             key={group.id}
             id={group.id}
-            className="col-page scroll-mt-28 md:scroll-mt-16"
+            className="col-page scroll-mt-tabs md:scroll-mt-nav"
           >
             <StrategyGroupBanner group={group} count={items.length} />
             <div className="grid grid-cols-1 gap-grid sm:grid-cols-2 xl:grid-cols-3">

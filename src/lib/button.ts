@@ -5,7 +5,7 @@ const variantClass: Record<ButtonVariant, string> = {
   primary: 'bg-primary text-on-primary hover:bg-primary-hover',
   secondary: 'border border-line bg-page text-fg hover:bg-soft',
   // For the one action a page is for, e.g. Start on Quick Game
-  accent: 'bg-accent text-on-primary shadow-sm hover:bg-accent-hover',
+  accent: 'bg-accent text-on-primary shadow-float hover:bg-accent-hover',
 }
 
 // sm sits beside small controls, e.g. in a strategy example; lg fills its

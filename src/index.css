@@ -65,6 +65,15 @@
   --color-scene-chair: #cba65c;
   --color-scene-cheek: #fda4af; /* the cheeks on a drawn figure */
 
+  /* Resources and About */
+  --color-cover: #075985; /* the top of a ministry document's cover */
+  --color-about: #e0e7ff; /* About's banner when it has no picture */
+  --color-topic-math: #dbeafe; /* teaching resource topics */
+  --color-topic-science: #dcfce7;
+  --color-topic-social-studies: #fef9c3;
+  --color-topic-english: #fce7f3;
+  --color-topic-general: #ede9fe;
+
   /* Worked examples in Math: a right and a wrong answer, a highlighted
      digit, and the final answer */
   --color-correct: #166534;
@@ -149,6 +158,10 @@
   /* Line heights */
   --leading-step: 1.5rem; /* one line beside a numbered step's circle */
 
+  /* Line widths: a hairline, and the frame around a framed group */
+  --border-hair: 1px;
+  --border-frame: 1.5px;
+
   /* No space, e.g. left-none to line something up with its parent's edge */
   --spacing-none: 0;
 
@@ -187,6 +200,15 @@
   --spacing-badge-sm: 1.375rem; /* a small strand badge */
   --spacing-badge-md: 1.875rem; /* a medium strand badge */
   --spacing-bar: 0.5rem; /* a timer bar */
+
+  --spacing-avatar: 2rem; /* the round initial beside an author's name */
+  --spacing-number: 2rem; /* the round number beside a Quick Game question */
+  --spacing-field: 4rem; /* the shortest a text box gets */
+  --spacing-player: 2rem; /* an audio player */
+  --spacing-cover: 5rem; /* the coloured top of a music card */
+  --spacing-banner: 10rem; /* About's banner */
+  --spacing-empty: 12rem; /* the box that says nothing was found */
+  --spacing-topic: 8rem; /* the Topic column in Teaching resources */
 
   /* Math drawings: the number line and the digit grid */
   --spacing-numberline: 5.75rem;

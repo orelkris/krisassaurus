@@ -34,11 +34,11 @@ function ScenarioInput({
 
   return (
     <div className="card flex items-start gap-stack">
-      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-gray-200 text-sm font-semibold tabular-nums">
+      <span className="flex size-number shrink-0 items-center justify-center rounded-pill border border-line text-sm font-semibold tabular-nums">
         {number}
       </span>
 
-      <div className="flex min-w-0 flex-1 flex-col">
+      <div className="flex min-w-none flex-1 flex-col">
         <textarea
           aria-label={`Scenario ${number}`}
           placeholder="Scenario"
@@ -46,7 +46,7 @@ function ScenarioInput({
           autoFocus={autoFocus}
           value={draft.text}
           onChange={(event) => onChange({ text: event.target.value })}
-          className="field field-sizing-content min-h-16 resize-none"
+          className="field field-sizing-content min-h-field resize-none"
         />
 
         <Expand open={showAnswers || startedEmpty}>

@@ -38,13 +38,13 @@ function MusicPage() {
   }, [selectedMonth])
 
   const sidebar = (
-    <nav className="flex flex-col gap-1">
+    <nav className="flex flex-col gap-xs">
       <button
         onClick={() => setSelectedMonth(null)}
-        className={`cursor-pointer text-left text-sm py-1 transition-colors ${
+        className={`cursor-pointer text-left text-sm py-xs transition-colors ${
           selectedMonth === null
-            ? 'font-semibold text-gray-900'
-            : 'text-gray-500 hover:text-gray-900'
+            ? 'font-semibold text-fg'
+            : 'text-muted hover:text-fg'
         }`}
       >
         All
@@ -54,14 +54,14 @@ function MusicPage() {
         <button
           key={month.key}
           onClick={() => setSelectedMonth(month.key)}
-          className={`cursor-pointer text-left text-sm py-1 transition-colors ${
+          className={`cursor-pointer text-left text-sm py-xs transition-colors ${
             selectedMonth === month.key
-              ? 'font-semibold text-gray-900'
-              : 'text-gray-500 hover:text-gray-900'
+              ? 'font-semibold text-fg'
+              : 'text-muted hover:text-fg'
           }`}
         >
           {month.label}
-          <span className="text-note ml-1">({month.count})</span>
+          <span className="text-note ml-xs">({month.count})</span>
         </button>
       ))}
     </nav>
@@ -70,7 +70,7 @@ function MusicPage() {
   return (
     <TwoColumnLayout sidebar={sidebar} scrollable>
       {filtered.length === 0 ? (
-        <div className="text-small flex items-center justify-center h-48">
+        <div className="text-small flex items-center justify-center h-empty">
           No compositions found.
         </div>
       ) : (

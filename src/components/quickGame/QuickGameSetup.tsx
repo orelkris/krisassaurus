@@ -114,7 +114,7 @@ function QuickGameSetup({
             aria-label="Add scenario"
             title="Add scenario"
             onClick={onAddRow}
-            className="flex cursor-pointer justify-center rounded-xl border border-dashed border-gray-300 py-3 text-gray-400 transition-colors hover:border-gray-900 hover:text-gray-900"
+            className="flex cursor-pointer justify-center rounded-card border border-dashed border-line py-md text-faint transition-colors hover:border-primary hover:text-fg"
           >
             <Plus size={22} />
           </button>

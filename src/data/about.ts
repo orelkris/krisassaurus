@@ -4,7 +4,7 @@ import bannerImage from '@/assets/teacher-banner.png'
 export const about: AboutData = {
   name: 'Kris Orel',
   role: 'Teacher',
-  coverColor: 'bg-indigo-100',
+  coverColor: 'bg-about',
   imageUrl: bannerImage,
   sections: [
     {

@@ -10,7 +10,7 @@ function AboutSection({ section }: AboutSectionProps) {
     <section id={section.id} className="col-section">
       <h2 className="heading-section">{section.label}</h2>
       {section.paragraphs.map((paragraph, index) => (
-        <p key={index} className="text-gray-700 leading-relaxed">
+        <p key={index} className="text-fg leading-relaxed">
           {paragraph}
         </p>
       ))}

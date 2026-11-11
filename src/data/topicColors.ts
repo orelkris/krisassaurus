@@ -1,11 +1,13 @@
-const topicColors: Record<string, string> = {
-  Math: '#DBEAFE',
-  Science: '#DCFCE7',
-  'Social Studies': '#FEF9C3',
-  English: '#FCE7F3',
-  'General Teaching': '#EDE9FE',
+// Each teaching-resource topic has a tint, from index.css (--color-topic-…)
+const topicTokens: Record<string, string> = {
+  Math: 'math',
+  Science: 'science',
+  'Social Studies': 'social-studies',
+  English: 'english',
+  'General Teaching': 'general',
 }
 
 export function getTopicColor(topic: string): string {
-  return topicColors[topic] ?? '#F3F4F6'
+  const token = topicTokens[topic]
+  return token ? `var(--color-topic-${token})` : 'var(--color-soft)'
 }

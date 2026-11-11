@@ -15,7 +15,7 @@ function ResourcesHeader({ activeTab, intro }: ResourcesHeaderProps) {
   const navigate = useNavigate()
 
   return (
-    <header className="flex flex-col gap-3">
+    <header className="flex flex-col gap-md">
       <h1 className="heading-page">Resources</h1>
       <SectionTabs
         tabs={tabs}

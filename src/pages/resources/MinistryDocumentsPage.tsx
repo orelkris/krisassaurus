@@ -26,7 +26,7 @@ function MinistryDocumentsPage() {
         const documents = getDocumentsInGroup(id)
         return (
           <section key={id} className="col-section">
-            <h2 className="heading-section flex items-baseline gap-2">
+            <h2 className="heading-section flex items-baseline gap-sm">
               {name}
               <span className="text-note font-normal">{documents.length}</span>
             </h2>

@@ -32,7 +32,7 @@ function FramedGroup({
 }: FramedGroupProps) {
   return (
     <fieldset
-      className={`${gapClass[gap]} pad-lg -mt-md min-w-none rounded-box border-[1.5px] pt-md marker:text-(--frame-accent) sm:pt-md`}
+      className={`${gapClass[gap]} pad-lg -mt-md min-w-none rounded-box border-(length:--border-frame) pt-md marker:text-(--frame-accent) sm:pt-md`}
       style={
         {
           // The accent mixed with white, so the border is a softer version

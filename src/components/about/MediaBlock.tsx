@@ -12,7 +12,7 @@ function MediaBlock({ media }: MediaBlockProps) {
           src={`https://www.youtube.com/embed/${media.youtubeId}`}
           title={media.title}
           allowFullScreen
-          className="w-full aspect-video rounded-xl"
+          className="w-full aspect-video rounded-card"
         />
       )
     case 'video':
@@ -22,16 +22,16 @@ function MediaBlock({ media }: MediaBlockProps) {
           poster={media.poster}
           title={media.title}
           controls
-          className="w-full aspect-video rounded-xl bg-black"
+          className="w-full aspect-video rounded-card bg-fg"
         />
       )
     case 'image':
       return (
-        <figure className="flex flex-col gap-2">
+        <figure className="flex flex-col gap-sm">
           <img
             src={media.src}
             alt={media.alt}
-            className="w-full rounded-xl object-cover"
+            className="w-full rounded-card object-cover"
           />
           {media.caption && (
             <figcaption className="text-small">{media.caption}</figcaption>

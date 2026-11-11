@@ -12,7 +12,7 @@ interface CalloutProps {
 function Callout({ label, children, colors }: CalloutProps) {
   return (
     <div
-      className="col-stack rounded-card border-[1.5px] border-l-4 px-md py-md"
+      className="col-stack rounded-card border-(length:--border-frame) border-l-4 px-md py-md"
       style={{
         borderColor: `color-mix(in srgb, ${colors.accent} 30%, var(--color-page))`,
         borderLeftColor: colors.accent,

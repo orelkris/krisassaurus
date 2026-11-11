@@ -6,9 +6,9 @@ interface SubjectSidebarProps {
 // DramaSidebar so every subject's sidebar opens the same way
 function SubjectSidebar({ name }: SubjectSidebarProps) {
   return (
-    <div className="hidden lg:block lg:pr-4">
-      <p className="text-label mb-1.5">{name}</p>
-      <p className="py-1 text-sm text-gray-400">Posts will be listed here.</p>
+    <div className="hidden lg:block lg:pr-md">
+      <p className="text-label mb-xs">{name}</p>
+      <p className="py-xs text-sm text-faint">Posts will be listed here.</p>
     </div>
   )
 }

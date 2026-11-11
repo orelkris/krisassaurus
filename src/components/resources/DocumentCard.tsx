@@ -10,7 +10,7 @@ function DocumentCard({ document }: DocumentCardProps) {
   const body = (
     <>
       <DocumentCover document={document} className="w-full" />
-      <span className="text-sm font-semibold leading-snug text-gray-900 group-hover:underline">
+      <span className="text-sm font-semibold leading-snug text-fg group-hover:underline">
         {document.shortName}
       </span>
       <span className="text-note">
@@ -21,13 +21,13 @@ function DocumentCard({ document }: DocumentCardProps) {
 
   // Documents without a PDF yet aren't clickable
   if (!document.file) {
-    return <div className="flex flex-col gap-1.5 opacity-60">{body}</div>
+    return <div className="flex flex-col gap-xs opacity-60">{body}</div>
   }
 
   return (
     <Link
       to={`/resources/documents/${document.slug}`}
-      className="group flex flex-col gap-1.5"
+      className="group flex flex-col gap-xs"
     >
       {body}
     </Link>

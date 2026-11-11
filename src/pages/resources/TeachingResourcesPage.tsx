@@ -21,20 +21,18 @@ function TeachingResourcesPage() {
         intro="Websites and tools I use with my classes."
       />
       {filteredResources.length === 0 ? (
-        <div className="text-small flex items-center justify-center h-48">
+        <div className="text-small flex items-center justify-center h-empty">
           No resources found.
         </div>
       ) : (
         <table className="w-full text-sm table-fixed">
           <thead>
-            <tr className="border-b border-gray-200">
-              <th className="p-4 text-left font-semibold text-gray-900">
-                Resource
-              </th>
-              <th className="p-4 text-left font-semibold text-gray-900 hidden md:table-cell">
+            <tr className="border-b border-line">
+              <th className="p-md text-left font-semibold text-fg">Resource</th>
+              <th className="p-md text-left font-semibold text-fg hidden md:table-cell">
                 Description
               </th>
-              <th className="p-4 text-left font-semibold text-gray-900 w-32">
+              <th className="p-md text-left font-semibold text-fg w-topic">
                 Topic
               </th>
             </tr>
@@ -43,24 +41,24 @@ function TeachingResourcesPage() {
             {filteredResources.map((resource) => (
               <tr
                 key={resource.id}
-                className="border-b border-gray-100 hover:bg-gray-50 transition-colors"
+                className="border-b border-line hover:bg-soft transition-colors"
               >
-                <td className="p-4 align-top">
+                <td className="p-md align-top">
                   <a
                     href={resource.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-medium text-gray-900 hover:text-gray-500 transition-colors"
+                    className="font-medium text-fg hover:text-muted transition-colors"
                   >
                     {resource.title} ↗
                   </a>
                 </td>
-                <td className="p-4 align-top text-gray-500 leading-relaxed hidden md:table-cell">
+                <td className="p-md align-top text-muted leading-relaxed hidden md:table-cell">
                   {resource.description}
                 </td>
-                <td className="p-4 align-top">
+                <td className="p-md align-top">
                   <span
-                    className="inline-block px-2 py-1 text-xs rounded-full whitespace-nowrap text-gray-700"
+                    className="inline-block px-sm py-xs text-xs rounded-pill whitespace-nowrap text-fg"
                     style={{ backgroundColor: getTopicColor(resource.topic) }}
                   >
                     {resource.topic}

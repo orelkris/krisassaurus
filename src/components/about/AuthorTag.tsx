@@ -6,12 +6,12 @@ interface AuthorTagProps {
 
 function AuthorTag({ author }: AuthorTagProps) {
   return (
-    <div className="flex items-center gap-3">
-      <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center text-xs font-bold text-gray-600 shrink-0">
+    <div className="flex items-center gap-md">
+      <div className="size-avatar rounded-pill bg-line flex items-center justify-center text-xs font-bold text-muted shrink-0">
         {author.name.charAt(0)}
       </div>
       <div>
-        <p className="text-sm font-semibold text-gray-800">{author.name}</p>
+        <p className="text-sm font-semibold text-fg">{author.name}</p>
         <p className="text-note">{author.role}</p>
       </div>
     </div>

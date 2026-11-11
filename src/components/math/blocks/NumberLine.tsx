@@ -17,7 +17,7 @@ const toneClass = {
 function NumberLine({ start, end, marks }: NumberLineProps) {
   return (
     <div className="relative mx-sm h-numberline text-xs text-muted">
-      <div className="absolute inset-x-none top-lg h-numberline-bar rounded-tiny border border-faint bg-[repeating-linear-gradient(90deg,var(--color-line)_0_1px,transparent_1px_10%),linear-gradient(var(--color-soft),var(--color-soft))]" />
+      <div className="absolute inset-x-none top-lg h-numberline-bar rounded-tiny border border-faint bg-[repeating-linear-gradient(90deg,var(--color-line)_0_var(--border-hair),transparent_var(--border-hair)_10%),linear-gradient(var(--color-soft),var(--color-soft))]" />
 
       <span className="absolute left-none top-xl whitespace-nowrap">
         <i className="absolute -top-numberline-tick-top left-none h-numberline-tick w-rule bg-faint" />

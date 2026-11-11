@@ -8,10 +8,8 @@ import { resources } from '@/data/resources'
 import { getTopicColor } from '@/data/topicColors'
 
 const linkClass = (isCurrent: boolean) =>
-  `flex items-center justify-between gap-1.5 py-1 text-sm transition-colors ${
-    isCurrent
-      ? 'font-semibold text-gray-900'
-      : 'text-gray-500 hover:text-gray-900'
+  `flex items-center justify-between gap-xs py-xs text-sm transition-colors ${
+    isCurrent ? 'font-semibold text-fg' : 'text-muted hover:text-fg'
   }`
 
 // Teaching resources: All, then one link per topic
@@ -32,7 +30,7 @@ function TeachingSidebar() {
       >
         All
       </Link>
-      <p className="text-label mt-3 mb-1">Subjects</p>
+      <p className="text-label mt-md mb-xs">Subjects</p>
       {topics.map((topic) => (
         <Link
           key={topic}
@@ -41,7 +39,7 @@ function TeachingSidebar() {
         >
           <span className="row-stack">
             <span
-              className="h-2 w-2 shrink-0 rounded-full"
+              className="size-dot-lg shrink-0 rounded-pill"
               style={{ backgroundColor: getTopicColor(topic) }}
             />
             {topic}
@@ -78,14 +76,14 @@ function MinistrySidebar() {
         const isOpen = !closedGroups[group.id]
 
         return (
-          <div key={group.id} className="mt-2">
+          <div key={group.id} className="mt-sm">
             <div className="flex items-center justify-between">
               <Link
                 to={`/resources?group=${group.id}`}
-                className={`py-1 text-sm font-semibold transition-colors ${
+                className={`py-xs text-sm font-semibold transition-colors ${
                   selectedGroup === group.id
-                    ? 'text-gray-900 underline underline-offset-4'
-                    : 'text-gray-900 hover:underline hover:underline-offset-4'
+                    ? 'text-fg underline underline-offset-4'
+                    : 'text-fg hover:underline hover:underline-offset-4'
                 }`}
               >
                 {group.name}
@@ -96,7 +94,7 @@ function MinistrySidebar() {
                 }
                 aria-expanded={isOpen}
                 aria-label={`${isOpen ? 'Hide' : 'Show'} ${group.name} documents`}
-                className="cursor-pointer p-1 text-gray-500 hover:text-gray-900"
+                className="cursor-pointer p-xs text-muted hover:text-fg"
               >
                 <ChevronDown
                   size={14}
@@ -106,16 +104,16 @@ function MinistrySidebar() {
             </div>
 
             {isOpen && (
-              <div className="mb-1.5 ml-1 border-l border-gray-200 pl-4">
+              <div className="mb-xs ml-xs border-l border-line pl-md">
                 {documents.map((document) =>
                   document.file ? (
                     <Link
                       key={document.slug}
                       to={`/resources/documents/${document.slug}`}
-                      className={`block py-0.5 text-[13px] transition-colors ${
+                      className={`block py-px text-sm transition-colors ${
                         document.slug === currentSlug
-                          ? 'font-semibold text-gray-900'
-                          : 'text-gray-500 hover:text-gray-900'
+                          ? 'font-semibold text-fg'
+                          : 'text-muted hover:text-fg'
                       }`}
                     >
                       {document.shortName}
@@ -123,7 +121,7 @@ function MinistrySidebar() {
                   ) : (
                     <span
                       key={document.slug}
-                      className="flex justify-between gap-2 py-0.5 text-[13px] text-gray-400"
+                      className="flex justify-between gap-sm py-px text-sm text-faint"
                     >
                       {document.shortName}
                       <span className="text-xs">soon</span>
@@ -144,7 +142,7 @@ function MinistrySidebar() {
 function ResourcesSidebar() {
   const teachingMatch = useMatch('/resources/teaching')
   return (
-    <div className="lg:pr-4">
+    <div className="lg:pr-md">
       {teachingMatch ? <TeachingSidebar /> : <MinistrySidebar />}
     </div>
   )

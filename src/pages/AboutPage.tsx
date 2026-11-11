@@ -8,14 +8,14 @@ import { about } from '@/data/about'
 import { scrollToTop } from '@/lib/scroll'
 
 const navButtonClass = (isActive: boolean) =>
-  `text-left text-sm py-1 transition-colors ${
+  `text-left text-sm py-xs transition-colors ${
     isActive
-      ? 'font-semibold text-gray-900'
-      : 'text-gray-500 hover:text-gray-900 cursor-pointer'
+      ? 'font-semibold text-fg'
+      : 'text-muted hover:text-fg cursor-pointer'
   }`
 
 const stepButtonClass =
-  'text-sm text-gray-500 hover:text-gray-900 transition-colors cursor-pointer'
+  'text-sm text-muted hover:text-fg transition-colors cursor-pointer'
 
 function AboutPage() {
   const { coverColor, imageUrl, sections } = about
@@ -40,7 +40,7 @@ function AboutPage() {
     <div className="col-page">
       <div>
         <p className="text-label mb-section">On This Page</p>
-        <nav className="flex flex-row flex-wrap gap-x-4 gap-y-1 lg:flex-col">
+        <nav className="flex flex-row flex-wrap gap-x-md gap-y-xs lg:flex-col">
           <button
             onClick={showAll}
             aria-current={activeSection === null ? 'page' : undefined}
@@ -72,10 +72,10 @@ function AboutPage() {
         <img
           src={imageUrl}
           alt="About banner"
-          className="w-full h-40 rounded-xl object-cover"
+          className="w-full h-banner rounded-card object-cover"
         />
       ) : (
-        <div className={`w-full h-40 rounded-xl ${coverColor}`} />
+        <div className={`w-full h-banner rounded-card ${coverColor}`} />
       )}
 
       <AuthorTag
@@ -85,13 +85,13 @@ function AboutPage() {
         }}
       />
 
-      <hr className="border-gray-200" />
+      <hr className="border-line" />
 
       {activeSection ? (
         <>
           <AboutSection key={activeSection.id} section={activeSection} />
 
-          <div className="flex justify-between gap-4">
+          <div className="flex justify-between gap-md">
             {previousSection ? (
               <button
                 onClick={() => showSection(previousSection.id)}

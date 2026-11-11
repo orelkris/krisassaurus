@@ -16,23 +16,23 @@ function CompositionCard({ composition }: CompositionCardProps) {
   })
 
   return (
-    <div className="rounded-xl border border-gray-100 overflow-hidden flex flex-col">
-      {coverColor ? <div className={`h-20 w-full ${coverColor}`} /> : null}
+    <div className="rounded-card border border-line overflow-hidden flex flex-col">
+      {coverColor ? <div className={`h-cover w-full ${coverColor}`} /> : null}
 
-      <div className="p-4 flex flex-col gap-3 flex-1">
-        <div className="flex items-start justify-between gap-4">
+      <div className="p-md flex flex-col gap-md flex-1">
+        <div className="flex items-start justify-between gap-md">
           <h2 className="heading-card">{title}</h2>
           {duration && (
-            <span className="text-note shrink-0 mt-0.5">{duration}</span>
+            <span className="text-note shrink-0 mt-px">{duration}</span>
           )}
         </div>
 
         {tags && tags.length > 0 && (
-          <div className="flex flex-wrap gap-1">
+          <div className="flex flex-wrap gap-xs">
             {tags.map((tag) => (
               <span
                 key={tag}
-                className="px-2 py-0.5 text-xs rounded-full bg-gray-100 text-gray-500"
+                className="px-sm py-px text-xs rounded-pill bg-soft text-muted"
               >
                 {tag}
               </span>
@@ -42,17 +42,17 @@ function CompositionCard({ composition }: CompositionCardProps) {
 
         {description && <p className="text-small">{description}</p>}
 
-        <div className="mt-auto flex flex-col gap-3">
-          <hr className="border-gray-100" />
+        <div className="mt-auto flex flex-col gap-md">
+          <hr className="border-line" />
 
           {audioUrl ? (
-            <audio controls className="w-full h-8">
+            <audio controls className="w-full h-player">
               <source src={audioUrl} type="audio/mpeg" />
               Your browser does not support audio.
             </audio>
           ) : (
-            <div className="h-8 flex items-center">
-              <p className="text-xs text-gray-300 italic">Audio coming soon</p>
+            <div className="h-player flex items-center">
+              <p className="text-xs text-faint italic">Audio coming soon</p>
             </div>
           )}
 

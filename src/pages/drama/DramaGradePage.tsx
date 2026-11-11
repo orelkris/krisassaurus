@@ -63,7 +63,7 @@ function DramaGradePage() {
           <section
             key={strand.id}
             id={`strand-${strand.slug}`}
-            className="col-page scroll-mt-28 md:scroll-mt-16"
+            className="col-page scroll-mt-tabs md:scroll-mt-nav"
           >
             <StrandBanner strand={strand} count={items.length} />
             <ExpectationGroups groups={dramaStrandGroups(items)} />
