@@ -23,11 +23,11 @@ function BackToTop() {
       type="button"
       aria-label="Back to top"
       onClick={() => scrollToTop('smooth')}
-      className={`fixed right-4 bottom-4 z-10 flex h-11 w-11 cursor-pointer items-center justify-center rounded-full border border-gray-200 bg-white text-gray-900 shadow-md transition-opacity hover:bg-gray-50 ${
+      className={`fixed right-md bottom-md z-10 flex size-round cursor-pointer items-center justify-center rounded-pill border border-line bg-page text-fg shadow-float transition-opacity hover:bg-soft ${
         isShown ? 'opacity-100' : 'pointer-events-none opacity-0'
       }`}
     >
-      <ArrowUp size={18} aria-hidden="true" />
+      <ArrowUp aria-hidden="true" className="size-icon" />
     </button>
   )
 }

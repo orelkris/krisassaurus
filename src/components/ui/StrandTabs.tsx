@@ -33,13 +33,13 @@ function StrandTabs({
 
   return (
     <StickyBar padded>
-      <div className="flex w-full flex-wrap items-center gap-x-6 gap-y-3">
+      <div className="flex w-full flex-wrap items-center gap-x-lg gap-y-md">
         {title && (
-          <span className="text-label shrink-0 border-r border-line pr-6">
+          <span className="text-label shrink-0 border-r border-line pr-lg">
             {title}
           </span>
         )}
-        <div role="tablist" aria-label={label} className="flex gap-1.5">
+        <div role="tablist" aria-label={label} className="flex gap-xs">
           {tabs.map(({ id, strand }) => {
             const isActive = id === current?.id
             if (!strand.colors) {

@@ -21,12 +21,12 @@ function PageHeader({
   meta,
 }: PageHeaderProps) {
   return (
-    <header className="col-stack">
+    <header className="col-sm">
       {above}
-      <h1 className="heading-page row-stack">{title}</h1>
+      <h1 className="heading-page row-sm">{title}</h1>
       {description && <p className="text-lead">{description}</p>}
       {children}
-      {meta && <p className="text-small row-stack flex-wrap">{meta}</p>}
+      {meta && <p className="text-small row-sm flex-wrap">{meta}</p>}
     </header>
   )
 }

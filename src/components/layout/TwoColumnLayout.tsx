@@ -21,12 +21,12 @@ function TwoColumnLayout({
 }: TwoColumnLayoutProps) {
   return (
     <div
-      className={`mx-auto flex max-w-6xl flex-col lg:flex-row ${
+      className={`mx-auto flex max-w-site flex-col lg:flex-row ${
         scrollable ? 'min-h-full' : 'h-full'
       }`}
     >
-      <aside className="w-full border-b border-line lg:w-68 lg:shrink-0 lg:border-r lg:border-b-0">
-        <Container gap="section">{sidebar}</Container>
+      <aside className="w-full border-b border-line lg:w-sidebar lg:shrink-0 lg:border-r lg:border-b-0">
+        <Container gap="md">{sidebar}</Container>
       </aside>
       <main
         className={`flex min-w-0 flex-1 flex-col ${scrollable ? '' : 'min-h-0'}`}

@@ -58,46 +58,45 @@ function Navbar() {
   const subjectsActive = isSubjectPath(pathname)
 
   return (
-    <nav className="sticky top-0 z-10 bg-white border-b border-gray-200">
-      <div className="max-w-6xl mx-auto px-8 h-14 flex items-center gap-8">
+    <nav className="sticky top-0 z-10 border-b border-line bg-page">
+      <div className="mx-auto flex h-nav max-w-site items-center gap-xl px-xl">
         <Link
           to="/"
-          className="w-52 shrink-0 font-bold text-gray-900 text-lg"
+          className="w-logo shrink-0 text-lg font-bold text-fg"
           onClick={closeMenus}
         >
           Teaching Journey
         </Link>
 
-        <div className="hidden lg:flex gap-6 items-center">
+        <div className="hidden items-center gap-lg lg:flex">
           <div ref={subjectsMenuRef} className="relative">
             <button
               onClick={() => setIsSubjectsOpen(!isSubjectsOpen)}
               aria-expanded={isSubjectsOpen}
               aria-haspopup="true"
-              className={`row-tight text-sm transition-colors cursor-pointer ${
+              className={`row-xs cursor-pointer text-sm transition-colors ${
                 subjectsActive
-                  ? 'text-gray-900 font-semibold'
-                  : 'text-gray-500 hover:text-gray-900'
+                  ? 'font-semibold text-fg'
+                  : 'text-muted hover:text-fg'
               }`}
             >
               Subjects
               <ChevronDown
-                size={14}
-                className={`transition-transform ${isSubjectsOpen ? 'rotate-180' : ''}`}
+                className={`size-icon-sm transition-transform ${isSubjectsOpen ? 'rotate-180' : ''}`}
               />
             </button>
 
             {isSubjectsOpen && (
-              <div className="absolute left-[-12px] top-full mt-3.5 min-w-48 rounded-xl border border-gray-200 bg-white p-1.5 shadow-lg flex flex-col">
+              <div className="absolute top-full -left-md mt-md flex min-w-dropdown flex-col rounded-card border border-line bg-page p-xs shadow-menu">
                 {subjectSections.map((section) => (
                   <Link
                     key={section.slug}
                     to={section.path}
                     onClick={closeMenus}
-                    className={`flex justify-between gap-3 rounded-lg px-3 py-2 text-sm transition-colors hover:bg-gray-50 ${
+                    className={`flex justify-between gap-md rounded-row px-md py-sm text-sm transition-colors hover:bg-soft ${
                       isSectionActive(section.path, pathname)
-                        ? 'text-gray-900 font-semibold'
-                        : 'text-gray-500 hover:text-gray-900'
+                        ? 'font-semibold text-fg'
+                        : 'text-muted hover:text-fg'
                     }`}
                   >
                     {section.name}
@@ -116,8 +115,8 @@ function Navbar() {
               to={link.path}
               className={`text-sm transition-colors ${
                 pathname === link.path
-                  ? 'text-gray-900 font-semibold'
-                  : 'text-gray-500 hover:text-gray-900'
+                  ? 'font-semibold text-fg'
+                  : 'text-muted hover:text-fg'
               }`}
             >
               {link.label}
@@ -127,26 +126,29 @@ function Navbar() {
 
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden ml-auto cursor-pointer text-gray-500 hover:text-gray-900 transition-colors"
+          className="ml-auto cursor-pointer text-muted transition-colors hover:text-fg lg:hidden"
           aria-label={isOpen ? 'Close menu' : 'Open menu'}
         >
-          {isOpen ? <X size={20} /> : <Menu size={20} />}
+          {isOpen ? (
+            <X aria-hidden="true" className="size-icon-lg" />
+          ) : (
+            <Menu aria-hidden="true" className="size-icon-lg" />
+          )}
         </button>
       </div>
 
       {isOpen && (
-        <div className="lg:hidden border-t border-gray-200 bg-white px-8 py-4 flex flex-col">
+        <div className="flex flex-col border-t border-line bg-page px-xl py-md lg:hidden">
           <button
             onClick={() => setIsMobileSubjectsOpen(!isMobileSubjectsOpen)}
             aria-expanded={isMobileSubjectsOpen}
-            className={`flex items-center justify-between py-3 text-sm border-b border-gray-100 cursor-pointer ${
-              subjectsActive ? 'text-gray-900 font-semibold' : 'text-gray-500'
+            className={`flex cursor-pointer items-center justify-between border-b border-line py-md text-sm ${
+              subjectsActive ? 'font-semibold text-fg' : 'text-muted'
             }`}
           >
             Subjects
             <ChevronDown
-              size={14}
-              className={`transition-transform ${isMobileSubjectsOpen ? 'rotate-180' : ''}`}
+              className={`size-icon-sm transition-transform ${isMobileSubjectsOpen ? 'rotate-180' : ''}`}
             />
           </button>
 
@@ -156,10 +158,10 @@ function Navbar() {
                 key={section.slug}
                 to={section.path}
                 onClick={closeMenus}
-                className={`py-2.5 pl-4 text-sm border-b border-gray-100 transition-colors ${
+                className={`border-b border-line py-sm pl-md text-sm transition-colors ${
                   isSectionActive(section.path, pathname)
-                    ? 'text-gray-900 font-semibold'
-                    : 'text-gray-500'
+                    ? 'font-semibold text-fg'
+                    : 'text-muted'
                 }`}
               >
                 {section.name}
@@ -171,10 +173,8 @@ function Navbar() {
               key={link.path}
               to={link.path}
               onClick={closeMenus}
-              className={`py-3 text-sm border-b border-gray-100 last:border-0 transition-colors ${
-                pathname === link.path
-                  ? 'text-gray-900 font-semibold'
-                  : 'text-gray-500'
+              className={`border-b border-line py-md text-sm transition-colors last:border-0 ${
+                pathname === link.path ? 'font-semibold text-fg' : 'text-muted'
               }`}
             >
               {link.label}

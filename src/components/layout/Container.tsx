@@ -17,7 +17,7 @@ interface ContainerProps {
 // equally. The main area and the sidebar both use it, so every page lines up
 function Container({
   children,
-  gap = 'page',
+  gap = 'xl',
   fill = false,
   subject,
 }: ContainerProps) {

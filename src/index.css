@@ -15,6 +15,7 @@
   /* Text, lines and backgrounds. fg = foreground, the main text colour */
   --color-fg: #18181b; /* titles and main text */
   --color-muted: #6b7280; /* secondary text: meta lines, counts */
+  --color-faint: #9ca3af; /* the lightest text: labels, notes */
   --color-line: #e5e7eb; /* borders and dividers */
   --color-soft: #f3f4f6; /* hover backgrounds */
   --color-page: #ffffff; /* page and box backgrounds */
@@ -69,6 +70,12 @@
   --text-3xl: 1.875rem; /* page titles */
   --text-3xl--line-height: 1.2;
 
+  /* Shadows */
+  --shadow-menu:
+    0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* dropdown menus */
+  --shadow-float:
+    0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* buttons floating over the page */
+
   /* Corners */
   --radius-card: 0.75rem;
   --radius-box: 1rem;
@@ -79,7 +86,10 @@
   /* Sizes of small fixed things */
   --spacing-badge: 2.25rem; /* a strand badge */
   --spacing-code: 2.75rem; /* the column for a code like B1 */
+  --spacing-icon-xs: 0.75rem; /* the × on a picked filter */
+  --spacing-icon-sm: 0.875rem; /* small chevrons, e.g. in the navbar */
   --spacing-icon: 1.125rem; /* chevrons */
+  --spacing-icon-lg: 1.25rem; /* the phone menu button */
   --spacing-dot: 0.375rem; /* list dots */
   --spacing-stripe: 0.5rem; /* the coloured band on top of a panel */
   --spacing-tab-name: 13.75rem; /* the strand name beside the strand tabs */
@@ -90,11 +100,18 @@
   --spacing-divider: 1.75rem; /* a short line between two things in a row */
   --spacing-menu: 26rem; /* a dropdown menu */
   --spacing-code-col: 6.875rem; /* the code column beside expectations */
+  --spacing-nav: 3.5rem; /* the navbar's height */
+  --spacing-logo: 13rem; /* the site name's column in the navbar */
+  --spacing-sidebar: 17rem; /* the sidebar column */
+  --spacing-dropdown: 12rem; /* the narrowest a dropdown menu gets */
+  --spacing-round: 2.75rem; /* a round button, e.g. Back to top */
 
   /* Widths for text that shouldn't run the full width */
   --container-narrow: 24rem;
   --container-text: 28rem;
   --container-read: 40rem; /* expectation text: about 70 characters a line */
+  --container-lead: 65ch; /* the grey paragraph under a title */
+  --container-site: 72rem; /* the whole site (max-w-page would be the page spacing) */
 }
 
 /* Spacing: one scale for gaps and padding. Each name works with any
@@ -209,7 +226,7 @@
 
 body {
   font-family: var(--font-sans);
-  color: var(--color-gray-900);
+  color: var(--color-fg);
 }
 
 /* Shared text and box styles. Pages use these names and never set heading
@@ -225,12 +242,12 @@ body {
 }
 
 @utility heading-card {
-  @apply text-base leading-snug font-bold;
+  @apply text-md leading-snug font-bold;
 }
 
 /* The grey paragraph under a page title */
 @utility text-lead {
-  @apply max-w-prose leading-relaxed text-muted;
+  @apply max-w-lead leading-relaxed text-muted;
 }
 
 /* Big text for a classroom board (Quick Game): the scenario, the clock, the
@@ -263,12 +280,12 @@ body {
 
 /* Small grey notes and counts. (text-muted is now the grey colour) */
 @utility text-note {
-  @apply text-xs text-gray-400;
+  @apply text-xs text-faint;
 }
 
 /* Tiny uppercase labels, e.g. B1 · NUMBER SENSE */
 @utility text-label {
-  @apply text-xs tracking-wide text-gray-400 uppercase;
+  @apply text-xs tracking-wide text-faint uppercase;
 }
 
 /* Containers. A col stacks its children top to bottom, a row lines them up
@@ -349,11 +366,11 @@ body {
 /* Padding inside boxes and rows: small for clickable rows and banners,
    medium for cards, large for panels */
 @utility pad-sm {
-  @apply px-3 py-2;
+  @apply px-md py-sm;
 }
 
 @utility pad-md {
-  @apply p-4;
+  @apply p-md;
 }
 
 @utility pad-lg {

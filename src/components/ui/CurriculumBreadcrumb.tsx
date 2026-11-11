@@ -27,7 +27,7 @@ function CurriculumBreadcrumb({
 
   return (
     <Breadcrumb
-      className={`text-gray-900 ${className}`}
+      className={className}
       items={labels.map((label) => ({ label }))}
     />
   )

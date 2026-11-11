@@ -62,7 +62,7 @@ const squareClass = (isPicked: boolean) =>
 // Every picked item shows an ×, so it's clear that clicking it again unpicks it
 function Unpick() {
   return (
-    <X size={12} strokeWidth={2.5} aria-hidden="true" className="shrink-0" />
+    <X strokeWidth={2.5} aria-hidden="true" className="size-icon-xs shrink-0" />
   )
 }
 
@@ -222,7 +222,7 @@ function CurriculumFilter({
 
   return (
     <>
-      <div className="col-tight">
+      <div className="col-xs">
         <p className={headingClass}>By grade</p>
         <div className="grid grid-cols-4 gap-sm pl-sm lg:hidden">
           {grades.map((grade) => (
@@ -251,7 +251,7 @@ function CurriculumFilter({
         </div>
       </div>
 
-      <div className="col-tight">
+      <div className="col-xs">
         <p className={headingClass}>By strand</p>
         <div className="pl-sm">
           {strands.map((strand) => {

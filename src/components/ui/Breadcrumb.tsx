@@ -11,19 +11,19 @@ interface BreadcrumbProps {
 // The last item is the current page and is shown in bold
 function Breadcrumb({ items, className = '' }: BreadcrumbProps) {
   return (
-    <nav aria-label="Breadcrumb" className={`text-[13px] ${className}`}>
-      <ol className="flex flex-wrap items-baseline gap-1.5">
+    <nav aria-label="Breadcrumb" className={`text-sm text-muted ${className}`}>
+      <ol className="flex flex-wrap items-baseline gap-xs">
         {items.map((item, index) => {
           const isLast = index === items.length - 1
           return (
-            <li key={item.label} className="flex items-baseline gap-1.5">
+            <li key={item.label} className="flex items-baseline gap-xs">
               <span
                 aria-current={isLast ? 'page' : undefined}
-                className={isLast ? 'font-semibold' : 'opacity-70'}
+                className={isLast ? 'font-semibold text-fg' : undefined}
               >
                 {item.label}
               </span>
-              {!isLast && <span className="opacity-50">/</span>}
+              {!isLast && <span className="text-faint">/</span>}
             </li>
           )
         })}
