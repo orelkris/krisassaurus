@@ -12,8 +12,8 @@ interface IconButtonProps {
 }
 
 const variantClass = {
-  primary: 'p-5 bg-gray-900 text-white hover:bg-gray-700',
-  plain: 'p-3 text-gray-500 hover:bg-gray-100 hover:text-gray-900',
+  primary: 'p-lg bg-primary text-on-primary hover:bg-primary-hover',
+  plain: 'p-md text-muted hover:bg-soft hover:text-fg',
 }
 
 // A round button with only an icon, e.g. play, next or full screen
@@ -31,7 +31,7 @@ function IconButton({
       title={label}
       onClick={onClick}
       disabled={disabled}
-      className={`cursor-pointer rounded-full transition-colors disabled:pointer-events-none disabled:opacity-30 ${variantClass[variant]}`}
+      className={`cursor-pointer rounded-pill transition-colors disabled:pointer-events-none disabled:opacity-30 ${variantClass[variant]}`}
     >
       {children}
     </button>

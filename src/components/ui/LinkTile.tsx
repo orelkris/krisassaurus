@@ -16,18 +16,18 @@ function LinkTile({ to, title, text, color, disabled = false }: LinkTileProps) {
   const body = (
     <>
       <span
-        className={`mt-1.5 h-2 w-2 shrink-0 rounded-full ${disabled ? 'bg-gray-200' : ''}`}
+        className={`mt-xs size-dot-lg shrink-0 rounded-pill ${disabled ? 'bg-line' : ''}`}
         style={disabled ? undefined : { backgroundColor: color }}
       />
       <span>
         <span
-          className={`block text-sm font-semibold ${disabled ? 'text-gray-400' : 'text-gray-900'}`}
+          className={`block text-sm font-semibold ${disabled ? 'text-faint' : 'text-fg'}`}
         >
           {title}
         </span>
         {text && (
           <span
-            className={`mt-0.5 block text-[12.5px] leading-snug ${disabled ? 'text-gray-400' : 'text-gray-500'}`}
+            className={`mt-px block text-xs leading-snug ${disabled ? 'text-faint' : 'text-muted'}`}
           >
             {text}
           </span>
@@ -40,7 +40,7 @@ function LinkTile({ to, title, text, color, disabled = false }: LinkTileProps) {
     return (
       <div
         aria-disabled="true"
-        className="flex items-start gap-3 rounded-[10px] border border-dashed border-gray-200 px-3.5 py-3"
+        className="flex items-start gap-md rounded-row border border-dashed border-line px-md py-md"
       >
         {body}
       </div>
@@ -52,7 +52,7 @@ function LinkTile({ to, title, text, color, disabled = false }: LinkTileProps) {
       to={to}
       // --accent lets the hover border use the colour
       style={{ '--accent': color } as CSSProperties}
-      className="flex items-start gap-3 rounded-[10px] border border-gray-200 px-3.5 py-3 transition-colors hover:border-(--accent) hover:bg-gray-50"
+      className="flex items-start gap-md rounded-row border border-line px-md py-md transition-colors hover:border-(--accent) hover:bg-soft"
     >
       {body}
     </Link>

@@ -20,12 +20,12 @@ function ExpectationRow({ item, color }: ExpectationRowProps) {
   return (
     <Link
       to={item.to}
-      className="grid grid-cols-[44px_minmax(0,1fr)] items-baseline gap-3 rounded-[10px] border border-transparent pad-sm hover:border-gray-200 hover:bg-gray-50 sm:grid-cols-[52px_minmax(0,1fr)]"
+      className="grid grid-cols-[var(--spacing-code)_minmax(0,1fr)] items-baseline gap-md rounded-row border border-transparent pad-sm hover:border-line hover:bg-soft sm:grid-cols-[var(--spacing-code-long)_minmax(0,1fr)]"
     >
-      <span className="text-[13px] font-bold tabular-nums" style={{ color }}>
+      <span className="text-sm font-bold tabular-nums" style={{ color }}>
         {item.code}
       </span>
-      <span className="text-[14.5px]">{item.text}</span>
+      <span className="text-sm">{item.text}</span>
     </Link>
   )
 }

@@ -34,8 +34,8 @@ function StrandBadge({ strand, solid = false, size = 'sm' }: StrandBadgeProps) {
     <span
       className={`inline-flex shrink-0 items-center justify-center font-extrabold ${
         size === 'lg'
-          ? 'h-[30px] w-[30px] rounded-md text-[15px]'
-          : 'h-[22px] w-[22px] rounded-md text-xs'
+          ? 'size-badge-md rounded-badge text-sm'
+          : 'size-badge-sm rounded-badge text-xs'
       }`}
       style={{
         backgroundColor: solid ? strand.colors.accent : strand.colors.bg,

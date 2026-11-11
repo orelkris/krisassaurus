@@ -72,7 +72,7 @@ function SpecificList({ groups, showExamples = false }: SpecificListProps) {
                 <p className="pl-sm text-lg font-bold text-strand-text sm:w-code-long sm:shrink-0">
                   {item.code}
                 </p>
-                <div className="col-sm max-w-read min-w-0 flex-1">
+                <div className="col-sm max-w-read min-w-none flex-1">
                   <div>
                     {item.title && (
                       <p className="text-lg font-semibold text-strand-text">

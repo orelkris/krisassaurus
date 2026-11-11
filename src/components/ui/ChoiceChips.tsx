@@ -23,7 +23,7 @@ function ChoiceChips<T extends string | number>({
       aria-label={label}
       className={
         joined
-          ? 'grid auto-cols-fr grid-flow-col gap-1 rounded-full border border-gray-200 p-1'
+          ? 'grid auto-cols-fr grid-flow-col gap-xs rounded-pill border border-line p-xs'
           : 'row-stack flex-wrap'
       }
     >
@@ -35,12 +35,12 @@ function ChoiceChips<T extends string | number>({
             type="button"
             aria-pressed={picked}
             onClick={() => onChange(option.value)}
-            className={`cursor-pointer rounded-full border py-2 text-sm whitespace-nowrap transition-colors ${
-              joined ? 'px-1' : 'px-4'
+            className={`cursor-pointer rounded-pill border py-sm text-sm whitespace-nowrap transition-colors ${
+              joined ? 'px-xs' : 'px-md'
             } ${
               picked
-                ? 'border-gray-900 bg-gray-900 text-white'
-                : `hover:bg-gray-50 ${joined ? 'border-transparent text-gray-500' : 'border-gray-200 text-gray-900'}`
+                ? 'border-primary bg-primary text-on-primary'
+                : `hover:bg-soft ${joined ? 'border-transparent text-muted' : 'border-line text-fg'}`
             }`}
           >
             {option.label}

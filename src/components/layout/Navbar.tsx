@@ -58,7 +58,7 @@ function Navbar() {
   const subjectsActive = isSubjectPath(pathname)
 
   return (
-    <nav className="sticky top-0 z-10 border-b border-line bg-page">
+    <nav className="sticky top-none z-10 border-b border-line bg-page">
       <div className="mx-auto flex h-nav max-w-site items-center gap-xl px-xl">
         <Link
           to="/"

@@ -17,22 +17,18 @@ interface BannerProps {
 function Banner({ colors, title, start, description, count }: BannerProps) {
   return (
     <div
-      className={`row-stack pad-sm rounded-xl ${description ? 'items-start' : ''}`}
+      className={`row-stack pad-sm rounded-card ${description ? 'items-start' : ''}`}
       style={{ backgroundColor: colors.bg, color: colors.text }}
     >
       {start && (
-        <span className={description ? 'flex pt-[1.5px]' : 'flex'}>
-          {start}
-        </span>
+        <span className={description ? 'flex pt-px' : 'flex'}>{start}</span>
       )}
-      <div className="min-w-0 flex-1">
+      <div className="min-w-none flex-1">
         <h2 className="heading-section">{title}</h2>
         {description && <p className="text-sm opacity-85">{description}</p>}
       </div>
       {count !== undefined && (
-        <span className="shrink-0 self-center text-[12.5px] opacity-80">
-          {count}
-        </span>
+        <span className="shrink-0 self-center text-xs opacity-80">{count}</span>
       )}
     </div>
   )

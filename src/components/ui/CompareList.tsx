@@ -23,7 +23,7 @@ function CompareList({ rows }: CompareListProps) {
           <p className="pl-sm text-md font-bold whitespace-nowrap text-strand-text sm:w-grade-col sm:shrink-0">
             {row.label}
           </p>
-          <div className="col-md max-w-read min-w-0 flex-1">
+          <div className="col-md max-w-read min-w-none flex-1">
             {row.entries.map((entry, index) => (
               <p key={index} className="text-lg text-fg">
                 {entry.code && (

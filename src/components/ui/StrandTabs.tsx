@@ -70,7 +70,7 @@ function StrandTabs({
                 aria-label={strand.name}
                 title={strand.name}
                 onClick={() => onSelect(id)}
-                className={`inline-flex h-7 min-w-[34px] cursor-pointer items-center justify-center rounded-md border-2 px-1.5 text-xs font-extrabold transition-opacity ${
+                className={`inline-flex h-tab min-w-tab cursor-pointer items-center justify-center rounded-badge border-2 px-xs text-xs font-extrabold transition-opacity ${
                   isActive
                     ? ''
                     : 'border-transparent opacity-75 hover:opacity-100'
@@ -89,14 +89,14 @@ function StrandTabs({
         {current && !current.strand.colors && (
           <span
             data-strand={current.strand.id}
-            className="min-w-0 flex-1 basis-tab-name text-md font-semibold text-fg"
+            className="min-w-none flex-1 basis-tab-name text-md font-semibold text-fg"
           >
             {current.strand.name}
           </span>
         )}
         {current && current.strand.colors && (
           <span
-            className="min-w-0 flex-[1_1_220px] text-sm leading-snug font-semibold"
+            className="min-w-none flex-1 basis-tab-name text-sm leading-snug font-semibold"
             style={{ color: current.strand.colors.text }}
           >
             {current.strand.name}

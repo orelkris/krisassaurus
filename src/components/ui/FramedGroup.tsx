@@ -28,16 +28,16 @@ function FramedGroup({
 }: FramedGroupProps) {
   return (
     <fieldset
-      className={`${gapClass[gap]} pad-lg -mt-4 min-w-0 rounded-2xl border-[1.5px] pt-3 marker:text-(--frame-accent) sm:pt-3`}
+      className={`${gapClass[gap]} pad-lg -mt-md min-w-none rounded-box border-[1.5px] pt-md marker:text-(--frame-accent) sm:pt-md`}
       style={
         {
           // The accent mixed with white, so the border is a softer version
-          borderColor: `color-mix(in srgb, ${tone.accent} 25%, white)`,
+          borderColor: `color-mix(in srgb, ${tone.accent} 25%, var(--color-page))`,
           '--frame-accent': tone.accent,
         } as CSSProperties
       }
     >
-      <legend className="mx-auto max-w-[90%] px-2 text-center">
+      <legend className="mx-auto max-w-[90%] px-sm text-center">
         <h2 className="heading-section" style={{ color: tone.text }}>
           {label}
         </h2>

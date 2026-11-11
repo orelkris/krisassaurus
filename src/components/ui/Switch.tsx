@@ -13,17 +13,17 @@ function Switch({ label, checked, onChange }: SwitchProps) {
       aria-checked={checked}
       onClick={() => onChange(!checked)}
       className={`row-stack cursor-pointer text-sm transition-colors ${
-        checked ? 'text-gray-900' : 'text-gray-500 hover:text-gray-900'
+        checked ? 'text-fg' : 'text-muted hover:text-fg'
       }`}
     >
       <span
-        className={`relative h-5 w-9 shrink-0 rounded-full transition-colors ${
-          checked ? 'bg-gray-900' : 'bg-gray-200'
+        className={`relative h-switch w-switch-w shrink-0 rounded-pill transition-colors ${
+          checked ? 'bg-primary' : 'bg-line'
         }`}
       >
         <span
-          className={`absolute top-0.5 left-0.5 h-4 w-4 rounded-full bg-white shadow-sm transition-transform ${
-            checked ? 'translate-x-4' : ''
+          className={`absolute top-px left-px size-knob rounded-pill bg-page shadow-float transition-transform ${
+            checked ? 'translate-x-knob' : ''
           }`}
         />
       </span>

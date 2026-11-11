@@ -19,7 +19,7 @@ function SlideSwitch<T extends string | number>({
     <div
       role="group"
       aria-label={label}
-      className="inline-flex flex-wrap gap-0.5 rounded-full border border-gray-200 p-0.5"
+      className="inline-flex flex-wrap gap-px rounded-pill border border-line p-px"
     >
       {options.map((option) => {
         const picked = option.value === value
@@ -29,10 +29,8 @@ function SlideSwitch<T extends string | number>({
             type="button"
             aria-pressed={picked}
             onClick={() => onChange(option.value)}
-            className={`cursor-pointer rounded-full px-2.5 py-1 text-xs whitespace-nowrap transition-colors ${
-              picked
-                ? 'bg-gray-900 text-white'
-                : 'text-gray-500 hover:bg-gray-50'
+            className={`cursor-pointer rounded-pill px-sm py-xs text-xs whitespace-nowrap transition-colors ${
+              picked ? 'bg-primary text-on-primary' : 'text-muted hover:bg-soft'
             }`}
           >
             {option.label}

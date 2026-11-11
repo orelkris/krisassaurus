@@ -17,7 +17,7 @@ function Fold({ label, children, className = '' }: FoldProps) {
       <button
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
-        className="text-note inline-flex cursor-pointer items-center gap-1.5 hover:text-gray-900"
+        className="text-note inline-flex cursor-pointer items-center gap-xs hover:text-fg"
       >
         <ChevronRight
           size={13}
@@ -31,7 +31,7 @@ function Fold({ label, children, className = '' }: FoldProps) {
         }`}
       >
         <div className="overflow-hidden">
-          <div className="text-small pt-2">{children}</div>
+          <div className="text-small pt-sm">{children}</div>
         </div>
       </div>
     </div>

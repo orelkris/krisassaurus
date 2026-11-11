@@ -103,7 +103,10 @@ function OverallHeader({ back, code, name, items }: OverallHeaderProps) {
           />
         </>
       )}
-      <div ref={titleRef} className="relative min-w-0 basis-full sm:basis-auto">
+      <div
+        ref={titleRef}
+        className="relative min-w-none basis-full sm:basis-auto"
+      >
         <div ref={menuRef}>
           <h1 className="heading-page text-balance">
             {hasMenu ? (

@@ -10,8 +10,8 @@ interface PillProps {
 function Pill({ children, colors }: PillProps) {
   return (
     <span
-      className={`whitespace-nowrap rounded-full px-2.5 py-0.5 text-xs ${
-        colors ? '' : 'border border-gray-200 text-gray-500'
+      className={`whitespace-nowrap rounded-pill px-sm py-px text-xs ${
+        colors ? '' : 'border border-line text-muted'
       }`}
       style={
         colors ? { backgroundColor: colors.bg, color: colors.text } : undefined

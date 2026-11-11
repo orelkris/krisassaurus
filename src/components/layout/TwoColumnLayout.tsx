@@ -32,7 +32,7 @@ function TwoColumnLayout({
         <Container gap="md">{sidebar}</Container>
       </aside>
       <main
-        className={`flex min-w-0 flex-1 flex-col ${scrollable ? '' : 'min-h-0'}`}
+        className={`flex min-w-none flex-1 flex-col ${scrollable ? '' : 'min-h-none'}`}
       >
         <Container fill={!scrollable} subject={subject} width={width}>
           {children}

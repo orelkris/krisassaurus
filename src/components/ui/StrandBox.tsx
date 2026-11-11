@@ -40,7 +40,7 @@ function StrandBox({
       <div className="divide-y divide-line">
         {rows.map((row) => (
           <div key={row.code} className="flex flex-col sm:flex-row">
-            <div className="col-sm min-w-0 flex-1 p-lg">
+            <div className="col-sm min-w-none flex-1 p-lg">
               <h3 className="row-sm text-md font-semibold text-strand-text">
                 <span>{row.code}</span>
                 {row.name && <span>{row.name}</span>}

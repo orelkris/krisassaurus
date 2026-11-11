@@ -33,7 +33,7 @@ function Container({
   return (
     <div
       data-subject={subject}
-      className={`${gapClass[gap]} pad-page min-w-0 ${fill ? 'min-h-0 flex-1' : ''} ${width ? widthClass[width] : ''}`}
+      className={`${gapClass[gap]} pad-page min-w-none ${fill ? 'min-h-none flex-1' : ''} ${width ? widthClass[width] : ''}`}
     >
       {children}
     </div>

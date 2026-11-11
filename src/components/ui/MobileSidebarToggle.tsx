@@ -20,7 +20,7 @@ function MobileSidebarToggle({
     <button
       onClick={onToggle}
       aria-expanded={isOpen}
-      className="lg:hidden row-stack w-full cursor-pointer justify-between rounded-[10px] border border-gray-200 pad-sm text-left text-sm font-semibold text-gray-900"
+      className="lg:hidden row-stack w-full cursor-pointer justify-between rounded-row border border-line pad-sm text-left text-sm font-semibold text-fg"
     >
       <span>
         <span className="text-label block">{label}</span>

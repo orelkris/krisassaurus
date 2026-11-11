@@ -20,26 +20,26 @@ interface WhereThisFitsProps {
 
 // Every item shares the same padding, so labels and text line up across the
 // three cards whether or not an item is highlighted
-const itemClass = 'rounded-lg px-2 py-1.5 text-[13.5px]'
+const itemClass = 'rounded-row px-sm py-xs text-sm'
 
 function Code({ code }: { code: string }) {
-  return <span className="mr-1 font-bold">{code}</span>
+  return <span className="mr-xs font-bold">{code}</span>
 }
 
 // The same expectation in the grade before, this grade, and the grade after.
 // The middle card is the current grade
 function WhereThisFits({ columns, currentId, colors }: WhereThisFitsProps) {
   return (
-    <div className="grid grid-cols-1 gap-2.5 md:grid-cols-3">
+    <div className="grid grid-cols-1 gap-sm md:grid-cols-3">
       {columns.map((column, index) => (
         <div
           key={column.label}
-          className="flex min-w-0 flex-col gap-1.5 rounded-xl border-2 border-gray-200 px-[13px] py-[11px]"
+          className="flex min-w-none flex-col gap-xs rounded-card border-2 border-line px-md py-sm"
           style={index === 1 ? { borderColor: colors.accent } : undefined}
         >
-          <span className="text-label px-2">{column.label}</span>
+          <span className="text-label px-sm">{column.label}</span>
           {column.items.length === 0 && (
-            <span className={`${itemClass} text-gray-400`}>{column.empty}</span>
+            <span className={`${itemClass} text-faint`}>{column.empty}</span>
           )}
           {column.items.map((item) =>
             item.id === currentId ? (
@@ -55,7 +55,7 @@ function WhereThisFits({ columns, currentId, colors }: WhereThisFitsProps) {
               <Link
                 key={item.id}
                 to={item.to}
-                className={`${itemClass} hover:underline hover:underline-offset-[3px]`}
+                className={`${itemClass} hover:underline hover:underline-offset-3`}
               >
                 <Code code={item.code} />
                 {item.text}

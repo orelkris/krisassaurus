@@ -141,15 +141,15 @@ interface SubListProps {
 function SubList({ subList, colors }: SubListProps) {
   if (subList.kind === 'links') {
     return (
-      <div className="mt-1 mb-1.5 ml-1 border-l border-gray-200 pl-4">
+      <div className="mt-xs mb-xs ml-xs border-l border-line pl-md">
         {subList.links.map((link) => (
           <Link
             key={link.id}
             to={link.to}
-            className={`block py-0.5 text-[13px] transition-colors ${
+            className={`block py-px text-sm transition-colors ${
               link.isCurrent
-                ? 'font-semibold text-gray-900'
-                : 'text-gray-500 hover:text-gray-900'
+                ? 'font-semibold text-fg'
+                : 'text-muted hover:text-fg'
             }`}
           >
             {link.label}
@@ -160,11 +160,11 @@ function SubList({ subList, colors }: SubListProps) {
   }
 
   return (
-    <div className="mt-1 mb-1.5 ml-1 flex flex-col gap-2 border-l border-gray-200 py-1 pl-4">
+    <div className="mt-xs mb-xs ml-xs flex flex-col gap-sm border-l border-line py-xs pl-md">
       {subList.groups.map((group) => (
         <div key={group.label}>
           <p className="text-label">{group.label}</p>
-          <div className="grid grid-cols-3 gap-1.5 pt-1 lg:hidden">
+          <div className="grid grid-cols-3 gap-xs pt-xs lg:hidden">
             {group.codes.map((item) => (
               <Link
                 key={item.id}
@@ -185,7 +185,7 @@ function SubList({ subList, colors }: SubListProps) {
               </Link>
             ))}
           </div>
-          <div className="hidden pt-0.5 lg:block">
+          <div className="hidden pt-px lg:block">
             {group.codes.map((item) => (
               <FilterRow
                 key={item.id}

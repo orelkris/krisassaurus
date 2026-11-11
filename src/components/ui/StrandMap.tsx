@@ -30,18 +30,18 @@ function StrandMap({
   colors,
 }: StrandMapProps) {
   return (
-    <div className="overflow-x-auto rounded-xl border border-gray-200">
-      <table className="w-full min-w-[560px] border-collapse text-[13px]">
+    <div className="overflow-x-auto rounded-card border border-line">
+      <table className="w-full min-w-table border-collapse text-sm">
         <thead>
-          <tr className="text-note border-b border-gray-200">
+          <tr className="text-note border-b border-line">
             <th
               scope="col"
-              className="w-[34%] py-2 pr-1.5 pl-3.5 text-left font-semibold"
+              className="w-[34%] py-sm pr-xs pl-md text-left font-semibold"
             >
               {rowLabel}
             </th>
             {grades.map((grade) => (
-              <th key={grade} scope="col" className="px-1.5 py-2 font-semibold">
+              <th key={grade} scope="col" className="px-xs py-sm font-semibold">
                 Gr {grade}
               </th>
             ))}
@@ -53,8 +53,8 @@ function StrandMap({
             return (
               <tr
                 key={row.id}
-                className={`relative border-b border-gray-200 last:border-b-0 ${
-                  isCurrent ? '' : 'hover:bg-gray-50'
+                className={`relative border-b border-line last:border-b-0 ${
+                  isCurrent ? '' : 'hover:bg-soft'
                 }`}
                 style={
                   isCurrent
@@ -62,13 +62,13 @@ function StrandMap({
                     : undefined
                 }
               >
-                <td className="py-2 pr-1.5 pl-3.5">
+                <td className="py-sm pr-xs pl-md">
                   <Link
                     to={row.to}
                     replace
                     aria-current={isCurrent ? 'true' : undefined}
                     // Stretched over the row, so the whole row picks it
-                    className="font-semibold after:absolute after:inset-0"
+                    className="font-semibold after:absolute after:inset-none"
                   >
                     {row.label}
                   </Link>
@@ -76,22 +76,22 @@ function StrandMap({
                 {grades.map((grade) => {
                   const count = row.counts[grade] ?? 0
                   return (
-                    <td key={grade} className="px-1.5 py-2 text-center">
+                    <td key={grade} className="px-xs py-sm text-center">
                       {count ? (
                         <span
-                          className="inline-flex gap-[3px]"
+                          className="inline-flex gap-xs"
                           title={`${count} expectation${count > 1 ? 's' : ''}`}
                         >
                           {Array.from({ length: count }, (_, index) => (
                             <span
                               key={index}
-                              className="h-[9px] w-[9px] rounded-[3px]"
+                              className="size-dot-lg rounded-tiny"
                               style={{ backgroundColor: colors.accent }}
                             />
                           ))}
                         </span>
                       ) : (
-                        <span className="text-gray-200">–</span>
+                        <span className="text-line">–</span>
                       )}
                     </td>
                   )

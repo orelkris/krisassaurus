@@ -8,11 +8,11 @@ interface DotListProps {
 // Used for a strand's parts, e.g. in StrandCards and Math's Strand A panel
 function DotList({ items, color }: DotListProps) {
   return (
-    <ul className="text-small flex flex-col gap-0.5 pl-[18px]">
+    <ul className="text-small flex flex-col gap-px pl-md">
       {items.map((item) => (
         <li key={item} className="relative">
           <span
-            className="absolute top-[0.55em] -left-3.5 h-1.5 w-1.5 rounded-full"
+            className="absolute top-[0.55em] -left-md size-dot rounded-pill"
             style={{ backgroundColor: color }}
           />
           {item}

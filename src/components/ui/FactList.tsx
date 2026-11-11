@@ -9,16 +9,16 @@ interface FactListProps {
 function FactList({ facts }: FactListProps) {
   return (
     <dl
-      className="grid max-w-prose grid-cols-1 rounded-xl border border-gray-200 sm:grid-cols-[repeat(var(--n),minmax(0,1fr))]"
+      className="grid max-w-read grid-cols-1 rounded-card border border-line sm:grid-cols-[repeat(var(--n),minmax(0,1fr))]"
       style={{ '--n': facts.length } as CSSProperties}
     >
       {facts.map(({ label, value }) => (
         <div
           key={label}
-          className="border-t border-gray-200 pad-sm first:border-t-0 sm:border-t-0 sm:border-l sm:first:border-l-0"
+          className="border-t border-line pad-sm first:border-t-0 sm:border-t-0 sm:border-l sm:first:border-l-0"
         >
           <dt className="text-label">{label}</dt>
-          <dd className="text-sm font-semibold text-gray-900">{value}</dd>
+          <dd className="text-sm font-semibold text-fg">{value}</dd>
         </div>
       ))}
     </dl>

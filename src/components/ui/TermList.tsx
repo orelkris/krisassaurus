@@ -16,9 +16,12 @@ interface TermListProps {
 // Elements of drama
 function TermList({ terms, color }: TermListProps) {
   return (
-    <dl className="flex flex-col divide-y divide-gray-200">
+    <dl className="flex flex-col divide-y divide-line">
       {terms.map((item) => (
-        <div key={item.term} className="col-tight py-2.5 first:pt-0 last:pb-0">
+        <div
+          key={item.term}
+          className="col-tight py-sm first:pt-none last:pb-none"
+        >
           <dt className="text-small font-semibold" style={{ color }}>
             {item.term}
           </dt>

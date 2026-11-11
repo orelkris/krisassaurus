@@ -7,7 +7,10 @@ function AppLayout() {
   return (
     <div className="h-screen flex flex-col bg-page">
       <Navbar />
-      <div id={SCROLL_CONTAINER_ID} className="flex-1 min-h-0 overflow-y-auto">
+      <div
+        id={SCROLL_CONTAINER_ID}
+        className="flex-1 min-h-none overflow-y-auto"
+      >
         <Outlet />
       </div>
       <BackToTop />

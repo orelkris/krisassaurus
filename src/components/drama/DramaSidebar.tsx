@@ -4,7 +4,11 @@ import { ChevronDown } from 'lucide-react'
 import type { StrategyGroupId } from '@/types/drama'
 import { strategyGroups } from '@/data/drama/groups'
 import { isGreyedOut } from '@/data/drama/greyedOut'
-import { getStrategy, getStrategiesInGroup, strategies } from '@/data/drama/strategies'
+import {
+  getStrategy,
+  getStrategiesInGroup,
+  strategies,
+} from '@/data/drama/strategies'
 import { dramaSubjects, getSubject } from '@/data/drama/subjects'
 import { getLinksToPage } from '@/data/resources/documentLinks'
 import { getMinistryDocument } from '@/data/resources/ministryDocuments'
@@ -40,7 +44,9 @@ const toFilter = ({ grade, strand }: CurriculumPick): DramaFilter => ({
 
 const linkClass = (isCurrent: boolean) =>
   `flex items-center justify-between gap-1.5 py-1 text-sm transition-colors ${
-    isCurrent ? 'font-semibold text-gray-900' : 'text-gray-500 hover:text-gray-900'
+    isCurrent
+      ? 'font-semibold text-gray-900'
+      : 'text-gray-500 hover:text-gray-900'
   }`
 
 function Chevron({ open }: { open: boolean }) {
@@ -58,11 +64,7 @@ function DramaSidebar() {
   const strategyMatch = useMatch('/drama/strategies/:slug')
   const subjectMatch = useMatch('/drama/subjects/:slug')
 
-  const {
-    filter,
-    strand: currentStrand,
-    expectation,
-  } = useDramaFilter()
+  const { filter, strand: currentStrand, expectation } = useDramaFilter()
 
   // The same grade and strand filter as Math. With a grade picked, the strand
   // opens onto its expectations in that grade; without, onto its numbers
@@ -108,7 +110,9 @@ function DramaSidebar() {
   const [isSubjectsOpen, setIsSubjectsOpen] = useState(true)
   // Only groups the reader has opened or closed are stored; the group of the
   // strategy being viewed is open by default
-  const [toggledGroups, setToggledGroups] = useState<Partial<Record<StrategyGroupId, boolean>>>({})
+  const [toggledGroups, setToggledGroups] = useState<
+    Partial<Record<StrategyGroupId, boolean>>
+  >({})
   // On phones the whole list folds into the "Browse Drama" button
   const [isMobileOpen, setIsMobileOpen] = useState(false)
 
@@ -124,11 +128,11 @@ function DramaSidebar() {
         ? [filter.grade && `Grade ${filter.grade}`, currentStrand?.name]
             .filter(Boolean)
             .join(' · ')
-    : currentSubject
-      ? `Drama & ${currentSubject.name}`
-      : strategiesMatch
-        ? 'Strategies'
-        : 'Overview'
+        : currentSubject
+          ? `Drama & ${currentSubject.name}`
+          : strategiesMatch
+            ? 'Strategies'
+            : 'Overview'
 
   const closeMobile = () => setIsMobileOpen(false)
 
@@ -141,10 +145,16 @@ function DramaSidebar() {
         onToggle={() => setIsMobileOpen(!isMobileOpen)}
       />
 
-      <div className={`${isMobileOpen ? 'block pt-3' : 'hidden'} lg:block lg:pt-0`}>
+      <div
+        className={`${isMobileOpen ? 'block pt-3' : 'hidden'} lg:block lg:pt-0`}
+      >
         <p className="text-label mb-1.5">Drama</p>
 
-        <Link to="/drama" onClick={closeMobile} className={linkClass(!!overviewMatch)}>
+        <Link
+          to="/drama"
+          onClick={closeMobile}
+          className={linkClass(!!overviewMatch)}
+        >
           Overview
         </Link>
 
@@ -175,13 +185,16 @@ function DramaSidebar() {
             >
               <span>
                 All strategies{' '}
-                <span className="text-note font-normal">{strategies.length}</span>
+                <span className="text-note font-normal">
+                  {strategies.length}
+                </span>
               </span>
             </Link>
 
             {strategyGroups.map((group) => {
               const items = getStrategiesInGroup(group.id).filter(
-                (strategy) => !search || strategy.name.toLowerCase().includes(search)
+                (strategy) =>
+                  !search || strategy.name.toLowerCase().includes(search)
               )
               if (search && items.length === 0) return null
               const open = isGroupOpen(group.id)
@@ -240,9 +253,14 @@ function DramaSidebar() {
               )
             })}
 
-            {search && !strategies.some((s) => s.name.toLowerCase().includes(search)) && (
-              <p className="py-1 text-[13px] text-gray-400">No strategy matches that.</p>
-            )}
+            {search &&
+              !strategies.some((s) =>
+                s.name.toLowerCase().includes(search)
+              ) && (
+                <p className="py-1 text-[13px] text-gray-400">
+                  No strategy matches that.
+                </p>
+              )}
           </div>
         )}
 
@@ -293,7 +311,9 @@ function DramaSidebar() {
 
         {curriculumDocuments.length > 0 && (
           <>
-            <p className="mt-3 py-1 text-sm font-semibold text-gray-900">Curriculum</p>
+            <p className="mt-3 py-1 text-sm font-semibold text-gray-900">
+              Curriculum
+            </p>
             <div className="pl-2.5">
               {curriculumDocuments.map((document) => (
                 <Link

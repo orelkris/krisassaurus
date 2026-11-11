@@ -45,7 +45,7 @@ function SectionTabs({
   return (
     <StickyBar>
       {title && (
-        <span className="text-label shrink-0 border-r border-gray-200 pr-6">
+        <span className="text-label shrink-0 border-r border-line pr-lg">
           {title}
         </span>
       )}
@@ -53,7 +53,7 @@ function SectionTabs({
         ref={rowRef}
         role="tablist"
         aria-label={label}
-        className="flex min-w-0 gap-6 overflow-x-auto [scrollbar-width:none] lg:flex-wrap"
+        className="flex min-w-none gap-lg overflow-x-auto [scrollbar-width:none] lg:flex-wrap"
       >
         {tabs.map((tab) => {
           const isActive = tab.id === activeId
@@ -64,8 +64,8 @@ function SectionTabs({
               role="tab"
               aria-selected={isActive}
               onClick={() => onSelect(tab.id)}
-              className={`shrink-0 cursor-pointer pb-2.5 text-sm transition-colors ${
-                isActive ? 'text-gray-900' : 'text-gray-500 hover:text-gray-900'
+              className={`shrink-0 cursor-pointer pb-sm text-sm transition-colors ${
+                isActive ? 'text-fg' : 'text-muted hover:text-fg'
               }`}
               style={{
                 boxShadow: `inset 0 -3px 0 ${isActive ? (tab.color ?? '#111827') : 'transparent'}`,

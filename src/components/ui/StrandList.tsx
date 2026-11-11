@@ -32,7 +32,7 @@ function Row({ row }: { row: StrandListRow }) {
       <span className="w-code shrink-0 font-bold text-strand-text">
         {row.code ?? <span className="block size-dot rounded-pill bg-strand" />}
       </span>
-      <span className="min-w-0 flex-1">{row.label}</span>
+      <span className="min-w-none flex-1">{row.label}</span>
       <ChevronRight
         aria-hidden="true"
         className="size-icon shrink-0 text-strand-text"
@@ -59,7 +59,7 @@ function StrandList({ strands }: StrandListProps) {
             className="row-md border-b border-line px-lg py-md transition-colors hover:bg-strand-bg"
           >
             <StrandBadge strand={{ id: strand.id }} />
-            <h3 className="heading-card min-w-0 flex-1">{strand.name}</h3>
+            <h3 className="heading-card min-w-none flex-1">{strand.name}</h3>
             <ChevronRight
               aria-hidden="true"
               className="size-icon shrink-0 text-strand-text"

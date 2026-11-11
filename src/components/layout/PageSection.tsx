@@ -64,7 +64,7 @@ function PageSection({
         className="box overflow-hidden"
         style={accent ? { borderColor: accent } : undefined}
       >
-        <div className="flex h-2" aria-hidden="true">
+        <div className="flex h-stripe" aria-hidden="true">
           {stripe.map((color) => (
             <span
               key={color}

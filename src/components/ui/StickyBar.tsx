@@ -14,7 +14,7 @@ interface StickyBarProps {
 function StickyBar({ children, padded = false }: StickyBarProps) {
   return (
     <div
-      className={`sticky top-sm z-5 flex items-baseline gap-lg border-b border-line bg-page before:absolute before:inset-x-0 before:-top-sm before:h-sm before:bg-page ${
+      className={`sticky top-sm z-5 flex items-baseline gap-lg border-b border-line bg-page before:absolute before:inset-x-none before:-top-sm before:h-sm before:bg-page ${
         padded ? 'pb-sm' : ''
       }`}
     >
