@@ -113,7 +113,7 @@
   --container-narrow: 24rem;
   --container-text: 28rem;
   --container-read: 40rem; /* expectation text: about 70 characters a line */
-  --container-lead: 65ch; /* the grey paragraph under a title */
+  --container-lead: 36rem; /* the grey paragraph under a title: about 70 characters a line */
   --container-site: 72rem; /* the whole site (max-w-page would be the page spacing) */
 }
 

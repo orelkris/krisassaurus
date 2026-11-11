@@ -34,10 +34,8 @@ function PageSection({
         <div className="col-tight">
           {title && <h2 className="heading-section row-stack">{title}</h2>}
           {description && (
-            // Inside a box the text runs the box's full width
-            <p className={`text-lead ${box ? 'max-w-none' : ''}`}>
-              {description}
-            </p>
+            // Kept to a readable width, even inside a wide box
+            <p className="text-lead">{description}</p>
           )}
         </div>
       )}
