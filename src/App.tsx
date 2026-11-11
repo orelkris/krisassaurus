@@ -29,11 +29,11 @@ import StrandPage from '@/pages/math/StrandPage'
 import GradeStrandPage from '@/pages/math/GradeStrandPage'
 import ExpectationPage from '@/pages/math/ExpectationPage'
 import ResourcesSidebar from '@/components/resources/ResourcesSidebar'
-import SubjectSidebar from '@/components/subjects/SubjectSidebar'
 import ComingSoon from '@/components/ui/ComingSoon'
 import GymOverviewPage from '@/pages/gym/GymOverviewPage'
+import GymGradePage from '@/pages/gym/GymGradePage'
+import GymSidebar from '@/components/gym/GymSidebar'
 import { gymCurriculum } from '@/data/subjects/gym/curriculum'
-import { SUBJECTS } from '@/types/curriculum'
 import MinistryDocumentsPage from '@/pages/resources/MinistryDocumentsPage'
 import TeachingResourcesPage from '@/pages/resources/TeachingResourcesPage'
 import DocumentPage from '@/pages/resources/DocumentPage'
@@ -120,9 +120,7 @@ function App() {
             path="/gym"
             element={
               <TwoColumnLayout
-                sidebar={
-                  <SubjectSidebar name={SUBJECTS[gymCurriculum.subject].name} />
-                }
+                sidebar={<GymSidebar />}
                 subject={gymCurriculum.subject}
                 scrollable
               >
@@ -131,7 +129,8 @@ function App() {
             }
           >
             <Route index element={<GymOverviewPage />} />
-            {/* Grade and strand pages come in the next steps */}
+            <Route path="grade/:grade" element={<GymGradePage />} />
+            {/* Specific expectation and strand pages come in the next steps */}
             <Route
               path="*"
               element={<ComingSoon text="This page is next." />}

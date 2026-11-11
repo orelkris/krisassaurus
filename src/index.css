@@ -74,6 +74,7 @@
   --radius-box: 1rem;
   --radius-pill: 9999px;
   --radius-badge: 0.5rem;
+  --radius-row: 0.5rem; /* clickable rows, e.g. in the sidebar */
 
   /* Sizes of small fixed things */
   --spacing-badge: 2.25rem; /* a strand badge */
@@ -81,6 +82,10 @@
   --spacing-icon: 1.125rem; /* chevrons */
   --spacing-dot: 0.375rem; /* list dots */
   --spacing-stripe: 0.5rem; /* the coloured band on top of a panel */
+  --spacing-tab-name: 13.75rem; /* the strand name beside the strand tabs */
+  --spacing-count: 3.25rem; /* the count circle on a strand box */
+  --spacing-button-col: 15rem; /* the button column of a strand box */
+  --spacing-tabs: 7rem; /* room for the sticky strand tabs when jumping */
 
   /* Widths for text that shouldn't run the full width */
   --container-narrow: 24rem;

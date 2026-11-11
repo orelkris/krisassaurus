@@ -12,7 +12,9 @@ export interface CurriculumPick {
 export interface FilterStrand {
   id: string
   name: string
-  colors: StrandColors
+  // Math and Drama pass their own colours; without them (Gym) the strand's
+  // token colours from index.css are used, through data-strand
+  colors?: StrandColors
 }
 
 export interface FilterCode {
@@ -48,17 +50,14 @@ interface CurriculumFilterProps {
   subList?: FilterSubList
 }
 
-const headingClass = 'text-sm font-semibold text-gray-900'
+const headingClass = 'text-sm font-semibold text-fg'
 
 const squareClass = (isPicked: boolean) =>
-  `flex items-center justify-center gap-1 rounded-lg border py-1.5 text-[13px] transition-colors ${
+  `flex items-center justify-center gap-xs rounded-row border py-xs text-sm transition-colors ${
     isPicked
-      ? 'border-gray-900 bg-gray-900 text-white'
-      : 'border-gray-200 text-gray-500 hover:text-gray-900'
+      ? 'border-primary bg-primary text-on-primary'
+      : 'border-line text-muted hover:text-fg'
   }`
-
-// Grey for grades; a strand and its expectations use the strand's colours
-const greyTint = { bg: '#F3F4F6', text: '#111827', accent: '#111827' }
 
 // Every picked item shows an ×, so it's clear that clicking it again unpicks it
 function Unpick() {
@@ -72,9 +71,11 @@ interface FilterRowProps {
   label: ReactNode
   count?: number
   isPicked: boolean
+  // A strand's own colours (Math, Drama): tint when picked, and the dot
   tint?: StrandColors
-  // A coloured dot before the label
-  dot?: string
+  // A strand letter: the same, from the token colours. Rows with neither
+  // are grey (grades)
+  strandId?: string
   small?: boolean
 }
 
@@ -84,34 +85,43 @@ function FilterRow({
   label,
   count,
   isPicked,
-  tint = greyTint,
-  dot,
+  tint,
+  strandId,
   small = false,
 }: FilterRowProps) {
+  const pickedClass = tint
+    ? ''
+    : strandId
+      ? 'bg-strand-bg text-strand-text'
+      : 'bg-soft text-fg'
   return (
     <Link
       to={to}
       aria-pressed={isPicked}
-      className={`-mx-2 row-tight justify-between rounded-lg px-2 transition-colors ${
-        small ? 'py-0.5 text-[13px]' : 'py-1 text-sm'
-      } ${isPicked ? 'font-semibold' : 'text-gray-500 hover:text-gray-900'}`}
+      data-strand={strandId}
+      className={`-mx-sm row-xs justify-between rounded-row px-sm transition-colors ${
+        small ? 'py-px text-sm' : 'py-xs text-sm'
+      } ${isPicked ? `font-semibold ${pickedClass}` : 'text-muted hover:text-fg'}`}
       style={
-        isPicked ? { backgroundColor: tint.bg, color: tint.text } : undefined
+        isPicked && tint
+          ? { backgroundColor: tint.bg, color: tint.text }
+          : undefined
       }
     >
-      <span className="row-stack">
-        {dot && (
+      <span className="row-sm">
+        {tint && (
           <span
-            className={`shrink-0 rounded-full ${small ? 'h-1.5 w-1.5' : 'h-2 w-2'}`}
-            style={{ backgroundColor: dot }}
+            className="size-dot shrink-0 rounded-pill"
+            style={{ backgroundColor: tint.accent }}
           />
+        )}
+        {!tint && strandId && (
+          <span className="size-dot shrink-0 rounded-pill bg-strand" />
         )}
         {label}
       </span>
       <span
-        className={`row-tight text-xs font-normal ${
-          isPicked ? '' : 'text-gray-400'
-        }`}
+        className={`row-xs text-xs font-normal ${isPicked ? '' : 'text-muted'}`}
       >
         {count}
         {isPicked && <Unpick />}
@@ -181,7 +191,6 @@ function SubList({ subList, colors }: SubListProps) {
                 label={item.code}
                 isPicked={item.isPicked}
                 tint={colors}
-                dot={colors.accent}
                 small
               />
             ))}
@@ -215,7 +224,7 @@ function CurriculumFilter({
     <>
       <div className="col-tight">
         <p className={headingClass}>By grade</p>
-        <div className="grid grid-cols-4 gap-1.5 pl-2.5 lg:hidden">
+        <div className="grid grid-cols-4 gap-sm pl-sm lg:hidden">
           {grades.map((grade) => (
             <Link
               key={grade}
@@ -229,7 +238,7 @@ function CurriculumFilter({
             </Link>
           ))}
         </div>
-        <div className="hidden pl-2.5 lg:block">
+        <div className="hidden pl-sm lg:block">
           {grades.map((grade) => (
             <FilterRow
               key={grade}
@@ -244,7 +253,7 @@ function CurriculumFilter({
 
       <div className="col-tight">
         <p className={headingClass}>By strand</p>
-        <div className="pl-2.5">
+        <div className="pl-sm">
           {strands.map((strand) => {
             const isPicked = strand.id === picked.strand
             return (
@@ -258,9 +267,9 @@ function CurriculumFilter({
                   count={count({ grade: picked.grade, strand: strand.id })}
                   isPicked={isPicked}
                   tint={strand.colors}
-                  dot={strand.colors.accent}
+                  strandId={strand.colors ? undefined : strand.id}
                 />
-                {isPicked && subList && (
+                {isPicked && subList && strand.colors && (
                   <SubList subList={subList} colors={strand.colors} />
                 )}
               </div>
