@@ -7,11 +7,16 @@ import SpecificList, {
   type SpecificItem,
 } from '@/components/ui/SpecificList'
 import ViewTabs, { type ViewTab } from '@/components/ui/ViewTabs'
-import { gymCurriculum as gym } from '@/data/subjects/gym/curriculum'
+import { useCurriculum } from '@/hooks/useCurriculum'
 import { useHashJump } from '@/hooks/useHashJump'
-import { curriculumPath, gradesOf, topicsIn } from '@/lib/curriculum'
+import {
+  curriculumPath,
+  gradesOf,
+  skillsStrandOf,
+  topicsIn,
+} from '@/lib/curriculum'
 import { resourcesFor } from '@/lib/resources'
-import type { GymStrand, SpecificExpectation } from '@/types/curriculum'
+import type { StrandId, SpecificExpectation } from '@/types/curriculum'
 import { RESOURCE_TYPES } from '@/types/resources'
 
 type View =
@@ -26,27 +31,31 @@ type View =
 // expectations, with tabs for their examples, skills, prompts, resources and
 // a link to compare each one across the grades. The tab is in the address
 // (?view=prompts), so the back link from a compare page returns to it
-function GymSpecificsPage() {
+function CurriculumSpecificsPage() {
+  const curriculum = useCurriculum()
   const params = useParams<{ grade: string; code: string }>()
   const grade = Number(params.grade)
   const code = (params.code ?? '').toUpperCase()
-  const strand = code[0] as GymStrand
-  const overalls = gym.grades[grade]?.[strand] ?? {}
+  const strand = code[0] as StrandId
+  const overalls = curriculum.grades[grade]?.[strand] ?? {}
   const overall = overalls[code]
   const [search, setSearch] = useSearchParams()
   useHashJump(grade, code)
 
-  if (!gradesOf(gym).includes(grade))
-    return <Navigate to={curriculumPath(gym.subject, {})} replace />
+  if (!gradesOf(curriculum).includes(grade))
+    return <Navigate to={curriculumPath(curriculum.subject, {})} replace />
   if (!overall)
-    return <Navigate to={curriculumPath(gym.subject, { grade })} replace />
+    return (
+      <Navigate to={curriculumPath(curriculum.subject, { grade })} replace />
+    )
 
-  const gradePath = curriculumPath(gym.subject, { grade })
+  const gradePath = curriculumPath(curriculum.subject, { grade })
   const specifics = Object.entries(overall.specifics)
-  // Strand A's skills in this grade, for the Skills tab
-  const skills = Object.values(gym.grades[grade]?.A ?? {}).flatMap((a) =>
-    Object.entries(a.specifics)
-  )
+  // The skills strand's skills in this grade (Strand A), for the Skills tab
+  const skillsStrand = skillsStrandOf(curriculum)
+  const skills = Object.values(
+    (skillsStrand && curriculum.grades[grade]?.[skillsStrand]) ?? {}
+  ).flatMap((a) => Object.entries(a.specifics))
   const skill = (tag: string) => skills.find(([c]) => c === tag)?.[1]
 
   // Only the tabs that have something to show
@@ -61,7 +70,9 @@ function GymSpecificsPage() {
     ...(specifics.some(([, s]) => s.prompts.length)
       ? [{ id: 'prompts' as const, label: 'Prompts' }]
       : []),
-    ...(specifics.some(([c]) => resourcesFor(gym.subject, grade, c).length)
+    ...(specifics.some(
+      ([c]) => resourcesFor(curriculum.subject, grade, c).length
+    )
       ? [{ id: 'resources' as const, label: 'Resources' }]
       : []),
     { id: 'compare', label: 'Compare Grades' },
@@ -71,15 +82,17 @@ function GymSpecificsPage() {
     tabs.find((tab) => tab.id === search.get('view'))?.id ?? 'expectations'
   const setView = (id: View) =>
     setSearch(id === 'expectations' ? {} : { view: id }, { replace: true })
-  const grades = gradesOf(gym)
+  const grades = gradesOf(curriculum)
 
   const item = (
     specificCode: string,
     specific: SpecificExpectation
   ): SpecificItem => ({
     code: specificCode,
-    // Strand A names each skill by its topic; Strand D has a short name
-    title: strand === 'A' ? specific.topic : specific.shortName,
+    // A skill is named by its topic; Gym's Strand D has a short name
+    title: curriculum.strands[strand].skills
+      ? specific.topic
+      : specific.shortName,
     description: specific.description,
     examples: specific.examples.map((text, index) => ({
       text,
@@ -88,7 +101,7 @@ function GymSpecificsPage() {
     boxes:
       view === 'skills'
         ? specific.tags.map((tag) => ({
-            strand: 'A',
+            strand: skillsStrand,
             parts: [
               {
                 label: [tag, skill(tag)?.topic].filter(Boolean).join(' '),
@@ -109,9 +122,9 @@ function GymSpecificsPage() {
           : undefined,
     extra:
       view === 'resources' &&
-      resourcesFor(gym.subject, grade, specificCode).length ? (
+      resourcesFor(curriculum.subject, grade, specificCode).length ? (
         <ResourceList
-          resources={resourcesFor(gym.subject, grade, specificCode).map(
+          resources={resourcesFor(curriculum.subject, grade, specificCode).map(
             (resource) => ({
               ...resource,
               kind: RESOURCE_TYPES[resource.type].name,
@@ -130,8 +143,8 @@ function GymSpecificsPage() {
   })
 
   // Grouped by topic when the strand has a printed list of them (Strand D)
-  const groups: SpecificGroup[] = gym.strands[strand].topics
-    ? topicsIn(gym, strand)
+  const groups: SpecificGroup[] = curriculum.strands[strand].topics
+    ? topicsIn(curriculum, strand)
         .map((topic) => ({
           heading: topic,
           items: specifics
@@ -175,4 +188,4 @@ function GymSpecificsPage() {
   )
 }
 
-export default GymSpecificsPage
+export default CurriculumSpecificsPage

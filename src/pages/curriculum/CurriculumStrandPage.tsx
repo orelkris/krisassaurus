@@ -3,7 +3,7 @@ import CompareList, { type CompareRow } from '@/components/ui/CompareList'
 import OverallHeader, {
   type OverallMenuItem,
 } from '@/components/ui/OverallHeader'
-import { gymCurriculum as gym } from '@/data/subjects/gym/curriculum'
+import { useCurriculum } from '@/hooks/useCurriculum'
 import { useHashJump } from '@/hooks/useHashJump'
 import {
   curriculumPath,
@@ -15,7 +15,7 @@ import {
   strandsOf,
   topicsIn,
 } from '@/lib/curriculum'
-import type { GymStrand } from '@/types/curriculum'
+import type { Curriculum, StrandId } from '@/types/curriculum'
 
 // One part of the strand page: a heading, then what each grade says
 interface StrandSection {
@@ -30,14 +30,20 @@ const number = (code: string) => Number(code.split('.')[1])
 // One overall's parts, each with what every grade says (grades that say the
 // same thing share a row). Strand D goes by topic, since a topic's code can
 // change between grades; the others go by specific code
-function sectionsIn(strand: GymStrand, code: string): StrandSection[] {
-  const grades = gradesOf(gym)
+function sectionsIn(
+  curriculum: Curriculum<StrandId>,
+  strand: StrandId,
+  code: string
+): StrandSection[] {
+  const grades = gradesOf(curriculum)
   // Every specific in this overall, in every grade
   const inOverall = (grade: number) =>
-    specificsIn(gym, grade, strand).filter(([c]) => c.startsWith(`${code}.`))
+    specificsIn(curriculum, grade, strand).filter(([c]) =>
+      c.startsWith(`${code}.`)
+    )
 
-  const sections: StrandSection[] = gym.strands[strand].topics
-    ? topicsIn(gym, strand).map((topic) => ({
+  const sections: StrandSection[] = curriculum.strands[strand].topics
+    ? topicsIn(curriculum, strand).map((topic) => ({
         id: slug(topic),
         heading: topic,
         rows: mergeGrades(
@@ -57,8 +63,11 @@ function sectionsIn(strand: GymStrand, code: string): StrandSection[] {
             .find(([c]) => c === specificCode)?.[1]
           return {
             id: slug(specificCode),
-            // Strand A names each skill by its topic
-            heading: [specificCode, strand === 'A' ? first?.topic : '']
+            // A skills strand names each skill by its topic
+            heading: [
+              specificCode,
+              curriculum.strands[strand].skills ? first?.topic : '',
+            ]
               .filter(Boolean)
               .join(' '),
             rows: mergeGrades(
@@ -78,25 +87,28 @@ function sectionsIn(strand: GymStrand, code: string): StrandSection[] {
 // title, with a menu of the strand's other overalls (the same header as the
 // specific expectations page), then each of its parts. /gym/strand/b opens at
 // the first overall
-function GymStrandPage() {
+function CurriculumStrandPage() {
+  const curriculum = useCurriculum()
   const params = useParams<{ strand: string; code?: string }>()
-  const strand = (params.strand ?? '').toUpperCase() as GymStrand
-  const isStrand = strandsOf(gym).includes(strand)
-  const overalls = isStrand ? overallsIn(gym, strand) : []
+  const strand = (params.strand ?? '').toUpperCase() as StrandId
+  const isStrand = strandsOf(curriculum).includes(strand)
+  const overalls = isStrand ? overallsIn(curriculum, strand) : []
   const code = params.code?.toUpperCase() ?? overalls[0]?.code
   useHashJump(strand, code)
 
   if (!isStrand)
-    return <Navigate to={curriculumPath(gym.subject, {})} replace />
+    return <Navigate to={curriculumPath(curriculum.subject, {})} replace />
   if (!overalls.some((overall) => overall.code === code))
-    return <Navigate to={curriculumPath(gym.subject, { strand })} replace />
+    return (
+      <Navigate to={curriculumPath(curriculum.subject, { strand })} replace />
+    )
 
   // e.g. B1 Active Participation, with how many parts it has, for the menu
   const items: OverallMenuItem[] = overalls.map((overall) => ({
     code: overall.code,
     name: overall.name,
-    count: sectionsIn(strand, overall.code).length,
-    to: curriculumPath(gym.subject, { strand, code: overall.code }),
+    count: sectionsIn(curriculum, strand, overall.code).length,
+    to: curriculumPath(curriculum.subject, { strand, code: overall.code }),
   }))
   const current = overalls.find((overall) => overall.code === code)
   // With one overall (Strand A), the title is the strand itself
@@ -109,14 +121,14 @@ function GymStrandPage() {
       <div className="col-md">
         <OverallHeader
           code={single ? strand : code}
-          name={single ? gym.strands[strand].name : current?.name}
+          name={single ? curriculum.strands[strand].name : current?.name}
           items={single ? [] : items}
         />
-        {gym.strands[strand].note && (
-          <p className="text-lead">{gym.strands[strand].note}</p>
+        {curriculum.strands[strand].note && (
+          <p className="text-lead">{curriculum.strands[strand].note}</p>
         )}
       </div>
-      {sectionsIn(strand, code).map((section) => (
+      {sectionsIn(curriculum, strand, code).map((section) => (
         <section
           key={section.id}
           id={section.id}
@@ -132,4 +144,4 @@ function GymStrandPage() {
   )
 }
 
-export default GymStrandPage
+export default CurriculumStrandPage

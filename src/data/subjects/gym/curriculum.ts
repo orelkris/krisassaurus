@@ -9,6 +9,7 @@ export const gymCurriculum: Curriculum<GymStrand> = {
   strands: {
     A: {
       name: 'Social-Emotional Learning Skills',
+      skills: true,
       note: 'Strand A is not taught as a separate unit. It runs through every other strand: students are taught these skills, such as managing emotions, coping with stress and building relationships, while they learn in Active Living, Movement Competence and Healthy Living, and they are assessed there too. The expectations are the same in every grade; the examples show how they grow.',
     },
     B: { name: 'Active Living' },

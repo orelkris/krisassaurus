@@ -4,28 +4,29 @@ import PageHeader from '@/components/layout/PageHeader'
 import CurriculumBreadcrumb from '@/components/ui/CurriculumBreadcrumb'
 import StrandBox from '@/components/ui/StrandBox'
 import StrandTabs from '@/components/ui/StrandTabs'
-import { gymCurriculum as gym } from '@/data/subjects/gym/curriculum'
+import { useCurriculum } from '@/hooks/useCurriculum'
 import { useHashJump } from '@/hooks/useHashJump'
 import { useScrollSpy } from '@/hooks/useScrollSpy'
 import { curriculumPath, gradesOf, strandsOf } from '@/lib/curriculum'
 import { SUBJECTS } from '@/types/curriculum'
 
-const strands = strandsOf(gym)
 const sectionId = (id: string) => `strand-${id.toLowerCase()}`
 
 // One grade: sticky strand tabs, then a box per strand with its overall
 // expectations, each with a button to its specific expectations
-function GymGradePage() {
+function CurriculumGradePage() {
+  const curriculum = useCurriculum()
+  const strands = useMemo(() => strandsOf(curriculum), [curriculum])
   const grade = Number(useParams<{ grade: string }>().grade)
-  const isGrade = gradesOf(gym).includes(grade)
+  const isGrade = gradesOf(curriculum).includes(grade)
 
   const tabs = useMemo(
     () =>
       strands.map((id) => ({
         id: sectionId(id),
-        strand: { id, name: gym.strands[id].name },
+        strand: { id, name: curriculum.strands[id].name },
       })),
-    []
+    [curriculum, strands]
   )
   const sectionIds = useMemo(() => tabs.map((tab) => tab.id), [tabs])
   const { activeId, jumpTo } = useScrollSpy(sectionIds)
@@ -33,14 +34,15 @@ function GymGradePage() {
   // Coming back from an overall (e.g. #strand-d) opens at that strand
   useHashJump(grade)
 
-  if (!isGrade) return <Navigate to={curriculumPath(gym.subject, {})} replace />
+  if (!isGrade)
+    return <Navigate to={curriculumPath(curriculum.subject, {})} replace />
 
   return (
     <>
       <PageHeader
         above={
           <CurriculumBreadcrumb
-            subject={SUBJECTS[gym.subject].name}
+            subject={SUBJECTS[curriculum.subject].name}
             grade={grade}
             className="hidden lg:block"
           />
@@ -51,17 +53,17 @@ function GymGradePage() {
       <StrandTabs tabs={tabs} activeId={activeId} onSelect={jumpTo} />
 
       {strands.map((id) => {
-        const overalls = gym.grades[grade]?.[id] ?? {}
+        const overalls = curriculum.grades[grade]?.[id] ?? {}
         return (
           <section key={id} id={sectionId(id)} className="scroll-mt-tabs">
             <StrandBox
-              strand={{ id, name: gym.strands[id].name }}
+              strand={{ id, name: curriculum.strands[id].name }}
               rows={Object.entries(overalls).map(([code, overall]) => ({
                 code,
                 name: overall.name,
                 description: overall.description,
                 count: Object.keys(overall.specifics).length,
-                to: `${curriculumPath(gym.subject, { grade })}/${code.toLowerCase()}`,
+                to: `${curriculumPath(curriculum.subject, { grade })}/${code.toLowerCase()}`,
               }))}
             />
           </section>
@@ -71,4 +73,4 @@ function GymGradePage() {
   )
 }
 
-export default GymGradePage
+export default CurriculumGradePage

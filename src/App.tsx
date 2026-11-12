@@ -30,13 +30,14 @@ import GradeStrandPage from '@/pages/math/GradeStrandPage'
 import ExpectationPage from '@/pages/math/ExpectationPage'
 import ResourcesSidebar from '@/components/resources/ResourcesSidebar'
 import ComingSoon from '@/components/ui/ComingSoon'
-import GymOverviewPage from '@/pages/gym/GymOverviewPage'
-import GymGradePage from '@/pages/gym/GymGradePage'
-import GymSpecificsPage from '@/pages/gym/GymSpecificsPage'
-import GymComparePage from '@/pages/gym/GymComparePage'
-import GymStrandPage from '@/pages/gym/GymStrandPage'
-import GymSidebar from '@/components/gym/GymSidebar'
-import { gymCurriculum } from '@/data/subjects/gym/curriculum'
+import CurriculumOverviewPage from '@/pages/curriculum/CurriculumOverviewPage'
+import CurriculumGradePage from '@/pages/curriculum/CurriculumGradePage'
+import CurriculumSpecificsPage from '@/pages/curriculum/CurriculumSpecificsPage'
+import CurriculumComparePage from '@/pages/curriculum/CurriculumComparePage'
+import CurriculumStrandPage from '@/pages/curriculum/CurriculumStrandPage'
+import CurriculumSidebar from '@/components/curriculum/CurriculumSidebar'
+import { CURRICULA } from '@/data/subjects/curricula'
+import { CurriculumContext } from '@/hooks/useCurriculum'
 import MinistryDocumentsPage from '@/pages/resources/MinistryDocumentsPage'
 import TeachingResourcesPage from '@/pages/resources/TeachingResourcesPage'
 import DocumentPage from '@/pages/resources/DocumentPage'
@@ -118,33 +119,45 @@ function App() {
             <Route path="strand" element={<Navigate to="/math" replace />} />
           </Route>
 
-          {/* Gym: the template for every subject's pages */}
-          <Route
-            path="/gym"
-            element={
-              <TwoColumnLayout
-                sidebar={<GymSidebar />}
-                subject={gymCurriculum.subject}
-                scrollable
-              >
-                <Outlet />
-              </TwoColumnLayout>
-            }
-          >
-            <Route index element={<GymOverviewPage />} />
-            <Route path="grade/:grade" element={<GymGradePage />} />
-            <Route path="grade/:grade/:code" element={<GymSpecificsPage />} />
+          {/* Every subject made from its curriculum data (Gym first) gets the
+              same pages. Its curriculum is set once around its routes */}
+          {CURRICULA.map((curriculum) => (
             <Route
-              path="grade/:grade/:code/:specific"
-              element={<GymComparePage />}
-            />
-            <Route path="strand/:strand" element={<GymStrandPage />} />
-            <Route path="strand/:strand/:code" element={<GymStrandPage />} />
-            <Route
-              path="*"
-              element={<ComingSoon text="This page is next." />}
-            />
-          </Route>
+              key={curriculum.subject}
+              path={`/${curriculum.subject}`}
+              element={
+                <CurriculumContext.Provider value={curriculum}>
+                  <TwoColumnLayout
+                    sidebar={<CurriculumSidebar />}
+                    subject={curriculum.subject}
+                    scrollable
+                  >
+                    <Outlet />
+                  </TwoColumnLayout>
+                </CurriculumContext.Provider>
+              }
+            >
+              <Route index element={<CurriculumOverviewPage />} />
+              <Route path="grade/:grade" element={<CurriculumGradePage />} />
+              <Route
+                path="grade/:grade/:code"
+                element={<CurriculumSpecificsPage />}
+              />
+              <Route
+                path="grade/:grade/:code/:specific"
+                element={<CurriculumComparePage />}
+              />
+              <Route path="strand/:strand" element={<CurriculumStrandPage />} />
+              <Route
+                path="strand/:strand/:code"
+                element={<CurriculumStrandPage />}
+              />
+              <Route
+                path="*"
+                element={<ComingSoon text="This page is next." />}
+              />
+            </Route>
+          ))}
 
           {/* Other subjects show "Coming soon" for now */}
           <Route path="/:subject" element={<SubjectSectionPage />} />

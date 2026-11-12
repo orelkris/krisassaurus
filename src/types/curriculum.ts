@@ -63,6 +63,10 @@ export interface Strand {
   // The topics in the order the document prints them, when the order of
   // first use isn't right (e.g. Gym's Healthy Living chart)
   topics?: string[]
+  // A strand of skills taught through the other strands (Gym's and
+  // Science's Strand A): the Overview lists its skills, and the other
+  // strands' expectations can be tagged with them
+  skills?: boolean
 }
 
 export interface Curriculum<S extends StrandId> {

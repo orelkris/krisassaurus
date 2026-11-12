@@ -37,6 +37,13 @@ export function specificsIn<S extends StrandId>(
   )
 }
 
+// The strand of skills taught through the others, if the subject has one
+export function skillsStrandOf<S extends StrandId>(
+  c: Curriculum<S>
+): S | undefined {
+  return strandsOf(c).find((id) => c.strands[id].skills)
+}
+
 // How many specific expectations a grade has, e.g. 36
 export function countExpectations<S extends StrandId>(
   c: Curriculum<S>,
