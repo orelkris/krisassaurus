@@ -20,7 +20,8 @@ interface StrandMapProps {
 }
 
 // Rows down the side, grades across the top, and how many expectations each
-// row has in each grade, with lines between every row and column.
+// row has in each grade, with lines between every row and column. Its
+// outline is the same box as the Overview's Grades and Strands panels
 // Picking a row shows its expectations below the map. Every subject's Strand
 // page uses it; the rows come from the subject's own data
 function StrandMap({
@@ -31,7 +32,7 @@ function StrandMap({
   colors,
 }: StrandMapProps) {
   return (
-    <div className="overflow-x-auto rounded-card border border-line">
+    <div className="box overflow-x-auto">
       <table className="w-full min-w-table table-fixed border-collapse text-sm">
         <thead>
           <tr className="text-note border-b border-line">
