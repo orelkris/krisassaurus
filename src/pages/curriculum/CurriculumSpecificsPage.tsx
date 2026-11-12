@@ -12,8 +12,10 @@ import { useHashJump } from '@/hooks/useHashJump'
 import {
   curriculumPath,
   gradesOf,
+  hasUnits,
   skillsStrandOf,
   topicsIn,
+  unitOf,
 } from '@/lib/curriculum'
 import { resourcesFor } from '@/lib/resources'
 import type { StrandId, SpecificExpectation } from '@/types/curriculum'
@@ -75,7 +77,11 @@ function CurriculumSpecificsPage() {
     )
       ? [{ id: 'resources' as const, label: 'Resources' }]
       : []),
-    { id: 'compare', label: 'Compare Grades' },
+    // A strand with units covers a new topic each grade, so the same code
+    // in another grade isn't the same thing (Science B to E)
+    ...(hasUnits(curriculum, strand)
+      ? []
+      : [{ id: 'compare' as const, label: 'Compare Grades' }]),
   ]
   // The tab from the address, if this overall has it
   const view =
@@ -154,6 +160,8 @@ function CurriculumSpecificsPage() {
         .filter((group) => group.items.length)
     : [{ items: specifics.map(([c, s]) => item(c, s)) }]
 
+  const unit = unitOf(curriculum, grade, strand)
+
   return (
     <div data-strand={strand} className="contents">
       <div className="col-md">
@@ -171,6 +179,8 @@ function CurriculumSpecificsPage() {
             to: `${gradePath}/${c.toLowerCase()}`,
           }))}
         />
+        {/* The grade's unit for this strand, e.g. Light and Sound */}
+        {unit && <p className="heading-card text-strand-text">{unit}</p>}
         <p className="text-lead max-w-read">{overall.description}</p>
       </div>
       <div className="col-md">
