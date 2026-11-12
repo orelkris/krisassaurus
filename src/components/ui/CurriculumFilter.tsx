@@ -58,7 +58,7 @@ const squareClass = (isPicked: boolean) =>
   `flex items-center justify-center gap-xs rounded-row border py-xs text-sm transition-colors ${
     isPicked
       ? 'border-primary bg-primary text-on-primary'
-      : 'border-line text-muted hover:text-fg'
+      : 'border-line text-muted hover:bg-soft hover:text-fg'
   }`
 
 // Every picked item shows an ×, so it's clear that clicking it again unpicks it
@@ -81,7 +81,8 @@ interface FilterRowProps {
   small?: boolean
 }
 
-// One sidebar row. The picked row is tinted, with its count and an × at the end
+// One sidebar row. The picked row is tinted, with its count and an × at the
+// end; the others turn grey across the whole row on hover
 function FilterRow({
   to,
   label,
@@ -103,7 +104,7 @@ function FilterRow({
       data-strand={strandId}
       className={`-mx-sm row-xs justify-between rounded-row px-sm transition-colors ${
         small ? 'py-px text-sm' : 'py-xs text-sm'
-      } ${isPicked ? `font-semibold ${pickedClass}` : 'text-muted hover:text-fg'}`}
+      } ${isPicked ? `font-semibold ${pickedClass}` : 'text-muted hover:bg-soft hover:text-fg'}`}
       style={
         isPicked && tint
           ? { backgroundColor: tint.bg, color: tint.text }
