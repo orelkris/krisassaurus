@@ -40,6 +40,12 @@ export const subjectSections: SubjectSection[] = [
     path: '/gym',
     ready: true,
   },
+  {
+    slug: 'science',
+    name: 'Science',
+    path: '/science',
+    ready: true,
+  },
 ]
 
 export function getSubjectSection(slug: string): SubjectSection | undefined {

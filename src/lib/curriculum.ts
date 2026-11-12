@@ -44,6 +44,15 @@ export function skillsStrandOf<S extends StrandId>(
   return strandsOf(c).find((id) => c.strands[id].skills)
 }
 
+// A strand's unit in one grade, e.g. Light and Sound (Science Grade 4, C)
+export function unitOf<S extends StrandId>(
+  c: Curriculum<S>,
+  grade: number,
+  strand: S
+): string | undefined {
+  return c.units?.[grade]?.[strand]
+}
+
 // How many specific expectations a grade has, e.g. 36
 export function countExpectations<S extends StrandId>(
   c: Curriculum<S>,

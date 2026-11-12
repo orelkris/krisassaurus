@@ -31,6 +31,12 @@ export const documentLinks: DocumentLink[] = [
     blurb:
       'The expectations for each grade, including Active Living and Movement Competence.',
   },
+  {
+    documentSlug: 'science-and-technology-1-8',
+    to: '/science',
+    label: 'Subjects › Science',
+    blurb: 'The expectations for each grade, by strand.',
+  },
 ]
 
 export function getLinksToPage(to: string): DocumentLink[] {

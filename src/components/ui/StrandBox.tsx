@@ -17,6 +17,8 @@ export interface StrandBoxRow {
 
 interface StrandBoxProps {
   strand: { id: StrandId; name: string }
+  // The strand's unit in this grade, e.g. Light and Sound
+  unit?: string
   rows: StrandBoxRow[]
   // Words on each row's button
   buttonLabel?: string
@@ -28,6 +30,7 @@ interface StrandBoxProps {
 // data-strand, so codes, the count circle and hovers take the strand's colours
 function StrandBox({
   strand,
+  unit,
   rows,
   buttonLabel = 'Specific expectations',
 }: StrandBoxProps) {
@@ -35,7 +38,10 @@ function StrandBox({
     <div data-strand={strand.id} className="box overflow-hidden">
       <div className="row-md border-b border-line px-lg py-md">
         <StrandBadge strand={{ id: strand.id }} />
-        <h2 className="heading-section">{strand.name}</h2>
+        <div className="col-xs min-w-none">
+          <h2 className="heading-section">{strand.name}</h2>
+          {unit && <p className="text-small">{unit}</p>}
+        </div>
       </div>
       <div className="divide-y divide-line">
         {rows.map((row) => (

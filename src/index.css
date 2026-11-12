@@ -99,6 +99,7 @@
   --color-math: #1f7a5c;
   --color-drama: #7a4fd0;
   --color-language: #c2410c;
+  --color-science: #15803d;
 
   /* Strands, the same in every subject: strong colour, light tint, and
      dark text for on the tint. A box sets data-strand to use them */
@@ -321,6 +322,9 @@
 }
 [data-subject='language'] {
   --subject: var(--color-language);
+}
+[data-subject='science'] {
+  --subject: var(--color-science);
 }
 
 /* A strand's box says its letter (from the data), e.g. data-strand="B",

@@ -7,7 +7,7 @@ import StrandTabs from '@/components/ui/StrandTabs'
 import { useCurriculum } from '@/hooks/useCurriculum'
 import { useHashJump } from '@/hooks/useHashJump'
 import { useScrollSpy } from '@/hooks/useScrollSpy'
-import { curriculumPath, gradesOf, strandsOf } from '@/lib/curriculum'
+import { curriculumPath, gradesOf, strandsOf, unitOf } from '@/lib/curriculum'
 import { SUBJECTS } from '@/types/curriculum'
 
 const sectionId = (id: string) => `strand-${id.toLowerCase()}`
@@ -58,6 +58,7 @@ function CurriculumGradePage() {
           <section key={id} id={sectionId(id)} className="scroll-mt-tabs">
             <StrandBox
               strand={{ id, name: curriculum.strands[id].name }}
+              unit={unitOf(curriculum, grade, id)}
               rows={Object.entries(overalls).map(([code, overall]) => ({
                 code,
                 name: overall.name,

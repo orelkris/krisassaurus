@@ -8,6 +8,7 @@ export const SUBJECTS = {
   drama: { name: 'Drama' },
   language: { name: 'Language' },
   gym: { name: 'Gym' },
+  science: { name: 'Science' },
 } as const
 
 export type SubjectId = keyof typeof SUBJECTS
@@ -20,6 +21,7 @@ export type StrandId = (typeof STRAND_IDS)[number]
 
 // Each subject picks its own letters
 export type GymStrand = Extract<StrandId, 'A' | 'B' | 'C' | 'D'>
+export type ScienceStrand = Extract<StrandId, 'A' | 'B' | 'C' | 'D' | 'E'>
 
 export interface Prompt {
   teacher: string
@@ -77,4 +79,7 @@ export interface Curriculum<S extends StrandId> {
   strands: Record<S, Strand>
   // Keyed by grade, e.g. "4"
   grades: Record<string, GradeExpectations<S>>
+  // A strand's unit in each grade, when the document names one, e.g.
+  // Science Grade 1, B: Needs and Characteristics of Living Things
+  units?: Record<string, Partial<Record<S, string>>>
 }

@@ -16,19 +16,23 @@ import {
   specificsIn,
   strandsOf,
   topicsIn,
+  unitOf,
 } from '@/lib/curriculum'
 import { SUBJECTS, type Curriculum, type StrandId } from '@/types/curriculum'
 
-// A skills strand (Strand A) lists its skills, the same in every grade; the
-// other strands list their overall expectations, and a strand with topics
-// adds them
+// A skills strand (Gym's Strand A) lists its named skills, the same in every
+// grade; the other strands list their overall expectations. A strand with
+// topics adds them, and one with a unit in each grade (Science) adds those
 function strandItemsOf(curriculum: Curriculum<StrandId>): StrandListItem[] {
   const firstGrade = gradesOf(curriculum)[0]
   return strandsOf(curriculum).map((id) => {
     const to = curriculumPath(curriculum.subject, { strand: id })
-    const isSkills = curriculum.strands[id].skills
+    const firstSpecifics = specificsIn(curriculum, firstGrade, id)
+    const isSkills =
+      curriculum.strands[id].skills &&
+      firstSpecifics.every(([, specific]) => specific.topic)
     const rows = isSkills
-      ? specificsIn(curriculum, firstGrade, id).map(([code, specific]) => ({
+      ? firstSpecifics.map(([code, specific]) => ({
           code,
           label: specific.topic ?? '',
           to: `${to}#${slug(code)}`,
@@ -39,22 +43,38 @@ function strandItemsOf(curriculum: Curriculum<StrandId>): StrandListItem[] {
           to: curriculumPath(curriculum.subject, { strand: id, code }),
         }))
     const topics = isSkills ? [] : topicsIn(curriculum, id)
+    const units = gradesOf(curriculum)
+      .map((grade) => ({ grade, unit: unitOf(curriculum, grade, id) }))
+      .filter(({ unit }) => unit)
 
     return {
       id,
       name: curriculum.strands[id].name,
       rows,
-      groups: topics.length
-        ? [
-            {
-              label: 'Topics',
-              rows: topics.map((topic) => ({
-                label: topic,
-                to: `${to}#${slug(topic)}`,
-              })),
-            },
-          ]
-        : undefined,
+      groups: [
+        ...(topics.length
+          ? [
+              {
+                label: 'Topics',
+                rows: topics.map((topic) => ({
+                  label: topic,
+                  to: `${to}#${slug(topic)}`,
+                })),
+              },
+            ]
+          : []),
+        ...(units.length
+          ? [
+              {
+                label: 'Units',
+                rows: units.map(({ grade, unit }) => ({
+                  label: `Grade ${grade} · ${unit}`,
+                  to: `${curriculumPath(curriculum.subject, { grade })}#strand-${id.toLowerCase()}`,
+                })),
+              },
+            ]
+          : []),
+      ],
     }
   })
 }
