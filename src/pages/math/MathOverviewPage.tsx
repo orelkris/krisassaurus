@@ -1,10 +1,8 @@
 import { Link } from 'react-router-dom'
 import PageHeader from '@/components/layout/PageHeader'
 import PageSection from '@/components/layout/PageSection'
-import StrandBadge from '@/components/ui/StrandBadge'
 import GradeTiles from '@/components/ui/GradeTiles'
-import StrandCards from '@/components/ui/StrandCards'
-import DotList from '@/components/ui/DotList'
+import StrandList from '@/components/ui/StrandList'
 import {
   expectations,
   getExpectations,
@@ -44,36 +42,30 @@ function MathOverviewPage() {
 
       <PageSection
         box="panel"
-        stripe={mathStrands.map((strand) => strand.colors.accent)}
-        title="Follow an idea across strands"
-        description="Each strand is split into the same smaller ideas in every grade, like Math facts or Fractions. Pick one and see it grow from Grade 1 to 8."
+        strandStripe={['A', ...mathStrands.map((strand) => strand.id)]}
+        title="Strands"
+        description={`${strandA.text} ${strandA.note}`}
       >
-        <StrandCards
-          cards={mathStrands.map((strand) => ({
-            id: strand.id,
-            to: mathPath({ strand: strand.id }),
-            name: strand.name,
-            badge: <StrandBadge strand={strand} />,
-            blurb: strand.blurb,
-            points: getIdeasInStrand(strand.id).map((idea) => idea.name),
-            accent: strand.colors.accent,
-          }))}
+        <StrandList
+          strands={[
+            // Strand A has no page of its own, so its skills are plain rows
+            {
+              id: 'A',
+              name: strandA.name,
+              rows: strandA.skills.map((skill) => ({ label: skill })),
+            },
+            // Each strand lists its ideas, each opening the strand page at
+            // that idea
+            ...mathStrands.map((strand) => ({
+              id: strand.id,
+              name: strand.name,
+              rows: getIdeasInStrand(strand.id).map((idea) => ({
+                label: idea.name,
+                to: mathPath({ strand: strand.id, idea: idea.id }),
+              })),
+            })),
+          ]}
         />
-      </PageSection>
-
-      <PageSection
-        box="panel"
-        accent={strandA.colors.accent}
-        title={
-          <>
-            <StrandBadge strand={{ id: 'A', colors: strandA.colors }} />
-            {strandA.name}
-          </>
-        }
-        description={strandA.text}
-      >
-        <DotList items={strandA.skills} color={strandA.colors.accent} />
-        <p className="text-note">{strandA.note}</p>
       </PageSection>
 
       {related && (

@@ -7,7 +7,9 @@ export interface StrandListRow {
   // A code shown before the label, e.g. B1. Rows without one get a dot
   code?: string
   label: string
-  to: string
+  // Where the row goes. Without one it's plain text, e.g. Math's Strand A
+  // skills, which have no page
+  to?: string
 }
 
 export interface StrandListItem {
@@ -23,15 +25,23 @@ interface StrandListProps {
 }
 
 function Row({ row }: { row: StrandListRow }) {
-  return (
-    <Link
-      to={row.to}
-      className="row-md border-t border-line px-lg py-sm text-md text-fg transition-colors first:border-t-0 hover:bg-strand-bg"
-    >
+  const parts = (
+    <>
       <span className="w-code shrink-0 font-bold text-strand-text">
         {row.code ?? <span className="block size-dot rounded-pill bg-strand" />}
       </span>
       <span className="min-w-none flex-1">{row.label}</span>
+    </>
+  )
+  const rowClass =
+    'row-md border-t border-line px-lg py-sm text-md text-fg first:border-t-0'
+  if (!row.to) return <div className={rowClass}>{parts}</div>
+  return (
+    <Link
+      to={row.to}
+      className={`${rowClass} transition-colors hover:bg-strand-bg`}
+    >
+      {parts}
       <ChevronRight
         aria-hidden="true"
         className="size-icon shrink-0 text-strand-text"
@@ -58,7 +68,7 @@ function StrandList({ strands }: StrandListProps) {
           </div>
           <div className="flex flex-col">
             {strand.rows.map((row) => (
-              <Row key={row.to} row={row} />
+              <Row key={row.to ?? row.label} row={row} />
             ))}
           </div>
           {strand.groups?.map((group) => (
@@ -66,7 +76,7 @@ function StrandList({ strands }: StrandListProps) {
               <p className="text-label px-lg pt-md pb-xs">{group.label}</p>
               <div className="flex flex-col">
                 {group.rows.map((row) => (
-                  <Row key={row.to} row={row} />
+                  <Row key={row.to ?? row.label} row={row} />
                 ))}
               </div>
             </div>
