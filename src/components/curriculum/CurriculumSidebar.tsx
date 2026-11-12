@@ -29,8 +29,7 @@ function CurriculumSidebar() {
     strand,
   }
 
-  // How many expectations a pick has: one grade, one strand in every grade,
-  // or one strand in one grade
+  // How many expectations a pick has: one grade, or one strand in every grade
   const count = ({ grade, strand }: CurriculumPick) => {
     const grades = grade ? [grade] : gradesOf(curriculum)
     return grades.reduce(
@@ -39,14 +38,11 @@ function CurriculumSidebar() {
     )
   }
 
-  // A grade page, or a strand page when only a strand is picked. With both,
-  // the grade page opens at that strand
-  const path = ({ grade, strand }: CurriculumPick) => {
-    const id = strand as StrandId | undefined
-    if (grade)
-      return `${curriculumPath(curriculum.subject, { grade })}${id ? `#strand-${id.toLowerCase()}` : ''}`
-    return curriculumPath(curriculum.subject, { strand: id })
-  }
+  // A grade page, or a strand page, each from the top
+  const path = ({ grade, strand }: CurriculumPick) =>
+    grade
+      ? curriculumPath(curriculum.subject, { grade })
+      : curriculumPath(curriculum.subject, { strand: strand as StrandId })
 
   // On a strand page, the strand's overall expectations under it, like
   // Math's ideas (Strand A has only one, so it has none)

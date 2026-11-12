@@ -7,12 +7,9 @@ import CurriculumFilter, {
 } from '@/components/ui/CurriculumFilter'
 import { mathGrades, mathStrands } from '@/data/math/strands'
 import {
-  expectationPath,
   getExpectations,
   getIdeasInStrand,
-  groupByOverall,
   mathPath,
-  overallPath,
 } from '@/data/math/expectations'
 import { useMathFilter } from '@/hooks/useMathFilter'
 
@@ -23,12 +20,12 @@ const toFilter = ({ grade, strand }: CurriculumPick): MathFilter => ({
   strand: strand as TaughtStrandId | undefined,
 })
 
-// Math's sidebar: the shared grade and strand filter, with Math's ideas under
+// Math's sidebar: the shared grade or strand filter, with Math's ideas under
 // a picked strand and Articles at the end
 function MathSidebar() {
   const { filter, strand: currentStrand, expectation } = useMathFilter()
 
-  // Unpicking the grade of an expectation keeps its idea open on the strand page
+  // Going from an expectation to its strand keeps its idea open there
   const path = (pick: CurriculumPick) =>
     mathPath({
       ...toFilter(pick),
@@ -36,29 +33,9 @@ function MathSidebar() {
         !pick.grade && pick.strand === filter.strand ? filter.idea : undefined,
     })
 
-  // With a grade picked, the strand opens onto its expectations in that
-  // grade; without, onto its ideas
+  // A picked strand (with no grade) opens onto its ideas
   let subList: FilterSubList | undefined
-  if (currentStrand && filter.grade) {
-    subList = {
-      kind: 'codes',
-      groups: groupByOverall(getExpectations(filter)).map((group) => ({
-        label: `${group[0].overall} · ${group[0].overallTitle}`,
-        codes: group.map((item) => {
-          const isPicked = item.id === expectation?.id
-          return {
-            id: item.id,
-            code: item.code,
-            // Clicking the open expectation again goes back to its overall
-            to: isPicked
-              ? `${overallPath(item.grade, item.overall)}#${item.code.toLowerCase()}`
-              : expectationPath(item),
-            isPicked,
-          }
-        }),
-      })),
-    }
-  } else if (currentStrand) {
+  if (currentStrand && !filter.grade) {
     const ideas = getIdeasInStrand(currentStrand.id)
     const currentIdeaId = filter.idea ?? ideas[0]?.id
     subList = {

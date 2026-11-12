@@ -1,9 +1,9 @@
 import type { ReactNode } from 'react'
-import { X } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import type { StrandColors } from '@/components/ui/StrandBadge'
 
-// What the filter has picked. Nothing picked is the subject's overview
+// What the page is about. A page can be about both (an expectation in one
+// grade), but the filter picks one at a time: the grade when there is one
 export interface CurriculumPick {
   grade?: number
   strand?: string
@@ -17,14 +17,6 @@ export interface FilterStrand {
   colors?: StrandColors
 }
 
-export interface FilterCode {
-  id: string
-  // e.g. B1.1
-  code: string
-  to: string
-  isPicked: boolean
-}
-
 export interface FilterLink {
   id: string
   label: string
@@ -32,12 +24,8 @@ export interface FilterLink {
   isCurrent: boolean
 }
 
-// Shown under the picked strand. With a grade picked: its codes in that
-// grade, grouped by overall (B1, B2...). Without: a list of links, e.g. Math's
-// ideas
-export type FilterSubList =
-  | { kind: 'codes'; groups: { label: string; codes: FilterCode[] }[] }
-  | { kind: 'links'; links: FilterLink[] }
+// Shown under the picked strand, e.g. Math's ideas or Gym's overalls
+export type FilterSubList = { kind: 'links'; links: FilterLink[] }
 
 interface CurriculumFilterProps {
   grades: number[]
@@ -55,18 +43,11 @@ interface CurriculumFilterProps {
 const headingClass = 'text-sm font-semibold text-fg'
 
 const squareClass = (isPicked: boolean) =>
-  `flex items-center justify-center gap-xs rounded-row border py-xs text-sm transition-colors ${
+  `flex items-center justify-center rounded-row border py-xs text-sm transition-colors ${
     isPicked
       ? 'border-primary bg-primary text-on-primary'
       : 'border-line text-muted hover:bg-soft hover:text-fg'
   }`
-
-// Every picked item shows an ×, so it's clear that clicking it again unpicks it
-function Unpick() {
-  return (
-    <X strokeWidth={2.5} aria-hidden="true" className="size-icon-xs shrink-0" />
-  )
-}
 
 interface FilterRowProps {
   to: string
@@ -78,11 +59,10 @@ interface FilterRowProps {
   // A strand letter: the same, from the token colours. Rows with neither
   // are grey (grades)
   strandId?: string
-  small?: boolean
 }
 
-// One sidebar row. The picked row is tinted, with its count and an × at the
-// end; the others turn grey across the whole row on hover
+// One sidebar row. The picked row is tinted, with its count at the end; the
+// others turn grey across the whole row on hover
 function FilterRow({
   to,
   label,
@@ -90,7 +70,6 @@ function FilterRow({
   isPicked,
   tint,
   strandId,
-  small = false,
 }: FilterRowProps) {
   const pickedClass = tint
     ? ''
@@ -102,9 +81,7 @@ function FilterRow({
       to={to}
       aria-pressed={isPicked}
       data-strand={strandId}
-      className={`-mx-sm row-xs justify-between rounded-row px-sm transition-colors ${
-        small ? 'py-px text-sm' : 'py-xs text-sm'
-      } ${isPicked ? `font-semibold ${pickedClass}` : 'text-muted hover:bg-soft hover:text-fg'}`}
+      className={`-mx-sm row-xs justify-between rounded-row px-sm py-xs text-sm transition-colors ${isPicked ? `font-semibold ${pickedClass}` : 'text-muted hover:bg-soft hover:text-fg'}`}
       style={
         isPicked && tint
           ? { backgroundColor: tint.bg, color: tint.text }
@@ -123,94 +100,38 @@ function FilterRow({
         )}
         {label}
       </span>
-      <span
-        className={`row-xs text-xs font-normal ${isPicked ? '' : 'text-muted'}`}
-      >
+      <span className={`text-xs font-normal ${isPicked ? '' : 'text-muted'}`}>
         {count}
-        {isPicked && <Unpick />}
       </span>
     </Link>
   )
 }
 
-interface SubListProps {
-  subList: FilterSubList
-  // The strand's own colours (Math, Drama). Without them (Gym, Science) a
-  // picked code row takes strandId's token colours
-  colors?: StrandColors
-  strandId: string
-}
-
-// The picked strand's codes or links, indented under it with a line
-function SubList({ subList, colors, strandId }: SubListProps) {
-  if (subList.kind === 'links') {
-    return (
-      <div className="mt-xs mb-xs ml-xs border-l border-line pl-md">
-        {subList.links.map((link) => (
-          <Link
-            key={link.id}
-            to={link.to}
-            className={`block py-px text-sm transition-colors ${
-              link.isCurrent
-                ? 'font-semibold text-fg'
-                : 'text-muted hover:text-fg'
-            }`}
-          >
-            {link.label}
-          </Link>
-        ))}
-      </div>
-    )
-  }
-
+// The picked strand's links, indented under it with a line
+function SubList({ subList }: { subList: FilterSubList }) {
   return (
-    <div className="mt-xs mb-xs ml-xs flex flex-col gap-sm border-l border-line py-xs pl-md">
-      {subList.groups.map((group) => (
-        <div key={group.label}>
-          <p className="text-label">{group.label}</p>
-          <div className="grid grid-cols-3 gap-xs pt-xs lg:hidden">
-            {group.codes.map((item) => (
-              <Link
-                key={item.id}
-                to={item.to}
-                aria-current={item.isPicked ? 'page' : undefined}
-                className={squareClass(item.isPicked)}
-                style={
-                  item.isPicked && colors
-                    ? {
-                        backgroundColor: colors.accent,
-                        borderColor: colors.accent,
-                      }
-                    : undefined
-                }
-              >
-                {item.code}
-                {item.isPicked && <Unpick />}
-              </Link>
-            ))}
-          </div>
-          <div className="hidden pt-px lg:block">
-            {group.codes.map((item) => (
-              <FilterRow
-                key={item.id}
-                to={item.to}
-                label={item.code}
-                isPicked={item.isPicked}
-                tint={colors}
-                strandId={colors ? undefined : strandId}
-                small
-              />
-            ))}
-          </div>
-        </div>
+    <div className="mt-xs mb-xs ml-xs border-l border-line pl-md">
+      {subList.links.map((link) => (
+        <Link
+          key={link.id}
+          to={link.to}
+          className={`block py-px text-sm transition-colors ${
+            link.isCurrent
+              ? 'font-semibold text-fg'
+              : 'text-muted hover:text-fg'
+          }`}
+        >
+          {link.label}
+        </Link>
       ))}
     </div>
   )
 }
 
-// The By grade and By strand groups of a subject's sidebar. Pick a grade, a
-// strand, or both (or the subject's Overview, when given); clicking a picked item again unpicks it and keeps the
-// other. Desktop lists rows; phones show squares, which are easier to tap.
+// The By grade and By strand groups of a subject's sidebar. One pick at a
+// time: a grade opens its grade page, a strand its strand page, each from the
+// top. Picking one drops the other. Desktop lists rows; phones show squares
+// for the grades, which are easier to tap.
 // Each subject adds its own groups around it (Math: Articles; Drama:
 // Strategies), and the sidebar's Container spaces them all equally
 function CurriculumFilter({
@@ -222,11 +143,10 @@ function CurriculumFilter({
   subList,
   overview,
 }: CurriculumFilterProps) {
-  const gradePath = (grade: number) =>
-    path({
-      grade: grade === picked.grade ? undefined : grade,
-      strand: picked.strand,
-    })
+  // A page about a grade and a strand (e.g. an expectation) counts as its grade
+  const pickedGrade = picked.grade
+  const pickedStrand = picked.grade ? undefined : picked.strand
+  const gradePath = (grade: number) => path({ grade })
 
   return (
     <>
@@ -250,11 +170,10 @@ function CurriculumFilter({
               key={grade}
               to={gradePath(grade)}
               aria-label={`Grade ${grade}`}
-              aria-pressed={grade === picked.grade}
-              className={squareClass(grade === picked.grade)}
+              aria-pressed={grade === pickedGrade}
+              className={squareClass(grade === pickedGrade)}
             >
               {grade}
-              {grade === picked.grade && <Unpick />}
             </Link>
           ))}
         </div>
@@ -264,8 +183,8 @@ function CurriculumFilter({
               key={grade}
               to={gradePath(grade)}
               label={`Grade ${grade}`}
-              count={count({ grade, strand: picked.strand })}
-              isPicked={grade === picked.grade}
+              count={count({ grade })}
+              isPicked={grade === pickedGrade}
             />
           ))}
         </div>
@@ -275,27 +194,18 @@ function CurriculumFilter({
         <p className={headingClass}>By strand</p>
         <div className="pl-sm">
           {strands.map((strand) => {
-            const isPicked = strand.id === picked.strand
+            const isPicked = strand.id === pickedStrand
             return (
               <div key={strand.id}>
                 <FilterRow
-                  to={path({
-                    grade: picked.grade,
-                    strand: isPicked ? undefined : strand.id,
-                  })}
+                  to={path({ strand: strand.id })}
                   label={strand.name}
-                  count={count({ grade: picked.grade, strand: strand.id })}
+                  count={count({ strand: strand.id })}
                   isPicked={isPicked}
                   tint={strand.colors}
                   strandId={strand.colors ? undefined : strand.id}
                 />
-                {isPicked && subList && (
-                  <SubList
-                    subList={subList}
-                    colors={strand.colors}
-                    strandId={strand.id}
-                  />
-                )}
+                {isPicked && subList && <SubList subList={subList} />}
               </div>
             )
           })}

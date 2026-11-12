@@ -19,7 +19,6 @@ import CurriculumFilter, {
 } from '@/components/ui/CurriculumFilter'
 import type { DramaFilter, DramaStrandId } from '@/types/drama'
 import {
-  dramaExpectationPath,
   dramaPath,
   getDramaExpectations,
 } from '@/data/drama/curriculum/expectations'
@@ -64,29 +63,10 @@ function DramaSidebar() {
 
   const { filter, strand: currentStrand, expectation } = useDramaFilter()
 
-  // The same grade and strand filter as Math. With a grade picked, the strand
-  // opens onto its expectations in that grade; without, onto its numbers
+  // The same grade or strand filter as Math. A picked strand (with no grade)
+  // opens onto its numbers
   let subList: FilterSubList | undefined
-  if (currentStrand && filter.grade) {
-    subList = {
-      kind: 'codes',
-      groups: [
-        {
-          label: `${currentStrand.id} · ${currentStrand.name}`,
-          codes: getDramaExpectations(filter).map((item) => {
-            const isPicked = item.id === expectation?.id
-            return {
-              id: item.id,
-              code: item.code,
-              // Clicking the open expectation again goes back to its grade and strand
-              to: isPicked ? dramaPath(filter) : dramaExpectationPath(item),
-              isPicked,
-            }
-          }),
-        },
-      ],
-    }
-  } else if (currentStrand) {
+  if (currentStrand && !filter.grade) {
     const codes = getCodesInStrand(currentStrand.id)
     const currentCode = filter.code ?? codes[0]
     subList = {
@@ -271,7 +251,7 @@ function DramaSidebar() {
             path={(pick) =>
               dramaPath({
                 ...toFilter(pick),
-                // Unpicking the grade of an expectation keeps its number open
+                // Going from an expectation to its strand keeps its number open
                 code:
                   !pick.grade && pick.strand === filter.strand
                     ? filter.code
