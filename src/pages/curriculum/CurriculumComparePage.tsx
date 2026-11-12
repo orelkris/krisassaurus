@@ -6,10 +6,8 @@ import {
   curriculumPath,
   gradesOf,
   hasUnits,
-  ideaOf,
   mergeGrades,
   specificsIn,
-  specificsInIdea,
   unitOf,
 } from '@/lib/curriculum'
 import type { StrandId } from '@/types/curriculum'
@@ -17,8 +15,8 @@ import type { StrandId } from '@/types/curriculum'
 // One specific expectation across every grade, e.g. /gym/grade/4/b1/b1.3.
 // Grades in a row that say the same thing share one row (Grades 1–6);
 // in a strand with units, each grade shows its unit instead.
-// Gym's Strand D is compared by topic, and Math by idea, since their codes
-// change between grades
+// Gym's Strand D is compared by topic, since a topic's code can change
+// between grades. Otherwise each grade shows the same code, or N/A
 function CurriculumComparePage() {
   const curriculum = useCurriculum()
   const params = useParams<{ grade: string; code: string; specific: string }>()
@@ -32,25 +30,22 @@ function CurriculumComparePage() {
 
   if (!specific) return <Navigate to={overallPath} replace />
 
-  const idea = ideaOf(curriculum, grade, code)
   const byTopic = !!curriculum.strands[strand].topics && !!specific.topic
 
-  // What each grade says: the same code, every specific in the same idea
-  // (Math), or every specific under the same topic (Strand D)
+  // What each grade says: the same code, or every specific under the same
+  // topic (Strand D)
   const grades = gradesOf(curriculum).map((g) => ({
     grade: g,
-    entries: (idea
-      ? specificsInIdea(curriculum, idea, g)
-      : specificsIn(curriculum, g, strand).filter(([c, s]) =>
-          byTopic ? s.topic === specific.topic : c === code
-        )
-    ).map(([c, s]) => ({
-      code: idea || byTopic ? c : undefined,
-      text: s.description,
-    })),
+    entries: specificsIn(curriculum, g, strand)
+      .filter(([c, s]) => (byTopic ? s.topic === specific.topic : c === code))
+      .map(([c, s]) => ({
+        code: byTopic ? c : undefined,
+        text: s.description,
+      })),
   }))
 
-  // Grades next to each other that say the same thing share a row. In a
+  // Grades next to each other that say the same thing share a row (two
+  // grades in a row without the code share one N/A row). In a
   // strand with units (Science B to E), each grade keeps its own row, with
   // its unit above the text, since the same code is about a new unit
   const rows = hasUnits(curriculum, strand)
@@ -61,7 +56,15 @@ function CurriculumComparePage() {
           heading: unitOf(curriculum, g.grade, strand),
           entries: g.entries,
         }))
-    : mergeGrades(grades)
+    : mergeGrades(
+        // A grade without this code says N/A, so every grade has a row
+        byTopic
+          ? grades
+          : grades.map((g) => ({
+              ...g,
+              entries: g.entries.length ? g.entries : [{ text: 'N/A' }],
+            }))
+      )
 
   const all = gradesOf(curriculum)
   return (
@@ -73,11 +76,9 @@ function CurriculumComparePage() {
         }}
         code={code}
         name={
-          idea
-            ? idea.name
-            : byTopic
-              ? specific.topic
-              : `Grades ${all[0]} to ${all[all.length - 1]}`
+          byTopic
+            ? specific.topic
+            : `Grades ${all[0]} to ${all[all.length - 1]}`
         }
         items={[]}
       />
