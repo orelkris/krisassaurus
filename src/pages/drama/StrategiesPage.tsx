@@ -1,3 +1,4 @@
+import { ARTS_DRAMA } from '@/lib/arts'
 import { useEffect, useMemo } from 'react'
 import { useLocation } from 'react-router-dom'
 import PageHeader from '@/components/layout/PageHeader'
@@ -39,7 +40,11 @@ function StrategiesPage() {
         above={
           <Breadcrumb
             className="text-fg"
-            items={[{ label: 'Drama' }, { label: 'Strategies' }]}
+            items={[
+              { label: 'Arts' },
+              { label: 'Drama' },
+              { label: 'Strategies' },
+            ]}
           />
         }
         title="Strategies"
@@ -68,7 +73,7 @@ function StrategiesPage() {
               {items.map((strategy) => (
                 <LinkTile
                   key={strategy.slug}
-                  to={`/drama/strategies/${strategy.slug}`}
+                  to={`${ARTS_DRAMA}/strategies/${strategy.slug}`}
                   title={strategy.name}
                   text={strategy.summary}
                   color={group.colors.accent}

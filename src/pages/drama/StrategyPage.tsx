@@ -1,3 +1,4 @@
+import { ARTS_DRAMA } from '@/lib/arts'
 import { Fragment } from 'react'
 import { Navigate, useParams } from 'react-router-dom'
 import PageHeader from '@/components/layout/PageHeader'
@@ -20,7 +21,7 @@ function StrategyPage() {
   const { slug = '' } = useParams<{ slug: string }>()
   const strategy = getStrategy(slug)
 
-  if (!strategy) return <Navigate to="/drama/strategies" replace />
+  if (!strategy) return <Navigate to={`${ARTS_DRAMA}/strategies`} replace />
 
   const group = getGroup(strategy.groupId)
   const page = getStrategyPage(strategy.slug)
@@ -48,6 +49,7 @@ function StrategyPage() {
           <Breadcrumb
             className="text-fg"
             items={[
+              { label: 'Arts' },
               { label: 'Drama' },
               { label: 'Strategies' },
               { label: group.name },
@@ -61,7 +63,10 @@ function StrategyPage() {
             page */}
         <div className="col-section items-start">
           <Pill colors={group.colors}>{group.name}</Pill>
-          <ButtonLink to={`/drama/strategies#${group.id}`} variant="secondary">
+          <ButtonLink
+            to={`${ARTS_DRAMA}/strategies#${group.id}`}
+            variant="secondary"
+          >
             ← Back to Strategies
           </ButtonLink>
         </div>

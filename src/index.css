@@ -87,7 +87,7 @@
   --color-gym: #b91c1c;
   --color-math: #a16207;
   --color-language: #1d4ed8;
-  --color-drama: #7a4fd0;
+  --color-arts: #7a4fd0;
   --color-language: #c2410c;
   --color-science: #15803d;
 
@@ -146,6 +146,7 @@
     0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* dropdown menus */
   --shadow-float:
     0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* buttons floating over the page */
+  --shadow-tab: 0 1px 2px rgb(0 0 0 / 0.08); /* the picked tab on a grey track */
 
   /* Corners */
   --radius-card: 0.75rem;
@@ -231,6 +232,7 @@
   --container-lead: 36rem; /* the grey paragraph under a title: about 70 characters a line */
   --container-scene: 22.5rem; /* a drawn scene in a Drama example */
   --container-bubble: 12.5rem; /* a speech bubble */
+  --container-diagram: 45rem; /* a big drawing, e.g. the creative process cycle */
   --container-table: 35rem; /* the narrowest a wide table gets before it scrolls */
   --container-site: 72rem; /* the whole site (max-w-page would be the page spacing) */
 }
@@ -248,6 +250,11 @@
 
   /* Set by data-subject and data-strand below */
   --color-subject: var(--subject, var(--color-fg));
+  --color-subject-bg: color-mix(
+    in srgb,
+    var(--subject, var(--color-fg)) 12%,
+    var(--color-page)
+  );
   --color-strand: var(--strand);
   --color-strand-bg: var(--strand-bg);
   --color-strand-text: var(--strand-text);
@@ -307,8 +314,8 @@
 [data-subject='math'] {
   --subject: var(--color-math);
 }
-[data-subject='drama'] {
-  --subject: var(--color-drama);
+[data-subject='arts'] {
+  --subject: var(--color-arts);
 }
 [data-subject='language'] {
   --subject: var(--color-language);

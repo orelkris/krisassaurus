@@ -1,0 +1,818 @@
+{
+  "1": {
+    "A": [
+      {
+        "term": "Body",
+        "text": "body awareness (e.g., awareness of where one is in space in relation to objects in class, awareness of position), use of body zones (e.g., whole body [versus various body parts], upper body only, lower body only), use of body parts (e.g., arms, legs, head), body shapes (e.g., big, small, angular, twisted, curved, straight, closed), locomotor movements (e.g., galloping, skipping, rolling), non-locomotor movements (e.g., arm movements such as swimming/waving, hopping on one foot, jumping on two feet, kicking, bending knees, melting to the ground, stretching, growing, spinning, folding, bowing), body bases (e.g., feet as body base, hands and knees as body base)"
+      },
+      {
+        "term": "Space",
+        "text": "levels (e.g., low to high by reaching; high to low by falling, crouching), directions (e.g., forwards, backwards, sideways), general and personal"
+      },
+      {
+        "term": "Time",
+        "text": "tempo (e.g., fast/slow, movement versus freeze), rhythm (e.g., even, uneven)"
+      },
+      {
+        "term": "Energy",
+        "text": "quality (e.g., melting, twitching, slumping, percussive, sustained [as in a held stretch])"
+      },
+      {
+        "term": "Relationship",
+        "text": "with a partner (e.g., slow-motion mirroring)"
+      }
+    ],
+    "B": [
+      {
+        "term": "Role/character",
+        "text": "adopting the attitude, voice, or emotional state of a fictional character"
+      },
+      {
+        "term": "Relationship",
+        "text": "listening and responding in role to other characters in role"
+      },
+      {
+        "term": "Time and place",
+        "text": "pretending to be in the established setting of the drama"
+      },
+      {
+        "term": "Tension",
+        "text": "being aware of a sense of mystery or of a problem to be solved"
+      },
+      {
+        "term": "Focus and emphasis",
+        "text": "being aware of the main idea or issue in the drama"
+      }
+    ],
+    "C": [
+      {
+        "term": "Duration",
+        "text": "fast and slow tempi; rhythm versus beat; two and four beats per bar (2/4 and 4/4 metres); quarter note (oral prompt: “ta”), eighth note(s) (oral prompt: “ti-ti”), quarter rest; simple rhythmic ostinato (e.g., “ta, ta, ti-ti, ta”)"
+      },
+      {
+        "term": "Pitch",
+        "text": "high and low sounds; unison; melodic contour; simple melodic patterns using the notes “mi”, “so”, and “la” (e.g., the “so–mi–la–so–mi” pitch pattern in some children’s songs)"
+      },
+      {
+        "term": "Dynamics and other expressive controls",
+        "text": "loud, soft; a strong sound for a note or beat (accent); smooth and detached articulation"
+      },
+      {
+        "term": "Timbre",
+        "text": "vocal quality (e.g., speaking voice, singing voice), body percussion, sound quality of instruments (e.g., non-pitched and pitched percussion), environmental and found sounds"
+      },
+      {
+        "term": "Texture/harmony",
+        "text": "single melodic line in unison (monophony)"
+      },
+      {
+        "term": "Form",
+        "text": "phrase, call and response"
+      }
+    ],
+    "D": [
+      {
+        "term": "Line",
+        "text": "jagged, curved, broken, dashed, spiral, straight, wavy, zigzag lines; lines in art and everyday objects (natural and human-made)"
+      },
+      {
+        "term": "Shape and form",
+        "text": "geometric and organic shapes and forms of familiar objects (e.g., geometric: circles, blocks; organic: clouds, flowers)"
+      },
+      {
+        "term": "Space",
+        "text": "depiction of objects in the distance as smaller and closer to the top of the art paper; shapes and lines closer together or farther apart; horizon line; spaces through, inside, and around shapes or objects"
+      },
+      {
+        "term": "Colour",
+        "text": "mixing of primary colours (red, yellow, blue); identification of warm (e.g., red, orange) and cool (e.g., blue, green) colours"
+      },
+      {
+        "term": "Texture",
+        "text": "textures of familiar objects (e.g., fuzzy, prickly, bumpy, smooth); changes in texture; a pattern of lines to show texture (e.g., the texture of a snake’s skin); transfer of texture (e.g., placing a piece of paper over a textured surface and then rubbing the paper with wax crayon)"
+      },
+      {
+        "term": "Value",
+        "text": "light, dark"
+      },
+      {
+        "term": "Contrast",
+        "text": "light/dark; large/small; pure/mixed colour"
+      }
+    ]
+  },
+  "2": {
+    "A": [
+      {
+        "term": "Body",
+        "text": "body awareness (e.g., awareness of where one is in space in relation to objects in class), use of body zones (e.g., the right side of the body only versus the left side only), use of body parts (e.g., arms, legs, fingertips, torso), shapes, locomotor movements (e.g., running, galloping, crawling, creeping), non-locomotor movements (e.g., jumping, turning), body bases (e.g., knees as base, back as base)"
+      },
+      {
+        "term": "Space",
+        "text": "levels (e.g., middle level, expanding movements), pathways (e.g., straight, curvy, zigzag), directions (e.g., diagonal), size of movement"
+      },
+      {
+        "term": "Time",
+        "text": "freeze, tempo (e.g., stop/start, sudden, quick, sustained), rhythm (e.g., even, uneven)"
+      },
+      {
+        "term": "Energy",
+        "text": "force, quality (e.g., exploding, bouncing, shaking, smooth, delicate)"
+      },
+      {
+        "term": "Relationship",
+        "text": "(e.g., shadowing with a partner)"
+      }
+    ],
+    "B": [
+      {
+        "term": "Role/character",
+        "text": "adopting the attitude/point of view of a fictional character (e.g., in dialogue and writing in role); using body language (e.g., posture, gestures, facial expression), costumes, and props appropriate to a character; varying vocal levels, tones, and ranges to support the depiction of a character"
+      },
+      {
+        "term": "Relationship",
+        "text": "listening and responding in role to other characters in role"
+      },
+      {
+        "term": "Time and place",
+        "text": "establishing a fictional setting and relating to it in role"
+      },
+      {
+        "term": "Tension",
+        "text": "being aware of a sense of mystery or a problem to be solved"
+      },
+      {
+        "term": "Focus and emphasis",
+        "text": "identifying the main idea or central theme of the drama"
+      }
+    ],
+    "C": [
+      {
+        "term": "Duration",
+        "text": "half note (oral prompt: “ta-ah”), half rest, whole note (oral prompt: “ta-ah-ah-ah”), whole rest"
+      },
+      {
+        "term": "Pitch",
+        "text": "high “do”, simple melodic ostinato, melodic patterns, melodic patterns using notes of a pentatonic scale (e.g., “do–re–mi–so–la”, “do–re–fa–so–la”)"
+      },
+      {
+        "term": "Dynamics and other expressive controls",
+        "text": "gradations in volume encountered in music listened to, sung, and played (e.g., getting louder [crescendo], getting softer [decrescendo/diminuendo]); articulation (e.g., smooth [legato], detached [staccato])"
+      },
+      {
+        "term": "Timbre",
+        "text": "classification of instruments by listening to their sound (e.g., wind [woodwind, brass], stringed, electronic, membrane, pitched percussion instruments)"
+      },
+      {
+        "term": "Texture/harmony",
+        "text": "single melodic line in unison song with simple accompaniment (homophony), bordun patterns on “do” and “so”"
+      },
+      {
+        "term": "Form",
+        "text": "phrase, binary (AB) form, simple verse and chorus"
+      }
+    ],
+    "D": [
+      {
+        "term": "Line",
+        "text": "horizontal, vertical, diagonal lines; lines that show motion (e.g., pointy, curvy); lines inside shapes"
+      },
+      {
+        "term": "Shape and form",
+        "text": "symmetrical shapes and forms (e.g., shapes and forms in buildings)"
+      },
+      {
+        "term": "Space",
+        "text": "overlapping of objects to show depth"
+      },
+      {
+        "term": "Colour",
+        "text": "secondary colours (various colours made by mixing equal amounts of primary colours, such as violet, orange, green); mixing of colours with a limited palette"
+      },
+      {
+        "term": "Texture",
+        "text": "textures of familiar objects (e.g., rough tree bark, smooth plastic plate, ridged corduroy fabric); illusion of texture (e.g., a rough texture created by patterns of lines); impasto (thick, textured paint)"
+      },
+      {
+        "term": "Value",
+        "text": "mixing of a tint; identification of light and dark"
+      },
+      {
+        "term": "Repetition and rhythm",
+        "text": "repetition of colour and shape in patterns; random, alternating, and regular patterns in everyday objects (e.g., textiles, ceramics) and in art (e.g., works by M. C. Escher)"
+      }
+    ]
+  },
+  "3": {
+    "A": [
+      {
+        "term": "Body",
+        "text": "body actions, body shapes, locomotor movements (e.g., running, galloping, crawling), non-locomotor movements (e.g., lifting, pulling, marching, waving arms), body bases (e.g., seat as base), use of body zones (e.g., body areas of front and back)"
+      },
+      {
+        "term": "Space",
+        "text": "levels, pathways, directions, size of movement"
+      },
+      {
+        "term": "Time",
+        "text": "freeze, tempo (e.g., slow, sustained, fast)"
+      },
+      {
+        "term": "Energy",
+        "text": "force (e.g., lightness/strength), effort (e.g., pressing, gliding), quality (e.g., smoothly, cautiously, erratically, percussively)"
+      },
+      {
+        "term": "Relationship",
+        "text": "(e.g., interconnected shapes)"
+      }
+    ],
+    "B": [
+      {
+        "term": "Role/character",
+        "text": "adopting the attitude/point of view of a number of different fictional characters, dialogue"
+      },
+      {
+        "term": "Relationship",
+        "text": "listening and responding in role to other characters in role"
+      },
+      {
+        "term": "Time and place",
+        "text": "establishing a clear setting"
+      },
+      {
+        "term": "Tension",
+        "text": "identifying factors that contribute to mystery or tension in a drama"
+      },
+      {
+        "term": "Focus and emphasis",
+        "text": "identifying the central theme and/or problem in a drama"
+      }
+    ],
+    "C": [
+      {
+        "term": "Duration",
+        "text": "three beats per bar (3/4 metre), dotted half note, sixteenth-note patterns, sixteenth rest; very fast (presto), very slow (largo)"
+      },
+      {
+        "term": "Pitch",
+        "text": "low “so”, low “la”, higher and lower pitch, pitch contour"
+      },
+      {
+        "term": "Dynamics and other expressive controls",
+        "text": "standard symbols for soft (e.g., piano – p) and loud (e.g., forte – f); invented symbols for soft and loud; articulation and expression marks encountered in music listened to, sung, and played (e.g., staccato, legato, signs for crescendo and decrescendo)"
+      },
+      {
+        "term": "Timbre",
+        "text": "classification of instruments by means of sound production (e.g., sounds produced by strumming, striking, shaking, blowing)"
+      },
+      {
+        "term": "Texture/harmony",
+        "text": "simple two-part rounds, partner songs, canons"
+      },
+      {
+        "term": "Form",
+        "text": "section, ternary (ABA) form"
+      }
+    ],
+    "D": [
+      {
+        "term": "Line",
+        "text": "variety of line (e.g., thick, thin, dotted)"
+      },
+      {
+        "term": "Shape and form",
+        "text": "composite shapes; symmetrical and asymmetrical shapes and forms in both the human-made environment and the natural world (e.g., symmetrical: insects, flowers, skyscrapers; asymmetrical: windblown trees, some contemporary additions to buildings [asymmetrical façade in Daniel Libeskind’s design for the Royal Ontario Museum])"
+      },
+      {
+        "term": "Space",
+        "text": "foreground, middle ground, and background to give illusion of depth"
+      },
+      {
+        "term": "Colour",
+        "text": "colour for expression (e.g., warm and cool colours); colour to indicate emotion; mixing of colours with white to make a range of warm and cool tints"
+      },
+      {
+        "term": "Texture",
+        "text": "real versus visual or illusory texture (e.g., smooth surface of a ceramic work versus drawing of rough tree bark); etching by scratching through surfaces (e.g., crayon etching on a scratchboard)"
+      },
+      {
+        "term": "Value",
+        "text": "mixing a range of light colours and dark colours"
+      },
+      {
+        "term": "Variety",
+        "text": "slight variations on a major theme; strong contrasts (e.g., use of different lines, shapes, values, and colours to create interest [bright or light colour values, dark colour values])"
+      }
+    ]
+  },
+  "4": {
+    "A": [
+      {
+        "term": "Body",
+        "text": "symmetry versus asymmetry, organic versus geometric shape, angular versus curved shape, gesture, body zones (e.g., cross-lateral [left arm and right leg])"
+      },
+      {
+        "term": "Space",
+        "text": "positive versus negative space, pathways (e.g., in air, on floor)"
+      },
+      {
+        "term": "Time",
+        "text": "tempo (e.g., increasing and decreasing speeds), rhythm (e.g., steady, irregular, erratic), pause, stillness, with music, without music, duration"
+      },
+      {
+        "term": "Energy",
+        "text": "effort, force, quality (e.g., punch, thrust, float, collapse, wiggle, explode, vibrate)"
+      },
+      {
+        "term": "Relationship",
+        "text": "meet/part, follow/lead, groupings"
+      }
+    ],
+    "B": [
+      {
+        "term": "Role/character",
+        "text": "adopting a role and maintaining focus in role; communicating character traits and character choices through body language/movement and gestures; sustaining belief in character (e.g., using the first-person point of view while speaking); varying voice (e.g., diction, pace, volume, projection, enunciation)"
+      },
+      {
+        "term": "Relationship",
+        "text": "developing and analysing relationships between and among characters in a drama"
+      },
+      {
+        "term": "Time and place",
+        "text": "establishing a clear setting; sustaining belief in the setting"
+      },
+      {
+        "term": "Tension",
+        "text": "identifying factors that contribute to tension or mystery in a drama"
+      },
+      {
+        "term": "Focus and emphasis",
+        "text": "identifying the central theme and/or problem in a drama; drawing audience attention to specific aspects of the drama"
+      }
+    ],
+    "C": [
+      {
+        "term": "Duration",
+        "text": "syncopation using an eighth note followed by a quarter note and an eighth note (oral prompts: “ti-ta-ti” or “syn-co-pa”); sustaining a note or rest for longer than its value (pause or fermata)"
+      },
+      {
+        "term": "Pitch",
+        "text": "melody maps, five-line staff, absolute pitch names in treble clef (A, B, C, D, E, F, G), major and minor tonality, major scale (written with notes or numbers), intervals (unison, step, skip, leap), key signatures in the music they perform (e.g., no sharps or flats, one sharp, one flat), accidentals (sharp, flat, natural)"
+      },
+      {
+        "term": "Dynamics and other expressive controls",
+        "text": "changes in volume encountered in music listened to, sung, and played (e.g., sforzando [sfz]); articulation (e.g., phrase markings)"
+      },
+      {
+        "term": "Timbre",
+        "text": "homogeneous sound of ensemble instruments (e.g., individual instruments of the orchestra or other performing ensemble)"
+      },
+      {
+        "term": "Texture/harmony",
+        "text": "canon, simple two-part piece (simple polyphony)"
+      },
+      {
+        "term": "Form",
+        "text": "verse and chorus; piece with an introduction and/or a coda; simple repeats"
+      }
+    ],
+    "D": [
+      {
+        "term": "Line",
+        "text": "lines to indicate emotion (e.g., smooth, horizontal lines can give a feeling of peace and harmony); contour lines (e.g., edges of objects); lines of various weights; repetition of lines to create visual rhythm"
+      },
+      {
+        "term": "Shape and form",
+        "text": "free-standing forms “in the round” (e.g., Henry Moore’s figurative work) and “bas relief sculpture” (e.g., masks); shapes organized in a pattern showing radial symmetry and/or in a mosaic; changes in shapes, depending on the angle or point of view (e.g., view from the top, side, bottom); positive and negative shapes (e.g., closed curve with shape inside and outside); grouping of shapes; abstract shapes and forms"
+      },
+      {
+        "term": "Space",
+        "text": "positive and negative space in art work; diminishing perspective in various contexts (e.g., in vertical placement, in diminishing size, and/or in overlapping shapes); variation in size to create the illusion of depth"
+      },
+      {
+        "term": "Colour",
+        "text": "monochromatic colour scheme; colour emphasis through variations in intensity (e.g., subdued colours next to bright, intense colours); advancing colour"
+      },
+      {
+        "term": "Texture",
+        "text": "texture elaboration (e.g., embossing, piercing, pinching, pressing, scoring, scraping); texture quality (e.g., matte, sheen); low relief in collographs"
+      },
+      {
+        "term": "Value",
+        "text": "mixing of shades; variations in value to create emphasis (contrast in value)"
+      },
+      {
+        "term": "Emphasis",
+        "text": "use of colour intensity, contrast in value, placement and size of shapes, and/or weight of line to create a particular focal point"
+      }
+    ]
+  },
+  "5": {
+    "A": [
+      {
+        "term": "Body",
+        "text": "body awareness, use of body parts, body shapes, locomotor and non-locomotor movements, body bases, symmetry versus asymmetry, geometric versus organic shape, angular versus curved shape"
+      },
+      {
+        "term": "Space",
+        "text": "levels, pathways, directions, pattern, positive versus negative space, various group formations, proximity of dancers to one another"
+      },
+      {
+        "term": "Time",
+        "text": "tempo, rhythm (e.g., regular, irregular), pause, stillness, with music, without music, duration"
+      },
+      {
+        "term": "Energy",
+        "text": "effort, force, quality (e.g., slash, press, shrink, open)"
+      },
+      {
+        "term": "Relationship",
+        "text": "meet/part, follow/lead, emotional connections between dancers, groupings"
+      }
+    ],
+    "B": [
+      {
+        "term": "Role/character",
+        "text": "adopting a variety of roles; considering both the inner and outer life in developing a character; sustaining familiar and unfamiliar roles; varying position (e.g., full front, quarter, profile, full back)"
+      },
+      {
+        "term": "Relationship",
+        "text": "developing and analysing a character in terms of his/her relationships with other characters"
+      },
+      {
+        "term": "Time and place",
+        "text": "establishing a clear setting (e.g., using simple objects and props to represent time and place)"
+      },
+      {
+        "term": "Tension",
+        "text": "using audio, visual, and/or technological aids and stage effects to heighten suspense and engage the audience"
+      },
+      {
+        "term": "Focus and emphasis",
+        "text": "using drama conventions to reveal/communicate key emotions and motivations to the audience and/or to draw audience attention to specific aspects of the drama"
+      }
+    ],
+    "C": [
+      {
+        "term": "Duration",
+        "text": "dotted quarter note followed by an eighth note (oral prompt: “tam-ti”); dotted eighth note and sixteenth note (oral prompt: “tim-ka”); rhythms, including those with eighth notes (“ti-ti”) and sixteenth notes (“tika-tika”), in various combinations (e.g., “tika-ti, ti-tika, ti-ti, ta”); 6/8 metre (oral count, with primary emphasis on “one” and secondary emphasis on “two”: “one-and-a-two-and-a”)"
+      },
+      {
+        "term": "Pitch",
+        "text": "key signatures in the music they perform (e.g., D major, G minor), clefs used for any instruments they play"
+      },
+      {
+        "term": "Dynamics and other expressive controls",
+        "text": "dynamics and articulation encountered in music listened to, sung, and played, and their signs"
+      },
+      {
+        "term": "Timbre",
+        "text": "tone colour for particular purposes (e.g., use of trumpets for a fanfare, flutes for depicting birds, various instruments for creating specific moods)"
+      },
+      {
+        "term": "Texture/harmony",
+        "text": "part singing (homophonic or polyphonic), chord progressions using I and V"
+      },
+      {
+        "term": "Form",
+        "text": "compositions in four or more sections (e.g., AABA, ABAC [alternation between a chorus, A, and improvisations, B and C], rondo [e.g., ABACADA])"
+      }
+    ],
+    "D": [
+      {
+        "term": "Line",
+        "text": "linear and curved hatching and cross-hatching that add a sense of depth to shape and form; gesture drawings; chenile stick sculptures of figures in action; implied lines for movement and depth"
+      },
+      {
+        "term": "Shape and form",
+        "text": "symmetrical and asymmetrical shapes and forms in font and image; positive and negative shapes that occur in the environment; convex, concave, non-objective shapes"
+      },
+      {
+        "term": "Space",
+        "text": "shading and cast shadows that create the illusion of depth; atmospheric perspective; microscopic and telescopic views"
+      },
+      {
+        "term": "Colour",
+        "text": "complementary colours, hue, intensity (e.g., dulling, or neutralizing, colour intensity by mixing the colour with a small amount of its complementary hue)"
+      },
+      {
+        "term": "Texture",
+        "text": "textures created with a variety of tools, materials, and techniques; patterning"
+      },
+      {
+        "term": "Value",
+        "text": "gradations of value to create illusion of depth, shading"
+      },
+      {
+        "term": "Proportion",
+        "text": "the relationship of the size and shape of the parts of a figure to the whole figure; the scale of one object compared to its surroundings, with indications of how close and how large the object is (e.g., figures with childlike proportions that are approximately “five heads high” and adult figures that are approximately “seven or eight heads high”; caricature; use of improbable scale for imaginary settings and creatures)"
+      }
+    ]
+  },
+  "6": {
+    "A": [
+      {
+        "term": "Body",
+        "text": "body awareness, use of body parts, body shapes, locomotor and non-locomotor movements, body bases, symmetry versus asymmetry, geometric versus organic shape, curved versus angular shape"
+      },
+      {
+        "term": "Space",
+        "text": "pathways, directions, positive versus negative space, proximity of dancers to one another, various group formations"
+      },
+      {
+        "term": "Time",
+        "text": "tempo, rhythm, pause, stillness, with music, without music, duration (e.g., short, long), acceleration/deceleration"
+      },
+      {
+        "term": "Energy",
+        "text": "effort, force, quality (e.g., flick, fold, stab, poke, flow freely)"
+      },
+      {
+        "term": "Relationship",
+        "text": "dancers to props/objects (e.g., in front of, inside, over, around), meet/part, follow/lead, emotional connections between dancers, groupings"
+      }
+    ],
+    "B": [
+      {
+        "term": "Role/character",
+        "text": "considering in depth the inner and outer life in developing a character; differentiating between authentic characters and stereotypes; using gestures and movement to convey character"
+      },
+      {
+        "term": "Relationship",
+        "text": "analysing and portraying how relationships influence character development/change"
+      },
+      {
+        "term": "Time and place",
+        "text": "establishing a clear setting; sustaining belief in the fictional setting"
+      },
+      {
+        "term": "Tension",
+        "text": "using sound, light, technology, and stage effects to heighten tension/suspense"
+      },
+      {
+        "term": "Focus and emphasis",
+        "text": "using drama conventions to reveal or communicate key emotions, motivations, perspectives, and ideas to the audience"
+      }
+    ],
+    "C": [
+      {
+        "term": "Duration",
+        "text": "▢ metre (oral count, with primary emphasis on “one” and secondary emphasis on “two” and “three”: “one-and-a-two-and-a-three-and-a”) and other compound metres (e.g., ▢); ▢ metre; pick-up note(s) (anacrusis); triplets; common Italian tempo marks (e.g., allegro, adagio) and others encountered in the repertoire performed"
+      },
+      {
+        "term": "Pitch",
+        "text": "ledger lines above or below the staff; major, minor, and perfect intervals (e.g. major third, perfect fifth)"
+      },
+      {
+        "term": "Dynamics and other expressive controls",
+        "text": "those encountered in repertoire (e.g., very soft [pianissimo – pp], very loud [fortissimo – ff], slurs)"
+      },
+      {
+        "term": "Timbre",
+        "text": "electronic sounds; Orff ensemble (xylophone, recorder, pitched and non-pitched percussion); other ensemble sonorities (drum line, choir, guitar, marching band)"
+      },
+      {
+        "term": "Texture/harmony",
+        "text": "layering of electronic sounds, chord progressions using I, IV, and V"
+      },
+      {
+        "term": "Form",
+        "text": "theme and variations; repeats (e.g., first and second endings) 9 8 6 4"
+      }
+    ],
+    "D": [
+      {
+        "term": "Line",
+        "text": "lines that direct the viewer’s attention; lines that create the illusion of force or movement (e.g., wavy and wiggly lines used in op art); contour drawings of objects that are not easily recognizable (e.g., crumpled paper)"
+      },
+      {
+        "term": "Shape and form",
+        "text": "exaggerated proportions, motifs, fonts; geometric (e.g., conical, pyramidal) shapes and forms"
+      },
+      {
+        "term": "Space",
+        "text": "centre of interest (focal point) and one-point perspective; basic facial proportions; horizontal and vertical symmetry"
+      },
+      {
+        "term": "Colour",
+        "text": "the colour wheel; tertiary colours; colour for expressive purposes; colour for creating naturalistic images"
+      },
+      {
+        "term": "Texture",
+        "text": "textures created with a variety of tools, materials, and techniques (e.g., gouged marks in a softoleum print)"
+      },
+      {
+        "term": "Value",
+        "text": "shading that suggests volume; gradation"
+      },
+      {
+        "term": "Balance",
+        "text": "arrangement of the elements of design to create the impression of equality in weight or importance (e.g., a formal or symmetrical arrangement produced through distribution of shapes; an informal or asymmetrical arrangement produced through use of colour); colour concepts to be used in creating balance (e.g., light or neutral colours appear lighter in “weight” than dark or brilliant colours; warm colours seem to expand, cool colours seem to contract; transparent areas seem to “weigh” less than opaque areas)"
+      }
+    ]
+  },
+  "7": {
+    "A": [
+      {
+        "term": "Body",
+        "text": "body awareness, use of body parts, body shapes, locomotor and non-locomotor movements, body bases, symmetry versus asymmetry, geometric versus organic shape, angular versus curved shape, isolation of body parts (e.g., moving just the shoulder when the rest of the body is still), weight transfer (e.g., lunge, leap, roll)"
+      },
+      {
+        "term": "Space",
+        "text": "levels, pathways, directions, positive versus negative space, proximity of dancers to one another, various group formations, performance space (e.g., confined, large)"
+      },
+      {
+        "term": "Time",
+        "text": "pause, freeze, with music, without music, duration, rhythm, tempo, acceleration/deceleration"
+      },
+      {
+        "term": "Energy",
+        "text": "effort, force, quality, inaction versus action, percussion, fluidity (e.g., wring, dab, mould, flow, bind)"
+      },
+      {
+        "term": "Relationship",
+        "text": "dancers to objects, opposition, groupings (e.g., large and small groups), meet/part, follow/lead, emotional connections between dancers, groupings"
+      }
+    ],
+    "B": [
+      {
+        "term": "Role/character",
+        "text": "considering motivations of historical and fictional characters; considering various facets of multidimensional characters; revealing character through the use of props and movement/blocking; maintaining commitment to role"
+      },
+      {
+        "term": "Relationship",
+        "text": "developing and analysing multidimensional relationships in the drama"
+      },
+      {
+        "term": "Time and place",
+        "text": "improvising with/adapting available materials to establish setting; using blocking (e.g., when and where to move) and stage areas (e.g., upstage right, downstage centre) in planning and performance"
+      },
+      {
+        "term": "Tension",
+        "text": "using sound, lighting, technology, and stage effects to heighten tension; using foreshadowing to create suspense"
+      },
+      {
+        "term": "Focus and emphasis",
+        "text": "using a range of devices and effects to highlight specific aspects of the performance for the audience"
+      }
+    ],
+    "C": [
+      {
+        "term": "Duration",
+        "text": "tempo markings (e.g., allegro, vivace, largo), rhythms in the repertoire they play and/or sing"
+      },
+      {
+        "term": "Pitch",
+        "text": "blues scale, grand staff, keys encountered in the repertoire they perform"
+      },
+      {
+        "term": "Dynamics and other expressive controls",
+        "text": "articulation and expression marks encountered in the repertoire they perform (e.g., marcato, maestoso)"
+      },
+      {
+        "term": "Timbre",
+        "text": "tone colour of complex ensembles (e.g., jazz, gamelan, choral, orchestral)"
+      },
+      {
+        "term": "Texture/harmony",
+        "text": "major and minor triads"
+      },
+      {
+        "term": "Form",
+        "text": "12-bar blues"
+      }
+    ],
+    "D": [
+      {
+        "term": "Line",
+        "text": "lines for expressive purposes; diagonal and converging lines to create depth of space; repetition of lines to create visual rhythm"
+      },
+      {
+        "term": "Shape and form",
+        "text": "various shapes and forms, symbols, icons, logos, radial balance"
+      },
+      {
+        "term": "Space",
+        "text": "use of blue or complementary colours in shadows and shading to create depth; one- and twopoint perspective; open-form sculpture versus closed-form sculpture; installations"
+      },
+      {
+        "term": "Colour",
+        "text": "analogous colours; transparent colour created with watercolour or tissue paper decoupage Note: In creating multimedia art works, students may need some understanding of different colour models, such as RGB and CMY(K), and websafe colours."
+      },
+      {
+        "term": "Texture",
+        "text": "textures created with a variety of tools, materials, and techniques (e.g., use of texture in a landscape work)"
+      },
+      {
+        "term": "Value",
+        "text": "shading (e.g., modulation, scumbling, stippling)"
+      },
+      {
+        "term": "Unity and harmony",
+        "text": "radial balance (e.g., a mandala); similarity (e.g., consistency and completeness through repetition of colours, shapes, values, textures, or lines); continuity (e.g., treatment of different elements in a similar manner); alignment (e.g., arrangement of shapes to follow an implied axis); proximity (e.g., grouping of related items together)"
+      }
+    ]
+  },
+  "8": {
+    "A": [
+      {
+        "term": "Body",
+        "text": "body awareness, use of body parts (e.g., hips, shoulders), body shapes (e.g., angular, stretched, twisted), locomotor movements (e.g., leap, dart), non-locomotor movements (e.g., twist, rock), body bases, symmetry versus asymmetry, geometric versus organic shape, curved versus angular shape, isolation of body parts, weight transfer"
+      },
+      {
+        "term": "Space",
+        "text": "levels, pathways, directions, positive versus negative space, proximity of dancers to one another, various group formations, use of performance space"
+      },
+      {
+        "term": "Time",
+        "text": "stillness, rhythm, tempo, pause, freeze, with music, without music, duration, acceleration/ deceleration"
+      },
+      {
+        "term": "Energy",
+        "text": "quality, inaction versus action, percussion, fluidity (e.g., glide, sink, fall, shiver)"
+      },
+      {
+        "term": "Relationship",
+        "text": "dancers to objects, opposition, groupings (e.g., large and small groups), meet/part, follow/lead, emotional connections between dancers"
+      }
+    ],
+    "B": [
+      {
+        "term": "Role/character",
+        "text": "analysing the background, motivation, speech, and actions of characters to build roles; using voice, stance, gesture, and facial expression to portray character"
+      },
+      {
+        "term": "Relationship",
+        "text": "analysing relationships to develop the interplay between characters"
+      },
+      {
+        "term": "Time and place",
+        "text": "using props, costumes, and furniture to establish setting; modifying production elements to suit different audiences"
+      },
+      {
+        "term": "Tension",
+        "text": "using various stage effects to produce specific audience reactions"
+      },
+      {
+        "term": "Focus and emphasis",
+        "text": "using a wide range of devices to highlight the central theme for the audience; making deliberate artistic choices to sharpen focus"
+      }
+    ],
+    "C": [
+      {
+        "term": "Duration",
+        "text": "tempo markings and rhythms encountered in the repertoire"
+      },
+      {
+        "term": "Pitch",
+        "text": "major and minor tonality; keys encountered in the repertoire"
+      },
+      {
+        "term": "Dynamics and other expressive controls",
+        "text": "all intensity levels; changes in levels"
+      },
+      {
+        "term": "Timbre",
+        "text": "tone colours of world music ensembles and instruments (e.g., gamelan, shakuhachi, doumbek, sitar, djembe, ocarina)"
+      },
+      {
+        "term": "Texture/harmony",
+        "text": "monophonic, homophonic, and polyphonic music"
+      },
+      {
+        "term": "Form",
+        "text": "forms encountered in performance repertoire (e.g., minuet)"
+      }
+    ],
+    "D": [
+      {
+        "term": "Line",
+        "text": "directional lines; one- and two-point perspective to create depth; contour drawings of figures"
+      },
+      {
+        "term": "Shape and form",
+        "text": "various visual “weights” of forms (e.g., large, light-coloured forms can seem to have less weight than smaller, dark forms); complex three-dimensional constructions and motifs; gradation in size"
+      },
+      {
+        "term": "Space",
+        "text": "one- and two-point perspective or foreshortening to create illusory space; informal converging lines in an image creating the illusion of space; adult human figures that are seven to eight heads in height; alternative systems for representing space (e.g., layered images in medieval art; disproportionately small images of people within a vast landscape in Chinese art to show the smallness of humans in relation to nature; images seen from several points of view simultaneously in Egyptian and cubist paintings)"
+      },
+      {
+        "term": "Colour",
+        "text": "tertiary colours; contrast of colour; absence of colour Note: In creating multimedia art works, students may need some understanding of different colour models, such as RGB and CMY(K), and websafe colours."
+      },
+      {
+        "term": "Texture",
+        "text": "real and illusory textures that appear in the environment"
+      },
+      {
+        "term": "Value",
+        "text": "cross-hatching to suggest volume and shadows; variation and increased range of gradation in value"
+      },
+      {
+        "term": "Movement",
+        "text": "actual lines to lead the viewer’s eye (e.g., solid lines, dotted lines); subtle or implied “paths” using shape, value, and/or colour (e.g., an invisible path created by leading the eye from large shapes to small shapes, from shapes in dark colours to shapes in lighter colours, from familiar shapes to unfamiliar shapes, from colour to no colour); actual action (e.g., kinetic sculpture, animation); implied action (e.g., an invisible path created by an arrow, a gaze, or a pointing finger; the “freeze frame” effect of an object in motion, such as a bouncing ball suspended in mid-air or a runner about to take the next step)"
+      }
+    ]
+  }
+}

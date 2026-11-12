@@ -19,13 +19,13 @@ export const subjectSections: SubjectSection[] = [
     related: {
       label: 'Looking for ways to teach math through drama?',
       linkText: 'Drama & Math',
-      to: '/drama/subjects/math',
+      to: '/arts/drama/subjects/math',
     },
   },
   {
-    slug: 'drama',
-    name: 'Drama',
-    path: '/drama',
+    slug: 'arts',
+    name: 'Arts',
+    path: '/arts',
     ready: true,
   },
   {

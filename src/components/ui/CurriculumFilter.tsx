@@ -65,7 +65,7 @@ interface FilterRowProps {
 
 // One sidebar row. The picked row is tinted, with its count at the end; the
 // others turn grey across the whole row on hover
-function FilterRow({
+export function FilterRow({
   to,
   label,
   count,

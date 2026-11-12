@@ -5,12 +5,10 @@ import type { DocumentLink } from '@/types/resources'
 export const documentLinks: DocumentLink[] = [
   {
     documentSlug: 'the-arts-1-8',
-    to: '/drama',
-    label: 'Subjects › Drama',
-    blurb: 'The Drama strand, with expectations for each grade.',
-    // Printed page where the curriculum introduces the Drama strand
-    page: 15,
-    pageLabel: 'the Drama strand',
+    to: '/arts',
+    label: 'Subjects › Arts',
+    blurb:
+      'Dance, drama, music and visual arts, with expectations for each grade.',
   },
   {
     documentSlug: 'mathematics-1-8',

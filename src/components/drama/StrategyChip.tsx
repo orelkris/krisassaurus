@@ -1,3 +1,4 @@
+import { ARTS_DRAMA } from '@/lib/arts'
 import { Link } from 'react-router-dom'
 import type { Strategy } from '@/types/drama'
 import { getGroup } from '@/data/drama/groups'
@@ -11,7 +12,7 @@ function StrategyChip({ strategy }: StrategyChipProps) {
 
   return (
     <Link
-      to={`/drama/strategies/${strategy.slug}`}
+      to={`${ARTS_DRAMA}/strategies/${strategy.slug}`}
       className="inline-flex items-center gap-xs whitespace-nowrap rounded-pill px-sm py-px text-xs font-medium hover:brightness-95"
       style={{ backgroundColor: colors.bg, color: colors.text }}
     >

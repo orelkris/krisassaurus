@@ -7,7 +7,7 @@ import type { ActivityCard, ConceptCard } from '@/types/math'
 // and a typo in a subject id is a type error
 export const SUBJECTS = {
   math: { name: 'Math' },
-  drama: { name: 'Drama' },
+  arts: { name: 'Arts' },
   language: { name: 'Language' },
   gym: { name: 'Gym' },
   science: { name: 'Science' },
@@ -25,8 +25,8 @@ export type StrandId = (typeof STRAND_IDS)[number]
 export type GymStrand = Extract<StrandId, 'A' | 'B' | 'C' | 'D'>
 export type ScienceStrand = Extract<StrandId, 'A' | 'B' | 'C' | 'D' | 'E'>
 export type MathStrand = StrandId
-// Drama is Strand B of The Arts 1–8; its overalls are B1, B2 and B3
-export type DramaStrand = Extract<StrandId, 'B'>
+// The Arts: A Dance, B Drama, C Music, D Visual Arts
+export type ArtsStrand = Extract<StrandId, 'A' | 'B' | 'C' | 'D'>
 
 export interface Prompt {
   // A heading the document prints before it, e.g. In role (Drama)
@@ -129,8 +129,8 @@ export interface Term {
   text: string
 }
 
-// A box the document prints at the top of each grade, e.g. Drama's
-// Fundamental Concepts: the elements of drama the grade focuses on
+// A box the document prints with a strand in each grade, e.g. the Arts'
+// Fundamental Concepts: the elements of drama Grade 4 focuses on
 export interface GradeConcepts {
   // e.g. Elements of drama
   name: string
@@ -156,6 +156,10 @@ export interface Curriculum<S extends StrandId> {
   // so they load only when a page shows them
   supports?: (grade: number) => Promise<Record<string, TeacherSupports>>
   cards?: SupportCards
-  // Shown first on each grade page, when the document has one (Drama)
-  concepts?: GradeConcepts
+  // Each strand's concepts box on the grade page, when the document has
+  // one (the Arts' Elements of dance, drama, music and design)
+  concepts?: Partial<Record<S, GradeConcepts>>
+  // The grade page shows one strand at a time, picked at the top, rather
+  // than every strand one after the other (the Arts: one discipline each)
+  strandAtATime?: boolean
 }

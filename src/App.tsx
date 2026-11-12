@@ -5,7 +5,6 @@ import {
   Outlet,
   Navigate,
   useLocation,
-  useParams,
 } from 'react-router-dom'
 import AppLayout from '@/components/layout/AppLayout'
 import SubjectSectionPage from '@/pages/SubjectSectionPage'
@@ -17,6 +16,10 @@ import TwoColumnLayout from '@/components/layout/TwoColumnLayout'
 import StrategiesPage from '@/pages/drama/StrategiesPage'
 import StrategyPage from '@/pages/drama/StrategyPage'
 import SubjectPage from '@/pages/drama/SubjectPage'
+import SubjectsPage from '@/pages/drama/SubjectsPage'
+import CreativeProcessPage from '@/pages/arts/CreativeProcessPage'
+import CriticalProcessPage from '@/pages/arts/CriticalProcessPage'
+import { ARTS_DRAMA } from '@/lib/arts'
 import ResourcesSidebar from '@/components/resources/ResourcesSidebar'
 import ComingSoon from '@/components/ui/ComingSoon'
 import CurriculumOverviewPage from '@/pages/curriculum/CurriculumOverviewPage'
@@ -38,29 +41,34 @@ function OldBlogRedirect() {
   return <Navigate to={`${to}${search}${hash}`} replace />
 }
 
-// Drama's overall expectations used to be its strands, with their own
-// addresses: /drama/strand/creating-and-presenting?code=b1.2 and
-// /drama/grade/4/strand/creating-and-presenting
+// Drama was its own subject before the Arts: /drama/... addresses now open
+// the same page under /arts. Its strategies and subject pages moved to
+// /arts/drama/..., its grades are the Arts' grades (Drama is Strand B), and
+// its old strands were the overall expectations B1, B2 and B3
 const OLD_DRAMA_STRANDS: Record<string, string> = {
   'creating-and-presenting': 'b1',
   'reflecting-responding-and-analysing': 'b2',
   'exploring-forms-and-cultural-contexts': 'b3',
 }
 
-function OldDramaStrandRedirect() {
-  const { grade } = useParams<{ grade?: string }>()
-  const { pathname, search } = useLocation()
-  const slug = pathname.split('/').pop() ?? ''
-  const overall = OLD_DRAMA_STRANDS[slug]
+function OldDramaRedirect() {
+  const { pathname, search, hash } = useLocation()
+  const parts = pathname.split('/').slice(2)
+  const [first, second, third, fourth] = parts
   const code = new URLSearchParams(search).get('code')
-  if (!overall) return <Navigate to="/drama" replace />
-  if (grade) return <Navigate to={`/drama/grade/${grade}/${overall}`} replace />
-  return (
-    <Navigate
-      to={`/drama/strand/b/${overall}${code ? `#${code.replace('.', '-')}` : ''}`}
-      replace
-    />
-  )
+  let to = '/arts'
+  if (first === 'strategies' || first === 'subjects')
+    to = `${ARTS_DRAMA}/${parts.join('/')}${hash}`
+  else if (first === 'grade' && second && third === 'strand')
+    to = OLD_DRAMA_STRANDS[fourth]
+      ? `/arts/grade/${second}/${OLD_DRAMA_STRANDS[fourth]}`
+      : `/arts/grade/${second}#strand-b`
+  else if (first === 'grade' && second)
+    to = `/arts/grade/${second}${third ? `/${third}` : '#strand-b'}`
+  else if (first === 'strand' && OLD_DRAMA_STRANDS[second])
+    to = `/arts/strand/b/${OLD_DRAMA_STRANDS[second]}${code ? `#${code.replace('.', '-')}` : ''}`
+  else if (first === 'strand') to = '/arts/strand/b'
+  return <Navigate to={to} replace />
 }
 
 function App() {
@@ -75,7 +83,7 @@ function App() {
           {/* Home opens Math, the first subject */}
           <Route path="/" element={<Navigate to="/math" replace />} />
 
-          {/* Every subject made from its curriculum data (Math, Drama, Gym,
+          {/* Every subject made from its curriculum data (Math, Arts, Gym,
               Science) gets the same pages. Its curriculum is set once around
               its routes */}
           {CURRICULA.map((curriculum) => (
@@ -105,22 +113,27 @@ function App() {
                 element={<CurriculumComparePage />}
               />
               <Route path="strand/:strand" element={<CurriculumStrandPage />} />
-              {/* Drama's own pages: strategies and Drama & other subjects */}
-              {curriculum.subject === 'drama' && (
+              {/* The Arts' own pages: its two processes, and Drama's
+                  strategies and Drama & other subjects */}
+              {curriculum.subject === 'arts' && (
                 <>
-                  <Route path="strategies" element={<StrategiesPage />} />
-                  <Route path="strategies/:slug" element={<StrategyPage />} />
-                  <Route path="subjects/:slug" element={<SubjectPage />} />
-                  {Object.keys(OLD_DRAMA_STRANDS).map((slug) => (
-                    <Route
-                      key={slug}
-                      path={`strand/${slug}`}
-                      element={<OldDramaStrandRedirect />}
-                    />
-                  ))}
                   <Route
-                    path="grade/:grade/strand/:slug"
-                    element={<OldDramaStrandRedirect />}
+                    path="creative-process"
+                    element={<CreativeProcessPage />}
+                  />
+                  <Route
+                    path="critical-analysis-process"
+                    element={<CriticalProcessPage />}
+                  />
+                  <Route path="drama/strategies" element={<StrategiesPage />} />
+                  <Route
+                    path="drama/strategies/:slug"
+                    element={<StrategyPage />}
+                  />
+                  <Route path="drama/subjects" element={<SubjectsPage />} />
+                  <Route
+                    path="drama/subjects/:slug"
+                    element={<SubjectPage />}
                   />
                 </>
               )}
@@ -138,7 +151,8 @@ function App() {
           {/* Other subjects show "Coming soon" for now */}
           <Route path="/:subject" element={<SubjectSectionPage />} />
 
-          {/* Links from before the rename */}
+          {/* Links from before the rename, and from before the Arts */}
+          <Route path="/drama/*" element={<OldDramaRedirect />} />
           <Route path="/blog/*" element={<OldBlogRedirect />} />
           <Route path="/post/*" element={<Navigate to="/" replace />} />
 

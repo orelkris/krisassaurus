@@ -1,3 +1,4 @@
+import { ARTS_DRAMA } from '@/lib/arts'
 import { Navigate, useParams } from 'react-router-dom'
 import Breadcrumb from '@/components/ui/Breadcrumb'
 import ComingSoon from '@/components/ui/ComingSoon'
@@ -7,7 +8,7 @@ function SubjectPage() {
   const { slug = '' } = useParams<{ slug: string }>()
   const subject = getSubject(slug)
 
-  if (!subject) return <Navigate to="/drama" replace />
+  if (!subject) return <Navigate to={`${ARTS_DRAMA}/subjects`} replace />
 
   return (
     <>
@@ -15,6 +16,7 @@ function SubjectPage() {
         <Breadcrumb
           className="text-fg"
           items={[
+            { label: 'Arts' },
             { label: 'Drama' },
             { label: 'Subjects' },
             { label: subject.name },
