@@ -107,18 +107,20 @@ function FilterRow({
   )
 }
 
-// The picked strand's links, indented under it with a line
+// The picked strand's links, indented under it with a line. The current
+// one is grey, like a picked grade
 function SubList({ subList }: { subList: FilterSubList }) {
   return (
-    <div className="mt-xs mb-xs ml-xs border-l border-line pl-md">
+    <div className="mt-xs mb-xs ml-xs border-l border-line pl-sm">
       {subList.links.map((link) => (
         <Link
           key={link.id}
           to={link.to}
-          className={`block py-px text-sm transition-colors ${
+          aria-current={link.isCurrent ? 'page' : undefined}
+          className={`block rounded-row px-sm py-xs text-sm transition-colors ${
             link.isCurrent
-              ? 'font-semibold text-fg'
-              : 'text-muted hover:text-fg'
+              ? 'bg-soft font-semibold text-fg'
+              : 'text-muted hover:bg-soft hover:text-fg'
           }`}
         >
           {link.label}

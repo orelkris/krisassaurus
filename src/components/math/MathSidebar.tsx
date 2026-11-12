@@ -65,10 +65,10 @@ function MathSidebar() {
 
         <Link
           to={mathPath({})}
-          className={`block py-xs text-sm transition-colors ${
+          className={`-mx-sm block rounded-row px-sm py-xs text-sm transition-colors ${
             !filter.grade && !currentStrand
-              ? 'font-semibold text-fg'
-              : 'text-muted hover:text-fg'
+              ? 'bg-soft font-semibold text-fg'
+              : 'text-muted hover:bg-soft hover:text-fg'
           }`}
         >
           Overview
