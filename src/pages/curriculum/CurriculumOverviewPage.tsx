@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import PageHeader from '@/components/layout/PageHeader'
 import PageSection from '@/components/layout/PageSection'
 import CurriculumBox from '@/components/resources/CurriculumBox'
+import { SUBJECT_EXTRAS } from '@/components/curriculum/subjectExtras'
 import GradeTiles from '@/components/ui/GradeTiles'
 import StrandList, { type StrandListItem } from '@/components/ui/StrandList'
 import { useCurriculum } from '@/hooks/useCurriculum'
@@ -99,18 +100,33 @@ function strandItemsOf(curriculum: Curriculum<StrandId>): StrandListItem[] {
 function CurriculumOverviewPage() {
   const curriculum = useCurriculum()
   const stats = curriculumStats(curriculum)
-  const year = getMinistryDocument(curriculum.documentSlug)?.year
+  // e.g. 2009 (the document's year can read Revised 2009)
+  const year = getMinistryDocument(curriculum.documentSlug)?.year.replace(
+    'Revised ',
+    ''
+  )
   const strands = strandsOf(curriculum)
   const skills = skillsStrandOf(curriculum)
   // e.g. Math's link to Drama & Math, kept with the subjects
   const related = getSubjectSection(curriculum.subject)?.related
+  // e.g. Drama's strategies
+  const extras = SUBJECT_EXTRAS[curriculum.subject]
+  const meta = [
+    ...(extras?.meta ?? []),
+    `${stats.grades} grades`,
+    stats.strands === 1 ? '1 strand' : `${stats.strands} strands`,
+    `${stats.expectations} expectations`,
+    `Ontario curriculum, ${year}`,
+  ]
   return (
     <>
       <PageHeader
         title={SUBJECTS[curriculum.subject].name}
-        meta={`${stats.grades} grades · ${stats.strands} strands · ${stats.expectations} expectations · Ontario curriculum, ${year}`}
+        description={extras?.description}
+        meta={meta.join(' · ')}
       />
       <CurriculumBox subject={curriculum.subject} />
+      {extras?.afterCurriculum}
 
       <PageSection box="panel" title="Grades">
         <GradeTiles
@@ -139,6 +155,7 @@ function CurriculumOverviewPage() {
           </Link>
         </p>
       )}
+      {extras?.end}
     </>
   )
 }

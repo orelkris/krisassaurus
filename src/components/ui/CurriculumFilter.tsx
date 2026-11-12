@@ -38,6 +38,8 @@ interface CurriculumFilterProps {
   subList?: FilterSubList
   // A link to the subject's overview, above By grade
   overview?: { to: string; isCurrent: boolean }
+  // A subject's own group between Overview and By grade (Drama: Strategies)
+  afterOverview?: ReactNode
 }
 
 const headingClass = 'text-sm font-semibold text-fg'
@@ -144,6 +146,7 @@ function CurriculumFilter({
   path,
   subList,
   overview,
+  afterOverview,
 }: CurriculumFilterProps) {
   // A page about a grade and a strand (e.g. an expectation) counts as its grade
   const pickedGrade = picked.grade
@@ -163,6 +166,7 @@ function CurriculumFilter({
           Overview
         </Link>
       )}
+      {afterOverview}
 
       <div className="col-xs">
         <p className={headingClass}>By grade</p>

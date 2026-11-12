@@ -148,7 +148,13 @@ function CurriculumSpecificsPage() {
           : view === 'prompts'
             ? specific.prompts.map((prompt) => ({
                 parts: [
-                  { label: 'Teacher', text: prompt.teacher },
+                  {
+                    // e.g. Teacher · In role (Drama)
+                    label: ['Teacher', prompt.label]
+                      .filter(Boolean)
+                      .join(' · '),
+                    text: prompt.teacher,
+                  },
                   ...prompt.students.map((text) => ({
                     label: 'Student',
                     text,

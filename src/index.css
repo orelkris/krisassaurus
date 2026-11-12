@@ -39,17 +39,6 @@
   --color-link-line: #a5b4fc; /* the line that grows under a link */
   --color-danger: #ef4444; /* warnings: a timer running out, PDF badges */
 
-  /* Drama's strands (B1–B3 of The Arts): each with a tint and dark text */
-  --color-drama-b1: #7c3aed;
-  --color-drama-b1-bg: #f1ebfe;
-  --color-drama-b1-text: #5b21b6;
-  --color-drama-b2: #c0267a;
-  --color-drama-b2-bg: #fce8f1;
-  --color-drama-b2-text: #9d174d;
-  --color-drama-b3: #4f46e5;
-  --color-drama-b3-bg: #e8e8fd;
-  --color-drama-b3-text: #3730a3;
-
   /* Drama's strategy groups: Role Play, Tableaux, Voice and Sound,
      Movement, Scene Work and Forms */
   --color-group-r: #22c55e;

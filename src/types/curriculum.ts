@@ -25,8 +25,12 @@ export type StrandId = (typeof STRAND_IDS)[number]
 export type GymStrand = Extract<StrandId, 'A' | 'B' | 'C' | 'D'>
 export type ScienceStrand = Extract<StrandId, 'A' | 'B' | 'C' | 'D' | 'E'>
 export type MathStrand = StrandId
+// Drama is Strand B of The Arts 1–8; its overalls are B1, B2 and B3
+export type DramaStrand = Extract<StrandId, 'B'>
 
 export interface Prompt {
+  // A heading the document prints before it, e.g. In role (Drama)
+  label?: string
   teacher: string
   // Zero or more sample student answers
   students: string[]
@@ -119,6 +123,21 @@ export interface SupportCards {
   activities: Record<string, ActivityCard[]>
 }
 
+// A term and what it means, e.g. Tension: being aware of a sense of mystery
+export interface Term {
+  term: string
+  text: string
+}
+
+// A box the document prints at the top of each grade, e.g. Drama's
+// Fundamental Concepts: the elements of drama the grade focuses on
+export interface GradeConcepts {
+  // e.g. Elements of drama
+  name: string
+  // Keyed by grade, e.g. "4"
+  grades: Record<string, Term[]>
+}
+
 export interface Curriculum<S extends StrandId> {
   subject: SubjectId
   // The document's slug in data/resources/ministryDocuments.ts, which has
@@ -137,4 +156,6 @@ export interface Curriculum<S extends StrandId> {
   // so they load only when a page shows them
   supports?: (grade: number) => Promise<Record<string, TeacherSupports>>
   cards?: SupportCards
+  // Shown first on each grade page, when the document has one (Drama)
+  concepts?: GradeConcepts
 }

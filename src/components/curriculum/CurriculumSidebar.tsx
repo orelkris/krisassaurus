@@ -3,6 +3,7 @@ import CurriculumFilter, {
   type CurriculumPick,
   type FilterSubList,
 } from '@/components/ui/CurriculumFilter'
+import { SUBJECT_EXTRAS } from '@/components/curriculum/subjectExtras'
 import { useCurriculum } from '@/hooks/useCurriculum'
 import {
   curriculumPath,
@@ -14,7 +15,8 @@ import {
 } from '@/lib/curriculum'
 import type { StrandId } from '@/types/curriculum'
 
-// A subject's sidebar: Overview, then the shared By grade / By strand filter
+// A subject's sidebar: Overview, then the shared By grade / By strand filter.
+// A subject can add its own groups under Overview and at the end (Drama)
 function CurriculumSidebar() {
   const curriculum = useCurriculum()
   const { pathname } = useLocation()
@@ -75,19 +77,25 @@ function CurriculumSidebar() {
         }
       : undefined
 
+  const extras = SUBJECT_EXTRAS[curriculum.subject]
+
   return (
-    <CurriculumFilter
-      overview={{ to: base, isCurrent: pathname === base }}
-      grades={gradesOf(curriculum)}
-      strands={strandsOf(curriculum).map((id) => ({
-        id,
-        name: curriculum.strands[id].name,
-      }))}
-      picked={picked}
-      count={count}
-      path={path}
-      subList={subList}
-    />
+    <>
+      <CurriculumFilter
+        overview={{ to: base, isCurrent: pathname === base }}
+        afterOverview={extras?.sidebarTop}
+        grades={gradesOf(curriculum)}
+        strands={strandsOf(curriculum).map((id) => ({
+          id,
+          name: curriculum.strands[id].name,
+        }))}
+        picked={picked}
+        count={count}
+        path={path}
+        subList={subList}
+      />
+      {extras?.sidebarEnd}
+    </>
   )
 }
 
