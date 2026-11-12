@@ -135,11 +135,14 @@ function FilterRow({
 
 interface SubListProps {
   subList: FilterSubList
-  colors: StrandColors
+  // The strand's own colours (Math, Drama). Without them (Gym, Science) a
+  // picked code row takes strandId's token colours
+  colors?: StrandColors
+  strandId: string
 }
 
 // The picked strand's codes or links, indented under it with a line
-function SubList({ subList, colors }: SubListProps) {
+function SubList({ subList, colors, strandId }: SubListProps) {
   if (subList.kind === 'links') {
     return (
       <div className="mt-xs mb-xs ml-xs border-l border-line pl-md">
@@ -173,7 +176,7 @@ function SubList({ subList, colors }: SubListProps) {
                 aria-current={item.isPicked ? 'page' : undefined}
                 className={squareClass(item.isPicked)}
                 style={
-                  item.isPicked
+                  item.isPicked && colors
                     ? {
                         backgroundColor: colors.accent,
                         borderColor: colors.accent,
@@ -194,6 +197,7 @@ function SubList({ subList, colors }: SubListProps) {
                 label={item.code}
                 isPicked={item.isPicked}
                 tint={colors}
+                strandId={colors ? undefined : strandId}
                 small
               />
             ))}
@@ -285,8 +289,12 @@ function CurriculumFilter({
                   tint={strand.colors}
                   strandId={strand.colors ? undefined : strand.id}
                 />
-                {isPicked && subList && strand.colors && (
-                  <SubList subList={subList} colors={strand.colors} />
+                {isPicked && subList && (
+                  <SubList
+                    subList={subList}
+                    colors={strand.colors}
+                    strandId={strand.id}
+                  />
                 )}
               </div>
             )
