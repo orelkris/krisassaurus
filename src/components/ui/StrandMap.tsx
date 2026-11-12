@@ -15,12 +15,12 @@ interface StrandMapProps {
   grades: number[]
   rows: StrandMapRow[]
   currentId: string
-  // The strand's colours: the picked row is tinted, the squares use accent
+  // The strand's colours: the picked row is tinted, the counts use text
   colors: { bg: string; text: string; accent: string }
 }
 
-// Rows down the side, grades across the top, one square per expectation,
-// with lines between every row and column so each square's grade is clear.
+// Rows down the side, grades across the top, and how many expectations each
+// row has in each grade, with lines between every row and column.
 // Picking a row shows its expectations below the map. Every subject's Strand
 // page uses it; the rows come from the subject's own data
 function StrandMap({
@@ -87,16 +87,10 @@ function StrandMap({
                     >
                       {count ? (
                         <span
-                          className="inline-flex flex-wrap justify-center gap-xs"
-                          title={`${count} expectation${count > 1 ? 's' : ''}`}
+                          className="font-semibold"
+                          style={{ color: colors.text }}
                         >
-                          {Array.from({ length: count }, (_, index) => (
-                            <span
-                              key={index}
-                              className="size-dot-lg rounded-tiny"
-                              style={{ backgroundColor: colors.accent }}
-                            />
-                          ))}
+                          {count}
                         </span>
                       ) : (
                         <span className="text-line">–</span>
