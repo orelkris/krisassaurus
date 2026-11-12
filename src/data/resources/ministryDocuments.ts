@@ -66,6 +66,8 @@ export const ministryDocuments: MinistryDocument[] = [
     year: '2022',
     grades: 'Grades 1 to 8',
     summary: 'Coming soon.',
+    officialUrl:
+      'https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/downloads',
   },
   {
     slug: 'social-studies-history-geography',
