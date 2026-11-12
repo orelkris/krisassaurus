@@ -1,3 +1,4 @@
+import { mathCurriculum } from '@/data/subjects/math/curriculum'
 import { gymCurriculum } from '@/data/subjects/gym/curriculum'
 import { scienceCurriculum } from '@/data/subjects/science/curriculum'
 import type { Curriculum, StrandId } from '@/types/curriculum'
@@ -7,6 +8,7 @@ import type { Curriculum, StrandId } from '@/types/curriculum'
 // (Each curriculum has only its own strand letters; the pages list them
 // with strandsOf(), so they never ask for a letter it doesn't have)
 export const CURRICULA = [
+  mathCurriculum,
   gymCurriculum,
   scienceCurriculum,
 ] as unknown as Curriculum<StrandId>[]

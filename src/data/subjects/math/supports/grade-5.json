@@ -1,5 +1,5 @@
 {
-  "g5-b1.1": {
+  "B1.1": {
     "keyConcepts": [
       {
         "text": "Reading numbers involves interpreting them as a quantity when they are expressed in words, in standard notation, in expanded notation, or on a number line.",
@@ -118,7 +118,7 @@
     ],
     "tools": ["base ten blocks"]
   },
-  "g5-b1.2": {
+  "B1.2": {
     "keyConcepts": [
       {
         "text": "Numbers are compared and ordered according to their “how muchness” or magnitude.",
@@ -242,7 +242,7 @@
     ],
     "tools": ["number line"]
   },
-  "g5-b1.3": {
+  "B1.3": {
     "keyConcepts": [
       {
         "text": "Equivalent fractions describe the same relationship or quantity.",
@@ -292,7 +292,7 @@
     ],
     "tools": ["fraction strips"]
   },
-  "g5-b1.4": {
+  "B1.4": {
     "keyConcepts": [
       {
         "text": "When working with fractions as parts of a whole, the fractions are compared to the same whole.",
@@ -374,7 +374,7 @@
     ],
     "tools": ["number line", "number cards"]
   },
-  "g5-b1.5": {
+  "B1.5": {
     "keyConcepts": [
       {
         "text": "The place value of the first position to the right of the decimal point is tenths. The second position to the right of the decimal point is hundredths.",
@@ -473,7 +473,7 @@
     ],
     "tools": ["number line", "calculator"]
   },
-  "g5-b1.6": {
+  "B1.6": {
     "keyConcepts": [
       {
         "text": "Rounding makes a number simpler to work with and is often used when estimating computations, measuring, and making quick comparisons.",
@@ -532,7 +532,7 @@
     ],
     "tools": ["number line", "metre stick"]
   },
-  "g5-b1.7": {
+  "B1.7": {
     "keyConcepts": [
       {
         "text": "Fractions, decimals, and percents all describe relationships to a whole. While fractions may use any number as a denominator, decimal units are in powers of ten (tenths, hundredths, and so on) and percents express a rate out of 100 (“percent” means “per hundred”). For both decimals and percents, the “denominator” (the value of the unit or the divisor) is hidden within the convention itself (i.e., the place value convention and the percent sign).",
@@ -664,7 +664,7 @@
     ],
     "tools": ["base ten blocks", "metre stick"]
   },
-  "g5-b2.1": {
+  "B2.1": {
     "keyConcepts": [
       {
         "text": "The commutative property holds true for addition and for multiplication. The order in which the numbers are added or multiplied does not matter; the results will be the same (e.g., 45 + 62 = 62 + 45 and 12 × 6 = 6 × 12).",
@@ -846,7 +846,7 @@
     ],
     "tools": ["money"]
   },
-  "g5-b2.2": {
+  "B2.2": {
     "keyConcepts": [
       {
         "text": "The identity principle states that when multiplying an amount by 1 or dividing an amount by 1, the amount stays the same (e.g., 1 × 5 = 5 and 5 ÷ 1 = 5).",
@@ -946,7 +946,7 @@
     ],
     "tools": ["number line", "array"]
   },
-  "g5-b2.3": {
+  "B2.3": {
     "keyConcepts": [
       {
         "text": "The inverse relationship between multiplication and division helps when doing mental math with powers of ten.",
@@ -1034,7 +1034,7 @@
     ],
     "tools": ["base ten blocks", "calculator", "metre stick"]
   },
-  "g5-b2.4": {
+  "B2.4": {
     "keyConcepts": [
       {
         "text": "Situations involving addition and subtraction may involve:",
@@ -1157,7 +1157,7 @@
     ],
     "tools": []
   },
-  "g5-b2.5": {
+  "B2.5": {
     "keyConcepts": [
       {
         "text": "As with whole numbers and decimal numbers, only common units can be combined or separated. This is also true for fractions. Adding fractions with like denominators is the same as adding anything with like units:",
@@ -1215,7 +1215,7 @@
     ],
     "tools": ["relational rods"]
   },
-  "g5-b2.6": {
+  "B2.6": {
     "keyConcepts": [
       {
         "text": "Numbers multiplied together are called factors, and their result is called a product.",
@@ -1329,7 +1329,7 @@
     ],
     "tools": ["array", "open array"]
   },
-  "g5-b2.7": {
+  "B2.7": {
     "keyConcepts": [
       {
         "text": "Multiplication and division are inverse operations (see B2.1).",
@@ -1449,7 +1449,7 @@
     ],
     "tools": ["area model"]
   },
-  "g5-b2.8": {
+  "B2.8": {
     "keyConcepts": [
       {
         "text": "Multiplication and division can describe situations involving repeated equal groups. 1",
@@ -1508,7 +1508,7 @@
     ],
     "tools": []
   },
-  "g5-b2.9": {
+  "B2.9": {
     "keyConcepts": [
       {
         "text": "A ratio describes the multiplicative relationship between two quantities.",
@@ -1597,7 +1597,7 @@
     ],
     "tools": ["balance", "counters", "scale"]
   },
-  "g5-c1.1": {
+  "C1.1": {
     "keyConcepts": [
       {
         "text": "Repeating patterns have a pattern core that is repeated over and over.",
@@ -1677,7 +1677,7 @@
     ],
     "tools": []
   },
-  "g5-c1.2": {
+  "C1.2": {
     "keyConcepts": [
       {
         "text": "Growing patterns are created by increasing the number of elements or the size of the elements in each iteration (term).",
@@ -1722,7 +1722,7 @@
     ],
     "tools": ["tiles"]
   },
-  "g5-c1.3": {
+  "C1.3": {
     "keyConcepts": [
       {
         "text": "Patterns can be extended because they are repetitive by nature.",
@@ -1825,7 +1825,7 @@
     ],
     "tools": ["tiles"]
   },
-  "g5-c1.4": {
+  "C1.4": {
     "keyConcepts": [
       {
         "text": "Patterns can be used to understand relationships among numbers.",
@@ -1873,7 +1873,7 @@
     ],
     "tools": ["counters"]
   },
-  "g5-c2.1": {
+  "C2.1": {
     "keyConcepts": [
       {
         "text": "Algebraic expressions are a combination of variables, operations, and numbers, such as 3a and a + b.",
@@ -1971,7 +1971,7 @@
     ],
     "tools": ["spreadsheet", "coding"]
   },
-  "g5-c2.2": {
+  "C2.2": {
     "keyConcepts": [
       {
         "text": "To evaluate an algebraic expression, the variables are replaced with numerical values and calculations are performed based on the order of operations.",
@@ -2058,7 +2058,7 @@
     ],
     "tools": ["number line"]
   },
-  "g5-c2.3": {
+  "C2.3": {
     "keyConcepts": [
       {
         "text": "Equations are mathematical statements such that the expressions on both sides of the equal sign are equivalent.",
@@ -2151,7 +2151,7 @@
     ],
     "tools": ["balance"]
   },
-  "g5-c2.4": {
+  "C2.4": {
     "keyConcepts": [
       {
         "text": "Inequalities can be solved like an equation, and then values need to be tested to identify those that hold true for the inequality.",
@@ -2215,7 +2215,7 @@
     ],
     "tools": ["number line"]
   },
-  "g5-c3.1": {
+  "C3.1": {
     "keyConcepts": [
       {
         "text": "Conditional statements are a representation of binary logic (yes or no, true or false, 1 or 0).",
@@ -2363,7 +2363,7 @@
     ],
     "tools": []
   },
-  "g5-c3.2": {
+  "C3.2": {
     "keyConcepts": [
       {
         "text": "Reading code is done to make a prediction about what the expected outcome will be. Based on that prediction, one can determine if the code needs to be altered prior to its execution.",
@@ -2449,7 +2449,7 @@
     ],
     "tools": []
   },
-  "g5-d1.1": {
+  "D1.1": {
     "keyConcepts": [
       {
         "text": "Sampling is gathering information by using a subset of a population. It is more efficient and practical than trying to get data from every item in a population. It is more cost effective too.",
@@ -2504,7 +2504,7 @@
     ],
     "tools": []
   },
-  "g5-d1.2": {
+  "D1.2": {
     "keyConcepts": [
       {
         "text": "The type and amount of data to be collected is based on the question of interest. Data can be either qualitative (e.g., colour, type of pet) or quantitative (e.g., number of pets, height).",
@@ -2572,7 +2572,7 @@
     ],
     "tools": []
   },
-  "g5-d1.3": {
+  "D1.3": {
     "keyConcepts": [
       {
         "text": "Relative frequencies can be used to compare data sets that are of different sizes.",
@@ -2679,7 +2679,7 @@
     ],
     "tools": ["bar graph"]
   },
-  "g5-d1.4": {
+  "D1.4": {
     "keyConcepts": [
       {
         "text": "Infographics are used in real life to share data and information on a topic in a concise and appealing way.",
@@ -2724,7 +2724,7 @@
     ],
     "tools": []
   },
-  "g5-d1.5": {
+  "D1.5": {
     "keyConcepts": [
       {
         "text": "The mean, median, and mode can be determined for quantitative data. Only the mode can be determined for qualitative data.",
@@ -2820,7 +2820,7 @@
     ],
     "tools": ["stem-and-leaf"]
   },
-  "g5-d1.6": {
+  "D1.6": {
     "keyConcepts": [
       {
         "text": "Different representations are used for different purposes to convey different types of information.",
@@ -2917,7 +2917,7 @@
     ],
     "tools": ["bar graph"]
   },
-  "g5-d2.1": {
+  "D2.1": {
     "keyConcepts": [
       {
         "text": "The probability of events is measured in numeric values ranging from 0 to 1.",
@@ -2942,7 +2942,7 @@
     ],
     "tools": []
   },
-  "g5-d2.2": {
+  "D2.2": {
     "keyConcepts": [
       {
         "text": "The more trials done in an experiment, the closer the experimental probability will be to the theoretical probability.",
@@ -3048,7 +3048,7 @@
     ],
     "tools": []
   },
-  "g5-e1.1": {
+  "E1.1": {
     "keyConcepts": [
       {
         "text": "Triangles have been an important shape for mathematicians throughout history, and they continue to be significant in engineering, astronomy, navigation, and surveying.",
@@ -3139,7 +3139,7 @@
     ],
     "tools": ["protractor", "ruler", "compass"]
   },
-  "g5-e1.2": {
+  "E1.2": {
     "keyConcepts": [
       {
         "text": "Congruent two-dimensional shapes can be superimposed exactly onto each other. Congruent shapes have congruent angles and congruent lengths.",
@@ -3217,7 +3217,7 @@
     ],
     "tools": ["protractor", "ruler"]
   },
-  "g5-e1.3": {
+  "E1.3": {
     "keyConcepts": [
       {
         "text": "Three-dimensional objects can be represented in two dimensions.",
@@ -3250,7 +3250,7 @@
     ],
     "tools": ["grid paper"]
   },
-  "g5-e1.4": {
+  "E1.4": {
     "keyConcepts": [
       {
         "text": "The Cartesian plane uses two perpendicular number lines to describe locations on a grid. The x- axis is a horizontal number line; the y-axis is a vertical number line; and these two number lines intersect at the origin, (0, 0).",
@@ -3316,7 +3316,7 @@
     ],
     "tools": ["number line", "graph paper", "coding", "scale"]
   },
-  "g5-e1.5": {
+  "E1.5": {
     "keyConcepts": [
       {
         "text": "Transformations on a shape result in changes to its position and sometimes orientation or its size (or both). As a shape transforms, its vertices (points on a grid) move. The transformation describes the results of the movement. This explains how transformations involve location and movement.",
@@ -3387,7 +3387,7 @@
     ],
     "tools": ["grid paper"]
   },
-  "g5-e2.1": {
+  "E2.1": {
     "keyConcepts": [
       {
         "text": "The choice of an appropriate unit depends on which attribute is being measured and the reason for measuring it.",
@@ -3479,7 +3479,7 @@
     ],
     "tools": []
   },
-  "g5-e2.2": {
+  "E2.2": {
     "keyConcepts": [
       {
         "text": "Conversions within the metric system rely on understanding the relative size of the metric units (see E2.1) and the multiplicative relationships in the place-value system (see Number, B1.1).",
@@ -3574,7 +3574,7 @@
     ],
     "tools": []
   },
-  "g5-e2.3": {
+  "E2.3": {
     "keyConcepts": [
       {
         "text": "The lines (rays) that form an angle (i.e., the “arms” of an angle) meet at a vertex. The size of the angle is not affected by the length of its rays.",
@@ -3647,7 +3647,7 @@
     ],
     "tools": ["pattern blocks"]
   },
-  "g5-e2.4": {
+  "E2.4": {
     "keyConcepts": [
       {
         "text": "Protractors, like rulers or any other measuring tool, replace the need to lay out and count individual physical units. The protractor repeats a unit so there are no gaps or overlaps and includes a scale to keep track of the unit count.",
@@ -3760,7 +3760,7 @@
     ],
     "tools": ["protractor", "ruler", "scale"]
   },
-  "g5-e2.5": {
+  "E2.5": {
     "keyConcepts": [
       {
         "text": "For some shapes and some attributes, length measurements can be used to calculate other measurements. This is true for the area of rectangles, parallelograms, and triangles. Indirectly measuring the area of these shapes is more accurate than measuring them directly (i.e., by laying out and counting square units and partial units).",
@@ -3855,7 +3855,7 @@
     ],
     "tools": ["grid paper"]
   },
-  "g5-e2.6": {
+  "E2.6": {
     "keyConcepts": [
       {
         "text": "Different shapes can have the same area. Therefore, shapes that have the same area do not necessarily have the same perimeter.",
@@ -3929,7 +3929,7 @@
     ],
     "tools": ["geoboard", "tiles", "grid paper"]
   },
-  "g5-f1.1": {
+  "F1.1": {
     "keyConcepts": [
       {
         "text": "Money can be transferred in a wide variety of ways.",
@@ -4007,7 +4007,7 @@
     ],
     "tools": ["money"]
   },
-  "g5-f1.2": {
+  "F1.2": {
     "keyConcepts": [
       {
         "text": "Estimating and calculating the cost and change required in cash transactions requires the application of addition, subtraction, multiplication, division, mental math strategies, and math facts.",
@@ -4086,7 +4086,7 @@
     ],
     "tools": ["spreadsheet", "calculator"]
   },
-  "g5-f1.3": {
+  "F1.3": {
     "keyConcepts": [
       {
         "text": "Budgets are financial planning tools that can be used in real-life contexts.",
@@ -4141,7 +4141,7 @@
     ],
     "tools": ["money"]
   },
-  "g5-f1.4": {
+  "F1.4": {
     "keyConcepts": [
       {
         "text": "The concepts of credit and debt are introduced to identify how using credit and carrying debt might impact financial well-being.",
@@ -4184,7 +4184,7 @@
     ],
     "tools": []
   },
-  "g5-f1.5": {
+  "F1.5": {
     "keyConcepts": [
       {
         "text": "Unit rates can be used to make direct comparisons in order to identify the “better buy”. This is a skill that supports consumer awareness, allowing consumers to determine the best value when making a purchase.",
@@ -4230,7 +4230,7 @@
     ],
     "tools": []
   },
-  "g5-f1.6": {
+  "F1.6": {
     "keyConcepts": [
       {
         "text": "Different levels of government and other elected bodies (i.e., federal, provincial, territorial, and municipal governments; band councils) collect a variety of taxes from individuals and businesses in order to pay for facilities, services, and programs (e.g., roads and highways, hospitals, education, national defence, police and fire services, parks and playgrounds, garbage collection, and many other programs and services).",

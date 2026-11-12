@@ -11,16 +11,18 @@ import {
   curriculumPath,
   gradesOf,
   hasUnits,
+  ideasIn,
   mergeGrades,
   overallsIn,
   slug,
   specificsIn,
+  specificsInIdea,
   strandColors,
   strandsOf,
   topicsIn,
   unitOf,
 } from '@/lib/curriculum'
-import type { Curriculum, StrandId } from '@/types/curriculum'
+import type { Curriculum, Idea, StrandId } from '@/types/curriculum'
 
 // One part of the strand page: a heading, then what each grade says
 interface StrandSection {
@@ -109,36 +111,80 @@ function sectionsIn(
   return sections.filter((section) => section.rows.length)
 }
 
-// One strand across Grades 1 to 8, e.g. /gym/strand/b/b1: the overall as the
-// title, with a menu of the strand's other overalls (the same header as the
-// specific expectations page), then each of its parts. /gym/strand/b opens at
-// the first overall
+// One idea's specifics in every grade, each with its code (Math): a row per
+// grade, since the codes change from grade to grade
+function ideaSections(
+  curriculum: Curriculum<StrandId>,
+  idea: Idea<StrandId>
+): StrandSection[] {
+  return [
+    {
+      id: idea.id,
+      heading: '',
+      rows: mergeGrades(
+        gradesOf(curriculum).map((grade) => ({
+          grade,
+          entries: specificsInIdea(curriculum, idea, grade).map(([c, s]) => ({
+            code: c,
+            text: s.description,
+          })),
+        }))
+      ),
+    },
+  ]
+}
+
+// One strand across Grades 1 to 8, e.g. /gym/strand/b/b1: the strand as the
+// title, a map of its parts, then the picked part grade by grade. The parts
+// are its overall expectations, or its ideas when the subject has them
+// (/math/strand/b/fractions). /gym/strand/b opens at the first part
 function CurriculumStrandPage() {
   const curriculum = useCurriculum()
   const params = useParams<{ strand: string; code?: string }>()
   const strand = (params.strand ?? '').toUpperCase() as StrandId
   const isStrand = strandsOf(curriculum).includes(strand)
-  const overalls = isStrand ? overallsIn(curriculum, strand) : []
-  const code = params.code?.toUpperCase() ?? overalls[0]?.code
-  useHashJump(strand, code)
+  const ideas = isStrand ? ideasIn(curriculum, strand) : []
+  const grades = gradesOf(curriculum)
+  // Each part's id (B1, or an idea's id), name and count in each grade
+  const parts = ideas.length
+    ? ideas.map((idea) => ({
+        id: idea.id,
+        label: idea.name,
+        name: idea.name,
+        count: (grade: number) => idea.codes[grade]?.length ?? 0,
+      }))
+    : (isStrand ? overallsIn(curriculum, strand) : []).map(
+        ({ code, name }) => ({
+          id: code,
+          label: `${code} ${name ?? ''}`,
+          name: `${code} ${name ?? ''}`,
+          count: (grade: number) =>
+            Object.keys(
+              curriculum.grades[grade]?.[strand]?.[code]?.specifics ?? {}
+            ).length,
+        })
+      )
+  const id = ideas.length
+    ? (params.code ?? parts[0]?.id)
+    : (params.code?.toUpperCase() ?? parts[0]?.id)
+  useHashJump(strand, id)
 
   if (!isStrand)
     return <Navigate to={curriculumPath(curriculum.subject, {})} replace />
-  if (!overalls.some((overall) => overall.code === code))
+  if (!parts.some((part) => part.id === id))
     return (
       <Navigate to={curriculumPath(curriculum.subject, { strand })} replace />
     )
 
-  const current = overalls.find((overall) => overall.code === code)
+  const current = parts.find((part) => part.id === id)
+  const idea = ideas.find((item) => item.id === id)
   const strandName = curriculum.strands[strand].name
-  const grades = gradesOf(curriculum)
-  // With one overall (Strand A), the title is the strand itself and there's
+  // With one part (Strand A), the title is the strand itself and there's
   // nothing to pick, so no map
-  const single = overalls.length === 1
+  const single = parts.length === 1
 
-  // Like Math's strand page: the strand as the title, then a map with one
-  // row per overall expectation (its sub-strands) and one square per specific
-  // expectation in each grade. Picking a row shows that overall below.
+  // The map has one row per part and one square per specific expectation in
+  // each grade. Picking a row shows that part below.
   // The page's parts go straight into the main column's Container, like the
   // Overview's; this wrapper only passes the strand colour down
   return (
@@ -156,26 +202,17 @@ function CurriculumStrandPage() {
             }
           />
           <StrandMap
-            rowLabel="Overall expectation"
+            rowLabel={ideas.length ? 'Idea' : 'Overall expectation'}
             grades={grades}
-            rows={overalls.map((overall) => ({
-              id: overall.code,
-              label: `${overall.code} ${overall.name ?? ''}`,
-              to: curriculumPath(curriculum.subject, {
-                strand,
-                code: overall.code,
-              }),
+            rows={parts.map((part) => ({
+              id: part.id,
+              label: part.label,
+              to: curriculumPath(curriculum.subject, { strand, code: part.id }),
               counts: Object.fromEntries(
-                grades.map((grade) => [
-                  grade,
-                  Object.keys(
-                    curriculum.grades[grade]?.[strand]?.[overall.code]
-                      ?.specifics ?? {}
-                  ).length,
-                ])
+                grades.map((grade) => [grade, part.count(grade)])
               ),
             }))}
-            currentId={code}
+            currentId={id}
             colors={strandColors(strand)}
           />
         </>
@@ -187,12 +224,15 @@ function CurriculumStrandPage() {
       {!single && (
         <StickyBar padded>
           <h2 className="text-label">
-            {strandName} · {code} {current?.name} · Grades {grades[0]} to{' '}
+            {strandName} · {current?.name} · Grades {grades[0]} to{' '}
             {grades[grades.length - 1]}
           </h2>
         </StickyBar>
       )}
-      {sectionsIn(curriculum, strand, code).map((section) => (
+      {(idea
+        ? ideaSections(curriculum, idea)
+        : sectionsIn(curriculum, strand, id)
+      ).map((section) => (
         <section
           key={section.id}
           id={section.id}

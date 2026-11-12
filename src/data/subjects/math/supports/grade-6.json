@@ -1,5 +1,5 @@
 {
-  "g6-b1.1": {
+  "B1.1": {
     "keyConcepts": [
       {
         "text": "Reading numbers involves interpreting them as a quantity when they are expressed in words, in standard notation, or in expanded notation.",
@@ -83,7 +83,7 @@
     ],
     "tools": ["number line", "metre stick"]
   },
-  "g6-b1.2": {
+  "B1.2": {
     "keyConcepts": [
       {
         "text": "Integers are whole numbers and their opposites.",
@@ -177,7 +177,7 @@
     ],
     "tools": ["number line", "tiles"]
   },
-  "g6-b1.3": {
+  "B1.3": {
     "keyConcepts": [
       {
         "text": "Numbers with the same units can be compared directly (e.g., 72.5 cm2 compared to 62.4 cm2).",
@@ -263,7 +263,7 @@
     ],
     "tools": ["number line"]
   },
-  "g6-b1.4": {
+  "B1.4": {
     "keyConcepts": [
       {
         "text": "The place value of the first position to the right of the decimal point is tenths. The second position to the right of the decimal point is hundredths. The third position to the right of the decimal point is thousandths.",
@@ -398,7 +398,7 @@
     ],
     "tools": ["calculator"]
   },
-  "g6-b1.5": {
+  "B1.5": {
     "keyConcepts": [
       {
         "text": "Rounding makes a number simpler to work with and is often used when estimating computations, measuring, and making quick comparisons.",
@@ -459,7 +459,7 @@
     ],
     "tools": ["number line"]
   },
-  "g6-b1.6": {
+  "B1.6": {
     "keyConcepts": [
       {
         "text": "Any fraction can become a decimal number by treating the fraction as a quotient (e.g., 5 = 8 ÷ 5 = 1.6). 1 1",
@@ -548,7 +548,7 @@
     ],
     "tools": ["ten frame", "number line", "calculator"]
   },
-  "g6-b2.1": {
+  "B2.1": {
     "keyConcepts": [
       {
         "text": "Properties of operations are helpful for carrying out calculations: a",
@@ -724,7 +724,7 @@
     ],
     "tools": []
   },
-  "g6-b2.2": {
+  "B2.2": {
     "keyConcepts": [
       {
         "text": "There are number patterns that can be used to quickly test whether a number can be evenly divided by another number.",
@@ -782,7 +782,7 @@
     ],
     "tools": ["calculator"]
   },
-  "g6-b2.3": {
+  "B2.3": {
     "keyConcepts": [
       {
         "text": "Percents represent a rate out of 100 (“per cent” means “per hundred”) and are always expressed in relation to a whole. To visually determine the percent of an amount, the whole is subdivided into 100 parts (percent) and described using the percent symbol (%).",
@@ -896,7 +896,7 @@
     ],
     "tools": []
   },
-  "g6-b2.4": {
+  "B2.4": {
     "keyConcepts": [
       {
         "text": "Situations involving addition and subtraction may involve:",
@@ -976,7 +976,7 @@
     ],
     "tools": ["calculator"]
   },
-  "g6-b2.5": {
+  "B2.5": {
     "keyConcepts": [
       {
         "text": "The type of models (e.g., linear model, area model) and tools (e.g., concrete materials) that are used to represent the addition or subtraction of fractions can vary depending on the context.",
@@ -1066,7 +1066,7 @@
     ],
     "tools": ["fraction strips"]
   },
-  "g6-b2.6": {
+  "B2.6": {
     "keyConcepts": [
       {
         "text": "A number can be decomposed as a product of its factors.",
@@ -1120,7 +1120,7 @@
     ],
     "tools": []
   },
-  "g6-b2.7": {
+  "B2.7": {
     "keyConcepts": [
       {
         "text": "An area model can be used to visualize multiplication with decimals.",
@@ -1310,7 +1310,7 @@
     ],
     "tools": ["calculator", "array", "tree diagram"]
   },
-  "g6-b2.8": {
+  "B2.8": {
     "keyConcepts": [
       {
         "text": "A strategy to divide whole numbers by decimal numbers is to create an equivalent division statement using whole numbers. For example, 345 ÷ 0.5 will have the same result as 3450 ÷ 5.",
@@ -1420,7 +1420,7 @@
     ],
     "tools": ["calculator"]
   },
-  "g6-b2.9": {
+  "B2.9": {
     "keyConcepts": [
       {
         "text": "A proper fraction can be decomposed as a product of the count and its unit fraction (e.g., 4 = 3 1 1 × 4 or 4 × 3).",
@@ -1483,7 +1483,7 @@
     ],
     "tools": ["relational rods", "pattern blocks"]
   },
-  "g6-b2.10": {
+  "B2.10": {
     "keyConcepts": [
       {
         "text": "Multiplication and division are related. The same situation or problem can be represented with 3 a division or a multiplication sentence. For example, the division question 6 ÷ 4 = ? can also be 3 thought of as a multiplication question, 4 × ? = 6.",
@@ -1577,7 +1577,7 @@
     ],
     "tools": ["number line"]
   },
-  "g6-b2.11": {
+  "B2.11": {
     "keyConcepts": [
       {
         "text": "Multiplication and division are related. The same situation or problem can be represented with a division or a multiplication sentence.",
@@ -1646,7 +1646,7 @@
     ],
     "tools": ["calculator"]
   },
-  "g6-b2.12": {
+  "B2.12": {
     "keyConcepts": [
       {
         "text": "A ratio describes the multiplicative relationship between two or more quantities.",
@@ -1748,7 +1748,7 @@
     ],
     "tools": ["number line", "counters"]
   },
-  "g6-c1.1": {
+  "C1.1": {
     "keyConcepts": [
       {
         "text": "Repeating patterns have a pattern core that is repeated over and over.",
@@ -1820,7 +1820,7 @@
     ],
     "tools": ["tiles"]
   },
-  "g6-c1.2": {
+  "C1.2": {
     "keyConcepts": [
       {
         "text": "Growing patterns are created by increasing the number of elements or the size of the elements in each iteration (term).",
@@ -1899,7 +1899,7 @@
     ],
     "tools": ["tiles"]
   },
-  "g6-c1.3": {
+  "C1.3": {
     "keyConcepts": [
       {
         "text": "Patterns can be extended because they are repetitive by nature.",
@@ -1997,7 +1997,7 @@
     ],
     "tools": ["money", "tiles"]
   },
-  "g6-c1.4": {
+  "C1.4": {
     "keyConcepts": [
       {
         "text": "Patterns can be used to demonstrate relationships among numbers.",
@@ -2044,7 +2044,7 @@
     ],
     "tools": ["counters"]
   },
-  "g6-c2.1": {
+  "C2.1": {
     "keyConcepts": [
       {
         "text": "A monomial with a degree of 1 has a variable with an exponent of one. For example, the exponent of m for the monomial 2m is 1. When the exponent is not shown, it is understood to be one.",
@@ -2103,7 +2103,7 @@
     ],
     "tools": ["pattern blocks", "tiles"]
   },
-  "g6-c2.2": {
+  "C2.2": {
     "keyConcepts": [
       {
         "text": "To evaluate an algebraic expression, the variables are replaced with numerical values, and calculations are performed based on the order of operations.",
@@ -2174,7 +2174,7 @@
     ],
     "tools": ["pattern blocks", "tiles"]
   },
-  "g6-c2.3": {
+  "C2.3": {
     "keyConcepts": [
       {
         "text": "Equations are mathematical statements such that the expressions on both sides of the equal sign are equivalent.",
@@ -2236,7 +2236,7 @@
     ],
     "tools": []
   },
-  "g6-c2.4": {
+  "C2.4": {
     "keyConcepts": [
       {
         "text": "Inequalities can be solved like an equation, and then values need to be tested to identify those that hold true for the inequality.",
@@ -2284,7 +2284,7 @@
     ],
     "tools": ["number line"]
   },
-  "g6-c3.1": {
+  "C3.1": {
     "keyConcepts": [
       {
         "text": "A flow chart can be used to plan and organize thinking. The symbols used in flow charts have specific meanings, including those that represent a process, a decision, and program input/output.",
@@ -2412,7 +2412,7 @@
     ],
     "tools": ["coins"]
   },
-  "g6-c3.2": {
+  "C3.2": {
     "keyConcepts": [
       {
         "text": "Reading code is done to make predictions as to what the expected outcome will be. Based on that prediction, one can determine if the code needs to be altered prior to its execution.",
@@ -2501,7 +2501,7 @@
     ],
     "tools": ["dice"]
   },
-  "g6-d1.1": {
+  "D1.1": {
     "keyConcepts": [
       {
         "text": "Quantitative data is either discrete or continuous.",
@@ -2564,7 +2564,7 @@
     ],
     "tools": []
   },
-  "g6-d1.2": {
+  "D1.2": {
     "keyConcepts": [
       {
         "text": "The type and amount of data to be collected will be based on the question of interest.",
@@ -2650,7 +2650,7 @@
     ],
     "tools": []
   },
-  "g6-d1.3": {
+  "D1.3": {
     "keyConcepts": [
       {
         "text": "Understanding the features and purposes of different kinds of graphs is important when selecting appropriate displays for a set of data.",
@@ -2781,7 +2781,7 @@
     ],
     "tools": ["histogram"]
   },
-  "g6-d1.4": {
+  "D1.4": {
     "keyConcepts": [
       {
         "text": "Infographics are used in real life to share data and information on a topic, in a concise and appealing way.",
@@ -2822,7 +2822,7 @@
     ],
     "tools": []
   },
-  "g6-d1.5": {
+  "D1.5": {
     "keyConcepts": [
       {
         "text": "The mean, median, and mode are the three measures of central tendency. The mean, median, and mode can be determined for quantitative data. Only the mode can be determined for qualitative data.",
@@ -2957,7 +2957,7 @@
     ],
     "tools": []
   },
-  "g6-d1.6": {
+  "D1.6": {
     "keyConcepts": [
       {
         "text": "A histogram provides a picture of the distribution or shape of the data.",
@@ -3052,7 +3052,7 @@
     ],
     "tools": ["bar graph", "histogram", "scale"]
   },
-  "g6-d2.1": {
+  "D2.1": {
     "keyConcepts": [
       {
         "text": "The probability of events has numeric values ranging from 0 to 1, and percent values ranging from 0% to 100%.",
@@ -3077,7 +3077,7 @@
     ],
     "tools": []
   },
-  "g6-d2.2": {
+  "D2.2": {
     "keyConcepts": [
       {
         "text": "Two events are independent if the probability of one does not affect the probability of the other. For example, the probability for rolling a die the first time does not affect the probability for rolling a die the second time.",
@@ -3200,7 +3200,7 @@
     ],
     "tools": ["coins", "tree diagram"]
   },
-  "g6-e1.1": {
+  "E1.1": {
     "keyConcepts": [
       {
         "text": "A geometric property is an attribute that helps define an entire class of shapes.",
@@ -3392,7 +3392,7 @@
     ],
     "tools": ["geoboard"]
   },
-  "g6-e1.2": {
+  "E1.2": {
     "keyConcepts": [
       {
         "text": "Three-dimensional objects can be represented in two dimensions.",
@@ -3427,7 +3427,7 @@
     ],
     "tools": []
   },
-  "g6-e1.3": {
+  "E1.3": {
     "keyConcepts": [
       {
         "text": "The Cartesian plane uses two perpendicular number lines to describe locations on a grid. The x- axis is a horizontal number line; the y-axis is a vertical number line; and these two number lines intersect perpendicularly at the origin, (0, 0), forming four quadrants.",
@@ -3455,7 +3455,7 @@
     ],
     "tools": ["graph paper", "scale"]
   },
-  "g6-e1.4": {
+  "E1.4": {
     "keyConcepts": [
       {
         "text": "Transformations on a shape result in changes to its position or its size. As a shape transforms, its vertices (points on a grid) move. The transformation describes the results of the movement. This explains how transformations involve location and movement.",
@@ -3542,7 +3542,7 @@
     ],
     "tools": ["grid paper"]
   },
-  "g6-e2.1": {
+  "E2.1": {
     "keyConcepts": [
       {
         "text": "The choice of an appropriate unit depends on which attribute is being measured and the reason for measuring it.",
@@ -3635,7 +3635,7 @@
     ],
     "tools": ["money"]
   },
-  "g6-e2.2": {
+  "E2.2": {
     "keyConcepts": [
       {
         "text": "The lines (rays) that form an angle (i.e., the “arms” of an angle) meet at a vertex. The size of the angle is not affected by the length of its rays.",
@@ -3739,7 +3739,7 @@
     ],
     "tools": ["protractor", "scale"]
   },
-  "g6-e2.3": {
+  "E2.3": {
     "keyConcepts": [
       {
         "text": "Angles can be measured indirectly (calculated) by applying angle properties. Measuring angles indirectly is often quicker than measuring them directly and is the only choice if the location of an angle is impossible or impractical to measure.",
@@ -3875,7 +3875,7 @@
     ],
     "tools": ["pattern blocks", "protractor", "scale"]
   },
-  "g6-e2.4": {
+  "E2.4": {
     "keyConcepts": [
       {
         "text": "Partial areas can be added together to find a whole area. If an area is decomposed and rearranged into a different shape (recomposed), the area remains constant. These are applications of the additivity and conservation principles.",
@@ -3974,7 +3974,7 @@
     ],
     "tools": ["pattern blocks", "grid paper"]
   },
-  "g6-e2.5": {
+  "E2.5": {
     "keyConcepts": [
       {
         "text": "Area is additive: partial areas can be added together to find a whole area. Finding the surface area of a prism or pyramid is an application of the property of additivity.",
@@ -4013,7 +4013,7 @@
     ],
     "tools": ["grid paper", "nets"]
   },
-  "g6-e2.6": {
+  "E2.6": {
     "keyConcepts": [
       {
         "text": "Area is additive: partial areas can be added together to find a whole area. Finding the surface area of a prism or pyramid is an application of the property of additivity.",
@@ -4073,7 +4073,7 @@
     ],
     "tools": ["grid paper", "nets"]
   },
-  "g6-f1.1": {
+  "F1.1": {
     "keyConcepts": [
       {
         "text": "Various methods of payment can be used when purchasing goods and services.",
@@ -4131,7 +4131,7 @@
     ],
     "tools": []
   },
-  "g6-f1.2": {
+  "F1.2": {
     "keyConcepts": [
       {
         "text": "Setting financial goals, including earning and saving goals, is an important life skill.",
@@ -4215,7 +4215,7 @@
     ],
     "tools": ["money"]
   },
-  "g6-f1.3": {
+  "F1.3": {
     "keyConcepts": [
       {
         "text": "Anticipating potential barriers and considering factors that may help or interfere with reaching financial goals are part of the financial planning process.",
@@ -4274,7 +4274,7 @@
     ],
     "tools": []
   },
-  "g6-f1.4": {
+  "F1.4": {
     "keyConcepts": [
       {
         "text": "There are interest rates and fees associated with financial products such as bank accounts and loans.",
@@ -4370,7 +4370,7 @@
     ],
     "tools": []
   },
-  "g6-f1.5": {
+  "F1.5": {
     "keyConcepts": [
       {
         "text": "Financial and other resources can be distributed through different means depending on the context (e.g., cultural, socio-economic, historical, technological).",

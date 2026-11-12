@@ -1,5 +1,5 @@
 {
-  "g1-b1.1": {
+  "B1.1": {
     "keyConcepts": [
       {
         "text": "Reading numbers involves interpreting them as a quantity when they are expressed in words or numerals, or represented using physical quantities or diagrams.",
@@ -139,7 +139,7 @@
     ],
     "tools": ["ten frame", "number line"]
   },
-  "g1-b1.2": {
+  "B1.2": {
     "keyConcepts": [
       {
         "text": "Numbers are composed when two or more numbers are combined to create a larger number. For example, twenty and five are composed to make twenty-five.",
@@ -199,7 +199,7 @@
     ],
     "tools": ["rekenrek", "ten frame", "number line", "money", "coins"]
   },
-  "g1-b1.3": {
+  "B1.3": {
     "keyConcepts": [
       {
         "text": "Numbers are compared and ordered according to their “how muchness”.",
@@ -237,7 +237,7 @@
     ],
     "tools": ["hundred chart", "money"]
   },
-  "g1-b1.4": {
+  "B1.4": {
     "keyConcepts": [
       {
         "text": "Estimation is used to approximate quantities that are too great to subitize.",
@@ -313,7 +313,7 @@
     ],
     "tools": ["connecting cubes", "counters"]
   },
-  "g1-b1.5": {
+  "B1.5": {
     "keyConcepts": [
       {
         "text": "The count of objects does not change, regardless of how the objects are arranged (e.g., close together or far apart) or in what order they are counted (order irrelevance).",
@@ -389,7 +389,7 @@
       "tally"
     ]
   },
-  "g1-b1.6": {
+  "B1.6": {
     "keyConcepts": [
       {
         "text": "Fair-sharing or equal-sharing means that quantities are shared equally. For a whole to be shared equally, it must be partitioned so that each sharer receives the same amount.",
@@ -420,7 +420,7 @@
     ],
     "tools": []
   },
-  "g1-b1.7": {
+  "B1.7": {
     "keyConcepts": [
       {
         "text": "When something is shared fairly, or equally as two pieces, each piece is 1 one half of the original amount. Two one halves make up a whole.",
@@ -471,7 +471,7 @@
     ],
     "tools": []
   },
-  "g1-b1.8": {
+  "B1.8": {
     "keyConcepts": [
       {
         "text": "When one whole is shared equally by a number of sharers, the number of sharers determines the size of each individual portion and is reflected in how that portion is named. For example, if a whole is equally shared among eight people, the whole has been split into eighths, and each part is one eighth of the whole. One eighth is a unit fraction, and there are 8 one eighths in a whole.",
@@ -514,7 +514,7 @@
     ],
     "tools": []
   },
-  "g1-b2.1": {
+  "B2.1": {
     "keyConcepts": [
       {
         "text": "When zero is added or subtracted from a quantity, the quantity does not change.",
@@ -600,7 +600,7 @@
     ],
     "tools": ["counters", "coding"]
   },
-  "g1-b2.2": {
+  "B2.2": {
     "keyConcepts": [
       {
         "text": "Understanding the relationships that exist among numbers and among operations provides strategies for learning basic facts.",
@@ -792,7 +792,7 @@
     ],
     "tools": ["number line", "relational rods", "dice", "counters"]
   },
-  "g1-b2.3": {
+  "B2.3": {
     "keyConcepts": [
       {
         "text": "Mental math refers to doing calculations in one’s head. Sometimes the numbers or the number of steps in a calculation are too complex to completely hold in one’s head, so jotting down partial calculations and diagrams can be used to complete the calculations.",
@@ -972,7 +972,7 @@
     ],
     "tools": []
   },
-  "g1-b2.4": {
+  "B2.4": {
     "keyConcepts": [
       {
         "text": "Situations involving addition and subtraction may involve:",
@@ -1083,7 +1083,7 @@
     ],
     "tools": []
   },
-  "g1-b2.5": {
+  "B2.5": {
     "keyConcepts": [
       {
         "text": "With equal-group problems, a group of a given size is repeated a certain number of times to create a total. Sometimes the size of each group is unknown, sometimes the number of groups is unknown, and sometimes the total is unknown.",
@@ -1132,7 +1132,7 @@
     ],
     "tools": []
   },
-  "g1-c1.1": {
+  "C1.1": {
     "keyConcepts": [
       {
         "text": "Human activities, histories, and the natural world are made up of all kinds of patterns, and many of them are based on the regularity of an attribute.",
@@ -1253,7 +1253,7 @@
     ],
     "tools": []
   },
-  "g1-c1.2": {
+  "C1.2": {
     "keyConcepts": [
       {
         "text": "The same pattern structure can be represented in various ways.",
@@ -1404,7 +1404,7 @@
     ],
     "tools": ["coins"]
   },
-  "g1-c1.3": {
+  "C1.3": {
     "keyConcepts": [
       {
         "text": "Patterns can be extended because they are repetitive by nature.",
@@ -1487,7 +1487,7 @@
     ],
     "tools": []
   },
-  "g1-c1.4": {
+  "C1.4": {
     "keyConcepts": [
       {
         "text": "There are patterns in numbers and the way that digits repeat from 0 to 9.",
@@ -1521,7 +1521,7 @@
     ],
     "tools": []
   },
-  "g1-c2.1": {
+  "C2.1": {
     "keyConcepts": [
       {
         "text": "Quantities that can change are also referred to as “variables”.",
@@ -1546,7 +1546,7 @@
     ],
     "tools": []
   },
-  "g1-c2.2": {
+  "C2.2": {
     "keyConcepts": [
       {
         "text": "Numerical expressions are equivalent when they produce the same result, and an equal sign is a symbol denoting that the two expressions are equivalent.",
@@ -1592,7 +1592,7 @@
     ],
     "tools": ["number line", "balance"]
   },
-  "g1-c2.3": {
+  "C2.3": {
     "keyConcepts": [
       {
         "text": "When numbers are decomposed, the parts are equivalent to the whole.",
@@ -1648,7 +1648,7 @@
     ],
     "tools": ["relational rods", "tiles"]
   },
-  "g1-c3.1": {
+  "C3.1": {
     "keyConcepts": [
       {
         "text": "In coding, a sequential set of instructions is executed in order.",
@@ -1707,7 +1707,7 @@
     ],
     "tools": ["coding"]
   },
-  "g1-c3.2": {
+  "C3.2": {
     "keyConcepts": [
       {
         "text": "Changing the sequence of instructions in code may produce the same outcome as the original sequence, but it may also produce a different outcome. It is important for students to understand when the order matters.",
@@ -1744,7 +1744,7 @@
     ],
     "tools": []
   },
-  "g1-d1.1": {
+  "D1.1": {
     "keyConcepts": [
       {
         "text": "Data can be sorted in more than one way, depending on the attribute.",
@@ -1782,7 +1782,7 @@
     ],
     "tools": []
   },
-  "g1-d1.2": {
+  "D1.2": {
     "keyConcepts": [
       {
         "text": "Data can be either qualitative (descriptive, e.g., colour, type of pet) or quantitative (numerical, e.g., number of pets, height).",
@@ -1841,7 +1841,7 @@
     ],
     "tools": ["calendar"]
   },
-  "g1-d1.3": {
+  "D1.3": {
     "keyConcepts": [
       {
         "text": "Different representations can be used to present data, depending on the type of data and the information to be highlighted.",
@@ -1901,7 +1901,7 @@
     ],
     "tools": ["pictograph"]
   },
-  "g1-d1.4": {
+  "D1.4": {
     "keyConcepts": [
       {
         "text": "The frequency of a category represents its count.",
@@ -1943,7 +1943,7 @@
     ],
     "tools": ["tally", "pictograph"]
   },
-  "g1-d1.5": {
+  "D1.5": {
     "keyConcepts": [
       {
         "text": "Different representations are used for different purposes to convey different types of information. Tally tables, concrete graphs, and pictographs are used to represent counts or frequencies of various categories.",
@@ -2003,7 +2003,7 @@
     ],
     "tools": ["tally", "pictograph"]
   },
-  "g1-d2.1": {
+  "D2.1": {
     "keyConcepts": [
       {
         "text": "The likelihood of an event happening ranges from impossible to certain.",
@@ -2059,7 +2059,7 @@
     ],
     "tools": ["spinner"]
   },
-  "g1-d2.2": {
+  "D2.2": {
     "keyConcepts": [
       {
         "text": "Data can vary from one population to another.",
@@ -2101,7 +2101,7 @@
     ],
     "tools": []
   },
-  "g1-e1.1": {
+  "E1.1": {
     "keyConcepts": [
       {
         "text": "Geometric shapes exist in two dimensions (pictures or drawings) and in three dimensions (objects).",
@@ -2163,7 +2163,7 @@
     ],
     "tools": ["geoboard"]
   },
-  "g1-e1.2": {
+  "E1.2": {
     "keyConcepts": [
       {
         "text": "Each face of a three-dimensional object is a two-dimensional shape. Often, a shape is identified by the number of sides it has. Common shapes on faces of three-dimensional objects are triangles, rectangles, pentagons, hexagons, and octagons.",
@@ -2209,7 +2209,7 @@
     ],
     "tools": []
   },
-  "g1-e1.3": {
+  "E1.3": {
     "keyConcepts": [
       {
         "text": "If two shapes or objects match in every way, they are congruent, even if their orientation is not the same. Shapes with matching halves have congruent halves.",
@@ -2251,7 +2251,7 @@
     ],
     "tools": ["mirror"]
   },
-  "g1-e1.4": {
+  "E1.4": {
     "keyConcepts": [
       {
         "text": "Positional language often includes direction and distance to describe the location of one object in relation to another.",
@@ -2310,7 +2310,7 @@
     ],
     "tools": []
   },
-  "g1-e1.5": {
+  "E1.5": {
     "keyConcepts": [
       {
         "text": "Movement encompasses distance and direction.",
@@ -2372,7 +2372,7 @@
     ],
     "tools": []
   },
-  "g1-e2.1": {
+  "E2.1": {
     "keyConcepts": [
       {
         "text": "Every shape or object has several attributes that can be compared. The same shape or object can be described and compared using different attributes.",
@@ -2464,7 +2464,7 @@
     ],
     "tools": ["clock"]
   },
-  "g1-e2.2": {
+  "E2.2": {
     "keyConcepts": [
       {
         "text": "Objects can be compared and ordered according to whether they have more or less of an attribute. Comparing the same objects by different attributes may produce different ordering.",
@@ -2557,7 +2557,7 @@
     ],
     "tools": ["tiles", "balance"]
   },
-  "g1-e2.3": {
+  "E2.3": {
     "keyConcepts": [
       {
         "text": "Time is an abstract concept that cannot be seen or felt. The passing of time can be measured by counting things that repeat. The passing of a day, for example, is marked by the rising and setting of the Sun.",
@@ -2611,7 +2611,7 @@
     ],
     "tools": ["calendar"]
   },
-  "g1-f1.1": {
+  "F1.1": {
     "keyConcepts": [
       {
         "text": "Canadian coins and bills differ from one another in value and appearance (e.g., size, shape, colour, image, and/or texture).",

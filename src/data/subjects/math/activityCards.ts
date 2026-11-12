@@ -1,8 +1,9 @@
 import type { ActivityCard } from '@/types/math'
 
-// Sample tasks rewritten as activities, keyed by expectation id. One card per
-// ministry sample task, in the same order, so each card can fold open the
-// ministry's wording. Expectations without cards show the ministry text
+// Sample tasks rewritten as activities, keyed by grade and code (g6-b1.1).
+// One card per sample task in the document, in the same order, so each card
+// can fold open the document's wording. Expectations without cards show
+// the document's text
 export const activityCards: Record<string, ActivityCard[]> = {
   'g6-b1.1': [
     {
@@ -107,10 +108,4 @@ export const activityCards: Record<string, ActivityCard[]> = {
       ],
     },
   ],
-}
-
-export function getActivityCards(
-  expectationId: string
-): ActivityCard[] | undefined {
-  return activityCards[expectationId]
 }

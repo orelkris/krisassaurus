@@ -6,8 +6,8 @@ import {
   getDramaStrandBySlug,
 } from '@/data/drama/curriculum/strands'
 
-// Reads the Drama curriculum filter (grade, strand, code) from the URL, like
-// useMathFilter. An expectation page picks both its grade and its strand
+// Reads the Drama curriculum filter (grade, strand, code) from the URL.
+// An expectation page picks both its grade and its strand
 export function useDramaFilter() {
   const expectationMatch = useMatch('/drama/grade/:grade/:code')
   const gradeStrandMatch = useMatch('/drama/grade/:grade/strand/:slug')

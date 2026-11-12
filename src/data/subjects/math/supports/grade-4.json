@@ -1,5 +1,5 @@
 {
-  "g4-b1.1": {
+  "B1.1": {
     "keyConcepts": [
       {
         "text": "Reading numbers involves interpreting them as a quantity when they are expressed in words, in standard notation, or represented using physical objects or diagrams.",
@@ -120,7 +120,7 @@
     ],
     "tools": []
   },
-  "g4-b1.2": {
+  "B1.2": {
     "keyConcepts": [
       {
         "text": "Numbers are compared and ordered according to their “how muchness” or magnitude.",
@@ -219,7 +219,7 @@
     ],
     "tools": ["number line"]
   },
-  "g4-b1.3": {
+  "B1.3": {
     "keyConcepts": [
       {
         "text": "Rounding numbers is often done to estimate a quantity or measure, estimate the results of a computation, and make quick comparisons.",
@@ -290,7 +290,7 @@
     ],
     "tools": ["number line"]
   },
-  "g4-b1.4": {
+  "B1.4": {
     "keyConcepts": [
       {
         "text": "A fraction is a number that tells us about the relationship between two quantities.",
@@ -408,7 +408,7 @@
       "fraction strips"
     ]
   },
-  "g4-b1.5": {
+  "B1.5": {
     "keyConcepts": [
       {
         "text": "Fair sharing means that quantities are shared equally. For a whole to be shared equally, it must be partitioned in such a way that each sharer receives the same amount.",
@@ -488,7 +488,7 @@
     ],
     "tools": ["number line", "counters"]
   },
-  "g4-b1.6": {
+  "B1.6": {
     "keyConcepts": [
       {
         "text": "To count by a fractional amount is to count by a unit fraction. For example, when counting by the unit fraction one third, the sequence is: 1 one third, 2 one thirds, 3 one thirds, and so on. Counting by unit fractions can reinforce that the numerator is actually counting units. A fractional count equivalent to the unit fraction makes one whole (e.g., 3 one thirds).",
@@ -521,7 +521,7 @@
     ],
     "tools": []
   },
-  "g4-b1.7": {
+  "B1.7": {
     "keyConcepts": [
       {
         "text": "The place value of the first position to the right of the decimal point is tenths.",
@@ -603,7 +603,7 @@
     ],
     "tools": ["number line", "calculator"]
   },
-  "g4-b1.8": {
+  "B1.8": {
     "keyConcepts": [
       {
         "text": "Rounding numbers is often done to estimate a quantity or a measure, to estimate the results of a computation, and to estimate a comparison.",
@@ -658,7 +658,7 @@
     ],
     "tools": ["number line", "metre stick"]
   },
-  "g4-b1.9": {
+  "B1.9": {
     "keyConcepts": [
       {
         "text": "The fraction 10 as a quotient is 1 ÷ 10 and the result is 0.1, which is read as one tenth.",
@@ -695,7 +695,7 @@
     ],
     "tools": []
   },
-  "g4-b2.1": {
+  "B2.1": {
     "keyConcepts": [
       {
         "text": "The commutative property holds true for addition and for multiplication. The order of the numbers does not matter; the results will be the same. For example, 4 + 6 = 6 + 4 and 4 × 6 = 6 × 4.",
@@ -890,7 +890,7 @@
     ],
     "tools": ["money", "calculator", "array", "open array"]
   },
-  "g4-b2.2": {
+  "B2.2": {
     "keyConcepts": [
       {
         "text": "The identity principle states that when multiplying an amount by 1 or dividing an amount by 1, the amount stays the same (e.g., 5 × 1 = 5 and 5 ÷ 1=5).",
@@ -1046,7 +1046,7 @@
     ],
     "tools": ["number line", "array"]
   },
-  "g4-b2.3": {
+  "B2.3": {
     "keyConcepts": [
       {
         "text": "Multiplying a whole number by 10 can be visualized as shifting of the digit(s) to the left by one place. For example, 5 × 10 = 50; 50 × 10 = 500; 500 × 10 = 5000.",
@@ -1199,7 +1199,7 @@
     ],
     "tools": ["calculator"]
   },
-  "g4-b2.4": {
+  "B2.4": {
     "keyConcepts": [
       {
         "text": "Situations involving addition and subtraction may involve:",
@@ -1303,7 +1303,7 @@
     ],
     "tools": []
   },
-  "g4-b2.5": {
+  "B2.5": {
     "keyConcepts": [
       {
         "text": "Situations involving multiplication include:",
@@ -1393,7 +1393,7 @@
     ],
     "tools": ["grid paper", "array", "open array"]
   },
-  "g4-b2.6": {
+  "B2.6": {
     "keyConcepts": [
       {
         "text": "Situations involving division include:",
@@ -1505,7 +1505,7 @@
     ],
     "tools": ["calculator", "array"]
   },
-  "g4-b2.7": {
+  "B2.7": {
     "keyConcepts": [
       {
         "text": "The numerator in a fraction describes the count of unit fractions. So, 4 one thirds (four thirds) is 4 written in standard fractional form as 3 .",
@@ -1548,7 +1548,7 @@
     ],
     "tools": ["fraction strips"]
   },
-  "g4-b2.8": {
+  "B2.8": {
     "keyConcepts": [
       {
         "text": "A rate describes the multiplicative relationship between two quantities expressed with different units (e.g., bananas per dollar; granola bars per child; kilometres per hour).",
@@ -1616,7 +1616,7 @@
     ],
     "tools": ["number line", "counters", "array"]
   },
-  "g4-c1.1": {
+  "C1.1": {
     "keyConcepts": [
       {
         "text": "The complexity of a repeating pattern depends on:",
@@ -1662,7 +1662,7 @@
     ],
     "tools": []
   },
-  "g4-c1.2": {
+  "C1.2": {
     "keyConcepts": [
       {
         "text": "The same pattern structure can be represented in various ways.",
@@ -1707,7 +1707,7 @@
     ],
     "tools": ["tiles"]
   },
-  "g4-c1.3": {
+  "C1.3": {
     "keyConcepts": [
       {
         "text": "Patterns can be extended because they are repetitive by nature.",
@@ -1807,7 +1807,7 @@
     ],
     "tools": ["tiles"]
   },
-  "g4-c1.4": {
+  "C1.4": {
     "keyConcepts": [
       {
         "text": "Patterns can be used to understand relationships between whole numbers and decimal numbers.",
@@ -1845,7 +1845,7 @@
     ],
     "tools": []
   },
-  "g4-c2.1": {
+  "C2.1": {
     "keyConcepts": [
       {
         "text": "Symbols can be used to represent quantities that change or quantities that are unknown.",
@@ -1930,7 +1930,7 @@
     ],
     "tools": []
   },
-  "g4-c2.2": {
+  "C2.2": {
     "keyConcepts": [
       {
         "text": "Equations are mathematical statements such that the expressions on both sides of an equal sign are equivalent.",
@@ -2076,7 +2076,7 @@
     ],
     "tools": ["balance"]
   },
-  "g4-c2.3": {
+  "C2.3": {
     "keyConcepts": [
       {
         "text": "Inequalities can be solved as equations, but the values that result must be tested to determine if they hold true for the inequality.",
@@ -2151,7 +2151,7 @@
     ],
     "tools": ["number line", "tiles"]
   },
-  "g4-c3.1": {
+  "C3.1": {
     "keyConcepts": [
       {
         "text": "A loop is used to control a structure that allows for a sequence of instructions to be repeated.",
@@ -2251,7 +2251,7 @@
     ],
     "tools": ["coding"]
   },
-  "g4-c3.2": {
+  "C3.2": {
     "keyConcepts": [
       {
         "text": "Code can be simplified by using loops or by combining steps and operations.",
@@ -2300,7 +2300,7 @@
     ],
     "tools": []
   },
-  "g4-d1.1": {
+  "D1.1": {
     "keyConcepts": [
       {
         "text": "It is important to know whether the data that is needed to answer a question is qualitative or quantitative, so that appropriate collection can be planned and carried out, appropriate representations chosen, and appropriate analysis conducted.",
@@ -2363,7 +2363,7 @@
     ],
     "tools": []
   },
-  "g4-d1.2": {
+  "D1.2": {
     "keyConcepts": [
       {
         "text": "The type and amount of data to be collected is based on the question of interest. Data can be either qualitative or quantitative. Sometimes more than one data set is needed to answer a question of interest.",
@@ -2430,7 +2430,7 @@
     ],
     "tools": ["stem-and-leaf"]
   },
-  "g4-d1.3": {
+  "D1.3": {
     "keyConcepts": [
       {
         "text": "Multiple-bar graphs show comparisons. They have bars in which data sets are shown side by side to compare two aspects of the data.",
@@ -2510,7 +2510,7 @@
     ],
     "tools": ["bar graph", "stem-and-leaf"]
   },
-  "g4-d1.4": {
+  "D1.4": {
     "keyConcepts": [
       {
         "text": "Infographics are used to share data and information on a topic in an appealing way.",
@@ -2547,7 +2547,7 @@
     ],
     "tools": []
   },
-  "g4-d1.5": {
+  "D1.5": {
     "keyConcepts": [
       {
         "text": "The mean, median, and mode can be determined for quantitative data. Only the mode can be determined for qualitative data.",
@@ -2633,7 +2633,7 @@
     ],
     "tools": ["stem-and-leaf"]
   },
-  "g4-d1.6": {
+  "D1.6": {
     "keyConcepts": [
       {
         "text": "Different representations are used for different purposes to convey different types of information.",
@@ -2683,7 +2683,7 @@
     ],
     "tools": ["pictograph", "bar graph", "stem-and-leaf"]
   },
-  "g4-d2.1": {
+  "D2.1": {
     "keyConcepts": [
       {
         "text": "Probability has a continuum from impossible to certain with the following benchmarks between: unlikely, equally likely, and likely.",
@@ -2720,7 +2720,7 @@
     ],
     "tools": ["spinner"]
   },
-  "g4-d2.2": {
+  "D2.2": {
     "keyConcepts": [
       {
         "text": "Data can vary from one population to another.",
@@ -2762,7 +2762,7 @@
     ],
     "tools": []
   },
-  "g4-e1.1": {
+  "E1.1": {
     "keyConcepts": [
       {
         "text": "Geometric properties are specific attributes that define a class of shapes or objects. The geometric properties of a rectangle describe the attributes that all rectangles have, and include:",
@@ -2841,7 +2841,7 @@
     ],
     "tools": ["mirror"]
   },
-  "g4-e1.2": {
+  "E1.2": {
     "keyConcepts": [
       {
         "text": "The Cartesian plane uses two perpendicular number lines to describe locations on a grid. The x- axis is a horizontal number line; the y-axis is a vertical number line; and these two number lines intersect at the origin, (0, 0).",
@@ -2874,7 +2874,7 @@
     ],
     "tools": []
   },
-  "g4-e1.3": {
+  "E1.3": {
     "keyConcepts": [
       {
         "text": "Transformations on a shape result in changes to its position or its size. As a shape transforms, its vertices (points on a grid) move. This explains how transformations involve location and movement.",
@@ -2954,7 +2954,7 @@
     ],
     "tools": ["grid paper", "mirror"]
   },
-  "g4-e2.1": {
+  "E2.1": {
     "keyConcepts": [
       {
         "text": "Millilitres and litres are standard metric units of capacity. Grams and kilograms are metric units of mass:",
@@ -3088,7 +3088,7 @@
     ],
     "tools": ["balance", "scale"]
   },
-  "g4-e2.2": {
+  "E2.2": {
     "keyConcepts": [
       {
         "text": "The metric system parallels the base ten number system. One system can reinforce and help with visualizing the other system.",
@@ -3116,7 +3116,7 @@
     ],
     "tools": ["metre stick"]
   },
-  "g4-e2.3": {
+  "E2.3": {
     "keyConcepts": [
       {
         "text": "Elapsed time describes how much time has passed between two times or dates. Clocks and calendars are used to measure and/or calculate elapsed time.",
@@ -3175,7 +3175,7 @@
     ],
     "tools": ["number line", "clock"]
   },
-  "g4-e2.4": {
+  "E2.4": {
     "keyConcepts": [
       {
         "text": "The rays that form an angle (i.e., the “arms” of an angle) meet at a vertex. The size of an angle is not affected by the length of its arms.",
@@ -3203,7 +3203,7 @@
     ],
     "tools": ["mirror"]
   },
-  "g4-e2.5": {
+  "E2.5": {
     "keyConcepts": [
       {
         "text": "To measure the area of a rectangle, it must be completely covered by units of area (square units), without gaps or overlaps. The alignment of square units produces the rows and columns of an array, with the same number of units in each row.",
@@ -3253,7 +3253,7 @@
     ],
     "tools": ["tiles", "array"]
   },
-  "g4-e2.6": {
+  "E2.6": {
     "keyConcepts": [
       {
         "text": "The formula for finding the area of a rectangle can be generalized to describe the relationship between a rectangle’s side lengths and its area: (Area = base × height).",
@@ -3304,7 +3304,7 @@
     ],
     "tools": ["tiles"]
   },
-  "g4-f1.1": {
+  "F1.1": {
     "keyConcepts": [
       {
         "text": "Consumers have a choice of method of payment when purchasing goods and services.",
@@ -3370,7 +3370,7 @@
     ],
     "tools": []
   },
-  "g4-f1.2": {
+  "F1.2": {
     "keyConcepts": [
       {
         "text": "Estimating and calculating the cost of cash transactions requires the application of addition, subtraction, mental math strategies, and math facts.",
@@ -3440,7 +3440,7 @@
     ],
     "tools": ["money"]
   },
-  "g4-f1.3": {
+  "F1.3": {
     "keyConcepts": [
       {
         "text": "Every financial decision involves a trade-off – giving up something today or in the future to gain something else.",
@@ -3486,7 +3486,7 @@
     ],
     "tools": ["money"]
   },
-  "g4-f1.4": {
+  "F1.4": {
     "keyConcepts": [
       {
         "text": "Money can be used for spending, saving, or giving. It can be spent on things that are needed, wanted, or required. Saving and spending behaviours are impacted by a variety of factors, perspectives, and circumstances.",
@@ -3576,7 +3576,7 @@
     ],
     "tools": []
   },
-  "g4-f1.5": {
+  "F1.5": {
     "keyConcepts": [
       {
         "text": "In order to become better-informed consumers, it is important for students to critically consider the price of the purchase they are considering, as well as different ratings, reviews, and perspectives, before making the purchase.",

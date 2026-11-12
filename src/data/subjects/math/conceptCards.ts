@@ -1,8 +1,9 @@
 import type { ConceptCard } from '@/types/math'
 
-// Key concepts rewritten as cards, keyed by expectation id. One card per
-// ministry key concept, in the same order, so each card can fold open the
-// ministry's wording. Expectations without cards show the ministry text
+// Key concepts rewritten as cards, keyed by grade and code (g6-b1.1).
+// One card per key concept in the document, in the same order, so each card
+// can fold open the document's wording. Expectations without cards show
+// the document's text
 export const conceptCards: Record<string, ConceptCard[]> = {
   'g6-b1.1': [
     {
@@ -96,10 +97,4 @@ export const conceptCards: Record<string, ConceptCard[]> = {
       ],
     },
   ],
-}
-
-export function getConceptCards(
-  expectationId: string
-): ConceptCard[] | undefined {
-  return conceptCards[expectationId]
 }

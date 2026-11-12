@@ -1,5 +1,5 @@
 {
-  "g2-b1.1": {
+  "B1.1": {
     "keyConcepts": [
       {
         "text": "Reading numbers involves interpreting them as a quantity when they are expressed in words, in standard notation, or represented using physical objects or diagrams.",
@@ -129,7 +129,7 @@
     ],
     "tools": ["number line"]
   },
-  "g2-b1.2": {
+  "B1.2": {
     "keyConcepts": [
       {
         "text": "Numbers are compared and ordered according to their “how muchness” or magnitude.",
@@ -233,7 +233,7 @@
     ],
     "tools": ["number line"]
   },
-  "g2-b1.3": {
+  "B1.3": {
     "keyConcepts": [
       {
         "text": "Estimation is used to approximate large quantities and develops a sense of magnitude.",
@@ -287,7 +287,7 @@
     ],
     "tools": ["connecting cubes"]
   },
-  "g2-b1.4": {
+  "B1.4": {
     "keyConcepts": [
       {
         "text": "The count of objects does not change, regardless of how the objects are arranged (e.g., close together or far apart).",
@@ -379,7 +379,7 @@
     ],
     "tools": ["hundred chart", "money", "coins", "calculator"]
   },
-  "g2-b1.5": {
+  "B1.5": {
     "keyConcepts": [
       {
         "text": "A whole number is even if it can be shared into two equal-sized groups or many groups of 2 without a remainder.",
@@ -417,7 +417,7 @@
     ],
     "tools": ["hundred chart"]
   },
-  "g2-b1.6": {
+  "B1.6": {
     "keyConcepts": [
       {
         "text": "Fair-sharing or equal-sharing means that quantities are shared equally. For a whole to be shared equally, it must be partitioned so that each sharer receives the same amount.",
@@ -465,7 +465,7 @@
     ],
     "tools": []
   },
-  "g2-b1.7": {
+  "B1.7": {
     "keyConcepts": [
       {
         "text": "When something is shared fairly, or equally as three pieces, each piece is 1 one third of the original amount. Three one thirds make up a whole.",
@@ -503,7 +503,7 @@
     ],
     "tools": []
   },
-  "g2-b2.1": {
+  "B2.1": {
     "keyConcepts": [
       {
         "text": "When zero is added or subtracted from a quantity, the quantity does not change.",
@@ -661,7 +661,7 @@
     ],
     "tools": []
   },
-  "g2-b2.2": {
+  "B2.2": {
     "keyConcepts": [
       {
         "text": "The focus in Grade 1 math facts was on recalling and demonstrating addition facts for numbers up to 10, and related subtraction facts. In Grade 2, students will expand their range to include numbers that add up to 20, e.g., 9 + 9 = 18 and related subtraction facts, e.g., 18 – 9 = 9.",
@@ -815,7 +815,7 @@
     ],
     "tools": ["ten frame", "relational rods", "dice"]
   },
-  "g2-b2.3": {
+  "B2.3": {
     "keyConcepts": [
       {
         "text": "Mental math refers to doing a calculation in one’s head. Sometimes the numbers or the number of steps in a calculation are too complex to completely hold in one’s head, so jotting down partial calculations and diagrams can be used to complete the calculations.",
@@ -999,7 +999,7 @@
     ],
     "tools": ["number line", "money"]
   },
-  "g2-b2.4": {
+  "B2.4": {
     "keyConcepts": [
       {
         "text": "Situations involving addition and subtraction may involve:",
@@ -1100,7 +1100,7 @@
     ],
     "tools": []
   },
-  "g2-b2.5": {
+  "B2.5": {
     "keyConcepts": [
       {
         "text": "Multiplication can describe situations involving repeated groups of equal size.",
@@ -1185,7 +1185,7 @@
     ],
     "tools": ["number line"]
   },
-  "g2-b2.6": {
+  "B2.6": {
     "keyConcepts": [
       {
         "text": "Division, like multiplication, can describe situations involving repeated groups of equal size.",
@@ -1256,7 +1256,7 @@
     ],
     "tools": ["counters"]
   },
-  "g2-c1.1": {
+  "C1.1": {
     "keyConcepts": [
       {
         "text": "Human activities, histories, and the natural world are made up of all kinds of patterns and many of them are based on geometric designs.",
@@ -1310,7 +1310,7 @@
     ],
     "tools": []
   },
-  "g2-c1.2": {
+  "C1.2": {
     "keyConcepts": [
       {
         "text": "The same pattern structure can be represented in various ways.",
@@ -1438,7 +1438,7 @@
     ],
     "tools": ["coins"]
   },
-  "g2-c1.3": {
+  "C1.3": {
     "keyConcepts": [
       {
         "text": "Patterns can be extended because they are repetitive by nature.",
@@ -1515,7 +1515,7 @@
     ],
     "tools": ["tiles"]
   },
-  "g2-c1.4": {
+  "C1.4": {
     "keyConcepts": [
       {
         "text": "Patterns exist in increasing and decreasing numbers based on place value.",
@@ -1553,7 +1553,7 @@
     ],
     "tools": []
   },
-  "g2-c2.1": {
+  "C2.1": {
     "keyConcepts": [
       {
         "text": "Symbols can be used to represent quantities that change or quantities that are unknown.",
@@ -1609,7 +1609,7 @@
     ],
     "tools": []
   },
-  "g2-c2.2": {
+  "C2.2": {
     "keyConcepts": [
       {
         "text": "Numerical expressions are equivalent when they produce the same result, and an equal sign is a symbol denoting that the two expressions are equivalent.",
@@ -1646,7 +1646,7 @@
     ],
     "tools": ["number line", "balance"]
   },
-  "g2-c2.3": {
+  "C2.3": {
     "keyConcepts": [
       {
         "text": "When numbers are decomposed, the sum of the parts is equivalent to the whole.",
@@ -1696,7 +1696,7 @@
     ],
     "tools": []
   },
-  "g2-c3.1": {
+  "C3.1": {
     "keyConcepts": [
       {
         "text": "In coding, a sequential set of instructions is executed based on the order of instructions given (e.g., a pixelated image stops its motion and then changes colours).",
@@ -1782,7 +1782,7 @@
     ],
     "tools": []
   },
-  "g2-c3.2": {
+  "C3.2": {
     "keyConcepts": [
       {
         "text": "Code can be altered to develop students’ understanding of mathematical concepts, and to ensure that the code is generating the expected outcome.",
@@ -1831,7 +1831,7 @@
     ],
     "tools": []
   },
-  "g2-d1.1": {
+  "D1.1": {
     "keyConcepts": [
       {
         "text": "Data can be sorted in more than one way. For example, the same set of data can be sorted in a Venn diagram, a Carroll diagram, and a two-way table.",
@@ -1900,7 +1900,7 @@
     ],
     "tools": ["Venn diagram", "Carroll diagram"]
   },
-  "g2-d1.2": {
+  "D1.2": {
     "keyConcepts": [
       {
         "text": "The type and amount of data to be collected is based on the question of interest.",
@@ -1959,7 +1959,7 @@
     ],
     "tools": ["tally", "calendar"]
   },
-  "g2-d1.3": {
+  "D1.3": {
     "keyConcepts": [
       {
         "text": "The same data can be represented using a concrete graph, a pictograph, a line plot, or a bar graph.",
@@ -2040,7 +2040,7 @@
       "line plot"
     ]
   },
-  "g2-d1.4": {
+  "D1.4": {
     "keyConcepts": [
       {
         "text": "A mode of a variable is the category that has the greatest count (frequency).",
@@ -2085,7 +2085,7 @@
     ],
     "tools": []
   },
-  "g2-d1.5": {
+  "D1.5": {
     "keyConcepts": [
       {
         "text": "Different representations are used for different purposes to convey different types of information.",
@@ -2161,7 +2161,7 @@
       "line plot"
     ]
   },
-  "g2-d2.1": {
+  "D2.1": {
     "keyConcepts": [
       {
         "text": "The likelihood of an event can be represented along a continuum from impossible to certain.",
@@ -2211,7 +2211,7 @@
     ],
     "tools": []
   },
-  "g2-d2.2": {
+  "D2.2": {
     "keyConcepts": [
       {
         "text": "Data can vary from one population to another.",
@@ -2249,7 +2249,7 @@
     ],
     "tools": []
   },
-  "g2-e1.1": {
+  "E1.1": {
     "keyConcepts": [
       {
         "text": "Two-dimensional shapes have geometric properties that allow them to be identified, compared, sorted, and classified.",
@@ -2409,7 +2409,7 @@
     ],
     "tools": ["geoboard", "mirror"]
   },
-  "g2-e1.2": {
+  "E1.2": {
     "keyConcepts": [
       {
         "text": "Two-dimensional shapes can be combined to create larger shapes (composing) or broken into smaller shapes (decomposing). All shapes can be decomposed into smaller shapes. The ability to compose and decompose shapes provides a foundation for developing area formulas in later grades.",
@@ -2433,7 +2433,7 @@
     ],
     "tools": ["pattern blocks"]
   },
-  "g2-e1.3": {
+  "E1.3": {
     "keyConcepts": [
       {
         "text": "Congruent two-dimensional shapes can fit exactly on top of each other. They have the same shape and the same size.",
@@ -2487,7 +2487,7 @@
     ],
     "tools": ["geoboard", "grid paper"]
   },
-  "g2-e1.4": {
+  "E1.4": {
     "keyConcepts": [
       {
         "text": "A three-dimensional space can be represented using a two-dimensional map by noting where objects are positioned relative to each other. A map provides a bird’s-eye view of an area.",
@@ -2545,7 +2545,7 @@
     ],
     "tools": ["tiles", "grid paper", "ruler", "metre stick", "measuring tape"]
   },
-  "g2-e1.5": {
+  "E1.5": {
     "keyConcepts": [
       {
         "text": "A three-dimensional space can be represented on a two-dimensional map by noting where objects are positioned relative to each other. A map provides a bird’s-eye view of an area.",
@@ -2620,7 +2620,7 @@
     ],
     "tools": []
   },
-  "g2-e2.1": {
+  "E2.1": {
     "keyConcepts": [
       {
         "text": "A length is the distance between two points, in any direction. Width, height, and depth are all measurements that compare length, or the distance between two points.",
@@ -2730,7 +2730,7 @@
     ],
     "tools": ["relational rods", "pattern blocks", "tiles"]
   },
-  "g2-e2.2": {
+  "E2.2": {
     "keyConcepts": [
       {
         "text": "Standard units make it possible to reliably communicate measurements. Centimetres and metres are standard metric units for measuring length. There are 100 centimetres in 1 metre.",
@@ -2772,7 +2772,7 @@
     ],
     "tools": ["ruler", "metre stick"]
   },
-  "g2-e2.3": {
+  "E2.3": {
     "keyConcepts": [
       {
         "text": "Rulers, measuring tapes, tape measures – in fact, all measuring tools – replace the need to lay out and count actual physical units. The measuring tool repeats the unit so there are no gaps or overlaps and includes a scale to keep track of the unit count.",
@@ -2881,7 +2881,7 @@
     ],
     "tools": ["ruler", "metre stick", "measuring tape"]
   },
-  "g2-e2.4": {
+  "E2.4": {
     "keyConcepts": [
       {
         "text": "Measuring time involves questions such as: “What time is it?” and “How much time has passed?”. The focus in Grade 2 is on the second question.",
@@ -2951,7 +2951,7 @@
     ],
     "tools": ["clock"]
   },
-  "g2-f1.1": {
+  "F1.1": {
     "keyConcepts": [
       {
         "text": "There are a variety of ways to represent the same amount of money.",

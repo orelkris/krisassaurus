@@ -1,10 +1,14 @@
 import { colorSet, type ColorSet } from '@/lib/colors'
+import type { ActivityCard, ConceptCard } from '@/types/math'
 import type {
   Curriculum,
+  Idea,
   OverallExpectation,
   SpecificExpectation,
   StrandId,
   SubjectId,
+  Support,
+  TeacherSupports,
 } from '@/types/curriculum'
 
 // Helpers that read any subject's curriculum. Counts are always worked out
@@ -35,6 +39,61 @@ export function specificsIn<S extends StrandId>(
       (overall) => Object.entries(overall.specifics)
     )
   )
+}
+
+// A strand's ideas, when the subject is split that way (Math), e.g.
+// Fractions, decimals & percents. Empty for the other subjects
+export function ideasIn<S extends StrandId>(
+  c: Curriculum<S>,
+  strand: S
+): Idea<S>[] {
+  return c.ideas?.filter((idea) => idea.strand === strand) ?? []
+}
+
+// The idea a specific expectation is part of in one grade, if any
+export function ideaOf<S extends StrandId>(
+  c: Curriculum<S>,
+  grade: number,
+  code: string
+): Idea<S> | undefined {
+  return c.ideas?.find((idea) => idea.codes[grade]?.includes(code))
+}
+
+// An idea's specific expectations in one grade, in order
+export function specificsInIdea<S extends StrandId>(
+  c: Curriculum<S>,
+  idea: Idea<S>,
+  grade: number
+): [string, SpecificExpectation][] {
+  const inStrand = specificsIn(c, grade, idea.strand)
+  return (idea.codes[grade] ?? []).flatMap((code) =>
+    inStrand.filter(([key]) => key === code)
+  )
+}
+
+// The cards we rewrote for one expectation's key concepts and sample tasks,
+// if any (Math's Grade 6 B1.1)
+export function cardsFor<S extends StrandId>(
+  c: Curriculum<S>,
+  grade: number,
+  code: string
+): { concepts?: ConceptCard[]; activities?: ActivityCard[] } {
+  const key = `g${grade}-${code.toLowerCase()}`
+  return {
+    concepts: c.cards?.concepts[key],
+    activities: c.cards?.activities[key],
+  }
+}
+
+// Whether an expectation has anything to show for a support
+export function hasSupport(
+  supports: TeacherSupports | undefined,
+  support: Support
+): boolean {
+  if (!supports) return false
+  if (support === 'concepts') return supports.keyConcepts.length > 0
+  if (support === 'examples') return supports.examples.length > 0
+  return supports.tasks.length > 0
 }
 
 // The strand of skills taught through the others, if the subject has one
@@ -114,7 +173,7 @@ export function topicsIn<S extends StrandId>(
 }
 
 // A page in a subject's curriculum section, e.g. /gym/grade/4,
-// /gym/strand/b, /gym/strand/b/b2
+// /gym/strand/b, /gym/strand/b/b2 (or an idea, /math/strand/b/fractions)
 export function curriculumPath(
   subject: SubjectId,
   { grade, strand, code }: { grade?: number; strand?: StrandId; code?: string }

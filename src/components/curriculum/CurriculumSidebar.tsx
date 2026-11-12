@@ -7,6 +7,7 @@ import { useCurriculum } from '@/hooks/useCurriculum'
 import {
   curriculumPath,
   gradesOf,
+  ideasIn,
   overallsIn,
   specificsIn,
   strandsOf,
@@ -44,26 +45,32 @@ function CurriculumSidebar() {
       ? curriculumPath(curriculum.subject, { grade })
       : curriculumPath(curriculum.subject, { strand: strand as StrandId })
 
-  // On a strand page, the strand's overall expectations under it, like
-  // Math's ideas (Strand A has only one, so it has none)
+  // On a strand page, the strand's parts under it: its ideas (Math) or its
+  // overall expectations (Strand A has only one, so it has none)
   const strandId = strand as StrandId | undefined
-  const overalls =
-    strandId && !grade && curriculum.strands[strandId]
-      ? overallsIn(curriculum, strandId)
-      : []
-  const currentCode = pathname
-    .match(new RegExp(`^${base}/strand/[a-z]/([a-z0-9]+)`))?.[1]
-    ?.toUpperCase()
+  const onStrand = !!strandId && !grade && !!curriculum.strands[strandId]
+  const ideas = onStrand ? ideasIn(curriculum, strandId) : []
+  const parts = ideas.length
+    ? ideas.map(({ id, name }) => ({ id, label: name }))
+    : (onStrand ? overallsIn(curriculum, strandId) : []).map(
+        ({ code, name }) => ({ id: code, label: `${code} ${name ?? ''}` })
+      )
+  const current = pathname.match(
+    new RegExp(`^${base}/strand/[a-z]/([a-z0-9-]+)`)
+  )?.[1]
   const subList: FilterSubList | undefined =
-    strandId && overalls.length > 1
+    strandId && parts.length > 1
       ? {
           kind: 'links',
-          links: overalls.map(({ code, name }, index) => ({
-            id: code,
-            label: `${code} ${name ?? ''}`,
-            to: curriculumPath(curriculum.subject, { strand: strandId, code }),
-            // The strand page opens at its first overall
-            isCurrent: currentCode ? code === currentCode : index === 0,
+          links: parts.map(({ id, label }, index) => ({
+            id,
+            label,
+            to: curriculumPath(curriculum.subject, {
+              strand: strandId,
+              code: id,
+            }),
+            // The strand page opens at its first part
+            isCurrent: current ? id.toLowerCase() === current : index === 0,
           })),
         }
       : undefined

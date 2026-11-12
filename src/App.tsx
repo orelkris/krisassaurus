@@ -5,7 +5,6 @@ import {
   Outlet,
   Navigate,
   useLocation,
-  useParams,
 } from 'react-router-dom'
 import AppLayout from '@/components/layout/AppLayout'
 import SubjectSectionPage from '@/pages/SubjectSectionPage'
@@ -23,14 +22,6 @@ import DramaOverviewPage from '@/pages/drama/DramaOverviewPage'
 import StrategiesPage from '@/pages/drama/StrategiesPage'
 import StrategyPage from '@/pages/drama/StrategyPage'
 import SubjectPage from '@/pages/drama/SubjectPage'
-import MathSidebar from '@/components/math/MathSidebar'
-import MathOverviewPage from '@/pages/math/MathOverviewPage'
-import GradePage from '@/pages/math/GradePage'
-import StrandPage from '@/pages/math/StrandPage'
-import GradeStrandPage from '@/pages/math/GradeStrandPage'
-import ExpectationPage from '@/pages/math/ExpectationPage'
-import OverallPage from '@/pages/math/OverallPage'
-import ComparePage from '@/pages/math/ComparePage'
 import ResourcesSidebar from '@/components/resources/ResourcesSidebar'
 import ComingSoon from '@/components/ui/ComingSoon'
 import CurriculumOverviewPage from '@/pages/curriculum/CurriculumOverviewPage'
@@ -50,12 +41,6 @@ function OldBlogRedirect() {
   const { pathname, search, hash } = useLocation()
   const to = pathname.replace(/^\/blog/, '') || '/'
   return <Navigate to={`${to}${search}${hash}`} replace />
-}
-
-// Math's /grade/6/b2 is an overall page, /grade/6/b2.1 an expectation page
-function MathCodePage() {
-  const { code = '' } = useParams<{ code: string }>()
-  return code.includes('.') ? <ExpectationPage /> : <OverallPage />
 }
 
 function App() {
@@ -102,40 +87,8 @@ function App() {
             <Route path="strand" element={<Navigate to="/drama" replace />} />
           </Route>
 
-          {/* Math: the curriculum by grade, by strand, both, and one page per expectation */}
-          <Route
-            path="/math"
-            element={
-              <TwoColumnLayout
-                sidebar={<MathSidebar />}
-                subject="math"
-                scrollable
-              >
-                <Outlet />
-              </TwoColumnLayout>
-            }
-          >
-            <Route index element={<MathOverviewPage />} />
-            <Route path="grade/:grade" element={<GradePage />} />
-            {/* b2 is an overall, b2.1 a specific expectation */}
-            <Route path="grade/:grade/:code" element={<MathCodePage />} />
-            <Route
-              path="grade/:grade/:code/:specific"
-              element={<ComparePage />}
-            />
-            {/* Old grade and strand links open the overall page */}
-            <Route
-              path="grade/:grade/strand/:slug"
-              element={<GradeStrandPage />}
-            />
-            <Route path="strand/:slug" element={<StrandPage />} />
-            {/* /grade and /strand on their own have no page */}
-            <Route path="grade" element={<Navigate to="/math" replace />} />
-            <Route path="strand" element={<Navigate to="/math" replace />} />
-          </Route>
-
-          {/* Every subject made from its curriculum data (Gym first) gets the
-              same pages. Its curriculum is set once around its routes */}
+          {/* Every subject made from its curriculum data (Math, Gym, Science)
+              gets the same pages. Its curriculum is set once around its routes */}
           {CURRICULA.map((curriculum) => (
             <Route
               key={curriculum.subject}

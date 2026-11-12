@@ -1,0 +1,3561 @@
+{
+  "1": {
+    "A": {
+      "A1": {
+        "name": "Social-Emotional Learning (SEL) Skills and the Mathematical Processes",
+        "description": "apply, to the best of their ability, a variety of social-emotional learning skills to support their use of the mathematical processes and their learning in connection with the expectations in the other five strands of the mathematics curriculum",
+        "specifics": {
+          "A1.1": {
+            "description": "Identify and manage emotions, so they can express and manage their feelings, and show understanding of the feelings of others, as they engage positively in mathematics activities",
+            "topic": "Identification and Management of Emotions",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.2": {
+            "description": "Recognize sources of stress and cope with challenges, so they can work through challenging math problems, understanding that their resourcefulness in using various strategies to respond to stress is helping them build personal resilience",
+            "topic": "Stress Management and Coping",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.3": {
+            "description": "Maintain positive motivation and perseverance, so they can recognize that testing out different approaches to problems and learning from mistakes is an important part of the learning process, and is aided by a sense of optimism and hope",
+            "topic": "Positive Motivation and Perseverance",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.4": {
+            "description": "Build relationships and communicate effectively, so they can work collaboratively on math problems – expressing their thinking, listening to the thinking of others, and practising inclusivity – and in that way foster healthy relationships",
+            "topic": "Healthy Relationship Skills",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.5": {
+            "description": "Develop self-awareness and sense of identity, so they can see themselves as capable math learners, and strengthen their sense of ownership of their learning, as part of their emerging sense of identity and belonging",
+            "topic": "Self-Awareness and Sense of Identity",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.6": {
+            "description": "Think critically and creatively, so they can make connections between math and everyday contexts to help them make informed judgements and decisions",
+            "topic": "Critical and Creative Thinking",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          }
+        }
+      }
+    },
+    "B": {
+      "B1": {
+        "name": "Number Sense",
+        "description": "demonstrate an understanding of numbers and make connections to the way numbers are used in everyday life",
+        "specifics": {
+          "B1.1": {
+            "description": "Read and represent whole numbers up to and including 50, and describe various ways they are used in everyday life",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 19
+          },
+          "B1.2": {
+            "description": "Compose and decompose whole numbers up to and including 50, using a variety of tools and strategies, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 22
+          },
+          "B1.3": {
+            "description": "Compare and order whole numbers up to and including 50, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 24
+          },
+          "B1.4": {
+            "description": "Estimate the number of objects in collections of up to 50, and verify their estimates by counting",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 25
+          },
+          "B1.5": {
+            "description": "Count to 50 by 1s, 2s, 5s, and 10s, using a variety of tools and strategies",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 27
+          },
+          "B1.6": {
+            "description": "Use drawings to represent and solve fair-share problems that involve 2 and 4 sharers, respectively, and have remainders of 1 or 2",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 31
+          },
+          "B1.7": {
+            "description": "Recognize that one half and two fourths of the same whole are equal, in fair-sharing contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 32
+          },
+          "B1.8": {
+            "description": "Use drawings to compare and order unit fractions representing the individual portions that result when a whole is shared by different numbers of sharers, up to a maximum of 10",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 34
+          }
+        }
+      },
+      "B2": {
+        "name": "Operations",
+        "description": "use knowledge of numbers and operations to solve mathematical problems encountered in everyday life",
+        "specifics": {
+          "B2.1": {
+            "description": "Use the properties of addition and subtraction, and the relationship between addition and subtraction, to solve problems and check calculations",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 36
+          },
+          "B2.2": {
+            "description": "Recall and demonstrate addition facts for numbers up to 10, and related subtraction facts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 38
+          },
+          "B2.3": {
+            "description": "Use mental math strategies, including estimation, to add and subtract whole numbers that add up to no more than 20, and explain the strategies used",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 43
+          },
+          "B2.4": {
+            "description": "Use objects, diagrams, and equations to represent, describe, and solve situations involving addition and subtraction of whole numbers that add up to no more than 50",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 46
+          },
+          "B2.5": {
+            "description": "Represent and solve equal-group problems where the total number of items is no more than 10, including problems in which each group is a half, using tools and drawings",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 50
+          }
+        }
+      }
+    },
+    "C": {
+      "C1": {
+        "name": "Patterns and Relationships",
+        "description": "identify, describe, extend, create, and make predictions about a variety of patterns, including those found in real-life contexts",
+        "specifics": {
+          "C1.1": {
+            "description": "Identify and describe the regularities in a variety of patterns, including patterns found in real-life contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 52
+          },
+          "C1.2": {
+            "description": "Create and translate patterns using movements, sounds, objects, shapes, letters, and numbers",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 54
+          },
+          "C1.3": {
+            "description": "Determine pattern rules and use them to extend patterns, make and justify predictions, and identify missing elements in patterns",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 56
+          },
+          "C1.4": {
+            "description": "Create and describe patterns to illustrate relationships among whole numbers up to 50",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 58
+          }
+        }
+      },
+      "C2": {
+        "name": "Equations and Inequalities",
+        "description": "demonstrate an understanding of variables, expressions, equalities, and inequalities, and apply this understanding in various contexts",
+        "specifics": {
+          "C2.1": {
+            "description": "Identify quantities that can change and quantities that always remain the same in real-life contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 60
+          },
+          "C2.2": {
+            "description": "Determine whether given pairs of addition and subtraction expressions are equivalent or not",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 61
+          },
+          "C2.3": {
+            "description": "Identify and use equivalent relationships for whole numbers up to 50, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 62
+          }
+        }
+      },
+      "C3": {
+        "name": "Coding",
+        "description": "solve problems and create computational representations of mathematical situations using coding concepts and skills",
+        "specifics": {
+          "C3.1": {
+            "description": "Solve problems and create computational representations of mathematical situations by writing and executing code, including code that involves sequential events",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 64
+          },
+          "C3.2": {
+            "description": "Read and alter existing code, including code that involves sequential events, and describe how changes to the code affect the outcomes",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 66
+          }
+        }
+      }
+    },
+    "D": {
+      "D1": {
+        "name": "Data Literacy",
+        "description": "manage, analyse, and use data to make convincing arguments and informed decisions, in various contexts drawn from real life",
+        "specifics": {
+          "D1.1": {
+            "description": "Sort sets of data about people or things according to one attribute, and describe rules used for sorting",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 69
+          },
+          "D1.2": {
+            "description": "Collect data through observations, experiments, and interviews to answer questions of interest that focus on a single piece of information; record the data using methods of their choice; and organize the data in tally tables",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 70
+          },
+          "D1.3": {
+            "description": "Display sets of data, using one-to-one correspondence, in concrete graphs and pictographs with proper sources, titles, and labels",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 72
+          },
+          "D1.4": {
+            "description": "Order categories of data from greatest to least frequency for various data sets displayed in tally tables, concrete graphs, and pictographs",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 74
+          },
+          "D1.5": {
+            "description": "Analyse different sets of data presented in various ways, including in tally tables, concrete graphs, and pictographs, by asking and answering questions about the data and drawing conclusions, then make convincing arguments and informed decisions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 76
+          }
+        }
+      },
+      "D2": {
+        "name": "Probability",
+        "description": "describe the likelihood that events will happen, and use that information to make predictions",
+        "specifics": {
+          "D2.1": {
+            "description": "Use mathematical language, including the terms “impossible”, “possible”, and “certain”, to describe the likelihood of events happening, and use that likelihood to make predictions and informed decisions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 78
+          },
+          "D2.2": {
+            "description": "Make and test predictions about the likelihood that the categories in a data set from one population will have the same frequencies in data collected from a different population of the same size",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 79
+          }
+        }
+      }
+    },
+    "E": {
+      "E1": {
+        "name": "Geometric and Spatial Reasoning",
+        "description": "describe and represent shape, location, and movement by applying geometric properties and spatial relationships in order to navigate the world around them",
+        "specifics": {
+          "E1.1": {
+            "description": "Sort three-dimensional objects and two-dimensional shapes according to one attribute at a time, and identify the sorting rule being used",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 80
+          },
+          "E1.2": {
+            "description": "Construct three-dimensional objects, and identify two-dimensional shapes contained within structures and objects",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 83
+          },
+          "E1.3": {
+            "description": "Construct and describe two-dimensional shapes and three-dimensional objects that have matching halves",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 85
+          },
+          "E1.4": {
+            "description": "Describe the relative locations of objects or people, using positional language",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 86
+          },
+          "E1.5": {
+            "description": "Give and follow directions for moving from one location to another",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 87
+          }
+        }
+      },
+      "E2": {
+        "name": "Measurement",
+        "description": "compare, estimate, and determine measurements in various contexts",
+        "specifics": {
+          "E2.1": {
+            "description": "Identify measurable attributes of two-dimensional shapes and three-dimensional objects, including length, area, mass, capacity, and angle",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 89
+          },
+          "E2.2": {
+            "description": "Compare several everyday objects and order them according to length, area, mass, and capacity",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 90
+          },
+          "E2.3": {
+            "description": "Read the date on a calendar, and use a calendar to identify days, weeks, months, holidays, and seasons",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 91
+          }
+        }
+      }
+    },
+    "F": {
+      "F1": {
+        "name": "Money and Finances",
+        "description": "demonstrate an understanding of the value of Canadian currency",
+        "specifics": {
+          "F1.1": {
+            "description": "Identify the various Canadian coins up to 50¢ and coins and bills up to $50, and compare their values",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 93
+          }
+        }
+      }
+    }
+  },
+  "2": {
+    "A": {
+      "A1": {
+        "name": "Social-Emotional Learning (SEL) Skills and the Mathematical Processes",
+        "description": "apply, to the best of their ability, a variety of social-emotional learning skills to support their use of the mathematical processes and their learning in connection with the expectations in the other five strands of the mathematics curriculum",
+        "specifics": {
+          "A1.1": {
+            "description": "Identify and manage emotions, so they can express and manage their feelings, and show understanding of the feelings of others, as they engage positively in mathematics activities",
+            "topic": "Identification and Management of Emotions",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.2": {
+            "description": "Recognize sources of stress and cope with challenges, so they can work through challenging math problems, understanding that their resourcefulness in using various strategies to respond to stress is helping them build personal resilience",
+            "topic": "Stress Management and Coping",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.3": {
+            "description": "Maintain positive motivation and perseverance, so they can recognize that testing out different approaches to problems and learning from mistakes is an important part of the learning process, and is aided by a sense of optimism and hope",
+            "topic": "Positive Motivation and Perseverance",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.4": {
+            "description": "Build relationships and communicate effectively, so they can work collaboratively on math problems – expressing their thinking, listening to the thinking of others, and practising inclusivity – and in that way foster healthy relationships",
+            "topic": "Healthy Relationship Skills",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.5": {
+            "description": "Develop self-awareness and sense of identity, so they can see themselves as capable math learners, and strengthen their sense of ownership of their learning, as part of their emerging sense of identity and belonging",
+            "topic": "Self-Awareness and Sense of Identity",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.6": {
+            "description": "Think critically and creatively, so they can make connections between math and everyday contexts to help them make informed judgements and decisions",
+            "topic": "Critical and Creative Thinking",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          }
+        }
+      }
+    },
+    "B": {
+      "B1": {
+        "name": "Number Sense",
+        "description": "demonstrate an understanding of numbers and make connections to the way numbers are used in everyday life",
+        "specifics": {
+          "B1.1": {
+            "description": "Read, represent, compose, and decompose whole numbers up to and including 200, using a variety of tools and strategies, and describe various ways they are used in everyday life",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 105
+          },
+          "B1.2": {
+            "description": "Compare and order whole numbers up to and including 200, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 108
+          },
+          "B1.3": {
+            "description": "Estimate the number of objects in collections of up to 200 and verify their estimates by counting",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 110
+          },
+          "B1.4": {
+            "description": "Count to 200, including by 20s, 25s, and 50s, using a variety of tools and strategies",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 111
+          },
+          "B1.5": {
+            "description": "Describe what makes a number even or odd",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 113
+          },
+          "B1.6": {
+            "description": "Use drawings to represent, solve, and compare the results of fair-share problems that involve sharing up to 10 items among 2, 3, 4, and 6 sharers, including problems that result in whole numbers, mixed numbers, and fractional amounts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 114
+          },
+          "B1.7": {
+            "description": "Recognize that one third and two sixths of the same whole are equal, in fair-sharing contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 117
+          }
+        }
+      },
+      "B2": {
+        "name": "Operations",
+        "description": "use knowledge of numbers and operations to solve mathematical problems encountered in everyday life",
+        "specifics": {
+          "B2.1": {
+            "description": "Use the properties of addition and subtraction, and the relationships between addition and multiplication and between subtraction and division, to solve problems and check calculations",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 118
+          },
+          "B2.2": {
+            "description": "Recall and demonstrate addition facts for numbers up to 20, and related subtraction facts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 122
+          },
+          "B2.3": {
+            "description": "Use mental math strategies, including estimation, to add and subtract whole numbers that add up to no more than 50, and explain the strategies used",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 126
+          },
+          "B2.4": {
+            "description": "Use objects, diagrams, and equations to represent, describe, and solve situations involving addition and subtraction of whole numbers that add up to no more than 100",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 129
+          },
+          "B2.5": {
+            "description": "Represent multiplication as repeated equal groups, including groups of one half and one fourth, and solve related problems, using various tools and drawings",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 133
+          },
+          "B2.6": {
+            "description": "Represent division of up to 12 items as the equal sharing of a quantity, and solve related problems, using various tools and drawings",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 135
+          }
+        }
+      }
+    },
+    "C": {
+      "C1": {
+        "name": "Patterns and Relationships",
+        "description": "identify, describe, extend, create, and make predictions about a variety of patterns, including those found in real-life contexts",
+        "specifics": {
+          "C1.1": {
+            "description": "Identify and describe a variety of patterns involving geometric designs, including patterns found in real-life contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 138
+          },
+          "C1.2": {
+            "description": "Create and translate patterns using various representations, including shapes and numbers",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 139
+          },
+          "C1.3": {
+            "description": "Determine pattern rules and use them to extend patterns, make and justify predictions, and identify missing elements in patterns represented with shapes and numbers",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 142
+          },
+          "C1.4": {
+            "description": "Create and describe patterns to illustrate relationships among whole numbers up to 100",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 145
+          }
+        }
+      },
+      "C2": {
+        "name": "Equations and Inequalities",
+        "description": "demonstrate an understanding of variables, expressions, equalities, and inequalities, and apply this understanding in various contexts",
+        "specifics": {
+          "C2.1": {
+            "description": "Identify when symbols are being used as variables, and describe how they are being used",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 147
+          },
+          "C2.2": {
+            "description": "Determine what needs to be added to or subtracted from addition and subtraction expressions to make them equivalent",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 149
+          },
+          "C2.3": {
+            "description": "Identify and use equivalent relationships for whole numbers up to 100, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 151
+          }
+        }
+      },
+      "C3": {
+        "name": "Coding",
+        "description": "solve problems and create computational representations of mathematical situations using coding concepts and skills",
+        "specifics": {
+          "C3.1": {
+            "description": "Solve problems and create computational representations of mathematical situations by writing and executing code, including code that involves sequential and concurrent events",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 153
+          },
+          "C3.2": {
+            "description": "Read and alter existing code, including code that involves sequential and concurrent events, and describe how changes to the code affect the outcomes",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 154
+          }
+        }
+      }
+    },
+    "D": {
+      "D1": {
+        "name": "Data Literacy",
+        "description": "manage, analyse, and use data to make convincing arguments and informed decisions, in various contexts drawn from real life",
+        "specifics": {
+          "D1.1": {
+            "description": "Sort sets of data about people or things according to two attributes, using tables and logic diagrams, including Venn and Carroll diagrams",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 159
+          },
+          "D1.2": {
+            "description": "Collect data through observations, experiments, and interviews to answer questions of interest that focus on two pieces of information, and organize the data in two-way tally tables",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 162
+          },
+          "D1.3": {
+            "description": "Display sets of data, using one-to-one correspondence, in concrete graphs, pictographs, line plots, and bar graphs with proper sources, titles, and labels",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 164
+          },
+          "D1.4": {
+            "description": "Identify the mode(s), if any, for various data sets presented in concrete graphs, pictographs, line plots, bar graphs, and tables, and explain what this measure indicates about the data",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 168
+          },
+          "D1.5": {
+            "description": "Analyse different sets of data presented in various ways, including in logic diagrams, line plots, and bar graphs, by asking and answering questions about the data and drawing conclusions, then make convincing arguments and informed decisions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 170
+          }
+        }
+      },
+      "D2": {
+        "name": "Probability",
+        "description": "describe the likelihood that events will happen, and use that information to make predictions",
+        "specifics": {
+          "D2.1": {
+            "description": "Use mathematical language, including the terms “impossible”, “possible”, and “certain”, to describe the likelihood of complementary events happening, and use that likelihood to make predictions and informed decisions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 172
+          },
+          "D2.2": {
+            "description": "Make and test predictions about the likelihood that the mode(s) of a data set from one population will be the same for data collected from a different population",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 172
+          }
+        }
+      }
+    },
+    "E": {
+      "E1": {
+        "name": "Geometric and Spatial Reasoning",
+        "description": "describe and represent shape, location, and movement by applying geometric properties and spatial relationships in order to navigate the world around them",
+        "specifics": {
+          "E1.1": {
+            "description": "Sort and identify two-dimensional shapes by comparing number of sides, side lengths, angles, and number of lines of symmetry",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 174
+          },
+          "E1.2": {
+            "description": "Compose and decompose two-dimensional shapes, and show that the area of a shape remains constant regardless of how its parts are rearranged",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 177
+          },
+          "E1.3": {
+            "description": "Identify congruent lengths and angles in two-dimensional shapes by mentally and physically matching them, and determine if the shapes are congruent",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 178
+          },
+          "E1.4": {
+            "description": "Create and interpret simple maps of familiar places",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 179
+          },
+          "E1.5": {
+            "description": "Describe the relative positions of several objects and the movements needed to get from one object to another",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 180
+          }
+        }
+      },
+      "E2": {
+        "name": "Measurement",
+        "description": "compare, estimate, and determine measurements in various contexts",
+        "specifics": {
+          "E2.1": {
+            "description": "Choose and use non-standard units appropriately to measure lengths, and describe the inverse relationship between the size of a unit and the number of units needed",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 182
+          },
+          "E2.2": {
+            "description": "Explain the relationship between centimetres and metres as units of length, and use benchmarks for these units to estimate lengths",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 184
+          },
+          "E2.3": {
+            "description": "Measure and draw lengths in centimetres and metres, using a measuring tool, and recognize the impact of starting at points other than zero",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 185
+          },
+          "E2.4": {
+            "description": "Use units of time, including seconds, minutes, hours, and non-standard units, to describe the duration of various events",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 187
+          }
+        }
+      }
+    },
+    "F": {
+      "F1": {
+        "name": "Money and Finances",
+        "description": "demonstrate an understanding of the value of Canadian currency",
+        "specifics": {
+          "F1.1": {
+            "description": "Identify different ways of representing the same amount of money up to Canadian 200¢ using various combinations of coins, and up to $200 using various combinations of $1 and $2 coins and $5, $10, $20, $50, and $100 bills",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 188
+          }
+        }
+      }
+    }
+  },
+  "3": {
+    "A": {
+      "A1": {
+        "name": "Social-Emotional Learning (SEL) Skills and the Mathematical Processes",
+        "description": "apply, to the best of their ability, a variety of social-emotional learning skills to support their use of the mathematical processes and their learning in connection with the expectations in the other five strands of the mathematics curriculum",
+        "specifics": {
+          "A1.1": {
+            "description": "Identify and manage emotions, so they can express and manage their feelings, and show understanding of the feelings of others, as they engage positively in mathematics activities",
+            "topic": "Identification and Management of Emotions",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.2": {
+            "description": "Recognize sources of stress and cope with challenges, so they can work through challenging math problems, understanding that their resourcefulness in using various strategies to respond to stress is helping them build personal resilience",
+            "topic": "Stress Management and Coping",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.3": {
+            "description": "Maintain positive motivation and perseverance, so they can recognize that testing out different approaches to problems and learning from mistakes is an important part of the learning process, and is aided by a sense of optimism and hope",
+            "topic": "Positive Motivation and Perseverance",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.4": {
+            "description": "Build relationships and communicate effectively, so they can work collaboratively on math problems – expressing their thinking, listening to the thinking of others, and practising inclusivity – and in that way foster healthy relationships",
+            "topic": "Healthy Relationship Skills",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.5": {
+            "description": "Develop self-awareness and sense of identity, so they can see themselves as capable math learners, and strengthen their sense of ownership of their learning, as part of their emerging sense of identity and belonging",
+            "topic": "Self-Awareness and Sense of Identity",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.6": {
+            "description": "Think critically and creatively, so they can make connections between math and everyday contexts to help them make informed judgements and decisions",
+            "topic": "Critical and Creative Thinking",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          }
+        }
+      }
+    },
+    "B": {
+      "B1": {
+        "name": "Number Sense",
+        "description": "demonstrate an understanding of numbers and make connections to the way numbers are used in everyday life",
+        "specifics": {
+          "B1.1": {
+            "description": "Read, represent, compose, and decompose whole numbers up to and including 1000, using a variety of tools and strategies, and describe various ways they are used in everyday life",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 200
+          },
+          "B1.2": {
+            "description": "Compare and order whole numbers up to and including 1000, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 203
+          },
+          "B1.3": {
+            "description": "Round whole numbers to the nearest ten or hundred, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 205
+          },
+          "B1.4": {
+            "description": "Count to 1000, including by 50s, 100s, and 200s, using a variety of tools and strategies",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 206
+          },
+          "B1.5": {
+            "description": "Use place value when describing and representing multi-digit numbers in a variety of ways, including with base ten materials",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 207
+          },
+          "B1.6": {
+            "description": "Use drawings to represent, solve, and compare the results of fair-share problems that involve sharing up to 20 items among 2, 3, 4, 5, 6, 8, and 10 sharers, including problems that result in whole numbers, mixed numbers, and fractional amounts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 210
+          },
+          "B1.7": {
+            "description": "Represent and solve fair-share problems that focus on determining and using equivalent fractions, including problems that involve halves, fourths, and eighths; thirds and sixths; and fifths and tenths",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 214
+          }
+        }
+      },
+      "B2": {
+        "name": "Operations",
+        "description": "use knowledge of numbers and operations to solve mathematical problems encountered in everyday life",
+        "specifics": {
+          "B2.1": {
+            "description": "Use the properties of operations, and the relationships between multiplication and division, to solve problems and check calculations",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 216
+          },
+          "B2.2": {
+            "description": "Recall and demonstrate multiplication facts of 2, 5, and 10, and related division facts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 219
+          },
+          "B2.3": {
+            "description": "Use mental math strategies, including estimation, to add and subtract whole numbers that add up to no more than 1000, and explain the strategies used",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 223
+          },
+          "B2.4": {
+            "description": "Demonstrate an understanding of algorithms for adding and subtracting whole numbers by making connections to and describing the way other tools and strategies are used to add and subtract",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 226
+          },
+          "B2.5": {
+            "description": "Represent and solve problems involving the addition and subtraction of whole numbers that add up to no more than 1000, using various tools and algorithms",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 229
+          },
+          "B2.6": {
+            "description": "Represent multiplication of numbers up to 10 × 10 and division up to 100 ÷ 10, using a variety of tools and drawings, including arrays",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 233
+          },
+          "B2.7": {
+            "description": "Represent and solve problems involving multiplication and division, including problems that involve groups of one half, one fourth, and one third, using tools and drawings",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 236
+          },
+          "B2.8": {
+            "description": "Represent the connection between the numerator of a fraction and the repeated addition of the unit fraction with the same denominator using various tools and drawings, and standard fractional notation",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 240
+          },
+          "B2.9": {
+            "description": "Use the ratios of 1 to 2, 1 to 5, and 1 to 10 to scale up numbers and to solve problems",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 241
+          }
+        }
+      }
+    },
+    "C": {
+      "C1": {
+        "name": "Patterns and Relationships",
+        "description": "identify, describe, extend, create, and make predictions about a variety of patterns, including those found in real-life contexts",
+        "specifics": {
+          "C1.1": {
+            "description": "Identify and describe repeating elements and operations in a variety of patterns, including patterns found in real-life contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 244
+          },
+          "C1.2": {
+            "description": "Create and translate patterns that have repeating elements, movements, or operations using various representations, including shapes, numbers, and tables of values",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 247
+          },
+          "C1.3": {
+            "description": "Determine pattern rules and use them to extend patterns, make and justify predictions, and identify missing elements in patterns that have repeating elements, movements, or operations",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 249
+          },
+          "C1.4": {
+            "description": "Create and describe patterns to illustrate relationships among whole numbers up to 1000",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 252
+          }
+        }
+      },
+      "C2": {
+        "name": "Equations and Inequalities",
+        "description": "demonstrate an understanding of variables, expressions, equalities, and inequalities, and apply this understanding in various contexts",
+        "specifics": {
+          "C2.1": {
+            "description": "Describe how variables are used, and use them in various contexts as appropriate",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 254
+          },
+          "C2.2": {
+            "description": "Determine whether given sets of addition, subtraction, multiplication, and division expressions are equivalent or not",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 256
+          },
+          "C2.3": {
+            "description": "Identify and use equivalent relationships for whole numbers up to 1000, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 257
+          }
+        }
+      },
+      "C3": {
+        "name": "Coding",
+        "description": "solve problems and create computational representations of mathematical situations using coding concepts and skills",
+        "specifics": {
+          "C3.1": {
+            "description": "Solve problems and create computational representations of mathematical situations by writing and executing code, including code that involves sequential, concurrent, and repeating events",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 259
+          },
+          "C3.2": {
+            "description": "Read and alter existing code, including code that involves sequential, concurrent, and repeating events, and describe how changes to the code affect the outcomes",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 261
+          }
+        }
+      }
+    },
+    "D": {
+      "D1": {
+        "name": "Data Literacy",
+        "description": "manage, analyse, and use data to make convincing arguments and informed decisions, in various contexts drawn from real life",
+        "specifics": {
+          "D1.1": {
+            "description": "Sort sets of data about people or things according to two and three attributes, using tables and logic diagrams, including Venn, Carroll, and tree diagrams, as appropriate",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 265
+          },
+          "D1.2": {
+            "description": "Collect data through observations, experiments, and interviews to answer questions of interest that focus on qualitative and quantitative data, and organize the data using frequency tables",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 268
+          },
+          "D1.3": {
+            "description": "Display sets of data, using many-to-one correspondence, in pictographs and bar graphs with proper sources, titles, and labels, and appropriate scales",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 270
+          },
+          "D1.4": {
+            "description": "Determine the mean and identify the mode(s), if any, for various data sets involving whole numbers, and explain what each of these measures indicates about the data",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 272
+          },
+          "D1.5": {
+            "description": "Analyse different sets of data presented in various ways, including in frequency tables and in graphs with different scales, by asking and answering questions about the data and drawing conclusions, then make convincing arguments and informed decisions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 274
+          }
+        }
+      },
+      "D2": {
+        "name": "Probability",
+        "description": "describe the likelihood that events will happen, and use that information to make predictions",
+        "specifics": {
+          "D2.1": {
+            "description": "Use mathematical language, including the terms “impossible”, “unlikely”, “equally likely”, “likely”, and “certain”, to describe the likelihood of events happening, and use that likelihood to make predictions and informed decisions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 276
+          },
+          "D2.2": {
+            "description": "Make and test predictions about the likelihood that the mean and the mode(s) of a data set will be the same for data collected from different populations",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 279
+          }
+        }
+      }
+    },
+    "E": {
+      "E1": {
+        "name": "Geometric and Spatial Reasoning",
+        "description": "describe and represent shape, location, and movement by applying geometric properties and spatial relationships in order to navigate the world around them",
+        "specifics": {
+          "E1.1": {
+            "description": "Sort, construct, and identify cubes, prisms, pyramids, cylinders, and cones by comparing their faces, edges, vertices, and angles",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 280
+          },
+          "E1.2": {
+            "description": "Compose and decompose various structures, and identify the two-dimensional shapes and three- dimensional objects that these structures contain",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 285
+          },
+          "E1.3": {
+            "description": "Identify congruent lengths, angles, and faces of three-dimensional objects by mentally and physically matching them, and determine if the objects are congruent",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 285
+          },
+          "E1.4": {
+            "description": "Give and follow multistep instructions involving movement from one location to another, including distances and half- and quarter-turns",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 287
+          }
+        }
+      },
+      "E2": {
+        "name": "Measurement",
+        "description": "compare, estimate, and determine measurements in various contexts",
+        "specifics": {
+          "E2.1": {
+            "description": "Use appropriate units of length to estimate, measure, and compare the perimeters of polygons and curved shapes, and construct polygons with a given perimeter",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 289
+          },
+          "E2.2": {
+            "description": "Explain the relationships between millimetres, centimetres, metres, and kilometres as metric units of length, and use benchmarks for these units to estimate lengths",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 291
+          },
+          "E2.3": {
+            "description": "Use non-standard units appropriately to estimate, measure, and compare capacity, and explain the effect that overfilling or underfilling, and gaps between units, have on accuracy",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 292
+          },
+          "E2.4": {
+            "description": "Compare, estimate, and measure the mass of various objects, using a pan balance and non- standard units",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 293
+          },
+          "E2.5": {
+            "description": "Use various units of different sizes to measure the same attribute of a given item, and demonstrate that even though using different-sized units produces a different count, the size of the attribute remains the same",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 295
+          },
+          "E2.6": {
+            "description": "Use analog and digital clocks and timers to tell time in hours, minutes, and seconds",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 296
+          },
+          "E2.7": {
+            "description": "Compare the areas of two-dimensional shapes by matching, covering, or decomposing and recomposing the shapes, and demonstrate that different shapes can have the same area",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 299
+          },
+          "E2.8": {
+            "description": "Use appropriate non-standard units to measure area, and explain the effect that gaps and overlaps have on accuracy",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 301
+          },
+          "E2.9": {
+            "description": "Use square centimetres (cm2) and square metres (m2) to estimate, measure, and compare the areas of various two-dimensional shapes, including those with curved sides",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 303
+          }
+        }
+      }
+    },
+    "F": {
+      "F1": {
+        "name": "Money and Finances",
+        "description": "demonstrate an understanding of the value and use of Canadian currency",
+        "specifics": {
+          "F1.1": {
+            "description": "Estimate and calculate the change required for various simple cash transactions involving whole- dollar amounts and amounts of less than one dollar",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 306
+          }
+        }
+      }
+    }
+  },
+  "4": {
+    "A": {
+      "A1": {
+        "name": "Social-Emotional Learning (SEL) Skills and the Mathematical Processes",
+        "description": "apply, to the best of their ability, a variety of social-emotional learning skills to support their use of the mathematical processes and their learning in connection with the expectations in the other five strands of the mathematics curriculum",
+        "specifics": {
+          "A1.1": {
+            "description": "Identify and manage emotions, so they can express and manage their feelings, and show understanding of the feelings of others, as they engage positively in mathematics activities",
+            "topic": "Identification and Management of Emotions",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.2": {
+            "description": "Recognize sources of stress and cope with challenges, so they can work through challenging math problems, understanding that their resourcefulness in using various strategies to respond to stress is helping them build personal resilience",
+            "topic": "Stress Management and Coping",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.3": {
+            "description": "Maintain positive motivation and perseverance, so they can recognize that testing out different approaches to problems and learning from mistakes is an important part of the learning process, and is aided by a sense of optimism and hope",
+            "topic": "Positive Motivation and Perseverance",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.4": {
+            "description": "Build relationships and communicate effectively, so they can work collaboratively on math problems – expressing their thinking, listening to the thinking of others, and practising inclusivity – and in that way foster healthy relationships",
+            "topic": "Healthy Relationship Skills",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.5": {
+            "description": "Develop self-awareness and sense of identity, so they can see themselves as capable math learners, and strengthen their sense of ownership of their learning, as part of their emerging sense of identity and belonging",
+            "topic": "Self-Awareness and Sense of Identity",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.6": {
+            "description": "Think critically and creatively, so they can make connections between math and everyday contexts to help them make informed judgements and decisions",
+            "topic": "Critical and Creative Thinking",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          }
+        }
+      }
+    },
+    "B": {
+      "B1": {
+        "name": "Number Sense",
+        "description": "demonstrate an understanding of numbers and make connections to the way numbers are used in everyday life",
+        "specifics": {
+          "B1.1": {
+            "description": "Read, represent, compose, and decompose whole numbers up to and including 10 000, using appropriate tools and strategies, and describe various ways they are used in everyday life",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 317
+          },
+          "B1.2": {
+            "description": "Compare and order whole numbers up to and including 10 000, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 320
+          },
+          "B1.3": {
+            "description": "Round whole numbers to the nearest ten, hundred, or thousand, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 321
+          },
+          "B1.4": {
+            "description": "Represent fractions from halves to tenths using drawings, tools, and standard fractional notation, and explain the meanings of the denominator and the numerator",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 323
+          },
+          "B1.5": {
+            "description": "Use drawings and models to represent, compare, and order fractions representing the individual portions that result from two different fair-share scenarios involving any combination of 2, 3, 4, 5, 6, 8, and 10 sharers",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 326
+          },
+          "B1.6": {
+            "description": "Count to 10 by halves, thirds, fourths, fifths, sixths, eighths, and tenths, with and without the use of tools",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 329
+          },
+          "B1.7": {
+            "description": "Read, represent, compare, and order decimal tenths, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 331
+          },
+          "B1.8": {
+            "description": "Round decimal numbers to the nearest whole number, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 334
+          },
+          "B1.9": {
+            "description": "Describe relationships and show equivalences among fractions and decimal tenths, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 335
+          }
+        }
+      },
+      "B2": {
+        "name": "Operations",
+        "description": "use knowledge of numbers and operations to solve mathematical problems encountered in everyday life",
+        "specifics": {
+          "B2.1": {
+            "description": "Use the properties of operations, and the relationships between addition, subtraction, multiplication, and division, to solve problems involving whole numbers, including those requiring more than one operation, and check calculations",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 336
+          },
+          "B2.2": {
+            "description": "Recall and demonstrate multiplication facts for 1 × 1 to 10 × 10, and related division facts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 342
+          },
+          "B2.3": {
+            "description": "Use mental math strategies to multiply whole numbers by 10, 100, and 1000, divide whole numbers by 10, and add and subtract decimal tenths, and explain the strategies used",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 348
+          },
+          "B2.4": {
+            "description": "Represent and solve problems involving the addition and subtraction of whole numbers that add up to no more than 10 000 and of decimal tenths, using appropriate tools and strategies, including algorithms",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 351
+          },
+          "B2.5": {
+            "description": "Represent and solve problems involving the multiplication of two- or three-digit whole numbers by one-digit whole numbers and by 10, 100, and 1000, using appropriate tools, including arrays",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 356
+          },
+          "B2.6": {
+            "description": "Represent and solve problems involving the division of two- or three-digit whole numbers by one- digit whole numbers, expressing any remainder as a fraction when appropriate, using appropriate tools, including arrays",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 359
+          },
+          "B2.7": {
+            "description": "Represent the relationship between the repeated addition of a unit fraction and the multiplication of that unit fraction by a whole number, using tools, drawings, and standard fractional notation",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 363
+          },
+          "B2.8": {
+            "description": "Show simple multiplicative relationships involving whole-number rates, using various tools and drawings",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 364
+          }
+        }
+      }
+    },
+    "C": {
+      "C1": {
+        "name": "Patterns and Relationships",
+        "description": "identify, describe, extend, create, and make predictions about a variety of patterns, including those found in real-life contexts",
+        "specifics": {
+          "C1.1": {
+            "description": "Identify and describe repeating and growing patterns, including patterns found in real-life contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 367
+          },
+          "C1.2": {
+            "description": "Create and translate repeating and growing patterns using various representations, including tables of values and graphs",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 369
+          },
+          "C1.3": {
+            "description": "Determine pattern rules and use them to extend patterns, make and justify predictions, and identify missing elements in repeating and growing patterns",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 372
+          },
+          "C1.4": {
+            "description": "Create and describe patterns to illustrate relationships among whole numbers and decimal tenths",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 376
+          }
+        }
+      },
+      "C2": {
+        "name": "Equations and Inequalities",
+        "description": "demonstrate an understanding of variables, expressions, equalities, and inequalities, and apply this understanding in various contexts",
+        "specifics": {
+          "C2.1": {
+            "description": "Identify and use symbols as variables in expressions and equations",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 378
+          },
+          "C2.2": {
+            "description": "Solve equations that involve whole numbers up to 50 in various contexts, and verify solutions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 379
+          },
+          "C2.3": {
+            "description": "Solve inequalities that involve addition and subtraction of whole numbers up to 20, and verify and graph the solutions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 382
+          }
+        }
+      },
+      "C3": {
+        "name": "Coding",
+        "description": "solve problems and create computational representations of mathematical situations using coding concepts and skills",
+        "specifics": {
+          "C3.1": {
+            "description": "Solve problems and create computational representations of mathematical situations by writing and executing code, including code that involves sequential, concurrent, repeating, and nested events",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 384
+          },
+          "C3.2": {
+            "description": "Read and alter existing code, including code that involves sequential, concurrent, repeating, and nested events, and describe how changes to the code affect the outcomes",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 387
+          }
+        }
+      }
+    },
+    "D": {
+      "D1": {
+        "name": "Data Literacy",
+        "description": "manage, analyse, and use data to make convincing arguments and informed decisions, in various contexts drawn from real life",
+        "specifics": {
+          "D1.1": {
+            "description": "Describe the difference between qualitative and quantitative data, and describe situations where each would be used",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 391
+          },
+          "D1.2": {
+            "description": "Collect data from different primary and secondary sources to answer questions of interest that involve comparing two or more sets of data, and organize the data in frequency tables and stem-and- leaf plots",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 392
+          },
+          "D1.3": {
+            "description": "Select from among a variety of graphs, including multiple-bar graphs, the type of graph best suited to represent various sets of data; display the data in the graphs with proper sources, titles, and labels, and appropriate scales; and justify their choice of graphs",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 395
+          },
+          "D1.4": {
+            "description": "Create an infographic about a data set, representing the data in appropriate ways, including in frequency tables, stem-and-leaf plots, and multiple-bar graphs, and incorporating any other relevant information that helps to tell a story about the data",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 396
+          },
+          "D1.5": {
+            "description": "Determine the mean and the median and identify the mode(s), if any, for various data sets involving whole numbers, and explain what each of these measures indicates about the data",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 398
+          },
+          "D1.6": {
+            "description": "Analyse different sets of data presented in various ways, including in stem-and-leaf plots and multiple-bar graphs, by asking and answering questions about the data and drawing conclusions, then make convincing arguments and informed decisions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 400
+          }
+        }
+      },
+      "D2": {
+        "name": "Probability",
+        "description": "describe the likelihood that events will happen, and use that information to make predictions",
+        "specifics": {
+          "D2.1": {
+            "description": "Use mathematical language, including the terms “impossible”, “unlikely”, “equally likely”, “likely”, and “certain”, to describe the likelihood of events happening, represent this likelihood on a probability line, and use it to make predictions and informed decisions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 402
+          },
+          "D2.2": {
+            "description": "Make and test predictions about the likelihood that the mean, median, and mode(s) of a data set will be the same for data collected from different populations",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 403
+          }
+        }
+      }
+    },
+    "E": {
+      "E1": {
+        "name": "Geometric and Spatial Reasoning",
+        "description": "describe and represent shape, location, and movement by applying geometric properties and spatial relationships in order to navigate the world around them",
+        "specifics": {
+          "E1.1": {
+            "description": "Identify geometric properties of rectangles, including the number of right angles, parallel and perpendicular sides, and lines of symmetry",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 404
+          },
+          "E1.2": {
+            "description": "Plot and read coordinates in the first quadrant of a Cartesian plane, and describe the translations that move a point from one coordinate to another",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 405
+          },
+          "E1.3": {
+            "description": "Describe and perform translations and reflections on a grid, and predict the results of these transformations",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 407
+          }
+        }
+      },
+      "E2": {
+        "name": "Measurement",
+        "description": "compare, estimate, and determine measurements in various contexts",
+        "specifics": {
+          "E2.1": {
+            "description": "Explain the relationships between grams and kilograms as metric units of mass, and between litres and millilitres as metric units of capacity, and use benchmarks for these units to estimate mass and capacity",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 410
+          },
+          "E2.2": {
+            "description": "Use metric prefixes to describe the relative size of different metric units, and choose appropriate units and tools to measure length, mass, and capacity",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 412
+          },
+          "E2.3": {
+            "description": "Solve problems involving elapsed time by applying the relationships between different units of time",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 413
+          },
+          "E2.4": {
+            "description": "Identify angles and classify them as right, straight, acute, or obtuse",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 415
+          },
+          "E2.5": {
+            "description": "Use the row and column structure of an array to measure the areas of rectangles and to show that the area of any rectangle can be found by multiplying its side lengths",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 416
+          },
+          "E2.6": {
+            "description": "Apply the formula for the area of a rectangle to find the unknown measurement when given two of the three",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 418
+          }
+        }
+      }
+    },
+    "F": {
+      "F1": {
+        "name": "Money and Finances",
+        "description": "demonstrate the knowledge and skills needed to make informed financial decisions",
+        "specifics": {
+          "F1.1": {
+            "description": "Identify various methods of payment that can be used to purchase goods and services",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 420
+          },
+          "F1.2": {
+            "description": "Estimate and calculate the cost of transactions involving multiple items priced in whole-dollar amounts, not including sales tax, and the amount of change needed when payment is made in cash, using mental math",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 421
+          },
+          "F1.3": {
+            "description": "Explain the concepts of spending, saving, earning, investing, and donating, and identify key factors to consider when making basic decisions related to each",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 422
+          },
+          "F1.4": {
+            "description": "Explain the relationship between spending and saving, and describe how spending and saving behaviours may differ from one person to another",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 423
+          },
+          "F1.5": {
+            "description": "Describe some ways of determining whether something is reasonably priced and therefore a good purchase",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 424
+          }
+        }
+      }
+    }
+  },
+  "5": {
+    "A": {
+      "A1": {
+        "name": "Social-Emotional Learning (SEL) Skills and the Mathematical Processes",
+        "description": "apply, to the best of their ability, a variety of social-emotional learning skills to support their use of the mathematical processes and their learning in connection with the expectations in the other five strands of the mathematics curriculum",
+        "specifics": {
+          "A1.1": {
+            "description": "Identify and manage emotions, so they can express and manage their feelings, and show understanding of the feelings of others, as they engage positively in mathematics activities",
+            "topic": "Identification and Management of Emotions",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.2": {
+            "description": "Recognize sources of stress and cope with challenges, so they can work through challenging math problems, understanding that their resourcefulness in using various strategies to respond to stress is helping them build personal resilience",
+            "topic": "Stress Management and Coping",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.3": {
+            "description": "Maintain positive motivation and perseverance, so they can recognize that testing out different approaches to problems and learning from mistakes is an important part of the learning process, and is aided by a sense of optimism and hope",
+            "topic": "Positive Motivation and Perseverance",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.4": {
+            "description": "Build relationships and communicate effectively, so they can work collaboratively on math problems – expressing their thinking, listening to the thinking of others, and practising inclusivity – and in that way foster healthy relationships",
+            "topic": "Healthy Relationship Skills",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.5": {
+            "description": "Develop self-awareness and sense of identity, so they can see themselves as capable math learners, and strengthen their sense of ownership of their learning, as part of their emerging sense of identity and belonging",
+            "topic": "Self-Awareness and Sense of Identity",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.6": {
+            "description": "Think critically and creatively, so they can make connections between math and everyday contexts to help them make informed judgements and decisions",
+            "topic": "Critical and Creative Thinking",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          }
+        }
+      }
+    },
+    "B": {
+      "B1": {
+        "name": "Number Sense",
+        "description": "demonstrate an understanding of numbers and make connections to the way numbers are used in everyday life",
+        "specifics": {
+          "B1.1": {
+            "description": "Read, represent, compose, and decompose whole numbers up to and including 100 000, using appropriate tools and strategies, and describe various ways they are used in everyday life",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 435
+          },
+          "B1.2": {
+            "description": "Compare and order whole numbers up to and including 100 000, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 438
+          },
+          "B1.3": {
+            "description": "Represent equivalent fractions from halves to twelfths, including improper fractions and mixed numbers, using appropriate tools, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 440
+          },
+          "B1.4": {
+            "description": "Compare and order fractions from halves to twelfths, including improper fractions and mixed numbers, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 443
+          },
+          "B1.5": {
+            "description": "Read, represent, compare, and order decimal numbers up to hundredths, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 445
+          },
+          "B1.6": {
+            "description": "Round decimal numbers to the nearest tenth, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 448
+          },
+          "B1.7": {
+            "description": "Describe relationships and show equivalences among fractions, decimal numbers up to hundredths, and whole number percents, using appropriate tools and drawings, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 449
+          }
+        }
+      },
+      "B2": {
+        "name": "Operations",
+        "description": "use knowledge of numbers and operations to solve mathematical problems encountered in everyday life",
+        "specifics": {
+          "B2.1": {
+            "description": "Use the properties of operations, and the relationships between operations, to solve problems involving whole numbers and decimal numbers, including those requiring more than one operation, and check calculations",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 451
+          },
+          "B2.2": {
+            "description": "Recall and demonstrate multiplication facts from 0 × 0 to 12 × 12, and related division facts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 454
+          },
+          "B2.3": {
+            "description": "Use mental math strategies to multiply whole numbers by 0.1 and 0.01 and estimate sums and differences of decimal numbers up to hundredths, and explain the strategies used",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 457
+          },
+          "B2.4": {
+            "description": "Represent and solve problems involving the addition and subtraction of whole numbers that add up to no more than 100 000, and of decimal numbers up to hundredths, using appropriate tools, strategies, and algorithms",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 459
+          },
+          "B2.5": {
+            "description": "Add and subtract fractions with like denominators, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 463
+          },
+          "B2.6": {
+            "description": "Represent and solve problems involving the multiplication of two-digit whole numbers by two-digit whole numbers using the area model and using algorithms, and make connections between the two methods",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 465
+          },
+          "B2.7": {
+            "description": "Represent and solve problems involving the division of three-digit whole numbers by two-digit whole numbers using the area model and using algorithms, and make connections between the two methods, while expressing any remainder appropriately",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 468
+          },
+          "B2.8": {
+            "description": "Multiply and divide one-digit whole numbers by unit fractions, using appropriate tools and drawings",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 473
+          },
+          "B2.9": {
+            "description": "Represent and create equivalent ratios and rates, using a variety of tools and models, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 474
+          }
+        }
+      }
+    },
+    "C": {
+      "C1": {
+        "name": "Patterns and Relationships",
+        "description": "identify, describe, extend, create, and make predictions about a variety of patterns, including those found in real-life contexts",
+        "specifics": {
+          "C1.1": {
+            "description": "Identify and describe repeating, growing, and shrinking patterns, including patterns found in real- life contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 477
+          },
+          "C1.2": {
+            "description": "Create and translate growing and shrinking patterns using various representations, including tables of values and graphs",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 478
+          },
+          "C1.3": {
+            "description": "Determine pattern rules and use them to extend patterns, make and justify predictions, and identify missing elements in repeating, growing, and shrinking patterns",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 482
+          },
+          "C1.4": {
+            "description": "Create and describe patterns to illustrate relationships among whole numbers and decimal tenths and hundredths",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 485
+          }
+        }
+      },
+      "C2": {
+        "name": "Equations and Inequalities",
+        "description": "demonstrate an understanding of variables, expressions, equalities, and inequalities, and apply this understanding in various contexts",
+        "specifics": {
+          "C2.1": {
+            "description": "Translate among words, algebraic expressions, and visual representations that describe equivalent relationships",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 489
+          },
+          "C2.2": {
+            "description": "Evaluate algebraic expressions that involve whole numbers",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 492
+          },
+          "C2.3": {
+            "description": "Solve equations that involve whole numbers up to 100 in various contexts, and verify solutions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 494
+          },
+          "C2.4": {
+            "description": "Solve inequalities that involve one operation and whole numbers up to 50, and verify and graph the solutions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 497
+          }
+        }
+      },
+      "C3": {
+        "name": "Coding",
+        "description": "solve problems and create computational representations of mathematical situations using coding concepts and skills",
+        "specifics": {
+          "C3.1": {
+            "description": "Solve problems and create computational representations of mathematical situations by writing and executing code, including code that involves conditional statements and other control structures",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 499
+          },
+          "C3.2": {
+            "description": "Read and alter existing code, including code that involves conditional statements and other control structures, and describe how changes to the code affect the outcomes",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 502
+          }
+        }
+      }
+    },
+    "D": {
+      "D1": {
+        "name": "Data Literacy",
+        "description": "manage, analyse, and use data to make convincing arguments and informed decisions, in various contexts drawn from real life",
+        "specifics": {
+          "D1.1": {
+            "description": "Explain the importance of various sampling techniques for collecting a sample of data that is representative of a population",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 506
+          },
+          "D1.2": {
+            "description": "Collect data, using appropriate sampling techniques as needed, to answer questions of interest about a population, and organize the data in relative-frequency tables",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 507
+          },
+          "D1.3": {
+            "description": "Select from among a variety of graphs, including stacked-bar graphs, the type of graph best suited to represent various sets of data; display the data in the graphs with proper sources, titles, and labels, and appropriate scales; and justify their choice of graphs",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 509
+          },
+          "D1.4": {
+            "description": "Create an infographic about a data set, representing the data in appropriate ways, including in relative-frequency tables and stacked-bar graphs, and incorporating any other relevant information that helps to tell a story about the data",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 513
+          },
+          "D1.5": {
+            "description": "Determine the mean and the median and identify the mode(s), if any, for various data sets involving whole numbers and decimal numbers, and explain what each of these measures indicates about the data",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 515
+          },
+          "D1.6": {
+            "description": "Analyse different sets of data presented in various ways, including in stacked-bar graphs and in misleading graphs, by asking and answering questions about the data, challenging preconceived notions, and drawing conclusions, then make convincing arguments and informed decisions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 517
+          }
+        }
+      },
+      "D2": {
+        "name": "Probability",
+        "description": "describe the likelihood that events will happen, and use that information to make predictions",
+        "specifics": {
+          "D2.1": {
+            "description": "Use fractions to express the probability of events happening, represent this probability on a probability line, and use it to make predictions and informed decisions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 519
+          },
+          "D2.2": {
+            "description": "Determine and compare the theoretical and experimental probabilities of an event happening",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 520
+          }
+        }
+      }
+    },
+    "E": {
+      "E1": {
+        "name": "Geometric and Spatial Reasoning",
+        "description": "describe and represent shape, location, and movement by applying geometric properties and spatial relationships in order to navigate the world around them",
+        "specifics": {
+          "E1.1": {
+            "description": "Identify geometric properties of triangles, and construct different types of triangles when given side or angle measurements",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 522
+          },
+          "E1.2": {
+            "description": "Identify and construct congruent triangles, rectangles, and parallelograms",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 526
+          },
+          "E1.3": {
+            "description": "Draw top, front, and side views of objects, and match drawings with objects",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 528
+          },
+          "E1.4": {
+            "description": "Plot and read coordinates in the first quadrant of a Cartesian plane using various scales, and describe the translations that move a point from one coordinate to another",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 530
+          },
+          "E1.5": {
+            "description": "Describe and perform translations, reflections, and rotations up to 180° on a grid, and predict the results of these transformations",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 533
+          }
+        }
+      },
+      "E2": {
+        "name": "Measurement",
+        "description": "compare, estimate, and determine measurements in various contexts",
+        "specifics": {
+          "E2.1": {
+            "description": "Use appropriate metric units to estimate and measure length, area, mass, and capacity",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 539
+          },
+          "E2.2": {
+            "description": "Solve problems that involve converting larger metric units into smaller ones, and describe the base ten relationships among metric units",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 541
+          },
+          "E2.3": {
+            "description": "Compare angles and determine their relative size by matching them and by measuring them using appropriate non-standard units",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 543
+          },
+          "E2.4": {
+            "description": "Explain how protractors work, use them to measure and construct angles up to 180°, and use benchmark angles to estimate the size of other angles",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 545
+          },
+          "E2.5": {
+            "description": "Use the area relationships among rectangles, parallelograms, and triangles to develop the formulas for the area of a parallelogram and the area of a triangle, and solve related problems",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 547
+          },
+          "E2.6": {
+            "description": "Show that two-dimensional shapes with the same area can have different perimeters, and solve related problems",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 551
+          }
+        }
+      }
+    },
+    "F": {
+      "F1": {
+        "name": "Money and Finances",
+        "description": "demonstrate the knowledge and skills needed to make informed financial decisions",
+        "specifics": {
+          "F1.1": {
+            "description": "Describe several ways money can be transferred among individuals, organizations, and businesses",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 553
+          },
+          "F1.2": {
+            "description": "Estimate and calculate the cost of transactions involving multiple items priced in dollars and cents, including sales tax, using various strategies",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 554
+          },
+          "F1.3": {
+            "description": "Design sample basic budgets to manage finances for various earning and spending scenarios",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 555
+          },
+          "F1.4": {
+            "description": "Explain the concepts of credit and debt, and describe how financial decisions may be impacted by each",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 556
+          },
+          "F1.5": {
+            "description": "Calculate unit rates for various goods and services, and identify which rates offer the best value",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 557
+          },
+          "F1.6": {
+            "description": "Describe the types of taxes that are collected by the different levels of government in Canada, and explain how tax revenue is used to provide services in the community",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 558
+          }
+        }
+      }
+    }
+  },
+  "6": {
+    "A": {
+      "A1": {
+        "name": "Social-Emotional Learning (SEL) Skills and the Mathematical Processes",
+        "description": "apply, to the best of their ability, a variety of social-emotional learning skills to support their use of the mathematical processes and their learning in connection with the expectations in the other five strands of the mathematics curriculum",
+        "specifics": {
+          "A1.1": {
+            "description": "Identify and manage emotions, so they can express and manage their feelings, and show understanding of the feelings of others, as they engage positively in mathematics activities",
+            "topic": "Identification and Management of Emotions",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.2": {
+            "description": "Recognize sources of stress and cope with challenges, so they can work through challenging math problems, understanding that their resourcefulness in using various strategies to respond to stress is helping them build personal resilience",
+            "topic": "Stress Management and Coping",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.3": {
+            "description": "Maintain positive motivation and perseverance, so they can recognize that testing out different approaches to problems and learning from mistakes is an important part of the learning process, and is aided by a sense of optimism and hope",
+            "topic": "Positive Motivation and Perseverance",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.4": {
+            "description": "Build relationships and communicate effectively, so they can work collaboratively on math problems – expressing their thinking, listening to the thinking of others, and practising inclusivity – and in that way foster healthy relationships",
+            "topic": "Healthy Relationship Skills",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.5": {
+            "description": "Develop self-awareness and sense of identity, so they can see themselves as capable math learners, and strengthen their sense of ownership of their learning, as part of their emerging sense of identity and belonging",
+            "topic": "Self-Awareness and Sense of Identity",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.6": {
+            "description": "Think critically and creatively, so they can make connections between math and everyday contexts to help them make informed judgements and decisions",
+            "topic": "Critical and Creative Thinking",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          }
+        }
+      }
+    },
+    "B": {
+      "B1": {
+        "name": "Number Sense",
+        "description": "demonstrate an understanding of numbers and make connections to the way numbers are used in everyday life",
+        "specifics": {
+          "B1.1": {
+            "description": "Read and represent whole numbers up to and including one million, using appropriate tools and strategies, and describe various ways they are used in everyday life",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 569
+          },
+          "B1.2": {
+            "description": "Read and represent integers, using a variety of tools and strategies, including horizontal and vertical number lines",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 572
+          },
+          "B1.3": {
+            "description": "Compare and order integers, decimal numbers, and fractions, separately and in combination, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 575
+          },
+          "B1.4": {
+            "description": "Read, represent, compare, and order decimal numbers up to thousandths, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 578
+          },
+          "B1.5": {
+            "description": "Round decimal numbers, both terminating and repeating, to the nearest tenth, hundredth, or whole number, as applicable, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 581
+          },
+          "B1.6": {
+            "description": "Describe relationships and show equivalences among fractions and decimal numbers up to thousandths, using appropriate tools and drawings, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 582
+          }
+        }
+      },
+      "B2": {
+        "name": "Operations",
+        "description": "use knowledge of numbers and operations to solve mathematical problems encountered in everyday life",
+        "specifics": {
+          "B2.1": {
+            "description": "Use the properties of operations, and the relationships between operations, to solve problems involving whole numbers, decimal numbers, fractions, ratios, rates, and whole number percents, including those requiring multiple steps or multiple operations",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 584
+          },
+          "B2.2": {
+            "description": "Understand the divisibility rules and use them to determine whether numbers are divisible by 2, 3, 4, 5, 6, 8, 9, and 10",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 587
+          },
+          "B2.3": {
+            "description": "Use mental math strategies to calculate percents of whole numbers, including 1%, 5%, 10%, 15%, 25%, and 50%, and explain the strategies used",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 588
+          },
+          "B2.4": {
+            "description": "Represent and solve problems involving the addition and subtraction of whole numbers and decimal numbers, using estimation and algorithms",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 591
+          },
+          "B2.5": {
+            "description": "Add and subtract fractions with like and unlike denominators, using appropriate tools, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 593
+          },
+          "B2.6": {
+            "description": "Represent composite numbers as a product of their prime factors, including through the use of factor trees",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 596
+          },
+          "B2.7": {
+            "description": "Represent and solve problems involving the multiplication of three-digit whole numbers by decimal tenths, using algorithms",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 598
+          },
+          "B2.8": {
+            "description": "Represent and solve problems involving the division of three-digit whole numbers by decimal tenths, using appropriate tools, strategies, and algorithms, and expressing remainders as appropriate",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 602
+          },
+          "B2.9": {
+            "description": "Multiply whole numbers by proper fractions, using appropriate tools and strategies",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 605
+          },
+          "B2.10": {
+            "description": "Divide whole numbers by proper fractions, using appropriate tools and strategies",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 607
+          },
+          "B2.11": {
+            "description": "Represent and solve problems involving the division of decimal numbers up to thousandths by whole numbers up to 10, using appropriate tools and strategies",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 609
+          },
+          "B2.12": {
+            "description": "Solve problems involving ratios, including percents and rates, using appropriate tools and strategies",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 611
+          }
+        }
+      }
+    },
+    "C": {
+      "C1": {
+        "name": "Patterns and Relationships",
+        "description": "identify, describe, extend, create, and make predictions about a variety of patterns, including those found in real-life contexts",
+        "specifics": {
+          "C1.1": {
+            "description": "Identify and describe repeating, growing, and shrinking patterns, including patterns found in real- life contexts, and specify which growing patterns are linear",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 614
+          },
+          "C1.2": {
+            "description": "Create and translate repeating, growing, and shrinking patterns using various representations, including tables of values, graphs, and, for linear growing patterns, algebraic expressions and equations",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 618
+          },
+          "C1.3": {
+            "description": "Determine pattern rules and use them to extend patterns, make and justify predictions, and identify missing elements in repeating, growing, and shrinking patterns, and use algebraic representations of the pattern rules to solve for unknown values in linear growing patterns",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 623
+          },
+          "C1.4": {
+            "description": "Create and describe patterns to illustrate relationships among whole numbers and decimal numbers",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 626
+          }
+        }
+      },
+      "C2": {
+        "name": "Equations and Inequalities",
+        "description": "demonstrate an understanding of variables, expressions, equalities, and inequalities, and apply this understanding in various contexts",
+        "specifics": {
+          "C2.1": {
+            "description": "Add monomials with a degree of 1 that involve whole numbers, using tools",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 629
+          },
+          "C2.2": {
+            "description": "Evaluate algebraic expressions that involve whole numbers and decimal tenths",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 631
+          },
+          "C2.3": {
+            "description": "Solve equations that involve multiple terms and whole numbers in various contexts, and verify solutions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 633
+          },
+          "C2.4": {
+            "description": "Solve inequalities that involve two operations and whole numbers up to 100 and verify and graph the solutions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 635
+          }
+        }
+      },
+      "C3": {
+        "name": "Coding",
+        "description": "solve problems and create computational representations of mathematical situations using coding concepts and skills",
+        "specifics": {
+          "C3.1": {
+            "description": "Solve problems and create computational representations of mathematical situations by writing and executing efficient code, including code that involves conditional statements and other control structures",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 637
+          },
+          "C3.2": {
+            "description": "Read and alter existing code, including code that involves conditional statements and other control structures, and describe how changes to the code affect the outcomes and the efficiency of the code",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 641
+          }
+        }
+      }
+    },
+    "D": {
+      "D1": {
+        "name": "Data Literacy",
+        "description": "manage, analyse, and use data to make convincing arguments and informed decisions, in various contexts drawn from real life",
+        "specifics": {
+          "D1.1": {
+            "description": "Describe the difference between discrete and continuous data, and provide examples of each",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 647
+          },
+          "D1.2": {
+            "description": "Collect qualitative data and discrete and continuous quantitative data to answer questions of interest about a population, and organize the sets of data as appropriate, including using intervals",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 648
+          },
+          "D1.3": {
+            "description": "Select from among a variety of graphs, including histograms and broken-line graphs, the type of graph best suited to represent various sets of data; display the data in the graphs with proper sources, titles, and labels, and appropriate scales; and justify their choice of graphs",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 650
+          },
+          "D1.4": {
+            "description": "Create an infographic about a data set, representing the data in appropriate ways, including in tables, histograms, and broken-line graphs, and incorporating any other relevant information that helps to tell a story about the data",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 653
+          },
+          "D1.5": {
+            "description": "Determine the range as a measure of spread and the measures of central tendency for various data sets, and use this information to compare two or more data sets",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 655
+          },
+          "D1.6": {
+            "description": "Analyse different sets of data presented in various ways, including in histograms and broken-line graphs and in misleading graphs, by asking and answering questions about the data, challenging preconceived notions, and drawing conclusions, then make convincing arguments and informed decisions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 657
+          }
+        }
+      },
+      "D2": {
+        "name": "Probability",
+        "description": "describe the likelihood that events will happen, and use that information to make predictions",
+        "specifics": {
+          "D2.1": {
+            "description": "Use fractions, decimals, and percents to express the probability of events happening, represent this probability on a probability line, and use it to make predictions and informed decisions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 660
+          },
+          "D2.2": {
+            "description": "Determine and compare the theoretical and experimental probabilities of two independent events happening",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 661
+          }
+        }
+      }
+    },
+    "E": {
+      "E1": {
+        "name": "Geometric and Spatial Reasoning",
+        "description": "describe and represent shape, location, and movement by applying geometric properties and spatial relationships in order to navigate the world around them",
+        "specifics": {
+          "E1.1": {
+            "description": "Create lists of the geometric properties of various types of quadrilaterals, including the properties of the diagonals, rotational symmetry, and line symmetry",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 664
+          },
+          "E1.2": {
+            "description": "Construct three-dimensional objects when given their top, front, and side views",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 671
+          },
+          "E1.3": {
+            "description": "Plot and read coordinates in all four quadrants of a Cartesian plane, and describe the translations that move a point from one coordinate to another",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 673
+          },
+          "E1.4": {
+            "description": "Describe and perform combinations of translations, reflections, and rotations up to 360° on a grid, and predict the results of these transformations",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 675
+          }
+        }
+      },
+      "E2": {
+        "name": "Measurement",
+        "description": "compare, estimate, and determine measurements in various contexts",
+        "specifics": {
+          "E2.1": {
+            "description": "Measure length, area, mass, and capacity using the appropriate metric units, and solve problems that require converting smaller units to larger ones and vice versa",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 679
+          },
+          "E2.2": {
+            "description": "Use a protractor to measure and construct angles up to 360°, and state the relationship between angles that are measured clockwise and those that are measured counterclockwise",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 682
+          },
+          "E2.3": {
+            "description": "Use the properties of supplementary angles, complementary angles, opposite angles, and interior and exterior angles to solve for unknown angle measures",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 687
+          },
+          "E2.4": {
+            "description": "Determine the areas of trapezoids, rhombuses, kites, and composite polygons by decomposing them into shapes with known areas",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 690
+          },
+          "E2.5": {
+            "description": "Create and use nets to demonstrate the relationship between the faces of prisms and pyramids and their surface areas",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 696
+          },
+          "E2.6": {
+            "description": "Determine the surface areas of prisms and pyramids by calculating the areas of their two- dimensional faces and adding them together",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 698
+          }
+        }
+      }
+    },
+    "F": {
+      "F1": {
+        "name": "Money and Finances",
+        "description": "demonstrate the knowledge and skills needed to make informed financial decisions",
+        "specifics": {
+          "F1.1": {
+            "description": "Describe the advantages and disadvantages of various methods of payment that can be used to purchase goods and services",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 700
+          },
+          "F1.2": {
+            "description": "Identify different types of financial goals, including earning and saving goals, and outline some key steps in achieving them",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 701
+          },
+          "F1.3": {
+            "description": "Identify and describe various factors that may help or interfere with reaching financial goals",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 702
+          },
+          "F1.4": {
+            "description": "Explain the concept of interest rates, and identify types of interest rates and fees associated with different accounts and loans offered by various banks and other financial institutions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 703
+          },
+          "F1.5": {
+            "description": "Describe trading, lending, borrowing, and donating as different ways to distribute financial and other resources among individuals and organizations",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 704
+          }
+        }
+      }
+    }
+  },
+  "7": {
+    "A": {
+      "A1": {
+        "name": "Social-Emotional Learning (SEL) Skills and the Mathematical Processes",
+        "description": "apply, to the best of their ability, a variety of social-emotional learning skills to support their use of the mathematical processes and their learning in connection with the expectations in the other five strands of the mathematics curriculum",
+        "specifics": {
+          "A1.1": {
+            "description": "Identify and manage emotions, so they can express and manage their feelings, and show understanding of the feelings of others, as they engage positively in mathematics activities",
+            "topic": "Identification and Management of Emotions",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.2": {
+            "description": "Recognize sources of stress and cope with challenges, so they can work through challenging math problems, understanding that their resourcefulness in using various strategies to respond to stress is helping them build personal resilience",
+            "topic": "Stress Management and Coping",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.3": {
+            "description": "Maintain positive motivation and perseverance, so they can recognize that testing out different approaches to problems and learning from mistakes is an important part of the learning process, and is aided by a sense of optimism and hope",
+            "topic": "Positive Motivation and Perseverance",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.4": {
+            "description": "Build relationships and communicate effectively, so they can work collaboratively on math problems – expressing their thinking, listening to the thinking of others, and practising inclusivity – and in that way foster healthy relationships",
+            "topic": "Healthy Relationship Skills",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.5": {
+            "description": "Develop self-awareness and sense of identity, so they can see themselves as capable math learners, and strengthen their sense of ownership of their learning, as part of their emerging sense of identity and belonging",
+            "topic": "Self-Awareness and Sense of Identity",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.6": {
+            "description": "Think critically and creatively, so they can make connections between math and everyday contexts to help them make informed judgements and decisions",
+            "topic": "Critical and Creative Thinking",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          }
+        }
+      }
+    },
+    "B": {
+      "B1": {
+        "name": "Number Sense",
+        "description": "demonstrate an understanding of numbers and make connections to the way numbers are used in everyday life",
+        "specifics": {
+          "B1.1": {
+            "description": "Represent and compare whole numbers up to and including one billion, including in expanded form using powers of ten, and describe various ways they are used in everyday life",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 713
+          },
+          "B1.2": {
+            "description": "Identify and represent perfect squares, and determine their square roots, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 716
+          },
+          "B1.3": {
+            "description": "Read, represent, compare, and order rational numbers, including positive and negative fractions and decimal numbers to thousandths, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 717
+          },
+          "B1.4": {
+            "description": "Use equivalent fractions to simplify fractions, when appropriate, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 719
+          },
+          "B1.5": {
+            "description": "Generate fractions and decimal numbers between any two quantities",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 721
+          },
+          "B1.6": {
+            "description": "Round decimal numbers to the nearest tenth, hundredth, or whole number, as applicable, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 724
+          },
+          "B1.7": {
+            "description": "Convert between fractions, decimal numbers, and percents, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 725
+          }
+        }
+      },
+      "B2": {
+        "name": "Operations",
+        "description": "use knowledge of numbers and operations to solve mathematical problems encountered in everyday life",
+        "specifics": {
+          "B2.1": {
+            "description": "Use the properties and order of operations, and the relationships between operations, to solve problems involving whole numbers, decimal numbers, fractions, ratios, rates, and percents, including those requiring multiple steps or multiple operations",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 727
+          },
+          "B2.2": {
+            "description": "Understand and recall commonly used percents, fractions, and decimal equivalents",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 730
+          },
+          "B2.3": {
+            "description": "Use mental math strategies to increase and decrease a whole number by 1%, 5%, 10%, 25%, 50%, and 100%, and explain the strategies used",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 732
+          },
+          "B2.4": {
+            "description": "Use objects, diagrams, and equations to represent, describe, and solve situations involving addition and subtraction of integers",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 735
+          },
+          "B2.5": {
+            "description": "Add and subtract fractions, including by creating equivalent fractions, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 741
+          },
+          "B2.6": {
+            "description": "Determine the greatest common factor for a variety of whole numbers up to 144 and the lowest common multiple for two and three whole numbers",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 744
+          },
+          "B2.7": {
+            "description": "Evaluate and express repeated multiplication of whole numbers using exponential notation, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 746
+          },
+          "B2.8": {
+            "description": "Multiply and divide fractions by fractions, using tools in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 748
+          },
+          "B2.9": {
+            "description": "Multiply and divide decimal numbers by decimal numbers, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 754
+          },
+          "B2.10": {
+            "description": "Identify proportional and non-proportional situations and apply proportional reasoning to solve problems",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 758
+          }
+        }
+      }
+    },
+    "C": {
+      "C1": {
+        "name": "Patterns and Relationships",
+        "description": "identify, describe, extend, create, and make predictions about a variety of patterns, including those found in real-life contexts",
+        "specifics": {
+          "C1.1": {
+            "description": "Identify and compare a variety of repeating, growing, and shrinking patterns, including patterns found in real-life contexts, and compare linear growing patterns on the basis of their constant rates and initial values",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 761
+          },
+          "C1.2": {
+            "description": "Create and translate repeating, growing, and shrinking patterns involving whole numbers and decimal numbers using various representations, including algebraic expressions and equations for linear growing patterns",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 765
+          },
+          "C1.3": {
+            "description": "Determine pattern rules and use them to extend patterns, make and justify predictions, and identify missing elements in repeating, growing, and shrinking patterns involving whole numbers and decimal numbers, and use algebraic representations of the pattern rules to solve for unknown values in linear growing patterns",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 769
+          },
+          "C1.4": {
+            "description": "Create and describe patterns to illustrate relationships among integers",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 772
+          }
+        }
+      },
+      "C2": {
+        "name": "Equations and Inequalities",
+        "description": "demonstrate an understanding of variables, expressions, equalities, and inequalities, and apply this understanding in various contexts",
+        "specifics": {
+          "C2.1": {
+            "description": "Add and subtract monomials with a degree of 1 that involve whole numbers, using tools",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 775
+          },
+          "C2.2": {
+            "description": "Evaluate algebraic expressions that involve whole numbers and decimal numbers",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 778
+          },
+          "C2.3": {
+            "description": "Solve equations that involve multiple terms, whole numbers, and decimal numbers in various contexts, and verify solutions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 779
+          },
+          "C2.4": {
+            "description": "Solve inequalities that involve multiple terms and whole numbers, and verify and graph the solutions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 781
+          }
+        }
+      },
+      "C3": {
+        "name": "Coding",
+        "description": "solve problems and create computational representations of mathematical situations using coding concepts and skills",
+        "specifics": {
+          "C3.1": {
+            "description": "Solve problems and create computational representations of mathematical situations by writing and executing efficient code, including code that involves events influenced by a defined count and/or subprogram and other control structures",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 784
+          },
+          "C3.2": {
+            "description": "Read and alter existing code, including code that involves events influenced by a defined count and/or subprogram and other control structures, and describe how changes to the code affect the outcomes and the efficiency of the code",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 786
+          }
+        }
+      }
+    },
+    "D": {
+      "D1": {
+        "name": "Data Literacy",
+        "description": "manage, analyse, and use data to make convincing arguments and informed decisions, in various contexts drawn from real life",
+        "specifics": {
+          "D1.1": {
+            "description": "Explain why percentages are used to represent the distribution of a variable for a population or sample in large sets of data, and provide examples",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 791
+          },
+          "D1.2": {
+            "description": "Collect qualitative data and discrete and continuous quantitative data to answer questions of interest, and organize the sets of data as appropriate, including using percentages",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 794
+          },
+          "D1.3": {
+            "description": "Select from among a variety of graphs, including circle graphs, the type of graph best suited to represent various sets of data; display the data in the graphs with proper sources, titles, and labels, and appropriate scales; and justify their choice of graphs",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 797
+          },
+          "D1.4": {
+            "description": "Create an infographic about a data set, representing the data in appropriate ways, including in tables and circle graphs, and incorporating any other relevant information that helps to tell a story about the data",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 799
+          },
+          "D1.5": {
+            "description": "Determine the impact of adding or removing data from a data set on a measure of central tendency, and describe how these changes alter the shape and distribution of the data",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 800
+          },
+          "D1.6": {
+            "description": "Analyse different sets of data presented in various ways, including in circle graphs and in misleading graphs, by asking and answering questions about the data, challenging preconceived notions, and drawing conclusions, then make convincing arguments and informed decisions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 803
+          }
+        }
+      },
+      "D2": {
+        "name": "Probability",
+        "description": "describe the likelihood that events will happen, and use that information to make predictions",
+        "specifics": {
+          "D2.1": {
+            "description": "Describe the difference between independent and dependent events, and explain how their probabilities differ, providing examples",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 806
+          },
+          "D2.2": {
+            "description": "Determine and compare the theoretical and experimental probabilities of two independent events happening and of two dependent events happening",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 808
+          }
+        }
+      }
+    },
+    "E": {
+      "E1": {
+        "name": "Geometric and Spatial Reasoning",
+        "description": "describe and represent shape, location, and movement by applying geometric properties and spatial relationships in order to navigate the world around them",
+        "specifics": {
+          "E1.1": {
+            "description": "Describe and classify cylinders, pyramids, and prisms according to their geometric properties, including plane and rotational symmetry",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 809
+          },
+          "E1.2": {
+            "description": "Draw top, front, and side views, as well as perspective views, of objects and physical spaces, using appropriate scales",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 817
+          },
+          "E1.3": {
+            "description": "Perform dilations and describe the similarity between the image and the original shape",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 819
+          },
+          "E1.4": {
+            "description": "Describe and perform translations, reflections, and rotations on a Cartesian plane, and predict the results of these transformations",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 823
+          }
+        }
+      },
+      "E2": {
+        "name": "Measurement",
+        "description": "compare, estimate, and determine measurements in various contexts",
+        "specifics": {
+          "E2.1": {
+            "description": "Describe the differences and similarities between volume and capacity, and apply the relationship between millilitres (mL) and cubic centimetres (cm3) to solve problems",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 827
+          },
+          "E2.2": {
+            "description": "Solve problems involving perimeter, area, and volume that require converting from one metric unit of measurement to another",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 829
+          },
+          "E2.3": {
+            "description": "Use the relationships between the radius, diameter, and circumference of a circle to explain the formula for finding the circumference and to solve related problems",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 831
+          },
+          "E2.4": {
+            "description": "Construct circles when given the radius, diameter, or circumference",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 833
+          },
+          "E2.5": {
+            "description": "Show the relationships between the radius, diameter, and area of a circle, and use these relationships to explain the formula for measuring the area of a circle and to solve related problems",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 834
+          },
+          "E2.6": {
+            "description": "Represent cylinders as nets and determine their surface area by adding the areas of their parts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 836
+          },
+          "E2.7": {
+            "description": "Show that the volume of a prism or cylinder can be determined by multiplying the area of its base by its height, and apply this relationship to find the area of the base, volume, and height of prisms and cylinders when given two of the three measurements",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 838
+          }
+        }
+      }
+    },
+    "F": {
+      "F1": {
+        "name": "Money and Finances",
+        "description": "demonstrate the knowledge and skills needed to make informed financial decisions",
+        "specifics": {
+          "F1.1": {
+            "description": "Identify and compare exchange rates, and convert foreign currencies to Canadian dollars and vice versa",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 842
+          },
+          "F1.2": {
+            "description": "Identify and describe various reliable sources of information that can help with planning for and reaching a financial goal",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 843
+          },
+          "F1.3": {
+            "description": "Create, track, and adjust sample budgets designed to meet longer-term financial goals for various scenarios",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 844
+          },
+          "F1.4": {
+            "description": "Identify various societal and personal factors that may influence financial decision making, and describe the effects that each might have",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 845
+          },
+          "F1.5": {
+            "description": "Explain how interest rates can impact savings, investments, and the cost of borrowing to pay for goods and services over time",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 846
+          },
+          "F1.6": {
+            "description": "Compare interest rates and fees for different accounts and loans offered by various financial institutions, and determine the best option for different scenarios",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 847
+          }
+        }
+      }
+    }
+  },
+  "8": {
+    "A": {
+      "A1": {
+        "name": "Social-Emotional Learning (SEL) Skills and the Mathematical Processes",
+        "description": "apply, to the best of their ability, a variety of social-emotional learning skills to support their use of the mathematical processes and their learning in connection with the expectations in the other five strands of the mathematics curriculum",
+        "specifics": {
+          "A1.1": {
+            "description": "Identify and manage emotions, so they can express and manage their feelings, and show understanding of the feelings of others, as they engage positively in mathematics activities",
+            "topic": "Identification and Management of Emotions",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.2": {
+            "description": "Recognize sources of stress and cope with challenges, so they can work through challenging math problems, understanding that their resourcefulness in using various strategies to respond to stress is helping them build personal resilience",
+            "topic": "Stress Management and Coping",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.3": {
+            "description": "Maintain positive motivation and perseverance, so they can recognize that testing out different approaches to problems and learning from mistakes is an important part of the learning process, and is aided by a sense of optimism and hope",
+            "topic": "Positive Motivation and Perseverance",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.4": {
+            "description": "Build relationships and communicate effectively, so they can work collaboratively on math problems – expressing their thinking, listening to the thinking of others, and practising inclusivity – and in that way foster healthy relationships",
+            "topic": "Healthy Relationship Skills",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.5": {
+            "description": "Develop self-awareness and sense of identity, so they can see themselves as capable math learners, and strengthen their sense of ownership of their learning, as part of their emerging sense of identity and belonging",
+            "topic": "Self-Awareness and Sense of Identity",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          },
+          "A1.6": {
+            "description": "Think critically and creatively, so they can make connections between math and everyday contexts to help them make informed judgements and decisions",
+            "topic": "Critical and Creative Thinking",
+            "examples": [],
+            "prompts": [],
+            "tags": []
+          }
+        }
+      }
+    },
+    "B": {
+      "B1": {
+        "name": "Number Sense",
+        "description": "demonstrate an understanding of numbers and make connections to the way numbers are used in everyday life",
+        "specifics": {
+          "B1.1": {
+            "description": "Represent and compare very large and very small numbers, including through the use of scientific notation, and describe various ways they are used in everyday life",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 856
+          },
+          "B1.2": {
+            "description": "Describe, compare, and order numbers in the real number system (rational and irrational numbers), separately and in combination, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 859
+          },
+          "B1.3": {
+            "description": "Estimate and calculate square roots, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 861
+          },
+          "B1.4": {
+            "description": "Use fractions, decimal numbers, and percents, including percents of more than 100% or less than 1%, interchangeably and flexibly to solve a variety of problems",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 863
+          }
+        }
+      },
+      "B2": {
+        "name": "Operations",
+        "description": "use knowledge of numbers and operations to solve mathematical problems encountered in everyday life",
+        "specifics": {
+          "B2.1": {
+            "description": "Use the properties and order of operations, and the relationships between operations, to solve problems involving rational numbers, ratios, rates, and percents, including those requiring multiple steps or multiple operations",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 866
+          },
+          "B2.2": {
+            "description": "Understand and recall commonly used square numbers and their square roots",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 869
+          },
+          "B2.3": {
+            "description": "Use mental math strategies to multiply and divide whole numbers and decimal numbers up to thousandths by powers of ten, and explain the strategies used",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 871
+          },
+          "B2.4": {
+            "description": "Add and subtract integers, using appropriate strategies, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 873
+          },
+          "B2.5": {
+            "description": "Add and subtract fractions, using appropriate strategies, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 878
+          },
+          "B2.6": {
+            "description": "Multiply and divide fractions by fractions, as well as by whole numbers and mixed numbers, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 882
+          },
+          "B2.7": {
+            "description": "Multiply and divide integers, using appropriate strategies, in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 892
+          },
+          "B2.8": {
+            "description": "Compare proportional situations and determine unknown values in proportional situations, and apply proportional reasoning to solve problems in various contexts",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 895
+          }
+        }
+      }
+    },
+    "C": {
+      "C1": {
+        "name": "Patterns and Relationships",
+        "description": "identify, describe, extend, create, and make predictions about a variety of patterns, including those found in real-life contexts",
+        "specifics": {
+          "C1.1": {
+            "description": "Identify and compare a variety of repeating, growing, and shrinking patterns, including patterns found in real-life contexts, and compare linear growing and shrinking patterns on the basis of their constant rates and initial values",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 899
+          },
+          "C1.2": {
+            "description": "Create and translate repeating, growing, and shrinking patterns involving rational numbers using various representations, including algebraic expressions and equations for linear growing and shrinking patterns",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 903
+          },
+          "C1.3": {
+            "description": "Determine pattern rules and use them to extend patterns, make and justify predictions, and identify missing elements in growing and shrinking patterns involving rational numbers, and use algebraic representations of the pattern rules to solve for unknown values in linear growing and shrinking patterns",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 908
+          },
+          "C1.4": {
+            "description": "Create and describe patterns to illustrate relationships among rational numbers",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 911
+          }
+        }
+      },
+      "C2": {
+        "name": "Equations and Inequalities",
+        "description": "demonstrate an understanding of variables, expressions, equations, and inequalities, and apply this understanding in various contexts",
+        "specifics": {
+          "C2.1": {
+            "description": "Add and subtract monomials with a degree of 1, and add binomials with a degree of 1 that involve integers, using tools",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 913
+          },
+          "C2.2": {
+            "description": "Evaluate algebraic expressions that involve rational numbers",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 916
+          },
+          "C2.3": {
+            "description": "Solve equations that involve multiple terms, integers, and decimal numbers in various contexts, and verify solutions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 918
+          },
+          "C2.4": {
+            "description": "Solve inequalities that involve integers, and verify and graph the solutions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 920
+          }
+        }
+      },
+      "C3": {
+        "name": "Coding",
+        "description": "solve problems and create computational representations of mathematical situations using coding concepts and skills",
+        "specifics": {
+          "C3.1": {
+            "description": "Solve problems and create computational representations of mathematical situations by writing and executing code, including code that involves the analysis of data in order to inform and communicate decisions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 922
+          },
+          "C3.2": {
+            "description": "Read and alter existing code involving the analysis of data in order to inform and communicate decisions, and describe how changes to the code affect the outcomes and the efficiency of the code",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 925
+          }
+        }
+      }
+    },
+    "D": {
+      "D1": {
+        "name": "Data Literacy",
+        "description": "manage, analyse, and use data to make convincing arguments and informed decisions, in various contexts drawn from real life",
+        "specifics": {
+          "D1.1": {
+            "description": "Identify situations involving one-variable data and situations involving two-variable data, and explain when each type of data is needed",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 931
+          },
+          "D1.2": {
+            "description": "Collect continuous data to answer questions of interest involving two variables, and organize the data sets as appropriate in a table of values",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 932
+          },
+          "D1.3": {
+            "description": "Select from among a variety of graphs, including scatter plots, the type of graph best suited to represent various sets of data; display the data in the graphs with proper sources, titles, and labels, and appropriate scales; and justify their choice of graphs",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 933
+          },
+          "D1.4": {
+            "description": "Create an infographic about a data set, representing the data in appropriate ways, including in tables and scatter plots, and incorporating any other relevant information that helps to tell a story about the data",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 935
+          },
+          "D1.5": {
+            "description": "Use mathematical language, including the terms “strong”, “weak”, “none”, “positive”, and “negative”, to describe the relationship between two variables for various data sets with and without outliers",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 937
+          },
+          "D1.6": {
+            "description": "Analyse different sets of data presented in various ways, including in scatter plots and in misleading graphs, by asking and answering questions about the data, challenging preconceived notions, and drawing conclusions, then make convincing arguments and informed decisions",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 939
+          }
+        }
+      },
+      "D2": {
+        "name": "Probability",
+        "description": "describe the likelihood that events will happen, and use that information to make predictions",
+        "specifics": {
+          "D2.1": {
+            "description": "Solve various problems that involve probability, using appropriate tools and strategies, including Venn and tree diagrams",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 941
+          },
+          "D2.2": {
+            "description": "Determine and compare the theoretical and experimental probabilities of multiple independent events happening and of multiple dependent events happening",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 942
+          }
+        }
+      }
+    },
+    "E": {
+      "E1": {
+        "name": "Geometric and Spatial Reasoning",
+        "description": "describe and represent shape, location, and movement by applying geometric properties and spatial relationships in order to navigate the world around them",
+        "specifics": {
+          "E1.1": {
+            "description": "Identify geometric properties of tessellating shapes and identify the transformations that occur in the tessellations",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 944
+          },
+          "E1.2": {
+            "description": "Make objects and models using appropriate scales, given their top, front, and side views or their perspective views",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 946
+          },
+          "E1.3": {
+            "description": "Use scale drawings to calculate actual lengths and areas, and reproduce scale drawings at different ratios",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 949
+          },
+          "E1.4": {
+            "description": "Describe and perform translations, reflections, rotations, and dilations on a Cartesian plane, and predict the results of these transformations",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 951
+          }
+        }
+      },
+      "E2": {
+        "name": "Measurement",
+        "description": "compare, estimate, and determine measurements in various contexts",
+        "specifics": {
+          "E2.1": {
+            "description": "Represent very large (mega, giga, tera) and very small (micro, nano, pico) metric units using models, base ten relationships, and exponential notation",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 956
+          },
+          "E2.2": {
+            "description": "Solve problems involving angle properties, including the properties of intersecting and parallel lines and of polygons",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 958
+          },
+          "E2.3": {
+            "description": "Solve problems involving the perimeter, circumference, area, volume, and surface area of composite two-dimensional shapes and three-dimensional objects, using appropriate formulas",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 963
+          },
+          "E2.4": {
+            "description": "Describe the Pythagorean relationship using various geometric models, and apply the theorem to solve problems involving an unknown side length for a given right triangle",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 965
+          }
+        }
+      }
+    },
+    "F": {
+      "F1": {
+        "name": "Money and Finances",
+        "description": "demonstrate the knowledge and skills needed to make informed financial decisions",
+        "specifics": {
+          "F1.1": {
+            "description": "Describe some advantages and disadvantages of various methods of payment that can be used when dealing with multiple currencies and exchange rates",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 969
+          },
+          "F1.2": {
+            "description": "Create a financial plan to reach a long-term financial goal, accounting for income, expenses, and tax implications",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 970
+          },
+          "F1.3": {
+            "description": "Identify different ways to maintain a balanced budget, and use appropriate tools to track all income and spending, for several different scenarios",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 971
+          },
+          "F1.4": {
+            "description": "Determine the growth of simple and compound interest at various rates using digital tools, and explain the impact interest has on long-term financial planning",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 971
+          },
+          "F1.5": {
+            "description": "Compare various ways for consumers to get more value for their money when spending, including taking advantage of sales and customer loyalty and incentive programs, and determine the best choice for different scenarios",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 973
+          },
+          "F1.6": {
+            "description": "Compare interest rates, annual fees, and rewards and other incentives offered by various credit card companies and consumer contracts to determine the best value and the best choice for different scenarios",
+            "examples": [],
+            "prompts": [],
+            "tags": [],
+            "page": 974
+          }
+        }
+      }
+    }
+  }
+}

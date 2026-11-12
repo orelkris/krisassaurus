@@ -1,5 +1,5 @@
 {
-  "g7-b1.1": {
+  "B1.1": {
     "keyConcepts": [
       {
         "text": "The numerals 0 to 9 are used to form numbers. They are referred to as the digits in a number and each digit corresponds to a place value. For example, in the number 876 345 107, the digit 8 represents 8 hundred millions, the digit 7 represents 7 ten millions, the digit 6 represents 6 millions, the digit 3 represents 3 hundred thousands, the digit 4 represents 4 ten thousands, the digit 5 represents 5 thousands, the digit 1 represents 1 hundred, the digit 0 represents 0 tens, and the digit 7 represents 7 ones.",
@@ -112,7 +112,7 @@
     ],
     "tools": ["number line", "metre stick", "scale"]
   },
-  "g7-b1.2": {
+  "B1.2": {
     "keyConcepts": [
       {
         "text": "Any whole number multiplied by itself produces a square number, or a perfect square, and can be represented as a power with an exponent of 2. For example, 9 is a square number because 3 × 3 = 9, or 32.",
@@ -154,7 +154,7 @@
     ],
     "tools": ["tiles", "grid paper", "calculator"]
   },
-  "g7-b1.3": {
+  "B1.3": {
     "keyConcepts": [
       {
         "text": "Rational numbers are any numbers that can be expressed as b , where a and b are integers, and −5 3 b ≠ 0. Examples of rational numbers include: 4 , 6 , −7, 0, 205, 45.328, 6.4 , −32.5.",
@@ -261,7 +261,7 @@
     ],
     "tools": ["number line"]
   },
-  "g7-b1.4": {
+  "B1.4": {
     "keyConcepts": [
       {
         "text": "Equivalent positive fractions that represent parts of a whole are created by either partitioning or merging partitions.",
@@ -334,7 +334,7 @@
     ],
     "tools": ["fraction strips"]
   },
-  "g7-b1.5": {
+  "B1.5": {
     "keyConcepts": [
       {
         "text": "There are an infinite number of decimal numbers that fall between any two decimal numbers. The place values of the decimal numbers need to be compared to ensure that the number generated does indeed fall between the two numbers.",
@@ -447,7 +447,7 @@
     ],
     "tools": ["number line", "relational rods", "fraction strips"]
   },
-  "g7-b1.6": {
+  "B1.6": {
     "keyConcepts": [
       {
         "text": "Rounding makes a number simpler to work with and is often used when estimating computations, measuring, and making quick comparisons.",
@@ -492,7 +492,7 @@
     ],
     "tools": ["calculator"]
   },
-  "g7-b1.7": {
+  "B1.7": {
     "keyConcepts": [
       {
         "text": "Converting between fractions, decimals, and percents often makes calculations and comparisons easier to understand and carry out.",
@@ -590,7 +590,7 @@
     ],
     "tools": []
   },
-  "g7-b2.1": {
+  "B2.1": {
     "keyConcepts": [
       {
         "text": "Properties of operations are helpful for carrying out calculations. a",
@@ -770,7 +770,7 @@
     ],
     "tools": []
   },
-  "g7-b2.2": {
+  "B2.2": {
     "keyConcepts": [
       {
         "text": "Certain equivalent representations of percents, fractions, and decimals are more commonly used to do mental calculations than others. 1",
@@ -861,7 +861,7 @@
     ],
     "tools": []
   },
-  "g7-b2.3": {
+  "B2.3": {
     "keyConcepts": [
       {
         "text": "Calculating whole number percents is a frequently used skill in daily life (e.g., when determining sales tax, discounts, or gratuities).",
@@ -1025,7 +1025,7 @@
     ],
     "tools": []
   },
-  "g7-b2.4": {
+  "B2.4": {
     "keyConcepts": [
       {
         "text": "When adding and subtracting integers, it is important to pay close attention to all of the elements of the statement. For example:",
@@ -1245,7 +1245,7 @@
     ],
     "tools": ["number line", "tiles", "counters", "two-colour counters"]
   },
-  "g7-b2.5": {
+  "B2.5": {
     "keyConcepts": [
       {
         "text": "The addition and subtraction of fractions with the same denominator can be modelled on the same number line. Each one whole on the number line can be partitioned by the number of units indicated by the denominator. For example: 3 2 5",
@@ -1409,7 +1409,7 @@
     ],
     "tools": ["calculator", "dice", "area model"]
   },
-  "g7-b2.6": {
+  "B2.6": {
     "keyConcepts": [
       {
         "text": "A number can be written in terms of its factors. For example, the factors of 6 are 1, 2, 3, and 6.",
@@ -1580,7 +1580,7 @@
     ],
     "tools": []
   },
-  "g7-b2.7": {
+  "B2.7": {
     "keyConcepts": [
       {
         "text": "Exponentiation is a fifth number operation, like addition, subtraction, multiplication, and division. It is written as bn and involves two numbers, where b is the base and n is the exponent or power.",
@@ -1649,7 +1649,7 @@
     ],
     "tools": ["spreadsheet", "calculator"]
   },
-  "g7-b2.8": {
+  "B2.8": {
     "keyConcepts": [
       {
         "text": "The multiplication and division of two fractions can be interpreted based on the different ways fractions are used: as a quotient, as parts of a whole, as a comparison (ratio), and as an operator.",
@@ -1786,7 +1786,7 @@
     ],
     "tools": ["number line", "array"]
   },
-  "g7-b2.9": {
+  "B2.9": {
     "keyConcepts": [
       {
         "text": "Any decimal number multiplied by one is that decimal number.",
@@ -1912,7 +1912,7 @@
     ],
     "tools": ["calculator"]
   },
-  "g7-b2.10": {
+  "B2.10": {
     "keyConcepts": [
       {
         "text": "A proportional relationship is when two variables change at the same rate. For example, depositing $5 into a savings account every month is a proportional situation because the relationship between months and money is constant: $5 per month. Note that the change is additive ($5 more per month), but the relationship is multiplicative ($5 per month):",
@@ -2033,7 +2033,7 @@
     ],
     "tools": []
   },
-  "g7-c1.1": {
+  "C1.1": {
     "keyConcepts": [
       {
         "text": "Repeating patterns have a pattern core that is repeated over and over.",
@@ -2125,7 +2125,7 @@
     ],
     "tools": []
   },
-  "g7-c1.2": {
+  "C1.2": {
     "keyConcepts": [
       {
         "text": "Growing patterns are created by increasing the number of elements or the size of the elements in each iteration.",
@@ -2174,7 +2174,7 @@
     ],
     "tools": []
   },
-  "g7-c1.3": {
+  "C1.3": {
     "keyConcepts": [
       {
         "text": "Patterns can be extended because they are repetitive by nature.",
@@ -2267,7 +2267,7 @@
     ],
     "tools": []
   },
-  "g7-c1.4": {
+  "C1.4": {
     "keyConcepts": [
       {
         "text": "Patterns can be used to demonstrate relationships within and among number properties, such as expressing numbers in exponential notation.",
@@ -2296,7 +2296,7 @@
     ],
     "tools": []
   },
-  "g7-c2.1": {
+  "C2.1": {
     "keyConcepts": [
       {
         "text": "A monomial with a degree of 1 has a variable with an exponent of one. For example, the exponent of m for the monomial 2m is 1. When the exponent is not shown, it is understood to be one.",
@@ -2351,7 +2351,7 @@
     ],
     "tools": ["pattern blocks", "tiles", "algebra tiles"]
   },
-  "g7-c2.2": {
+  "C2.2": {
     "keyConcepts": [
       {
         "text": "To evaluate an algebraic expression, the variables are replaced with numerical values and calculations are performed based on the order of operations.",
@@ -2436,7 +2436,7 @@
     ],
     "tools": ["tiles"]
   },
-  "g7-c2.3": {
+  "C2.3": {
     "keyConcepts": [
       {
         "text": "Equations are mathematical statements such that the expressions on both sides of the equal sign are equivalent.",
@@ -2490,7 +2490,7 @@
     ],
     "tools": []
   },
-  "g7-c2.4": {
+  "C2.4": {
     "keyConcepts": [
       {
         "text": "An inequality can be solved like an equation, and then values need to be tested to identify those that hold true for the inequality.",
@@ -2595,7 +2595,7 @@
     ],
     "tools": ["number line"]
   },
-  "g7-c3.1": {
+  "C3.1": {
     "keyConcepts": [
       {
         "text": "Sub-programs are used to assemble a complex program by writing portions of the code that can be modularized. This helps to create efficient code.",
@@ -2714,7 +2714,7 @@
     ],
     "tools": []
   },
-  "g7-c3.2": {
+  "C3.2": {
     "keyConcepts": [
       {
         "text": "Reading code is done to make predictions as to what the expected outcome will be. Based on that prediction, one can determine if the code needs to be altered prior to its execution.",
@@ -2816,7 +2816,7 @@
     ],
     "tools": []
   },
-  "g7-d1.1": {
+  "D1.1": {
     "keyConcepts": [
       {
         "text": "When comparing categories of a large population, it is easier to compare them by relative amounts (i.e., using percentages) rather than by their exact quantities. For example, in a survey administered to 45 896 respondents, 36 572 respondents selected “yes” and 592 selected “maybe”. It is easier to interpret the data if you know that 80% selected “yes” and 1% selected “maybe”.",
@@ -2853,7 +2853,7 @@
     ],
     "tools": []
   },
-  "g7-d1.2": {
+  "D1.2": {
     "keyConcepts": [
       {
         "text": "The type and amount of data to be collected is based on the questions of interest. Some questions of interest may require answering multiple questions that involve any combination of qualitative data and quantitative data.",
@@ -2942,7 +2942,7 @@
     ],
     "tools": []
   },
-  "g7-d1.3": {
+  "D1.3": {
     "keyConcepts": [
       {
         "text": "Circle graphs are used to show how categories represent parts of a whole data set that can be either qualitative or quantitative data. Histograms are used to display intervals of continuous quantitative data.",
@@ -3025,7 +3025,7 @@
     ],
     "tools": ["circle graph"]
   },
-  "g7-d1.4": {
+  "D1.4": {
     "keyConcepts": [
       {
         "text": "Infographics are used in real life to share data and information on a topic in a concise and appealing way.",
@@ -3071,7 +3071,7 @@
     ],
     "tools": []
   },
-  "g7-d1.5": {
+  "D1.5": {
     "keyConcepts": [
       {
         "text": "Adding or removing a data value that is not the most frequent value in the set will not impact the mode.",
@@ -3134,7 +3134,7 @@
     ],
     "tools": ["circle graph"]
   },
-  "g7-d1.6": {
+  "D1.6": {
     "keyConcepts": [
       {
         "text": "When interpreting a circle graph, the size of the slices (sectors) will help indicate which category is greatest or least. Sometimes the actual amount is needed, and this will require the percentage to be multiplied by the total number of data values.",
@@ -3236,7 +3236,7 @@
     ],
     "tools": ["bar graph", "circle graph", "histogram"]
   },
-  "g7-d2.1": {
+  "D2.1": {
     "keyConcepts": [
       {
         "text": "Two events are independent when the outcome of one event does not affect the outcome of the other event.",
@@ -3292,7 +3292,7 @@
     ],
     "tools": ["coins", "tree diagram"]
   },
-  "g7-d2.2": {
+  "D2.2": {
     "keyConcepts": [
       {
         "text": "The more trials completed in an experiment, the closer the experimental probability will be to the theoretical probability.",
@@ -3363,7 +3363,7 @@
     ],
     "tools": []
   },
-  "g7-e1.1": {
+  "E1.1": {
     "keyConcepts": [
       {
         "text": "A geometric property is an attribute that helps define a class of objects.",
@@ -3600,7 +3600,7 @@
     ],
     "tools": ["grid paper", "mirror", "nets"]
   },
-  "g7-e1.2": {
+  "E1.2": {
     "keyConcepts": [
       {
         "text": "Three-dimensional objects can be graphically projected in two dimensions. Two-dimensional representations show how things are made, how they can be navigated, or how they can be reproduced, and can be used to represent anything from very small objects to very large spaces. They are used by designers, builders, urban planners, instruction illustrators, and others.",
@@ -3697,7 +3697,7 @@
     ],
     "tools": ["tiles", "dot paper", "scale"]
   },
-  "g7-e1.3": {
+  "E1.3": {
     "keyConcepts": [
       {
         "text": "A dilation (or dilatation) is a transformation that enlarges or reduces a figure by a certain scale factor. Unlike translations, reflections, and rotations, a dilation does not produce a congruent image, unless the dilation factor is 1 or −1.",
@@ -3739,7 +3739,7 @@
     ],
     "tools": ["grid paper", "scale"]
   },
-  "g7-e1.4": {
+  "E1.4": {
     "keyConcepts": [
       {
         "text": "Translations, reflections, and rotations all produce congruent images.",
@@ -3830,7 +3830,7 @@
     ],
     "tools": []
   },
-  "g7-e2.1": {
+  "E2.1": {
     "keyConcepts": [
       {
         "text": "There is a relationship between volume and capacity.",
@@ -3903,7 +3903,7 @@
     ],
     "tools": []
   },
-  "g7-e2.2": {
+  "E2.2": {
     "keyConcepts": [
       {
         "text": "Multiplicative relationships exist when converting from one metric unit to another. The relationships differ when converting units of length, units of area, and units of volume. In Metres Visual Representation In Centimetres 1m (one 1 metre = 100 cm dimension) Area 1 m2 1 square metre (two = 100 cm × 100 cm =1m×1m dimensions) = 10 000 cm2 1 m3 Volume 1 cubic metre = 100 cm × 100 cm × (three =1m×1m×1m 100 cm dimensions) = 1 000 000 cm3",
@@ -3964,7 +3964,7 @@
     ],
     "tools": ["metre stick"]
   },
-  "g7-e2.3": {
+  "E2.3": {
     "keyConcepts": [
       {
         "text": "For some shapes and some attributes, length measurements can be used to calculate other measurements. This is true for the circumference of a circle. Indirectly measuring the circumference of a circle is quicker and more accurate than measuring it directly (e.g., with a string).",
@@ -4031,7 +4031,7 @@
     ],
     "tools": ["calculator"]
   },
-  "g7-e2.4": {
+  "E2.4": {
     "keyConcepts": [
       {
         "text": "Compasses are often used to construct circles by hand. Another strategy is to attach a pencil to the end of a string. The radius must be known when using a compass or string to construct a circle.",
@@ -4073,7 +4073,7 @@
     ],
     "tools": ["compass"]
   },
-  "g7-e2.5": {
+  "E2.5": {
     "keyConcepts": [
       {
         "text": "A relationship exists between the area of a circle (A) and its radius. This relationship can be 1 expressed symbolically as A = πr2. The relationship between the radius and the diameter (r = 2 d) means that if either the radius or the diameter is known, the area can be measured indirectly, without the need to count square tiles. If the area is known, then the radius and the diameter can be determined using this relationship.",
@@ -4133,7 +4133,7 @@
     ],
     "tools": []
   },
-  "g7-e2.6": {
+  "E2.6": {
     "keyConcepts": [
       {
         "text": "Area is additive: partial areas can be added together to find a whole area. Finding the surface area of a cylinder is an application of the property of additivity.",
@@ -4170,7 +4170,7 @@
     ],
     "tools": ["nets"]
   },
-  "g7-e2.7": {
+  "E2.7": {
     "keyConcepts": [
       {
         "text": "Volume is measured in cubic units, and the measure represents the number of cubes needed to completely fill an object. Similar to units of area, a cubic unit is an amount of volume, and can come in any shape. Units of volume can be decomposed, rearranged, partitioned, and redistributed to better fill a volume and minimize gaps and overlaps (see E2.1).",
@@ -4284,7 +4284,7 @@
     ],
     "tools": ["pattern blocks", "nets"]
   },
-  "g7-f1.1": {
+  "F1.1": {
     "keyConcepts": [
       {
         "text": "International currencies have different values compared to Canadian currency.",
@@ -4374,7 +4374,7 @@
     ],
     "tools": []
   },
-  "g7-f1.2": {
+  "F1.2": {
     "keyConcepts": [
       {
         "text": "Managing finances, including creating financial goals, often requires accessing information from various sources in order to make decisions. It is important to recognize which sources of information are reliable and which are not reliable.",
@@ -4436,7 +4436,7 @@
     ],
     "tools": []
   },
-  "g7-f1.3": {
+  "F1.3": {
     "keyConcepts": [
       {
         "text": "Longer-term financial planning is a complex process with multiple steps requiring consolidation of prior knowledge and skills.",
@@ -4524,7 +4524,7 @@
     ],
     "tools": ["money", "spreadsheet"]
   },
-  "g7-f1.4": {
+  "F1.4": {
     "keyConcepts": [
       {
         "text": "Many factors, including personal, familial, cultural, and societal factors, can impact financial decision making. Awareness of these factors results in more informed decisions.",
@@ -4606,7 +4606,7 @@
     ],
     "tools": []
   },
-  "g7-f1.5": {
+  "F1.5": {
     "keyConcepts": [
       {
         "text": "Interest rates can have an impact over time on amounts that are either invested or borrowed.",
@@ -4660,7 +4660,7 @@
     ],
     "tools": ["money"]
   },
-  "g7-f1.6": {
+  "F1.6": {
     "keyConcepts": [
       {
         "text": "Financial institutions offer a range of accounts and products, including loans.",
