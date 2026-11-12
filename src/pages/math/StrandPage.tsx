@@ -5,7 +5,6 @@ import StickyBar from '@/components/ui/StickyBar'
 import StrandBadge from '@/components/ui/StrandBadge'
 import StrandMap from '@/components/ui/StrandMap'
 import {
-  expectationPath,
   getExpectationsInIdea,
   getIdeasInStrand,
   mathPath,
@@ -33,7 +32,6 @@ function StrandPage() {
       entries: getExpectationsInIdea(idea.id, grade).map((expectation) => ({
         code: expectation.code,
         text: expectation.text,
-        to: expectationPath(expectation),
       })),
     }))
     .filter((row) => row.entries.length)

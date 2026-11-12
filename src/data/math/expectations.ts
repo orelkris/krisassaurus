@@ -4,6 +4,7 @@ import type {
   MathFilter,
   MathIdea,
   MathOverall,
+  MathSupport,
   TaughtStrandId,
 } from '@/types/math'
 import type { ExpectationItem } from '@/components/ui/ExpectationRow'
@@ -215,4 +216,23 @@ export async function loadDetails(
 ): Promise<ExpectationDetails | undefined> {
   const grade = await import(`./details/grade-${expectation.grade}.json`)
   return (grade.default as Record<string, ExpectationDetails>)[expectation.id]
+}
+
+// Every expectation's teacher supports in one grade, keyed by id (g6-b1.1)
+export async function loadGradeDetails(
+  grade: number
+): Promise<Record<string, ExpectationDetails>> {
+  const details = await import(`./details/grade-${grade}.json`)
+  return details.default as Record<string, ExpectationDetails>
+}
+
+// Whether an expectation has anything to show for a support
+export function hasSupport(
+  details: ExpectationDetails | undefined,
+  support: MathSupport
+): boolean {
+  if (!details) return false
+  if (support === 'concepts') return details.keyConcepts.length > 0
+  if (support === 'examples') return details.examples.length > 0
+  return details.tasks.length > 0
 }

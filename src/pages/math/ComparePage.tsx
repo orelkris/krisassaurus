@@ -2,7 +2,6 @@ import { Navigate, useParams } from 'react-router-dom'
 import CompareList from '@/components/ui/CompareList'
 import OverallHeader from '@/components/ui/OverallHeader'
 import {
-  expectationPath,
   findExpectation,
   getExpectationsInIdea,
   getIdeaOf,
@@ -32,7 +31,6 @@ function ComparePage() {
       entries: getExpectationsInIdea(idea.id, g).map((e) => ({
         code: e.code,
         text: e.text,
-        to: expectationPath(e),
       })),
     }))
     .filter((row) => row.entries.length)

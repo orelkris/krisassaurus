@@ -71,6 +71,9 @@ export interface ExpectationDetails {
   tools: string[]
 }
 
+// The teacher supports an overall page can show under each expectation
+export type MathSupport = 'concepts' | 'examples' | 'tasks'
+
 // Blocks that build a concept or activity card. Text in **double stars** is bold
 export interface Tile {
   label?: string
