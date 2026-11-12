@@ -1,18 +1,21 @@
-import { useEffect, useRef } from 'react'
 import { Navigate, useParams, useSearchParams } from 'react-router-dom'
 import PageHeader from '@/components/layout/PageHeader'
-import CurriculumBreadcrumb from '@/components/ui/CurriculumBreadcrumb'
-import ExpectationGroups from '@/components/ui/ExpectationGroups'
-import StrandBadge from '@/components/ui/StrandBadge'
+import CompareList from '@/components/ui/CompareList'
 import StickyBar from '@/components/ui/StickyBar'
+import StrandBadge from '@/components/ui/StrandBadge'
 import StrandMap from '@/components/ui/StrandMap'
 import {
+  expectationPath,
+  getExpectationsInIdea,
   getIdeasInStrand,
-  ideaGroups,
   mathPath,
 } from '@/data/math/expectations'
 import { getStrandBySlug, mathGrades } from '@/data/math/strands'
 
+// One Math strand across Grades 1 to 8, laid out like the other subjects'
+// strand pages: the strand as the title, a map with one row per idea and one
+// square per expectation in each grade, then the picked idea grade by grade.
+// Each code opens its expectation page
 function StrandPage() {
   const { slug = '' } = useParams<{ slug: string }>()
   const [searchParams] = useSearchParams()
@@ -21,34 +24,31 @@ function StrandPage() {
   const idea =
     ideas.find((item) => item.id === searchParams.get('idea')) ?? ideas[0]
 
-  // Picking another idea brings its list into view
-  const ladderRef = useRef<HTMLElement>(null)
-  const shownIdea = useRef(idea?.id)
-  useEffect(() => {
-    if (!idea || shownIdea.current === idea.id) return
-    shownIdea.current = idea.id
-    ladderRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  }, [idea])
-
   if (!strand || !idea) return <Navigate to="/math" replace />
 
+  // One row per grade that has the idea; grades without it are left out
+  const rows = mathGrades
+    .map((grade) => ({
+      label: `Grade ${grade}`,
+      entries: getExpectationsInIdea(idea.id, grade).map((expectation) => ({
+        code: expectation.code,
+        text: expectation.text,
+        to: expectationPath(expectation),
+      })),
+    }))
+    .filter((row) => row.entries.length)
+
+  // This wrapper only passes the strand colour down; the parts go straight
+  // into the main column's Container
   return (
-    <>
+    <div data-strand={strand.id} className="contents">
       <PageHeader
-        above={
-          <CurriculumBreadcrumb
-            subject="Math"
-            strand={strand.name}
-            className="hidden lg:block"
-          />
-        }
         title={
           <>
-            <StrandBadge strand={strand} size="lg" />
+            <StrandBadge strand={{ id: strand.id }} size="lg" />
             {strand.name}
           </>
         }
-        description={`${strand.blurb} Below, each row is one idea and each square is one expectation in that grade.`}
       />
 
       <StrandMap
@@ -70,15 +70,14 @@ function StrandPage() {
       />
 
       {/* The idea's name sticks while its grades scroll past */}
-      <section ref={ladderRef} className="col-page">
-        <StickyBar padded>
-          <h2 className="text-label">
-            {strand.name} · {idea.name} · Grade 1 to 8
-          </h2>
-        </StickyBar>
-        <ExpectationGroups groups={ideaGroups(idea)} />
-      </section>
-    </>
+      <StickyBar padded>
+        <h2 className="text-label">
+          {strand.name} · {idea.name} · Grades {mathGrades[0]} to{' '}
+          {mathGrades[mathGrades.length - 1]}
+        </h2>
+      </StickyBar>
+      <CompareList rows={rows} />
+    </div>
   )
 }
 

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export interface CompareRow {
   // e.g. Grade 7, or Grades 1–6 when those grades say the same thing
   label: string
@@ -5,7 +7,8 @@ export interface CompareRow {
   heading?: string
   // What those grades say. A code is shown when it differs between grades,
   // e.g. Strand D, where one topic sits under different codes
-  entries: { code?: string; text: string }[]
+  // A code with a page (Math) links to it
+  entries: { code?: string; text: string; to?: string }[]
 }
 
 interface CompareListProps {
@@ -31,11 +34,19 @@ function CompareList({ rows }: CompareListProps) {
             )}
             {row.entries.map((entry, index) => (
               <p key={index} className="text-lg text-fg">
-                {entry.code && (
-                  <span className="mr-sm font-semibold text-strand-text">
-                    {entry.code}
-                  </span>
-                )}
+                {entry.code &&
+                  (entry.to ? (
+                    <Link
+                      to={entry.to}
+                      className="mr-sm font-semibold text-strand-text underline-offset-4 hover:underline"
+                    >
+                      {entry.code}
+                    </Link>
+                  ) : (
+                    <span className="mr-sm font-semibold text-strand-text">
+                      {entry.code}
+                    </span>
+                  ))}
                 {entry.text}
               </p>
             ))}
