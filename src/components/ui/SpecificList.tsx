@@ -1,9 +1,12 @@
 import type { ReactNode } from 'react'
+import { Link } from 'react-router-dom'
 import TintBox, { type TintBoxPart } from '@/components/ui/TintBox'
 
 export interface SpecificItem {
   // e.g. D1.1
   code: string
+  // A code with its own page (Math) links to it
+  to?: string
   // A bold line above the text, e.g. Nutrients
   title?: string
   description: string
@@ -70,7 +73,16 @@ function SpecificList({ groups, showExamples = false }: SpecificListProps) {
                 className="flex scroll-mt-md flex-col gap-xs py-md sm:flex-row sm:gap-xl"
               >
                 <p className="pl-sm text-lg font-bold text-strand-text sm:w-code-long sm:shrink-0">
-                  {item.code}
+                  {item.to ? (
+                    <Link
+                      to={item.to}
+                      className="underline-offset-4 hover:underline"
+                    >
+                      {item.code}
+                    </Link>
+                  ) : (
+                    item.code
+                  )}
                 </p>
                 <div className="col-sm max-w-read min-w-none flex-1">
                   <div>

@@ -4,7 +4,7 @@ import PageHeader from '@/components/layout/PageHeader'
 import CurriculumBreadcrumb from '@/components/ui/CurriculumBreadcrumb'
 import StrandBox from '@/components/ui/StrandBox'
 import StrandTabs from '@/components/ui/StrandTabs'
-import { getOveralls, mathPath } from '@/data/math/expectations'
+import { getOveralls, overallPath } from '@/data/math/expectations'
 import { mathStrands } from '@/data/math/strands'
 import { useHashJump } from '@/hooks/useHashJump'
 import { useScrollSpy } from '@/hooks/useScrollSpy'
@@ -13,7 +13,7 @@ const sectionId = (id: string) => `strand-${id.toLowerCase()}`
 
 // One grade, laid out like the other subjects' grade pages: sticky strand
 // tabs, then a box per strand with its overall expectations. Each one's
-// button opens that grade and strand at the overall's expectations
+// button opens the overall's page, as in Gym
 function GradePage() {
   const grade = Number(useParams<{ grade: string }>().grade)
   const isGrade = Number.isInteger(grade) && grade >= 1 && grade <= 8
@@ -62,7 +62,7 @@ function GradePage() {
               name: overall.name,
               description: overall.description,
               count: overall.expectations.length,
-              to: `${mathPath({ grade, strand: strand.id })}#${overall.code.toLowerCase()}`,
+              to: overallPath(grade, overall.code),
             }))}
           />
         </section>

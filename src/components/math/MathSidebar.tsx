@@ -12,6 +12,7 @@ import {
   getIdeasInStrand,
   groupByOverall,
   mathPath,
+  overallPath,
 } from '@/data/math/expectations'
 import { useMathFilter } from '@/hooks/useMathFilter'
 
@@ -48,8 +49,10 @@ function MathSidebar() {
           return {
             id: item.id,
             code: item.code,
-            // Clicking the open expectation again goes back to its grade and strand
-            to: isPicked ? mathPath(filter) : expectationPath(item),
+            // Clicking the open expectation again goes back to its overall
+            to: isPicked
+              ? `${overallPath(item.grade, item.overall)}#${item.code.toLowerCase()}`
+              : expectationPath(item),
             isPicked,
           }
         }),

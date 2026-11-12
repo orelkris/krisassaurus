@@ -39,12 +39,20 @@ export function findExpectation(
   return byId.get(`g${grade}-${code.toLowerCase()}`)
 }
 
+// One overall expectation in one grade, like Gym's: /math/grade/6/b2
+export function overallPath(grade: number, code: string): string {
+  return `/math/grade/${grade}/${code.toLowerCase()}`
+}
+
 // Every Math page link comes from the filter, so the sidebar and the pages agree:
 // nothing → /math, grade → /grade/6, strand → /strand/number,
-// both → /grade/6/strand/number
+// both → the strand's first overall in that grade, /grade/6/b1
 export function mathPath({ grade, strand, idea }: MathFilter): string {
   const slug = strand && getStrand(strand).slug
-  if (grade && slug) return `/math/grade/${grade}/strand/${slug}`
+  if (grade && strand) {
+    const first = getOveralls(grade, strand)[0]
+    return first ? overallPath(grade, first.code) : `/math/grade/${grade}`
+  }
   if (grade) return `/math/grade/${grade}`
   if (slug) return `/math/strand/${slug}${idea ? `?idea=${idea}` : ''}`
   return '/math'

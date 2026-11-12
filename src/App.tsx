@@ -5,6 +5,7 @@ import {
   Outlet,
   Navigate,
   useLocation,
+  useParams,
 } from 'react-router-dom'
 import AppLayout from '@/components/layout/AppLayout'
 import SubjectSectionPage from '@/pages/SubjectSectionPage'
@@ -28,6 +29,8 @@ import GradePage from '@/pages/math/GradePage'
 import StrandPage from '@/pages/math/StrandPage'
 import GradeStrandPage from '@/pages/math/GradeStrandPage'
 import ExpectationPage from '@/pages/math/ExpectationPage'
+import OverallPage from '@/pages/math/OverallPage'
+import ComparePage from '@/pages/math/ComparePage'
 import ResourcesSidebar from '@/components/resources/ResourcesSidebar'
 import ComingSoon from '@/components/ui/ComingSoon'
 import CurriculumOverviewPage from '@/pages/curriculum/CurriculumOverviewPage'
@@ -47,6 +50,12 @@ function OldBlogRedirect() {
   const { pathname, search, hash } = useLocation()
   const to = pathname.replace(/^\/blog/, '') || '/'
   return <Navigate to={`${to}${search}${hash}`} replace />
+}
+
+// Math's /grade/6/b2 is an overall page, /grade/6/b2.1 an expectation page
+function MathCodePage() {
+  const { code = '' } = useParams<{ code: string }>()
+  return code.includes('.') ? <ExpectationPage /> : <OverallPage />
 }
 
 function App() {
@@ -108,7 +117,13 @@ function App() {
           >
             <Route index element={<MathOverviewPage />} />
             <Route path="grade/:grade" element={<GradePage />} />
-            <Route path="grade/:grade/:code" element={<ExpectationPage />} />
+            {/* b2 is an overall, b2.1 a specific expectation */}
+            <Route path="grade/:grade/:code" element={<MathCodePage />} />
+            <Route
+              path="grade/:grade/:code/:specific"
+              element={<ComparePage />}
+            />
+            {/* Old grade and strand links open the overall page */}
             <Route
               path="grade/:grade/strand/:slug"
               element={<GradeStrandPage />}

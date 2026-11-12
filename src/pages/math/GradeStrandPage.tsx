@@ -1,62 +1,24 @@
-import { Navigate, useParams } from 'react-router-dom'
-import PageHeader from '@/components/layout/PageHeader'
-import CurriculumBreadcrumb from '@/components/ui/CurriculumBreadcrumb'
-import ExpectationGroups from '@/components/ui/ExpectationGroups'
-import StrandBadge from '@/components/ui/StrandBadge'
-import StickyBar from '@/components/ui/StickyBar'
-import {
-  getExpectations,
-  mathPath,
-  overallGroups,
-} from '@/data/math/expectations'
+import { Navigate, useLocation, useParams } from 'react-router-dom'
+import { mathPath } from '@/data/math/expectations'
 import { getStrandBySlug } from '@/data/math/strands'
-import { useHashJump } from '@/hooks/useHashJump'
 
-// One strand in one grade, e.g. Grade 6 Number
+// Old grade and strand links (/math/grade/6/strand/number, #b2) open the
+// overall page instead: the one in the address, or the strand's first
 function GradeStrandPage() {
   const params = useParams<{ grade: string; slug: string }>()
+  const { hash } = useLocation()
   const grade = Number(params.grade)
   const strand = getStrandBySlug(params.slug ?? '')
   const isGrade = Number.isInteger(grade) && grade >= 1 && grade <= 8
-  // A grade page's button opens this page at one overall, e.g. #b2
-  useHashJump(grade, params.slug)
 
   if (!isGrade) return <Navigate to={mathPath({})} replace />
   if (!strand) return <Navigate to={mathPath({ grade })} replace />
 
-  const items = getExpectations({ grade, strand: strand.id })
-
-  return (
-    <>
-      <PageHeader
-        above={
-          <CurriculumBreadcrumb
-            subject="Math"
-            grade={grade}
-            strand={strand.name}
-            className="hidden lg:block"
-          />
-        }
-        title={
-          <>
-            Grade {grade} ·
-            <StrandBadge strand={strand} size="lg" />
-            {strand.name}
-          </>
-        }
-      />
-
-      {/* The label sticks while the boxes scroll past */}
-      <section className="col-page">
-        <StickyBar padded>
-          <h2 className="text-label">
-            Grade {grade} · {strand.name} · {items.length} expectations
-          </h2>
-        </StickyBar>
-        <ExpectationGroups groups={overallGroups(items)} />
-      </section>
-    </>
-  )
+  const overall = hash.slice(1).toLowerCase()
+  const to = /^[b-f]\d+$/.test(overall)
+    ? `/math/grade/${grade}/${overall}`
+    : mathPath({ grade, strand: strand.id })
+  return <Navigate to={to} replace />
 }
 
 export default GradeStrandPage
