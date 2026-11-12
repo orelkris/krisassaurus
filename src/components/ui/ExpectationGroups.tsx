@@ -37,7 +37,12 @@ function ExpectationGroups({ groups }: ExpectationGroupsProps) {
   return (
     <>
       {groups.map((group) => (
-        <FramedGroup key={group.id} label={group.label} tone={group.tone}>
+        <FramedGroup
+          key={group.id}
+          id={group.id.toLowerCase()}
+          label={group.label}
+          tone={group.tone}
+        >
           {group.sections.length === 0 && group.empty && (
             <p className="text-note ml-md">{group.empty}</p>
           )}

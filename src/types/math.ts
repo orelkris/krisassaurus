@@ -27,6 +27,13 @@ export interface Expectation {
   page: number
 }
 
+// An overall expectation as printed for one grade, e.g. B1 Number Sense
+// (data/math/overalls.json)
+export interface MathOverall {
+  name: string
+  description: string
+}
+
 // What the Math sidebar has picked. Nothing picked is the overview
 export interface MathFilter {
   grade?: number

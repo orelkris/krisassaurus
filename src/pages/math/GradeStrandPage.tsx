@@ -10,6 +10,7 @@ import {
   overallGroups,
 } from '@/data/math/expectations'
 import { getStrandBySlug } from '@/data/math/strands'
+import { useHashJump } from '@/hooks/useHashJump'
 
 // One strand in one grade, e.g. Grade 6 Number
 function GradeStrandPage() {
@@ -17,6 +18,8 @@ function GradeStrandPage() {
   const grade = Number(params.grade)
   const strand = getStrandBySlug(params.slug ?? '')
   const isGrade = Number.isInteger(grade) && grade >= 1 && grade <= 8
+  // A grade page's button opens this page at one overall, e.g. #b2
+  useHashJump(grade, params.slug)
 
   if (!isGrade) return <Navigate to={mathPath({})} replace />
   if (!strand) return <Navigate to={mathPath({ grade })} replace />

@@ -4,6 +4,8 @@ import { gapClass, type Step } from '@/types/index'
 interface FramedGroupProps {
   label: ReactNode
   children: ReactNode
+  // For links to the box, e.g. #b1 from a grade page
+  id?: string
   // The space between children, on the same steps as Container
   gap?: Step
   // The frame's colours, e.g. a strand's or a strategy group's. The border is
@@ -25,6 +27,7 @@ const neutralTone = {
 // the border; the negative margin and smaller top padding keep the box where
 // a plain box would be. Bullets and list numbers inside take the accent
 function FramedGroup({
+  id,
   label,
   children,
   gap = 'stack',
@@ -32,7 +35,8 @@ function FramedGroup({
 }: FramedGroupProps) {
   return (
     <fieldset
-      className={`${gapClass[gap]} pad-lg -mt-md min-w-none rounded-box border-(length:--border-frame) pt-md marker:text-(--frame-accent) sm:pt-md`}
+      id={id}
+      className={`scroll-mt-tabs ${gapClass[gap]} pad-lg -mt-md min-w-none rounded-box border-(length:--border-frame) pt-md marker:text-(--frame-accent) sm:pt-md`}
       style={
         {
           // The accent mixed with white, so the border is a softer version

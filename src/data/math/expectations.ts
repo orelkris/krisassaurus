@@ -3,12 +3,14 @@ import type {
   ExpectationDetails,
   MathFilter,
   MathIdea,
+  MathOverall,
   TaughtStrandId,
 } from '@/types/math'
 import type { ExpectationItem } from '@/components/ui/ExpectationRow'
 import type { ExpectationGroup } from '@/components/ui/ExpectationGroups'
 import type { FitColumn } from '@/components/ui/WhereThisFits'
 import expectationList from './expectations.json'
+import overalls from './overalls.json'
 import { mathIdeas } from './ideas'
 import { getStrand, mathGrades } from './strands'
 
@@ -49,6 +51,25 @@ export function mathPath({ grade, strand, idea }: MathFilter): string {
 }
 
 // The expectations for a grade, a strand, or both
+// A grade's overall expectations with their names and text, e.g.
+// B1 Number Sense, as printed in the curriculum. Only those with specific
+// expectations (C4 Mathematical Modelling has none)
+export function getOveralls(grade: number, strand: TaughtStrandId) {
+  const inGrade = (overalls as Record<string, Record<string, MathOverall>>)[
+    grade
+  ]
+  return Object.entries(inGrade ?? {})
+    .filter(([code]) => code.startsWith(strand))
+    .map(([code, overall]) => ({
+      code,
+      ...overall,
+      expectations: getExpectations({ grade, strand }).filter(
+        (expectation) => expectation.overall === code
+      ),
+    }))
+    .filter((overall) => overall.expectations.length)
+}
+
 export function getExpectations({ grade, strand }: MathFilter): Expectation[] {
   return expectations.filter(
     (expectation) =>

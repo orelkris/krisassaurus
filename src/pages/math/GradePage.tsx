@@ -1,33 +1,36 @@
 import { useMemo } from 'react'
 import { Navigate, useParams } from 'react-router-dom'
-import StrandTabs from '@/components/ui/StrandTabs'
 import PageHeader from '@/components/layout/PageHeader'
 import CurriculumBreadcrumb from '@/components/ui/CurriculumBreadcrumb'
-import ExpectationGroups from '@/components/ui/ExpectationGroups'
-import StrandBanner from '@/components/ui/StrandBanner'
-import { getExpectations, overallGroups } from '@/data/math/expectations'
+import StrandBox from '@/components/ui/StrandBox'
+import StrandTabs from '@/components/ui/StrandTabs'
+import { getOveralls, mathPath } from '@/data/math/expectations'
 import { mathStrands } from '@/data/math/strands'
+import { useHashJump } from '@/hooks/useHashJump'
 import { useScrollSpy } from '@/hooks/useScrollSpy'
 
+const sectionId = (id: string) => `strand-${id.toLowerCase()}`
+
+// One grade, laid out like the other subjects' grade pages: sticky strand
+// tabs, then a box per strand with its overall expectations. Each one's
+// button opens that grade and strand at the overall's expectations
 function GradePage() {
   const grade = Number(useParams<{ grade: string }>().grade)
   const isGrade = Number.isInteger(grade) && grade >= 1 && grade <= 8
-  const list = useMemo(
-    () => (isGrade ? getExpectations({ grade }) : []),
-    [isGrade, grade]
-  )
 
-  // One tab per strand; each tab jumps to the strand's section
   const tabs = useMemo(
     () =>
       mathStrands.map((strand) => ({
-        id: `strand-${strand.slug}`,
-        strand,
+        id: sectionId(strand.id),
+        strand: { id: strand.id, name: strand.name },
       })),
     []
   )
   const sectionIds = useMemo(() => tabs.map((tab) => tab.id), [tabs])
   const { activeId, jumpTo } = useScrollSpy(sectionIds)
+
+  // Coming back to a strand (e.g. #strand-d) opens at it
+  useHashJump(grade)
 
   if (!isGrade) return <Navigate to="/math" replace />
 
@@ -42,35 +45,28 @@ function GradePage() {
           />
         }
         title={`Grade ${grade}`}
-        description={`All ${list.length} expectations for Grade ${grade}, in plain lists. You don’t have to teach them in this order, and many can be taught together.`}
       />
 
-      <StrandTabs
-        tabs={tabs}
-        activeId={activeId}
-        onSelect={jumpTo}
-        title={`Grade ${grade}`}
-      />
+      <StrandTabs tabs={tabs} activeId={activeId} onSelect={jumpTo} />
 
-      {/* Each strand is its banner and boxes, spaced like the rest of the page.
-          On phones the strand name sits on its own line in the tabs, so the
-          sections stop lower to clear the taller bar */}
-      {mathStrands.map((strand) => {
-        const items = list.filter(
-          (expectation) => expectation.strand === strand.id
-        )
-        return (
-          <section
-            key={strand.id}
-            id={`strand-${strand.slug}`}
-            className="col-page scroll-mt-tabs md:scroll-mt-nav"
-          >
-            <StrandBanner strand={strand} count={items.length} />
-
-            <ExpectationGroups groups={overallGroups(items)} />
-          </section>
-        )
-      })}
+      {mathStrands.map((strand) => (
+        <section
+          key={strand.id}
+          id={sectionId(strand.id)}
+          className="scroll-mt-tabs"
+        >
+          <StrandBox
+            strand={{ id: strand.id, name: strand.name }}
+            rows={getOveralls(grade, strand.id).map((overall) => ({
+              code: overall.code,
+              name: overall.name,
+              description: overall.description,
+              count: overall.expectations.length,
+              to: `${mathPath({ grade, strand: strand.id })}#${overall.code.toLowerCase()}`,
+            }))}
+          />
+        </section>
+      ))}
     </>
   )
 }
