@@ -8,12 +8,14 @@ import { useHashJump } from '@/hooks/useHashJump'
 import {
   curriculumPath,
   gradesOf,
+  hasUnits,
   mergeGrades,
   overallsIn,
   slug,
   specificsIn,
   strandsOf,
   topicsIn,
+  unitOf,
 } from '@/lib/curriculum'
 import type { Curriculum, StrandId } from '@/types/curriculum'
 
@@ -41,6 +43,27 @@ function sectionsIn(
     specificsIn(curriculum, grade, strand).filter(([c]) =>
       c.startsWith(`${code}.`)
     )
+
+  // A strand with units (Science's B to E) covers a new topic each grade, so
+  // B2.1 in Grade 1 and in Grade 2 aren't the same thing. Each grade gets its
+  // own row instead: the unit, then that grade's expectations
+  if (hasUnits(curriculum, strand))
+    return [
+      {
+        id: 'grades',
+        heading: '',
+        rows: grades
+          .map((grade) => ({
+            label: `Grade ${grade}`,
+            heading: unitOf(curriculum, grade, strand),
+            entries: inOverall(grade).map(([c, s]) => ({
+              code: c,
+              text: s.description,
+            })),
+          }))
+          .filter((row) => row.entries.length),
+      },
+    ].filter((section) => section.rows.length)
 
   const sections: StrandSection[] = curriculum.strands[strand].topics
     ? topicsIn(curriculum, strand).map((topic) => ({
@@ -104,10 +127,17 @@ function CurriculumStrandPage() {
     )
 
   // e.g. B1 Active Participation, with how many parts it has, for the menu
+  // (for a strand with units, how many grades)
+  const partsIn = (overall: string) => {
+    const sections = sectionsIn(curriculum, strand, overall)
+    return hasUnits(curriculum, strand)
+      ? (sections[0]?.rows.length ?? 0)
+      : sections.length
+  }
   const items: OverallMenuItem[] = overalls.map((overall) => ({
     code: overall.code,
     name: overall.name,
-    count: sectionsIn(curriculum, strand, overall.code).length,
+    count: partsIn(overall.code),
     to: curriculumPath(curriculum.subject, { strand, code: overall.code }),
   }))
   const current = overalls.find((overall) => overall.code === code)
@@ -134,9 +164,11 @@ function CurriculumStrandPage() {
           id={section.id}
           className="col-sm scroll-mt-md"
         >
-          <h2 className="heading-section text-strand-text">
-            {section.heading}
-          </h2>
+          {section.heading && (
+            <h2 className="heading-section text-strand-text">
+              {section.heading}
+            </h2>
+          )}
           <CompareList rows={section.rows} />
         </section>
       ))}

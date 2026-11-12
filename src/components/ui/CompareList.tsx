@@ -1,6 +1,8 @@
 export interface CompareRow {
   // e.g. Grade 7, or Grades 1–6 when those grades say the same thing
   label: string
+  // A title above what they say, e.g. a Science grade's unit
+  heading?: string
   // What those grades say. A code is shown when it differs between grades,
   // e.g. Strand D, where one topic sits under different codes
   entries: { code?: string; text: string }[]
@@ -24,6 +26,9 @@ function CompareList({ rows }: CompareListProps) {
             {row.label}
           </p>
           <div className="col-md max-w-read min-w-none flex-1">
+            {row.heading && (
+              <h3 className="heading-card text-fg">{row.heading}</h3>
+            )}
             {row.entries.map((entry, index) => (
               <p key={index} className="text-lg text-fg">
                 {entry.code && (

@@ -53,6 +53,15 @@ export function unitOf<S extends StrandId>(
   return c.units?.[grade]?.[strand]
 }
 
+// Whether a strand is taught as a different unit in each grade (Science's
+// B to E), so its grades are listed by unit rather than lined up by code
+export function hasUnits<S extends StrandId>(
+  c: Curriculum<S>,
+  strand: S
+): boolean {
+  return gradesOf(c).some((grade) => !!unitOf(c, grade, strand))
+}
+
 // How many specific expectations a grade has, e.g. 36
 export function countExpectations<S extends StrandId>(
   c: Curriculum<S>,
