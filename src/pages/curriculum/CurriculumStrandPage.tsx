@@ -1,8 +1,10 @@
 import { Navigate, useParams } from 'react-router-dom'
+import PageHeader from '@/components/layout/PageHeader'
 import CompareList, { type CompareRow } from '@/components/ui/CompareList'
-import OverallHeader, {
-  type OverallMenuItem,
-} from '@/components/ui/OverallHeader'
+import OverallHeader from '@/components/ui/OverallHeader'
+import StickyBar from '@/components/ui/StickyBar'
+import StrandBadge from '@/components/ui/StrandBadge'
+import StrandMap from '@/components/ui/StrandMap'
 import { useCurriculum } from '@/hooks/useCurriculum'
 import { useHashJump } from '@/hooks/useHashJump'
 import {
@@ -13,6 +15,7 @@ import {
   overallsIn,
   slug,
   specificsIn,
+  strandColors,
   strandsOf,
   topicsIn,
   unitOf,
@@ -126,38 +129,69 @@ function CurriculumStrandPage() {
       <Navigate to={curriculumPath(curriculum.subject, { strand })} replace />
     )
 
-  // e.g. B1 Active Participation, with how many parts it has, for the menu
-  // (for a strand with units, how many grades)
-  const partsIn = (overall: string) => {
-    const sections = sectionsIn(curriculum, strand, overall)
-    return hasUnits(curriculum, strand)
-      ? (sections[0]?.rows.length ?? 0)
-      : sections.length
-  }
-  const items: OverallMenuItem[] = overalls.map((overall) => ({
-    code: overall.code,
-    name: overall.name,
-    count: partsIn(overall.code),
-    to: curriculumPath(curriculum.subject, { strand, code: overall.code }),
-  }))
   const current = overalls.find((overall) => overall.code === code)
-  // With one overall (Strand A), the title is the strand itself
+  const strandName = curriculum.strands[strand].name
+  const grades = gradesOf(curriculum)
+  // With one overall (Strand A), the title is the strand itself and there's
+  // nothing to pick, so no map
   const single = overalls.length === 1
 
+  // Like Math's strand page: the strand as the title, then a map with one
+  // row per overall expectation (its sub-strands) and one square per specific
+  // expectation in each grade. Picking a row shows that overall below.
   // The page's parts go straight into the main column's Container, like the
   // Overview's; this wrapper only passes the strand colour down
   return (
     <div data-strand={strand} className="contents">
-      <div className="col-md">
-        <OverallHeader
-          code={single ? strand : code}
-          name={single ? curriculum.strands[strand].name : current?.name}
-          items={single ? [] : items}
-        />
-        {curriculum.strands[strand].note && (
-          <p className="text-lead">{curriculum.strands[strand].note}</p>
-        )}
-      </div>
+      {single ? (
+        <OverallHeader code={strand} name={strandName} items={[]} />
+      ) : (
+        <>
+          <PageHeader
+            title={
+              <>
+                <StrandBadge strand={{ id: strand }} size="lg" />
+                {strandName}
+              </>
+            }
+          />
+          <StrandMap
+            rowLabel="Overall expectation"
+            grades={grades}
+            rows={overalls.map((overall) => ({
+              id: overall.code,
+              label: `${overall.code} ${overall.name ?? ''}`,
+              to: curriculumPath(curriculum.subject, {
+                strand,
+                code: overall.code,
+              }),
+              counts: Object.fromEntries(
+                grades.map((grade) => [
+                  grade,
+                  Object.keys(
+                    curriculum.grades[grade]?.[strand]?.[overall.code]
+                      ?.specifics ?? {}
+                  ).length,
+                ])
+              ),
+            }))}
+            currentId={code}
+            colors={strandColors(strand)}
+          />
+        </>
+      )}
+      {curriculum.strands[strand].note && (
+        <p className="text-lead">{curriculum.strands[strand].note}</p>
+      )}
+      {/* The overall's name sticks while its parts scroll past */}
+      {!single && (
+        <StickyBar padded>
+          <h2 className="text-label">
+            {strandName} · {code} {current?.name} · Grades {grades[0]} to{' '}
+            {grades[grades.length - 1]}
+          </h2>
+        </StickyBar>
+      )}
       {sectionsIn(curriculum, strand, code).map((section) => (
         <section
           key={section.id}
