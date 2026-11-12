@@ -12,7 +12,6 @@ import { useHashJump } from '@/hooks/useHashJump'
 import {
   curriculumPath,
   gradesOf,
-  hasUnits,
   skillsStrandOf,
   topicsIn,
   unitOf,
@@ -77,11 +76,7 @@ function CurriculumSpecificsPage() {
     )
       ? [{ id: 'resources' as const, label: 'Resources' }]
       : []),
-    // A strand with units covers a new topic each grade, so the same code
-    // in another grade isn't the same thing (Science B to E)
-    ...(hasUnits(curriculum, strand)
-      ? []
-      : [{ id: 'compare' as const, label: 'Compare Grades' }]),
+    { id: 'compare', label: 'Compare Grades' },
   ]
   // The tab from the address, if this overall has it
   const view =

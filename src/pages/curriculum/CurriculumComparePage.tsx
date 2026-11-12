@@ -5,13 +5,16 @@ import { useCurriculum } from '@/hooks/useCurriculum'
 import {
   curriculumPath,
   gradesOf,
+  hasUnits,
   mergeGrades,
   specificsIn,
+  unitOf,
 } from '@/lib/curriculum'
 import type { StrandId } from '@/types/curriculum'
 
 // One specific expectation across every grade, e.g. /gym/grade/4/b1/b1.3.
-// Grades in a row that say the same thing share one row (Grades 1–6).
+// Grades in a row that say the same thing share one row (Grades 1–6);
+// in a strand with units, each grade shows its unit instead.
 // Strand D is compared by topic, since a topic's code can change between
 // grades
 function CurriculumComparePage() {
@@ -41,8 +44,18 @@ function CurriculumComparePage() {
       })),
   }))
 
-  // Grades next to each other that say the same thing share a row
-  const rows = mergeGrades(grades)
+  // Grades next to each other that say the same thing share a row. In a
+  // strand with units (Science B to E), each grade keeps its own row, with
+  // its unit above the text, since the same code is about a new unit
+  const rows = hasUnits(curriculum, strand)
+    ? grades
+        .filter((g) => g.entries.length)
+        .map((g) => ({
+          label: `Grade ${g.grade}`,
+          heading: unitOf(curriculum, g.grade, strand),
+          entries: g.entries,
+        }))
+    : mergeGrades(grades)
 
   const all = gradesOf(curriculum)
   return (
