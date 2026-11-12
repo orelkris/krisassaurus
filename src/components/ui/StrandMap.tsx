@@ -19,7 +19,8 @@ interface StrandMapProps {
   colors: { bg: string; text: string; accent: string }
 }
 
-// Rows down the side, grades across the top, one square per expectation.
+// Rows down the side, grades across the top, one square per expectation,
+// with lines between every row and column so each square's grade is clear.
 // Picking a row shows its expectations below the map. Every subject's Strand
 // page uses it; the rows come from the subject's own data
 function StrandMap({
@@ -31,7 +32,7 @@ function StrandMap({
 }: StrandMapProps) {
   return (
     <div className="overflow-x-auto rounded-card border border-line">
-      <table className="w-full min-w-table border-collapse text-sm">
+      <table className="w-full min-w-table table-fixed border-collapse text-sm">
         <thead>
           <tr className="text-note border-b border-line">
             <th
@@ -41,7 +42,11 @@ function StrandMap({
               {rowLabel}
             </th>
             {grades.map((grade) => (
-              <th key={grade} scope="col" className="px-xs py-sm font-semibold">
+              <th
+                key={grade}
+                scope="col"
+                className="border-l border-line px-xs py-sm font-semibold"
+              >
                 Gr {grade}
               </th>
             ))}
@@ -76,10 +81,13 @@ function StrandMap({
                 {grades.map((grade) => {
                   const count = row.counts[grade] ?? 0
                   return (
-                    <td key={grade} className="px-xs py-sm text-center">
+                    <td
+                      key={grade}
+                      className="border-l border-line px-xs py-sm text-center"
+                    >
                       {count ? (
                         <span
-                          className="inline-flex gap-xs"
+                          className="inline-flex flex-wrap justify-center gap-xs"
                           title={`${count} expectation${count > 1 ? 's' : ''}`}
                         >
                           {Array.from({ length: count }, (_, index) => (
