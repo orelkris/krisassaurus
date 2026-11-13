@@ -9,6 +9,9 @@ interface PageHeaderProps {
   children?: ReactNode
   // A small grey line at the end, e.g. counts or a source
   meta?: ReactNode
+  // Centre the title and description (the breadcrumb stays left), e.g.
+  // above a centred diagram
+  centred?: boolean
 }
 
 // The top of every page: title, description and meta. Whatever comes next
@@ -19,12 +22,21 @@ function PageHeader({
   description,
   children,
   meta,
+  centred = false,
 }: PageHeaderProps) {
   return (
     <header className="col-sm">
       {above}
-      <h1 className="heading-page row-sm">{title}</h1>
-      {description && <p className="text-lead">{description}</p>}
+      <h1 className={`heading-page row-sm ${centred ? 'self-center' : ''}`}>
+        {title}
+      </h1>
+      {description && (
+        <p
+          className={`text-lead ${centred ? 'self-center text-center text-balance' : ''}`}
+        >
+          {description}
+        </p>
+      )}
       {children}
       {meta && <p className="text-small row-sm flex-wrap">{meta}</p>}
     </header>

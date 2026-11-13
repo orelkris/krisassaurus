@@ -12,7 +12,8 @@ import ProcessSource from '@/components/arts/ProcessSource'
 
 const stageId = (num: number) => `stage-${num}`
 
-// The Arts' creative process: the cycle, then a box per stage with what
+// The Arts' creative process: a centred header and the cycle, then a box per
+// stage with what
 // the student and the teacher do
 function CreativeProcessPage() {
   useHashJump()
@@ -27,6 +28,8 @@ function CreativeProcessPage() {
         }
         title={creativeProcess.name}
         description={creativeProcess.intro}
+        // Centred, like the cycle under it
+        centred
       />
       <CreativeCycle
         stages={creativeStages}
