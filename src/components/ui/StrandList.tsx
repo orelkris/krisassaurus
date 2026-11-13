@@ -4,7 +4,8 @@ import StrandBadge from '@/components/ui/StrandBadge'
 import type { StrandId } from '@/types/curriculum'
 
 export interface StrandListRow {
-  // A code shown before the label, e.g. B1. Rows without one get a dot
+  // A code shown before the label, e.g. B1. Rows without one start with the
+  // label, no bullet
   code?: string
   label: string
   // Where the row goes. Without one it's plain text, e.g. Math's Strand A
@@ -27,9 +28,11 @@ interface StrandListProps {
 function Row({ row }: { row: StrandListRow }) {
   const parts = (
     <>
-      <span className="w-code shrink-0 font-bold text-strand-text">
-        {row.code ?? <span className="block size-dot rounded-pill bg-strand" />}
-      </span>
+      {row.code && (
+        <span className="w-code shrink-0 font-bold text-strand-text">
+          {row.code}
+        </span>
+      )}
       <span className="min-w-none flex-1">{row.label}</span>
     </>
   )
