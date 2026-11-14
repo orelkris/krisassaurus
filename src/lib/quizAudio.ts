@@ -1,9 +1,9 @@
 import type { QuizEndSound, QuizMusic } from '@/types/quiz'
 
-// The Quiz's sounds, all made in the browser with the Web Audio API, so there
-// are no audio files to host: three music loops, the end-of-time sounds, the
-// last-seconds tick and the reveal chime. A music file the teacher picks
-// plays through an <audio> element instead.
+// The Quiz's sounds. Most are made in the browser with the Web Audio API:
+// three music loops, the end-of-time sounds, the last-seconds tick and the
+// reveal chime. Kris's tracks (e.g. Phrygian) and a music file the teacher
+// picks play on repeat through an <audio> element instead.
 // Sound only starts after a click or key, so the first play() must come from one
 
 interface NoteOptions {
@@ -155,6 +155,8 @@ export class QuizAudio {
   private nextT = 0
   private fileEl: HTMLAudioElement | null = null
   private fileUrl: string | null = null
+  // Kris's tracks, by music name, played through their own <audio>
+  private trackEls: Partial<Record<QuizMusic, HTMLAudioElement>> = {}
 
   playing = false
   // The last 10 seconds: the music gets busier
@@ -262,14 +264,36 @@ export class QuizAudio {
     this.applyVolume()
   }
 
+  // A track from the site, e.g. Phrygian
+  setTrack(music: QuizMusic, url: string) {
+    if (this.trackEls[music]) return
+    const el = new Audio(url)
+    el.loop = true
+    this.trackEls[music] = el
+    this.applyVolume()
+  }
+
+  // The <audio> playing the current music, if it isn't made in the browser
+  private get element() {
+    return this.music === 'file'
+      ? this.fileEl
+      : (this.trackEls[this.music] ?? null)
+  }
+
+  private get synthesized() {
+    return this.music in STYLES
+  }
+
   get hasFile() {
     return this.fileEl !== null
   }
 
   applyVolume() {
-    if (this.fileEl)
-      this.fileEl.volume = this.muted ? 0 : Math.min(1, this.volume)
-    if (this.ctx && this.playing && this.music !== 'file')
+    const elements = [this.fileEl, ...Object.values(this.trackEls)]
+    elements.forEach((el) => {
+      if (el) el.volume = this.muted ? 0 : Math.min(1, this.volume)
+    })
+    if (this.ctx && this.playing && this.synthesized)
       this.musicGain.gain.setTargetAtTime(
         this.volume * 0.55,
         this.ctx.currentTime,
@@ -279,15 +303,16 @@ export class QuizAudio {
 
   play() {
     if (this.playing || this.music === 'off') return
-    if (this.music === 'file') {
-      if (!this.fileEl) return
+    if (!this.synthesized) {
+      const el = this.element
+      if (!el) return
       this.applyVolume()
-      this.fileEl.play().catch(() => {})
+      el.play().catch(() => {})
       this.playing = true
       return
     }
     const c = this.ensure()
-    this.style = STYLES[this.music]
+    this.style = STYLES[this.music as keyof typeof STYLES]
     this.playing = true
     this.musicGain.gain.cancelScheduledValues(c.currentTime)
     this.musicGain.gain.setValueAtTime(this.volume * 0.55, c.currentTime)
@@ -321,8 +346,10 @@ export class QuizAudio {
   pause() {
     if (this.timer) clearInterval(this.timer)
     this.timer = null
-    if (this.fileEl && !this.fileEl.paused) this.fileEl.pause()
-    if (this.playing && this.ctx && this.music !== 'file') {
+    ;[this.fileEl, ...Object.values(this.trackEls)].forEach((el) => {
+      if (el && !el.paused) el.pause()
+    })
+    if (this.playing && this.ctx && this.synthesized) {
       const g = this.musicGain.gain
       const t = this.ctx.currentTime
       g.cancelScheduledValues(t)
@@ -337,7 +364,10 @@ export class QuizAudio {
     this.pause()
     this.stepCount = 0
     this.hot = false
-    if (rewind && this.fileEl) this.fileEl.currentTime = 0
+    if (rewind)
+      [this.fileEl, ...Object.values(this.trackEls)].forEach((el) => {
+        if (el) el.currentTime = 0
+      })
   }
 
   setMuted(muted: boolean) {

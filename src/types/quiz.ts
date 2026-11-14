@@ -18,9 +18,15 @@ export interface Quiz {
   questions: QuizQuestion[]
 }
 
-// Music made in the browser while the clock runs, a file the teacher picks
-// (it stays on their computer), or none
-export type QuizMusic = 'upbeat' | 'thinking' | 'suspense' | 'file' | 'off'
+// Music while the clock runs: one of Kris's tracks, music made in the
+// browser, a file the teacher picks (it stays on their computer), or none
+export type QuizMusic =
+  | 'phrygian'
+  | 'upbeat'
+  | 'thinking'
+  | 'suspense'
+  | 'file'
+  | 'off'
 
 // The sound when time runs out
 export type QuizEndSound = 'gong' | 'fanfare' | 'buzzer' | 'none'

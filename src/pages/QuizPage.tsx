@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import QuizSetup from '@/components/quiz/QuizSetup'
 import QuizBoard from '@/components/quiz/QuizBoard'
-import { defaultSettings, quizzes } from '@/data/quiz/quizzes'
+import { defaultSettings, musicTracks, quizzes } from '@/data/quiz/quizzes'
 import { useQuizQuestions } from '@/hooks/useQuizQuestions'
 import { useQuizTimer } from '@/hooks/useQuizTimer'
 import { useStoredState } from '@/hooks/useStoredState'
@@ -20,14 +20,15 @@ function QuizPage() {
   const questions = useQuizQuestions(quiz)
 
   const [savedSettings, setSavedSettings] = useStoredState<QuizSettings>(
-    'quiz:settings',
+    'quiz:v2:settings',
     defaultSettings
   )
   // A music file isn't saved, so after a reload the music goes back to the
-  // first choice until a file is picked again
+  // default until a file is picked again
   const [fileName, setFileName] = useState('')
   const settings: QuizSettings = { ...defaultSettings, ...savedSettings }
-  if (settings.music === 'file' && !fileName) settings.music = 'upbeat'
+  if (settings.music === 'file' && !fileName)
+    settings.music = defaultSettings.music
   const changeSettings = (change: Partial<QuizSettings>) =>
     setSavedSettings((saved) => ({ ...saved, ...change }))
 
@@ -37,6 +38,8 @@ function QuizPage() {
   useEffect(() => () => audioRef.current?.close(), [])
   useEffect(() => {
     const a = audio()
+    const track = musicTracks[settings.music]
+    if (track) a.setTrack(settings.music, track)
     a.music = settings.music
     a.volume = settings.volume
     a.applyVolume()

@@ -1,5 +1,6 @@
 import type { Quiz, QuizEndSound, QuizMusic, QuizSettings } from '@/types/quiz'
 import { bodySystems } from '@/data/quiz/bodySystems'
+import phrygian from '@/assets/music/phrygian.mp3'
 
 // The starting questions. The teacher's own edits are saved in their browser
 export const quizzes: Quiz[] = [
@@ -17,7 +18,13 @@ export const answerLetters = ['A', 'B', 'C', 'D'] as const
 // Seconds on the clock for each question
 export const timerOptions = [20, 30, 45]
 
+// Kris's own tracks, which repeat while the clock runs
+export const musicTracks: Partial<Record<QuizMusic, string>> = {
+  phrygian,
+}
+
 export const musicOptions: { value: QuizMusic; label: string }[] = [
+  { value: 'phrygian', label: 'Phrygian' },
   { value: 'upbeat', label: 'Game show (upbeat)' },
   { value: 'thinking', label: 'Thinking time (calm)' },
   { value: 'suspense', label: 'Countdown (suspense)' },
@@ -34,7 +41,7 @@ export const endSoundOptions: { value: QuizEndSound; label: string }[] = [
 
 export const defaultSettings: QuizSettings = {
   seconds: 30,
-  music: 'upbeat',
+  music: 'phrygian',
   volume: 0.7,
   endSound: 'gong',
   prompt: quizzes[0].prompt,
