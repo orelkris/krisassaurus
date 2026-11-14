@@ -11,6 +11,7 @@ import SubjectSectionPage from '@/pages/SubjectSectionPage'
 import AboutPage from '@/pages/AboutPage'
 import MusicPage from '@/pages/MusicPage'
 import QuickGamePage from '@/pages/QuickGamePage'
+import QuizPage from '@/pages/QuizPage'
 import ScrollToTop from '@/components/ui/ScrollToTop'
 import TwoColumnLayout from '@/components/layout/TwoColumnLayout'
 import StrategiesPage from '@/pages/drama/StrategiesPage'
@@ -171,6 +172,7 @@ function App() {
           </Route>
 
           <Route path="/quick-game" element={<QuickGamePage />} />
+          <Route path="/quiz" element={<QuizPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/music" element={<MusicPage />} />
         </Route>

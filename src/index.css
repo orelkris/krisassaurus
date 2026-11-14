@@ -235,6 +235,125 @@
   --container-diagram: 45rem; /* a big drawing, e.g. the creative process cycle */
   --container-table: 35rem; /* the narrowest a wide table gets before it scrolls */
   --container-site: 72rem; /* the whole site (max-w-page would be the page spacing) */
+
+  /* Quiz: its own dark "classroom board" look. bg-quiz-ink, text-quiz-muted,
+     font-quiz-display, text-quiz-title… */
+  --color-quiz-ink: #0d2330; /* the page */
+  --color-quiz-ink-2: #112c3b; /* panels */
+  --color-quiz-panel: #163749; /* rows and buttons */
+  --color-quiz-panel-hover: #1d455a;
+  --color-quiz-line: #285266;
+  --color-quiz-text: #f2f6f3;
+  --color-quiz-muted: #9db8c3;
+  --color-quiz-paper: #f7f4ec; /* the question card */
+  --color-quiz-paper-ink: #10232d;
+  --color-quiz-paper-muted: #5b6d75;
+  --color-quiz-drain: #e3ddcf; /* behind the bar under the question */
+  --color-quiz-coral: #ff6b5b; /* answer A, and time running out */
+  --color-quiz-coral-deep: #b8423a;
+  --color-quiz-sky: #4bb6ff; /* answer B */
+  --color-quiz-sky-ink: #062234;
+  --color-quiz-sun: #ffc84a; /* answer C, and the last 10 seconds */
+  --color-quiz-sun-ink: #0b2a20;
+  --color-quiz-mint: #3ad19c; /* answer D, and Present */
+  --color-quiz-mint-hover: #4fe0ad;
+  --color-quiz-mint-deep: #1f8f68;
+  --color-quiz-mint-ink: #06281c;
+  --color-quiz-tile-ink: #0b1e27; /* text on the answer tiles */
+  --color-quiz-danger-bg: #4a2326;
+  --color-quiz-danger-line: #7a3a3a;
+
+  --font-quiz-display: 'Fredoka', 'Trebuchet MS', system-ui, sans-serif;
+  --font-quiz-read: 'Atkinson Hyperlegible', Verdana, system-ui, sans-serif;
+
+  /* Sizes that grow with the screen, for the board */
+  --text-quiz-title: clamp(2rem, 4.5vw, 2.8rem);
+  --text-quiz-title--line-height: 1.05;
+  --text-quiz-heading: 1.35rem;
+  --text-quiz-heading--line-height: 1.2;
+  --text-quiz-go: 1.3rem;
+  --text-quiz-count: clamp(1rem, 2.2vw, 1.7rem);
+  --text-quiz-prompt: clamp(1rem, 2.6vw, 2.1rem);
+  --text-quiz-prompt--line-height: 1.15;
+  --text-quiz-digits: clamp(1.8rem, 5.6vmin, 4.8rem);
+  --text-quiz-digits--line-height: 1;
+  --text-quiz-tick: clamp(2rem, 6vmin, 5rem);
+  --text-quiz-tick--line-height: 1;
+  --text-quiz-timesup: clamp(1.2rem, 3.4vw, 3rem);
+  --text-quiz-done: clamp(2rem, 6vw, 5rem);
+  --text-quiz-done--line-height: 1.05;
+  --text-quiz-done-msg: clamp(1rem, 2vw, 1.5rem);
+  --text-quiz-letter: 0.85rem; /* a letter chip beside an answer box */
+  --text-quiz-shapes: 1.375rem; /* the four letters beside the title */
+  --text-quiz-shapes-done: clamp(1.875rem, 5vmin, 3.5rem);
+
+  --spacing-quiz-ring: clamp(4.75rem, 13vmin, 10.625rem); /* the clock ring */
+  --spacing-quiz-num: 2.1rem; /* a question's number */
+  --spacing-quiz-board-y: clamp(0.75rem, 2.5vh, 1.75rem);
+  --spacing-quiz-board-x: clamp(1rem, 3vw, 3rem);
+  --spacing-quiz-board-gap: clamp(0.625rem, 1.8vh, 1.375rem);
+  --spacing-quiz-bar-gap: clamp(0.75rem, 2vw, 1.75rem);
+  --spacing-quiz-card-y: clamp(0.875rem, 2.6vw, 2.75rem);
+  --spacing-quiz-card-x: clamp(1.125rem, 3.2vw, 3.5rem);
+  --spacing-quiz-drain: clamp(0.625rem, 1.5vh, 1rem);
+  --spacing-quiz-tiles-gap: clamp(0.5rem, 1.4vw, 1.125rem);
+  --spacing-quiz-tile-y: clamp(0.75rem, 2vh, 1.625rem);
+  --spacing-quiz-tile-x: clamp(1.125rem, 2.4vw, 2.5rem);
+  --spacing-quiz-tile-gap: clamp(0.625rem, 1.6vw, 1.5rem);
+  --spacing-quiz-timesup: clamp(0.625rem, 2vh, 1.5rem);
+  --spacing-quiz-track: 1.5rem; /* the Show answers switch */
+  --spacing-quiz-track-w: 2.625rem;
+  --spacing-quiz-knob: 1.125rem;
+  --spacing-quiz-knob-gap: 0.1875rem;
+  --container-quiz: 73.75rem; /* the setup page */
+
+  --radius-quiz-chip: 0.375rem;
+  --radius-quiz-button: 0.625rem;
+  --radius-quiz-go: 0.875rem;
+  --radius-quiz-card: clamp(0.875rem, 2vw, 1.625rem);
+  --radius-quiz-tile: clamp(0.625rem, 1.4vw, 1.125rem);
+
+  --shadow-quiz-go: 0 5px 0 var(--color-quiz-mint-deep);
+  --shadow-quiz-go-pressed: 0 1px 0 var(--color-quiz-mint-deep);
+  --shadow-quiz-card: 0 10px 0 rgb(0 0 0 / 0.25);
+  --shadow-quiz-tile: 0 6px 0 rgb(0 0 0 / 0.28);
+  --shadow-quiz-right:
+    0 0 0 clamp(4px, 0.6vw, 8px) var(--color-quiz-paper),
+    0 6px 0 rgb(0 0 0 / 0.28);
+  --shadow-quiz-timesup: 0 6px 0 var(--color-quiz-coral-deep);
+  --shadow-quiz-mint: 0 0 0 1px var(--color-quiz-mint);
+
+  --animate-quiz-pulse: quiz-pulse 1s infinite;
+  --animate-quiz-pop: quiz-pop 0.45s cubic-bezier(0.2, 1.6, 0.4, 1);
+  --animate-quiz-win: quiz-win 0.5s cubic-bezier(0.2, 1.6, 0.4, 1);
+
+  @keyframes quiz-pulse {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.12);
+    }
+  }
+  @keyframes quiz-pop {
+    from {
+      scale: 0.3;
+      opacity: 0;
+    }
+    to {
+      scale: 1;
+      opacity: 1;
+    }
+  }
+  @keyframes quiz-win {
+    from {
+      transform: scale(0.94);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
 }
 
 /* Spacing: one scale for gaps and padding. Each name works with any
@@ -556,4 +675,78 @@ body {
 
 .link:hover::after {
   width: 100%;
+}
+
+/* ------------------------------------------------------------------------
+   Quiz. Everything inside data-quiz uses the Quiz's dark look
+   ------------------------------------------------------------------------ */
+[data-quiz] {
+  color-scheme: dark;
+}
+
+[data-quiz] :focus-visible {
+  outline: 3px solid var(--color-quiz-sun);
+  outline-offset: 2px;
+}
+
+/* The board's background: dark, with two soft glows in the corners */
+@utility bg-quiz-board {
+  background-color: var(--color-quiz-ink);
+  background-image:
+    radial-gradient(circle at 15% 10%, rgb(75 182 255 / 0.1), transparent 40%),
+    radial-gradient(circle at 90% 90%, rgb(58 209 156 / 0.09), transparent 45%);
+}
+
+/* A Quiz button; the variants change only the colours */
+@utility quiz-button {
+  @apply inline-flex cursor-pointer items-center justify-center gap-sm rounded-quiz-button border border-quiz-line bg-quiz-panel px-md py-sm font-bold text-quiz-text transition-[transform,background-color] duration-150 hover:bg-quiz-panel-hover active:translate-y-px disabled:cursor-not-allowed disabled:opacity-45;
+}
+
+/* Text boxes, number boxes and dropdowns */
+@utility quiz-field {
+  @apply w-full min-w-none rounded-row border border-quiz-line bg-quiz-ink px-sm py-sm text-quiz-text;
+}
+
+/* A dropdown with a chevron on the right */
+@utility quiz-select {
+  @apply quiz-field cursor-pointer appearance-none py-sm pr-xl pl-md hover:border-quiz-muted;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1.5 1.5 7 7l5.5-5.5' fill='none' stroke='%239db8c3' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 0.875rem 0.5625rem;
+}
+
+/* A section box on the setup page */
+@utility quiz-panel {
+  @apply flex min-w-none flex-col gap-section rounded-box border border-quiz-line bg-quiz-ink-2 p-lg;
+}
+
+/* A letter A to D in its colour; the colour comes from --answer */
+@utility quiz-letter {
+  @apply inline-grid shrink-0 place-items-center rounded-quiz-chip bg-(--answer) font-quiz-display leading-none font-bold text-quiz-tile-ink;
+}
+
+/* Small grey text, e.g. a hint under a heading */
+@utility quiz-hint {
+  @apply text-sm text-quiz-muted;
+}
+
+/* Small capitals over a field */
+@utility quiz-label {
+  @apply text-xs font-bold tracking-wider text-quiz-muted uppercase;
+}
+
+/* A Quiz answer says its letter, e.g. data-answer="A", and everything inside
+   can use bg-(--answer) or text-(--answer) */
+[data-answer='A'] {
+  --answer: var(--color-quiz-coral);
+}
+[data-answer='B'] {
+  --answer: var(--color-quiz-sky);
+}
+[data-answer='C'] {
+  --answer: var(--color-quiz-sun);
+}
+[data-answer='D'] {
+  --answer: var(--color-quiz-mint);
 }
