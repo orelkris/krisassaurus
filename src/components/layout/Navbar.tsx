@@ -2,11 +2,24 @@ import { useEffect, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { ChevronDown, Menu, X } from 'lucide-react'
 import { subjectSections } from '@/data/subjects'
+import { gameSections } from '@/data/games'
 
-const links = [
+interface MenuItem {
+  name: string
+  path: string
+  // false shows "soon" beside it
+  ready?: boolean
+}
+
+// What the navbar shows, in order: a dropdown has items, a link has a path
+type NavEntry =
+  | { label: string; items: MenuItem[] }
+  | { label: string; path: string }
+
+const entries: NavEntry[] = [
+  { label: 'Subjects', items: subjectSections },
   { label: 'Resources', path: '/resources' },
-  { label: 'Quick Game', path: '/quick-game' },
-  { label: 'Quiz', path: '/quiz' },
+  { label: 'Games', items: gameSections },
   { label: 'Music', path: '/music' },
   { label: 'About', path: '/about' },
 ]
@@ -15,32 +28,33 @@ function isSectionActive(sectionPath: string, pathname: string) {
   return pathname === sectionPath || pathname.startsWith(`${sectionPath}/`)
 }
 
-// Subjects is active on any subject's pages
-function isSubjectPath(pathname: string) {
-  return subjectSections.some((section) =>
-    isSectionActive(section.path, pathname)
-  )
+// A dropdown is active on any of its pages
+function isMenuActive(items: MenuItem[], pathname: string) {
+  return items.some((item) => isSectionActive(item.path, pathname))
 }
 
-function Navbar() {
-  const { pathname } = useLocation()
-  const [isOpen, setIsOpen] = useState(false)
-  const [isSubjectsOpen, setIsSubjectsOpen] = useState(false)
-  const [isMobileSubjectsOpen, setIsMobileSubjectsOpen] = useState(true)
-  const subjectsMenuRef = useRef<HTMLDivElement>(null)
+interface NavMenuProps {
+  label: string
+  items: MenuItem[]
+  pathname: string
+  onPick: () => void
+}
 
-  // The dropdown stays open until Subjects is clicked again, a subject is picked,
-  // Escape is pressed, or the reader clicks somewhere else on the page.
+// A navbar dropdown on wide screens. It stays open until its name is clicked
+// again, an item is picked, Escape is pressed, or the reader clicks somewhere
+// else on the page
+function NavMenu({ label, items, pathname, onPick }: NavMenuProps) {
+  const [isOpen, setIsOpen] = useState(false)
+  const menuRef = useRef<HTMLDivElement>(null)
+
   useEffect(() => {
-    if (!isSubjectsOpen) return
+    if (!isOpen) return
 
     function handlePointerDown(event: PointerEvent) {
-      if (!subjectsMenuRef.current?.contains(event.target as Node)) {
-        setIsSubjectsOpen(false)
-      }
+      if (!menuRef.current?.contains(event.target as Node)) setIsOpen(false)
     }
     function handleKeyDown(event: KeyboardEvent) {
-      if (event.key === 'Escape') setIsSubjectsOpen(false)
+      if (event.key === 'Escape') setIsOpen(false)
     }
 
     document.addEventListener('pointerdown', handlePointerDown)
@@ -49,14 +63,96 @@ function Navbar() {
       document.removeEventListener('pointerdown', handlePointerDown)
       document.removeEventListener('keydown', handleKeyDown)
     }
-  }, [isSubjectsOpen])
+  }, [isOpen])
 
-  const closeMenus = () => {
-    setIsSubjectsOpen(false)
-    setIsOpen(false)
-  }
+  return (
+    <div ref={menuRef} className="relative">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        aria-expanded={isOpen}
+        aria-haspopup="true"
+        className={`row-xs cursor-pointer text-sm transition-colors ${
+          isMenuActive(items, pathname)
+            ? 'font-semibold text-fg'
+            : 'text-muted hover:text-fg'
+        }`}
+      >
+        {label}
+        <ChevronDown
+          className={`size-icon-sm transition-transform ${isOpen ? 'rotate-180' : ''}`}
+        />
+      </button>
 
-  const subjectsActive = isSubjectPath(pathname)
+      {isOpen && (
+        <div className="absolute top-full -left-md mt-md flex min-w-dropdown flex-col rounded-card border border-line bg-page p-xs shadow-menu">
+          {items.map((item) => (
+            <Link
+              key={item.path}
+              to={item.path}
+              onClick={() => {
+                setIsOpen(false)
+                onPick()
+              }}
+              className={`flex justify-between gap-md rounded-row px-md py-sm text-sm transition-colors hover:bg-soft ${
+                isSectionActive(item.path, pathname)
+                  ? 'font-semibold text-fg'
+                  : 'text-muted hover:text-fg'
+              }`}
+            >
+              {item.name}
+              {item.ready === false && (
+                <span className="text-note font-normal">soon</span>
+              )}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
+
+// A dropdown in the phone menu: its name opens and closes its items
+function MobileNavMenu({ label, items, pathname, onPick }: NavMenuProps) {
+  const [isOpen, setIsOpen] = useState(true)
+
+  return (
+    <>
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        aria-expanded={isOpen}
+        className={`flex cursor-pointer items-center justify-between border-b border-line py-md text-sm ${
+          isMenuActive(items, pathname) ? 'font-semibold text-fg' : 'text-muted'
+        }`}
+      >
+        {label}
+        <ChevronDown
+          className={`size-icon-sm transition-transform ${isOpen ? 'rotate-180' : ''}`}
+        />
+      </button>
+
+      {isOpen &&
+        items.map((item) => (
+          <Link
+            key={item.path}
+            to={item.path}
+            onClick={onPick}
+            className={`border-b border-line py-sm pl-md text-sm transition-colors ${
+              isSectionActive(item.path, pathname)
+                ? 'font-semibold text-fg'
+                : 'text-muted'
+            }`}
+          >
+            {item.name}
+          </Link>
+        ))}
+    </>
+  )
+}
+
+function Navbar() {
+  const { pathname } = useLocation()
+  const [isOpen, setIsOpen] = useState(false)
+  const closeMenu = () => setIsOpen(false)
 
   return (
     <nav className="sticky top-none z-10 border-b border-line bg-page">
@@ -64,65 +160,35 @@ function Navbar() {
         <Link
           to="/"
           className="w-logo shrink-0 text-lg font-bold text-fg"
-          onClick={closeMenus}
+          onClick={closeMenu}
         >
           Teaching Journey
         </Link>
 
         <div className="hidden items-center gap-lg lg:flex">
-          <div ref={subjectsMenuRef} className="relative">
-            <button
-              onClick={() => setIsSubjectsOpen(!isSubjectsOpen)}
-              aria-expanded={isSubjectsOpen}
-              aria-haspopup="true"
-              className={`row-xs cursor-pointer text-sm transition-colors ${
-                subjectsActive
-                  ? 'font-semibold text-fg'
-                  : 'text-muted hover:text-fg'
-              }`}
-            >
-              Subjects
-              <ChevronDown
-                className={`size-icon-sm transition-transform ${isSubjectsOpen ? 'rotate-180' : ''}`}
+          {entries.map((entry) =>
+            'items' in entry ? (
+              <NavMenu
+                key={entry.label}
+                label={entry.label}
+                items={entry.items}
+                pathname={pathname}
+                onPick={closeMenu}
               />
-            </button>
-
-            {isSubjectsOpen && (
-              <div className="absolute top-full -left-md mt-md flex min-w-dropdown flex-col rounded-card border border-line bg-page p-xs shadow-menu">
-                {subjectSections.map((section) => (
-                  <Link
-                    key={section.slug}
-                    to={section.path}
-                    onClick={closeMenus}
-                    className={`flex justify-between gap-md rounded-row px-md py-sm text-sm transition-colors hover:bg-soft ${
-                      isSectionActive(section.path, pathname)
-                        ? 'font-semibold text-fg'
-                        : 'text-muted hover:text-fg'
-                    }`}
-                  >
-                    {section.name}
-                    {!section.ready && (
-                      <span className="text-note font-normal">soon</span>
-                    )}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
-
-          {links.map((link) => (
-            <Link
-              key={link.path}
-              to={link.path}
-              className={`text-sm transition-colors ${
-                pathname === link.path
-                  ? 'font-semibold text-fg'
-                  : 'text-muted hover:text-fg'
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
+            ) : (
+              <Link
+                key={entry.path}
+                to={entry.path}
+                className={`text-sm transition-colors ${
+                  pathname === entry.path
+                    ? 'font-semibold text-fg'
+                    : 'text-muted hover:text-fg'
+                }`}
+              >
+                {entry.label}
+              </Link>
+            )
+          )}
         </div>
 
         <button
@@ -140,47 +206,30 @@ function Navbar() {
 
       {isOpen && (
         <div className="flex flex-col border-t border-line bg-page px-xl py-md lg:hidden">
-          <button
-            onClick={() => setIsMobileSubjectsOpen(!isMobileSubjectsOpen)}
-            aria-expanded={isMobileSubjectsOpen}
-            className={`flex cursor-pointer items-center justify-between border-b border-line py-md text-sm ${
-              subjectsActive ? 'font-semibold text-fg' : 'text-muted'
-            }`}
-          >
-            Subjects
-            <ChevronDown
-              className={`size-icon-sm transition-transform ${isMobileSubjectsOpen ? 'rotate-180' : ''}`}
-            />
-          </button>
-
-          {isMobileSubjectsOpen &&
-            subjectSections.map((section) => (
+          {entries.map((entry) =>
+            'items' in entry ? (
+              <MobileNavMenu
+                key={entry.label}
+                label={entry.label}
+                items={entry.items}
+                pathname={pathname}
+                onPick={closeMenu}
+              />
+            ) : (
               <Link
-                key={section.slug}
-                to={section.path}
-                onClick={closeMenus}
-                className={`border-b border-line py-sm pl-md text-sm transition-colors ${
-                  isSectionActive(section.path, pathname)
+                key={entry.path}
+                to={entry.path}
+                onClick={closeMenu}
+                className={`border-b border-line py-md text-sm transition-colors last:border-0 ${
+                  pathname === entry.path
                     ? 'font-semibold text-fg'
                     : 'text-muted'
                 }`}
               >
-                {section.name}
+                {entry.label}
               </Link>
-            ))}
-
-          {links.map((link) => (
-            <Link
-              key={link.path}
-              to={link.path}
-              onClick={closeMenus}
-              className={`border-b border-line py-md text-sm transition-colors last:border-0 ${
-                pathname === link.path ? 'font-semibold text-fg' : 'text-muted'
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
+            )
+          )}
         </div>
       )}
     </nav>
